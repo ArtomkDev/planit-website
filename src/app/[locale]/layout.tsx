@@ -4,7 +4,7 @@ import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import "@/styles/globals.css";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "PlanIt | Master Your Time",
@@ -25,7 +25,22 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="font-sans bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 min-h-screen flex flex-col antialiased selection:bg-indigo-500/30 selection:text-white">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark')
+                } else {
+                  document.documentElement.classList.remove('dark')
+                }
+              } catch (_) {}
+            `,
+          }}
+        />
+      </head>
+      <body className="font-sans min-h-screen flex flex-col antialiased selection:bg-indigo-500/30 selection:text-white transition-colors duration-300">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <Header />
