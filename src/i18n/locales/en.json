@@ -1,0 +1,32 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "features": "Features",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "Hero": {
+    "badge": "PlanIt Architecture Initialized",
+    "title1": "Master Your Time with",
+    "title2": "PlanIt",
+    "description": "Seamless execution meets flawless design. Experience a new tier of productivity wrapped in an interface that anticipates your every move.",
+    "ctaPrimary": "Start Planning",
+    "ctaSecondary": "Explore Features"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: June 2026",
+    "section1Title": "Data Collection",
+    "section1Content": "PlanIt is engineered with a privacy-first architecture. We collect only strictly necessary cryptographic telemetry to ensure system integrity.",
+    "section2Title": "Data Processing",
+    "section2Content": "All tasks and synchronization queries are processed through secured, decentralized nodes. No external parties have access to your raw inputs."
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated: June 2026",
+    "section1Title": "System Usage",
+    "section1Content": "By initializing the PlanIt ecosystem, you agree to adhere to strict operational guidelines. Misuse of the synchronization nodes or abuse of the API endpoints is strictly prohibited.",
+    "section2Title": "Intellectual Property",
+    "section2Content": "The PlanIt architecture, including its modular command system and custom UI personalization features, remains the exclusive intellectual property of its core engineers."
+  }
+}
