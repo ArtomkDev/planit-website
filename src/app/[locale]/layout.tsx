@@ -4,6 +4,7 @@ import { getMessages } from "next-intl/server";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { PageTransition } from "@/components/motion/PageTransition";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -27,25 +28,30 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <script
+          key="theme-script"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: `
               try {
                 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark')
+                  document.documentElement.classList.add('dark');
                 } else {
-                  document.documentElement.classList.remove('dark')
+                  document.documentElement.classList.remove('dark');
                 }
               } catch (_) {}
             `,
           }}
         />
       </head>
-      <body className="font-sans min-h-screen flex flex-col antialiased selection:bg-indigo-500/30 selection:text-white transition-colors duration-300">
-        <NextIntlClientProvider messages={messages}>
+      <body
+        suppressHydrationWarning
+        className="font-sans min-h-screen flex flex-col antialiased selection:bg-indigo-500/30 selection:text-white"
+      >
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
             <Header />
             <main className="flex-grow flex flex-col w-full relative z-10">
-              {children}
+              <PageTransition>{children}</PageTransition>
             </main>
             <Footer />
           </ThemeProvider>

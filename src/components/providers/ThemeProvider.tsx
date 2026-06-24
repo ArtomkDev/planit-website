@@ -20,11 +20,30 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const initialTheme = saved || system;
 
     setThemeState(initialTheme);
+    const root = document.documentElement;
+
     if (initialTheme === "dark") {
-      document.documentElement.classList.add("dark");
+      root.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      root.classList.remove("dark");
     }
+
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === "class") {
+          const currentTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          if (currentTheme === "dark" && !root.classList.contains("dark")) {
+            root.classList.add("dark");
+          } else if (currentTheme === "light" && root.classList.contains("dark")) {
+            root.classList.remove("dark");
+          }
+        }
+      });
+    });
+
+    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
+
+    return () => observer.disconnect();
   }, []);
 
   const setTheme = (newTheme: Theme) => {
