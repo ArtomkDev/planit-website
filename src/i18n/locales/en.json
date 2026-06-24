@@ -6,27 +6,109 @@
     "terms": "Terms of Service"
   },
   "Hero": {
-    "badge": "PlanIt Architecture Initialized",
-    "title1": "Master Your Time with",
+    "badge": "PlanIt Application",
+    "title1": "Manage your schedule with",
     "title2": "PlanIt",
-    "description": "Seamless execution meets flawless design. Experience a new tier of productivity wrapped in an interface that anticipates your every move.",
-    "ctaPrimary": "Start Planning",
-    "ctaSecondary": "Explore Features"
+    "description": "A straightforward schedule and task manager. Built to help you organize lessons, track breaks, and manage daily tasks without unnecessary complexity.",
+    "ctaPrimary": "Open Web App",
+    "ctaSecondary": "View Source Code"
+  },
+  "Features": {
+    "badge": "Capabilities",
+    "title": "Core Functionality",
+    "description": "Practical tools for everyday planning, focused on stability and ease of use.",
+    "items": {
+      "speed": {
+        "title": "Offline Mode",
+        "description": "The application works without an internet connection. Your schedule is cached locally on your device."
+      },
+      "security": {
+        "title": "Local Storage",
+        "description": "All data is stored locally by default. Account creation is completely optional."
+      },
+      "sync": {
+        "title": "Optional Sync",
+        "description": "Sign in with Google to synchronize your schedule and settings across multiple devices."
+      },
+      "analytics": {
+        "title": "Open Source",
+        "description": "The project is open-source. You can review the code on GitHub and host it yourself."
+      }
+    }
+  },
+  "AppShowcase": {
+    "badge": "Tools",
+    "title": "System Features",
+    "items": {
+      "customization": {
+        "title": "Visual Customization",
+        "description": "Assign distinct colors to different subjects for faster visual identification in your calendar."
+      },
+      "sync": {
+        "title": "Conflict Resolution",
+        "description": "When syncing across multiple devices, the application automatically handles schedule conflicts to prevent data loss."
+      },
+      "sharing": {
+        "title": "Schedule Sharing",
+        "description": "Generate a unique access link to share your complete schedule with classmates or colleagues."
+      },
+      "widgets": {
+        "title": "System Widgets",
+        "description": "Native home screen widgets for Android and iOS devices to view your upcoming lessons instantly."
+      }
+    }
+  },
+  "HowItWorks": {
+    "badge": "Usage",
+    "title": "Getting Started",
+    "steps": {
+      "step1": {
+        "title": "Create a Schedule",
+        "description": "Add your lessons, configure the time slots, and assign colors to each subject."
+      },
+      "step2": {
+        "title": "Share (Optional)",
+        "description": "Send your configured schedule to other users using a direct import link."
+      },
+      "step3": {
+        "title": "Sync (Optional)",
+        "description": "Log in with your account to save a backup to the cloud and access it from any device."
+      }
+    }
+  },
+  "CTA": {
+    "title": "Try PlanIt",
+    "description": "Available directly in your browser as a Web App, or as a downloadable mobile application.",
+    "button": "Open Application"
   },
   "Privacy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last Updated: June 2026",
-    "section1Title": "Data Collection",
-    "section1Content": "PlanIt is engineered with a privacy-first architecture. We collect only strictly necessary cryptographic telemetry to ensure system integrity.",
-    "section2Title": "Data Processing",
-    "section2Content": "All tasks and synchronization queries are processed through secured, decentralized nodes. No external parties have access to your raw inputs."
+    "section1Title": "Data Storage",
+    "section1Content": "PlanIt stores your data locally on your device by default. If you choose to use the cloud synchronization feature, your schedule data is stored securely in our database.",
+    "section2Title": "Authentication",
+    "section2Content": "Authentication is handled via third-party providers (e.g., Google). We do not store or process your passwords."
   },
   "Terms": {
     "title": "Terms of Service",
     "lastUpdated": "Last Updated: June 2026",
-    "section1Title": "System Usage",
-    "section1Content": "By initializing the PlanIt ecosystem, you agree to adhere to strict operational guidelines. Misuse of the synchronization nodes or abuse of the API endpoints is strictly prohibited.",
-    "section2Title": "Intellectual Property",
-    "section2Content": "The PlanIt architecture, including its modular command system and custom UI personalization features, remains the exclusive intellectual property of its core engineers."
+    "section1Title": "Service Usage",
+    "section1Content": "PlanIt is provided 'as is' without warranties of any kind. We reserve the right to modify or discontinue the service at any time.",
+    "section2Title": "Open Source",
+    "section2Content": "The source code is available under an open-source license. Please refer to the repository for specific licensing details."
+  },
+  "SEO": {
+    "home": {
+      "title": "PlanIt | Schedule Manager",
+      "description": "A straightforward schedule and task manager for students and teachers."
+    },
+    "privacy": {
+      "title": "Privacy Policy | PlanIt",
+      "description": "Privacy policy and data handling guidelines."
+    },
+    "terms": {
+      "title": "Terms of Service | PlanIt",
+      "description": "Terms of service and usage rules."
+    }
   }
 }

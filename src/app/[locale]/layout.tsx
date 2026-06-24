@@ -1,16 +1,49 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PageTransition } from "@/components/motion/PageTransition";
 import "../globals.css";
 
-export const metadata: Metadata = {
-  title: "PlanIt | Master Your Time",
-  description: "High-end productivity and planning application.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "SEO.home" });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://planit-app.com";
+
+  return {
+    metadataBase: new URL(baseUrl),
+    title: {
+      template: "%s | PlanIt",
+      default: t("title"),
+    },
+    description: t("description"),
+    alternates: {
+      languages: {
+        en: `${baseUrl}/en`,
+        uk: `${baseUrl}/uk`,
+      },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `${baseUrl}/${locale}`,
+      siteName: "PlanIt",
+      locale: locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
