@@ -58,6 +58,30 @@
       }
     }
   },
+  "Platforms": {
+    "badge": "Availability",
+    "title": "PlanIt on your devices",
+    "items": {
+      "ios": {
+        "title": "iOS / iPhone",
+        "description": "Full support for native widgets, lock screen complications, and real-time schedule updates.",
+        "button": "In Development",
+        "status": "In Development"
+      },
+      "android": {
+        "title": "Android",
+        "description": "Optimized performance, Material You design, and native home screen widgets.",
+        "button": "Get it on Google Play",
+        "status": "Available"
+      },
+      "web": {
+        "title": "Web Application",
+        "description": "Instant access from any desktop or mobile browser. No installation required.",
+        "button": "Launch Web App",
+        "status": "Available"
+      }
+    }
+  },
   "HowItWorks": {
     "badge": "Usage",
     "title": "Getting Started",

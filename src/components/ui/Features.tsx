@@ -15,16 +15,19 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const tiltX = useMotionValue(0);
-  const tiltY = useMotionValue(0);
+  
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const tiltX = useMotionValue(0);
+  const tiltY = useMotionValue(0);
 
-  const mouseXSpring = useSpring(tiltX, { stiffness: 150, damping: 15 });
-  const mouseYSpring = useSpring(tiltY, { stiffness: 150, damping: 15 });
+  const smoothMouseX = useSpring(mouseX, { stiffness: 100, damping: 20 });
+  const smoothMouseY = useSpring(mouseY, { stiffness: 100, damping: 20 });
+  const smoothTiltX = useSpring(tiltX, { stiffness: 120, damping: 15 });
+  const smoothTiltY = useSpring(tiltY, { stiffness: 120, damping: 15 });
 
-  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["7.5deg", "-7.5deg"]);
-  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-7.5deg", "7.5deg"]);
+  const rotateX = useTransform(smoothTiltY, [-0.5, 0.5], ["6deg", "-6deg"]);
+  const rotateY = useTransform(smoothTiltX, [-0.5, 0.5], ["-6deg", "6deg"]);
 
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;
@@ -45,7 +48,8 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
     tiltY.set(0);
   };
 
-  const borderBackground = useMotionTemplate`radial-gradient(400px circle at ${mouseX}px ${mouseY}px, rgba(99, 102, 241, 0.4), transparent 80%)`;
+  const borderSpotlight = useMotionTemplate`radial-gradient(400px circle at ${smoothMouseX}px ${smoothMouseY}px, rgba(99, 102, 241, 0.5), transparent 80%)`;
+  const cardSpotlight = useMotionTemplate`radial-gradient(600px circle at ${smoothMouseX}px ${smoothMouseY}px, rgba(99, 102, 241, 0.08), transparent 80%)`;
 
   return (
     <motion.div
@@ -54,41 +58,45 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => {
       onMouseLeave={handleMouseLeave}
       style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
       variants={fadeInUp}
-      className="relative group rounded-[2.5rem] p-[1px] transition-transform duration-500"
+      whileHover={{ scale: 0.98 }}
+      className="relative group rounded-[2.5rem] p-[1px] transition-all duration-700 ease-out transform-gpu perspective-1000"
     >
       <motion.div
         className="absolute inset-0 rounded-[2.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-        style={{ background: borderBackground }}
+        style={{ background: borderSpotlight }}
       />
       
-      <div className="relative h-full flex flex-col gap-6 p-8 md:p-10 rounded-[2.5rem] bg-white/90 dark:bg-zinc-950/90 backdrop-blur-2xl border border-zinc-200/50 dark:border-zinc-800/50 overflow-hidden transform-gpu">
+      <div className="relative h-full flex flex-col gap-6 p-8 md:p-10 rounded-[2.5rem] bg-zinc-50/80 dark:bg-zinc-900/60 backdrop-blur-2xl border border-zinc-200/50 dark:border-zinc-800/50 overflow-hidden transform-gpu">
         
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none overflow-hidden">
-          <motion.div
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-[conic-gradient(from_0deg_at_50%_50%,rgba(99,102,241,0.08)_0deg,rgba(6,182,212,0.08)_120deg,rgba(236,72,153,0.08)_240deg,rgba(99,102,241,0.08)_360deg)] dark:bg-[conic-gradient(from_0deg_at_50%_50%,rgba(99,102,241,0.18)_0deg,rgba(6,182,212,0.18)_120deg,rgba(236,72,153,0.18)_240deg,rgba(99,102,241,0.18)_360deg)] blur-3xl opacity-80"
-          />
-          <motion.div
-            animate={{ rotate: [360, 0] }}
-            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-            className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.15)_0%,transparent_50%)] dark:bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.25)_0%,transparent_50%)] blur-2xl mix-blend-overlay"
-          />
+        <div className="absolute inset-0 pointer-events-none opacity-40 dark:opacity-60 transition-opacity duration-700 mix-blend-overlay group-hover:opacity-70 dark:group-hover:opacity-80">
+          <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid-pattern" width="32" height="32" patternUnits="userSpaceOnUse">
+                <path d="M0 32V0h32" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-zinc-400 dark:text-zinc-600/80" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+          </svg>
         </div>
 
+        <motion.div
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"
+          style={{ background: cardSpotlight }}
+        />
+
         <div
-          className="absolute inset-0 opacity-0 group-hover:opacity-[0.12] dark:group-hover:opacity-[0.06] transition-opacity duration-1000 pointer-events-none z-0 mix-blend-overlay"
+          className="absolute inset-0 opacity-[0.15] dark:opacity-[0.05] pointer-events-none z-0 mix-blend-overlay"
           style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}
         />
 
-        <div className="relative z-10 pointer-events-none" style={{ transform: "translateZ(40px)" }}>
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-zinc-100/50 dark:bg-zinc-800/50 text-indigo-500 mb-6 backdrop-blur-md border border-zinc-200/50 dark:border-zinc-700/50 shadow-inner group-hover:scale-110 transition-transform duration-700 ease-out">
+        <div className="relative z-10 pointer-events-none transform-gpu flex flex-col h-full" style={{ transform: "translateZ(30px)" }}>
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/90 dark:bg-zinc-950/90 text-indigo-500 mb-8 backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/50 shadow-[0_8px_16px_-6px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_16px_-6px_rgba(0,0,0,0.4)] group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-700 ease-[0.22,1,0.36,1]">
             {icon}
           </div>
-          <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4 tracking-tight group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors duration-500">
+          <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4 tracking-tight group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-500">
             {title}
           </h3>
-          <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed text-lg">
+          <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed text-lg mt-auto">
             {description}
           </p>
         </div>
