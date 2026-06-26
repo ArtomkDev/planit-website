@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Browser, DownloadSimple, ArrowRight, Hourglass } from "@phosphor-icons/react";
-import { FaAndroid, FaApple } from "react-icons/fa";
+import { Browser, DownloadSimple, ArrowRight, Hourglass, AndroidLogo, AppleLogo } from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
@@ -18,7 +17,7 @@ export const Platforms = () => {
       buttonText: t("items.android.button"),
       statusText: t("items.android.status"),
       isDevelopment: false,
-      icon: <FaAndroid className="w-8 h-8" />,
+       icon: <AndroidLogo className="w-8 h-8" weight="fill" />,
       buttonIcon: <DownloadSimple className="w-6 h-6" weight="bold" />,
       spotlightColor: "rgba(16, 185, 129, 0.15)",
       colorPrimary: "rgba(16, 185, 129, 0.12)",
@@ -48,7 +47,7 @@ export const Platforms = () => {
       buttonText: t("items.ios.button"),
       statusText: t("items.ios.status"),
       isDevelopment: true,
-      icon: <FaApple className="w-8 h-8" />,
+       icon: <AppleLogo className="w-8 h-8" weight="fill" />,
       buttonIcon: <Hourglass className="w-6 h-6 animate-pulse" weight="bold" />,
       spotlightColor: "rgba(161, 161, 170, 0.15)",
       colorPrimary: "rgba(161, 161, 170, 0.12)",

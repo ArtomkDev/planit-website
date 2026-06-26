@@ -11,7 +11,8 @@
     "title2": "PlanIt",
     "description": "A straightforward schedule and task manager. Built to help you organize lessons, track breaks, and manage daily tasks without unnecessary complexity.",
     "ctaPrimary": "Open Web App",
-    "ctaSecondary": "View Source Code"
+    "ctaSecondary": "View Source Code",
+    "scrollLabel": "Scroll"
   },
   "Features": {
     "badge": "Capabilities",

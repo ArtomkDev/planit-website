@@ -3,15 +3,10 @@
 import { useTheme } from "@/components/providers/ThemeProvider";
 import { Moon, Sun } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState<boolean>(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = typeof window !== "undefined";
 
   return (
     <motion.button
