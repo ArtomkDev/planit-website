@@ -15,8 +15,8 @@ export const ScrollReveal = ({ children, className }: ScrollRevealProps) => {
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-50px 0px -50px 0px", amount: 0.1 }}
-      className={`will-change-[opacity,transform] ${className || ""}`}
+      viewport={{ once: true, margin: "50px 0px", amount: 0.1 }} 
+      className={className || ""}
     >
       {children}
     </motion.div>

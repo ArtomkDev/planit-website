@@ -24,7 +24,7 @@ export const Platforms = () => {
       colorPrimary: "rgba(16, 185, 129, 0.12)",
       colorSecondary: "rgba(52, 211, 153, 0.12)",
       buttonBgColor: "bg-emerald-500",
-      buttonHoverColor: "hover:bg-emerald-600 hover:shadow-[0_0_40px_-10px_rgba(16,185,129,0.5)]",
+      buttonHoverColor: "hover:ring-4 hover:ring-emerald-500/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(16,185,129,0.8)]",
       iconColor: "text-emerald-500",
     },
     {
@@ -39,7 +39,7 @@ export const Platforms = () => {
       colorPrimary: "rgba(139, 92, 246, 0.12)",
       colorSecondary: "rgba(167, 139, 250, 0.12)",
       buttonBgColor: "bg-violet-500",
-      buttonHoverColor: "hover:bg-violet-600 hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.5)]",
+      buttonHoverColor: "hover:ring-4 hover:ring-violet-500/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(139,92,246,0.8)]",
       iconColor: "text-violet-500",
     },
     {
@@ -74,7 +74,7 @@ export const Platforms = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "50px" }}
         className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 perspective-1000"
       >
         {platformsData.map((item, idx) => (
@@ -111,20 +111,31 @@ export const Platforms = () => {
               {item.description}
             </p>
 
-            <div className="mt-auto pointer-events-auto">
-              <motion.button
-                whileHover={item.isDevelopment ? {} : { scale: 1.05 }}
-                whileTap={item.isDevelopment ? {} : { scale: 0.95 }}
+            <div 
+              className="mt-auto pointer-events-auto relative z-50 transform-gpu"
+              style={{ transform: "translateZ(30px)" }}
+            >
+              <button
                 disabled={item.isDevelopment}
-                className={`w-full flex items-center justify-center gap-3 px-8 py-5 rounded-2xl font-bold text-white transition-all shadow-xl ${
+                className={`group/btn relative w-full flex items-center justify-center px-8 py-5 rounded-2xl font-bold text-white transition-all duration-300 ease-out shadow-xl transform-gpu will-change-transform ${
                   item.isDevelopment
                     ? "bg-zinc-200/40 dark:bg-zinc-800/40 text-zinc-400 dark:text-zinc-500 cursor-not-allowed shadow-none border border-zinc-300/40 dark:border-zinc-700/40"
-                    : `${item.buttonBgColor} ${item.buttonHoverColor}`
+                    : `${item.buttonBgColor} ${item.buttonHoverColor} hover:-translate-y-1 hover:scale-[1.03] active:scale-[0.97] active:translate-y-0`
                 }`}
               >
-                {item.buttonIcon}
-                {item.buttonText}
-              </motion.button>
+                {!item.isDevelopment && (
+                  <span className="absolute -inset-5 z-[-1] block rounded-3xl pointer-events-auto cursor-pointer" />
+                )}
+
+                {!item.isDevelopment && (
+                  <span className="absolute inset-0 w-full h-full rounded-2xl bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 pointer-events-none z-0" />
+                )}
+                
+                <span className="relative z-10 flex items-center justify-center gap-3">
+                  {item.buttonIcon}
+                  {item.buttonText}
+                </span>
+              </button>
             </div>
           </BentoCard>
         ))}

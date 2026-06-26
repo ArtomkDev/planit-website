@@ -1,11 +1,75 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Lightning, ShieldCheck, ArrowsMerge, Code } from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
+import { useEffect, useRef } from "react";
+
+const InteractiveGridPattern = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const mouseX = useMotionValue(0.5);
+  const mouseY = useMotionValue(0.5);
+  const isHovered = useMotionValue(0);
+
+  const smoothX = useSpring(mouseX, { stiffness: 50, damping: 25 });
+  const smoothY = useSpring(mouseY, { stiffness: 50, damping: 25 });
+  const smoothHover = useSpring(isHovered, { stiffness: 50, damping: 25 });
+
+  const x = useTransform(smoothX, [0, 1], ["-10%", "10%"]);
+  const y = useTransform(smoothY, [0, 1], ["-10%", "10%"]);
+  const scale = useTransform(smoothHover, [0, 1], [1, 1.25]);
+
+  useEffect(() => {
+    const cardElement = ref.current?.closest(".group\\/card");
+    if (!cardElement) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = cardElement.getBoundingClientRect();
+      mouseX.set((e.clientX - rect.left) / rect.width);
+      mouseY.set((e.clientY - rect.top) / rect.height);
+    };
+
+    const handleMouseEnter = () => {
+      isHovered.set(1);
+    };
+
+    const handleMouseLeave = () => {
+      isHovered.set(0);
+      mouseX.set(0.5);
+      mouseY.set(0.5);
+    };
+
+    cardElement.addEventListener("mousemove", handleMouseMove as EventListener);
+    cardElement.addEventListener("mouseenter", handleMouseEnter);
+    cardElement.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      cardElement.removeEventListener("mousemove", handleMouseMove as EventListener);
+      cardElement.removeEventListener("mouseenter", handleMouseEnter);
+      cardElement.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [mouseX, mouseY, isHovered]);
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{ x, y, scale }}
+      className="absolute inset-0 w-full h-full transform-gpu origin-center"
+    >
+      <svg className="absolute -inset-[20%] w-[140%] h-[140%]" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="interactive-grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M0 40V0h40" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-zinc-400 dark:text-zinc-600/80" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#interactive-grid-pattern)" />
+      </svg>
+    </motion.div>
+  );
+};
 
 export const Features = () => {
   const t = useTranslations("Features");
@@ -33,17 +97,6 @@ export const Features = () => {
     },
   ];
 
-  const gridPattern = (
-    <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="grid-pattern" width="32" height="32" patternUnits="userSpaceOnUse">
-          <path d="M0 32V0h32" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-zinc-400 dark:text-zinc-600/80" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#grid-pattern)" />
-    </svg>
-  );
-
   return (
     <section className="relative w-full max-w-7xl mx-auto px-6 py-24 md:py-32 z-20">
       <ScrollReveal className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
@@ -68,7 +121,7 @@ export const Features = () => {
         {featureItems.map((item, idx) => (
           <BentoCard
             key={idx}
-            pattern={gridPattern}
+            pattern={<InteractiveGridPattern />}
             colorPrimary="rgba(99, 102, 241, 0.12)"
             colorSecondary="rgba(168, 85, 247, 0.12)"
             spotlightColor="rgba(99, 102, 241, 0.15)"

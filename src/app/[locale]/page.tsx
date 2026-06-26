@@ -1,4 +1,5 @@
 import { Hero } from "@/components/ui/Hero";
+import { InfiniteRibbon } from "@/components/ui/InfiniteRibbon";
 import { Features } from "@/components/ui/Features";
 import { AppShowcase } from "@/components/ui/AppShowcase";
 import { Platforms } from "@/components/ui/Platforms";
@@ -7,8 +8,9 @@ import { CallToAction } from "@/components/ui/CallToAction";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col overflow-hidden">
       <Hero />
+      <InfiniteRibbon />
       <Features />
       <AppShowcase />
       <Platforms />
