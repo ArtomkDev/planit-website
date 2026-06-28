@@ -1,5 +1,6 @@
 "use client";
 
+<<<<<<< HEAD
 import { motion } from "framer-motion";
 import { RocketLaunch, ArrowRight, ArrowDown } from "@phosphor-icons/react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
@@ -294,11 +295,14 @@ const Background3D = () => {
     </div>
   );
 };
+=======
+import { Hero3D } from "./hero/Hero3D";
+import { HeroContent } from "./hero/HeroContent";
+>>>>>>> 3d0cbb26b2a3fdc5f370e1d161703e64d6da30f6
 
 export function Hero() {
-  const t = useTranslations("Hero");
-
   return (
+<<<<<<< HEAD
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-[#09090b] transition-colors duration-500">
       <Background3D />
       
@@ -414,6 +418,11 @@ export function Hero() {
           </motion.div>
         </motion.div>
       </motion.div>
+=======
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-950 dark:bg-[#050505]">
+      <Hero3D />
+      <HeroContent />
+>>>>>>> 3d0cbb26b2a3fdc5f370e1d161703e64d6da30f6
     </section>
   );
 }
