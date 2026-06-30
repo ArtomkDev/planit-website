@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
-export const HowItWorks = () => {
+export function HowItWorks() {
   const t = useTranslations("HowItWorks");
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -17,13 +17,13 @@ export const HowItWorks = () => {
   const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   const steps = [
-    { num: "01", title: t("steps.step1.title"), desc: t("steps.step1.description") },
-    { num: "02", title: t("steps.step2.title"), desc: t("steps.step2.description") },
-    { num: "03", title: t("steps.step3.title"), desc: t("steps.step3.description") },
+    { number: "01", title: t("steps.step1.title"), description: t("steps.step1.description") },
+    { number: "02", title: t("steps.step2.title"), description: t("steps.step2.description") },
+    { number: "03", title: t("steps.step3.title"), description: t("steps.step3.description") },
   ];
 
   return (
-    <section className="relative w-full max-w-4xl mx-auto px-6 py-24 md:py-32 z-20">
+    <section id="workflow" className="relative z-20 mx-auto w-full max-w-4xl px-6 py-24 md:py-32">
       <ScrollReveal className="text-center mb-20">
         <span className="text-sm font-bold tracking-widest text-cyan-500 uppercase mb-4 block">
           {t("badge")}
@@ -41,11 +41,11 @@ export const HowItWorks = () => {
           />
         </div>
 
-        {steps.map((step, idx) => {
-          const isEven = idx % 2 === 0;
+        {steps.map((step, index) => {
+          const isEven = index % 2 === 0;
           return (
             <ScrollReveal
-              key={idx}
+              key={step.number}
               className={`relative flex flex-col md:flex-row items-start md:items-center w-full ${
                 isEven ? "md:flex-row-reverse" : ""
               }`}
@@ -60,7 +60,7 @@ export const HowItWorks = () => {
                   viewport={{ once: true, margin: "-150px" }}
                   transition={{ delay: 0.2, duration: 0.5 }}
                 />
-                {step.num}
+                {step.number}
               </div>
 
               <div
@@ -73,7 +73,7 @@ export const HowItWorks = () => {
                     {step.title}
                   </h3>
                   <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed text-lg">
-                    {step.desc}
+                    {step.description}
                   </p>
                 </div>
               </div>
@@ -83,4 +83,4 @@ export const HowItWorks = () => {
       </div>
     </section>
   );
-};
+}

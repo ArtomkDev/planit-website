@@ -1,13 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { RocketLaunch, ArrowRight, ArrowDown } from "@phosphor-icons/react";
+import { RocketLaunch } from "@phosphor-icons/react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRef, useMemo, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import * as THREE from "three";
 
 const PARTICLE_COUNT = 14000;
+const IDLE_MOUSE_ACTIVITY = 0.05;
+const SETTLED_MOUSE_ACTIVITY = 0.01;
+
+function createSeededRandom(seed: number) {
+  let state = seed >>> 0;
+
+  return () => {
+    state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
 
 const vertexShader = `
   uniform float uTime;
@@ -89,7 +100,11 @@ const fragmentShader = `
   }
 `;
 
-function Particles() {
+interface ParticlesProps {
+  enterProgressRef: { current: number };
+}
+
+function Particles({ enterProgressRef }: ParticlesProps) {
   const { gl } = useThree();
   const meshRef = useRef<THREE.InstancedMesh>(null!);
   const groupRef = useRef<THREE.Group>(null!);
@@ -99,6 +114,7 @@ function Particles() {
   const targetMouse3D = useRef(new THREE.Vector3(0, 0, 0));
   const globalMouse = useRef(new THREE.Vector2(0, 0));
   const isMouseActive = useRef(false);
+  const wasMouseActive = useRef(false);
 
   const raycaster = useMemo(() => new THREE.Raycaster(), []);
   const interactionPlane = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 0, 1), 0), []);
@@ -107,7 +123,8 @@ function Particles() {
   const geometry = useMemo(() => {
     const geo = new THREE.CircleGeometry(0.5, 8);
     const randoms = new Float32Array(PARTICLE_COUNT * 3);
-    for (let i = 0; i < PARTICLE_COUNT * 3; i++) randoms[i] = (Math.random() - 0.5) * 600.0;
+    const random = createSeededRandom(0x504c414e);
+    for (let i = 0; i < PARTICLE_COUNT * 3; i++) randoms[i] = (random() - 0.5) * 600.0;
     geo.setAttribute("aRandom", new THREE.InstancedBufferAttribute(randoms, 3));
     return geo;
   }, []);
@@ -121,32 +138,59 @@ function Particles() {
   }), []);
 
   useEffect(() => {
-    const updateMouse = (e: MouseEvent | null, active: boolean) => {
-      isMouseActive.current = active;
-      if (e) {
-        const rect = gl.domElement.getBoundingClientRect();
-        globalMouse.current.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-        globalMouse.current.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+    const canvas = gl.domElement;
+
+    const updateMouse = (event: PointerEvent) => {
+      if (event.pointerType === "touch") {
+        isMouseActive.current = false;
+        return;
       }
+
+      const rect = canvas.getBoundingClientRect();
+      const inside =
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom;
+
+      isMouseActive.current = inside;
+      if (!inside || rect.width <= 0 || rect.height <= 0) return;
+
+      globalMouse.current.set(
+        ((event.clientX - rect.left) / rect.width) * 2 - 1,
+        -((event.clientY - rect.top) / rect.height) * 2 + 1,
+      );
     };
 
-    window.addEventListener("mousemove", (e) => updateMouse(e, true));
-    window.addEventListener("mouseout", () => updateMouse(null, false));
-    window.addEventListener("mouseover", () => updateMouse(null, true));
+    const deactivateMouse = () => {
+      isMouseActive.current = false;
+    };
+
+    const handlePointerOut = (event: PointerEvent) => {
+      if (event.relatedTarget === null) deactivateMouse();
+    };
+
+    window.addEventListener("pointermove", updateMouse, { passive: true });
+    window.addEventListener("pointerout", handlePointerOut);
+    window.addEventListener("blur", deactivateMouse);
+    window.addEventListener("scroll", deactivateMouse, { passive: true });
     
     return () => {
-        window.removeEventListener("mousemove", (e) => updateMouse(e, true));
-        window.removeEventListener("mouseout", () => updateMouse(null, false));
-        window.removeEventListener("mouseover", () => updateMouse(null, true));
+      window.removeEventListener("pointermove", updateMouse);
+      window.removeEventListener("pointerout", handlePointerOut);
+      window.removeEventListener("blur", deactivateMouse);
+      window.removeEventListener("scroll", deactivateMouse);
     };
   }, [gl]);
 
   useEffect(() => {
     const dummy = new THREE.Object3D();
     const mesh = meshRef.current;
+    const random = createSeededRandom(0x4845524f);
+
     for (let i = 0; i < PARTICLE_COUNT; i++) {
-      const radius = Math.sqrt(Math.random()) * 70 + 35;
-      const theta = Math.random() * Math.PI * 2;
+      const radius = Math.sqrt(random()) * 70 + 35;
+      const theta = random() * Math.PI * 2;
       dummy.position.set(radius * Math.cos(theta), radius * Math.sin(theta), 0);
       dummy.updateMatrix();
       mesh.setMatrixAt(i, dummy.matrix);
@@ -156,20 +200,61 @@ function Particles() {
 
   useFrame((state, delta) => {
     const group = groupRef.current;
-    if (!group) return;
+    const material = materialRef.current;
+    if (!group || !material) return;
+    const interactionWasSettled =
+      material.uniforms.uMouseActive.value < SETTLED_MOUSE_ACTIVITY;
 
-    materialRef.current.uniforms.uEnter.value = THREE.MathUtils.lerp(materialRef.current.uniforms.uEnter.value, 1.01, delta * 1.2);
-    materialRef.current.uniforms.uTheme.value = THREE.MathUtils.lerp(materialRef.current.uniforms.uTheme.value, document.documentElement.classList.contains("dark") ? 0.0 : 1.0, delta * 5.0);
-    materialRef.current.uniforms.uMouseActive.value = THREE.MathUtils.lerp(materialRef.current.uniforms.uMouseActive.value, isMouseActive.current ? 1.0 : 0.0, delta * 8.0);
+    enterProgressRef.current = THREE.MathUtils.damp(
+      enterProgressRef.current,
+      1,
+      1.2,
+      delta,
+    );
+    if (enterProgressRef.current > 0.9995) enterProgressRef.current = 1;
+    material.uniforms.uEnter.value = enterProgressRef.current;
+    material.uniforms.uTheme.value = THREE.MathUtils.damp(
+      material.uniforms.uTheme.value,
+      document.documentElement.classList.contains("dark") ? 0 : 1,
+      5,
+      delta,
+    );
+    material.uniforms.uMouseActive.value = THREE.MathUtils.damp(
+      material.uniforms.uMouseActive.value,
+      isMouseActive.current ? 1 : IDLE_MOUSE_ACTIVITY,
+      isMouseActive.current ? 8 : 2,
+      delta,
+    );
 
-    raycaster.setFromCamera(globalMouse.current, state.camera);
-    if (raycaster.ray.intersectPlane(interactionPlane, intersectionTarget)) {
-      mouse3D.current.lerp(intersectionTarget, 0.15);
+    if (isMouseActive.current) {
+      raycaster.setFromCamera(globalMouse.current, state.camera);
+      if (raycaster.ray.intersectPlane(interactionPlane, intersectionTarget)) {
+        targetMouse3D.current.copy(intersectionTarget);
+        if (
+          !wasMouseActive.current &&
+          interactionWasSettled
+        ) {
+          mouse3D.current.copy(targetMouse3D.current);
+        }
+      }
+    } else {
+      const idleTime = state.clock.elapsedTime;
+      targetMouse3D.current.set(
+        Math.sin(idleTime * 0.18) * 34,
+        Math.sin(idleTime * 0.13 + 1.1) * 24,
+        0,
+      );
     }
 
+    mouse3D.current.lerp(
+      targetMouse3D.current,
+      1 - Math.exp(-delta * (isMouseActive.current ? 9.5 : 0.8)),
+    );
+
     group.rotation.z -= delta * 0.02;
-    materialRef.current.uniforms.uTime.value = state.clock.elapsedTime;
-    materialRef.current.uniforms.uMouse3D.value.copy(mouse3D.current);
+    material.uniforms.uTime.value = state.clock.elapsedTime;
+    material.uniforms.uMouse3D.value.copy(mouse3D.current);
+    wasMouseActive.current = isMouseActive.current;
   });
 
   return (
@@ -190,12 +275,13 @@ function Particles() {
 
 export function Hero() {
   const t = useTranslations("Hero");
+  const enterProgressRef = useRef(0);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 150], fov: 50 }}>
-          <Particles />
+          <Particles enterProgressRef={enterProgressRef} />
         </Canvas>
       </div>
       

@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 
-export const AppShowcase = () => {
+export function AppShowcase() {
   const t = useTranslations("AppShowcase");
 
   const items = [
@@ -67,17 +67,17 @@ export const AppShowcase = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px] perspective-1000"
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <BentoCard
-            key={idx}
+            key={item.title}
             className={item.className}
             colorPrimary={item.colorPrimary}
             colorSecondary={item.colorSecondary}
             spotlightColor={item.spotlightColor}
             contentClassName="pointer-events-none"
           >
-            <div 
-              style={{ transform: "translateZ(40px)", transformStyle: "preserve-3d" }} 
+            <div
+              style={{ transform: "translateZ(40px)", transformStyle: "preserve-3d" }}
               className="mb-8"
             >
               <ProximityBlock
@@ -87,16 +87,16 @@ export const AppShowcase = () => {
                 {item.icon}
               </ProximityBlock>
             </div>
-            
-            <h3 
-              style={{ transform: "translateZ(20px)" }} 
+
+            <h3
+              style={{ transform: "translateZ(20px)" }}
               className="text-2xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight transition-colors duration-500"
             >
               {item.title}
             </h3>
-            
-            <p 
-              style={{ transform: "translateZ(10px)" }} 
+
+            <p
+              style={{ transform: "translateZ(10px)" }}
               className="text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed max-w-md transition-colors duration-500"
             >
               {item.description}
@@ -106,4 +106,4 @@ export const AppShowcase = () => {
       </motion.div>
     </section>
   );
-};
+}

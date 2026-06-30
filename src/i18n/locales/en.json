@@ -2,138 +2,194 @@
   "Navigation": {
     "home": "Home",
     "features": "Features",
+    "platforms": "Platforms",
+    "workflow": "How it works",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "delete": "Account Deletion",
+    "openApp": "Open Web App",
+    "language": "UK",
+    "theme": "Toggle theme"
   },
   "Hero": {
-    "badge": "PlanIt Application",
-    "title1": "Manage your schedule with",
-    "title2": "PlanIt",
-    "description": "A straightforward schedule and task manager. Built to help you organize lessons, track breaks, and manage daily tasks without unnecessary complexity.",
+    "badge": "Class schedules without the clutter",
+    "title1": "Your class schedule",
+    "title2": "always at hand",
+    "description": "PlanIt helps you build multi-week class schedules, configure breaks and lesson details, work locally, or synchronize data after signing in.",
     "ctaPrimary": "Open Web App",
-    "ctaSecondary": "View Source Code",
-    "scrollLabel": "Scroll"
+    "ctaSecondary": "View Source",
+    "scrollLabel": "Features",
+    "preview": {
+      "eyebrow": "Today",
+      "title": "Daily Schedule",
+      "status": "Saved locally",
+      "metricLabel": "Lesson duration",
+      "metricValue": "45 min",
+      "metricCaption": "breaks are configured separately",
+      "items": {
+        "focus": {
+          "time": "09:00",
+          "title": "Mathematics · room 204"
+        },
+        "break": {
+          "time": "09:45",
+          "title": "Break · 10 min"
+        },
+        "sync": {
+          "time": "09:55",
+          "title": "Computer science · lab"
+        }
+      }
+    }
   },
   "Features": {
-    "badge": "Capabilities",
-    "title": "Core Functionality",
-    "description": "Practical tools for everyday planning, focused on stability and ease of use.",
+    "badge": "Verified in the code",
+    "title": "Only what PlanIt already does",
+    "description": "Features confirmed by the current code: local schedules, cloud sync, explicit conflict control, and a public repository.",
     "items": {
       "speed": {
-        "title": "Offline Mode",
-        "description": "The application works without an internet connection. Your schedule is cached locally on your device."
+        "title": "Local operation",
+        "description": "Guest mode needs no account: the schedule is stored on the device and can be opened without signing in."
       },
       "security": {
-        "title": "Local Storage",
-        "description": "All data is stored locally by default. Account creation is completely optional."
+        "title": "On-device data",
+        "description": "PlanIt loads its local copy first. Signed-in users retain that copy while working without a network connection."
       },
       "sync": {
-        "title": "Optional Sync",
-        "description": "Sign in with Google to synchronize your schedule and settings across multiple devices."
+        "title": "Cloud synchronization",
+        "description": "After email, Google, or Apple sign-in, schedules synchronize through Firebase across connected devices."
       },
       "analytics": {
-        "title": "Open Source",
-        "description": "The project is open-source. You can review the code on GitHub and host it yourself."
+        "title": "Public source code",
+        "description": "The application source is available to inspect in a public GitHub repository."
       }
     }
   },
   "AppShowcase": {
-    "badge": "Tools",
-    "title": "System Features",
+    "badge": "Real tools",
+    "title": "Details that are actually in the app",
     "items": {
       "customization": {
-        "title": "Visual Customization",
-        "description": "Assign distinct colors to different subjects for faster visual identification in your calendar."
+        "title": "Flexible lessons",
+        "description": "Subjects support colors, gradients, and icons; lessons support type, building, room, teachers, links, and individual times."
       },
       "sync": {
-        "title": "Conflict Resolution",
-        "description": "When syncing across multiple devices, the application automatically handles schedule conflicts to prevent data loss."
+        "title": "Explicit conflict resolution",
+        "description": "When the same schedule changes locally and in the cloud, PlanIt shows both versions and asks which one to keep."
       },
       "sharing": {
-        "title": "Schedule Sharing",
-        "description": "Generate a unique access link to share your complete schedule with classmates or colleagues."
+        "title": "Temporary share codes",
+        "description": "A signed-in user can create a code lasting 1, 3, 7, or 30 days, and the recipient can preview and import a schedule copy."
       },
       "widgets": {
-        "title": "System Widgets",
-        "description": "Native home screen widgets for Android and iOS devices to view your upcoming lessons instantly."
+        "title": "Android widget",
+        "description": "The Android widget shows lessons and breaks and lets you move through adjacent schedule days."
       }
     }
   },
   "Platforms": {
-    "badge": "Availability",
-    "title": "PlanIt on your devices",
+    "badge": "Platforms",
+    "title": "A clear status for every version",
     "items": {
       "ios": {
-        "title": "iOS / iPhone",
-        "description": "Full support for native widgets, lock screen complications, and real-time schedule updates.",
-        "button": "In Development",
-        "status": "In Development"
+        "title": "iOS",
+        "description": "The project includes iOS configuration, but a public iOS build and an iOS widget have not been released.",
+        "button": "In development",
+        "status": "In development"
       },
       "android": {
         "title": "Android",
-        "description": "Optimized performance, Material You design, and native home screen widgets.",
-        "button": "Get it on Google Play",
-        "status": "Available"
+        "description": "The primary native build, with guest mode, synchronization, and a home-screen widget.",
+        "button": "View Source",
+        "status": "Supported"
       },
       "web": {
-        "title": "Web Application",
-        "description": "Instant access from any desktop or mobile browser. No installation required.",
-        "button": "Launch Web App",
-        "status": "Available"
+        "title": "Web App",
+        "description": "The current PlanIt web build runs in a browser and uses the same schedule and synchronization model.",
+        "button": "Open Web App",
+        "status": "Online"
       }
     }
   },
   "HowItWorks": {
-    "badge": "Usage",
-    "title": "Getting Started",
+    "badge": "How it works",
+    "title": "From a blank screen to a complete schedule",
     "steps": {
       "step1": {
-        "title": "Create a Schedule",
-        "description": "Add your lessons, configure the time slots, and assign colors to each subject."
+        "title": "Configure the structure",
+        "description": "Set a name, cycle length, starting date, first lesson time, lesson duration, and break lengths."
       },
       "step2": {
-        "title": "Share (Optional)",
-        "description": "Send your configured schedule to other users using a direct import link."
+        "title": "Add lessons",
+        "description": "Choose subjects and add the details you need: type, location, teachers, links, appearance, and time."
       },
       "step3": {
-        "title": "Sync (Optional)",
-        "description": "Log in with your account to save a backup to the cloud and access it from any device."
+        "title": "Store or synchronize",
+        "description": "Work locally as a guest, or sign in to synchronize schedules and create temporary share codes."
       }
     }
   },
   "CTA": {
-    "title": "Try PlanIt",
-    "description": "Available directly in your browser as a Web App, or as a downloadable mobile application.",
-    "button": "Open Application"
+    "title": "Build your schedule in PlanIt",
+    "description": "Open the current web version without installing anything. Guest mode does not require an account.",
+    "button": "Open Web App"
+  },
+  "Footer": {
+    "product": "Product",
+    "legal": "Legal",
+    "rights": "All rights reserved.",
+    "status": "Application source on GitHub"
   },
   "Privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last Updated: June 2026",
+    "lastUpdated": "Current application policy: April 16, 2026",
     "section1Title": "Data Storage",
-    "section1Content": "PlanIt stores your data locally on your device by default. If you choose to use the cloud synchronization feature, your schedule data is stored securely in our database.",
+    "section1Content": "In guest mode, PlanIt stores the schedule locally on the device. After sign-in, schedules synchronize with Firebase and also retain a local copy.",
     "section2Title": "Authentication",
-    "section2Content": "Authentication is handled via third-party providers (e.g., Google). We do not store or process your passwords."
+    "section2Content": "PlanIt supports email and password, Google Sign-In, and Apple Sign-In on compatible platforms. Authentication data is handled by Firebase Authentication.",
+    "section3Title": "Analytics, diagnostics, and advertising",
+    "section3Content": "Native builds include Firebase Analytics, Firebase Crashlytics, and Google Mobile Ads. The full policy describes device data, advertising identifiers, third-party services, retention, and user rights.",
+    "officialDocument": "Open the application's full privacy policy"
   },
   "Terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last Updated: June 2026",
+    "lastUpdated": "Current application terms: April 16, 2026",
     "section1Title": "Service Usage",
-    "section1Content": "PlanIt is provided 'as is' without warranties of any kind. We reserve the right to modify or discontinue the service at any time.",
-    "section2Title": "Open Source",
-    "section2Content": "The source code is available under an open-source license. Please refer to the repository for specific licensing details."
+    "section1Content": "PlanIt is provided as is, without warranties of any kind. The service or individual features may be changed or discontinued.",
+    "section2Title": "Responsibility for data",
+    "section2Content": "Users are responsible for the legality of information they add to schedules, including teacher contacts, links, and notes. Important data should also be backed up independently.",
+    "section3Title": "Public Source Code",
+    "section3Content": "The PlanIt source is available to inspect in a public GitHub repository. A separate license file is not currently published in that repository.",
+    "officialDocument": "Open the application's full terms of service"
+  },
+  "LegalDocument": {
+    "current": "Current document",
+    "eyebrow": "Official document",
+    "updated": "Effective:",
+    "readTimeLabel": "min read",
+    "sectionsLabel": "sections",
+    "section": "Section",
+    "mobileContents": "Table of contents",
+    "contents": "Contents",
+    "support": "Questions about this document?",
+    "supportAction": "Contact support"
   },
   "SEO": {
     "home": {
-      "title": "PlanIt | Schedule Manager",
-      "description": "A straightforward schedule and task manager for students and teachers."
+      "title": "PlanIt | Class Schedule",
+      "description": "PlanIt is a local and synchronized class schedule with multi-week cycles, breaks, lesson details, sharing, and an Android widget."
     },
     "privacy": {
-      "title": "Privacy Policy | PlanIt",
-      "description": "Privacy policy and data handling guidelines."
+      "title": "Privacy Policy",
+      "description": "How PlanIt stores local schedules, synchronizes data through Firebase, and handles authentication."
     },
     "terms": {
-      "title": "Terms of Service | PlanIt",
-      "description": "Terms of service and usage rules."
+      "title": "Terms of Service",
+      "description": "PlanIt usage terms and accurate information about the application's public source code."
+    },
+    "delete": {
+      "title": "Account Deletion",
+      "description": "How to request deletion of a PlanIt account and the data associated with it."
     }
   }
 }

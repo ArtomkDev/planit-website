@@ -1,0 +1,234 @@
+.grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.36;
+  background-image:
+    linear-gradient(to right, rgb(113 113 122 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(113 113 122 / 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 72%);
+}
+
+.toc {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(161 161 170 / 0.55) transparent;
+}
+
+.toc::-webkit-scrollbar {
+  width: 5px;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgb(161 161 170 / 0.55);
+}
+
+.prose {
+  color: rgb(82 82 91);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.prose p {
+  margin: 0 0 1.25rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose :global([data-legal-clause]) {
+  display: inline-flex;
+  min-width: 2.25rem;
+  margin-right: 0.55rem;
+  color: rgb(99 102 241);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  vertical-align: 0.08em;
+}
+
+.prose strong {
+  color: rgb(24 24 27);
+  font-weight: 800;
+}
+
+.prose h3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 2rem 0 0.8rem;
+  color: rgb(24 24 27);
+  font-size: 1.05rem;
+  font-weight: 850;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+}
+
+.prose h3:first-child {
+  margin-top: 0;
+}
+
+.prose h3::before {
+  content: attr(data-number);
+  flex: 0 0 auto;
+  min-width: 2.4rem;
+  border-radius: 0.65rem;
+  background: rgb(238 242 255);
+  padding: 0.16rem 0.45rem;
+  color: rgb(79 70 229);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.55rem;
+  text-align: center;
+}
+
+.prose ul,
+.prose ol {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.prose li {
+  position: relative;
+  border: 1px solid rgb(228 228 231);
+  border-radius: 0.9rem;
+  background: rgb(250 250 250 / 0.75);
+  padding: 0.85rem 1rem 0.85rem 2.55rem;
+}
+
+.prose li::before {
+  content: "";
+  position: absolute;
+  top: 1.18rem;
+  left: 1.05rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: rgb(99 102 241);
+  box-shadow: 0 0 0 4px rgb(224 231 255);
+}
+
+.prose a {
+  color: rgb(79 70 229);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: rgb(165 180 252);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.prose a:hover {
+  color: rgb(67 56 202);
+  text-decoration-color: currentColor;
+}
+
+.prose :global([data-legal-note]) {
+  border-left: 3px solid rgb(99 102 241);
+  border-radius: 0 0.85rem 0.85rem 0;
+  background: rgb(238 242 255 / 0.7);
+  padding: 1rem 1.15rem;
+  color: rgb(55 48 163);
+}
+
+.prose :global([data-legal-warning]) {
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid rgb(253 164 175 / 0.65);
+  border-radius: 1rem;
+  background: rgb(255 241 242);
+  padding: 1.1rem 1.2rem;
+  color: rgb(159 18 57);
+  box-shadow: 0 14px 45px -30px rgb(225 29 72 / 0.55);
+}
+
+.prose :global([data-legal-action]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, rgb(79 70 229), rgb(124 58 237));
+  padding: 1rem 1.25rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 18px 45px -22px rgb(79 70 229 / 0.8);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.prose :global([data-legal-action]):hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 24px 55px -24px rgb(79 70 229 / 0.9);
+}
+
+:global(.dark) .grid {
+  opacity: 0.24;
+}
+
+:global(.dark) .prose {
+  color: rgb(212 212 216);
+}
+
+:global(.dark) .prose strong,
+:global(.dark) .prose h3 {
+  color: rgb(250 250 250);
+}
+
+:global(.dark) .prose :global([data-legal-clause]) {
+  color: rgb(129 140 248);
+}
+
+:global(.dark) .prose h3::before {
+  background: rgb(49 46 129 / 0.55);
+  color: rgb(199 210 254);
+}
+
+:global(.dark) .prose li {
+  border-color: rgb(63 63 70);
+  background: rgb(9 9 11 / 0.52);
+}
+
+:global(.dark) .prose li::before {
+  background: rgb(129 140 248);
+  box-shadow: 0 0 0 4px rgb(49 46 129 / 0.75);
+}
+
+:global(.dark) .prose a {
+  color: rgb(165 180 252);
+  text-decoration-color: rgb(79 70 229);
+}
+
+:global(.dark) .prose :global([data-legal-note]) {
+  background: rgb(49 46 129 / 0.25);
+  color: rgb(199 210 254);
+}
+
+:global(.dark) .prose :global([data-legal-warning]) {
+  border-color: rgb(136 19 55 / 0.8);
+  background: rgb(76 5 25 / 0.42);
+  color: rgb(254 205 211);
+}
+
+@media (max-width: 640px) {
+  .prose {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .prose h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prose a,
+  .prose :global([data-legal-action]) {
+    transition: none;
+  }
+}

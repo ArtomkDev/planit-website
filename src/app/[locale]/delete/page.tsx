@@ -8,9 +8,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "SEO.privacy" });
+  const t = await getTranslations({ locale, namespace: "SEO.delete" });
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
-  const url = `${baseUrl}/${locale}/privacy`;
+  const url = `${baseUrl}/${locale}/delete`;
 
   return {
     title: t("title"),
@@ -18,8 +18,8 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
       languages: {
-        en: `${baseUrl}/en/privacy`,
-        uk: `${baseUrl}/uk/privacy`,
+        en: `${baseUrl}/en/delete`,
+        uk: `${baseUrl}/uk/delete`,
       },
     },
     openGraph: {
@@ -33,11 +33,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function PrivacyPage({
+export default async function DeleteAccountPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  return <LegalDocument locale={locale} kind="privacy" />;
+  return <LegalDocument locale={locale} kind="delete" />;
 }

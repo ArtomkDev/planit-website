@@ -10,13 +10,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "SEO.home" });
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://planit-app.com";
+  const url = `${baseUrl}/${locale}`;
 
   return {
     metadataBase: new URL(baseUrl),
     title: { template: "%s | PlanIt", default: t("title") },
     description: t("description"),
-    alternates: { languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk` } },
-    openGraph: { title: t("title"), description: t("description"), url: `${baseUrl}/${locale}`, siteName: "PlanIt", locale: locale, type: "website" },
+    alternates: { canonical: url, languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk` } },
+    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale, type: "website" },
     twitter: { card: "summary_large_image", title: t("title"), description: t("description") },
   };
 }

@@ -7,17 +7,22 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 
-export const Platforms = () => {
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
+const SOURCE_URL = "https://github.com/ArtomkDev/PlanIt";
+
+export function Platforms() {
   const t = useTranslations("Platforms");
 
-  const platformsData = [
+  const platforms = [
     {
       title: t("items.android.title"),
       description: t("items.android.description"),
       buttonText: t("items.android.button"),
       statusText: t("items.android.status"),
       isDevelopment: false,
-       icon: <AndroidLogo className="w-8 h-8" weight="fill" />,
+      href: SOURCE_URL,
+      openInNewTab: true,
+      icon: <AndroidLogo className="w-8 h-8" weight="fill" />,
       buttonIcon: <DownloadSimple className="w-6 h-6" weight="bold" />,
       spotlightColor: "rgba(16, 185, 129, 0.15)",
       colorPrimary: "rgba(16, 185, 129, 0.12)",
@@ -32,6 +37,8 @@ export const Platforms = () => {
       buttonText: t("items.web.button"),
       statusText: t("items.web.status"),
       isDevelopment: false,
+      href: APP_URL,
+      openInNewTab: false,
       icon: <Browser className="w-8 h-8" weight="fill" />,
       buttonIcon: <ArrowRight className="w-6 h-6" weight="bold" />,
       spotlightColor: "rgba(139, 92, 246, 0.15)",
@@ -47,7 +54,9 @@ export const Platforms = () => {
       buttonText: t("items.ios.button"),
       statusText: t("items.ios.status"),
       isDevelopment: true,
-       icon: <AppleLogo className="w-8 h-8" weight="fill" />,
+      href: null,
+      openInNewTab: false,
+      icon: <AppleLogo className="w-8 h-8" weight="fill" />,
       buttonIcon: <Hourglass className="w-6 h-6 animate-pulse" weight="bold" />,
       spotlightColor: "rgba(161, 161, 170, 0.15)",
       colorPrimary: "rgba(161, 161, 170, 0.12)",
@@ -59,7 +68,7 @@ export const Platforms = () => {
   ];
 
   return (
-    <section className="relative w-full max-w-7xl mx-auto px-6 py-24 md:py-32 z-20">
+    <section id="platforms" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
       <ScrollReveal className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
         <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
           {t("badge")}
@@ -76,9 +85,9 @@ export const Platforms = () => {
         viewport={{ once: true, margin: "50px" }}
         className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 perspective-1000"
       >
-        {platformsData.map((item, idx) => (
+        {platforms.map((item) => (
           <BentoCard
-            key={idx}
+            key={item.title}
             colorPrimary={item.colorPrimary}
             colorSecondary={item.colorSecondary}
             spotlightColor={item.spotlightColor}
@@ -91,16 +100,18 @@ export const Platforms = () => {
                 {item.icon}
               </ProximityBlock>
 
-              {item.isDevelopment && (
-                <ProximityBlock
-                  color={item.spotlightColor.replace("0.15", "0.8")}
-                  className="px-3.5 py-1.5 rounded-lg bg-gradient-to-b from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-900 border border-zinc-300/50 dark:border-zinc-700/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]"
-                >
-                  <span className="text-[10px] font-black tracking-[0.2em] uppercase text-zinc-500 dark:text-zinc-400">
-                    {item.statusText}
-                  </span>
-                </ProximityBlock>
-              )}
+              <ProximityBlock
+                color={item.spotlightColor.replace("0.15", "0.8")}
+                className={`rounded-lg border px-3.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${
+                  item.isDevelopment
+                    ? "border-zinc-300/50 bg-gradient-to-b from-zinc-100 to-zinc-200 dark:border-zinc-700/50 dark:from-zinc-800 dark:to-zinc-900"
+                    : "border-emerald-300/50 bg-emerald-50 dark:border-emerald-900/60 dark:bg-emerald-950/40"
+                }`}
+              >
+                <span className={`text-[10px] font-black uppercase tracking-[0.2em] ${item.isDevelopment ? "text-zinc-500 dark:text-zinc-400" : "text-emerald-700 dark:text-emerald-300"}`}>
+                  {item.statusText}
+                </span>
+              </ProximityBlock>
             </div>
 
             <h3 className="text-3xl font-black text-zinc-900 dark:text-white mb-4 tracking-tight transition-colors duration-500 pointer-events-none">
@@ -110,35 +121,40 @@ export const Platforms = () => {
               {item.description}
             </p>
 
-            <div 
+            <div
               className="mt-auto pointer-events-auto relative z-50 transform-gpu"
               style={{ transform: "translateZ(30px)" }}
             >
-              <button
-                disabled={item.isDevelopment}
-                className={`group/btn relative w-full flex items-center justify-center px-8 py-5 rounded-2xl font-bold text-white transition-all duration-300 ease-out shadow-xl transform-gpu will-change-transform ${
-                  item.isDevelopment
-                    ? "bg-zinc-200/40 dark:bg-zinc-800/40 text-zinc-400 dark:text-zinc-500 cursor-not-allowed shadow-none border border-zinc-300/40 dark:border-zinc-700/40"
-                    : `${item.buttonBgColor} ${item.buttonHoverColor} hover:-translate-y-1 hover:scale-[1.03] active:scale-[0.97] active:translate-y-0`
-                }`}
-              >
-                {!item.isDevelopment && (
-                  <span className="absolute -inset-5 z-[-1] block rounded-3xl pointer-events-auto cursor-pointer" />
-                )}
-
-                {!item.isDevelopment && (
-                  <span className="absolute inset-0 w-full h-full rounded-2xl bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300 pointer-events-none z-0" />
-                )}
-                
-                <span className="relative z-10 flex items-center justify-center gap-3">
-                  {item.buttonIcon}
-                  {item.buttonText}
-                </span>
-              </button>
+              {item.isDevelopment ? (
+                <button
+                  disabled
+                  className="relative flex w-full cursor-not-allowed items-center justify-center rounded-2xl border border-zinc-300/40 bg-zinc-200/40 px-8 py-5 font-bold text-zinc-400 shadow-none dark:border-zinc-700/40 dark:bg-zinc-800/40 dark:text-zinc-500"
+                >
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    {item.buttonIcon}
+                    {item.buttonText}
+                  </span>
+                </button>
+              ) : (
+                <motion.a
+                  href={item.href ?? undefined}
+                  target={item.openInNewTab ? "_blank" : undefined}
+                  rel={item.openInNewTab ? "noopener noreferrer" : undefined}
+                  whileHover={{ y: -4, scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className={`group/btn relative flex w-full items-center justify-center rounded-2xl px-8 py-5 font-bold text-white shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonHoverColor}`}
+                >
+                  <span className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100" />
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    {item.buttonIcon}
+                    {item.buttonText}
+                  </span>
+                </motion.a>
+              )}
             </div>
           </BentoCard>
         ))}
       </motion.div>
     </section>
   );
-};
+}

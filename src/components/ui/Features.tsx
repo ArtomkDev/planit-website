@@ -8,8 +8,8 @@ import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { useEffect, useRef } from "react";
 
-const InteractiveGridPattern = () => {
-  const ref = useRef<HTMLDivElement>(null);
+function InteractiveGridPattern() {
+  const gridRef = useRef<HTMLDivElement>(null);
   const mouseX = useMotionValue(0.5);
   const mouseY = useMotionValue(0.5);
   const isHovered = useMotionValue(0);
@@ -23,13 +23,13 @@ const InteractiveGridPattern = () => {
   const scale = useTransform(smoothHover, [0, 1], [1, 1.25]);
 
   useEffect(() => {
-    const cardElement = ref.current?.closest(".group\\/card");
+    const cardElement = gridRef.current?.closest(".group\\/card");
     if (!cardElement) return;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = cardElement.getBoundingClientRect();
-      mouseX.set((e.clientX - rect.left) / rect.width);
-      mouseY.set((e.clientY - rect.top) / rect.height);
+    const handleMouseMove = (event: MouseEvent) => {
+      const bounds = cardElement.getBoundingClientRect();
+      mouseX.set((event.clientX - bounds.left) / bounds.width);
+      mouseY.set((event.clientY - bounds.top) / bounds.height);
     };
 
     const handleMouseEnter = () => {
@@ -55,7 +55,7 @@ const InteractiveGridPattern = () => {
 
   return (
     <motion.div
-      ref={ref}
+      ref={gridRef}
       style={{ x, y, scale }}
       className="absolute inset-0 w-full h-full transform-gpu origin-center"
     >
@@ -69,9 +69,9 @@ const InteractiveGridPattern = () => {
       </svg>
     </motion.div>
   );
-};
+}
 
-export const Features = () => {
+export function Features() {
   const t = useTranslations("Features");
 
   const featureItems = [
@@ -98,7 +98,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="relative w-full max-w-7xl mx-auto px-6 py-24 md:py-32 z-20">
+    <section id="features" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
       <ScrollReveal className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
         <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
           {t("badge")}
@@ -118,9 +118,9 @@ export const Features = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 perspective-1000"
       >
-        {featureItems.map((item, idx) => (
+        {featureItems.map((item) => (
           <BentoCard
-            key={idx}
+            key={item.title}
             pattern={<InteractiveGridPattern />}
             colorPrimary="rgba(99, 102, 241, 0.12)"
             colorSecondary="rgba(168, 85, 247, 0.12)"
@@ -144,4 +144,4 @@ export const Features = () => {
       </motion.div>
     </section>
   );
-};
+}

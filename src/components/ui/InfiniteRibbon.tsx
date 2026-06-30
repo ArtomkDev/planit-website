@@ -3,13 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
-import { 
-  Lightning, 
-  ShieldCheck, 
-  ArrowsMerge, 
-  Code, 
-  Star 
-} from "@phosphor-icons/react";
+import { Lightning, ShieldCheck, ArrowsMerge, Code, Star } from "@phosphor-icons/react";
 import { cn } from "@/lib/utils/classNames";
 
 export interface InfiniteRibbonItem {
@@ -23,7 +17,7 @@ export interface InfiniteRibbonProps {
   speed?: number;
 }
 
-export const InfiniteRibbon = ({ className, speed = 35 }: InfiniteRibbonProps) => {
+export function InfiniteRibbon({ className, speed = 35 }: InfiniteRibbonProps) {
   const t = useTranslations("Features");
 
   const items: InfiniteRibbonItem[] = [
@@ -69,9 +63,9 @@ export const InfiniteRibbon = ({ className, speed = 35 }: InfiniteRibbonProps) =
           duration: speed,
         }}
       >
-        {duplicatedItems.map((item, idx) => (
+        {duplicatedItems.map((item, index) => (
           <div
-            key={`${item.id}-${idx}`}
+            key={`${item.id}-${index}`}
             className="flex items-center gap-4 px-8 md:px-16 group cursor-default"
           >
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800/50 shadow-sm group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-500 ease-[0.22,1,0.36,1]">
@@ -88,4 +82,4 @@ export const InfiniteRibbon = ({ className, speed = 35 }: InfiniteRibbonProps) =
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white dark:from-[#09090b] to-transparent z-30 pointer-events-none" />
     </section>
   );
-};
+}

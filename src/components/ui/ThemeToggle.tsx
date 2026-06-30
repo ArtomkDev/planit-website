@@ -3,10 +3,17 @@
 import { useTheme } from "@/components/providers/ThemeProvider";
 import { Moon, Sun } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { useSyncExternalStore } from "react";
+
+const subscribe = () => () => {};
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
-  const mounted = typeof window !== "undefined";
+  const t = useTranslations("Navigation");
+  const mounted = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot);
 
   return (
     <motion.button
@@ -14,7 +21,7 @@ export const ThemeToggle = () => {
       whileTap={{ scale: 0.95 }}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-200/50 dark:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 backdrop-blur-md border border-zinc-300/50 dark:border-zinc-700/50 hover:bg-zinc-300/50 dark:hover:bg-zinc-700/50 outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 will-change-transform"
-      aria-label="Toggle theme"
+      aria-label={t("theme")}
     >
       <motion.div
         initial={false}

@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://planit-app.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/privacy", "/terms"];
+  const routes = ["", "/privacy", "/terms", "/delete"];
 
   return routes.map((route) => ({
     url: `${baseUrl}/uk${route}`,
