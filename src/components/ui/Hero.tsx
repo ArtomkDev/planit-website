@@ -1,11 +1,13 @@
+// components/ui/Hero.tsx
 "use client";
 
 import { motion } from "framer-motion";
-import { RocketLaunch } from "@phosphor-icons/react";
+import { ArrowRight, GithubLogo, RocketLaunch } from "@phosphor-icons/react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRef, useMemo, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import * as THREE from "three";
+import { FloatingSchedule } from "@/components/ui/FloatingSchedule";
 
 const PARTICLE_COUNT = 14000;
 const IDLE_MOUSE_ACTIVITY = 0.05;
@@ -13,7 +15,6 @@ const SETTLED_MOUSE_ACTIVITY = 0.01;
 
 function createSeededRandom(seed: number) {
   let state = seed >>> 0;
-
   return () => {
     state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
     return state / 4294967296;
@@ -25,16 +26,12 @@ const vertexShader = `
   uniform vec3 uMouse3D;
   uniform float uEnter;
   uniform float uMouseActive;
-  
   attribute vec3 aRandom;
-
   varying vec3 vWorldPosition;
   varying float vHighlight;
   varying vec2 vUv;
-
   void main() {
     vUv = uv;
-
     vec3 basePos = (instanceMatrix * vec4(0.0, 0.0, 0.0, 1.0)).xyz;
     float radius = length(basePos.xy);
     float angle = atan(basePos.y, basePos.x);
@@ -44,10 +41,8 @@ const vertexShader = `
     
     vec3 targetPos = basePos;
     targetPos.z += wave;
-
     float easeEnter = 1.0 - pow(1.0 - clamp(uEnter, 0.0, 1.0), 3.0);
     vec3 currentPos = mix(aRandom * 200.0, targetPos, easeEnter);
-
     vec3 dirToMouse = currentPos - uMouse3D;
     float distToMouse = length(dirToMouse);
     float influence = smoothstep(45.0, 5.0, distToMouse) * uMouseActive * hole;
@@ -56,7 +51,6 @@ const vertexShader = `
       currentPos += normalize(dirToMouse) * influence * 12.0;
       currentPos.z += influence * 15.0;
     }
-
     vWorldPosition = currentPos;
     vHighlight = influence;
     
@@ -71,10 +65,8 @@ const fragmentShader = `
   varying vec3 vWorldPosition;
   varying float vHighlight;
   varying vec2 vUv;
-  
   uniform float uTime;
   uniform float uTheme;
-
   void main() {
     float distToCenter = length(vUv - 0.5);
     if (distToCenter > 0.4) discard;
@@ -83,7 +75,6 @@ const fragmentShader = `
     
     float radius = length(vWorldPosition.xy);
     float t = clamp((radius - 30.0) / 90.0, 0.0, 1.0);
-
     vec3 c1 = vec3(0.957, 0.257, 0.641);
     vec3 c2 = vec3(0.243, 0.969, 0.824);
     vec3 c3 = vec3(0.388, 0.396, 0.945);
@@ -95,7 +86,6 @@ const fragmentShader = `
     vec3 glow = mix(vec3(1.0), vec3(0.0), uTheme);
     
     vec3 finalColor = mix(themeBase, glow, vHighlight * 0.8);
-
     gl_FragColor = vec4(finalColor, alpha * (0.4 + vHighlight * 0.6));
   }
 `;
@@ -109,10 +99,11 @@ function Particles({ enterProgressRef }: ParticlesProps) {
   const meshRef = useRef<THREE.InstancedMesh>(null!);
   const groupRef = useRef<THREE.Group>(null!);
   const materialRef = useRef<THREE.ShaderMaterial>(null!);
-  
+
   const mouse3D = useRef(new THREE.Vector3(0, 0, 0));
   const targetMouse3D = useRef(new THREE.Vector3(0, 0, 0));
   const globalMouse = useRef(new THREE.Vector2(0, 0));
+
   const isMouseActive = useRef(false);
   const wasMouseActive = useRef(false);
 
@@ -154,6 +145,7 @@ function Particles({ enterProgressRef }: ParticlesProps) {
         event.clientY <= rect.bottom;
 
       isMouseActive.current = inside;
+
       if (!inside || rect.width <= 0 || rect.height <= 0) return;
 
       globalMouse.current.set(
@@ -202,6 +194,7 @@ function Particles({ enterProgressRef }: ParticlesProps) {
     const group = groupRef.current;
     const material = materialRef.current;
     if (!group || !material) return;
+
     const interactionWasSettled =
       material.uniforms.uMouseActive.value < SETTLED_MOUSE_ACTIVITY;
 
@@ -212,6 +205,7 @@ function Particles({ enterProgressRef }: ParticlesProps) {
       delta,
     );
     if (enterProgressRef.current > 0.9995) enterProgressRef.current = 1;
+
     material.uniforms.uEnter.value = enterProgressRef.current;
     material.uniforms.uTheme.value = THREE.MathUtils.damp(
       material.uniforms.uTheme.value,
@@ -219,6 +213,7 @@ function Particles({ enterProgressRef }: ParticlesProps) {
       5,
       delta,
     );
+
     material.uniforms.uMouseActive.value = THREE.MathUtils.damp(
       material.uniforms.uMouseActive.value,
       isMouseActive.current ? 1 : IDLE_MOUSE_ACTIVITY,
@@ -252,8 +247,10 @@ function Particles({ enterProgressRef }: ParticlesProps) {
     );
 
     group.rotation.z -= delta * 0.02;
+
     material.uniforms.uTime.value = state.clock.elapsedTime;
     material.uniforms.uMouse3D.value.copy(mouse3D.current);
+
     wasMouseActive.current = isMouseActive.current;
   });
 
@@ -278,13 +275,13 @@ export function Hero() {
   const enterProgressRef = useRef(0);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 150], fov: 50 }}>
           <Particles enterProgressRef={enterProgressRef} />
         </Canvas>
       </div>
-      
+
       <motion.div
         initial="hidden"
         animate="visible"
@@ -292,24 +289,63 @@ export function Hero() {
           hidden: { opacity: 0 },
           visible: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 0.5 } },
         }}
-        className="relative z-10 max-w-6xl mx-auto px-6 w-full text-center pointer-events-none"
+        className="relative z-20 mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pb-16 pt-28 lg:grid-cols-[1.08fr_.92fr] lg:gap-20 lg:pb-20 lg:pt-32"
       >
-        <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="pointer-events-auto mb-8">
-            <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/50 dark:bg-zinc-900/50 backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/50 text-sm font-bold tracking-widest uppercase">
+        <div className="text-center lg:text-left">
+          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="mb-7">
+            <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/50 text-sm font-bold tracking-widest uppercase shadow-lg">
                 <RocketLaunch weight="duotone" className="w-5 h-5 text-indigo-500" />
                 {t("badge")}
             </span>
-        </motion.div>
+          </motion.div>
         
-        <motion.h1
-          variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1 } }}
-          className="text-6xl md:text-8xl lg:text-[8rem] font-black tracking-tighter text-zinc-900 dark:text-white leading-[0.9] pointer-events-auto"
-        >
-          <span className="block">{t("title1")}</span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400">
-            {t("title2")}
-          </span>
-        </motion.h1>
+          <motion.h1
+            variants={{ hidden: { opacity: 0, scale: 0.94 }, visible: { opacity: 1, scale: 1 } }}
+            className="text-5xl font-black leading-[0.94] tracking-[-0.055em] text-zinc-900 sm:text-6xl md:text-7xl dark:text-white"
+          >
+            <span className="block drop-shadow-md">{t("title1")}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 drop-shadow-lg">
+              {t("title2")}
+            </span>
+          </motion.h1>
+
+          <motion.p
+            variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
+            className="mx-auto mt-7 max-w-2xl text-lg font-medium leading-relaxed text-zinc-600 lg:mx-0 dark:text-zinc-300"
+          >
+            {t("description")}
+          </motion.p>
+
+          <motion.div
+            variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }}
+            className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start"
+          >
+            <motion.a
+              href={process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app"}
+              whileHover={{ y: -3, scale: 1.025 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-zinc-900 px-7 py-4 font-bold text-white shadow-xl sm:w-auto dark:bg-white dark:text-zinc-900"
+            >
+              {t("ctaPrimary")}
+              <ArrowRight size={19} weight="bold" />
+            </motion.a>
+            <motion.a
+              href="https://github.com/ArtomkDev/PlanIt"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ y: -3 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 bg-white/70 px-7 py-4 font-bold text-zinc-800 backdrop-blur-xl sm:w-auto dark:border-zinc-700 dark:bg-zinc-900/70 dark:text-white"
+            >
+              <GithubLogo size={19} weight="fill" />
+              {t("ctaSecondary")}
+            </motion.a>
+          </motion.div>
+        </div>
+
+        <div className="w-full">
+          <FloatingSchedule />
+        </div>
       </motion.div>
     </section>
   );

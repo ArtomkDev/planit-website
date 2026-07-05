@@ -24,20 +24,49 @@
       "title": "Daily Schedule",
       "status": "Saved locally",
       "metricLabel": "Lesson duration",
-      "metricValue": "45 min",
+      "metricValue": "90 min",
       "metricCaption": "breaks are configured separately",
+      "lessonLabel": "class",
+      "breakLabel": "Break",
+      "minutesLabel": "min",
+      "activeLabel": "Left",
+      "scheduleName": "University",
+      "month": "July 2026",
+      "resetDay": "Return to the automatically selected day",
+      "days": {
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri",
+        "sat": "Sat",
+        "sun": "Sun"
+      },
       "items": {
         "focus": {
           "time": "09:00",
-          "title": "Mathematics · room 204"
+          "title": "Higher mathematics",
+          "type": "Lecture",
+          "room": "204",
+          "teacher": "O. Koval"
         },
         "break": {
-          "time": "09:45",
+          "time": "10:30",
           "title": "Break · 10 min"
         },
         "sync": {
-          "time": "09:55",
-          "title": "Computer science · lab"
+          "time": "10:40",
+          "title": "Computer science",
+          "type": "Laboratory",
+          "room": "Lab 3",
+          "teacher": "I. Bondar"
+        },
+        "creative": {
+          "time": "12:20",
+          "title": "Graphic design",
+          "type": "Practice",
+          "room": "Studio 2",
+          "teacher": "M. Levchenko"
         }
       }
     }
@@ -173,6 +202,39 @@
     "contents": "Contents",
     "support": "Questions about this document?",
     "supportAction": "Contact support"
+  },
+  "DecorativeCards": {
+    "subjects": [
+      "Higher mathematics",
+      "Computer science",
+      "Graphic design",
+      "Physics",
+      "Chemistry",
+      "World history",
+      "English language",
+      "Economics",
+      "Architecture",
+      "Music theory",
+      "Biology",
+      "Algorithms and data structures"
+    ],
+    "types": ["Lecture", "Practice", "Laboratory", "Seminar", "Workshop", "Consultation"],
+    "rooms": ["204", "Lab 3", "Studio 2", "Room 118", "Media library", "Hall 4", "Room 312", "Online"],
+    "buildings": ["Main building", "Building B", "Science center", "Creative hub", "Library", "North campus"],
+    "teachers": [
+      "O. Koval",
+      "I. Bondar",
+      "M. Levchenko",
+      "A. Melnyk",
+      "N. Shevchenko",
+      "V. Tkachenko",
+      "S. Moroz",
+      "D. Kravchenko",
+      "L. Boyko",
+      "Y. Savchuk",
+      "K. Oliinyk",
+      "R. Marchenko"
+    ]
   },
   "SEO": {
     "home": {

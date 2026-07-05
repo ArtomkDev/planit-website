@@ -7,6 +7,7 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { useEffect, useRef } from "react";
+import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 
 function InteractiveGridPattern() {
   const gridRef = useRef<HTMLDivElement>(null);
@@ -99,7 +100,9 @@ export function Features() {
 
   return (
     <section id="features" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
-      <ScrollReveal className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
+      <LessonCardAccent seed={11} className="-right-64 top-20" />
+      <LessonCardAccent seed={12} depth="background" className="right-[12%] bottom-12" />
+      <ScrollReveal className="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
         <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
           {t("badge")}
         </span>
@@ -116,7 +119,7 @@ export function Features() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 perspective-1000"
+        className="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 perspective-1000"
       >
         {featureItems.map((item) => (
           <BentoCard

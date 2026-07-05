@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
+import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 
 export function HowItWorks() {
   const t = useTranslations("HowItWorks");
@@ -24,7 +25,9 @@ export function HowItWorks() {
 
   return (
     <section id="workflow" className="relative z-20 mx-auto w-full max-w-4xl px-6 py-24 md:py-32">
-      <ScrollReveal className="text-center mb-20">
+      <LessonCardAccent seed={47} className="-left-72 top-[36%]" />
+      <LessonCardAccent seed={48} depth="background" className="-left-44 bottom-24" />
+      <ScrollReveal className="relative z-20 text-center mb-20">
         <span className="text-sm font-bold tracking-widest text-cyan-500 uppercase mb-4 block">
           {t("badge")}
         </span>
@@ -33,7 +36,7 @@ export function HowItWorks() {
         </h2>
       </ScrollReveal>
 
-      <div ref={containerRef} className="relative flex flex-col gap-24">
+      <div ref={containerRef} className="relative z-20 flex flex-col gap-24">
         <div className="absolute left-[27px] md:left-1/2 top-0 bottom-0 w-[2px] bg-zinc-200 dark:bg-zinc-800 -translate-x-1/2 rounded-full overflow-hidden">
           <motion.div
             className="absolute top-0 w-full bg-gradient-to-b from-indigo-500 to-cyan-400"

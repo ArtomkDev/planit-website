@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
+import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
 const SOURCE_URL = "https://github.com/ArtomkDev/PlanIt";
@@ -69,7 +70,9 @@ export function Platforms() {
 
   return (
     <section id="platforms" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
-      <ScrollReveal className="flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
+      <LessonCardAccent seed={37} className="-right-64 top-[42%]" />
+      <LessonCardAccent seed={38} depth="background" className="right-[18%] top-10" />
+      <ScrollReveal className="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
         <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
           {t("badge")}
         </span>
@@ -83,7 +86,7 @@ export function Platforms() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "50px" }}
-        className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 perspective-1000"
+        className="relative z-20 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 perspective-1000"
       >
         {platforms.map((item) => (
           <BentoCard

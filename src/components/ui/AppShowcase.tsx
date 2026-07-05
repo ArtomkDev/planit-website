@@ -6,6 +6,7 @@ import { Palette, CloudArrowUp, ShareNetwork, AppWindow } from "@phosphor-icons/
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
+import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 
 export function AppShowcase() {
   const t = useTranslations("AppShowcase");
@@ -51,7 +52,9 @@ export function AppShowcase() {
 
   return (
     <section className="relative w-full max-w-7xl mx-auto px-6 py-24 z-20">
-      <ScrollReveal className="flex flex-col items-start mb-16">
+      <LessonCardAccent seed={23} className="-left-64 top-[34%]" />
+      <LessonCardAccent seed={24} depth="background" className="left-[16%] bottom-6" />
+      <ScrollReveal className="relative z-20 flex flex-col items-start mb-16">
         <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
           {t("badge")}
         </span>
@@ -65,7 +68,7 @@ export function AppShowcase() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px] perspective-1000"
+        className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px] perspective-1000"
       >
         {items.map((item) => (
           <BentoCard
