@@ -274,6 +274,19 @@ export const accountDeletionContent = String.raw`
 </p>
 `;
 
+export const cookieRulesContent = String.raw`
+<strong>Cookie Rules Placeholder</strong>
+<p>This page is reserved for PlanIt cookie rules. The current web experience primarily relies on local browser
+  storage for application preferences, offline data, and authentication-related state needed by the service.</p>
+
+<p>A full cookie policy will be published here if PlanIt introduces cookie-based tracking, consent management,
+  or additional web analytics that require a dedicated explanation.</p>
+
+<strong>Current Status</strong>
+<p>Until the full policy is published, please refer to the Privacy Policy for information about storage,
+  analytics, advertising providers, and user data handling.</p>
+`;
+
 export interface LegalSection {
   id: string;
   title: string;
@@ -470,8 +483,29 @@ export const accountDeletionDocument: LegalDocumentData = {
   ]),
 };
 
+export const cookieRulesDocument: LegalDocumentData = {
+  title: "Cookie Rules",
+  summary:
+    "A reserved wiki page for PlanIt cookie rules and future browser storage notices.",
+  effectiveDate: "2026-04-16",
+  readTime: 1,
+  sections: createSections(cookieRulesContent, null, [
+    {
+      id: "cookie-placeholder",
+      title: "Cookie Rules Placeholder",
+      marker: "Cookie Rules Placeholder",
+    },
+    {
+      id: "cookie-current-status",
+      title: "Current Status",
+      marker: "Current Status",
+    },
+  ]),
+};
+
 export const legalDocuments = {
   privacy: privacyPolicyDocument,
   terms: termsAndConditionsDocument,
   delete: accountDeletionDocument,
-} satisfies Record<"privacy" | "terms" | "delete", LegalDocumentData>;
+  cookies: cookieRulesDocument,
+} satisfies Record<"privacy" | "terms" | "delete" | "cookies", LegalDocumentData>;

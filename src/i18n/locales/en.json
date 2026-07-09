@@ -7,6 +7,19 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "delete": "Account Deletion",
+    "productSection": "Product",
+    "documentsSection": "Documents",
+    "supportSection": "Support",
+    "source": "Source Code",
+    "cookies": "Cookie Rules",
+    "support": "Contact Support",
+    "openAppDescription": "Launch the current browser version of PlanIt.",
+    "sourceDescription": "Inspect the public repository and project code.",
+    "termsDescription": "Rules for using PlanIt and its services.",
+    "privacyDescription": "How PlanIt stores and synchronizes user data.",
+    "cookiesDescription": "Placeholder for the future cookie policy.",
+    "deleteDescription": "Request account and related data deletion.",
+    "supportDescription": "Send a direct support request by email.",
     "openApp": "Open Web App",
     "language": "UK",
     "theme": "Toggle theme"
@@ -252,6 +265,10 @@
     "delete": {
       "title": "Account Deletion",
       "description": "How to request deletion of a PlanIt account and the data associated with it."
+    },
+    "cookies": {
+      "title": "Cookie Rules",
+      "description": "PlanIt cookie rules placeholder and future browser storage notices."
     }
   }
 }

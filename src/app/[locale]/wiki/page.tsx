@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-export default async function TermsPage({
+export default async function WikiPage({
   params,
 }: {
   params: Promise<{ locale: string }>;

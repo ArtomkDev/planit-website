@@ -7,6 +7,19 @@
     "privacy": "Політика конфіденційності",
     "terms": "Умови використання",
     "delete": "Видалення акаунта",
+    "productSection": "Продукт",
+    "documentsSection": "Документи",
+    "supportSection": "Підтримка",
+    "source": "Код проєкту",
+    "cookies": "Правила cookie",
+    "support": "Написати підтримці",
+    "openAppDescription": "Відкрити актуальну браузерну версію PlanIt.",
+    "sourceDescription": "Переглянути публічний репозиторій і код.",
+    "termsDescription": "Правила використання PlanIt і сервісу.",
+    "privacyDescription": "Як PlanIt зберігає та синхронізує дані.",
+    "cookiesDescription": "Заглушка для майбутньої cookie-політики.",
+    "deleteDescription": "Запит на видалення акаунта й пов'язаних даних.",
+    "supportDescription": "Надіслати пряме звернення на email підтримки.",
     "openApp": "Відкрити Web App",
     "language": "EN",
     "theme": "Перемкнути тему"
@@ -252,6 +265,10 @@
     "delete": {
       "title": "Видалення акаунта",
       "description": "Як надіслати запит на видалення акаунта PlanIt і пов'язаних із ним даних."
+    },
+    "cookies": {
+      "title": "Правила cookie",
+      "description": "Заглушка правил cookie PlanIt і майбутніх повідомлень про браузерне сховище."
     }
   }
 }

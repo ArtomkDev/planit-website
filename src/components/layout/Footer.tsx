@@ -63,14 +63,17 @@ export const Footer = () => {
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <h2 className="text-sm font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-base">{tFooter("legal")}</h2>
             <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-              <Link href={`/${locale}/privacy`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/privacy`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
                 {tNav("privacy")}
               </Link>
-              <Link href={`/${locale}/terms`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/terms`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
                 {tNav("terms")}
               </Link>
-              <Link href={`/${locale}/delete`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/delete`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
                 {tNav("delete")}
+              </Link>
+              <Link href={`/${locale}/wiki/cookies`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+                {tNav("cookies")}
               </Link>
             </nav>
           </div>
