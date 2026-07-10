@@ -25,7 +25,7 @@ export const privacyPolicyContent = String.raw`
 </ul>
 
 <p>The Application does not gather precise information about the location of your mobile device, nor does it use
-  Artificial Intelligence (AI) technologies to process your data.</p>
+  automated model technologies to process your data.</p>
 
 <p><strong>Local Storage:</strong> The Application utilizes local device storage (such as AsyncStorage or web
   local storage) to save your preferences, offline data, and authentication tokens directly on your device. This
@@ -275,12 +275,12 @@ export const accountDeletionContent = String.raw`
 `;
 
 export const cookieRulesContent = String.raw`
-<strong>Cookie Rules Placeholder</strong>
-<p>This page is reserved for PlanIt cookie rules. The current web experience primarily relies on local browser
-  storage for application preferences, offline data, and authentication-related state needed by the service.</p>
+<strong>Cookie Rules</strong>
+<p>The current PlanIt web experience primarily relies on local browser storage for application preferences,
+  offline data, and authentication-related state needed by the service.</p>
 
-<p>A full cookie policy will be published here if PlanIt introduces cookie-based tracking, consent management,
-  or additional web analytics that require a dedicated explanation.</p>
+<p>If PlanIt adds cookie-based tracking, consent management, or additional web analytics, this page will be
+  updated with the exact categories, purposes, and controls available to users.</p>
 
 <strong>Current Status</strong>
 <p>Until the full policy is published, please refer to the Privacy Policy for information about storage,
@@ -486,14 +486,14 @@ export const accountDeletionDocument: LegalDocumentData = {
 export const cookieRulesDocument: LegalDocumentData = {
   title: "Cookie Rules",
   summary:
-    "A reserved wiki page for PlanIt cookie rules and future browser storage notices.",
+    "How PlanIt currently treats browser storage and where cookie-related updates will be documented.",
   effectiveDate: "2026-04-16",
   readTime: 1,
   sections: createSections(cookieRulesContent, null, [
     {
       id: "cookie-placeholder",
-      title: "Cookie Rules Placeholder",
-      marker: "Cookie Rules Placeholder",
+      title: "Cookie Rules",
+      marker: "Cookie Rules",
     },
     {
       id: "cookie-current-status",

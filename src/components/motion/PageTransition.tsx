@@ -10,11 +10,12 @@ interface PageTransitionProps {
 
 export const PageTransition = ({ children }: PageTransitionProps) => {
   const pathname = usePathname();
+  const transitionKey = pathname.replace(/^\/([^/]+)\/wiki(?:\/[^/]+)?$/, "/$1/wiki");
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={pathname}
+        key={transitionKey}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -10 }}

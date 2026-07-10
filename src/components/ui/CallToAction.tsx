@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
@@ -9,7 +9,7 @@ import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
 
-const shapeOneOuterVariants = {
+const shapeOneOuterVariants: Variants = {
   rest: {
     scale: 1,
     rotate: 0,
@@ -36,7 +36,7 @@ const shapeOneOuterVariants = {
   },
 };
 
-const shapeTwoOuterVariants = {
+const shapeTwoOuterVariants: Variants = {
   rest: {
     scale: 1,
     rotate: 0,

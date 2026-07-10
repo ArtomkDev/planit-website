@@ -25,7 +25,7 @@ export const Footer = () => {
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-16 px-6 md:gap-24">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 lg:gap-8">
           <div className="flex flex-col gap-6 md:col-span-6 lg:col-span-5">
-            <Link href={`/${locale}`} className="w-fit text-4xl font-black tracking-tight text-zinc-950 transition-colors hover:text-indigo-500 dark:text-white dark:hover:text-indigo-400">
+            <Link href={`/${locale}`} className="w-fit text-4xl font-black tracking-tight text-zinc-950 transition-colors hover:text-[#F45B8A] dark:text-white dark:hover:text-[#3EF7D2]">
               PlanIt.
             </Link>
             <p className="max-w-sm text-sm font-medium leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-base">
@@ -48,13 +48,13 @@ export const Footer = () => {
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2 lg:col-start-8">
             <h2 className="text-sm font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-base">{tFooter("product")}</h2>
             <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-              <Link href={`/${locale}`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("home")}
               </Link>
-              <Link href={`/${locale}#features`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}#features`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("features")}
               </Link>
-              <Link href={`/${locale}#platforms`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}#platforms`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("platforms")}
               </Link>
             </nav>
@@ -63,16 +63,16 @@ export const Footer = () => {
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <h2 className="text-sm font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-base">{tFooter("legal")}</h2>
             <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
-              <Link href={`/${locale}/wiki/privacy`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/privacy`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("privacy")}
               </Link>
-              <Link href={`/${locale}/wiki/terms`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/terms`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("terms")}
               </Link>
-              <Link href={`/${locale}/wiki/delete`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/delete`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("delete")}
               </Link>
-              <Link href={`/${locale}/wiki/cookies`} className="w-fit transition-colors hover:text-indigo-500 dark:hover:text-indigo-400">
+              <Link href={`/${locale}/wiki/cookies`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("cookies")}
               </Link>
             </nav>
@@ -85,7 +85,7 @@ export const Footer = () => {
             href={SOURCE_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2.5 rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1.5 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800/80 dark:bg-zinc-900/50 dark:hover:border-indigo-800 dark:hover:text-indigo-300"
+            className="flex items-center gap-2.5 rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1.5 transition-colors hover:border-[#F45B8A]/45 hover:text-[#c93667] dark:border-zinc-800/80 dark:bg-zinc-900/50 dark:hover:border-[#3EF7D2]/45 dark:hover:text-[#3EF7D2]"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />

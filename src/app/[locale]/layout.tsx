@@ -28,7 +28,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body suppressHydrationWarning className="font-sans min-h-screen flex flex-col antialiased selection:bg-indigo-500/30 selection:text-white">
+      <body suppressHydrationWarning className="font-sans min-h-screen flex flex-col antialiased selection:bg-[#F45B8A]/30 selection:text-zinc-950 dark:selection:bg-[#3EF7D2]/25 dark:selection:text-white">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
             <Header />
