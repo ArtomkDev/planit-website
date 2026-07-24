@@ -4,6 +4,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CookieConsent } from "@/components/ui/CookieConsent";
 import "../globals.css";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -36,6 +37,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
               {children}
             </main>
             <Footer />
+            <CookieConsent />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

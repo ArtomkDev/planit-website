@@ -204,6 +204,13 @@
     "section3Content": "The PlanIt source is available to inspect in a public GitHub repository. A separate license file is not currently published in that repository.",
     "officialDocument": "Open the application's full terms of service"
   },
+  "CookieConsent": {
+    "title": "We value your privacy",
+    "description": "We use optional cookies and Firebase Analytics only to understand site traffic and improve PlanIt. Analytics stays off unless you accept.",
+    "accept": "Accept All",
+    "reject": "Reject Non-Essential",
+    "learnMore": "Learn More"
+  },
   "LegalDocument": {
     "current": "Current document",
     "eyebrow": "Official document",

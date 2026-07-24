@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { GithubLogo } from "@phosphor-icons/react";
+import { useState, useRef } from "react";
 
 const SOURCE_URL = "https://github.com/ArtomkDev/PlanIt";
 
@@ -14,21 +15,79 @@ export const Footer = () => {
   const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
+  const backgroundText = ["P", "l", "a", "n", "I", "t", "."];
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  
+  // Створюємо масив посилань на HTML-елементи кожної букви
+  const letterRefs = useRef<(HTMLSpanElement | null)[]>([]);
+
+  // Точне відстеження мишки по реальних координатах букв
+  const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {
+    const mouseX = e.clientX;
+    let foundIndex = null;
+
+    // Перевіряємо кожну букву: чи знаходиться курсор в її межах по осі X
+    for (let i = 0; i < letterRefs.current.length; i++) {
+      const el = letterRefs.current[i];
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (mouseX >= rect.left && mouseX <= rect.right) {
+          foundIndex = i;
+          break; // Знайшли потрібну букву, зупиняємо цикл
+        }
+      }
+    }
+
+    if (hoveredIndex !== foundIndex) {
+      setHoveredIndex(foundIndex);
+    }
+  };
+
+  const handlePointerLeave = () => {
+    setHoveredIndex(null);
+  };
+
   return (
-    <footer className="relative z-10 mt-auto w-full overflow-hidden border-t border-zinc-200 bg-white pt-24 pb-8 dark:border-zinc-900 dark:bg-[#09090b]">
+    <footer
+      onPointerMove={handlePointerMove}
+      onPointerLeave={handlePointerLeave}
+      className="relative z-10 mt-auto w-full overflow-hidden border-t border-zinc-200 bg-white pt-24 pb-8 dark:border-zinc-900 dark:bg-[#09090b]"
+    >
+      {/* Задній шар з великими буквами */}
       <div className="pointer-events-none absolute inset-0 z-0 flex select-none items-center justify-center">
-        <span className="w-full whitespace-nowrap text-center text-[28vw] font-black leading-none tracking-tight text-zinc-50 dark:text-zinc-900/30">
-          PlanIt.
-        </span>
+        <div className="flex w-full justify-center whitespace-nowrap text-[28vw] font-black leading-none tracking-tight">
+          {backgroundText.map((letter, index) => (
+            <motion.span
+              key={index}
+              ref={(el) => {
+                letterRefs.current[index] = el;
+              }}
+              animate={{
+                y: hoveredIndex === index ? "-8%" : "0%",
+              }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className={`inline-block cursor-default transition-colors duration-300 ${
+                hoveredIndex === index
+                  ? "text-[#F45B8A] dark:text-[#3EF7D2]"
+                  : "text-zinc-50 dark:text-zinc-900/30"
+              }`}
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </div>
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-16 px-6 md:gap-24">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 lg:gap-8">
+      {/* Передній шар з контентом (Матове скло) */}
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-12 px-6 md:gap-24">
+        
+        <div className="grid grid-cols-1 gap-12 rounded-3xl bg-white/50 p-8 shadow-sm ring-1 ring-zinc-200/50 backdrop-blur-md dark:bg-[#09090b]/50 dark:ring-zinc-800/50 md:grid-cols-12 lg:gap-8">
+          
           <div className="flex flex-col gap-6 md:col-span-6 lg:col-span-5">
             <Link href={`/${locale}`} className="w-fit text-4xl font-black tracking-tight text-zinc-950 transition-colors hover:text-[#F45B8A] dark:text-white dark:hover:text-[#3EF7D2]">
               PlanIt.
             </Link>
-            <p className="max-w-sm text-sm font-medium leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-base">
+            <p className="max-w-sm text-sm font-medium leading-relaxed text-zinc-700 dark:text-zinc-300 md:text-base">
               {tHero("description")}
             </p>
             <div className="mt-2 flex items-center gap-3">
@@ -46,8 +105,8 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2 lg:col-start-8">
-            <h2 className="text-sm font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-base">{tFooter("product")}</h2>
-            <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+            <h2 className="text-sm font-bold tracking-tight text-zinc-950 dark:text-zinc-100 md:text-base">{tFooter("product")}</h2>
+            <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-600 dark:text-zinc-400">
               <Link href={`/${locale}`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("home")}
               </Link>
@@ -61,8 +120,8 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
-            <h2 className="text-sm font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-base">{tFooter("legal")}</h2>
-            <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+            <h2 className="text-sm font-bold tracking-tight text-zinc-950 dark:text-zinc-100 md:text-base">{tFooter("legal")}</h2>
+            <nav className="flex flex-col gap-4 text-sm font-medium text-zinc-600 dark:text-zinc-400">
               <Link href={`/${locale}/wiki/privacy`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("privacy")}
               </Link>
@@ -79,7 +138,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-between gap-6 border-t border-zinc-200 pt-6 text-xs font-medium text-zinc-500 dark:border-zinc-800/50 dark:text-zinc-500 md:flex-row">
+        {/* Нижня панель */}
+        <div className="flex w-full flex-col items-center justify-between gap-6 pt-2 text-xs font-medium text-zinc-500 dark:text-zinc-500 md:flex-row">
           <p>© {currentYear} PlanIt. {tFooter("rights")}</p>
           <a
             href={SOURCE_URL}
