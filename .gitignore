@@ -25,6 +25,7 @@ yarn-error.log*
 .env*
 
 .vercel
+.firebase/
 
 *.tsbuildinfo
 next-env.d.ts

@@ -5,12 +5,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:firebase": "next build",
+    "deploy:firebase": "powershell -ExecutionPolicy Bypass -File ./scripts/deploy-firebase.ps1",
+    "deploy:firebase:preview": "powershell -ExecutionPolicy Bypass -File ./scripts/deploy-firebase.ps1 -Channel preview",
+    "deploy:firebase:skip-build": "powershell -ExecutionPolicy Bypass -File ./scripts/deploy-firebase.ps1 -SkipBuild",
+    "firebase:login": "firebase login",
+    "firebase:logout": "firebase logout",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.2.9",
     "@phosphor-icons/react": "^2.1.10",
     "@react-three/fiber": "^9.6.1",
+    "@types/mdx": "^2.0.14",
     "clsx": "^2.1.1",
     "firebase": "^12.15.0",
     "framer-motion": "^12.40.0",
@@ -36,6 +46,7 @@
     "@types/ws": "^8.18.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "firebase-tools": "^15.24.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

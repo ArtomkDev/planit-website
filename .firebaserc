@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "planit-hub"
+  },
+  "targets": {
+    "planit-hub": {
+      "hosting": {
+        "legal": [
+          "planit-hub"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

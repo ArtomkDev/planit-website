@@ -1,7 +1,7 @@
-import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { LegalDocument, type LegalDocumentKind } from "@/components/legal/LegalDocument";
+import { legalDocuments } from "@/content/legal-documents";
 
 const wikiDocuments = ["privacy", "terms", "delete", "cookies"] as const satisfies ReadonlyArray<LegalDocumentKind>;
 
@@ -24,13 +24,13 @@ export async function generateMetadata({
     notFound();
   }
 
-  const t = await getTranslations({ locale, namespace: `SEO.${document}` });
+  const legalDocument = legalDocuments[document];
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
   const url = `${baseUrl}/${locale}/wiki/${document}`;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: legalDocument.title,
+    description: legalDocument.summary,
     alternates: {
       canonical: url,
       languages: {
@@ -39,8 +39,8 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: t("title"),
-      description: t("description"),
+      title: legalDocument.title,
+      description: legalDocument.summary,
       url,
       siteName: "PlanIt",
       locale,

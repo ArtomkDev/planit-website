@@ -1,0 +1,129 @@
+{
+  "hosting": {
+    "target": "legal",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
+      {
+        "source": "/_next/static/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=31536000,immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css|woff2|png|jpg|jpeg|gif|webp|svg|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=31536000,immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(html|json|txt|xml)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=300"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/uk",
+        "type": 302
+      },
+      {
+        "source": "/privacy",
+        "destination": "/uk/wiki/privacy",
+        "type": 301
+      },
+      {
+        "source": "/privacy.html",
+        "destination": "/uk/wiki/privacy",
+        "type": 301
+      },
+      {
+        "source": "/terms",
+        "destination": "/uk/wiki/terms",
+        "type": 301
+      },
+      {
+        "source": "/terms.html",
+        "destination": "/uk/wiki/terms",
+        "type": 301
+      },
+      {
+        "source": "/cookies",
+        "destination": "/uk/wiki/cookies",
+        "type": 301
+      },
+      {
+        "source": "/cookies.html",
+        "destination": "/uk/wiki/cookies",
+        "type": 301
+      },
+      {
+        "source": "/delete",
+        "destination": "/uk/wiki/delete",
+        "type": 301
+      },
+      {
+        "source": "/delete.html",
+        "destination": "/uk/wiki/delete",
+        "type": 301
+      },
+      {
+        "source": "/uk/privacy",
+        "destination": "/uk/wiki/privacy",
+        "type": 301
+      },
+      {
+        "source": "/uk/terms",
+        "destination": "/uk/wiki/terms",
+        "type": 301
+      },
+      {
+        "source": "/uk/cookies",
+        "destination": "/uk/wiki/cookies",
+        "type": 301
+      },
+      {
+        "source": "/uk/delete",
+        "destination": "/uk/wiki/delete",
+        "type": 301
+      },
+      {
+        "source": "/en/privacy",
+        "destination": "/en/wiki/privacy",
+        "type": 301
+      },
+      {
+        "source": "/en/terms",
+        "destination": "/en/wiki/terms",
+        "type": 301
+      },
+      {
+        "source": "/en/cookies",
+        "destination": "/en/wiki/cookies",
+        "type": 301
+      },
+      {
+        "source": "/en/delete",
+        "destination": "/en/wiki/delete",
+        "type": 301
+      }
+    ]
+  }
+}

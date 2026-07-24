@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PlanIt Website
 
-## Getting Started
+Next.js website for PlanIt, including the hosted legal pages.
 
-First, run the development server:
+## Local Development
 
-```bash
+```powershell
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000/uk`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Firebase Hosting
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Firebase deploys the static Next.js export from `out` to the existing `planit-hub` Hosting site through the `legal` target.
 
-## Learn More
+Run this once on your PC:
 
-To learn more about Next.js, take a look at the following resources:
+```powershell
+npm run firebase:login
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build and deploy a preview version first:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```powershell
+npm run deploy:firebase:preview
+```
 
-## Deploy on Vercel
+Build and deploy to production:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```powershell
+npm run deploy:firebase
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Useful checks before publishing:
+
+```powershell
+npm run lint
+npm run build:firebase
+```
+
+If the site was already built and only the Firebase upload needs to be repeated:
+
+```powershell
+npm run deploy:firebase:skip-build
+```

@@ -1,6 +1,6 @@
-import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { LegalDocument } from "@/components/legal/LegalDocument";
+import { legalDocuments } from "@/content/legal-documents";
 
 export async function generateMetadata({
   params,
@@ -8,13 +8,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "SEO.terms" });
+  const document = legalDocuments.terms;
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
   const url = `${baseUrl}/${locale}/wiki`;
 
   return {
-    title: "PlanIt Wiki",
-    description: t("description"),
+    title: document.title,
+    description: document.summary,
     alternates: {
       canonical: url,
       languages: {
@@ -23,8 +23,8 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: "PlanIt Wiki",
-      description: t("description"),
+      title: document.title,
+      description: document.summary,
       url,
       siteName: "PlanIt",
       locale,
