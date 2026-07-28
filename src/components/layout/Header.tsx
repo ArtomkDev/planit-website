@@ -1,16 +1,34 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ComponentPropsWithoutRef } from 'react';
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
-import { ArrowRight, CaretDown, Cookie, FileText, GithubLogo, Lifebuoy, RocketLaunch, ShieldCheck, Trash } from '@phosphor-icons/react';
+import { ArrowRight, CaretDown, Certificate, Cookie, FileText, GithubLogo, Lifebuoy, RocketLaunch, ShieldCheck, Trash } from '@phosphor-icons/react';
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://planit-demo.web.app';
 const SOURCE_URL = 'https://github.com/ArtomkDev/PlanIt';
 
-export const Header = () => {
+interface HeaderProps {
+  onLocaleChange?: () => void;
+  documentNavigation?: boolean;
+}
+
+type HeaderLinkProps = Omit<ComponentPropsWithoutRef<'a'>, 'href'> & {
+  documentNavigation?: boolean;
+  href: string;
+};
+
+function HeaderLink({ documentNavigation, href, ...props }: HeaderLinkProps) {
+  if (documentNavigation) {
+    return <a href={href} {...props} />;
+  }
+
+  return <Link href={href} {...props} />;
+}
+
+export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
   const t = useTranslations('Navigation');
   const locale = useLocale();
   const pathname = usePathname();
@@ -20,7 +38,8 @@ export const Header = () => {
   });
 
   const targetLocale = locale === 'en' ? 'uk' : 'en';
-  const togglePath = pathname.replace(`/${locale}`, `/${targetLocale}`);
+  const localeAgnosticPath = pathname.replace(/^(?:\/(?:en|uk))+(?=\/|$)/, '');
+  const togglePath = `/${targetLocale}${localeAgnosticPath === '/' ? '' : localeAgnosticPath}`;
   const menuSections = [
     {
       label: t('productSection'),
@@ -35,6 +54,7 @@ export const Header = () => {
         { href: `/${locale}/wiki/terms`, label: t('terms'), description: t('termsDescription'), icon: FileText },
         { href: `/${locale}/wiki/privacy`, label: t('privacy'), description: t('privacyDescription'), icon: ShieldCheck },
         { href: `/${locale}/wiki/cookies`, label: t('cookies'), description: t('cookiesDescription'), icon: Cookie },
+        { href: `/${locale}/wiki/licenses`, label: t('licenses'), description: t('licensesDescription'), icon: Certificate },
       ],
     },
     {
@@ -64,9 +84,9 @@ export const Header = () => {
       <header className="sticky top-0 z-50 w-full border-b border-zinc-200/60 bg-white/65 shadow-[0_1px_0_rgba(255,255,255,0.4)_inset] backdrop-blur-2xl dark:border-zinc-800/70 dark:bg-zinc-950/65">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-8">
-            <Link href={`/${locale}`} className="text-2xl font-black tracking-tight text-zinc-950 transition-colors hover:text-[#F45B8A] dark:text-white dark:hover:text-[#3EF7D2]">
+            <HeaderLink documentNavigation={documentNavigation} href={`/${locale}`} className="text-2xl font-black tracking-tight text-zinc-950 transition-colors hover:text-[#F45B8A] dark:text-white dark:hover:text-[#3EF7D2]">
               PlanIt.
-            </Link>
+            </HeaderLink>
             <nav
               className="hidden items-center gap-1 rounded-full border border-zinc-200/70 bg-white/55 p-1 text-sm font-bold text-zinc-600 backdrop-blur-xl dark:border-zinc-800/70 dark:bg-zinc-900/55 dark:text-zinc-400 lg:flex"
               onMouseLeave={closeMenu}
@@ -106,8 +126,9 @@ export const Header = () => {
                           const Icon = item.icon;
 
                           return (
-                            <Link
+                            <HeaderLink
                               key={item.href}
+                              documentNavigation={documentNavigation}
                               href={item.href}
                               target={item.external ? '_blank' : undefined}
                               rel={item.external ? 'noopener noreferrer' : undefined}
@@ -121,7 +142,7 @@ export const Header = () => {
                                 <span className="block text-sm font-black text-zinc-950 dark:text-white">{item.label}</span>
                                 <span className="mt-0.5 block text-xs font-semibold leading-5 text-zinc-500 dark:text-zinc-400">{item.description}</span>
                               </span>
-                            </Link>
+                            </HeaderLink>
                           );
                         })}
                       </div>
@@ -132,19 +153,31 @@ export const Header = () => {
             </nav>
           </div>
           <div className="flex items-center gap-2 sm:gap-3">
-            <Link
+            <HeaderLink
+              documentNavigation={documentNavigation}
               href={APP_URL}
               className="hidden h-10 items-center justify-center gap-2 rounded-full bg-zinc-950 px-4 text-sm font-black text-white shadow-[0_14px_40px_-18px_rgba(15,23,42,0.8)] transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_46px_-18px_rgba(244,91,138,0.65)] dark:bg-white dark:text-zinc-950 sm:inline-flex"
             >
               {t('openApp')}
               <ArrowRight weight="bold" className="h-4 w-4" />
-            </Link>
-            <Link
-              href={togglePath}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300/60 bg-zinc-100/70 text-xs font-black tracking-widest text-zinc-800 backdrop-blur-md transition-colors hover:bg-zinc-200/80 dark:border-zinc-700/60 dark:bg-zinc-800/70 dark:text-zinc-200 dark:hover:bg-zinc-700/80"
-            >
-              {t('language')}
-            </Link>
+            </HeaderLink>
+            {onLocaleChange ? (
+              <button
+                type="button"
+                onClick={onLocaleChange}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300/60 bg-zinc-100/70 text-xs font-black tracking-widest text-zinc-800 backdrop-blur-md transition-colors hover:bg-zinc-200/80 dark:border-zinc-700/60 dark:bg-zinc-800/70 dark:text-zinc-200 dark:hover:bg-zinc-700/80"
+              >
+                {t('language')}
+              </button>
+            ) : (
+              <HeaderLink
+                documentNavigation={documentNavigation}
+                href={togglePath}
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-300/60 bg-zinc-100/70 text-xs font-black tracking-widest text-zinc-800 backdrop-blur-md transition-colors hover:bg-zinc-200/80 dark:border-zinc-700/60 dark:bg-zinc-800/70 dark:text-zinc-200 dark:hover:bg-zinc-700/80"
+              >
+                {t('language')}
+              </HeaderLink>
+            )}
             <ThemeToggle />
           </div>
         </div>

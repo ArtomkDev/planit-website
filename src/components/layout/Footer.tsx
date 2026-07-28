@@ -134,6 +134,9 @@ export const Footer = () => {
               <Link href={`/${locale}/wiki/cookies`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
                 {tNav("cookies")}
               </Link>
+              <Link href={`/${locale}/wiki/licenses`} className="w-fit transition-colors hover:text-[#F45B8A] dark:hover:text-[#3EF7D2]">
+                {tNav("licenses")}
+              </Link>
             </nav>
           </div>
         </div>

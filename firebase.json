@@ -36,54 +36,18 @@
             "value": "public,max-age=300"
           }
         ]
+      },
+      {
+        "source": "/content/legal/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store"
+          }
+        ]
       }
     ],
     "redirects": [
-      {
-        "source": "/",
-        "destination": "/uk",
-        "type": 302
-      },
-      {
-        "source": "/privacy",
-        "destination": "/uk/wiki/privacy",
-        "type": 301
-      },
-      {
-        "source": "/privacy.html",
-        "destination": "/uk/wiki/privacy",
-        "type": 301
-      },
-      {
-        "source": "/terms",
-        "destination": "/uk/wiki/terms",
-        "type": 301
-      },
-      {
-        "source": "/terms.html",
-        "destination": "/uk/wiki/terms",
-        "type": 301
-      },
-      {
-        "source": "/cookies",
-        "destination": "/uk/wiki/cookies",
-        "type": 301
-      },
-      {
-        "source": "/cookies.html",
-        "destination": "/uk/wiki/cookies",
-        "type": 301
-      },
-      {
-        "source": "/delete",
-        "destination": "/uk/wiki/delete",
-        "type": 301
-      },
-      {
-        "source": "/delete.html",
-        "destination": "/uk/wiki/delete",
-        "type": 301
-      },
       {
         "source": "/uk/privacy",
         "destination": "/uk/wiki/privacy",
@@ -105,6 +69,11 @@
         "type": 301
       },
       {
+        "source": "/uk/licenses",
+        "destination": "/uk/wiki/licenses",
+        "type": 301
+      },
+      {
         "source": "/en/privacy",
         "destination": "/en/wiki/privacy",
         "type": 301
@@ -122,6 +91,11 @@
       {
         "source": "/en/delete",
         "destination": "/en/wiki/delete",
+        "type": 301
+      },
+      {
+        "source": "/en/licenses",
+        "destination": "/en/wiki/licenses",
         "type": 301
       }
     ]

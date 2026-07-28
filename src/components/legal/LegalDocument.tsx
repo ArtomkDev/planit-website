@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import {
+  legalDocumentOrder,
   legalDocuments,
   type LegalDocumentKind,
 } from "@/content/legal-documents";
-import {
-  LegalCalendarIcon,
-  LegalDocumentIcon,
-  LegalSupportArrow,
-} from "./LegalIcons";
+import { LegalDocumentIcon, LegalSupportArrow } from "./LegalIcons";
+import { LegalDocumentClient } from "./LegalDocumentClient";
 import styles from "./LegalDocument.module.css";
 
 export type { LegalDocumentKind } from "@/content/legal-documents";
@@ -18,27 +18,41 @@ interface LegalDocumentProps {
   kind: LegalDocumentKind;
 }
 
-const wikiDocuments = [
-  "privacy",
-  "cookies",
-  "terms",
-  "delete",
-] as const satisfies ReadonlyArray<LegalDocumentKind>;
+async function getInitialLoadingHtml(kind: LegalDocumentKind) {
+  try {
+    const source = await readFile(
+      join(
+        process.cwd(),
+        "public",
+        "content",
+        "legal",
+        `${kind}.loading.mdx`,
+      ),
+      "utf8",
+    );
 
-export async function LegalDocument({
-  locale,
-  kind,
-}: LegalDocumentProps) {
+    return source
+      .replace(/^\s*;?\s*/, "")
+      .trim()
+      .replace(/\bclassName\s*=/g, "class=");
+  } catch {
+    return "";
+  }
+}
+
+export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
   setRequestLocale(locale);
   const tDoc = await getTranslations({
     locale,
     namespace: "LegalDocument",
   });
   const document = legalDocuments[kind];
-  const Content = document.Content;
+  const initialLoadingHtml = await getInitialLoadingHtml(kind);
 
   return (
-    <div className="relative isolate min-h-screen overflow-hidden bg-[#fbfbfc] px-4 pb-20 pt-8 dark:bg-[#09090b] sm:px-6 lg:pb-28 lg:pt-12">
+    <div
+      className={`${styles.wikiPage} relative isolate min-h-screen overflow-hidden bg-[#fbfbfc] dark:bg-[#09090b]`}
+    >
       <a className={styles.skipLink} href="#legal-main-content">
         Skip to content
       </a>
@@ -48,8 +62,8 @@ export async function LegalDocument({
         className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-56 border-b border-zinc-200/70 bg-[linear-gradient(180deg,rgba(244,91,138,0.055),transparent_72%)] dark:border-zinc-900 dark:bg-[linear-gradient(180deg,rgba(62,247,210,0.035),transparent_72%)]"
       />
 
-      <div className="mx-auto grid w-full max-w-7xl gap-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
-        <aside className="lg:sticky lg:top-24 lg:h-[calc(100vh-7rem)]">
+      <div className={styles.wikiLayout}>
+        <aside className={styles.wikiSidebar}>
           <div className="rounded-[8px] border border-zinc-200 bg-white/88 p-2 shadow-[0_18px_60px_-42px_rgba(15,23,42,0.35)] backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-950/78">
             <div className="px-3 pb-3 pt-2">
               <p className="text-[11px] font-black uppercase tracking-[0.18em] text-zinc-400 dark:text-zinc-500">
@@ -60,7 +74,7 @@ export async function LegalDocument({
               </h2>
             </div>
             <nav aria-label="Legal documents" className="grid gap-1">
-              {wikiDocuments.map((documentKind) => {
+              {legalDocumentOrder.map((documentKind) => {
                 const data = legalDocuments[documentKind];
                 const isActive = kind === documentKind;
 
@@ -115,37 +129,16 @@ export async function LegalDocument({
           </div>
         </aside>
 
-        <div id="legal-main-content" className="min-w-0 scroll-mt-28">
-          <header className="mb-6 rounded-[8px] border border-zinc-200 bg-white/86 p-5 shadow-[0_20px_70px_-48px_rgba(15,23,42,0.4)] backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-950/78 sm:p-7 lg:p-8">
-            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-[8px] border border-zinc-200 bg-zinc-50 text-zinc-700 shadow-[0_18px_46px_-38px_rgba(15,23,42,0.55)] dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200">
-              <LegalDocumentIcon
-                kind={kind}
-                className="h-7 w-7"
-                weight="duotone"
-              />
-            </div>
-            <h1 className="text-balance text-4xl font-black tracking-tight text-zinc-950 dark:text-white sm:text-5xl lg:text-6xl">
-              {document.title}
-            </h1>
-            <div className="mt-6 flex flex-wrap items-center gap-2.5">
-              <span className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs font-bold text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
-                <LegalCalendarIcon
-                  className="h-4 w-4 text-zinc-400 dark:text-zinc-500"
-                />
-                <span>
-                  <strong>{document.effectiveDateLabel}</strong>{" "}
-                  <time dateTime={document.effectiveDate}>
-                    {document.effectiveDateDisplay}
-                  </time>{" "}
-                  · Version {document.version}
-                </span>
-              </span>
-            </div>
-          </header>
-
-          <article className={styles.prose}>
-            <Content />
-          </article>
+        <div
+          id="legal-main-content"
+          className={`${styles.wikiContent} min-w-0 scroll-mt-28`}
+        >
+          <LegalDocumentClient
+            locale={locale}
+            kind={kind}
+            fallbackDocument={document}
+            initialLoadingHtml={initialLoadingHtml}
+          />
 
           <div className="relative mt-6 overflow-hidden rounded-[8px] border border-zinc-200 bg-zinc-50 p-8 text-center shadow-[0_24px_90px_-58px_rgba(15,23,42,0.55)] dark:border-zinc-800 dark:bg-zinc-900 sm:p-10">
             <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#F45B8A]/6 via-transparent to-transparent dark:from-[#3EF7D2]/10" />

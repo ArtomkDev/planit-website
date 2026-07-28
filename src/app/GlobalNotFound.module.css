@@ -1,0 +1,221 @@
+.root {
+  --page-background: #fbfbfc;
+  --page-foreground: #18181b;
+  --page-muted: #52525b;
+  --page-border: rgb(24 24 27 / 0.16);
+  --page-ghost: rgb(24 24 27 / 0.035);
+  --page-surface: rgb(255 255 255 / 0.72);
+  --page-primary: #18181b;
+  --page-primary-text: #fff;
+  --page-accent: #d83f72;
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  background: var(--page-background);
+  color: var(--page-foreground);
+}
+
+:global(.dark) .root {
+  --page-background: #09090b;
+  --page-foreground: #fafafa;
+  --page-muted: #a1a1aa;
+  --page-border: rgb(255 255 255 / 0.15);
+  --page-ghost: rgb(255 255 255 / 0.045);
+  --page-surface: rgb(9 9 11 / 0.68);
+  --page-primary: #fafafa;
+  --page-primary-text: #18181b;
+  --page-accent: #3ef7d2;
+}
+
+.main {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: calc(100svh - 4rem);
+  flex: 1;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(4rem, 11vh, 8rem) 1.5rem;
+}
+
+.backgroundCode {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  color: var(--page-ghost);
+  font-size: 72vw;
+  font-weight: 950;
+  line-height: 0.72;
+  letter-spacing: -0.11em;
+  pointer-events: none;
+  transform: translate(-50%, -48%);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(100%, 64rem);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--page-accent);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}
+
+.title {
+  max-width: 62rem;
+  margin-top: 1.75rem;
+  color: var(--page-foreground);
+  font-size: clamp(3.75rem, 8vw, 8rem);
+  font-weight: 950;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+  text-wrap: balance;
+}
+
+.description {
+  max-width: 39rem;
+  margin-top: 2rem;
+  color: var(--page-muted);
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  font-weight: 650;
+  line-height: 1.75;
+  text-wrap: balance;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  border-radius: 999px;
+  padding: 0 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 900;
+  outline: none;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.primaryAction {
+  border: 1px solid var(--page-primary);
+  background: var(--page-primary);
+  color: var(--page-primary-text);
+  box-shadow: 0 18px 48px -28px rgb(24 24 27 / 0.55);
+}
+
+.primaryAction:hover {
+  border-color: var(--page-accent);
+  background: var(--page-accent);
+  transform: translateY(-2px);
+}
+
+.secondaryAction {
+  border: 1px solid var(--page-border);
+  background: var(--page-surface);
+  color: var(--page-foreground);
+  backdrop-filter: blur(12px);
+}
+
+.secondaryAction:hover {
+  border-color: var(--page-accent);
+  color: var(--page-accent);
+}
+
+.primaryAction:focus-visible,
+.secondaryAction:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--page-accent) 35%, transparent);
+}
+
+.arrow {
+  transition: transform 180ms ease;
+}
+
+.primaryAction:hover .arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 639px) {
+  .main {
+    padding: 3rem 1.25rem;
+  }
+
+  .backgroundCode {
+    font-size: 92vw;
+    transform: translate(-50%, -70%);
+  }
+
+  .eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+  }
+
+  .eyebrow::before,
+  .eyebrow::after {
+    width: 1rem;
+  }
+
+  .title {
+    font-size: clamp(3.5rem, 17vw, 5.25rem);
+  }
+
+  .description {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryAction,
+  .secondaryAction,
+  .arrow {
+    transition: none;
+  }
+}

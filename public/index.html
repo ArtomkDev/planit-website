@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>PlanIt</title>
+    <script>
+      (() => {
+        const supported = new Set(["uk", "en"]);
+        const legal = new Set(["privacy", "terms", "cookies", "delete", "licenses"]);
+        const stored = (() => {
+          try {
+            return localStorage.getItem("planit:locale") || localStorage.getItem("NEXT_LOCALE");
+          } catch {
+            return "";
+          }
+        })();
+        const cookie = document.cookie.match(/(?:^|;\s*)NEXT_LOCALE=(uk|en)(?:;|$)/)?.[1];
+        const browser = (navigator.languages || [navigator.language || ""])
+          .map((value) => value.toLowerCase().split("-")[0])
+          .find((value) => supported.has(value));
+        const locale = supported.has(stored) ? stored : cookie || browser || "en";
+        const path = location.pathname.replace(/\.html$/, "").replace(/\/+$/, "") || "/";
+        const parts = path.split("/").filter(Boolean);
+        let target;
+
+        if (supported.has(parts[0])) {
+          target = path;
+        } else if (parts[0] === "wiki") {
+          target = `/${locale}${path}`;
+        } else if (parts.length === 1 && legal.has(parts[0])) {
+          target = `/${locale}/wiki/${parts[0]}`;
+        } else {
+          target = `/${locale}${path === "/" ? "" : path}`;
+        }
+
+        location.replace(`${target}${location.search}${location.hash}`);
+      })();
+    </script>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #09090b;
+        color: white;
+        font-family: system-ui, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <a href="/en">Open PlanIt</a>
+    </noscript>
+  </body>
+</html>

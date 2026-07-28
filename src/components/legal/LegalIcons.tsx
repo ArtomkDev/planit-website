@@ -3,6 +3,7 @@
 import {
   ArrowRight,
   CalendarBlank,
+  Certificate,
   Cookie,
   FileText,
   ShieldCheck,
@@ -14,6 +15,7 @@ const documentIcons = {
   privacy: ShieldCheck,
   cookies: Cookie,
   terms: FileText,
+  licenses: Certificate,
   delete: Trash,
 } satisfies Record<LegalDocumentKind, typeof ShieldCheck>;
 

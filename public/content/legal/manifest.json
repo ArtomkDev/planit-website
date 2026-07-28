@@ -1,0 +1,45 @@
+{
+  "version": "67692e877cf75951",
+  "documents": {
+    "privacy": {
+      "path": "/content/legal/privacy.mdx",
+      "loadingPath": "/content/legal/privacy.loading.mdx",
+      "sha256": "64818a224e54804872825c5bd7151a20f298b6b2e79a7ec4210963b59c8a527c",
+      "loadingSha256": "0bf61d0c9c82fa87854caf16c79401154c11b5ace795281d62c3cdd9114400af",
+      "title": "Privacy Policy",
+      "version": "2.2"
+    },
+    "cookies": {
+      "path": "/content/legal/cookies.mdx",
+      "loadingPath": "/content/legal/cookies.loading.mdx",
+      "sha256": "86f64c070c42269ffb1bc0ce9998eab2ea812f685a7b1928a2a1675799de0abb",
+      "loadingSha256": "bb4856217d3c524e4e08503efef971454c44f58cca2cf8246850312c15bbc659",
+      "title": "Cookie & Similar Technologies Policy",
+      "version": "1.0"
+    },
+    "terms": {
+      "path": "/content/legal/terms.mdx",
+      "loadingPath": "/content/legal/terms.loading.mdx",
+      "sha256": "ee9e99c4b5aa9acc3cbd006249d37ea1595c1f3eb2f1ea7a8ac4edad8cd655a3",
+      "loadingSha256": "d01d774adc7827edaec5a67f84ed43e5729c68d258288094053f2fe39f044cd3",
+      "title": "Terms & Conditions",
+      "version": "2.2"
+    },
+    "licenses": {
+      "path": "/content/legal/licenses.mdx",
+      "loadingPath": "/content/legal/licenses.loading.mdx",
+      "sha256": "3be7bbb9d6069c035fee12c8ec033881c44e8cc138fda7012d7895737a68795d",
+      "loadingSha256": "9c41bfe02c78b60b5c87c3d086ac626a650086e38b81879ae849c9d66375e527",
+      "title": "Open-Source Software Licenses",
+      "version": "1.0"
+    },
+    "delete": {
+      "path": "/content/legal/delete.mdx",
+      "loadingPath": "/content/legal/delete.loading.mdx",
+      "sha256": "cee8b495c5dde97435d08565b0ba7f5860a3f9d5858306687de8d4824d6c8a9c",
+      "loadingSha256": "60ed6f986419441f57fb12a3ec073d2e8e1a1d7a89df0ad9e97cb11edc7b3a65",
+      "title": "Account & Data Deletion",
+      "version": "2.2"
+    }
+  }
+}
