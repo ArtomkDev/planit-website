@@ -38,11 +38,11 @@
         ]
       },
       {
-        "source": "/content/legal/**",
+        "source": "/content/legal/*.mdx",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "no-cache, no-store"
+            "value": "public,max-age=31536000,immutable"
           }
         ]
       }

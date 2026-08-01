@@ -5,9 +5,9 @@
     "semantic_hash": "3d993bdc95148aa959c27d6b792fc15b"
   },
   "firebase.json": {
-    "mtime": 1785090723.033841,
-    "ast_hash": "f0584ccb4f6a57e9aaf858b450ee5c2c",
-    "semantic_hash": "f0584ccb4f6a57e9aaf858b450ee5c2c"
+    "mtime": 1785612342.6321423,
+    "ast_hash": "57115c4057af2bba81cf2b99f92b6aa6",
+    "semantic_hash": "57115c4057af2bba81cf2b99f92b6aa6"
   },
   "next.config.ts": {
     "mtime": 1785091117.1899805,
@@ -25,9 +25,9 @@
     "semantic_hash": "239f3ebf717465dc636818a1a619398d"
   },
   "public/content/legal/manifest.json": {
-    "mtime": 1785083623.4245954,
-    "ast_hash": "1845651fe0f6efe22234658c375477e1",
-    "semantic_hash": "1845651fe0f6efe22234658c375477e1"
+    "mtime": 1785611838.4478867,
+    "ast_hash": "90a7d1f7bca2d0b77d953a74165ac114",
+    "semantic_hash": "90a7d1f7bca2d0b77d953a74165ac114"
   },
   "scripts/deploy-firebase.ps1": {
     "mtime": 1784910722.0906787,
@@ -40,9 +40,9 @@
     "semantic_hash": "934194db30367f6bbf5f7e890db222b0"
   },
   "scripts/serve-static-export.mjs": {
-    "mtime": 1785092302.2250776,
-    "ast_hash": "d02dec962179c38f28462e80cc89f149",
-    "semantic_hash": "d02dec962179c38f28462e80cc89f149"
+    "mtime": 1785612137.180705,
+    "ast_hash": "7ad35601d4be0844d25dfb3bb0a16311",
+    "semantic_hash": "7ad35601d4be0844d25dfb3bb0a16311"
   },
   "scripts/update-legal-manifest.mjs": {
     "mtime": 1785082705.6917117,
@@ -55,9 +55,9 @@
     "semantic_hash": "ecad5e9becaa7d5a375e441bc511c7e9"
   },
   "src/app/[locale]/layout.tsx": {
-    "mtime": 1785609269.927344,
-    "ast_hash": "b1dcae2b5bec38bd4bab9cd7a0bcbd19",
-    "semantic_hash": "b1dcae2b5bec38bd4bab9cd7a0bcbd19"
+    "mtime": 1785611949.0625362,
+    "ast_hash": "7f8cd9e9e90dd8a04e6b678e4af7caa5",
+    "semantic_hash": "7f8cd9e9e90dd8a04e6b678e4af7caa5"
   },
   "src/app/[locale]/page.tsx": {
     "mtime": 1785609269.9377847,
@@ -170,14 +170,14 @@
     "semantic_hash": "d966fc0978f5abc2f0cbc38b846a638d"
   },
   "src/components/legal/LegalDocument.tsx": {
-    "mtime": 1785609269.9932394,
-    "ast_hash": "6ce89b4e10b4a5a93412b734905a6151",
-    "semantic_hash": "6ce89b4e10b4a5a93412b734905a6151"
+    "mtime": 1785612436.87799,
+    "ast_hash": "678c6f80fc2495753933ec2521781c8d",
+    "semantic_hash": "678c6f80fc2495753933ec2521781c8d"
   },
   "src/components/legal/LegalDocumentClient.tsx": {
-    "mtime": 1785609269.9961424,
-    "ast_hash": "8003d159c3df27fc94bf810b83a88fc8",
-    "semantic_hash": "8003d159c3df27fc94bf810b83a88fc8"
+    "mtime": 1785613368.4890103,
+    "ast_hash": "e08bcacd0d5ae08898ab7ac38b53ad7f",
+    "semantic_hash": "e08bcacd0d5ae08898ab7ac38b53ad7f"
   },
   "src/components/legal/LegalDocumentRoute.tsx": {
     "mtime": 1785609269.9993098,
@@ -318,5 +318,15 @@
     "mtime": 1782162677.367033,
     "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
     "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "src/components/legal/LegalLoadingPreloadLinks.tsx": {
+    "mtime": 1785612017.940288,
+    "ast_hash": "1c32d3c4528058f670800771d15dfd12",
+    "semantic_hash": "1c32d3c4528058f670800771d15dfd12"
+  },
+  "src/components/legal/LegalLoadingPreloader.tsx": {
+    "mtime": 1785611777.1424031,
+    "ast_hash": "ac463c9521aeeb64721c6c00fca3d105",
+    "semantic_hash": "ac463c9521aeeb64721c6c00fca3d105"
   }
 }

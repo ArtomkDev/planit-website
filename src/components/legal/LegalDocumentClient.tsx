@@ -654,9 +654,9 @@ function normalizeManifest(value: unknown): LegalManifest | null {
   return manifest;
 }
 
-async function fetchLegalManifest() {
+export async function fetchLegalManifest() {
   try {
-    const response = await fetch(legalManifestPath, { cache: "no-store" });
+    const response = await fetch(legalManifestPath);
 
     if (!response.ok) {
       return null;
@@ -828,21 +828,23 @@ async function ensureFreshLegalLoadingDocument(
   return fetchedDocument;
 }
 
-function warmLegalLoadingDocuments(
+export function warmLegalLoadingDocuments(
   manifest: LegalManifest | null,
   locale: string,
-  activeKind: LegalDocumentKind,
+  activeKind?: LegalDocumentKind,
 ) {
-  if (!manifest?.documents) {
-    return;
-  }
-
   for (const documentKind of legalDocumentOrder) {
-    if (documentKind === activeKind) {
+    if (activeKind && documentKind === activeKind) {
       continue;
     }
 
     const descriptor = getLegalLoadingAssetDescriptor(documentKind, manifest);
+    const cachedDocument = readCachedLegalLoadingDocument(documentKind, locale);
+
+    if (isFreshCachedLoadingDocument(cachedDocument, descriptor)) {
+      continue;
+    }
+
     const warmKey = `${getLegalLoadingCacheKey(documentKind)}:${getLoadingStorageVersion(
       descriptor,
     )}`;
@@ -859,6 +861,15 @@ function warmLegalLoadingDocuments(
       },
     );
   }
+}
+
+export async function warmAllLegalLoadingDocuments(locale: string) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  const manifest = await fetchLegalManifest();
+  warmLegalLoadingDocuments(manifest, locale);
 }
 
 function parseLegalBodyOnly(source: string, locale: string) {
@@ -969,11 +980,13 @@ export function LegalDocumentClient({
   useEffect(() => {
     let ignore = false;
     const cachedLoadingDocument = readCachedLegalLoadingDocument(kind, locale);
+    const visibleLoadingHtml =
+      initialLoadingHtml || cachedLoadingDocument?.html || "";
 
     async function loadLegalDocument() {
       setError(null);
       setHtml("");
-      setLoadingHtml(cachedLoadingDocument?.html ?? initialLoadingHtml);
+      setLoadingHtml(visibleLoadingHtml);
       setDocumentMetadata(fallbackDocument);
 
       try {
@@ -985,7 +998,7 @@ export function LegalDocumentClient({
 
         void ensureFreshLegalLoadingDocument(kind, manifest, locale)
           .then((nextLoadingDocument) => {
-            if (!ignore && nextLoadingDocument?.html) {
+            if (!ignore && nextLoadingDocument?.html && !visibleLoadingHtml) {
               setLoadingHtml(nextLoadingDocument.html);
             }
           })

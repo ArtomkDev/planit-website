@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { isAbsolute, relative, resolve } from "node:path";
 import {
+  getLegalDocumentLoadingPath,
   legalDocumentOrder,
   legalDocuments,
   type LegalDocumentKind,
 } from "@/content/legal-documents";
+import legalManifestJson from "../../../public/content/legal/manifest.json";
 import { LegalDocumentIcon, LegalSupportArrow } from "./LegalIcons";
 import { LegalDocumentClient } from "./LegalDocumentClient";
 import styles from "./LegalDocument.module.css";
@@ -18,18 +21,56 @@ interface LegalDocumentProps {
   kind: LegalDocumentKind;
 }
 
+type LegalSeedManifestDocument = {
+  loadingPath?: string;
+  loadingSha256?: string;
+};
+
+type LegalSeedManifest = {
+  documents?: Partial<Record<string, LegalSeedManifestDocument>>;
+};
+
+const legalManifest = legalManifestJson as LegalSeedManifest;
+const publicDirectory = resolve(process.cwd(), "public");
+
+function resolvePublicAssetPath(assetPath: string) {
+  const resolvedPath = resolve(publicDirectory, assetPath.replace(/^\/+/, ""));
+  const relativePath = relative(publicDirectory, resolvedPath);
+
+  if (
+    !relativePath ||
+    relativePath.startsWith("..") ||
+    isAbsolute(relativePath)
+  ) {
+    return null;
+  }
+
+  return resolvedPath;
+}
+
 async function getInitialLoadingHtml(kind: LegalDocumentKind) {
   try {
-    const source = await readFile(
-      join(
-        process.cwd(),
-        "public",
-        "content",
-        "legal",
-        `${kind}.loading.mdx`,
-      ),
-      "utf8",
-    );
+    const documentManifest = legalManifest.documents?.[kind];
+    const loadingPath =
+      documentManifest?.loadingPath ?? getLegalDocumentLoadingPath(kind);
+    const filePath = resolvePublicAssetPath(loadingPath);
+
+    if (!filePath) {
+      return "";
+    }
+
+    const source = await readFile(filePath, "utf8");
+    const expectedSha256 = documentManifest?.loadingSha256;
+
+    if (expectedSha256) {
+      const actualSha256 = createHash("sha256")
+        .update(source, "utf8")
+        .digest("hex");
+
+      if (actualSha256.toLowerCase() !== expectedSha256.toLowerCase()) {
+        return "";
+      }
+    }
 
     return source
       .replace(/^\s*;?\s*/, "")

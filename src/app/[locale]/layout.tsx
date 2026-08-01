@@ -10,6 +10,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import { LocalePreference } from "@/components/i18n/LocalePreference";
+import { LegalLoadingPreloader } from "@/components/legal/LegalLoadingPreloader";
+import { LegalLoadingPreloadLinks } from "@/components/legal/LegalLoadingPreloadLinks";
 import "../globals.css";
 
 const locales = ["uk", "en"] as const;
@@ -43,9 +45,11 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   return (
     <html lang={locale} suppressHydrationWarning>
       <body suppressHydrationWarning className="font-sans min-h-screen flex flex-col antialiased selection:bg-[#F45B8A]/30 selection:text-zinc-950 dark:selection:bg-[#3EF7D2]/25 dark:selection:text-white">
+        <LegalLoadingPreloadLinks />
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
             <LocalePreference />
+            <LegalLoadingPreloader />
             <Header />
             <main className="flex-grow flex flex-col w-full relative z-10">
               {children}

@@ -87,10 +87,24 @@ async function resolveFile(urlPath) {
 function sendFile(response, filePath, statusCode, method) {
   const extension = path.extname(filePath);
   const contentType = mimeTypes.get(extension) || "application/octet-stream";
-  const cacheControl =
+  const normalizedPath = filePath.split(path.sep).join("/");
+  let cacheControl =
     statusCode === 404 || extension === ".html"
       ? "no-cache"
       : "public, max-age=300";
+
+  if (
+    normalizedPath.endsWith("/content/legal/manifest.json") &&
+    statusCode !== 404
+  ) {
+    cacheControl = "public, max-age=300, must-revalidate";
+  } else if (
+    normalizedPath.includes("/content/legal/") &&
+    extension === ".mdx" &&
+    statusCode !== 404
+  ) {
+    cacheControl = "public, max-age=31536000, immutable";
+  }
 
   response.writeHead(statusCode, {
     "Cache-Control": cacheControl,
