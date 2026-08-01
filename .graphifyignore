@@ -1,0 +1,38 @@
+# Local/generated Codex artifacts
+.agents/
+.codex/
+.codex-*/
+
+# Local tool environments
+.graphify-venv/
+.graphify-local.json
+
+# Next.js/Firebase local state and build artifacts
+.next/
+out/
+build/
+dist/
+coverage/
+.firebase/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Dependencies and package-manager state
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnp
+.pnp.*
+.yarn/
+
+# Secrets and local credentials
+.env
+.env.*
+*.pem
+credentials/
+google-services.json
+GoogleService-Info.plist
