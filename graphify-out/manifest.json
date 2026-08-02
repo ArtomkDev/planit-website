@@ -60,9 +60,9 @@
     "semantic_hash": "7f8cd9e9e90dd8a04e6b678e4af7caa5"
   },
   "src/app/[locale]/page.tsx": {
-    "mtime": 1785669816.7665515,
-    "ast_hash": "c24ee10eba505eaeb05bd2c28d6b7d1f",
-    "semantic_hash": "c24ee10eba505eaeb05bd2c28d6b7d1f"
+    "mtime": 1785670744.0861056,
+    "ast_hash": "abdb01dd52ffb92356f5db8c37f6898b",
+    "semantic_hash": "abdb01dd52ffb92356f5db8c37f6898b"
   },
   "src/app/[locale]/privacy/page.tsx": {
     "mtime": 1783552235.828134,
@@ -240,9 +240,9 @@
     "semantic_hash": "2c094e6015461443a4cf110c1c57cacd"
   },
   "src/components/ui/Hero.tsx": {
-    "mtime": 1785669815.0861983,
-    "ast_hash": "522eb4313ada7f4a490062fdfcfc25e8",
-    "semantic_hash": "522eb4313ada7f4a490062fdfcfc25e8"
+    "mtime": 1785698381.0006223,
+    "ast_hash": "d7229444375a1d9700e7be69986c4cb1",
+    "semantic_hash": "d7229444375a1d9700e7be69986c4cb1"
   },
   "src/components/ui/HowItWorks.tsx": {
     "mtime": 1785609270.0823116,
@@ -333,5 +333,10 @@
     "mtime": 1785616016.3137147,
     "ast_hash": "bff56c102b597d66a518a64ecc4373cb",
     "semantic_hash": "bff56c102b597d66a518a64ecc4373cb"
+  },
+  "src/components/ui/HomepagePixelClusters.tsx": {
+    "mtime": 1785695718.7531693,
+    "ast_hash": "f90c9facfb5d228b91aa30d959efa61b",
+    "semantic_hash": "f90c9facfb5d228b91aa30d959efa61b"
   }
 }
