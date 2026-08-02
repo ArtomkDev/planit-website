@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-08-02T21:21:12.203831+00:00",
+  "nodes": {
+    "src_components_ui_floatingschedule_floatingschedule": {
+      "code_fingerprint": "bfef8a51523a2221202bc3faf51b407e270d1b52b71f470f797c197f9a6f503f",
+      "label": "FloatingSchedule()",
+      "last": "2026-08-02T19:51:52.572266+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-02T19:51:52.572266+00:00",
+          "outcome": "useful",
+          "q": "ПОКРАЩИ Hero.tsx ЩОБ ВЕСЬ КОНТЕНТ ПІДХОДИВ ПІД НОВИЙ ФОН У ВИГЛЯДІ МАТРИЦІ ПІКСЕЛІВ, ДАТА БУЛА АКТУАЛЬНОЮ, А ЗВЕРХУ ПРАВОРУЧ БУВ ІНТЕРАКТИВНИЙ ДЗВІНОЧОК"
+        }
+      ],
+      "score": 0.998567765,
+      "source_file": "src/components/ui/FloatingSchedule.tsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_components_ui_hero_hero": {
+      "code_fingerprint": "33c60b47955280c53ca8c8041931e3cbee4ab31bbe90d845db15867c64f89d94",
+      "label": "Hero()",
+      "last": "2026-08-02T19:51:52.572266+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-02T19:51:52.572266+00:00",
+          "outcome": "useful",
+          "q": "ПОКРАЩИ Hero.tsx ЩОБ ВЕСЬ КОНТЕНТ ПІДХОДИВ ПІД НОВИЙ ФОН У ВИГЛЯДІ МАТРИЦІ ПІКСЕЛІВ, ДАТА БУЛА АКТУАЛЬНОЮ, А ЗВЕРХУ ПРАВОРУЧ БУВ ІНТЕРАКТИВНИЙ ДЗВІНОЧОК"
+        }
+      ],
+      "score": 0.998567765,
+      "source_file": "src/components/ui/Hero.tsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_components_ui_hero_matrixgrid": {
+      "code_fingerprint": "33c60b47955280c53ca8c8041931e3cbee4ab31bbe90d845db15867c64f89d94",
+      "label": "MatrixGrid",
+      "last": "2026-08-02T19:51:52.572266+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-02T19:51:52.572266+00:00",
+          "outcome": "useful",
+          "q": "ПОКРАЩИ Hero.tsx ЩОБ ВЕСЬ КОНТЕНТ ПІДХОДИВ ПІД НОВИЙ ФОН У ВИГЛЯДІ МАТРИЦІ ПІКСЕЛІВ, ДАТА БУЛА АКТУАЛЬНОЮ, А ЗВЕРХУ ПРАВОРУЧ БУВ ІНТЕРАКТИВНИЙ ДЗВІНОЧОК"
+        }
+      ],
+      "score": 0.998567765,
+      "source_file": "src/components/ui/Hero.tsx",
+      "status": "tentative",
+      "uses": 1
+    }
+  },
+  "version": 1
+}

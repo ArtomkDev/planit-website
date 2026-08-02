@@ -2,7 +2,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, RocketLaunch } from "@phosphor-icons/react";
+import { ArrowRight } from "@phosphor-icons/react";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { FloatingSchedule } from "@/components/ui/FloatingSchedule";
@@ -1429,21 +1429,18 @@ export function Hero() {
             transition: { staggerChildren: 0.1, delayChildren: 0.5 },
           },
         }}
-        className="relative z-20 mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pb-16 pt-28 lg:grid-cols-[1.08fr_.92fr] lg:gap-20 lg:pb-20 lg:pt-32"
+        className="relative z-20 mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pb-16 pt-24 lg:grid-cols-[1.06fr_.94fr] lg:gap-20 lg:pb-20 lg:pt-28"
       >
-        <div className="text-center lg:text-left">
+        <div className="mx-auto max-w-[610px] text-center lg:mx-0 lg:text-left">
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="mb-7"
+            className="mb-6"
           >
-            <span className="inline-flex items-center gap-2 rounded-full border border-zinc-200/50 bg-white/70 px-5 py-2 text-sm font-bold uppercase tracking-widest shadow-lg backdrop-blur-xl dark:border-zinc-800/50 dark:bg-zinc-900/70">
-              <RocketLaunch
-                weight="duotone"
-                className="h-5 w-5 text-indigo-500"
-              />
+            <span className="inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.18em] text-zinc-700 dark:text-zinc-200">
+              <span className="h-2 w-2 rounded-[2px] bg-[#F45B8A] dark:bg-[#3EF7D2]" />
               {t("badge")}
             </span>
           </motion.div>
@@ -1453,10 +1450,10 @@ export function Hero() {
               hidden: { opacity: 0, scale: 0.94 },
               visible: { opacity: 1, scale: 1 },
             }}
-            className="text-5xl font-black leading-[0.94] tracking-[-0.055em] text-zinc-900 sm:text-6xl md:text-7xl dark:text-white"
+            className="text-5xl font-black leading-[0.94] tracking-[-0.055em] text-zinc-950 sm:text-6xl md:text-7xl dark:text-white"
           >
-            <span className="block drop-shadow-md">{t("title1")}</span>
-            <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg">
+            <span className="block">{t("title1")}</span>
+            <span className="block text-[#E94D7C] dark:text-[#3EF7D2]">
               {t("title2")}
             </span>
           </motion.h1>
@@ -1466,7 +1463,7 @@ export function Hero() {
               hidden: { opacity: 0, y: 18 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="mx-auto mt-7 max-w-2xl text-lg font-medium leading-relaxed text-zinc-600 lg:mx-0 dark:text-zinc-300"
+            className="mx-auto mt-7 max-w-xl text-base font-medium leading-7 text-zinc-700 sm:text-lg lg:mx-0 dark:text-zinc-300"
           >
             {t("description")}
           </motion.p>
@@ -1486,7 +1483,7 @@ export function Hero() {
               whileHover={{ y: -3, scale: 1.025 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 24 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-zinc-900 px-7 py-4 font-bold text-white shadow-xl transition-shadow duration-300 hover:shadow-2xl sm:w-auto dark:bg-white dark:text-zinc-900"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] bg-zinc-950 px-6 py-3.5 font-bold text-white shadow-[0_12px_28px_-16px_rgba(24,24,27,.75)] transition-colors hover:bg-zinc-800 sm:w-auto dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
             >
               {t("ctaPrimary")}
               <ArrowRight size={19} weight="bold" />
@@ -1498,7 +1495,7 @@ export function Hero() {
               whileHover={{ y: -3, scale: 1.015 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 24 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 bg-white/70 px-7 py-4 font-bold text-zinc-800 shadow-sm backdrop-blur-xl transition-[box-shadow,border-color,background-color] duration-300 hover:border-zinc-400 hover:bg-white/90 hover:shadow-xl sm:w-auto dark:border-zinc-700 dark:bg-zinc-900/70 dark:text-white dark:hover:border-zinc-500 dark:hover:bg-zinc-900/90"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] border border-zinc-300 bg-white/75 px-6 py-3.5 font-bold text-zinc-900 backdrop-blur-md transition-colors hover:bg-white sm:w-auto dark:border-zinc-700 dark:bg-zinc-900/75 dark:text-white dark:hover:bg-zinc-900"
             >
               <AndroidRobotLogo className="h-[19px] w-[19px]" />
               {t("ctaSecondary")}

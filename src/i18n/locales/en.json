@@ -47,9 +47,10 @@
       "breakLabel": "Break",
       "minutesLabel": "min",
       "activeLabel": "Left",
-      "scheduleName": "University",
-      "month": "July 2026",
+      "scheduleName": "My schedule",
       "resetDay": "Return to the automatically selected day",
+      "emptyTitle": "There are no classes on this day",
+      "emptyHint": "Choose another day in the calendar",
       "days": {
         "mon": "Mon",
         "tue": "Tue",

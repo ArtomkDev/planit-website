@@ -47,9 +47,10 @@
       "breakLabel": "Перерва",
       "minutesLabel": "хв",
       "activeLabel": "Залишилось",
-      "scheduleName": "Університет",
-      "month": "Липень 2026",
+      "scheduleName": "Мій розклад",
       "resetDay": "Повернутися до автоматично вибраного дня",
+      "emptyTitle": "На цей день занять немає",
+      "emptyHint": "Обери інший день у календарі",
       "days": {
         "mon": "Пн",
         "tue": "Вт",

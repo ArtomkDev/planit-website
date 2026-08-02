@@ -1,12 +1,13 @@
 "use client";
 
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   ArrowCounterClockwise,
+  Bell,
   CalendarBlank,
 } from "@phosphor-icons/react";
-import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { useEffect, useMemo, useState } from "react";
 import {
   LessonCard,
   resolveLessonAppearance,
@@ -14,7 +15,6 @@ import {
 } from "@/components/ui/LessonCard";
 import { BreakCard } from "@/components/ui/BreakCard";
 
-const weekDates = [29, 30, 1, 2, 3, 4, 5];
 const weekKeys = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] as const;
 
 const timeSlots = [
@@ -42,197 +42,341 @@ interface DaySchedule {
   lessons: GeneratedLesson[];
 }
 
+interface LocalizedContent {
+  subjects: string[];
+  types: string[];
+  rooms: string[];
+  teachers: string[];
+}
+
+interface DaySelection {
+  dayIndex: number;
+  todayKey: string;
+  weekStartKey: string;
+}
+
+function getWeekStart(date: Date) {
+  const weekStart = new Date(date);
+  const dayIndex = (weekStart.getDay() + 6) % 7;
+  weekStart.setHours(12, 0, 0, 0);
+  weekStart.setDate(weekStart.getDate() - dayIndex);
+  return weekStart;
+}
+
+function getDateKey(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function getDateFromKey(dateKey: string) {
+  const [year, month, day] = dateKey.split("-").map(Number);
+  return new Date(year, month - 1, day, 12);
+}
+
+function getWeekDates(weekStartKey: string) {
+  if (!weekStartKey) return [];
+
+  const weekStart = getDateFromKey(weekStartKey);
+
+  return Array.from({ length: 7 }, (_, index) => {
+    const date = new Date(weekStart);
+    date.setDate(weekStart.getDate() + index);
+    return date;
+  });
+}
+
+function hashString(value: string) {
+  let hash = 2166136261;
+
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+
+  return hash >>> 0;
+}
+
+function createSeededRandom(seed: number) {
+  let state = seed || 1;
+
+  return () => {
+    state = Math.imul(state ^ (state >>> 15), 1 | state);
+    state ^= state + Math.imul(state ^ (state >>> 7), 61 | state);
+    return ((state ^ (state >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function createSchedule(content: LocalizedContent, weekStartKey: string) {
+  const random = createSeededRandom(hashString(weekStartKey));
+  const generatedSchedule: DaySchedule[] = [];
+
+  for (let dayIndex = 0; dayIndex < 7; dayIndex += 1) {
+    let lessonCount = 0;
+
+    if (dayIndex < 5) {
+      lessonCount = 3;
+    } else if (dayIndex === 5 && random() > 0.52) {
+      lessonCount = random() > 0.55 ? 2 : 1;
+    }
+
+    const lessons: GeneratedLesson[] = [];
+    const availableSubjectIndexes = content.subjects.map((_, index) => index);
+
+    for (let lessonIndex = 0; lessonIndex < lessonCount; lessonIndex += 1) {
+      const randomSubjectPosition = Math.floor(
+        random() * availableSubjectIndexes.length,
+      );
+      const [subjectIndex] = availableSubjectIndexes.splice(
+        randomSubjectPosition,
+        1,
+      );
+      const timeSlot = timeSlots[lessonIndex];
+
+      lessons.push({
+        id: `${weekStartKey}-day${dayIndex}-lesson${lessonIndex}`,
+        subjectIndex,
+        appearanceSeed:
+          hashString(weekStartKey) + dayIndex * timeSlots.length + lessonIndex,
+        subjectName: content.subjects[subjectIndex],
+        displayType: content.types[Math.floor(random() * content.types.length)],
+        displayRoom: content.rooms[Math.floor(random() * content.rooms.length)],
+        teacherName:
+          content.teachers[Math.floor(random() * content.teachers.length)],
+        timeStart: timeSlot.start,
+        timeEnd: timeSlot.end,
+        startMins: timeSlot.startMins,
+        endMins: timeSlot.endMins,
+      });
+    }
+
+    generatedSchedule.push({ dayIndex, lessons });
+  }
+
+  return generatedSchedule;
+}
+
+function findAutomaticSelection(content: LocalizedContent, now: Date) {
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
+  const scheduleCache = new Map<string, DaySchedule[]>();
+
+  for (let offset = 0; offset < 21; offset += 1) {
+    const candidateDate = new Date(now);
+    candidateDate.setHours(12, 0, 0, 0);
+    candidateDate.setDate(now.getDate() + offset);
+
+    const weekStartKey = getDateKey(getWeekStart(candidateDate));
+    let schedule = scheduleCache.get(weekStartKey);
+
+    if (!schedule) {
+      schedule = createSchedule(content, weekStartKey);
+      scheduleCache.set(weekStartKey, schedule);
+    }
+
+    const dayIndex = (candidateDate.getDay() + 6) % 7;
+    const lessons = schedule[dayIndex]?.lessons ?? [];
+
+    if (lessons.length === 0) continue;
+    if (offset === 0 && lessons.every((lesson) => lesson.endMins <= currentMinutes)) {
+      continue;
+    }
+
+    return {
+      dayIndex,
+      todayKey: getDateKey(now),
+      weekStartKey,
+    } satisfies DaySelection;
+  }
+
+  return {
+    dayIndex: (now.getDay() + 6) % 7,
+    todayKey: getDateKey(now),
+    weekStartKey: getDateKey(getWeekStart(now)),
+  } satisfies DaySelection;
+}
+
 export function FloatingSchedule() {
   const tHero = useTranslations("Hero.preview");
   const tCards = useTranslations("DecorativeCards");
+  const locale = useLocale();
   const reduceMotion = useReducedMotion();
-  const [localizedContent] = useState(() => ({
+  const [localizedContent] = useState<LocalizedContent>(() => ({
     subjects: tCards.raw("subjects") as string[],
     types: tCards.raw("types") as string[],
     rooms: tCards.raw("rooms") as string[],
     teachers: tCards.raw("teachers") as string[],
   }));
-
-  const [isClient, setIsClient] = useState(false);
-  const [schedule, setSchedule] = useState<DaySchedule[]>([]);
-  const [selectedDay, setSelectedDay] = useState<number>(0);
-  const [autoSelectedDay, setAutoSelectedDay] = useState<number>(0);
-  const [currentRealDay, setCurrentRealDay] = useState<number>(0);
-  const [currentMins, setCurrentMins] = useState<number>(0);
+  const [clock, setClock] = useState<Date | null>(null);
+  const [manualSelection, setManualSelection] = useState<DaySelection | null>(
+    null,
+  );
 
   useEffect(() => {
-    const { subjects, types, rooms, teachers } = localizedContent;
-
-    const generatedSchedule: DaySchedule[] = [];
-
-    for (let i = 0; i < 7; i++) {
-      let count = 0;
-      if (i < 5) {
-        count = Math.floor(Math.random() * 2) + 2;
-      } else if (i === 5) {
-        count = Math.random() > 0.5 ? Math.floor(Math.random() * 3) + 1 : 0;
-      }
-
-      const lessons: GeneratedLesson[] = [];
-      const availableSubjectIndexes = subjects.map((_, index) => index);
-      for (let j = 0; j < count; j++) {
-        const randomSubjectPosition = Math.floor(Math.random() * availableSubjectIndexes.length);
-        const [subjectIndex] = availableSubjectIndexes.splice(randomSubjectPosition, 1);
-        lessons.push({
-          id: `day${i}-lesson${j}`,
-          subjectIndex,
-          appearanceSeed: i * timeSlots.length + j,
-          subjectName: subjects[subjectIndex],
-          displayType: types[Math.floor(Math.random() * types.length)],
-          displayRoom: rooms[Math.floor(Math.random() * rooms.length)],
-          teacherName: teachers[Math.floor(Math.random() * teachers.length)],
-          timeStart: timeSlots[j].start,
-          timeEnd: timeSlots[j].end,
-          startMins: timeSlots[j].startMins,
-          endMins: timeSlots[j].endMins,
-        });
-      }
-      generatedSchedule.push({ dayIndex: i, lessons });
-    }
-
-    const now = new Date();
-    const currentDayIndex = (now.getDay() + 6) % 7;
-    const mins = now.getHours() * 60 + now.getMinutes();
-
-    let targetDay = currentDayIndex;
-    const todayLessons = generatedSchedule[currentDayIndex].lessons;
-
-    if (todayLessons.length === 0 || mins >= todayLessons[todayLessons.length - 1].endMins) {
-      for (let i = 1; i <= 7; i++) {
-        const nextDay = (currentDayIndex + i) % 7;
-        if (generatedSchedule[nextDay].lessons.length > 0) {
-          targetDay = nextDay;
-          break;
-        }
-      }
-    }
-
-    let interval: ReturnType<typeof setInterval> | undefined;
-    const frame = window.requestAnimationFrame(() => {
-      setSchedule(generatedSchedule);
-      setCurrentRealDay(currentDayIndex);
-      setAutoSelectedDay(targetDay);
-      setSelectedDay(targetDay);
-      setCurrentMins(mins);
-      setIsClient(true);
-
-      interval = setInterval(() => {
-        const date = new Date();
-        setCurrentMins(date.getHours() * 60 + date.getMinutes());
-      }, 60000);
-    });
+    const updateClock = () => setClock(new Date());
+    const frame = window.requestAnimationFrame(updateClock);
+    const interval = window.setInterval(updateClock, 60_000);
 
     return () => {
       window.cancelAnimationFrame(frame);
-      if (interval) clearInterval(interval);
+      window.clearInterval(interval);
     };
-  }, [localizedContent]);
+  }, []);
 
-  if (!isClient) {
+  const todayKey = clock ? getDateKey(clock) : "";
+  const automaticSelection = useMemo(
+    () => (clock ? findAutomaticSelection(localizedContent, clock) : null),
+    [clock, localizedContent],
+  );
+  const activeManualSelection =
+    manualSelection?.todayKey === todayKey ? manualSelection : null;
+  const activeSelection = activeManualSelection ?? automaticSelection;
+  const weekStartKey = activeSelection?.weekStartKey ?? "";
+  const weekDates = useMemo(() => getWeekDates(weekStartKey), [weekStartKey]);
+  const schedule = useMemo(
+    () => (weekStartKey ? createSchedule(localizedContent, weekStartKey) : []),
+    [localizedContent, weekStartKey],
+  );
+
+  if (!clock || !automaticSelection || !activeSelection || weekDates.length === 0) {
     return (
-      <div className="relative mx-auto w-full max-w-[460px] perspective-1000 min-h-[500px] opacity-0" />
+      <div className="relative mx-auto min-h-[518px] w-full max-w-[460px] opacity-0" />
     );
   }
 
-  const lessons = schedule[selectedDay]?.lessons || [];
+  const selectedDayIndex = activeSelection.dayIndex;
+  const lessons = schedule[selectedDayIndex]?.lessons ?? [];
+  const selectedDate = weekDates[selectedDayIndex];
+  const currentMinutes = clock.getHours() * 60 + clock.getMinutes();
+  const isSelectedToday = getDateKey(selectedDate) === todayKey;
+  const isAutomaticDate =
+    selectedDayIndex === automaticSelection.dayIndex &&
+    weekStartKey === automaticSelection.weekStartKey;
+  const rawMonthLabel = new Intl.DateTimeFormat(
+    locale === "uk" ? "uk-UA" : "en-US",
+    { month: "long", year: "numeric" },
+  ).format(selectedDate);
+  const monthLabel =
+    rawMonthLabel.charAt(0).toUpperCase() + rawMonthLabel.slice(1);
   let dayBreakIndex = -1;
   let isBreakNow = false;
   let breakDuration = 0;
   let breakTimeLeft = 0;
 
   if (lessons.length > 1) {
-    if (selectedDay === currentRealDay) {
-      for (let i = 0; i < lessons.length - 1; i++) {
-        const l1 = lessons[i];
-        const l2 = lessons[i + 1];
-        if (currentMins >= l1.endMins && currentMins < l2.startMins) {
-          dayBreakIndex = i;
-          isBreakNow = true;
-          breakDuration = l2.startMins - l1.endMins;
-          breakTimeLeft = l2.startMins - currentMins;
-          break;
-        } else if (currentMins < l1.endMins) {
-          dayBreakIndex = i;
-          isBreakNow = false;
-          breakDuration = l2.startMins - l1.endMins;
-          break;
-        }
-      }
+    if (isSelectedToday) {
+      dayBreakIndex = lessons.findIndex((lesson, index) => {
+        const nextLesson = lessons[index + 1];
+        return (
+          Boolean(nextLesson) &&
+          currentMinutes >= lesson.startMins &&
+          currentMinutes < nextLesson.startMins
+        );
+      });
+
       if (dayBreakIndex === -1) {
-        dayBreakIndex = 0;
-        breakDuration = lessons[1].startMins - lessons[0].endMins;
+        dayBreakIndex = lessons.findIndex(
+          (lesson, index) =>
+            index < lessons.length - 1 && lesson.startMins > currentMinutes,
+        );
       }
     } else {
       dayBreakIndex = 0;
-      breakDuration = lessons[1].startMins - lessons[0].endMins;
+    }
+
+    if (dayBreakIndex >= 0) {
+      const lesson = lessons[dayBreakIndex];
+      const nextLesson = lessons[dayBreakIndex + 1];
+      isBreakNow =
+        isSelectedToday &&
+        currentMinutes >= lesson.endMins &&
+        currentMinutes < nextLesson.startMins;
+      breakDuration = nextLesson.startMins - lesson.endMins;
+      breakTimeLeft = nextLesson.startMins - currentMinutes;
     }
   }
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 36, rotateY: -8 }}
-      animate={{ opacity: 1, y: 0, rotateY: 0 }}
-      transition={{ duration: reduceMotion ? 0 : 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="relative mx-auto w-full max-w-[460px] perspective-1000"
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: reduceMotion ? 0 : 0.65,
+        delay: 0.25,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className="relative mx-auto w-full max-w-[460px]"
     >
-      <div className="absolute -inset-10 -z-10 rounded-full bg-gradient-to-br from-indigo-500/25 via-cyan-400/10 to-pink-500/20 blur-3xl" />
-      <motion.div
-        animate={reduceMotion ? undefined : { y: [0, -7, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="overflow-hidden rounded-[2rem] border border-zinc-200/80 bg-zinc-100 shadow-[0_32px_90px_-28px_rgba(30,41,59,.55)] dark:border-white/10 dark:bg-zinc-950"
-      >
-        <div className="border-b border-zinc-200/80 bg-white/82 px-3 pb-1.5 pt-3 backdrop-blur-2xl dark:border-zinc-800 dark:bg-zinc-950/82">
-          <div className="flex min-h-8 items-center justify-between gap-3">
-            <div className="flex min-h-[30px] max-w-[42%] items-center rounded-[11px] border border-zinc-200 bg-zinc-50 px-2.5 dark:border-zinc-800 dark:bg-zinc-900">
-              <span className="mr-2 h-2 w-2 shrink-0 rounded-full bg-indigo-500" />
+      <div className="overflow-hidden rounded-[28px] border border-zinc-200 bg-zinc-100 shadow-[0_24px_60px_-30px_rgba(15,23,42,.45)] dark:border-zinc-800 dark:bg-zinc-950 dark:shadow-[0_24px_60px_-30px_rgba(0,0,0,.9)]">
+        <div className="border-b border-zinc-200 bg-white px-3 pb-2 pt-3 dark:border-zinc-800 dark:bg-zinc-950">
+          <div className="flex min-h-8 items-center justify-between gap-2">
+            <div className="flex min-h-[30px] max-w-[42%] min-w-0 items-center rounded-[11px] border border-zinc-200 bg-zinc-50 px-2.5 dark:border-zinc-800 dark:bg-zinc-900">
+              <span className="mr-2 h-2 w-2 shrink-0 rounded-full bg-[#3B82F6]" />
               <span className="truncate text-[13px] font-bold text-zinc-900 dark:text-white">
                 {tHero("scheduleName")}
               </span>
             </div>
-            <div className="flex min-w-0 items-center justify-end gap-1.5">
-              <span className="truncate text-right text-[17px] font-extrabold leading-[22px] tracking-[-0.35px] text-zinc-900 dark:text-white">
-                {tHero("month")}
+
+            <div className="flex min-w-0 flex-1 items-center justify-end gap-1.5">
+              <span className="min-w-0 truncate text-right text-[17px] font-extrabold leading-[22px] tracking-[-0.25px] text-zinc-900 dark:text-white">
+                {monthLabel}
               </span>
-              <span className="flex h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600">
+              <span
+                aria-hidden="true"
+                className="flex h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600"
+              >
                 <CalendarBlank size={17} weight="bold" />
+              </span>
+              <span
+                aria-hidden="true"
+                className="relative flex h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600"
+              >
+                <Bell size={17} weight="fill" />
+                <span className="absolute right-[5px] top-[5px] h-2 w-2 rounded-full border border-white bg-zinc-400 dark:border-zinc-950 dark:bg-zinc-600" />
               </span>
               <button
                 type="button"
-                onClick={() => setSelectedDay(autoSelectedDay)}
-                disabled={selectedDay === autoSelectedDay}
+                onClick={() => setManualSelection(null)}
+                disabled={isAutomaticDate}
                 aria-label={tHero("resetDay")}
                 title={tHero("resetDay")}
-                className={`flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
-                  selectedDay === autoSelectedDay
-                    ? "cursor-default text-zinc-400 dark:text-zinc-600"
-                    : "text-indigo-500 hover:bg-indigo-500/10 hover:text-indigo-600 dark:text-indigo-400 dark:hover:bg-indigo-400/10 dark:hover:text-indigo-300"
+                className={`flex h-[30px] w-[30px] shrink-0 items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] ${
+                  isAutomaticDate
+                    ? "cursor-default text-zinc-300 dark:text-zinc-700"
+                    : "text-[#3B82F6] hover:text-[#2563EB]"
                 }`}
               >
                 <ArrowCounterClockwise size={17} weight="bold" />
               </button>
             </div>
           </div>
-          <div className="pt-0.5 pb-1">
+
+          <div className="pt-1.5">
             <div className="grid grid-cols-7 gap-0.5 rounded-[15px] border border-zinc-200 bg-zinc-50 p-0.5 dark:border-zinc-800 dark:bg-zinc-900">
               {weekKeys.map((key, index) => {
-                const isSelected = index === selectedDay;
-                const hasLessons = schedule[index]?.lessons.length > 0;
+                const date = weekDates[index];
+                const isSelected = index === selectedDayIndex;
+                const isToday = getDateKey(date) === todayKey;
+
                 return (
                   <button
-                    key={key}
-                    onClick={() => hasLessons && setSelectedDay(index)}
-                    disabled={!hasLessons}
-                    className={`relative flex h-10 min-w-0 flex-col items-center justify-center rounded-xl transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${
+                    key={getDateKey(date)}
+                    type="button"
+                    onClick={() =>
+                      setManualSelection({
+                        dayIndex: index,
+                        todayKey,
+                        weekStartKey,
+                      })
+                    }
+                    aria-current={isToday ? "date" : undefined}
+                    aria-pressed={isSelected}
+                    className={`relative flex h-10 min-w-0 flex-col items-center justify-center rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] ${
                       isSelected
-                        ? "bg-indigo-500 text-white shadow-md"
-                        : hasLessons
-                        ? "text-zinc-500 hover:bg-zinc-200/50 dark:text-zinc-400 dark:hover:bg-zinc-800/50 cursor-pointer"
-                        : "text-zinc-300 dark:text-zinc-700 cursor-not-allowed opacity-50"
+                        ? "bg-[#3B82F6] text-white"
+                        : isToday
+                          ? "bg-[#3B82F6]/10 text-[#2563EB] dark:text-[#60A5FA]"
+                          : "text-zinc-500 hover:bg-zinc-200/60 dark:text-zinc-400 dark:hover:bg-zinc-800"
                     }`}
                   >
                     <span className="text-[8px] font-extrabold uppercase leading-[10px] tracking-[.25px]">
@@ -240,33 +384,60 @@ export function FloatingSchedule() {
                     </span>
                     <span
                       className={`text-[15px] font-extrabold leading-[18px] ${
-                        isSelected ? "text-white" : hasLessons ? "text-zinc-900 dark:text-white" : "text-inherit"
+                        isSelected
+                          ? "text-white"
+                          : isToday
+                            ? "text-[#2563EB] dark:text-[#60A5FA]"
+                            : "text-zinc-900 dark:text-white"
                       }`}
                     >
-                      {weekDates[index]}
+                      {date.getDate()}
                     </span>
-                    {isSelected && <span className="absolute bottom-0.5 h-[3px] w-[3px] rounded-full bg-white" />}
+                    {isToday && (
+                      <span
+                        className={`absolute bottom-0.5 h-[3px] w-[3px] rounded-full ${
+                          isSelected ? "bg-white" : "bg-[#3B82F6]"
+                        }`}
+                      />
+                    )}
                   </button>
                 );
               })}
             </div>
           </div>
         </div>
-        <div className="p-4 relative min-h-[412px] overflow-hidden">
+
+        <div className="relative h-[412px] overflow-hidden p-4">
           <AnimatePresence mode="wait">
             <motion.div
-              key={selectedDay}
-              initial={{ opacity: 0, x: 16, filter: "blur(4px)" }}
-              animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-              exit={{ opacity: 0, x: -16, filter: "blur(4px)" }}
-              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col relative z-10 w-full"
+              key={`${weekStartKey}-${selectedDayIndex}`}
+              initial={{ opacity: 0, x: 12 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -12 }}
+              transition={{
+                duration: reduceMotion ? 0 : 0.22,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="relative z-10 flex w-full flex-col"
             >
-              {lessons.map((lesson, idx) => {
-                const isToday = selectedDay === currentRealDay;
-                const isActiveLesson = isToday && currentMins >= lesson.startMins && currentMins < lesson.endMins;
-                const lessonTimeLeft = lesson.endMins - currentMins;
+              {lessons.length === 0 && (
+                <div className="flex min-h-[340px] flex-col items-center justify-center text-center">
+                  <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-300">
+                    {tHero("emptyTitle")}
+                  </p>
+                  <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-500">
+                    {tHero("emptyHint")}
+                  </p>
+                </div>
+              )}
 
+              {lessons.map((lesson, index) => {
+                const isToday = isSelectedToday;
+                const isActiveLesson =
+                  isToday &&
+                  currentMinutes >= lesson.startMins &&
+                  currentMinutes < lesson.endMins;
+                const lessonTimeLeft = lesson.endMins - currentMinutes;
                 const mappedData: LessonData = {
                   id: lesson.id,
                   subjectIndex: lesson.subjectIndex,
@@ -279,19 +450,28 @@ export function FloatingSchedule() {
                   timeEnd: lesson.timeEnd,
                   isActive: isActiveLesson,
                   activeLabel: tHero("activeLabel"),
-                  timeLeft: isActiveLesson ? `${lessonTimeLeft} ${tHero("minutesLabel")}` : undefined,
+                  timeLeft: isActiveLesson
+                    ? `${lessonTimeLeft} ${tHero("minutesLabel")}`
+                    : undefined,
                 };
                 const { gradientColors } = resolveLessonAppearance(mappedData);
 
                 return (
-                  <div key={lesson.id} className="flex flex-col w-full">
-                    <LessonCard lesson={mappedData} className={idx === lessons.length - 1 ? "mb-0" : ""} />
-                    {idx === dayBreakIndex && lessons[idx + 1] && (
+                  <div key={lesson.id} className="flex w-full flex-col">
+                    <LessonCard
+                      lesson={mappedData}
+                      className={index === lessons.length - 1 ? "mb-0" : ""}
+                    />
+                    {index === dayBreakIndex && lessons[index + 1] && (
                       <BreakCard
-                        isVisible={true}
+                        isVisible
                         isBreakNow={isBreakNow}
                         durationMinutes={breakDuration}
-                        timeLeft={isBreakNow ? `${breakTimeLeft} ${tHero("minutesLabel")}` : null}
+                        timeLeft={
+                          isBreakNow
+                            ? `${breakTimeLeft} ${tHero("minutesLabel")}`
+                            : null
+                        }
                         label={tHero("breakLabel")}
                         leftLabel={tHero("activeLabel")}
                         minutesLabel={tHero("minutesLabel")}
@@ -304,7 +484,7 @@ export function FloatingSchedule() {
             </motion.div>
           </AnimatePresence>
         </div>
-      </motion.div>
+      </div>
     </motion.div>
   );
 }
