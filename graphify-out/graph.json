@@ -9,7 +9,7 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 22,
       "norm_label": "eslint.config.mjs",
       "community_name": "Community 19",
       "id": "eslint_config"
@@ -20,7 +20,7 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 21,
+      "community": 22,
       "norm_label": "eslintconfig",
       "community_name": "Community 19",
       "id": "eslint_config_eslintconfig"
@@ -317,7 +317,7 @@
       "source_file": "package.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "dependencies",
       "community_name": "Community 7",
       "id": "package_dependencies"
@@ -328,7 +328,7 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "@phosphor-icons/react",
       "community_name": "Community 7",
       "id": "package_dependencies_phosphor_icons_react"
@@ -339,7 +339,7 @@
       "source_file": "package.json",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "@phosphor-icons/react",
       "community_name": "Community 7",
       "id": "phosphor_icons_react"
@@ -350,7 +350,7 @@
       "source_file": "package.json",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "@react-three/fiber",
       "community_name": "Community 7",
       "id": "package_dependencies_react_three_fiber"
@@ -361,7 +361,7 @@
       "source_file": "package.json",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "@react-three/fiber",
       "community_name": "Community 7",
       "id": "react_three_fiber"
@@ -372,7 +372,7 @@
       "source_file": "package.json",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "clsx",
       "community_name": "Community 7",
       "id": "package_dependencies_clsx"
@@ -383,7 +383,7 @@
       "source_file": "package.json",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "clsx",
       "community_name": "Community 7",
       "id": "clsx"
@@ -394,7 +394,7 @@
       "source_file": "package.json",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "firebase",
       "community_name": "Community 7",
       "id": "package_dependencies_firebase"
@@ -405,7 +405,7 @@
       "source_file": "package.json",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "firebase",
       "community_name": "Community 7",
       "id": "firebase"
@@ -416,7 +416,7 @@
       "source_file": "package.json",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "framer-motion",
       "community_name": "Community 7",
       "id": "package_dependencies_framer_motion"
@@ -427,7 +427,7 @@
       "source_file": "package.json",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "framer-motion",
       "community_name": "Community 7",
       "id": "framer_motion"
@@ -438,7 +438,7 @@
       "source_file": "package.json",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "next",
       "community_name": "Community 7",
       "id": "package_dependencies_next"
@@ -449,7 +449,7 @@
       "source_file": "package.json",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "next",
       "community_name": "Community 7",
       "id": "next"
@@ -460,7 +460,7 @@
       "source_file": "package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "next-intl",
       "community_name": "Community 7",
       "id": "package_dependencies_next_intl"
@@ -471,7 +471,7 @@
       "source_file": "package.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "next-intl",
       "community_name": "Community 7",
       "id": "next_intl"
@@ -482,7 +482,7 @@
       "source_file": "package.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "react",
       "community_name": "Community 7",
       "id": "package_dependencies_react"
@@ -493,7 +493,7 @@
       "source_file": "package.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "react",
       "community_name": "Community 7",
       "id": "react"
@@ -504,7 +504,7 @@
       "source_file": "package.json",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "react-dom",
       "community_name": "Community 7",
       "id": "package_dependencies_react_dom"
@@ -515,7 +515,7 @@
       "source_file": "package.json",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "react-dom",
       "community_name": "Community 7",
       "id": "react_dom"
@@ -526,7 +526,7 @@
       "source_file": "package.json",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "react-icons",
       "community_name": "Community 7",
       "id": "package_dependencies_react_icons"
@@ -537,7 +537,7 @@
       "source_file": "package.json",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "react-icons",
       "community_name": "Community 7",
       "id": "react_icons"
@@ -548,7 +548,7 @@
       "source_file": "package.json",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "tailwind-merge",
       "community_name": "Community 7",
       "id": "package_dependencies_tailwind_merge"
@@ -559,7 +559,7 @@
       "source_file": "package.json",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "tailwind-merge",
       "community_name": "Community 7",
       "id": "tailwind_merge"
@@ -570,7 +570,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "three",
       "community_name": "Community 7",
       "id": "package_dependencies_three"
@@ -581,7 +581,7 @@
       "source_file": "package.json",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "norm_label": "three",
       "community_name": "Community 7",
       "id": "three"
@@ -955,7 +955,7 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 23,
       "norm_label": "postcss.config.mjs",
       "community_name": "Community 20",
       "id": "postcss_config"
@@ -966,7 +966,7 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 23,
       "norm_label": "config",
       "community_name": "Community 20",
       "id": "postcss_config_config"
@@ -977,7 +977,7 @@
       "source_file": "scripts/deploy-firebase.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 30,
+      "community": 31,
       "norm_label": "deploy-firebase.ps1",
       "community_name": "Community 27",
       "id": "scripts_deploy_firebase"
@@ -988,7 +988,7 @@
       "source_file": "scripts/graphify.ps1",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 31,
+      "community": 32,
       "norm_label": "graphify.ps1",
       "community_name": "Community 28",
       "id": "scripts_graphify"
@@ -1054,7 +1054,7 @@
       "source_file": "src/app/[locale]/delete/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 24,
       "norm_label": "[locale]/delete/page.tsx",
       "community_name": "Community 21",
       "id": "src_app_locale_delete_page"
@@ -1065,32 +1065,10 @@
       "source_file": "src/app/[locale]/delete/page.tsx",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 23,
+      "community": 24,
       "norm_label": "deleteaccountpage()",
       "community_name": "Community 21",
       "id": "src_app_locale_delete_page_deleteaccountpage"
-    },
-    {
-      "label": "[locale]/page.tsx",
-      "file_type": "code",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "[locale]/page.tsx",
-      "community_name": "Community 2",
-      "id": "src_app_locale_page"
-    },
-    {
-      "label": "Home()",
-      "file_type": "code",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "home()",
-      "community_name": "Community 2",
-      "id": "src_app_locale_page_home"
     },
     {
       "label": "[locale]/privacy/page.tsx",
@@ -1098,7 +1076,7 @@
       "source_file": "src/app/[locale]/privacy/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 24,
+      "community": 25,
       "norm_label": "[locale]/privacy/page.tsx",
       "community_name": "Community 22",
       "id": "src_app_locale_privacy_page"
@@ -1109,7 +1087,7 @@
       "source_file": "src/app/[locale]/privacy/page.tsx",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 24,
+      "community": 25,
       "norm_label": "privacypage()",
       "community_name": "Community 22",
       "id": "src_app_locale_privacy_page_privacypage"
@@ -1153,7 +1131,7 @@
       "source_file": "src/app/[locale]/terms/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 25,
+      "community": 26,
       "norm_label": "[locale]/terms/page.tsx",
       "community_name": "Community 23",
       "id": "src_app_locale_terms_page"
@@ -1164,7 +1142,7 @@
       "source_file": "src/app/[locale]/terms/page.tsx",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 25,
+      "community": 26,
       "norm_label": "termspage()",
       "community_name": "Community 23",
       "id": "src_app_locale_terms_page_termspage"
@@ -1175,7 +1153,7 @@
       "source_file": "src/app/[locale]/wiki/cookies/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "cookies/page.tsx",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_cookies_page"
@@ -1186,7 +1164,7 @@
       "source_file": "src/app/[locale]/wiki/cookies/page.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "generatemetadata()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_cookies_page_generatemetadata"
@@ -1197,7 +1175,7 @@
       "source_file": "src/app/[locale]/wiki/cookies/page.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "cookiespage()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_cookies_page_cookiespage"
@@ -1208,7 +1186,7 @@
       "source_file": "src/app/[locale]/wiki/delete/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "wiki/delete/page.tsx",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_delete_page"
@@ -1219,7 +1197,7 @@
       "source_file": "src/app/[locale]/wiki/delete/page.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "generatemetadata()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_delete_page_generatemetadata"
@@ -1230,7 +1208,7 @@
       "source_file": "src/app/[locale]/wiki/delete/page.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "deletepage()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_delete_page_deletepage"
@@ -1241,7 +1219,7 @@
       "source_file": "src/app/[locale]/wiki/licenses/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "licenses/page.tsx",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_licenses_page"
@@ -1252,7 +1230,7 @@
       "source_file": "src/app/[locale]/wiki/licenses/page.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "generatemetadata()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_licenses_page_generatemetadata"
@@ -1263,7 +1241,7 @@
       "source_file": "src/app/[locale]/wiki/licenses/page.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "licensespage()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_licenses_page_licensespage"
@@ -1274,7 +1252,7 @@
       "source_file": "src/app/[locale]/wiki/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "wiki/page.tsx",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_page"
@@ -1285,7 +1263,7 @@
       "source_file": "src/app/[locale]/wiki/page.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "generatemetadata()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_page_generatemetadata"
@@ -1296,7 +1274,7 @@
       "source_file": "src/app/[locale]/wiki/page.tsx",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "wikipage()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_page_wikipage"
@@ -1307,7 +1285,7 @@
       "source_file": "src/app/[locale]/wiki/privacy/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "wiki/privacy/page.tsx",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_privacy_page"
@@ -1318,7 +1296,7 @@
       "source_file": "src/app/[locale]/wiki/privacy/page.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "generatemetadata()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_privacy_page_generatemetadata"
@@ -1329,7 +1307,7 @@
       "source_file": "src/app/[locale]/wiki/privacy/page.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "privacypage()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_privacy_page_privacypage"
@@ -1340,7 +1318,7 @@
       "source_file": "src/app/[locale]/wiki/terms/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "wiki/terms/page.tsx",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_terms_page"
@@ -1351,7 +1329,7 @@
       "source_file": "src/app/[locale]/wiki/terms/page.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "generatemetadata()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_terms_page_generatemetadata"
@@ -1362,7 +1340,7 @@
       "source_file": "src/app/[locale]/wiki/terms/page.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "termspage()",
       "community_name": "Community 8",
       "id": "src_app_locale_wiki_terms_page_termspage"
@@ -1373,7 +1351,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "global-not-found-client.tsx",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client"
@@ -1384,7 +1362,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "copy",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_copy"
@@ -1395,7 +1373,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "locale",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_locale"
@@ -1406,7 +1384,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "subscribetolocale()",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_subscribetolocale"
@@ -1417,7 +1395,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "getserverlocale()",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_getserverlocale"
@@ -1428,7 +1406,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "getclientlocale()",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_getclientlocale"
@@ -1439,7 +1417,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L74",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "notfoundcontent()",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_notfoundcontent"
@@ -1450,7 +1428,7 @@
       "source_file": "src/app/global-not-found-client.tsx",
       "source_location": "L148",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "globalnotfoundclient()",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_client_globalnotfoundclient"
@@ -1461,7 +1439,7 @@
       "source_file": "src/app/global-not-found.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "global-not-found.tsx",
       "community_name": "Community 1",
       "id": "src_app_global_not_found"
@@ -1472,7 +1450,7 @@
       "source_file": "src/app/global-not-found.tsx",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "metadata",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_metadata"
@@ -1483,7 +1461,7 @@
       "source_file": "src/app/global-not-found.tsx",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 11,
+      "community": 8,
       "norm_label": "globalnotfound()",
       "community_name": "Community 1",
       "id": "src_app_global_not_found_globalnotfound"
@@ -1527,7 +1505,7 @@
       "source_file": "src/app/manifest.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 26,
+      "community": 27,
       "norm_label": "manifest.ts",
       "community_name": "Community 24",
       "id": "src_app_manifest"
@@ -1538,7 +1516,7 @@
       "source_file": "src/app/manifest.ts",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 26,
+      "community": 27,
       "norm_label": "manifest()",
       "community_name": "Community 24",
       "id": "src_app_manifest_manifest"
@@ -1582,7 +1560,7 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 27,
+      "community": 28,
       "norm_label": "robots.ts",
       "community_name": "Community 25",
       "id": "src_app_robots"
@@ -1593,7 +1571,7 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 27,
+      "community": 28,
       "norm_label": "robots()",
       "community_name": "Community 25",
       "id": "src_app_robots_robots"
@@ -1604,7 +1582,7 @@
       "source_file": "src/app/sitemap.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "sitemap.ts",
       "community_name": "Community 0",
       "id": "src_app_sitemap"
@@ -1615,7 +1593,7 @@
       "source_file": "src/app/sitemap.ts",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "sitemap()",
       "community_name": "Community 0",
       "id": "src_app_sitemap_sitemap"
@@ -1626,7 +1604,7 @@
       "source_file": "src/components/i18n/LocalePreference.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 28,
+      "community": 29,
       "norm_label": "localepreference.tsx",
       "community_name": "Community 1",
       "id": "src_components_i18n_localepreference"
@@ -1637,7 +1615,7 @@
       "source_file": "src/components/i18n/LocalePreference.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 28,
+      "community": 29,
       "norm_label": "localepreference()",
       "community_name": "Community 1",
       "id": "src_components_i18n_localepreference_localepreference"
@@ -1648,7 +1626,7 @@
       "source_file": "src/components/legal/LegalDocumentRoute.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumentroute.tsx",
       "community_name": "Community 8",
       "id": "src_components_legal_legaldocumentroute"
@@ -1659,7 +1637,7 @@
       "source_file": "src/components/legal/LegalDocumentRoute.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "localeparams",
       "community_name": "Community 8",
       "id": "src_components_legal_legaldocumentroute_localeparams"
@@ -1670,7 +1648,7 @@
       "source_file": "src/components/legal/LegalDocumentRoute.tsx",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "getlegaldocumentmetadata()",
       "community_name": "Community 8",
       "id": "src_components_legal_legaldocumentroute_getlegaldocumentmetadata"
@@ -1681,7 +1659,7 @@
       "source_file": "src/components/legal/LegalDocumentRoute.tsx",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumentroute()",
       "community_name": "Community 8",
       "id": "src_components_legal_legaldocumentroute_legaldocumentroute"
@@ -1692,7 +1670,7 @@
       "source_file": "src/components/legal/LegalIcons.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legalicons.tsx",
       "community_name": "Community 0",
       "id": "src_components_legal_legalicons"
@@ -1703,7 +1681,7 @@
       "source_file": "src/components/legal/LegalIcons.tsx",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumenticon()",
       "community_name": "Community 0",
       "id": "src_components_legal_legalicons_legaldocumenticon"
@@ -1714,7 +1692,7 @@
       "source_file": "src/components/legal/LegalIcons.tsx",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legalcalendaricon()",
       "community_name": "Community 0",
       "id": "src_components_legal_legalicons_legalcalendaricon"
@@ -1725,7 +1703,7 @@
       "source_file": "src/components/legal/LegalIcons.tsx",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legalsupportarrow()",
       "community_name": "Community 0",
       "id": "src_components_legal_legalicons_legalsupportarrow"
@@ -1769,7 +1747,7 @@
       "source_file": "src/components/motion/ScrollReveal.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "scrollreveal.tsx",
       "community_name": "Community 2",
       "id": "src_components_motion_scrollreveal"
@@ -1780,7 +1758,7 @@
       "source_file": "src/components/motion/ScrollReveal.tsx",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "scrollrevealprops",
       "community_name": "Community 2",
       "id": "src_components_motion_scrollreveal_scrollrevealprops"
@@ -1791,7 +1769,7 @@
       "source_file": "src/components/motion/ScrollReveal.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "scrollreveal()",
       "community_name": "Community 2",
       "id": "src_components_motion_scrollreveal_scrollreveal"
@@ -1901,7 +1879,7 @@
       "source_file": "src/components/ui/AppShowcase.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "appshowcase.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_appshowcase"
@@ -1912,7 +1890,7 @@
       "source_file": "src/components/ui/AppShowcase.tsx",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "appshowcase()",
       "community_name": "Community 2",
       "id": "src_components_ui_appshowcase_appshowcase"
@@ -1923,7 +1901,7 @@
       "source_file": "src/components/ui/BentoCard.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "bentocard.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_bentocard"
@@ -1934,7 +1912,7 @@
       "source_file": "src/components/ui/BentoCard.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "bentocardprops",
       "community_name": "Community 2",
       "id": "src_components_ui_bentocard_bentocardprops"
@@ -1945,7 +1923,7 @@
       "source_file": "src/components/ui/BentoCard.tsx",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "bentocard()",
       "community_name": "Community 2",
       "id": "src_components_ui_bentocard_bentocard"
@@ -1956,7 +1934,7 @@
       "source_file": "src/components/ui/BentoCard.tsx",
       "source_location": "L123",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "proximityblockprops",
       "community_name": "Community 2",
       "id": "src_components_ui_bentocard_proximityblockprops"
@@ -1967,7 +1945,7 @@
       "source_file": "src/components/ui/BentoCard.tsx",
       "source_location": "L129",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "proximityblock()",
       "community_name": "Community 2",
       "id": "src_components_ui_bentocard_proximityblock"
@@ -1978,7 +1956,7 @@
       "source_file": "src/components/ui/BreakCard.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "breakcard.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_breakcard"
@@ -1989,7 +1967,7 @@
       "source_file": "src/components/ui/BreakCard.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "breakcardprops",
       "community_name": "Community 2",
       "id": "src_components_ui_breakcard_breakcardprops"
@@ -2000,7 +1978,7 @@
       "source_file": "src/components/ui/BreakCard.tsx",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "breakcard()",
       "community_name": "Community 2",
       "id": "src_components_ui_breakcard_breakcard"
@@ -2011,7 +1989,7 @@
       "source_file": "src/components/ui/CallToAction.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "calltoaction.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_calltoaction"
@@ -2022,7 +2000,7 @@
       "source_file": "src/components/ui/CallToAction.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "shapeoneoutervariants",
       "community_name": "Community 2",
       "id": "src_components_ui_calltoaction_shapeoneoutervariants"
@@ -2033,7 +2011,7 @@
       "source_file": "src/components/ui/CallToAction.tsx",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "shapetwooutervariants",
       "community_name": "Community 2",
       "id": "src_components_ui_calltoaction_shapetwooutervariants"
@@ -2044,7 +2022,7 @@
       "source_file": "src/components/ui/CallToAction.tsx",
       "source_location": "L66",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "calltoaction()",
       "community_name": "Community 2",
       "id": "src_components_ui_calltoaction_calltoaction"
@@ -2055,7 +2033,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "cookieconsent.tsx",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent"
@@ -2066,7 +2044,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "storedcookieconsent",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_storedcookieconsent"
@@ -2077,7 +2055,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "iscookieconsentchoice()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_iscookieconsentchoice"
@@ -2088,7 +2066,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "readstoredconsent()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_readstoredconsent"
@@ -2099,7 +2077,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "writestoredconsent()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_writestoredconsent"
@@ -2110,7 +2088,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L66",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "subscribe()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_subscribe"
@@ -2121,7 +2099,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "getclientsnapshot()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_getclientsnapshot"
@@ -2132,7 +2110,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L68",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "getserversnapshot()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_getserversnapshot"
@@ -2143,7 +2121,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L70",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "syncfirebaseanalyticsconsent()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_syncfirebaseanalyticsconsent"
@@ -2154,7 +2132,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "shapeoneoutervariants",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_shapeoneoutervariants"
@@ -2165,7 +2143,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L103",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "shapetwooutervariants",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_shapetwooutervariants"
@@ -2176,7 +2154,7 @@
       "source_file": "src/components/ui/CookieConsent.tsx",
       "source_location": "L130",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "cookieconsent()",
       "community_name": "Community 6",
       "id": "src_components_ui_cookieconsent_cookieconsent"
@@ -2187,7 +2165,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "floatingschedule.tsx",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule"
@@ -2198,7 +2176,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "weekdates",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule_weekdates"
@@ -2209,7 +2187,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "weekkeys",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule_weekkeys"
@@ -2220,7 +2198,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "timeslots",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule_timeslots"
@@ -2231,7 +2209,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "generatedlesson",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule_generatedlesson"
@@ -2242,7 +2220,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "dayschedule",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule_dayschedule"
@@ -2253,7 +2231,7 @@
       "source_file": "src/components/ui/FloatingSchedule.tsx",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "floatingschedule()",
       "community_name": "Community 10",
       "id": "src_components_ui_floatingschedule_floatingschedule"
@@ -2264,7 +2242,7 @@
       "source_file": "src/components/ui/HowItWorks.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "howitworks.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_howitworks"
@@ -2275,7 +2253,7 @@
       "source_file": "src/components/ui/HowItWorks.tsx",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "howitworks()",
       "community_name": "Community 2",
       "id": "src_components_ui_howitworks_howitworks"
@@ -2286,7 +2264,7 @@
       "source_file": "src/components/ui/InfiniteRibbon.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "infiniteribbon.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_infiniteribbon"
@@ -2297,7 +2275,7 @@
       "source_file": "src/components/ui/InfiniteRibbon.tsx",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "infiniteribbonitem",
       "community_name": "Community 2",
       "id": "src_components_ui_infiniteribbon_infiniteribbonitem"
@@ -2308,7 +2286,7 @@
       "source_file": "src/components/ui/InfiniteRibbon.tsx",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "infiniteribbonprops",
       "community_name": "Community 2",
       "id": "src_components_ui_infiniteribbon_infiniteribbonprops"
@@ -2319,7 +2297,7 @@
       "source_file": "src/components/ui/InfiniteRibbon.tsx",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "infiniteribbon()",
       "community_name": "Community 2",
       "id": "src_components_ui_infiniteribbon_infiniteribbon"
@@ -2385,7 +2363,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessoncard.tsx",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard"
@@ -2396,7 +2374,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessondata",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_lessondata"
@@ -2407,7 +2385,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessoncardprops",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_lessoncardprops"
@@ -2418,7 +2396,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L63",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "subjecttheme",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_subjecttheme"
@@ -2429,7 +2407,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L72",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "subjectthemes",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_subjectthemes"
@@ -2440,7 +2418,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "positivemodulo()",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_positivemodulo"
@@ -2451,7 +2429,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "resolvelessonappearance()",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_resolvelessonappearance"
@@ -2462,7 +2440,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L107",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "elasticlayeroptions",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_elasticlayeroptions"
@@ -2473,7 +2451,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "useelasticfollower()",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_useelasticfollower"
@@ -2484,7 +2462,7 @@
       "source_file": "src/components/ui/LessonCard.tsx",
       "source_location": "L129",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessoncard()",
       "community_name": "Community 10",
       "id": "src_components_ui_lessoncard_lessoncard"
@@ -2495,7 +2473,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessoncardaccent.tsx",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent"
@@ -2506,7 +2484,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "accentdepth",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent_accentdepth"
@@ -2517,7 +2495,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessoncardaccentprops",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent_lessoncardaccentprops"
@@ -2528,7 +2506,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "timepresets",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent_timepresets"
@@ -2539,7 +2517,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "createseededrandom()",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent_createseededrandom"
@@ -2550,7 +2528,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "pick()",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent_pick"
@@ -2561,7 +2539,7 @@
       "source_file": "src/components/ui/LessonCardAccent.tsx",
       "source_location": "L46",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "lessoncardaccent()",
       "community_name": "Community 2",
       "id": "src_components_ui_lessoncardaccent_lessoncardaccent"
@@ -2627,7 +2605,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legal-documents.ts",
       "community_name": "Community 0",
       "id": "src_content_legal_documents"
@@ -2638,7 +2616,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumentkind",
       "community_name": "Community 0",
       "id": "src_content_legal_documents_legaldocumentkind"
@@ -2649,7 +2627,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumentmetadata",
       "community_name": "Community 0",
       "id": "src_content_legal_documents_legaldocumentmetadata"
@@ -2660,7 +2638,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumentdata",
       "community_name": "Community 0",
       "id": "src_content_legal_documents_legaldocumentdata"
@@ -2671,7 +2649,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "getlegaldocumentassetpath()",
       "community_name": "Community 0",
       "id": "src_content_legal_documents_getlegaldocumentassetpath"
@@ -2682,7 +2660,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "getlegaldocumentloadingpath()",
       "community_name": "Community 0",
       "id": "src_content_legal_documents_getlegaldocumentloadingpath"
@@ -2693,7 +2671,7 @@
       "source_file": "src/content/legal-documents.ts",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "islegaldocumentkind()",
       "community_name": "Community 0",
       "id": "src_content_legal_documents_islegaldocumentkind"
@@ -2704,7 +2682,7 @@
       "source_file": "src/i18n/request.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 29,
+      "community": 30,
       "norm_label": "request.ts",
       "community_name": "Community 26",
       "id": "src_i18n_request"
@@ -2715,7 +2693,7 @@
       "source_file": "src/i18n/request.ts",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 29,
+      "community": 30,
       "norm_label": "locales",
       "community_name": "Community 26",
       "id": "src_i18n_request_locales"
@@ -2726,7 +2704,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "firebase.ts",
       "community_name": "Community 6",
       "id": "src_lib_firebase"
@@ -2737,7 +2715,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "firebaseconfig",
       "community_name": "Community 6",
       "id": "src_lib_firebase_firebaseconfig"
@@ -2748,7 +2726,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "db",
       "community_name": "Community 6",
       "id": "src_lib_firebase_db"
@@ -2759,7 +2737,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "auth",
       "community_name": "Community 6",
       "id": "src_lib_firebase_auth"
@@ -2770,7 +2748,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "cookieconsentchoice",
       "community_name": "Community 6",
       "id": "src_lib_firebase_cookieconsentchoice"
@@ -2781,7 +2759,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "gtagdatalayercommand",
       "community_name": "Community 6",
       "id": "src_lib_firebase_gtagdatalayercommand"
@@ -2792,7 +2770,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L46",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "window",
       "community_name": "Community 6",
       "id": "src_lib_firebase_window"
@@ -2803,7 +2781,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "applyanalyticsconsent()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_applyanalyticsconsent"
@@ -2814,7 +2792,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "isrecord()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_isrecord"
@@ -2825,7 +2803,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "datalayercommandtoarray()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_datalayercommandtoarray"
@@ -2836,7 +2814,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "hasfirebaseanalyticsconfigcommand()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_hasfirebaseanalyticsconfigcommand"
@@ -2847,7 +2825,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "waitforfirebaseanalyticsbootstrap()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_waitforfirebaseanalyticsbootstrap"
@@ -2858,7 +2836,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L103",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "queuegrantconsentafterbootstrap()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_queuegrantconsentafterbootstrap"
@@ -2869,7 +2847,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L117",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "denyfirebaseanalyticsconsent()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_denyfirebaseanalyticsconsent"
@@ -2880,7 +2858,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L121",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "getfirebaseanalytics()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_getfirebaseanalytics"
@@ -2891,7 +2869,7 @@
       "source_file": "src/lib/firebase.ts",
       "source_location": "L146",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "norm_label": "updatefirebaseanalyticsconsent()",
       "community_name": "Community 6",
       "id": "src_lib_firebase_updatefirebaseanalyticsconsent"
@@ -2902,7 +2880,7 @@
       "source_file": "src/lib/framer-variants.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "framer-variants.ts",
       "community_name": "Community 2",
       "id": "src_lib_framer_variants"
@@ -2913,7 +2891,7 @@
       "source_file": "src/lib/framer-variants.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "fadeinup",
       "community_name": "Community 2",
       "id": "src_lib_framer_variants_fadeinup"
@@ -2924,7 +2902,7 @@
       "source_file": "src/lib/framer-variants.ts",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 3,
+      "community": 1,
       "norm_label": "staggercontainer",
       "community_name": "Community 2",
       "id": "src_lib_framer_variants_staggercontainer"
@@ -2935,7 +2913,7 @@
       "source_file": "src/lib/utils/classNames.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "classnames.ts",
       "community_name": "Community 2",
       "id": "src_lib_utils_classnames"
@@ -2946,7 +2924,7 @@
       "source_file": "src/lib/utils/classNames.ts",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 5,
+      "community": 1,
       "norm_label": "cn()",
       "community_name": "Community 2",
       "id": "src_lib_utils_classnames_cn"
@@ -2957,7 +2935,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "tsconfig.json",
       "community_name": "Community 5",
       "id": "tsconfig"
@@ -2968,7 +2946,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "compileroptions",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions"
@@ -2979,7 +2957,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "target",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_target"
@@ -2990,7 +2968,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "lib",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_lib"
@@ -3001,7 +2979,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "dom",
       "community_name": "Community 5",
       "id": "ref_dom"
@@ -3012,7 +2990,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "dom.iterable",
       "community_name": "Community 5",
       "id": "ref_dom_iterable"
@@ -3023,7 +3001,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "esnext",
       "community_name": "Community 5",
       "id": "ref_esnext"
@@ -3034,7 +3012,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "allowjs",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_allowjs"
@@ -3045,7 +3023,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "skiplibcheck",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_skiplibcheck"
@@ -3056,7 +3034,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "strict",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_strict"
@@ -3067,7 +3045,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "noemit",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_noemit"
@@ -3078,7 +3056,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "esmoduleinterop",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_esmoduleinterop"
@@ -3089,7 +3067,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "module",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_module"
@@ -3100,7 +3078,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "moduleresolution",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_moduleresolution"
@@ -3111,7 +3089,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "resolvejsonmodule",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_resolvejsonmodule"
@@ -3122,7 +3100,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "isolatedmodules",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_isolatedmodules"
@@ -3133,7 +3111,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "jsx",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_jsx"
@@ -3144,7 +3122,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "incremental",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_incremental"
@@ -3155,7 +3133,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "plugins",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_plugins"
@@ -3166,7 +3144,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "paths",
       "community_name": "Community 5",
       "id": "tsconfig_compileroptions_paths"
@@ -3177,7 +3155,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "include",
       "community_name": "Community 5",
       "id": "tsconfig_include"
@@ -3188,7 +3166,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "next-env.d.ts",
       "community_name": "Community 5",
       "id": "ref_next_env_d_ts"
@@ -3199,7 +3177,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "**/*.ts",
       "community_name": "Community 5",
       "id": "ref_ts"
@@ -3210,7 +3188,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "**/*.tsx",
       "community_name": "Community 5",
       "id": "ref_tsx"
@@ -3221,7 +3199,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": ".next/types/**/*.ts",
       "community_name": "Community 5",
       "id": "ref_next_types_ts"
@@ -3232,7 +3210,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": ".next/dev/types/**/*.ts",
       "community_name": "Community 5",
       "id": "ref_next_dev_types_ts"
@@ -3243,7 +3221,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "**/*.mts",
       "community_name": "Community 5",
       "id": "ref_mts"
@@ -3254,7 +3232,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "exclude",
       "community_name": "Community 5",
       "id": "tsconfig_exclude"
@@ -3265,7 +3243,7 @@
       "source_file": "tsconfig.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 6,
+      "community": 5,
       "norm_label": "node_modules",
       "community_name": "Community 5",
       "id": "ref_node_modules"
@@ -3335,386 +3313,6 @@
       "norm_label": "twitterimage()",
       "community_name": "Community 18",
       "id": "src_app_twitter_image_twitterimage"
-    },
-    {
-      "label": "manifest.json",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "manifest.json",
-      "id": "public_content_legal_manifest"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L2",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "version",
-      "id": "public_content_legal_manifest_version"
-    },
-    {
-      "label": "documents",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "documents",
-      "id": "public_content_legal_manifest_documents"
-    },
-    {
-      "label": "privacy",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L4",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "privacy",
-      "id": "public_content_legal_manifest_documents_privacy"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "path",
-      "id": "public_content_legal_manifest_privacy_path"
-    },
-    {
-      "label": "loadingPath",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingpath",
-      "id": "public_content_legal_manifest_privacy_loadingpath"
-    },
-    {
-      "label": "sha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "sha256",
-      "id": "public_content_legal_manifest_privacy_sha256"
-    },
-    {
-      "label": "loadingSha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingsha256",
-      "id": "public_content_legal_manifest_privacy_loadingsha256"
-    },
-    {
-      "label": "title",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "title",
-      "id": "public_content_legal_manifest_privacy_title"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "version",
-      "id": "public_content_legal_manifest_privacy_version"
-    },
-    {
-      "label": "cookies",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "cookies",
-      "id": "public_content_legal_manifest_documents_cookies"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "path",
-      "id": "public_content_legal_manifest_cookies_path"
-    },
-    {
-      "label": "loadingPath",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L14",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingpath",
-      "id": "public_content_legal_manifest_cookies_loadingpath"
-    },
-    {
-      "label": "sha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "sha256",
-      "id": "public_content_legal_manifest_cookies_sha256"
-    },
-    {
-      "label": "loadingSha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingsha256",
-      "id": "public_content_legal_manifest_cookies_loadingsha256"
-    },
-    {
-      "label": "title",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "title",
-      "id": "public_content_legal_manifest_cookies_title"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L18",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "version",
-      "id": "public_content_legal_manifest_cookies_version"
-    },
-    {
-      "label": "terms",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L20",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "terms",
-      "id": "public_content_legal_manifest_documents_terms"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "path",
-      "id": "public_content_legal_manifest_terms_path"
-    },
-    {
-      "label": "loadingPath",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L22",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingpath",
-      "id": "public_content_legal_manifest_terms_loadingpath"
-    },
-    {
-      "label": "sha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L23",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "sha256",
-      "id": "public_content_legal_manifest_terms_sha256"
-    },
-    {
-      "label": "loadingSha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L24",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingsha256",
-      "id": "public_content_legal_manifest_terms_loadingsha256"
-    },
-    {
-      "label": "title",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "title",
-      "id": "public_content_legal_manifest_terms_title"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L26",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "version",
-      "id": "public_content_legal_manifest_terms_version"
-    },
-    {
-      "label": "licenses",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L28",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "licenses",
-      "id": "public_content_legal_manifest_documents_licenses"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "path",
-      "id": "public_content_legal_manifest_licenses_path"
-    },
-    {
-      "label": "loadingPath",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingpath",
-      "id": "public_content_legal_manifest_licenses_loadingpath"
-    },
-    {
-      "label": "sha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "sha256",
-      "id": "public_content_legal_manifest_licenses_sha256"
-    },
-    {
-      "label": "loadingSha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingsha256",
-      "id": "public_content_legal_manifest_licenses_loadingsha256"
-    },
-    {
-      "label": "title",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "title",
-      "id": "public_content_legal_manifest_licenses_title"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "version",
-      "id": "public_content_legal_manifest_licenses_version"
-    },
-    {
-      "label": "delete",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "delete",
-      "id": "public_content_legal_manifest_documents_delete"
-    },
-    {
-      "label": "path",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "path",
-      "id": "public_content_legal_manifest_delete_path"
-    },
-    {
-      "label": "loadingPath",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingpath",
-      "id": "public_content_legal_manifest_delete_loadingpath"
-    },
-    {
-      "label": "sha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "sha256",
-      "id": "public_content_legal_manifest_delete_sha256"
-    },
-    {
-      "label": "loadingSha256",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadingsha256",
-      "id": "public_content_legal_manifest_delete_loadingsha256"
-    },
-    {
-      "label": "title",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "title",
-      "id": "public_content_legal_manifest_delete_title"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "version",
-      "id": "public_content_legal_manifest_delete_version"
     },
     {
       "label": "serve-static-export.mjs",
@@ -3962,7 +3560,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocument.tsx",
       "id": "src_components_legal_legaldocument"
     },
@@ -3972,7 +3570,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocumentprops",
       "id": "src_components_legal_legaldocument_legaldocumentprops"
     },
@@ -3982,7 +3580,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legalseedmanifestdocument",
       "id": "src_components_legal_legaldocument_legalseedmanifestdocument"
     },
@@ -3992,7 +3590,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legalseedmanifest",
       "id": "src_components_legal_legaldocument_legalseedmanifest"
     },
@@ -4002,7 +3600,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legalmanifest",
       "id": "src_components_legal_legaldocument_legalmanifest"
     },
@@ -4012,7 +3610,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "publicdirectory",
       "id": "src_components_legal_legaldocument_publicdirectory"
     },
@@ -4022,7 +3620,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "resolvepublicassetpath()",
       "id": "src_components_legal_legaldocument_resolvepublicassetpath"
     },
@@ -4032,7 +3630,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "getinitialloadinghtml()",
       "id": "src_components_legal_legaldocument_getinitialloadinghtml"
     },
@@ -4042,7 +3640,7 @@
       "source_file": "src/components/legal/LegalDocument.tsx",
       "source_location": "L84",
       "_origin": "ast",
-      "community": 1,
+      "community": 2,
       "norm_label": "legaldocument()",
       "id": "src_components_legal_legaldocument_legaldocument"
     },
@@ -4562,7 +4160,7 @@
       "source_file": "src/components/ui/Features.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 21,
       "norm_label": "features.tsx",
       "id": "src_components_ui_features"
     },
@@ -4572,7 +4170,7 @@
       "source_file": "src/components/ui/Features.tsx",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 3,
+      "community": 21,
       "norm_label": "interactivegridpattern()",
       "id": "src_components_ui_features_interactivegridpattern"
     },
@@ -4582,7 +4180,7 @@
       "source_file": "src/components/ui/Features.tsx",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 3,
+      "community": 21,
       "norm_label": "features()",
       "id": "src_components_ui_features_features"
     },
@@ -4592,9 +4190,9 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_layout_footer",
-      "community": 3,
-      "norm_label": "footer.tsx"
+      "community": 8,
+      "norm_label": "footer.tsx",
+      "id": "src_components_layout_footer"
     },
     {
       "label": "Footer()",
@@ -4602,9 +4200,9 @@
       "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "src_components_layout_footer_footer",
-      "community": 3,
-      "norm_label": "footer()"
+      "community": 8,
+      "norm_label": "footer()",
+      "id": "src_components_layout_footer_footer"
     },
     {
       "label": "Header.tsx",
@@ -4612,9 +4210,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_layout_header",
-      "community": 11,
-      "norm_label": "header.tsx"
+      "community": 8,
+      "norm_label": "header.tsx",
+      "id": "src_components_layout_header"
     },
     {
       "label": "HeaderProps",
@@ -4622,9 +4220,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "src_components_layout_header_headerprops",
-      "community": 11,
-      "norm_label": "headerprops"
+      "community": 8,
+      "norm_label": "headerprops",
+      "id": "src_components_layout_header_headerprops"
     },
     {
       "label": "HeaderLinkProps",
@@ -4632,9 +4230,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "src_components_layout_header_headerlinkprops",
-      "community": 11,
-      "norm_label": "headerlinkprops"
+      "community": 8,
+      "norm_label": "headerlinkprops",
+      "id": "src_components_layout_header_headerlinkprops"
     },
     {
       "label": "HeaderLink()",
@@ -4642,9 +4240,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "src_components_layout_header_headerlink",
-      "community": 11,
-      "norm_label": "headerlink()"
+      "community": 8,
+      "norm_label": "headerlink()",
+      "id": "src_components_layout_header_headerlink"
     },
     {
       "label": "Header()",
@@ -4652,9 +4250,9 @@
       "source_file": "src/components/layout/Header.tsx",
       "source_location": "L32",
       "_origin": "ast",
-      "id": "src_components_layout_header_header",
-      "community": 11,
-      "norm_label": "header()"
+      "community": 8,
+      "norm_label": "header()",
+      "id": "src_components_layout_header_header"
     },
     {
       "label": "BrandIcons.tsx",
@@ -4662,9 +4260,9 @@
       "source_file": "src/components/ui/BrandIcons.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_ui_brandicons",
-      "community": 3,
-      "norm_label": "brandicons.tsx"
+      "community": 8,
+      "norm_label": "brandicons.tsx",
+      "id": "src_components_ui_brandicons"
     },
     {
       "label": "BrandIconProps",
@@ -4672,9 +4270,9 @@
       "source_file": "src/components/ui/BrandIcons.tsx",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "src_components_ui_brandicons_brandiconprops",
-      "community": 3,
-      "norm_label": "brandiconprops"
+      "community": 8,
+      "norm_label": "brandiconprops",
+      "id": "src_components_ui_brandicons_brandiconprops"
     },
     {
       "label": "AndroidRobotLogo()",
@@ -4682,9 +4280,9 @@
       "source_file": "src/components/ui/BrandIcons.tsx",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "src_components_ui_brandicons_androidrobotlogo",
-      "community": 3,
-      "norm_label": "androidrobotlogo()"
+      "community": 8,
+      "norm_label": "androidrobotlogo()",
+      "id": "src_components_ui_brandicons_androidrobotlogo"
     },
     {
       "label": "AppleBrandLogo()",
@@ -4692,9 +4290,429 @@
       "source_file": "src/components/ui/BrandIcons.tsx",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "src_components_ui_brandicons_applebrandlogo",
+      "community": 8,
+      "norm_label": "applebrandlogo()",
+      "id": "src_components_ui_brandicons_applebrandlogo"
+    },
+    {
+      "label": "Platforms.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/Platforms.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "platforms.tsx",
+      "id": "src_components_ui_platforms"
+    },
+    {
+      "label": "Platforms()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Platforms.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "platforms()",
+      "id": "src_components_ui_platforms_platforms"
+    },
+    {
+      "label": "manifest.json",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L1",
+      "_origin": "ast",
       "community": 3,
-      "norm_label": "applebrandlogo()"
+      "norm_label": "manifest.json",
+      "id": "public_content_legal_manifest"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "version",
+      "id": "public_content_legal_manifest_version"
+    },
+    {
+      "label": "documents",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "documents",
+      "id": "public_content_legal_manifest_documents"
+    },
+    {
+      "label": "privacy",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "privacy",
+      "id": "public_content_legal_manifest_documents_privacy"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "path",
+      "id": "public_content_legal_manifest_privacy_path"
+    },
+    {
+      "label": "loadingPath",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingpath",
+      "id": "public_content_legal_manifest_privacy_loadingpath"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "sha256",
+      "id": "public_content_legal_manifest_privacy_sha256"
+    },
+    {
+      "label": "loadingSha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingsha256",
+      "id": "public_content_legal_manifest_privacy_loadingsha256"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "title",
+      "id": "public_content_legal_manifest_privacy_title"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "version",
+      "id": "public_content_legal_manifest_privacy_version"
+    },
+    {
+      "label": "cookies",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "cookies",
+      "id": "public_content_legal_manifest_documents_cookies"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "path",
+      "id": "public_content_legal_manifest_cookies_path"
+    },
+    {
+      "label": "loadingPath",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingpath",
+      "id": "public_content_legal_manifest_cookies_loadingpath"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "sha256",
+      "id": "public_content_legal_manifest_cookies_sha256"
+    },
+    {
+      "label": "loadingSha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingsha256",
+      "id": "public_content_legal_manifest_cookies_loadingsha256"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "title",
+      "id": "public_content_legal_manifest_cookies_title"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "version",
+      "id": "public_content_legal_manifest_cookies_version"
+    },
+    {
+      "label": "terms",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "terms",
+      "id": "public_content_legal_manifest_documents_terms"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "path",
+      "id": "public_content_legal_manifest_terms_path"
+    },
+    {
+      "label": "loadingPath",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingpath",
+      "id": "public_content_legal_manifest_terms_loadingpath"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "sha256",
+      "id": "public_content_legal_manifest_terms_sha256"
+    },
+    {
+      "label": "loadingSha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingsha256",
+      "id": "public_content_legal_manifest_terms_loadingsha256"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "title",
+      "id": "public_content_legal_manifest_terms_title"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L26",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "version",
+      "id": "public_content_legal_manifest_terms_version"
+    },
+    {
+      "label": "licenses",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "licenses",
+      "id": "public_content_legal_manifest_documents_licenses"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "path",
+      "id": "public_content_legal_manifest_licenses_path"
+    },
+    {
+      "label": "loadingPath",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingpath",
+      "id": "public_content_legal_manifest_licenses_loadingpath"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "sha256",
+      "id": "public_content_legal_manifest_licenses_sha256"
+    },
+    {
+      "label": "loadingSha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingsha256",
+      "id": "public_content_legal_manifest_licenses_loadingsha256"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "title",
+      "id": "public_content_legal_manifest_licenses_title"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "version",
+      "id": "public_content_legal_manifest_licenses_version"
+    },
+    {
+      "label": "delete",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "delete",
+      "id": "public_content_legal_manifest_documents_delete"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "path",
+      "id": "public_content_legal_manifest_delete_path"
+    },
+    {
+      "label": "loadingPath",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingpath",
+      "id": "public_content_legal_manifest_delete_loadingpath"
+    },
+    {
+      "label": "sha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "sha256",
+      "id": "public_content_legal_manifest_delete_sha256"
+    },
+    {
+      "label": "loadingSha256",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "loadingsha256",
+      "id": "public_content_legal_manifest_delete_loadingsha256"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L41",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "title",
+      "id": "public_content_legal_manifest_delete_title"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L42",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "version",
+      "id": "public_content_legal_manifest_delete_version"
+    },
+    {
+      "label": "[locale]/page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_app_locale_page",
+      "community": 11,
+      "norm_label": "[locale]/page.tsx"
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/page.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_app_locale_page_home",
+      "community": 11,
+      "norm_label": "home()"
     },
     {
       "label": "Hero.tsx",
@@ -4703,68 +4721,118 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_ui_hero",
-      "community": 3,
+      "community": 11,
       "norm_label": "hero.tsx"
     },
     {
-      "label": "createSeededRandom()",
+      "label": "DISPLAY_COLORS",
       "file_type": "code",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L18",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "src_components_ui_hero_createseededrandom",
-      "community": 3,
-      "norm_label": "createseededrandom()"
+      "id": "src_components_ui_hero_display_colors",
+      "community": 11,
+      "norm_label": "display_colors"
     },
     {
-      "label": "ParticlesProps",
+      "label": "FigureSeed",
       "file_type": "code",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L95",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "src_components_ui_hero_particlesprops",
-      "community": 3,
-      "norm_label": "particlesprops"
+      "id": "src_components_ui_hero_figureseed",
+      "community": 11,
+      "norm_label": "figureseed"
     },
     {
-      "label": "Particles()",
+      "label": "FieldLobe",
       "file_type": "code",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L99",
+      "source_location": "L32",
       "_origin": "ast",
-      "id": "src_components_ui_hero_particles",
-      "community": 3,
-      "norm_label": "particles()"
+      "id": "src_components_ui_hero_fieldlobe",
+      "community": 11,
+      "norm_label": "fieldlobe"
+    },
+    {
+      "label": "FigureBody",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_figurebody",
+      "community": 11,
+      "norm_label": "figurebody"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_clamp",
+      "community": 11,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "smoothstep()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_smoothstep",
+      "community": 11,
+      "norm_label": "smoothstep()"
+    },
+    {
+      "label": "edgeCellNoise()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_edgecellnoise",
+      "community": 11,
+      "norm_label": "edgecellnoise()"
+    },
+    {
+      "label": "seededUnit()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_seededunit",
+      "community": 11,
+      "norm_label": "seededunit()"
+    },
+    {
+      "label": "createFigureSeed()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_createfigureseed",
+      "community": 11,
+      "norm_label": "createfigureseed()"
+    },
+    {
+      "label": "PixelDisplay()",
+      "file_type": "code",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "src_components_ui_hero_pixeldisplay",
+      "community": 11,
+      "norm_label": "pixeldisplay()"
     },
     {
       "label": "Hero()",
       "file_type": "code",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L275",
+      "source_location": "L739",
       "_origin": "ast",
       "id": "src_components_ui_hero_hero",
-      "community": 3,
+      "community": 11,
       "norm_label": "hero()"
-    },
-    {
-      "label": "Platforms.tsx",
-      "file_type": "code",
-      "source_file": "src/components/ui/Platforms.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_components_ui_platforms",
-      "community": 3,
-      "norm_label": "platforms.tsx"
-    },
-    {
-      "label": "Platforms()",
-      "file_type": "code",
-      "source_file": "src/components/ui/Platforms.tsx",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "src_components_ui_platforms_platforms",
-      "community": 3,
-      "norm_label": "platforms()"
     }
   ],
   "links": [
@@ -5774,185 +5842,6 @@
       "confidence_score": 1.0,
       "source": "src_app_locale_delete_page",
       "target": "src_app_locale_delete_page_deleteaccountpage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_app_locale_page_home"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_appshowcase"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_appshowcase_appshowcase"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_calltoaction"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_calltoaction_calltoaction"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_features"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_features_features"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_hero"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_hero_hero"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_howitworks"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_howitworks_howitworks"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_infiniteribbon"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_infiniteribbon_infiniteribbon"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_platforms"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/app/[locale]/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_app_locale_page",
-      "target": "src_components_ui_platforms_platforms"
     },
     {
       "relation": "contains",
@@ -9298,425 +9187,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest",
-      "target": "public_content_legal_manifest_documents"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest",
-      "target": "public_content_legal_manifest_version"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/legal/LegalLoadingPreloadLinks.tsx",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_components_legal_legalloadingpreloadlinks",
-      "target": "public_content_legal_manifest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents",
-      "target": "public_content_legal_manifest_documents_cookies"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents",
-      "target": "public_content_legal_manifest_documents_delete"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents",
-      "target": "public_content_legal_manifest_documents_licenses"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents",
-      "target": "public_content_legal_manifest_documents_privacy"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents",
-      "target": "public_content_legal_manifest_documents_terms"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_privacy",
-      "target": "public_content_legal_manifest_privacy_loadingpath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_privacy",
-      "target": "public_content_legal_manifest_privacy_loadingsha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_privacy",
-      "target": "public_content_legal_manifest_privacy_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_privacy",
-      "target": "public_content_legal_manifest_privacy_sha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_privacy",
-      "target": "public_content_legal_manifest_privacy_title"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_privacy",
-      "target": "public_content_legal_manifest_privacy_version"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_cookies",
-      "target": "public_content_legal_manifest_cookies_loadingpath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_cookies",
-      "target": "public_content_legal_manifest_cookies_loadingsha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_cookies",
-      "target": "public_content_legal_manifest_cookies_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_cookies",
-      "target": "public_content_legal_manifest_cookies_sha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_cookies",
-      "target": "public_content_legal_manifest_cookies_title"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_cookies",
-      "target": "public_content_legal_manifest_cookies_version"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_terms",
-      "target": "public_content_legal_manifest_terms_loadingpath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_terms",
-      "target": "public_content_legal_manifest_terms_loadingsha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L21",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_terms",
-      "target": "public_content_legal_manifest_terms_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_terms",
-      "target": "public_content_legal_manifest_terms_sha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_terms",
-      "target": "public_content_legal_manifest_terms_title"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L26",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_terms",
-      "target": "public_content_legal_manifest_terms_version"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_licenses",
-      "target": "public_content_legal_manifest_licenses_loadingpath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L32",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_licenses",
-      "target": "public_content_legal_manifest_licenses_loadingsha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_licenses",
-      "target": "public_content_legal_manifest_licenses_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_licenses",
-      "target": "public_content_legal_manifest_licenses_sha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_licenses",
-      "target": "public_content_legal_manifest_licenses_title"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L34",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_licenses",
-      "target": "public_content_legal_manifest_licenses_version"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_delete",
-      "target": "public_content_legal_manifest_delete_loadingpath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_delete",
-      "target": "public_content_legal_manifest_delete_loadingsha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_delete",
-      "target": "public_content_legal_manifest_delete_path"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_delete",
-      "target": "public_content_legal_manifest_delete_sha256"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_delete",
-      "target": "public_content_legal_manifest_delete_title"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/content/legal/manifest.json",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "public_content_legal_manifest_documents_delete",
-      "target": "public_content_legal_manifest_delete_version"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "scripts/serve-static-export.mjs",
       "source_location": "L33",
       "weight": 1.0,
@@ -9940,6 +9410,18 @@
       "confidence_score": 1.0,
       "source": "src_app_locale_layout",
       "target": "src_components_legal_legalloadingpreloadlinks_legalloadingpreloadlinks"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/legal/LegalLoadingPreloadLinks.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_components_legal_legalloadingpreloadlinks",
+      "target": "public_content_legal_manifest"
     },
     {
       "relation": "contains",
@@ -11393,9 +10875,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_footer",
-      "target": "src_components_layout_footer_footer",
-      "confidence_score": 1.0
+      "target": "src_components_layout_footer_footer"
     },
     {
       "relation": "imports_from",
@@ -11405,9 +10887,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_footer",
-      "target": "src_components_ui_brandicons",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons"
     },
     {
       "relation": "imports",
@@ -11417,9 +10899,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_footer",
-      "target": "src_components_ui_brandicons_androidrobotlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_androidrobotlogo"
     },
     {
       "relation": "contains",
@@ -11428,9 +10910,9 @@
       "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_header",
-      "target": "src_components_layout_header_header",
-      "confidence_score": 1.0
+      "target": "src_components_layout_header_header"
     },
     {
       "relation": "contains",
@@ -11439,9 +10921,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_header",
-      "target": "src_components_layout_header_headerlink",
-      "confidence_score": 1.0
+      "target": "src_components_layout_header_headerlink"
     },
     {
       "relation": "contains",
@@ -11450,9 +10932,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_header",
-      "target": "src_components_layout_header_headerlinkprops",
-      "confidence_score": 1.0
+      "target": "src_components_layout_header_headerlinkprops"
     },
     {
       "relation": "contains",
@@ -11461,9 +10943,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_header",
-      "target": "src_components_layout_header_headerprops",
-      "confidence_score": 1.0
+      "target": "src_components_layout_header_headerprops"
     },
     {
       "relation": "imports_from",
@@ -11473,9 +10955,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_header",
-      "target": "src_components_ui_brandicons",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons"
     },
     {
       "relation": "imports",
@@ -11485,9 +10967,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_layout_header",
-      "target": "src_components_ui_brandicons_androidrobotlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_androidrobotlogo"
     },
     {
       "relation": "contains",
@@ -11496,9 +10978,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_ui_brandicons",
-      "target": "src_components_ui_brandicons_androidrobotlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_androidrobotlogo"
     },
     {
       "relation": "contains",
@@ -11507,9 +10989,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_ui_brandicons",
-      "target": "src_components_ui_brandicons_applebrandlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_applebrandlogo"
     },
     {
       "relation": "contains",
@@ -11518,21 +11000,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_ui_brandicons",
-      "target": "src_components_ui_brandicons_brandiconprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_components_ui_hero",
-      "target": "src_components_ui_brandicons",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_brandiconprops"
     },
     {
       "relation": "imports_from",
@@ -11542,21 +11012,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_ui_platforms",
-      "target": "src_components_ui_brandicons",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_components_ui_hero",
-      "target": "src_components_ui_brandicons_androidrobotlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons"
     },
     {
       "relation": "imports",
@@ -11566,9 +11024,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_ui_platforms",
-      "target": "src_components_ui_brandicons_androidrobotlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_androidrobotlogo"
     },
     {
       "relation": "imports",
@@ -11578,26 +11036,545 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_components_ui_platforms",
-      "target": "src_components_ui_brandicons_applebrandlogo",
-      "confidence_score": 1.0
+      "target": "src_components_ui_brandicons_applebrandlogo"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/ui/Hero.tsx",
+      "source_file": "src/components/ui/Platforms.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_components_ui_platforms",
+      "target": "src_components_ui_platforms_platforms"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest",
+      "target": "public_content_legal_manifest_documents"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest",
+      "target": "public_content_legal_manifest_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents",
+      "target": "public_content_legal_manifest_documents_cookies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents",
+      "target": "public_content_legal_manifest_documents_delete"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents",
+      "target": "public_content_legal_manifest_documents_licenses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents",
+      "target": "public_content_legal_manifest_documents_privacy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents",
+      "target": "public_content_legal_manifest_documents_terms"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_privacy",
+      "target": "public_content_legal_manifest_privacy_loadingpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_privacy",
+      "target": "public_content_legal_manifest_privacy_loadingsha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_privacy",
+      "target": "public_content_legal_manifest_privacy_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_privacy",
+      "target": "public_content_legal_manifest_privacy_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_privacy",
+      "target": "public_content_legal_manifest_privacy_title"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_privacy",
+      "target": "public_content_legal_manifest_privacy_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_cookies",
+      "target": "public_content_legal_manifest_cookies_loadingpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_cookies",
+      "target": "public_content_legal_manifest_cookies_loadingsha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_cookies",
+      "target": "public_content_legal_manifest_cookies_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_cookies",
+      "target": "public_content_legal_manifest_cookies_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_cookies",
+      "target": "public_content_legal_manifest_cookies_title"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_components_ui_hero",
-      "target": "src_components_ui_hero_createseededrandom",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_cookies",
+      "target": "public_content_legal_manifest_cookies_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_terms",
+      "target": "public_content_legal_manifest_terms_loadingpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_terms",
+      "target": "public_content_legal_manifest_terms_loadingsha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_terms",
+      "target": "public_content_legal_manifest_terms_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_terms",
+      "target": "public_content_legal_manifest_terms_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_terms",
+      "target": "public_content_legal_manifest_terms_title"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_terms",
+      "target": "public_content_legal_manifest_terms_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_licenses",
+      "target": "public_content_legal_manifest_licenses_loadingpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_licenses",
+      "target": "public_content_legal_manifest_licenses_loadingsha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_licenses",
+      "target": "public_content_legal_manifest_licenses_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_licenses",
+      "target": "public_content_legal_manifest_licenses_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_licenses",
+      "target": "public_content_legal_manifest_licenses_title"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_licenses",
+      "target": "public_content_legal_manifest_licenses_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_delete",
+      "target": "public_content_legal_manifest_delete_loadingpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_delete",
+      "target": "public_content_legal_manifest_delete_loadingsha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_delete",
+      "target": "public_content_legal_manifest_delete_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_delete",
+      "target": "public_content_legal_manifest_delete_sha256"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_delete",
+      "target": "public_content_legal_manifest_delete_title"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/content/legal/manifest.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "public_content_legal_manifest_documents_delete",
+      "target": "public_content_legal_manifest_delete_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/[locale]/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_locale_page",
+      "target": "src_app_locale_page_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/[locale]/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_locale_page",
+      "target": "src_components_ui_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/[locale]/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_locale_page",
+      "target": "src_components_ui_hero_hero",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L275",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_createfigureseed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_display_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_edgecellnoise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_fieldlobe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_figurebody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_figureseed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L739",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_ui_hero",
@@ -11608,22 +11585,33 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L99",
+      "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_ui_hero",
-      "target": "src_components_ui_hero_particles",
+      "target": "src_components_ui_hero_pixeldisplay",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L95",
+      "source_location": "L64",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_ui_hero",
-      "target": "src_components_ui_hero_particlesprops",
+      "target": "src_components_ui_hero_seededunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero",
+      "target": "src_components_ui_hero_smoothstep",
       "confidence_score": 1.0
     },
     {
@@ -11631,25 +11619,74 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/components/ui/Hero.tsx",
-      "source_location": "L119",
+      "source_location": "L194",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_components_ui_hero_particles",
-      "target": "src_components_ui_hero_createseededrandom",
+      "source": "src_components_ui_hero_pixeldisplay",
+      "target": "src_components_ui_hero_clamp",
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/components/ui/Platforms.tsx",
-      "source_location": "L15",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "src_components_ui_platforms",
-      "target": "src_components_ui_platforms_platforms",
+      "source": "src_components_ui_hero_smoothstep",
+      "target": "src_components_ui_hero_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero_pixeldisplay",
+      "target": "src_components_ui_hero_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L509",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero_pixeldisplay",
+      "target": "src_components_ui_hero_edgecellnoise",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero_createfigureseed",
+      "target": "src_components_ui_hero_seededunit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/Hero.tsx",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_ui_hero_pixeldisplay",
+      "target": "src_components_ui_hero_createfigureseed",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6a903cbf1cb1ebde0c0b092d374885cf90c2c1ba"
+  "built_at_commit": "c595c536f7e4b4a5458a0a657377bfe9c3a7a6bf"
 }

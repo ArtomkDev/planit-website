@@ -8,7 +8,7 @@ import { CallToAction } from "@/components/ui/CallToAction";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col overflow-hidden">
+    <div className="flex w-full flex-col overflow-x-clip">
       <Hero />
       <InfiniteRibbon />
       <Features />

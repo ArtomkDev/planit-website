@@ -25,9 +25,9 @@
     "semantic_hash": "239f3ebf717465dc636818a1a619398d"
   },
   "public/content/legal/manifest.json": {
-    "mtime": 1785611838.4478867,
-    "ast_hash": "90a7d1f7bca2d0b77d953a74165ac114",
-    "semantic_hash": "90a7d1f7bca2d0b77d953a74165ac114"
+    "mtime": 1785618292.2135115,
+    "ast_hash": "b4c7486ad187c8e831dd967bab3e14c5",
+    "semantic_hash": "b4c7486ad187c8e831dd967bab3e14c5"
   },
   "scripts/deploy-firebase.ps1": {
     "mtime": 1784910722.0906787,
@@ -60,9 +60,9 @@
     "semantic_hash": "7f8cd9e9e90dd8a04e6b678e4af7caa5"
   },
   "src/app/[locale]/page.tsx": {
-    "mtime": 1785609269.9377847,
-    "ast_hash": "b05cd49634e54079459375bbe137cc87",
-    "semantic_hash": "b05cd49634e54079459375bbe137cc87"
+    "mtime": 1785669816.7665515,
+    "ast_hash": "c24ee10eba505eaeb05bd2c28d6b7d1f",
+    "semantic_hash": "c24ee10eba505eaeb05bd2c28d6b7d1f"
   },
   "src/app/[locale]/privacy/page.tsx": {
     "mtime": 1783552235.828134,
@@ -240,9 +240,9 @@
     "semantic_hash": "2c094e6015461443a4cf110c1c57cacd"
   },
   "src/components/ui/Hero.tsx": {
-    "mtime": 1785616020.866832,
-    "ast_hash": "9ebec64afbc038704e9269f2f57fe852",
-    "semantic_hash": "9ebec64afbc038704e9269f2f57fe852"
+    "mtime": 1785669815.0861983,
+    "ast_hash": "522eb4313ada7f4a490062fdfcfc25e8",
+    "semantic_hash": "522eb4313ada7f4a490062fdfcfc25e8"
   },
   "src/components/ui/HowItWorks.tsx": {
     "mtime": 1785609270.0823116,
