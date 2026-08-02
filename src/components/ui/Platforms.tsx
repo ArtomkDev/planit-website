@@ -1,15 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Browser, DownloadSimple, ArrowRight, Hourglass, AndroidLogo, AppleLogo } from "@phosphor-icons/react";
+import { Browser, ArrowRight, Hourglass } from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
+import { AndroidRobotLogo, AppleBrandLogo } from "@/components/ui/BrandIcons";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
-const SOURCE_URL = "https://github.com/ArtomkDev/PlanIt";
+const PLAY_MARKET_URL = "https://play.google.com/store/apps/details?id=com.artomk.planit";
 
 export function Platforms() {
   const t = useTranslations("Platforms");
@@ -21,16 +22,19 @@ export function Platforms() {
       buttonText: t("items.android.button"),
       statusText: t("items.android.status"),
       isDevelopment: false,
-      href: SOURCE_URL,
+      href: PLAY_MARKET_URL,
       openInNewTab: true,
-      icon: <AndroidLogo className="w-8 h-8" weight="fill" />,
-      buttonIcon: <DownloadSimple className="w-6 h-6" weight="bold" />,
-      spotlightColor: "rgba(16, 185, 129, 0.15)",
-      colorPrimary: "rgba(16, 185, 129, 0.12)",
-      colorSecondary: "rgba(52, 211, 153, 0.12)",
-      buttonBgColor: "bg-emerald-500",
-      buttonHoverColor: "hover:ring-4 hover:ring-emerald-500/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(16,185,129,0.8)]",
-      iconColor: "text-emerald-500",
+      icon: <AndroidRobotLogo className="w-8 h-8" />,
+      buttonIcon: <AndroidRobotLogo className="w-6 h-6" />,
+      spotlightColor: "rgba(62, 247, 210, 0.15)",
+      colorPrimary: "rgba(62, 247, 210, 0.14)",
+      colorSecondary: "rgba(62, 247, 210, 0.07)",
+      buttonBgColor: "bg-[#3EF7D2]",
+      buttonHoverColor: "hover:ring-4 hover:ring-[#3EF7D2]/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(62,247,210,0.85)]",
+      buttonTextColor: "text-zinc-950",
+      iconColor: "text-zinc-950 dark:text-white",
+      statusColor: "text-[#0DAF93] dark:text-[#3EF7D2]",
+      statusSurface: "border-[#3EF7D2]/45 bg-[#3EF7D2]/10 dark:border-[#3EF7D2]/35 dark:bg-[#3EF7D2]/10",
     },
     {
       title: t("items.web.title"),
@@ -42,12 +46,15 @@ export function Platforms() {
       openInNewTab: false,
       icon: <Browser className="w-8 h-8" weight="fill" />,
       buttonIcon: <ArrowRight className="w-6 h-6" weight="bold" />,
-      spotlightColor: "rgba(139, 92, 246, 0.15)",
-      colorPrimary: "rgba(139, 92, 246, 0.12)",
-      colorSecondary: "rgba(167, 139, 250, 0.12)",
-      buttonBgColor: "bg-violet-500",
-      buttonHoverColor: "hover:ring-4 hover:ring-violet-500/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(139,92,246,0.8)]",
-      iconColor: "text-violet-500",
+      spotlightColor: "rgba(244, 91, 138, 0.15)",
+      colorPrimary: "rgba(244, 91, 138, 0.14)",
+      colorSecondary: "rgba(244, 91, 138, 0.07)",
+      buttonBgColor: "bg-[#F45B8A]",
+      buttonHoverColor: "hover:ring-4 hover:ring-[#F45B8A]/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(244,91,138,0.85)]",
+      buttonTextColor: "text-white",
+      iconColor: "text-zinc-950 dark:text-white",
+      statusColor: "text-[#c93667] dark:text-[#F45B8A]",
+      statusSurface: "border-[#F45B8A]/40 bg-[#F45B8A]/10 dark:border-[#F45B8A]/35 dark:bg-[#F45B8A]/10",
     },
     {
       title: t("items.ios.title"),
@@ -57,14 +64,17 @@ export function Platforms() {
       isDevelopment: true,
       href: null,
       openInNewTab: false,
-      icon: <AppleLogo className="w-8 h-8" weight="fill" />,
+      icon: <AppleBrandLogo className="w-8 h-8" />,
       buttonIcon: <Hourglass className="w-6 h-6 animate-pulse" weight="bold" />,
       spotlightColor: "rgba(161, 161, 170, 0.15)",
       colorPrimary: "rgba(161, 161, 170, 0.12)",
       colorSecondary: "rgba(212, 212, 216, 0.12)",
       buttonBgColor: "",
       buttonHoverColor: "",
+      buttonTextColor: "text-zinc-400 dark:text-zinc-500",
       iconColor: "text-zinc-500 dark:text-zinc-300",
+      statusColor: "text-zinc-500 dark:text-zinc-400",
+      statusSurface: "border-zinc-300/50 bg-gradient-to-b from-zinc-100 to-zinc-200 dark:border-zinc-700/50 dark:from-zinc-800 dark:to-zinc-900",
     },
   ];
 
@@ -105,13 +115,9 @@ export function Platforms() {
 
               <ProximityBlock
                 color={item.spotlightColor.replace("0.15", "0.8")}
-                className={`rounded-lg border px-3.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${
-                  item.isDevelopment
-                    ? "border-zinc-300/50 bg-gradient-to-b from-zinc-100 to-zinc-200 dark:border-zinc-700/50 dark:from-zinc-800 dark:to-zinc-900"
-                    : "border-emerald-300/50 bg-emerald-50 dark:border-emerald-900/60 dark:bg-emerald-950/40"
-                }`}
+                className={`rounded-lg border px-3.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${item.statusSurface}`}
               >
-                <span className={`text-[10px] font-black uppercase tracking-[0.2em] ${item.isDevelopment ? "text-zinc-500 dark:text-zinc-400" : "text-emerald-700 dark:text-emerald-300"}`}>
+                <span className={`text-[10px] font-black uppercase tracking-[0.2em] ${item.statusColor}`}>
                   {item.statusText}
                 </span>
               </ProximityBlock>
@@ -145,7 +151,7 @@ export function Platforms() {
                   rel={item.openInNewTab ? "noopener noreferrer" : undefined}
                   whileHover={{ y: -4, scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className={`group/btn relative flex w-full items-center justify-center rounded-2xl px-8 py-5 font-bold text-white shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonHoverColor}`}
+                  className={`group/btn relative flex w-full items-center justify-center rounded-2xl px-8 py-5 font-bold shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonTextColor} ${item.buttonHoverColor}`}
                 >
                   <span className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100" />
                   <span className="relative z-10 flex items-center justify-center gap-3">

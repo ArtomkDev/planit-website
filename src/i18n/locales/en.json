@@ -7,22 +7,24 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "delete": "Account Deletion",
-    "licenses": "Open-Source Licenses",
+    "licenses": "Third-Party Licenses",
     "productSection": "Product",
     "documentsSection": "Documents",
     "supportSection": "Support",
-    "source": "Source Code",
+    "source": "Google Play",
     "cookies": "Cookie Rules",
     "support": "Contact Support",
     "openAppDescription": "Launch the current browser version of PlanIt.",
-    "sourceDescription": "Inspect the public repository and project code.",
+    "sourceDescription": "Install the Android app from Google Play.",
     "termsDescription": "Rules for using PlanIt and its services.",
     "privacyDescription": "How PlanIt stores and synchronizes user data.",
     "cookiesDescription": "How PlanIt treats browser storage and cookie-related updates.",
     "deleteDescription": "Request account and related data deletion.",
-    "licensesDescription": "Open-source notices for PlanIt's direct production dependencies.",
+    "licensesDescription": "License notices for PlanIt's direct production dependencies.",
     "supportDescription": "Send a direct support request by email.",
     "openApp": "Open Web App",
+    "playStore": "Google Play",
+    "playStoreDescription": "Install the Android app from Google Play.",
     "language": "UK",
     "theme": "Toggle theme"
   },
@@ -32,7 +34,7 @@
     "title2": "always at hand",
     "description": "PlanIt helps you build multi-week class schedules, configure breaks and lesson details, work locally, or synchronize data after signing in.",
     "ctaPrimary": "Open Web App",
-    "ctaSecondary": "View Source",
+    "ctaSecondary": "Get it on Google Play",
     "scrollLabel": "Features",
     "preview": {
       "eyebrow": "Today",
@@ -87,9 +89,9 @@
     }
   },
   "Features": {
-    "badge": "Verified in the code",
+    "badge": "Built for daily planning",
     "title": "Only what PlanIt already does",
-    "description": "Features confirmed by the current code: local schedules, cloud sync, explicit conflict control, and a public repository.",
+    "description": "PlanIt covers local schedules, cloud sync, explicit conflict control, and time-limited sharing.",
     "items": {
       "speed": {
         "title": "Local operation",
@@ -104,8 +106,8 @@
         "description": "After email, Google, or Apple sign-in, schedules synchronize through Firebase across connected devices."
       },
       "analytics": {
-        "title": "Public source code",
-        "description": "The application source is available to inspect in a public GitHub repository."
+        "title": "Shareable schedule codes",
+        "description": "Signed-in users can create temporary codes so someone else can preview and import a schedule copy."
       }
     }
   },
@@ -144,7 +146,7 @@
       "android": {
         "title": "Android",
         "description": "The primary native build, with guest mode, synchronization, and a home-screen widget.",
-        "button": "View Source",
+        "button": "Get it on Google Play",
         "status": "Supported"
       },
       "web": {
@@ -182,7 +184,8 @@
     "product": "Product",
     "legal": "Legal",
     "rights": "All rights reserved.",
-    "status": "Application source on GitHub"
+    "status": "Available on Google Play",
+    "androidAttribution": "Android robot reproduced or modified from work by Google and used under the Creative Commons 3.0 Attribution License."
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -202,8 +205,8 @@
     "section1Content": "PlanIt is provided as is, without warranties of any kind. The service or individual features may be changed or discontinued.",
     "section2Title": "Responsibility for data",
     "section2Content": "Users are responsible for the legality of information they add to schedules, including teacher contacts, links, and notes. Important data should also be backed up independently.",
-    "section3Title": "Public Source Code",
-    "section3Content": "The PlanIt source is available to inspect in a public GitHub repository. A separate license file is not currently published in that repository.",
+    "section3Title": "Application Availability",
+    "section3Content": "PlanIt may be available through web and native platform distribution channels. Availability can vary by platform and region.",
     "officialDocument": "Open the application's full terms of service"
   },
   "CookieConsent": {
@@ -269,7 +272,7 @@
     },
     "terms": {
       "title": "Terms of Service",
-      "description": "PlanIt usage terms and accurate information about the application's public source code."
+      "description": "PlanIt usage terms, service availability, and user responsibilities."
     },
     "delete": {
       "title": "Account Deletion",

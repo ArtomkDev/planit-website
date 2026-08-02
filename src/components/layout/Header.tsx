@@ -5,10 +5,11 @@ import Link from 'next/link';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
-import { ArrowRight, CaretDown, Certificate, Cookie, FileText, GithubLogo, Lifebuoy, RocketLaunch, ShieldCheck, Trash } from '@phosphor-icons/react';
+import { ArrowRight, CaretDown, Certificate, Cookie, FileText, Lifebuoy, RocketLaunch, ShieldCheck, Trash } from '@phosphor-icons/react';
+import { AndroidRobotLogo } from '@/components/ui/BrandIcons';
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://planit-demo.web.app';
-const SOURCE_URL = 'https://github.com/ArtomkDev/PlanIt';
+const PLAY_MARKET_URL = 'https://play.google.com/store/apps/details?id=com.artomk.planit';
 
 interface HeaderProps {
   onLocaleChange?: () => void;
@@ -44,24 +45,24 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
     {
       label: t('productSection'),
       items: [
-        { href: APP_URL, label: t('openApp'), description: t('openAppDescription'), icon: RocketLaunch, external: true },
-        { href: SOURCE_URL, label: t('source'), description: t('sourceDescription'), icon: GithubLogo, external: true },
+        { href: APP_URL, label: t('openApp'), description: t('openAppDescription'), icon: <RocketLaunch weight="bold" className="h-5 w-5" />, external: true },
+        { href: PLAY_MARKET_URL, label: t('playStore'), description: t('playStoreDescription'), icon: <AndroidRobotLogo className="h-5 w-5" />, external: true },
       ],
     },
     {
       label: t('documentsSection'),
       items: [
-        { href: `/${locale}/wiki/terms`, label: t('terms'), description: t('termsDescription'), icon: FileText },
-        { href: `/${locale}/wiki/privacy`, label: t('privacy'), description: t('privacyDescription'), icon: ShieldCheck },
-        { href: `/${locale}/wiki/cookies`, label: t('cookies'), description: t('cookiesDescription'), icon: Cookie },
-        { href: `/${locale}/wiki/licenses`, label: t('licenses'), description: t('licensesDescription'), icon: Certificate },
+        { href: `/${locale}/wiki/terms`, label: t('terms'), description: t('termsDescription'), icon: <FileText weight="bold" className="h-5 w-5" /> },
+        { href: `/${locale}/wiki/privacy`, label: t('privacy'), description: t('privacyDescription'), icon: <ShieldCheck weight="bold" className="h-5 w-5" /> },
+        { href: `/${locale}/wiki/cookies`, label: t('cookies'), description: t('cookiesDescription'), icon: <Cookie weight="bold" className="h-5 w-5" /> },
+        { href: `/${locale}/wiki/licenses`, label: t('licenses'), description: t('licensesDescription'), icon: <Certificate weight="bold" className="h-5 w-5" /> },
       ],
     },
     {
       label: t('supportSection'),
       items: [
-        { href: `/${locale}/wiki/delete`, label: t('delete'), description: t('deleteDescription'), icon: Trash },
-        { href: 'mailto:support@planit-app.com', label: t('support'), description: t('supportDescription'), icon: Lifebuoy, external: true },
+        { href: `/${locale}/wiki/delete`, label: t('delete'), description: t('deleteDescription'), icon: <Trash weight="bold" className="h-5 w-5" /> },
+        { href: 'mailto:support@planit-app.com', label: t('support'), description: t('supportDescription'), icon: <Lifebuoy weight="bold" className="h-5 w-5" />, external: true },
       ],
     },
   ];
@@ -123,8 +124,6 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
                     >
                       <div className="overflow-hidden rounded-[8px] border border-zinc-200/80 bg-white/95 p-2 shadow-[0_24px_70px_-32px_rgba(15,23,42,0.45)] backdrop-blur-2xl dark:border-zinc-800/80 dark:bg-zinc-950/95">
                         {section.items.map((item) => {
-                          const Icon = item.icon;
-
                           return (
                             <HeaderLink
                               key={item.href}
@@ -136,7 +135,7 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
                               className="flex gap-3 rounded-[6px] p-3 text-left transition-colors hover:bg-zinc-100 focus-visible:bg-zinc-100 focus-visible:outline-none dark:hover:bg-zinc-900 dark:focus-visible:bg-zinc-900"
                             >
                               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[6px] bg-zinc-950 text-white dark:bg-white dark:text-zinc-950">
-                                <Icon weight="bold" className="h-5 w-5" />
+                                {item.icon}
                               </span>
                               <span className="min-w-0">
                                 <span className="block text-sm font-black text-zinc-950 dark:text-white">{item.label}</span>

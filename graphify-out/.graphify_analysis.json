@@ -102,50 +102,6 @@
       "src_content_legal_documents_legaldocumentmetadata"
     ],
     "2": [
-      "src_app_locale_page",
-      "src_app_locale_page_home",
-      "src_components_motion_scrollreveal",
-      "src_components_motion_scrollreveal_scrollreveal",
-      "src_components_motion_scrollreveal_scrollrevealprops",
-      "src_components_ui_appshowcase",
-      "src_components_ui_appshowcase_appshowcase",
-      "src_components_ui_bentocard",
-      "src_components_ui_bentocard_bentocard",
-      "src_components_ui_bentocard_bentocardprops",
-      "src_components_ui_bentocard_proximityblock",
-      "src_components_ui_bentocard_proximityblockprops",
-      "src_components_ui_breakcard",
-      "src_components_ui_breakcard_breakcard",
-      "src_components_ui_breakcard_breakcardprops",
-      "src_components_ui_calltoaction",
-      "src_components_ui_calltoaction_calltoaction",
-      "src_components_ui_calltoaction_shapeoneoutervariants",
-      "src_components_ui_calltoaction_shapetwooutervariants",
-      "src_components_ui_features",
-      "src_components_ui_features_features",
-      "src_components_ui_features_interactivegridpattern",
-      "src_components_ui_howitworks",
-      "src_components_ui_howitworks_howitworks",
-      "src_components_ui_infiniteribbon",
-      "src_components_ui_infiniteribbon_infiniteribbon",
-      "src_components_ui_infiniteribbon_infiniteribbonitem",
-      "src_components_ui_infiniteribbon_infiniteribbonprops",
-      "src_components_ui_lessoncardaccent",
-      "src_components_ui_lessoncardaccent_accentdepth",
-      "src_components_ui_lessoncardaccent_createseededrandom",
-      "src_components_ui_lessoncardaccent_lessoncardaccent",
-      "src_components_ui_lessoncardaccent_lessoncardaccentprops",
-      "src_components_ui_lessoncardaccent_pick",
-      "src_components_ui_lessoncardaccent_timepresets",
-      "src_components_ui_platforms",
-      "src_components_ui_platforms_platforms",
-      "src_lib_framer_variants",
-      "src_lib_framer_variants_fadeinup",
-      "src_lib_framer_variants_staggercontainer",
-      "src_lib_utils_classnames",
-      "src_lib_utils_classnames_cn"
-    ],
-    "3": [
       "public_content_legal_manifest",
       "public_content_legal_manifest_cookies_loadingpath",
       "public_content_legal_manifest_cookies_loadingsha256",
@@ -185,44 +141,46 @@
       "public_content_legal_manifest_terms_version",
       "public_content_legal_manifest_version"
     ],
-    "4": [
-      "src_app_global_not_found",
-      "src_app_global_not_found_client",
-      "src_app_global_not_found_client_copy",
-      "src_app_global_not_found_client_getclientlocale",
-      "src_app_global_not_found_client_getserverlocale",
-      "src_app_global_not_found_client_globalnotfoundclient",
-      "src_app_global_not_found_client_locale",
-      "src_app_global_not_found_client_notfoundcontent",
-      "src_app_global_not_found_client_subscribetolocale",
-      "src_app_global_not_found_globalnotfound",
-      "src_app_global_not_found_metadata",
-      "src_components_layout_header",
-      "src_components_layout_header_header",
-      "src_components_layout_header_headerlink",
-      "src_components_layout_header_headerlinkprops",
-      "src_components_layout_header_headerprops",
-      "src_components_providers_themeprovider",
-      "src_components_providers_themeprovider_getstoredtheme",
-      "src_components_providers_themeprovider_getsystemtheme",
-      "src_components_providers_themeprovider_theme",
-      "src_components_providers_themeprovider_themecontext",
-      "src_components_providers_themeprovider_themecontexttype",
-      "src_components_providers_themeprovider_themeprovider",
-      "src_components_providers_themeprovider_themestore",
-      "src_components_providers_themeprovider_usetheme",
-      "src_components_ui_interactivegridpattern",
-      "src_components_ui_interactivegridpattern_gridsurface",
-      "src_components_ui_interactivegridpattern_gridsurfaceprops",
-      "src_components_ui_interactivegridpattern_interactivegridpattern",
-      "src_components_ui_interactivegridpattern_interactivegridpatternprops",
-      "src_components_ui_themetoggle",
-      "src_components_ui_themetoggle_getclientsnapshot",
-      "src_components_ui_themetoggle_getserversnapshot",
-      "src_components_ui_themetoggle_subscribe",
-      "src_components_ui_themetoggle_themetoggle"
+    "3": [
+      "src_app_locale_page",
+      "src_app_locale_page_home",
+      "src_components_layout_footer",
+      "src_components_layout_footer_footer",
+      "src_components_motion_scrollreveal",
+      "src_components_motion_scrollreveal_scrollreveal",
+      "src_components_motion_scrollreveal_scrollrevealprops",
+      "src_components_ui_appshowcase",
+      "src_components_ui_appshowcase_appshowcase",
+      "src_components_ui_bentocard",
+      "src_components_ui_bentocard_bentocard",
+      "src_components_ui_bentocard_bentocardprops",
+      "src_components_ui_bentocard_proximityblock",
+      "src_components_ui_bentocard_proximityblockprops",
+      "src_components_ui_brandicons",
+      "src_components_ui_brandicons_androidrobotlogo",
+      "src_components_ui_brandicons_applebrandlogo",
+      "src_components_ui_brandicons_brandiconprops",
+      "src_components_ui_calltoaction",
+      "src_components_ui_calltoaction_calltoaction",
+      "src_components_ui_calltoaction_shapeoneoutervariants",
+      "src_components_ui_calltoaction_shapetwooutervariants",
+      "src_components_ui_features",
+      "src_components_ui_features_features",
+      "src_components_ui_features_interactivegridpattern",
+      "src_components_ui_hero",
+      "src_components_ui_hero_createseededrandom",
+      "src_components_ui_hero_hero",
+      "src_components_ui_hero_particles",
+      "src_components_ui_hero_particlesprops",
+      "src_components_ui_howitworks",
+      "src_components_ui_howitworks_howitworks",
+      "src_components_ui_platforms",
+      "src_components_ui_platforms_platforms",
+      "src_lib_framer_variants",
+      "src_lib_framer_variants_fadeinup",
+      "src_lib_framer_variants_staggercontainer"
     ],
-    "5": [
+    "4": [
       "eslint",
       "eslint_config_next",
       "firebase_tools",
@@ -256,6 +214,41 @@
       "types_tough_cookie",
       "types_ws",
       "typescript"
+    ],
+    "5": [
+      "src_components_ui_breakcard",
+      "src_components_ui_breakcard_breakcard",
+      "src_components_ui_breakcard_breakcardprops",
+      "src_components_ui_floatingschedule",
+      "src_components_ui_floatingschedule_dayschedule",
+      "src_components_ui_floatingschedule_floatingschedule",
+      "src_components_ui_floatingschedule_generatedlesson",
+      "src_components_ui_floatingschedule_timeslots",
+      "src_components_ui_floatingschedule_weekdates",
+      "src_components_ui_floatingschedule_weekkeys",
+      "src_components_ui_infiniteribbon",
+      "src_components_ui_infiniteribbon_infiniteribbon",
+      "src_components_ui_infiniteribbon_infiniteribbonitem",
+      "src_components_ui_infiniteribbon_infiniteribbonprops",
+      "src_components_ui_lessoncard",
+      "src_components_ui_lessoncard_elasticlayeroptions",
+      "src_components_ui_lessoncard_lessoncard",
+      "src_components_ui_lessoncard_lessoncardprops",
+      "src_components_ui_lessoncard_lessondata",
+      "src_components_ui_lessoncard_positivemodulo",
+      "src_components_ui_lessoncard_resolvelessonappearance",
+      "src_components_ui_lessoncard_subjecttheme",
+      "src_components_ui_lessoncard_subjectthemes",
+      "src_components_ui_lessoncard_useelasticfollower",
+      "src_components_ui_lessoncardaccent",
+      "src_components_ui_lessoncardaccent_accentdepth",
+      "src_components_ui_lessoncardaccent_createseededrandom",
+      "src_components_ui_lessoncardaccent_lessoncardaccent",
+      "src_components_ui_lessoncardaccent_lessoncardaccentprops",
+      "src_components_ui_lessoncardaccent_pick",
+      "src_components_ui_lessoncardaccent_timepresets",
+      "src_lib_utils_classnames",
+      "src_lib_utils_classnames_cn"
     ],
     "6": [
       "ref_dom",
@@ -371,30 +364,45 @@
       "package_version"
     ],
     "10": [
-      "src_components_ui_floatingschedule",
-      "src_components_ui_floatingschedule_dayschedule",
-      "src_components_ui_floatingschedule_floatingschedule",
-      "src_components_ui_floatingschedule_generatedlesson",
-      "src_components_ui_floatingschedule_timeslots",
-      "src_components_ui_floatingschedule_weekdates",
-      "src_components_ui_floatingschedule_weekkeys",
-      "src_components_ui_hero",
-      "src_components_ui_hero_createseededrandom",
-      "src_components_ui_hero_hero",
-      "src_components_ui_hero_particles",
-      "src_components_ui_hero_particlesprops",
-      "src_components_ui_lessoncard",
-      "src_components_ui_lessoncard_elasticlayeroptions",
-      "src_components_ui_lessoncard_lessoncard",
-      "src_components_ui_lessoncard_lessoncardprops",
-      "src_components_ui_lessoncard_lessondata",
-      "src_components_ui_lessoncard_positivemodulo",
-      "src_components_ui_lessoncard_resolvelessonappearance",
-      "src_components_ui_lessoncard_subjecttheme",
-      "src_components_ui_lessoncard_subjectthemes",
-      "src_components_ui_lessoncard_useelasticfollower"
+      "src_components_providers_themeprovider",
+      "src_components_providers_themeprovider_getstoredtheme",
+      "src_components_providers_themeprovider_getsystemtheme",
+      "src_components_providers_themeprovider_theme",
+      "src_components_providers_themeprovider_themecontext",
+      "src_components_providers_themeprovider_themecontexttype",
+      "src_components_providers_themeprovider_themeprovider",
+      "src_components_providers_themeprovider_themestore",
+      "src_components_providers_themeprovider_usetheme",
+      "src_components_ui_interactivegridpattern",
+      "src_components_ui_interactivegridpattern_gridsurface",
+      "src_components_ui_interactivegridpattern_gridsurfaceprops",
+      "src_components_ui_interactivegridpattern_interactivegridpattern",
+      "src_components_ui_interactivegridpattern_interactivegridpatternprops",
+      "src_components_ui_themetoggle",
+      "src_components_ui_themetoggle_getclientsnapshot",
+      "src_components_ui_themetoggle_getserversnapshot",
+      "src_components_ui_themetoggle_subscribe",
+      "src_components_ui_themetoggle_themetoggle"
     ],
     "11": [
+      "src_app_global_not_found",
+      "src_app_global_not_found_client",
+      "src_app_global_not_found_client_copy",
+      "src_app_global_not_found_client_getclientlocale",
+      "src_app_global_not_found_client_getserverlocale",
+      "src_app_global_not_found_client_globalnotfoundclient",
+      "src_app_global_not_found_client_locale",
+      "src_app_global_not_found_client_notfoundcontent",
+      "src_app_global_not_found_client_subscribetolocale",
+      "src_app_global_not_found_globalnotfound",
+      "src_app_global_not_found_metadata",
+      "src_components_layout_header",
+      "src_components_layout_header_header",
+      "src_components_layout_header_headerlink",
+      "src_components_layout_header_headerlinkprops",
+      "src_components_layout_header_headerprops"
+    ],
+    "12": [
       "src_app_locale_layout",
       "src_app_locale_layout_generatemetadata",
       "src_app_locale_layout_generatestaticparams",
@@ -408,7 +416,7 @@
       "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifest",
       "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifestdocument"
     ],
-    "12": [
+    "13": [
       "scripts_serve_static_export",
       "scripts_serve_static_export_isfile",
       "scripts_serve_static_export_isinsideroot",
@@ -420,7 +428,7 @@
       "scripts_serve_static_export_sendfile",
       "scripts_serve_static_export_server"
     ],
-    "13": [
+    "14": [
       "src_app_locale_template",
       "src_app_locale_template_template",
       "src_app_locale_template_templateprops",
@@ -428,73 +436,69 @@
       "src_components_motion_pagetransition_pagetransition",
       "src_components_motion_pagetransition_pagetransitionprops"
     ],
-    "14": [
+    "15": [
       "scripts_update_legal_manifest",
       "scripts_update_legal_manifest_documents",
       "scripts_update_legal_manifest_extractmetadata",
       "scripts_update_legal_manifest_legaldirectory",
       "scripts_update_legal_manifest_manifest"
     ],
-    "15": [
+    "16": [
       "next_config",
       "next_config_nextconfig",
       "next_config_withnextintl"
     ],
-    "16": [
+    "17": [
       "src_app_apple_icon",
       "src_app_apple_icon_appleicon",
       "src_app_apple_icon_size"
     ],
-    "17": [
+    "18": [
       "src_app_icon",
       "src_app_icon_icon",
       "src_app_icon_size"
     ],
-    "18": [
+    "19": [
       "src_app_opengraph_image",
       "src_app_opengraph_image_opengraphimage",
       "src_app_opengraph_image_size"
     ],
-    "19": [
+    "20": [
       "src_app_twitter_image",
       "src_app_twitter_image_size",
       "src_app_twitter_image_twitterimage"
     ],
-    "20": [
+    "21": [
       "eslint_config",
       "eslint_config_eslintconfig"
     ],
-    "21": [
+    "22": [
       "postcss_config",
       "postcss_config_config"
     ],
-    "22": [
+    "23": [
       "src_app_locale_delete_page",
       "src_app_locale_delete_page_deleteaccountpage"
     ],
-    "23": [
+    "24": [
       "src_app_locale_privacy_page",
       "src_app_locale_privacy_page_privacypage"
     ],
-    "24": [
+    "25": [
       "src_app_locale_terms_page",
       "src_app_locale_terms_page_termspage"
     ],
-    "25": [
+    "26": [
       "src_app_manifest",
       "src_app_manifest_manifest"
     ],
-    "26": [
+    "27": [
       "src_app_robots",
       "src_app_robots_robots"
     ],
-    "27": [
+    "28": [
       "src_components_i18n_localepreference",
       "src_components_i18n_localepreference_localepreference"
-    ],
-    "28": [
-      "src_components_layout_footer",
-      "src_components_layout_footer_footer"
     ],
     "29": [
       "src_i18n_request",
@@ -510,25 +514,25 @@
   "cohesion": {
     "0": 0.07692307692307693,
     "1": 0.06976744186046512,
-    "2": 0.11033681765389082,
-    "3": 0.05263157894736842,
-    "4": 0.08739495798319327,
-    "5": 0.06060606060606061,
+    "2": 0.05263157894736842,
+    "3": 0.09009009009009009,
+    "4": 0.06060606060606061,
+    "5": 0.10227272727272728,
     "6": 0.06896551724137931,
     "7": 0.12169312169312169,
     "8": 0.08,
     "9": 0.08695652173913043,
-    "10": 0.12987012987012986,
-    "11": 0.21212121212121213,
-    "12": 0.26666666666666666,
-    "13": 0.4,
+    "10": 0.16374269005847952,
+    "11": 0.16666666666666666,
+    "12": 0.21212121212121213,
+    "13": 0.26666666666666666,
     "14": 0.4,
-    "15": 0.6666666666666666,
+    "15": 0.4,
     "16": 0.6666666666666666,
     "17": 0.6666666666666666,
     "18": 0.6666666666666666,
     "19": 0.6666666666666666,
-    "20": 1.0,
+    "20": 0.6666666666666666,
     "21": 1.0,
     "22": 1.0,
     "23": 1.0,
@@ -563,14 +567,14 @@
       "degree": 11
     },
     {
-      "id": "src_components_ui_lessoncardaccent_lessoncardaccent",
-      "label": "LessonCardAccent()",
-      "degree": 9
-    },
-    {
       "id": "src_components_legal_legaldocumentclient_warmlegalloadingdocuments",
       "label": "warmLegalLoadingDocuments()",
       "degree": 8
+    },
+    {
+      "id": "src_components_ui_lessoncardaccent_lessoncardaccent",
+      "label": "LessonCardAccent()",
+      "degree": 7
     },
     {
       "id": "tsconfig_include",

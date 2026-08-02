@@ -2,16 +2,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, GithubLogo, RocketLaunch } from "@phosphor-icons/react";
+import { ArrowRight, RocketLaunch } from "@phosphor-icons/react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useRef, useMemo, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import * as THREE from "three";
 import { FloatingSchedule } from "@/components/ui/FloatingSchedule";
+import { AndroidRobotLogo } from "@/components/ui/BrandIcons";
 
 const PARTICLE_COUNT = 14000;
 const IDLE_MOUSE_ACTIVITY = 0.05;
 const SETTLED_MOUSE_ACTIVITY = 0.01;
+const PLAY_MARKET_URL = "https://play.google.com/store/apps/details?id=com.artomk.planit";
 
 function createSeededRandom(seed: number) {
   let state = seed >>> 0;
@@ -330,14 +332,14 @@ export function Hero() {
               <ArrowRight size={19} weight="bold" />
             </motion.a>
             <motion.a
-              href="https://github.com/ArtomkDev/PlanIt"
+              href={PLAY_MARKET_URL}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 bg-white/70 px-7 py-4 font-bold text-zinc-800 backdrop-blur-xl sm:w-auto dark:border-zinc-700 dark:bg-zinc-900/70 dark:text-white"
             >
-              <GithubLogo size={19} weight="fill" />
+              <AndroidRobotLogo className="h-[19px] w-[19px]" />
               {t("ctaSecondary")}
             </motion.a>
           </motion.div>

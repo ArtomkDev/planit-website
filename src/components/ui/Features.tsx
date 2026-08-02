@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Lightning, ShieldCheck, ArrowsMerge, Code } from "@phosphor-icons/react";
+import { Lightning, ShieldCheck, ArrowsMerge, ShareNetwork } from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
@@ -92,7 +92,7 @@ export function Features() {
       description: t("items.sync.description"),
     },
     {
-      icon: <Code className="w-8 h-8" weight="duotone" />,
+      icon: <ShareNetwork className="w-8 h-8" weight="duotone" />,
       title: t("items.analytics.title"),
       description: t("items.analytics.description"),
     },

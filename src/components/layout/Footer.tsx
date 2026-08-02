@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { GithubLogo } from "@phosphor-icons/react";
+import { AndroidRobotLogo } from "@/components/ui/BrandIcons";
 import { useState, useRef } from "react";
 
-const SOURCE_URL = "https://github.com/ArtomkDev/PlanIt";
+const PLAY_MARKET_URL = "https://play.google.com/store/apps/details?id=com.artomk.planit";
 
 export const Footer = () => {
   const tNav = useTranslations("Navigation");
@@ -94,12 +94,13 @@ export const Footer = () => {
               <motion.a
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href={SOURCE_URL}
+                href={PLAY_MARKET_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={tFooter("status")}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-200/50 bg-zinc-100 text-zinc-600 transition-colors hover:bg-zinc-200 dark:border-zinc-800/50 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800"
               >
-                <GithubLogo weight="fill" className="h-5 w-5" />
+                <AndroidRobotLogo className="h-5 w-5" />
               </motion.a>
             </div>
           </div>
@@ -143,9 +144,14 @@ export const Footer = () => {
 
         {/* Нижня панель */}
         <div className="flex w-full flex-col items-center justify-between gap-6 pt-2 text-xs font-medium text-zinc-500 dark:text-zinc-500 md:flex-row">
-          <p>© {currentYear} PlanIt. {tFooter("rights")}</p>
+          <div className="max-w-xl text-center md:text-left">
+            <p>© {currentYear} PlanIt. {tFooter("rights")}</p>
+            <p className="mt-2 text-[11px] leading-5 text-zinc-400 dark:text-zinc-600">
+              {tFooter("androidAttribution")}
+            </p>
+          </div>
           <a
-            href={SOURCE_URL}
+            href={PLAY_MARKET_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1.5 transition-colors hover:border-[#F45B8A]/45 hover:text-[#c93667] dark:border-zinc-800/80 dark:bg-zinc-900/50 dark:hover:border-[#3EF7D2]/45 dark:hover:text-[#3EF7D2]"
