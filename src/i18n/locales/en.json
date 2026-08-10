@@ -29,10 +29,10 @@
     "theme": "Toggle theme"
   },
   "Hero": {
-    "badge": "Class schedules without the clutter",
-    "title1": "Your class schedule",
+    "badge": "Your study day, all in one place",
+    "title1": "Classes, tasks, and materials",
     "title2": "always at hand",
-    "description": "PlanIt helps you build multi-week class schedules, configure breaks and lesson details, work locally, or synchronize data after signing in.",
+    "description": "PlanIt keeps your multi-week schedule, tasks, and study materials together, reminds you before class, and makes a finished schedule easy to share.",
     "ctaPrimary": "Open Web App",
     "ctaSecondary": "Get it on Google Play",
     "scrollLabel": "Features",
@@ -90,47 +90,79 @@
     }
   },
   "Features": {
-    "badge": "Built for daily planning",
-    "title": "Only what PlanIt already does",
-    "description": "PlanIt covers local schedules, cloud sync, explicit conflict control, and time-limited sharing.",
+    "badge": "More than today's timetable",
+    "title": "Everything around your classes stays connected",
+    "description": "PlanIt gives lessons, tasks, reminders, and materials one clear home — whether you keep everything on one device or sign in to synchronize it.",
     "items": {
       "speed": {
-        "title": "Local operation",
-        "description": "Guest mode needs no account: the schedule is stored on the device and can be opened without signing in."
+        "title": "Start without an account",
+        "description": "Open PlanIt as a guest and build a schedule right away. It stays on your device and remains available when the network is not."
       },
       "security": {
         "title": "On-device data",
         "description": "PlanIt loads its local copy first. Signed-in users retain that copy while working without a network connection."
       },
       "sync": {
-        "title": "Cloud synchronization",
-        "description": "After email, Google, or Apple sign-in, schedules synchronize through Firebase across connected devices."
+        "title": "Pick up on another device",
+        "description": "Sign in and your schedules follow you. PlanIt keeps a local copy too, so a weak connection does not stop the day."
+      },
+      "schedules": {
+        "title": "A schedule for every routine",
+        "description": "Keep separate schedules for different semesters, groups, or plans, and choose which ones appear in the task list and which single schedule belongs in the widget."
+      },
+      "tasks": {
+        "title": "Tasks that remember the class",
+        "description": "Add homework from a lesson, link it to a particular class or date, attach what you need, and mark it done when it is finished."
+      },
+      "reminders": {
+        "title": "A heads-up before class",
+        "description": "Choose a reminder for the whole schedule, turn it off for a subject, or set a different lead time for the classes that need it."
+      },
+      "materials": {
+        "title": "Materials beside the work",
+        "description": "Keep links with a lesson and, after signing in, add photos or files to lessons and tasks so the right material is already where you need it."
       },
       "analytics": {
-        "title": "Shareable schedule codes",
-        "description": "Signed-in users can create temporary codes so someone else can preview and import a schedule copy."
+        "title": "Share without giving up control",
+        "description": "Create a temporary code, choose what to include, and let someone preview and import their own copy of the schedule."
+      },
+      "widget": {
+        "title": "The day at a glance",
+        "description": "Put a chosen schedule on the home screen, move between nearby days, and open a lesson from the widget when you need the details."
       }
     }
   },
   "AppShowcase": {
-    "badge": "Real tools",
-    "title": "Details that are actually in the app",
+    "badge": "Made for real study days",
+    "title": "Small things that save time between classes",
     "items": {
       "customization": {
-        "title": "Flexible lessons",
-        "description": "Subjects support colors, gradients, and icons; lessons support type, building, room, teachers, links, and individual times."
+        "title": "A schedule you can read at a glance",
+        "description": "Give subjects their own colors, gradients, and icons, then add the lesson type, location, teachers, links, and an individual time when the day runs differently."
+      },
+      "tasks": {
+        "title": "Homework stays with its lesson",
+        "description": "Create a task from the class you are viewing or connect it later to a specific occurrence. The task keeps its subject, date, links, and attachments together."
+      },
+      "reminders": {
+        "title": "Reminders that fit the subject",
+        "description": "Use one lead time for most lessons and a different one for the subjects that need extra preparation."
+      },
+      "materials": {
+        "title": "Photos, files, and links nearby",
+        "description": "After signing in, attach a board photo, handout, PDF, or study link to the lesson or task. Files you use again stay in a reusable library."
       },
       "sync": {
-        "title": "Explicit conflict resolution",
-        "description": "When the same schedule changes locally and in the cloud, PlanIt shows both versions and asks which one to keep."
+        "title": "Your changes are not silently overwritten",
+        "description": "If the same schedule changed on the device and in the cloud, PlanIt shows the conflict and lets you keep the local version, the cloud copy, or both."
       },
       "sharing": {
-        "title": "Temporary share codes",
-        "description": "A signed-in user can create a code lasting 1, 3, 7, or 30 days, and the recipient can preview and import a schedule copy."
+        "title": "Share only what is useful",
+        "description": "Choose whether teachers, colors, links, lesson notes, and your name travel with the schedule. Codes can last 1, 3, 7, or 30 days."
       },
       "widgets": {
-        "title": "Android widget",
-        "description": "The Android widget shows lessons and breaks and lets you move through adjacent schedule days."
+        "title": "Your next class without opening PlanIt",
+        "description": "The home-screen widget shows lessons and breaks, highlights what is happening now, and moves to the previous or next day with a tap."
       }
     }
   },
@@ -146,7 +178,7 @@
       },
       "android": {
         "title": "Android",
-        "description": "The primary native build, with guest mode, synchronization, and a home-screen widget.",
+        "description": "The main PlanIt app: start as a guest, synchronize after signing in, and keep the day's schedule on your home screen.",
         "button": "Get it on Google Play",
         "status": "Supported"
       },
@@ -160,25 +192,25 @@
   },
   "HowItWorks": {
     "badge": "How it works",
-    "title": "From a blank screen to a complete schedule",
+    "title": "Set it up once, then let PlanIt carry the routine",
     "steps": {
       "step1": {
         "title": "Configure the structure",
         "description": "Set a name, cycle length, starting date, first lesson time, lesson duration, and break lengths."
       },
       "step2": {
-        "title": "Add lessons",
-        "description": "Choose subjects and add the details you need: type, location, teachers, links, appearance, and time."
+        "title": "Fill in the week",
+        "description": "Add subjects and lesson details, then connect homework, links, photos, and files to the class they belong to."
       },
       "step3": {
-        "title": "Store or synchronize",
-        "description": "Work locally as a guest, or sign in to synchronize schedules and create temporary share codes."
+        "title": "Let the routine run",
+        "description": "Choose your reminders, glance at the widget, and work locally as a guest — or sign in to synchronize and share a ready schedule."
       }
     }
   },
   "CTA": {
-    "title": "Build your schedule in PlanIt",
-    "description": "Open the current web version without installing anything. Guest mode does not require an account.",
+    "title": "Give your study week one clear place",
+    "description": "Open PlanIt in the browser and start without an account. Add the schedule first; tasks, reminders, and materials can follow at your pace.",
     "button": "Open Web App"
   },
   "Footer": {
@@ -190,7 +222,7 @@
   },
   "Privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Current application policy: April 16, 2026",
+    "lastUpdated": "Current application policy: July 24, 2026",
     "section1Title": "Data Storage",
     "section1Content": "In guest mode, PlanIt stores the schedule locally on the device. After sign-in, schedules synchronize with Firebase and also retain a local copy.",
     "section2Title": "Authentication",
@@ -201,7 +233,7 @@
   },
   "Terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Current application terms: April 16, 2026",
+    "lastUpdated": "Current application terms: August 1, 2026",
     "section1Title": "Service Usage",
     "section1Content": "PlanIt is provided as is, without warranties of any kind. The service or individual features may be changed or discontinued.",
     "section2Title": "Responsibility for data",
@@ -265,7 +297,7 @@
   "SEO": {
     "home": {
       "title": "PlanIt | Class Schedule",
-      "description": "PlanIt is a local and synchronized class schedule with multi-week cycles, breaks, lesson details, sharing, and an Android widget."
+      "description": "PlanIt keeps multi-week class schedules, linked tasks, lesson reminders, study materials, sharing, synchronization, and a home-screen widget in one place."
     },
     "privacy": {
       "title": "Privacy Policy",
@@ -281,7 +313,7 @@
     },
     "cookies": {
       "title": "Cookie Rules",
-      "description": "PlanIt cookie rules placeholder and future browser storage notices."
+      "description": "How PlanIt uses necessary browser storage and keeps optional Firebase Analytics off until you choose to accept it."
     }
   }
 }

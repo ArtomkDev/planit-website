@@ -1,7 +1,16 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Lightning, ShieldCheck, ArrowsMerge, ShareNetwork } from "@phosphor-icons/react";
+import {
+  ArrowsMerge,
+  BellRinging,
+  CalendarCheck,
+  Lightning,
+  ListChecks,
+  Paperclip,
+  ShareNetwork,
+  Stack,
+} from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
@@ -82,19 +91,39 @@ export function Features() {
       description: t("items.speed.description"),
     },
     {
-      icon: <ShieldCheck className="w-8 h-8" weight="duotone" />,
-      title: t("items.security.title"),
-      description: t("items.security.description"),
-    },
-    {
       icon: <ArrowsMerge className="w-8 h-8" weight="duotone" />,
       title: t("items.sync.title"),
       description: t("items.sync.description"),
     },
     {
+      icon: <Stack className="w-8 h-8" weight="duotone" />,
+      title: t("items.schedules.title"),
+      description: t("items.schedules.description"),
+    },
+    {
+      icon: <ListChecks className="w-8 h-8" weight="duotone" />,
+      title: t("items.tasks.title"),
+      description: t("items.tasks.description"),
+    },
+    {
+      icon: <BellRinging className="w-8 h-8" weight="duotone" />,
+      title: t("items.reminders.title"),
+      description: t("items.reminders.description"),
+    },
+    {
+      icon: <Paperclip className="w-8 h-8" weight="duotone" />,
+      title: t("items.materials.title"),
+      description: t("items.materials.description"),
+    },
+    {
       icon: <ShareNetwork className="w-8 h-8" weight="duotone" />,
       title: t("items.analytics.title"),
       description: t("items.analytics.description"),
+    },
+    {
+      icon: <CalendarCheck className="w-8 h-8" weight="duotone" />,
+      title: t("items.widget.title"),
+      description: t("items.widget.description"),
     },
   ];
 

@@ -130,14 +130,14 @@
     "semantic_hash": "67609f7b3fa297bd6f46731912ecc570"
   },
   "src/app/manifest.ts": {
-    "mtime": 1785267191.6556833,
-    "ast_hash": "b81559784a767d13377ab6a26af00cc3",
-    "semantic_hash": "b81559784a767d13377ab6a26af00cc3"
+    "mtime": 1786301856.026033,
+    "ast_hash": "0600e343b322943f00dd9fe6c1c9ef74",
+    "semantic_hash": "0600e343b322943f00dd9fe6c1c9ef74"
   },
   "src/app/opengraph-image.tsx": {
-    "mtime": 1785267193.6998322,
-    "ast_hash": "e9b3e3c58aa14fdd97edc24d199e8f9d",
-    "semantic_hash": "e9b3e3c58aa14fdd97edc24d199e8f9d"
+    "mtime": 1786301856.0270333,
+    "ast_hash": "806346c5721bc40dbf502c3059e105d0",
+    "semantic_hash": "806346c5721bc40dbf502c3059e105d0"
   },
   "src/app/robots.ts": {
     "mtime": 1785609269.9520495,
@@ -150,9 +150,9 @@
     "semantic_hash": "dce69644067a87f29a6fbfe0be567c41"
   },
   "src/app/twitter-image.tsx": {
-    "mtime": 1785610937.2664547,
-    "ast_hash": "59203ffec9b59b3b898b1d57f0e8e8dc",
-    "semantic_hash": "59203ffec9b59b3b898b1d57f0e8e8dc"
+    "mtime": 1786301856.0275335,
+    "ast_hash": "5f41e5184dcf5c76ac10bc2c7757161d",
+    "semantic_hash": "5f41e5184dcf5c76ac10bc2c7757161d"
   },
   "src/components/i18n/LocalePreference.tsx": {
     "mtime": 1785090720.1258018,
@@ -205,9 +205,9 @@
     "semantic_hash": "6f12adcf8c08bd9881d7d9c6957b17d4"
   },
   "src/components/ui/AppShowcase.tsx": {
-    "mtime": 1785609270.0147364,
-    "ast_hash": "9fd89bd6ef910b6f52da08ba5628f167",
-    "semantic_hash": "9fd89bd6ef910b6f52da08ba5628f167"
+    "mtime": 1786374605.92861,
+    "ast_hash": "0d4b942c7389c47b6ec70f16fa071f70",
+    "semantic_hash": "0d4b942c7389c47b6ec70f16fa071f70"
   },
   "src/components/ui/BentoCard.tsx": {
     "mtime": 1785609270.020936,
@@ -230,9 +230,9 @@
     "semantic_hash": "1fd1a7b287a6aba13b162b1f03a3b3c7"
   },
   "src/components/ui/Features.tsx": {
-    "mtime": 1785614229.9948113,
-    "ast_hash": "6a1854cecc12f2b2cd7ef64c2645a526",
-    "semantic_hash": "6a1854cecc12f2b2cd7ef64c2645a526"
+    "mtime": 1786374198.1959314,
+    "ast_hash": "0b73331984f8127de9d15329e0660b9e",
+    "semantic_hash": "0b73331984f8127de9d15329e0660b9e"
   },
   "src/components/ui/FloatingSchedule.tsx": {
     "mtime": 1785705745.5261781,
@@ -245,12 +245,12 @@
     "semantic_hash": "4c00a71da72c55196e083fc71812dcb4"
   },
   "src/components/ui/HowItWorks.tsx": {
-    "mtime": 1785609270.0823116,
+    "mtime": 1786301856.0295339,
     "ast_hash": "a0031c3be80bed6a4efbbff0755708d4",
     "semantic_hash": "a0031c3be80bed6a4efbbff0755708d4"
   },
   "src/components/ui/InfiniteRibbon.tsx": {
-    "mtime": 1785609270.0909314,
+    "mtime": 1786301856.030534,
     "ast_hash": "11920d0c07269016b692df1d62b8866a",
     "semantic_hash": "11920d0c07269016b692df1d62b8866a"
   },
@@ -270,9 +270,9 @@
     "semantic_hash": "c3d0ec6a73f55cfd8de4e59c58245ee3"
   },
   "src/components/ui/Platforms.tsx": {
-    "mtime": 1785616018.2395384,
-    "ast_hash": "6fb406fe6188f17ddffa42ed300bed4c",
-    "semantic_hash": "6fb406fe6188f17ddffa42ed300bed4c"
+    "mtime": 1786301856.031034,
+    "ast_hash": "96be41bb014ab14b1b1f1d9b7f529b25",
+    "semantic_hash": "96be41bb014ab14b1b1f1d9b7f529b25"
   },
   "src/components/ui/ThemeToggle.tsx": {
     "mtime": 1783638538.9122047,
@@ -285,14 +285,14 @@
     "semantic_hash": "784d764d8fb79374ff53f1ef1d6dbb9c"
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1785705187.7651734,
-    "ast_hash": "5746ca13191eb0c1875a693998cb1cff",
-    "semantic_hash": "5746ca13191eb0c1875a693998cb1cff"
+    "mtime": 1786374336.2243383,
+    "ast_hash": "a5ffc9eefe3a0e0ad0c9d25797d0528c",
+    "semantic_hash": "a5ffc9eefe3a0e0ad0c9d25797d0528c"
   },
   "src/i18n/locales/uk.json": {
-    "mtime": 1785705185.7486465,
-    "ast_hash": "c7f5cba43416cc9881fd2b61d585981d",
-    "semantic_hash": "c7f5cba43416cc9881fd2b61d585981d"
+    "mtime": 1786374334.6329145,
+    "ast_hash": "7e079822421a2c2917bb880852d7aa79",
+    "semantic_hash": "7e079822421a2c2917bb880852d7aa79"
   },
   "src/i18n/request.ts": {
     "mtime": 1782165487.3047166,

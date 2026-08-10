@@ -2,7 +2,15 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Palette, CloudArrowUp, ShareNetwork, AppWindow } from "@phosphor-icons/react";
+import {
+  AppWindow,
+  BellRinging,
+  CheckSquare,
+  CloudArrowUp,
+  Palette,
+  Paperclip,
+  ShareNetwork,
+} from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
@@ -22,13 +30,31 @@ export function AppShowcase() {
       className: "md:col-span-2",
     },
     {
-      title: t("items.sync.title"),
-      description: t("items.sync.description"),
-      icon: <CloudArrowUp className="w-8 h-8 text-cyan-500" weight="duotone" />,
+      title: t("items.tasks.title"),
+      description: t("items.tasks.description"),
+      icon: <CheckSquare className="w-8 h-8 text-indigo-500" weight="duotone" />,
+      colorPrimary: "rgba(99, 102, 241, 0.12)",
+      colorSecondary: "rgba(139, 92, 246, 0.12)",
+      spotlightColor: "rgba(99, 102, 241, 0.15)",
+      className: "md:col-span-1",
+    },
+    {
+      title: t("items.reminders.title"),
+      description: t("items.reminders.description"),
+      icon: <BellRinging className="w-8 h-8 text-cyan-500" weight="duotone" />,
       colorPrimary: "rgba(6, 182, 212, 0.12)",
       colorSecondary: "rgba(59, 130, 246, 0.12)",
       spotlightColor: "rgba(6, 182, 212, 0.15)",
       className: "md:col-span-1",
+    },
+    {
+      title: t("items.materials.title"),
+      description: t("items.materials.description"),
+      icon: <Paperclip className="w-8 h-8 text-emerald-500" weight="duotone" />,
+      colorPrimary: "rgba(16, 185, 129, 0.12)",
+      colorSecondary: "rgba(20, 184, 166, 0.12)",
+      spotlightColor: "rgba(16, 185, 129, 0.15)",
+      className: "md:col-span-2",
     },
     {
       title: t("items.sharing.title"),
@@ -42,11 +68,20 @@ export function AppShowcase() {
     {
       title: t("items.widgets.title"),
       description: t("items.widgets.description"),
-      icon: <AppWindow className="w-8 h-8 text-emerald-500" weight="duotone" />,
-      colorPrimary: "rgba(16, 185, 129, 0.12)",
-      colorSecondary: "rgba(20, 184, 166, 0.12)",
-      spotlightColor: "rgba(16, 185, 129, 0.15)",
-      className: "md:col-span-2",
+      icon: <AppWindow className="w-8 h-8 text-rose-500" weight="duotone" />,
+      colorPrimary: "rgba(244, 63, 94, 0.12)",
+      colorSecondary: "rgba(236, 72, 153, 0.12)",
+      spotlightColor: "rgba(244, 63, 94, 0.15)",
+      className: "md:col-span-1",
+    },
+    {
+      title: t("items.sync.title"),
+      description: t("items.sync.description"),
+      icon: <CloudArrowUp className="w-8 h-8 text-violet-500" weight="duotone" />,
+      colorPrimary: "rgba(139, 92, 246, 0.12)",
+      colorSecondary: "rgba(99, 102, 241, 0.12)",
+      spotlightColor: "rgba(139, 92, 246, 0.15)",
+      className: "md:col-span-1",
     },
   ];
 
@@ -68,7 +103,7 @@ export function AppShowcase() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px] perspective-1000"
+        className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(300px,auto)] perspective-1000"
       >
         {items.map((item) => (
           <BentoCard
