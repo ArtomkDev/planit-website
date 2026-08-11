@@ -90,10 +90,10 @@ export function AppShowcase() {
       <LessonCardAccent seed={23} className="-left-64 top-[34%]" />
       <LessonCardAccent seed={24} depth="background" className="left-[16%] bottom-6" />
       <ScrollReveal className="relative z-20 flex flex-col items-start mb-16">
-        <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
+        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand">
           {t("badge")}
         </span>
-        <h2 className="text-4xl md:text-5xl font-black text-zinc-900 dark:text-white tracking-tight max-w-2xl">
+        <h2 className="max-w-2xl text-4xl font-black tracking-tight text-site-text md:text-5xl">
           {t("title")}
         </h2>
       </ScrollReveal>
@@ -120,7 +120,7 @@ export function AppShowcase() {
             >
               <ProximityBlock
                 color={item.spotlightColor.replace("0.15", "0.8")}
-                className="inline-flex shrink-0 items-center justify-center w-16 h-16 rounded-2xl bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl shadow-[0_8px_16px_-6px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_16px_-6px_rgba(0,0,0,0.4)] border border-zinc-200/50 dark:border-zinc-800/50 text-zinc-900 dark:text-white group-hover/card:scale-110 group-hover/card:-translate-y-2 transform-gpu transition-all duration-700 ease-[0.22,1,0.36,1]"
+                className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 text-site-text shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] group-hover/card:-translate-y-2 group-hover/card:scale-110 transform-gpu"
               >
                 {item.icon}
               </ProximityBlock>
@@ -128,14 +128,14 @@ export function AppShowcase() {
 
             <h3
               style={{ transform: "translateZ(20px)" }}
-              className="text-2xl font-bold text-zinc-900 dark:text-white mb-3 tracking-tight transition-colors duration-500"
+              className="mb-3 text-2xl font-bold tracking-tight text-site-text transition-colors duration-500"
             >
               {item.title}
             </h3>
 
             <p
               style={{ transform: "translateZ(10px)" }}
-              className="text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed max-w-md transition-colors duration-500"
+              className="max-w-md font-medium leading-relaxed text-site-muted transition-colors duration-500"
             >
               {item.description}
             </p>

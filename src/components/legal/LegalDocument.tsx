@@ -92,7 +92,7 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
 
   return (
     <div
-      className={`${styles.wikiPage} relative isolate min-h-screen overflow-hidden bg-[#fbfbfc] dark:bg-[#09090b]`}
+      className={`${styles.wikiPage} relative isolate min-h-screen overflow-hidden bg-site-bg`}
     >
       <a className={styles.skipLink} href="#legal-main-content">
         Skip to content
@@ -100,17 +100,17 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-56 border-b border-zinc-200/70 bg-[linear-gradient(180deg,rgba(244,91,138,0.055),transparent_72%)] dark:border-zinc-900 dark:bg-[linear-gradient(180deg,rgba(62,247,210,0.035),transparent_72%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-56 border-b border-site-border/70 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--brand)_8%,transparent),transparent_72%)]"
       />
 
       <div className={styles.wikiLayout}>
         <aside className={styles.wikiSidebar}>
-          <div className="rounded-[8px] border border-zinc-200 bg-white/88 p-2 shadow-[0_18px_60px_-42px_rgba(15,23,42,0.35)] backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-950/78">
+          <div className="rounded-[8px] border border-site-border bg-site-surface/88 p-2 shadow-[0_18px_60px_-42px_var(--site-surface-shadow)] backdrop-blur-xl">
             <div className="px-3 pb-3 pt-2">
               <p className="text-[11px] font-black uppercase tracking-[0.18em] text-zinc-400 dark:text-zinc-500">
                 {tDoc("eyebrow")}
               </p>
-              <h2 className="mt-1 text-2xl font-black tracking-tight text-zinc-950 dark:text-white">
+              <h2 className="mt-1 text-2xl font-black tracking-tight text-site-text">
                 PlanIt Wiki
               </h2>
             </div>
@@ -126,14 +126,14 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
                     aria-current={isActive ? "page" : undefined}
                     className={`group relative flex w-full items-start gap-3 rounded-[6px] p-3 text-left transition-colors ${
                       isActive
-                        ? "bg-zinc-950 text-white shadow-[0_18px_44px_-34px_rgba(15,23,42,0.5)] dark:bg-white dark:text-zinc-950"
-                        : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-400 dark:hover:bg-zinc-900 dark:hover:text-white"
+                        ? "bg-site-text text-site-bg shadow-[0_18px_44px_-34px_var(--site-surface-shadow)]"
+                        : "text-site-muted hover:bg-site-surface-muted hover:text-site-text"
                     }`}
                   >
                     {isActive ? (
                       <span
                         aria-hidden
-                        className="absolute inset-y-3 left-0 w-0.5 rounded-full bg-[#F45B8A] dark:bg-[#3EF7D2]"
+                        className="absolute inset-y-3 left-0 w-0.5 rounded-full bg-brand"
                       />
                     ) : null}
                     <span
@@ -181,24 +181,24 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
             initialLoadingHtml={initialLoadingHtml}
           />
 
-          <div className="relative mt-6 overflow-hidden rounded-[8px] border border-zinc-200 bg-zinc-50 p-8 text-center shadow-[0_24px_90px_-58px_rgba(15,23,42,0.55)] dark:border-zinc-800 dark:bg-zinc-900 sm:p-10">
-            <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#F45B8A]/6 via-transparent to-transparent dark:from-[#3EF7D2]/10" />
-            <div className="pointer-events-none absolute -left-16 -top-16 z-0 h-48 w-48 rounded-[42%_58%_68%_32%/44%_52%_48%_56%] bg-[#3EF7D2] opacity-20 blur-[42px] mix-blend-multiply dark:mix-blend-screen" />
-            <div className="pointer-events-none absolute -bottom-20 -right-16 z-0 h-56 w-56 rounded-[56%_44%_36%_64%/50%_46%_54%_50%] bg-[#F45B8A] opacity-20 blur-[48px] mix-blend-multiply dark:mix-blend-screen" />
+          <div className="relative mt-6 overflow-hidden rounded-[8px] border border-site-border bg-site-surface p-8 text-center shadow-[0_24px_90px_-58px_var(--site-surface-shadow)] sm:p-10">
+            <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand/10 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute -left-16 -top-16 z-0 h-48 w-48 rounded-[42%_58%_68%_32%/44%_52%_48%_56%] bg-brand-teal opacity-20 blur-[42px] mix-blend-multiply dark:mix-blend-screen" />
+            <div className="pointer-events-none absolute -bottom-20 -right-16 z-0 h-56 w-56 rounded-[56%_44%_36%_64%/50%_46%_54%_50%] bg-brand-pink opacity-20 blur-[48px] mix-blend-multiply dark:mix-blend-screen" />
             <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400">
                 PlanIt support
               </p>
-              <p className="mt-3 text-2xl font-black tracking-tight text-zinc-950 dark:text-white sm:text-3xl">
+              <p className="mt-3 text-2xl font-black tracking-tight text-site-text sm:text-3xl">
                 {tDoc("support")}
               </p>
               <a
                 href="mailto:planit.app.support@gmail.com"
-                className="group mt-7 inline-flex items-center justify-center gap-3 rounded-full bg-zinc-950 px-7 py-4 text-sm font-black text-white shadow-[0_18px_48px_-26px_rgba(15,23,42,0.75)] transition-transform hover:-translate-y-0.5 dark:bg-white dark:text-zinc-950"
+                className="group mt-7 inline-flex items-center justify-center gap-3 rounded-full bg-site-text px-7 py-4 text-sm font-black text-site-bg shadow-[0_18px_48px_-26px_var(--site-surface-shadow)] transition-transform hover:-translate-y-0.5"
               >
                 {tDoc("supportAction")}
                 <LegalSupportArrow
-                  className="h-4 w-4 text-[#F45B8A] transition-transform group-hover:translate-x-1 dark:text-[#0DAF93]"
+                  className="h-4 w-4 text-brand transition-transform group-hover:translate-x-1"
                 />
               </a>
             </div>

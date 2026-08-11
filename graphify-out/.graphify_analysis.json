@@ -1,62 +1,6 @@
 {
   "communities": {
     "0": [
-      "src_components_motion_scrollreveal",
-      "src_components_motion_scrollreveal_scrollreveal",
-      "src_components_motion_scrollreveal_scrollrevealprops",
-      "src_components_providers_themeprovider_usetheme",
-      "src_components_ui_bentocard",
-      "src_components_ui_bentocard_bentocard",
-      "src_components_ui_bentocard_bentocardprops",
-      "src_components_ui_bentocard_proximityblock",
-      "src_components_ui_bentocard_proximityblockprops",
-      "src_components_ui_breakcard",
-      "src_components_ui_breakcard_breakcard",
-      "src_components_ui_breakcard_breakcardprops",
-      "src_components_ui_calltoaction",
-      "src_components_ui_calltoaction_calltoaction",
-      "src_components_ui_calltoaction_shapeoneoutervariants",
-      "src_components_ui_calltoaction_shapetwooutervariants",
-      "src_components_ui_howitworks",
-      "src_components_ui_howitworks_howitworks",
-      "src_components_ui_infiniteribbon",
-      "src_components_ui_infiniteribbon_infiniteribbon",
-      "src_components_ui_infiniteribbon_infiniteribbonitem",
-      "src_components_ui_infiniteribbon_infiniteribbonprops",
-      "src_components_ui_interactivegridpattern",
-      "src_components_ui_interactivegridpattern_gridsurface",
-      "src_components_ui_interactivegridpattern_gridsurfaceprops",
-      "src_components_ui_interactivegridpattern_interactivegridpattern",
-      "src_components_ui_interactivegridpattern_interactivegridpatternprops",
-      "src_components_ui_lessoncard",
-      "src_components_ui_lessoncard_elasticlayeroptions",
-      "src_components_ui_lessoncard_lessoncard",
-      "src_components_ui_lessoncard_lessoncardprops",
-      "src_components_ui_lessoncard_lessondata",
-      "src_components_ui_lessoncard_positivemodulo",
-      "src_components_ui_lessoncard_resolvelessonappearance",
-      "src_components_ui_lessoncard_subjecttheme",
-      "src_components_ui_lessoncard_subjectthemes",
-      "src_components_ui_lessoncard_useelasticfollower",
-      "src_components_ui_lessoncardaccent",
-      "src_components_ui_lessoncardaccent_accentdepth",
-      "src_components_ui_lessoncardaccent_createseededrandom",
-      "src_components_ui_lessoncardaccent_lessoncardaccent",
-      "src_components_ui_lessoncardaccent_lessoncardaccentprops",
-      "src_components_ui_lessoncardaccent_pick",
-      "src_components_ui_lessoncardaccent_timepresets",
-      "src_components_ui_themetoggle",
-      "src_components_ui_themetoggle_getclientsnapshot",
-      "src_components_ui_themetoggle_getserversnapshot",
-      "src_components_ui_themetoggle_subscribe",
-      "src_components_ui_themetoggle_themetoggle",
-      "src_lib_framer_variants",
-      "src_lib_framer_variants_fadeinup",
-      "src_lib_framer_variants_staggercontainer",
-      "src_lib_utils_classnames",
-      "src_lib_utils_classnames_cn"
-    ],
-    "1": [
       "src_components_legal_legaldocumentclient",
       "src_components_legal_legaldocumentclient_allowedclasses",
       "src_components_legal_legaldocumentclient_allowedtags",
@@ -111,7 +55,7 @@
       "src_components_legal_legalloadingpreloader",
       "src_components_legal_legalloadingpreloader_legalloadingpreloader"
     ],
-    "2": [
+    "1": [
       "public_content_legal_manifest",
       "public_content_legal_manifest_cookies_loadingpath",
       "public_content_legal_manifest_cookies_loadingsha256",
@@ -158,7 +102,7 @@
       "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifest",
       "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifestdocument"
     ],
-    "3": [
+    "2": [
       "src_app_locale_wiki_cookies_page",
       "src_app_locale_wiki_cookies_page_cookiespage",
       "src_app_locale_wiki_cookies_page_generatemetadata",
@@ -204,7 +148,7 @@
       "src_content_legal_documents_legaldocumentkind",
       "src_content_legal_documents_legaldocumentmetadata"
     ],
-    "4": [
+    "3": [
       "eslint",
       "eslint_config_next",
       "firebase_tools",
@@ -239,7 +183,7 @@
       "types_ws",
       "typescript"
     ],
-    "5": [
+    "4": [
       "ref_dom",
       "ref_dom_iterable",
       "ref_esnext",
@@ -270,37 +214,19 @@
       "tsconfig_exclude",
       "tsconfig_include"
     ],
-    "6": [
-      "src_app_global_not_found",
-      "src_app_global_not_found_client",
-      "src_app_global_not_found_client_copy",
-      "src_app_global_not_found_client_getclientlocale",
-      "src_app_global_not_found_client_getserverlocale",
-      "src_app_global_not_found_client_globalnotfoundclient",
-      "src_app_global_not_found_client_locale",
-      "src_app_global_not_found_client_notfoundcontent",
-      "src_app_global_not_found_client_subscribetolocale",
-      "src_app_global_not_found_globalnotfound",
-      "src_app_global_not_found_metadata",
+    "5": [
+      "src_app_locale_layout",
+      "src_app_locale_layout_generatemetadata",
+      "src_app_locale_layout_generatestaticparams",
+      "src_app_locale_layout_localelayout",
+      "src_app_locale_layout_locales",
+      "src_components_layout_footer",
+      "src_components_layout_footer_footer",
       "src_components_layout_header",
       "src_components_layout_header_header",
       "src_components_layout_header_headerlink",
       "src_components_layout_header_headerlinkprops",
       "src_components_layout_header_headerprops",
-      "src_components_providers_themeprovider",
-      "src_components_providers_themeprovider_getstoredtheme",
-      "src_components_providers_themeprovider_getsystemtheme",
-      "src_components_providers_themeprovider_theme",
-      "src_components_providers_themeprovider_themecontext",
-      "src_components_providers_themeprovider_themecontexttype",
-      "src_components_providers_themeprovider_themeprovider",
-      "src_components_providers_themeprovider_themestore",
-      "src_components_ui_brandicons",
-      "src_components_ui_brandicons_androidrobotlogo",
-      "src_components_ui_brandicons_applebrandlogo",
-      "src_components_ui_brandicons_brandiconprops"
-    ],
-    "7": [
       "src_components_ui_cookieconsent",
       "src_components_ui_cookieconsent_cookieconsent",
       "src_components_ui_cookieconsent_getclientsnapshot",
@@ -313,24 +239,43 @@
       "src_components_ui_cookieconsent_subscribe",
       "src_components_ui_cookieconsent_syncfirebaseanalyticsconsent",
       "src_components_ui_cookieconsent_writestoredconsent",
-      "src_lib_firebase",
-      "src_lib_firebase_applyanalyticsconsent",
-      "src_lib_firebase_auth",
-      "src_lib_firebase_cookieconsentchoice",
-      "src_lib_firebase_datalayercommandtoarray",
-      "src_lib_firebase_db",
-      "src_lib_firebase_denyfirebaseanalyticsconsent",
-      "src_lib_firebase_firebaseconfig",
-      "src_lib_firebase_getfirebaseanalytics",
-      "src_lib_firebase_gtagdatalayercommand",
-      "src_lib_firebase_hasfirebaseanalyticsconfigcommand",
-      "src_lib_firebase_isrecord",
-      "src_lib_firebase_queuegrantconsentafterbootstrap",
-      "src_lib_firebase_updatefirebaseanalyticsconsent",
-      "src_lib_firebase_waitforfirebaseanalyticsbootstrap",
-      "src_lib_firebase_window"
+      "src_components_ui_themetoggle",
+      "src_components_ui_themetoggle_getclientsnapshot",
+      "src_components_ui_themetoggle_getserversnapshot",
+      "src_components_ui_themetoggle_subscribe",
+      "src_components_ui_themetoggle_themetoggle"
     ],
-    "8": [
+    "6": [
+      "src_components_providers_themeprovider_usetheme",
+      "src_components_ui_breakcard",
+      "src_components_ui_breakcard_breakcard",
+      "src_components_ui_breakcard_breakcardprops",
+      "src_components_ui_interactivegridpattern",
+      "src_components_ui_interactivegridpattern_gridsurface",
+      "src_components_ui_interactivegridpattern_gridsurfaceprops",
+      "src_components_ui_interactivegridpattern_interactivegridpattern",
+      "src_components_ui_interactivegridpattern_interactivegridpatternprops",
+      "src_components_ui_lessoncard",
+      "src_components_ui_lessoncard_elasticlayeroptions",
+      "src_components_ui_lessoncard_lessoncard",
+      "src_components_ui_lessoncard_lessoncardprops",
+      "src_components_ui_lessoncard_lessondata",
+      "src_components_ui_lessoncard_positivemodulo",
+      "src_components_ui_lessoncard_resolvelessonappearance",
+      "src_components_ui_lessoncard_subjecttheme",
+      "src_components_ui_lessoncard_subjectthemes",
+      "src_components_ui_lessoncard_useelasticfollower",
+      "src_components_ui_lessoncardaccent",
+      "src_components_ui_lessoncardaccent_accentdepth",
+      "src_components_ui_lessoncardaccent_createseededrandom",
+      "src_components_ui_lessoncardaccent_lessoncardaccent",
+      "src_components_ui_lessoncardaccent_lessoncardaccentprops",
+      "src_components_ui_lessoncardaccent_pick",
+      "src_components_ui_lessoncardaccent_timepresets",
+      "src_lib_utils_classnames",
+      "src_lib_utils_classnames_cn"
+    ],
+    "7": [
       "clsx",
       "firebase",
       "framer_motion",
@@ -357,7 +302,7 @@
       "tailwind_merge",
       "three"
     ],
-    "9": [
+    "8": [
       "src_components_canvasui_asciify",
       "src_components_canvasui_asciify_asciify",
       "src_components_canvasui_asciify_asciifycharset",
@@ -384,7 +329,7 @@
       "src_components_canvasui_asciify_resolvepositionvalue",
       "src_components_canvasui_asciify_supportshtmlincanvas"
     ],
-    "10": [
+    "9": [
       "src_components_ui_hero",
       "src_components_ui_hero_clamp",
       "src_components_ui_hero_createcanvaspixelrenderer",
@@ -410,7 +355,7 @@
       "src_components_ui_hero_sin_lookup",
       "src_components_ui_hero_smoothstep"
     ],
-    "11": [
+    "10": [
       "components",
       "components_aliases",
       "components_aliases_components",
@@ -435,7 +380,7 @@
       "components_tailwind_prefix",
       "components_tsx"
     ],
-    "12": [
+    "11": [
       "package",
       "package_name",
       "package_private",
@@ -460,6 +405,27 @@
       "package_scripts_start",
       "package_version"
     ],
+    "12": [
+      "src_app_global_not_found",
+      "src_app_global_not_found_client",
+      "src_app_global_not_found_client_copy",
+      "src_app_global_not_found_client_getclientlocale",
+      "src_app_global_not_found_client_getserverlocale",
+      "src_app_global_not_found_client_globalnotfoundclient",
+      "src_app_global_not_found_client_locale",
+      "src_app_global_not_found_client_notfoundcontent",
+      "src_app_global_not_found_client_subscribetolocale",
+      "src_app_global_not_found_globalnotfound",
+      "src_app_global_not_found_metadata",
+      "src_components_providers_themeprovider",
+      "src_components_providers_themeprovider_getstoredtheme",
+      "src_components_providers_themeprovider_getsystemtheme",
+      "src_components_providers_themeprovider_theme",
+      "src_components_providers_themeprovider_themecontext",
+      "src_components_providers_themeprovider_themecontexttype",
+      "src_components_providers_themeprovider_themeprovider",
+      "src_components_providers_themeprovider_themestore"
+    ],
     "13": [
       "src_components_ui_floatingschedule",
       "src_components_ui_floatingschedule_createschedule",
@@ -479,6 +445,24 @@
       "src_components_ui_floatingschedule_weekkeys"
     ],
     "14": [
+      "src_lib_firebase",
+      "src_lib_firebase_applyanalyticsconsent",
+      "src_lib_firebase_auth",
+      "src_lib_firebase_cookieconsentchoice",
+      "src_lib_firebase_datalayercommandtoarray",
+      "src_lib_firebase_db",
+      "src_lib_firebase_denyfirebaseanalyticsconsent",
+      "src_lib_firebase_firebaseconfig",
+      "src_lib_firebase_getfirebaseanalytics",
+      "src_lib_firebase_gtagdatalayercommand",
+      "src_lib_firebase_hasfirebaseanalyticsconfigcommand",
+      "src_lib_firebase_isrecord",
+      "src_lib_firebase_queuegrantconsentafterbootstrap",
+      "src_lib_firebase_updatefirebaseanalyticsconsent",
+      "src_lib_firebase_waitforfirebaseanalyticsbootstrap",
+      "src_lib_firebase_window"
+    ],
+    "15": [
       "src_components_canvasui_liquid",
       "src_components_canvasui_liquid_createliquid",
       "src_components_canvasui_liquid_defaults",
@@ -495,7 +479,7 @@
       "src_components_canvasui_liquid_supportshtmlincanvas",
       "src_components_canvasui_liquid_target"
     ],
-    "15": [
+    "16": [
       "src_components_canvasui_flamewrap",
       "src_components_canvasui_flamewrap_createflamewrap",
       "src_components_canvasui_flamewrap_defaults",
@@ -509,7 +493,7 @@
       "src_components_canvasui_flamewrap_paintablecanvas",
       "src_components_canvasui_flamewrap_supportshtmlincanvas"
     ],
-    "16": [
+    "17": [
       "scripts_serve_static_export",
       "scripts_serve_static_export_isfile",
       "scripts_serve_static_export_isinsideroot",
@@ -521,26 +505,24 @@
       "scripts_serve_static_export_sendfile",
       "scripts_serve_static_export_server"
     ],
-    "17": [
-      "src_app_locale_page",
-      "src_app_locale_page_home",
-      "src_components_ui_homepagepixelclusters",
-      "src_components_ui_homepagepixelclusters_clusters",
-      "src_components_ui_homepagepixelclusters_clusterspec",
-      "src_components_ui_homepagepixelclusters_homepagepixelclusters",
-      "src_components_ui_homepagepixelclusters_pixel_patterns",
-      "src_components_ui_homepagepixelclusters_pixelspec"
-    ],
     "18": [
-      "src_app_locale_layout",
-      "src_app_locale_layout_generatemetadata",
-      "src_app_locale_layout_generatestaticparams",
-      "src_app_locale_layout_localelayout",
-      "src_app_locale_layout_locales",
-      "src_components_layout_footer",
-      "src_components_layout_footer_footer"
+      "src_components_ui_appshowcase",
+      "src_components_ui_appshowcase_appshowcase",
+      "src_components_ui_bentocard",
+      "src_components_ui_bentocard_bentocard",
+      "src_components_ui_bentocard_bentocardprops",
+      "src_components_ui_bentocard_proximityblock",
+      "src_components_ui_bentocard_proximityblockprops"
     ],
     "19": [
+      "src_app_locale_page",
+      "src_app_locale_page_home",
+      "src_components_ui_infiniteribbon",
+      "src_components_ui_infiniteribbon_infiniteribbon",
+      "src_components_ui_infiniteribbon_infiniteribbonitem",
+      "src_components_ui_infiniteribbon_infiniteribbonprops"
+    ],
+    "20": [
       "src_app_locale_template",
       "src_app_locale_template_template",
       "src_app_locale_template_templateprops",
@@ -548,7 +530,7 @@
       "src_components_motion_pagetransition_pagetransition",
       "src_components_motion_pagetransition_pagetransitionprops"
     ],
-    "20": [
+    "21": [
       "src_app_opengraph_image",
       "src_app_opengraph_image_opengraphimage",
       "src_app_opengraph_image_size",
@@ -556,115 +538,134 @@
       "src_app_twitter_image_size",
       "src_app_twitter_image_twitterimage"
     ],
-    "21": [
+    "22": [
+      "src_components_motion_scrollreveal",
+      "src_components_motion_scrollreveal_scrollreveal",
+      "src_components_motion_scrollreveal_scrollrevealprops",
+      "src_lib_framer_variants",
+      "src_lib_framer_variants_fadeinup",
+      "src_lib_framer_variants_staggercontainer"
+    ],
+    "23": [
+      "src_components_ui_homepagepixelclusters",
+      "src_components_ui_homepagepixelclusters_clusters",
+      "src_components_ui_homepagepixelclusters_clusterspec",
+      "src_components_ui_homepagepixelclusters_homepagepixelclusters",
+      "src_components_ui_homepagepixelclusters_pixel_patterns",
+      "src_components_ui_homepagepixelclusters_pixelspec"
+    ],
+    "24": [
       "scripts_update_legal_manifest",
       "scripts_update_legal_manifest_documents",
       "scripts_update_legal_manifest_extractmetadata",
       "scripts_update_legal_manifest_legaldirectory",
       "scripts_update_legal_manifest_manifest"
     ],
-    "22": [
+    "25": [
+      "src_components_ui_brandicons",
+      "src_components_ui_brandicons_androidrobotlogo",
+      "src_components_ui_brandicons_applebrandlogo",
+      "src_components_ui_brandicons_brandiconprops"
+    ],
+    "26": [
+      "src_components_ui_calltoaction",
+      "src_components_ui_calltoaction_calltoaction",
+      "src_components_ui_calltoaction_shapeoneoutervariants",
+      "src_components_ui_calltoaction_shapetwooutervariants"
+    ],
+    "27": [
       "next_config",
       "next_config_nextconfig",
       "next_config_withnextintl"
     ],
-    "23": [
+    "28": [
       "src_app_apple_icon",
       "src_app_apple_icon_appleicon",
       "src_app_apple_icon_size"
     ],
-    "24": [
+    "29": [
       "src_app_icon",
       "src_app_icon_icon",
       "src_app_icon_size"
     ],
-    "25": [
-      "src_components_ui_features",
-      "src_components_ui_features_features",
-      "src_components_ui_features_interactivegridpattern"
-    ],
-    "26": [
+    "30": [
       "eslint_config",
       "eslint_config_eslintconfig"
     ],
-    "27": [
+    "31": [
       "postcss_config",
       "postcss_config_config"
     ],
-    "28": [
+    "32": [
       "src_app_locale_delete_page",
       "src_app_locale_delete_page_deleteaccountpage"
     ],
-    "29": [
+    "33": [
       "src_app_locale_privacy_page",
       "src_app_locale_privacy_page_privacypage"
     ],
-    "30": [
+    "34": [
       "src_app_locale_terms_page",
       "src_app_locale_terms_page_termspage"
     ],
-    "31": [
+    "35": [
       "src_app_manifest",
       "src_app_manifest_manifest"
     ],
-    "32": [
+    "36": [
       "src_app_robots",
       "src_app_robots_robots"
     ],
-    "33": [
+    "37": [
       "src_components_i18n_localepreference",
       "src_components_i18n_localepreference_localepreference"
     ],
-    "34": [
-      "src_components_ui_appshowcase",
-      "src_components_ui_appshowcase_appshowcase"
-    ],
-    "35": [
+    "38": [
       "src_components_ui_platforms",
       "src_components_ui_platforms_platforms"
     ],
-    "36": [
+    "39": [
       "src_i18n_request",
       "src_i18n_request_locales"
     ],
-    "37": [
+    "40": [
       "scripts_deploy_firebase"
     ],
-    "38": [
+    "41": [
       "scripts_graphify"
     ]
   },
   "cohesion": {
-    "0": 0.06079664570230608,
-    "1": 0.07692307692307693,
-    "2": 0.046464646464646465,
-    "3": 0.06976744186046512,
-    "4": 0.06060606060606061,
-    "5": 0.06896551724137931,
-    "6": 0.09788359788359788,
-    "7": 0.12169312169312169,
-    "8": 0.08,
-    "9": 0.12,
-    "10": 0.13043478260869565,
+    "0": 0.07692307692307693,
+    "1": 0.046464646464646465,
+    "2": 0.06976744186046512,
+    "3": 0.06060606060606061,
+    "4": 0.06896551724137931,
+    "5": 0.10098522167487685,
+    "6": 0.1164021164021164,
+    "7": 0.08,
+    "8": 0.12,
+    "9": 0.13043478260869565,
+    "10": 0.08695652173913043,
     "11": 0.08695652173913043,
-    "12": 0.08695652173913043,
+    "12": 0.15204678362573099,
     "13": 0.20833333333333334,
-    "14": 0.17142857142857143,
-    "15": 0.22727272727272727,
-    "16": 0.26666666666666666,
-    "17": 0.2857142857142857,
-    "18": 0.3333333333333333,
+    "14": 0.20833333333333334,
+    "15": 0.17142857142857143,
+    "16": 0.22727272727272727,
+    "17": 0.26666666666666666,
+    "18": 0.38095238095238093,
     "19": 0.4,
     "20": 0.4,
     "21": 0.4,
-    "22": 0.6666666666666666,
-    "23": 0.6666666666666666,
-    "24": 0.6666666666666666,
-    "25": 0.6666666666666666,
-    "26": 1.0,
-    "27": 1.0,
-    "28": 1.0,
-    "29": 1.0,
+    "22": 0.4,
+    "23": 0.3333333333333333,
+    "24": 0.4,
+    "25": 0.5,
+    "26": 0.5,
+    "27": 0.6666666666666666,
+    "28": 0.6666666666666666,
+    "29": 0.6666666666666666,
     "30": 1.0,
     "31": 1.0,
     "32": 1.0,
@@ -673,7 +674,10 @@
     "35": 1.0,
     "36": 1.0,
     "37": 1.0,
-    "38": 1.0
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0
   },
   "gods": [
     {
@@ -687,11 +691,6 @@
       "degree": 16
     },
     {
-      "id": "src_lib_utils_classnames_cn",
-      "label": "cn()",
-      "degree": 14
-    },
-    {
       "id": "src_components_legal_legaldocumentroute_getlegaldocumentmetadata",
       "label": "getLegalDocumentMetadata()",
       "degree": 11
@@ -700,6 +699,11 @@
       "id": "src_components_ui_hero_pixeldisplay",
       "label": "PixelDisplay()",
       "degree": 10
+    },
+    {
+      "id": "src_lib_utils_classnames_cn",
+      "label": "cn()",
+      "degree": 9
     },
     {
       "id": "src_components_legal_legaldocumentclient_warmlegalloadingdocuments",
@@ -712,18 +716,18 @@
       "degree": 7
     },
     {
-      "id": "src_components_legal_legaldocumentclient_readcachedlegalloadingdocument",
-      "label": "readCachedLegalLoadingDocument()",
+      "id": "public_content_legal_manifest_documents_privacy",
+      "label": "privacy",
       "degree": 7
     },
     {
-      "id": "src_components_legal_legaldocumentclient_sanitizeattributes",
-      "label": "sanitizeAttributes()",
+      "id": "public_content_legal_manifest_documents_cookies",
+      "label": "cookies",
       "degree": 7
     },
     {
-      "id": "src_components_legal_legaldocumentclient_fetchlegalloadingdocument",
-      "label": "fetchLegalLoadingDocument()",
+      "id": "public_content_legal_manifest_documents_terms",
+      "label": "terms",
       "degree": 7
     }
   ],

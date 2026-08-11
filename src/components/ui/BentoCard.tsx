@@ -77,11 +77,11 @@ export const BentoCard = ({
       style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
       whileHover={{ scale: 1.02 }}
       className={cn(
-        "relative rounded-[2.5rem] flex flex-col group group/card perspective-1000 transform-gpu shadow-sm hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.25)] dark:hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.65)] transition-shadow duration-500",
+        "relative rounded-[2.5rem] flex flex-col group group/card perspective-1000 transform-gpu shadow-[0_18px_48px_-38px_var(--site-surface-shadow)] hover:shadow-[0_30px_60px_-24px_var(--site-surface-shadow)] transition-shadow duration-500",
         className
       )}
     >
-      <div className="absolute inset-0 z-0 pointer-events-none rounded-[2.5rem] overflow-hidden bg-zinc-50/80 dark:bg-zinc-900/60 backdrop-blur-2xl border border-zinc-200/50 dark:border-zinc-800/50 transition-colors duration-500 group-hover/card:border-zinc-300/80 dark:group-hover/card:border-zinc-700/80">
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[2.5rem] border border-site-border/85 bg-site-surface/82 backdrop-blur-2xl transition-colors duration-500 group-hover/card:border-site-border-strong">
         <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 overflow-hidden z-0">
           <div
             className="absolute -top-[100%] -left-[100%] w-[300%] h-[300%] blur-[140px] opacity-60 mix-blend-normal dark:mix-blend-lighten animate-spin [animation-duration:30s]"

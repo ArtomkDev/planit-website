@@ -1043,19 +1043,19 @@ export function LegalDocumentClient({
 
   return (
     <>
-      <header className="mb-6 rounded-[8px] border border-zinc-200 bg-white/86 p-5 shadow-[0_20px_70px_-48px_rgba(15,23,42,0.4)] backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-950/78 sm:p-7 lg:p-8">
-        <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-[8px] border border-zinc-200 bg-zinc-50 text-zinc-700 shadow-[0_18px_46px_-38px_rgba(15,23,42,0.55)] dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200">
+      <header className="mb-6 rounded-[8px] border border-site-border bg-site-surface/86 p-5 shadow-[0_20px_70px_-48px_var(--site-surface-shadow)] backdrop-blur-xl sm:p-7 lg:p-8">
+        <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-[8px] border border-site-border bg-site-surface-muted text-site-muted shadow-[0_18px_46px_-38px_var(--site-surface-shadow)]">
           <LegalDocumentIcon
             kind={kind}
             className="h-7 w-7"
             weight="duotone"
           />
         </div>
-        <h1 className="text-balance text-4xl font-black tracking-tight text-zinc-950 dark:text-white sm:text-5xl lg:text-6xl">
+        <h1 className="text-balance text-4xl font-black tracking-tight text-site-text sm:text-5xl lg:text-6xl">
           {documentMetadata.title}
         </h1>
         <div className="mt-6 flex flex-wrap items-center gap-2.5">
-          <span className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs font-bold text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
+          <span className="inline-flex items-center gap-2 rounded-full border border-site-border bg-site-surface-muted px-3 py-2 text-xs font-bold text-site-muted">
             <LegalCalendarIcon className="h-4 w-4 text-zinc-400 dark:text-zinc-500" />
             <span>
               <strong>{documentMetadata.effectiveDateLabel}</strong>{" "}

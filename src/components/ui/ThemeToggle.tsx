@@ -20,7 +20,7 @@ export const ThemeToggle = () => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-200/50 dark:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 backdrop-blur-md border border-zinc-300/50 dark:border-zinc-700/50 hover:bg-zinc-300/50 dark:hover:bg-zinc-700/50 outline-none focus-visible:ring-2 focus-visible:ring-[#F45B8A] dark:focus-visible:ring-[#3EF7D2] will-change-transform"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-site-border-strong/70 bg-site-surface-muted/75 text-site-text backdrop-blur-md outline-none transition-colors hover:bg-site-surface focus-visible:ring-2 focus-visible:ring-brand will-change-transform"
       aria-label={t("theme")}
     >
       <motion.div
@@ -34,7 +34,7 @@ export const ThemeToggle = () => {
         className="absolute flex items-center justify-center will-change-[opacity,transform]"
       >
         {mounted && theme === "dark" ? (
-          <Moon weight="duotone" className="h-5 w-5 text-[#3EF7D2]" />
+          <Moon weight="duotone" className="h-5 w-5 text-brand" />
         ) : (
           <Sun weight="duotone" className="h-5 w-5 text-amber-500" />
         )}

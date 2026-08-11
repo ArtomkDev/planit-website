@@ -1416,7 +1416,8 @@ export function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative -mt-16 flex min-h-[calc(100vh+4rem)] items-center overflow-hidden bg-zinc-50 pt-16 transition-colors duration-500 dark:bg-zinc-950">
+    <section className="relative -mt-16 flex min-h-[calc(100vh+4rem)] items-center overflow-hidden bg-site-bg pt-16 transition-colors duration-500">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,var(--brand-soft),transparent_34%),linear-gradient(var(--site-grid)_1px,transparent_1px),linear-gradient(90deg,var(--site-grid)_1px,transparent_1px)] bg-[size:auto,44px_44px,44px_44px] opacity-65 dark:opacity-30" />
       <PixelDisplay />
 
       <motion.div
@@ -1439,8 +1440,8 @@ export function Hero() {
             }}
             className="mb-6"
           >
-            <span className="inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.18em] text-zinc-700 dark:text-zinc-200">
-              <span className="h-2 w-2 rounded-[2px] bg-[#F45B8A] dark:bg-[#3EF7D2]" />
+            <span className="inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.18em] text-site-muted">
+              <span className="h-2 w-2 rounded-[2px] bg-brand" />
               {t("badge")}
             </span>
           </motion.div>
@@ -1450,10 +1451,10 @@ export function Hero() {
               hidden: { opacity: 0, scale: 0.94 },
               visible: { opacity: 1, scale: 1 },
             }}
-            className="text-5xl font-black leading-[0.94] tracking-[-0.055em] text-zinc-950 sm:text-6xl md:text-7xl dark:text-white"
+            className="text-5xl font-black leading-[0.94] tracking-[-0.055em] text-site-text sm:text-6xl md:text-7xl"
           >
             <span className="block">{t("title1")}</span>
-            <span className="block text-[#E94D7C] dark:text-[#3EF7D2]">
+            <span className="block text-brand">
               {t("title2")}
             </span>
           </motion.h1>
@@ -1463,7 +1464,7 @@ export function Hero() {
               hidden: { opacity: 0, y: 18 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="mx-auto mt-7 max-w-xl text-base font-medium leading-7 text-zinc-700 sm:text-lg lg:mx-0 dark:text-zinc-300"
+            className="mx-auto mt-7 max-w-xl text-base font-medium leading-7 text-site-muted sm:text-lg lg:mx-0"
           >
             {t("description")}
           </motion.p>
@@ -1483,7 +1484,7 @@ export function Hero() {
               whileHover={{ y: -3, scale: 1.025 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 24 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] bg-zinc-950 px-6 py-3.5 font-bold text-white shadow-[0_12px_28px_-16px_rgba(24,24,27,.75)] transition-colors hover:bg-zinc-800 sm:w-auto dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] bg-site-text px-6 py-3.5 font-bold text-site-bg shadow-[0_12px_28px_-16px_var(--site-surface-shadow)] transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_34px_-18px_var(--site-surface-shadow)] sm:w-auto"
             >
               {t("ctaPrimary")}
               <ArrowRight size={19} weight="bold" />
@@ -1495,7 +1496,7 @@ export function Hero() {
               whileHover={{ y: -3, scale: 1.015 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 24 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] border border-zinc-300 bg-white/75 px-6 py-3.5 font-bold text-zinc-900 backdrop-blur-md transition-colors hover:bg-white sm:w-auto dark:border-zinc-700 dark:bg-zinc-900/75 dark:text-white dark:hover:bg-zinc-900"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] border border-site-border-strong bg-site-surface/78 px-6 py-3.5 font-bold text-site-text shadow-sm backdrop-blur-md transition-colors hover:border-brand/35 hover:bg-site-surface sm:w-auto"
             >
               <AndroidRobotLogo className="h-[19px] w-[19px]" />
               {t("ctaSecondary")}

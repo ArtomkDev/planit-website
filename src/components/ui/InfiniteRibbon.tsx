@@ -3,7 +3,13 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
-import { Lightning, ShieldCheck, ArrowsMerge, Code, Star } from "@phosphor-icons/react";
+import {
+  BellRinging,
+  CalendarCheck,
+  ListChecks,
+  ShareNetwork,
+  Star,
+} from "@phosphor-icons/react";
 import { cn } from "@/lib/utils/classNames";
 
 export interface InfiniteRibbonItem {
@@ -18,32 +24,32 @@ export interface InfiniteRibbonProps {
 }
 
 export function InfiniteRibbon({ className, speed = 35 }: InfiniteRibbonProps) {
-  const t = useTranslations("Features");
+  const t = useTranslations("AppShowcase");
 
   const items: InfiniteRibbonItem[] = [
     {
-      id: "speed",
-      label: t("items.speed.title"),
-      icon: <Lightning weight="duotone" className="w-8 h-8 text-amber-500" />,
+      id: "customization",
+      label: t("items.customization.title"),
+      icon: <CalendarCheck weight="duotone" className="w-8 h-8 text-amber-500" />,
     },
     {
-      id: "security",
-      label: t("items.security.title"),
-      icon: <ShieldCheck weight="duotone" className="w-8 h-8 text-emerald-500" />,
+      id: "tasks",
+      label: t("items.tasks.title"),
+      icon: <ListChecks weight="duotone" className="w-8 h-8 text-emerald-500" />,
     },
     {
-      id: "sync",
-      label: t("items.sync.title"),
-      icon: <ArrowsMerge weight="duotone" className="w-8 h-8 text-cyan-500" />,
+      id: "reminders",
+      label: t("items.reminders.title"),
+      icon: <BellRinging weight="duotone" className="w-8 h-8 text-cyan-500" />,
     },
     {
-      id: "analytics",
-      label: t("items.analytics.title"),
-      icon: <Code weight="duotone" className="w-8 h-8 text-indigo-500" />,
+      id: "sharing",
+      label: t("items.sharing.title"),
+      icon: <ShareNetwork weight="duotone" className="w-8 h-8 text-indigo-500" />,
     },
     {
       id: "premium",
-      label: t("title"),
+      label: "PlanIt",
       icon: <Star weight="duotone" className="w-8 h-8 text-pink-500" />,
     },
   ];
@@ -51,8 +57,8 @@ export function InfiniteRibbon({ className, speed = 35 }: InfiniteRibbonProps) {
   const duplicatedItems = [...items, ...items, ...items, ...items];
 
   return (
-    <section className={cn("relative w-full overflow-hidden py-12 bg-white dark:bg-[#09090b] border-y border-zinc-200/50 dark:border-zinc-800/50 z-20 flex items-center", className)}>
-      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white dark:from-[#09090b] to-transparent z-30 pointer-events-none" />
+    <section className={cn("relative z-20 flex w-full items-center overflow-hidden border-y border-site-border/70 bg-site-surface/72 py-12 shadow-[0_18px_70px_-56px_var(--site-surface-shadow)] backdrop-blur-sm", className)}>
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-30 w-32 bg-gradient-to-r from-site-surface to-transparent" />
       
       <motion.div
         className="flex w-max shrink-0 items-center transform-gpu"
@@ -68,18 +74,18 @@ export function InfiniteRibbon({ className, speed = 35 }: InfiniteRibbonProps) {
             key={`${item.id}-${index}`}
             className="flex items-center gap-4 px-8 md:px-16 group cursor-default"
           >
-            <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800/50 shadow-sm group-hover:scale-110 group-hover:-translate-y-1 transition-all duration-500 ease-[0.22,1,0.36,1]">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-site-border bg-site-surface-muted shadow-sm transition-all duration-500 ease-[0.22,1,0.36,1] group-hover:-translate-y-1 group-hover:scale-110">
               {item.icon}
             </div>
-            <span className="text-2xl md:text-3xl font-black tracking-tighter text-zinc-900 dark:text-white uppercase whitespace-nowrap transition-colors duration-500 group-hover:text-indigo-500 dark:group-hover:text-indigo-400">
+            <span className="whitespace-nowrap text-2xl font-black uppercase tracking-tighter text-site-text transition-colors duration-500 group-hover:text-brand md:text-3xl">
               {item.label}
             </span>
-            <div className="w-2 h-2 rounded-full bg-zinc-300 dark:bg-zinc-700 ml-8 md:ml-16" />
+            <div className="ml-8 h-2 w-2 rounded-full bg-site-border-strong md:ml-16" />
           </div>
         ))}
       </motion.div>
 
-      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white dark:from-[#09090b] to-transparent z-30 pointer-events-none" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-30 w-32 bg-gradient-to-l from-site-surface to-transparent" />
     </section>
   );
 }

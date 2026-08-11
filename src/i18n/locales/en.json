@@ -1,9 +1,7 @@
 {
   "Navigation": {
     "home": "Home",
-    "features": "Features",
     "platforms": "Platforms",
-    "workflow": "How it works",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "delete": "Account Deletion",
@@ -35,7 +33,6 @@
     "description": "PlanIt keeps your multi-week schedule, tasks, and study materials together, reminds you before class, and makes a finished schedule easy to share.",
     "ctaPrimary": "Open Web App",
     "ctaSecondary": "Get it on Google Play",
-    "scrollLabel": "Features",
     "preview": {
       "eyebrow": "Today",
       "title": "Daily Schedule",
@@ -86,49 +83,6 @@
           "room": "Studio 2",
           "teacher": "M. Levchenko"
         }
-      }
-    }
-  },
-  "Features": {
-    "badge": "More than today's timetable",
-    "title": "Everything around your classes stays connected",
-    "description": "PlanIt gives lessons, tasks, reminders, and materials one clear home — whether you keep everything on one device or sign in to synchronize it.",
-    "items": {
-      "speed": {
-        "title": "Start without an account",
-        "description": "Open PlanIt as a guest and build a schedule right away. It stays on your device and remains available when the network is not."
-      },
-      "security": {
-        "title": "On-device data",
-        "description": "PlanIt loads its local copy first. Signed-in users retain that copy while working without a network connection."
-      },
-      "sync": {
-        "title": "Pick up on another device",
-        "description": "Sign in and your schedules follow you. PlanIt keeps a local copy too, so a weak connection does not stop the day."
-      },
-      "schedules": {
-        "title": "A schedule for every routine",
-        "description": "Keep separate schedules for different semesters, groups, or plans, and choose which ones appear in the task list and which single schedule belongs in the widget."
-      },
-      "tasks": {
-        "title": "Tasks that remember the class",
-        "description": "Add homework from a lesson, link it to a particular class or date, attach what you need, and mark it done when it is finished."
-      },
-      "reminders": {
-        "title": "A heads-up before class",
-        "description": "Choose a reminder for the whole schedule, turn it off for a subject, or set a different lead time for the classes that need it."
-      },
-      "materials": {
-        "title": "Materials beside the work",
-        "description": "Keep links with a lesson and, after signing in, add photos or files to lessons and tasks so the right material is already where you need it."
-      },
-      "analytics": {
-        "title": "Share without giving up control",
-        "description": "Create a temporary code, choose what to include, and let someone preview and import their own copy of the schedule."
-      },
-      "widget": {
-        "title": "The day at a glance",
-        "description": "Put a chosen schedule on the home screen, move between nearby days, and open a lesson from the widget when you need the details."
       }
     }
   },
@@ -187,24 +141,6 @@
         "description": "The current PlanIt web build runs in a browser and uses the same schedule and synchronization model.",
         "button": "Open Web App",
         "status": "Online"
-      }
-    }
-  },
-  "HowItWorks": {
-    "badge": "How it works",
-    "title": "Set it up once, then let PlanIt carry the routine",
-    "steps": {
-      "step1": {
-        "title": "Configure the structure",
-        "description": "Set a name, cycle length, starting date, first lesson time, lesson duration, and break lengths."
-      },
-      "step2": {
-        "title": "Fill in the week",
-        "description": "Add subjects and lesson details, then connect homework, links, photos, and files to the class they belong to."
-      },
-      "step3": {
-        "title": "Let the routine run",
-        "description": "Choose your reminders, glance at the widget, and work locally as a guest — or sign in to synchronize and share a ready schedule."
       }
     }
   },

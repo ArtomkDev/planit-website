@@ -29,12 +29,12 @@ export function Platforms() {
       spotlightColor: "rgba(62, 247, 210, 0.15)",
       colorPrimary: "rgba(62, 247, 210, 0.14)",
       colorSecondary: "rgba(62, 247, 210, 0.07)",
-      buttonBgColor: "bg-[#3EF7D2]",
-      buttonHoverColor: "hover:ring-4 hover:ring-[#3EF7D2]/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(62,247,210,0.85)]",
+      buttonBgColor: "bg-brand-teal",
+      buttonHoverColor: "hover:ring-4 hover:ring-brand-teal/40 ring-offset-2 ring-offset-site-surface hover:shadow-[0_10px_40px_-10px_rgba(62,247,210,0.85)]",
       buttonTextColor: "text-zinc-950",
-      iconColor: "text-zinc-950 dark:text-white",
-      statusColor: "text-[#0DAF93] dark:text-[#3EF7D2]",
-      statusSurface: "border-[#3EF7D2]/45 bg-[#3EF7D2]/10 dark:border-[#3EF7D2]/35 dark:bg-[#3EF7D2]/10",
+      iconColor: "text-brand-teal",
+      statusColor: "text-brand-teal-strong",
+      statusSurface: "border-brand-teal/40 bg-brand-teal/10",
     },
     {
       title: t("items.web.title"),
@@ -44,17 +44,17 @@ export function Platforms() {
       isDevelopment: false,
       href: APP_URL,
       openInNewTab: false,
-      icon: <Browser className="w-8 h-8" weight="fill" />,
+      icon: <Browser className="w-8 h-8" weight="duotone" />,
       buttonIcon: <ArrowRight className="w-6 h-6" weight="bold" />,
       spotlightColor: "rgba(244, 91, 138, 0.15)",
       colorPrimary: "rgba(244, 91, 138, 0.14)",
       colorSecondary: "rgba(244, 91, 138, 0.07)",
-      buttonBgColor: "bg-[#F45B8A]",
-      buttonHoverColor: "hover:ring-4 hover:ring-[#F45B8A]/40 ring-offset-2 ring-offset-white dark:ring-offset-zinc-900 hover:shadow-[0_10px_40px_-10px_rgba(244,91,138,0.85)]",
+      buttonBgColor: "bg-brand-pink",
+      buttonHoverColor: "hover:ring-4 hover:ring-brand-pink/40 ring-offset-2 ring-offset-site-surface hover:shadow-[0_10px_40px_-10px_rgba(244,91,138,0.85)]",
       buttonTextColor: "text-white",
-      iconColor: "text-zinc-950 dark:text-white",
-      statusColor: "text-[#c93667] dark:text-[#F45B8A]",
-      statusSurface: "border-[#F45B8A]/40 bg-[#F45B8A]/10 dark:border-[#F45B8A]/35 dark:bg-[#F45B8A]/10",
+      iconColor: "text-brand-pink",
+      statusColor: "text-brand-pink",
+      statusSurface: "border-brand-pink/40 bg-brand-pink/10",
     },
     {
       title: t("items.ios.title"),
@@ -72,7 +72,7 @@ export function Platforms() {
       buttonBgColor: "",
       buttonHoverColor: "",
       buttonTextColor: "text-zinc-400 dark:text-zinc-500",
-      iconColor: "text-zinc-500 dark:text-zinc-300",
+      iconColor: "text-site-soft",
       statusColor: "text-zinc-500 dark:text-zinc-400",
       statusSurface: "border-zinc-300/50 bg-gradient-to-b from-zinc-100 to-zinc-200 dark:border-zinc-700/50 dark:from-zinc-800 dark:to-zinc-900",
     },
@@ -83,10 +83,10 @@ export function Platforms() {
       <LessonCardAccent seed={37} className="-right-64 top-[42%]" />
       <LessonCardAccent seed={38} depth="background" className="right-[18%] top-10" />
       <ScrollReveal className="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
-        <span className="text-sm font-bold tracking-widest text-indigo-500 uppercase mb-4 block">
+        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand">
           {t("badge")}
         </span>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-zinc-900 dark:text-white tracking-tight">
+        <h2 className="text-4xl font-black tracking-tight text-site-text md:text-5xl lg:text-6xl">
           {t("title")}
         </h2>
       </ScrollReveal>
@@ -108,7 +108,7 @@ export function Platforms() {
             <div className="flex items-start justify-between mb-8 pointer-events-none">
               <ProximityBlock
                 color={item.spotlightColor.replace("0.15", "0.8")}
-                className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/90 dark:bg-zinc-950/90 ${item.iconColor} backdrop-blur-xl border border-zinc-200/50 dark:border-zinc-800/50 shadow-[0_8px_16px_-6px_rgba(0,0,0,0.05)] dark:shadow-[0_8px_16px_-6px_rgba(0,0,0,0.4)] group-hover/card:scale-110 group-hover/card:-translate-y-1 transition-all duration-700 ease-[0.22,1,0.36,1]`}
+                className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${item.iconColor} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] group-hover/card:-translate-y-1 group-hover/card:scale-110`}
               >
                 {item.icon}
               </ProximityBlock>
@@ -123,10 +123,10 @@ export function Platforms() {
               </ProximityBlock>
             </div>
 
-            <h3 className="text-3xl font-black text-zinc-900 dark:text-white mb-4 tracking-tight transition-colors duration-500 pointer-events-none">
+            <h3 className="pointer-events-none mb-4 text-3xl font-black tracking-tight text-site-text transition-colors duration-500">
               {item.title}
             </h3>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed text-lg mb-10 flex-grow pointer-events-none">
+            <p className="pointer-events-none mb-10 flex-grow text-lg leading-relaxed text-site-muted">
               {item.description}
             </p>
 

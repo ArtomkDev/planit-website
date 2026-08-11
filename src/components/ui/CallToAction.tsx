@@ -78,9 +78,9 @@ export const CallToAction = () => {
         <div
           onMouseEnter={() => setIsCardHovered(true)}
           onMouseLeave={() => setIsCardHovered(false)}
-          className="relative overflow-hidden rounded-[3rem] bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-12 md:p-20 text-center transition-colors duration-500 shadow-xl dark:shadow-none"
+          className="relative overflow-hidden rounded-[3rem] border border-site-border bg-site-surface p-12 text-center shadow-[0_34px_90px_-62px_var(--site-surface-shadow)] transition-colors duration-500 md:p-20"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#F45B8A]/5 via-transparent to-transparent dark:from-[#3EF7D2]/10 pointer-events-none z-0" />
+          <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand/10 via-transparent to-transparent" />
           
           <motion.div
             variants={shapeOneOuterVariants}
@@ -102,7 +102,7 @@ export const CallToAction = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="w-full h-full bg-[#3EF7D2]"
+              className="h-full w-full bg-brand-teal"
             />
           </motion.div>
           
@@ -126,15 +126,15 @@ export const CallToAction = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="w-full h-full bg-[#F45B8A]"
+              className="h-full w-full bg-brand-pink"
             />
           </motion.div>
 
           <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-            <h2 className="text-4xl md:text-6xl font-black text-zinc-900 dark:text-white tracking-tight mb-6">
+            <h2 className="mb-6 text-4xl font-black tracking-tight text-site-text md:text-6xl">
               {t("title")}
             </h2>
-            <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-10">
+            <p className="mb-10 text-xl text-site-muted">
               {t("description")}
             </p>
             
@@ -144,12 +144,12 @@ export const CallToAction = () => {
               whileTap={{ scale: 0.95 }}
               onMouseEnter={() => setIsButtonHovered(true)}
               onMouseLeave={() => setIsButtonHovered(false)}
-              className="group inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold text-lg transition-colors transition-shadow duration-300 shadow-[0_0_40px_-10px_rgba(0,0,0,0.15)] dark:shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(0,0,0,0.25)] dark:hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)]"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-site-text px-10 py-5 text-lg font-bold text-site-bg shadow-[0_18px_50px_-28px_var(--site-surface-shadow)] transition-shadow duration-300 hover:shadow-[0_22px_60px_-30px_var(--site-surface-shadow)]"
             >
               {t("button")}
               <ArrowRight 
                 weight="bold" 
-                className="w-5 h-5 text-[#F45B8A] transition-colors duration-300 group-hover:text-[#3EF7D2]" 
+                className="h-5 w-5 text-brand transition-colors duration-300 group-hover:text-brand-strong"
               />
             </motion.a>
           </div>

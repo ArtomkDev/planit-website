@@ -175,11 +175,11 @@ export const CookieConsent = () => {
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
         >
           <div
-            className="pointer-events-auto relative mx-auto flex max-w-5xl flex-col gap-5 overflow-hidden rounded-[2rem] border border-zinc-200 bg-white/80 p-6 shadow-2xl backdrop-blur-xl transition-colors duration-500 dark:border-zinc-800 dark:bg-zinc-950/80 sm:flex-row sm:items-center sm:justify-between sm:p-8"
+            className="pointer-events-auto relative mx-auto flex max-w-5xl flex-col gap-5 overflow-hidden rounded-[2rem] border border-site-border bg-site-surface/86 p-6 shadow-[0_28px_90px_-48px_var(--site-surface-shadow)] backdrop-blur-xl transition-colors duration-500 sm:flex-row sm:items-center sm:justify-between sm:p-8"
             onMouseEnter={() => setIsCardHovered(true)}
             onMouseLeave={() => setIsCardHovered(false)}
           >
-            <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#F45B8A]/5 via-transparent to-transparent dark:from-[#3EF7D2]/10" />
+            <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand/10 via-transparent to-transparent" />
 
             <motion.div
               variants={shapeOneOuterVariants}
@@ -201,7 +201,7 @@ export const CookieConsent = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="h-full w-full bg-[#3EF7D2]"
+                className="h-full w-full bg-brand-teal"
               />
             </motion.div>
 
@@ -225,7 +225,7 @@ export const CookieConsent = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="h-full w-full bg-[#F45B8A]"
+                className="h-full w-full bg-brand-pink"
               />
             </motion.div>
 
@@ -233,15 +233,15 @@ export const CookieConsent = () => {
               <motion.span
                 animate={isCardHovered ? { rotate: [0, -10, 10, 0], scale: 1.1 } : { rotate: 0, scale: 1 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-zinc-950 text-white shadow-lg dark:bg-white dark:text-zinc-950"
+                className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-site-text text-site-bg shadow-lg"
               >
                 <Cookie weight="duotone" className="h-6 w-6" />
               </motion.span>
               <div className="min-w-0">
-                <h2 id="cookie-consent-title" className="text-lg font-black tracking-tight text-zinc-950 dark:text-white">
+                <h2 id="cookie-consent-title" className="text-lg font-black tracking-tight text-site-text">
                   {t("title")}
                 </h2>
-                <p id="cookie-consent-description" className="mt-1.5 max-w-2xl text-sm font-medium leading-relaxed text-zinc-600 dark:text-zinc-400">
+                <p id="cookie-consent-description" className="mt-1.5 max-w-2xl text-sm font-medium leading-relaxed text-site-muted">
                   {t("description")}
                 </p>
               </div>
@@ -255,7 +255,7 @@ export const CookieConsent = () => {
                 onMouseEnter={() => setIsButtonHovered(true)}
                 onMouseLeave={() => setIsButtonHovered(false)}
                 onClick={() => handleChoice("accepted")}
-                className="group inline-flex h-12 items-center justify-center rounded-full bg-zinc-950 px-6 text-sm font-black text-white shadow-[0_0_20px_-5px_rgba(0,0,0,0.1)] transition-all duration-300 hover:bg-[#c93667] hover:shadow-[0_0_30px_-5px_rgba(244,91,138,0.4)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F45B8A] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-white dark:text-zinc-950 dark:hover:bg-[#3EF7D2] dark:hover:shadow-[0_0_30px_-5px_rgba(62,247,210,0.4)] dark:focus-visible:ring-[#3EF7D2] dark:focus-visible:ring-offset-zinc-950"
+                className="group inline-flex h-12 items-center justify-center rounded-full bg-site-text px-6 text-sm font-black text-site-bg shadow-[0_0_20px_-5px_var(--site-surface-shadow)] transition-all duration-300 hover:bg-brand hover:text-white hover:shadow-[0_0_30px_-5px_color-mix(in_srgb,var(--brand)_42%,transparent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-site-surface"
               >
                 {t("accept")}
               </motion.button>
@@ -266,7 +266,7 @@ export const CookieConsent = () => {
                 onMouseEnter={() => setIsButtonHovered(true)}
                 onMouseLeave={() => setIsButtonHovered(false)}
                 onClick={() => handleChoice("rejected")}
-                className="inline-flex h-12 items-center justify-center rounded-full border border-zinc-300/70 bg-white/70 px-6 text-sm font-black text-zinc-800 transition-all duration-300 hover:bg-zinc-100 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F45B8A] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-zinc-700/70 dark:bg-zinc-900/70 dark:text-zinc-100 dark:hover:bg-zinc-800 dark:focus-visible:ring-[#3EF7D2] dark:focus-visible:ring-offset-zinc-950"
+                className="inline-flex h-12 items-center justify-center rounded-full border border-site-border-strong/70 bg-site-surface/70 px-6 text-sm font-black text-site-text transition-all duration-300 hover:bg-site-surface-muted hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-site-surface"
               >
                 {t("reject")}
               </motion.button>
@@ -274,7 +274,7 @@ export const CookieConsent = () => {
                 href={`/${locale}/wiki/cookies`}
                 onMouseEnter={() => setIsButtonHovered(true)}
                 onMouseLeave={() => setIsButtonHovered(false)}
-                className="inline-flex h-12 items-center justify-center rounded-full px-4 text-sm font-black text-zinc-500 transition-colors duration-300 hover:text-[#c93667] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F45B8A] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:text-zinc-400 dark:hover:text-[#3EF7D2] dark:focus-visible:ring-[#3EF7D2] dark:focus-visible:ring-offset-zinc-950"
+                className="inline-flex h-12 items-center justify-center rounded-full px-4 text-sm font-black text-site-muted transition-colors duration-300 hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-site-surface"
               >
                 {t("learnMore")}
               </Link>

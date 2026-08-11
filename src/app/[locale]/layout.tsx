@@ -63,7 +63,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
       </head>
-      <body suppressHydrationWarning className="font-sans min-h-screen flex flex-col antialiased selection:bg-[#F45B8A]/30 selection:text-zinc-950 dark:selection:bg-[#3EF7D2]/25 dark:selection:text-white">
+      <body suppressHydrationWarning className="flex min-h-screen flex-col bg-site-bg font-sans text-site-text antialiased selection:bg-brand/25 selection:text-site-text">
         <LegalLoadingPreloadLinks />
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
