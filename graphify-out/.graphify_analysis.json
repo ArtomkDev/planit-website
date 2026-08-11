@@ -105,10 +105,60 @@
       "src_components_legal_legaldocumentclient_sha256hex",
       "src_components_legal_legaldocumentclient_upsertmeta",
       "src_components_legal_legaldocumentclient_verifylegalassethash",
+      "src_components_legal_legaldocumentclient_warmalllegalloadingdocuments",
       "src_components_legal_legaldocumentclient_warmlegalloadingdocuments",
-      "src_components_legal_legaldocumentclient_writecachedlegalloadingdocument"
+      "src_components_legal_legaldocumentclient_writecachedlegalloadingdocument",
+      "src_components_legal_legalloadingpreloader",
+      "src_components_legal_legalloadingpreloader_legalloadingpreloader"
     ],
     "2": [
+      "public_content_legal_manifest",
+      "public_content_legal_manifest_cookies_loadingpath",
+      "public_content_legal_manifest_cookies_loadingsha256",
+      "public_content_legal_manifest_cookies_path",
+      "public_content_legal_manifest_cookies_sha256",
+      "public_content_legal_manifest_cookies_title",
+      "public_content_legal_manifest_cookies_version",
+      "public_content_legal_manifest_delete_loadingpath",
+      "public_content_legal_manifest_delete_loadingsha256",
+      "public_content_legal_manifest_delete_path",
+      "public_content_legal_manifest_delete_sha256",
+      "public_content_legal_manifest_delete_title",
+      "public_content_legal_manifest_delete_version",
+      "public_content_legal_manifest_documents",
+      "public_content_legal_manifest_documents_cookies",
+      "public_content_legal_manifest_documents_delete",
+      "public_content_legal_manifest_documents_licenses",
+      "public_content_legal_manifest_documents_privacy",
+      "public_content_legal_manifest_documents_terms",
+      "public_content_legal_manifest_licenses_loadingpath",
+      "public_content_legal_manifest_licenses_loadingsha256",
+      "public_content_legal_manifest_licenses_path",
+      "public_content_legal_manifest_licenses_sha256",
+      "public_content_legal_manifest_licenses_title",
+      "public_content_legal_manifest_licenses_version",
+      "public_content_legal_manifest_privacy_loadingpath",
+      "public_content_legal_manifest_privacy_loadingsha256",
+      "public_content_legal_manifest_privacy_path",
+      "public_content_legal_manifest_privacy_sha256",
+      "public_content_legal_manifest_privacy_title",
+      "public_content_legal_manifest_privacy_version",
+      "public_content_legal_manifest_terms_loadingpath",
+      "public_content_legal_manifest_terms_loadingsha256",
+      "public_content_legal_manifest_terms_path",
+      "public_content_legal_manifest_terms_sha256",
+      "public_content_legal_manifest_terms_title",
+      "public_content_legal_manifest_terms_version",
+      "public_content_legal_manifest_version",
+      "src_components_legal_legalloadingpreloadlinks",
+      "src_components_legal_legalloadingpreloadlinks_buildversionedasseturl",
+      "src_components_legal_legalloadingpreloadlinks_getlegalloadingpreloadurls",
+      "src_components_legal_legalloadingpreloadlinks_legalloadingpreloadlinks",
+      "src_components_legal_legalloadingpreloadlinks_legalmanifest",
+      "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifest",
+      "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifestdocument"
+    ],
+    "3": [
       "src_app_locale_wiki_cookies_page",
       "src_app_locale_wiki_cookies_page_cookiespage",
       "src_app_locale_wiki_cookies_page_generatemetadata",
@@ -154,46 +204,6 @@
       "src_content_legal_documents_legaldocumentkind",
       "src_content_legal_documents_legaldocumentmetadata"
     ],
-    "3": [
-      "public_content_legal_manifest",
-      "public_content_legal_manifest_cookies_loadingpath",
-      "public_content_legal_manifest_cookies_loadingsha256",
-      "public_content_legal_manifest_cookies_path",
-      "public_content_legal_manifest_cookies_sha256",
-      "public_content_legal_manifest_cookies_title",
-      "public_content_legal_manifest_cookies_version",
-      "public_content_legal_manifest_delete_loadingpath",
-      "public_content_legal_manifest_delete_loadingsha256",
-      "public_content_legal_manifest_delete_path",
-      "public_content_legal_manifest_delete_sha256",
-      "public_content_legal_manifest_delete_title",
-      "public_content_legal_manifest_delete_version",
-      "public_content_legal_manifest_documents",
-      "public_content_legal_manifest_documents_cookies",
-      "public_content_legal_manifest_documents_delete",
-      "public_content_legal_manifest_documents_licenses",
-      "public_content_legal_manifest_documents_privacy",
-      "public_content_legal_manifest_documents_terms",
-      "public_content_legal_manifest_licenses_loadingpath",
-      "public_content_legal_manifest_licenses_loadingsha256",
-      "public_content_legal_manifest_licenses_path",
-      "public_content_legal_manifest_licenses_sha256",
-      "public_content_legal_manifest_licenses_title",
-      "public_content_legal_manifest_licenses_version",
-      "public_content_legal_manifest_privacy_loadingpath",
-      "public_content_legal_manifest_privacy_loadingsha256",
-      "public_content_legal_manifest_privacy_path",
-      "public_content_legal_manifest_privacy_sha256",
-      "public_content_legal_manifest_privacy_title",
-      "public_content_legal_manifest_privacy_version",
-      "public_content_legal_manifest_terms_loadingpath",
-      "public_content_legal_manifest_terms_loadingsha256",
-      "public_content_legal_manifest_terms_path",
-      "public_content_legal_manifest_terms_sha256",
-      "public_content_legal_manifest_terms_title",
-      "public_content_legal_manifest_terms_version",
-      "public_content_legal_manifest_version"
-    ],
     "4": [
       "eslint",
       "eslint_config_next",
@@ -230,38 +240,6 @@
       "typescript"
     ],
     "5": [
-      "src_app_global_not_found",
-      "src_app_global_not_found_client",
-      "src_app_global_not_found_client_copy",
-      "src_app_global_not_found_client_getclientlocale",
-      "src_app_global_not_found_client_getserverlocale",
-      "src_app_global_not_found_client_globalnotfoundclient",
-      "src_app_global_not_found_client_locale",
-      "src_app_global_not_found_client_notfoundcontent",
-      "src_app_global_not_found_client_subscribetolocale",
-      "src_app_global_not_found_globalnotfound",
-      "src_app_global_not_found_metadata",
-      "src_components_layout_footer",
-      "src_components_layout_footer_footer",
-      "src_components_layout_header",
-      "src_components_layout_header_header",
-      "src_components_layout_header_headerlink",
-      "src_components_layout_header_headerlinkprops",
-      "src_components_layout_header_headerprops",
-      "src_components_providers_themeprovider",
-      "src_components_providers_themeprovider_getstoredtheme",
-      "src_components_providers_themeprovider_getsystemtheme",
-      "src_components_providers_themeprovider_theme",
-      "src_components_providers_themeprovider_themecontext",
-      "src_components_providers_themeprovider_themecontexttype",
-      "src_components_providers_themeprovider_themeprovider",
-      "src_components_providers_themeprovider_themestore",
-      "src_components_ui_brandicons",
-      "src_components_ui_brandicons_androidrobotlogo",
-      "src_components_ui_brandicons_applebrandlogo",
-      "src_components_ui_brandicons_brandiconprops"
-    ],
-    "6": [
       "ref_dom",
       "ref_dom_iterable",
       "ref_esnext",
@@ -291,6 +269,36 @@
       "tsconfig_compileroptions_target",
       "tsconfig_exclude",
       "tsconfig_include"
+    ],
+    "6": [
+      "src_app_global_not_found",
+      "src_app_global_not_found_client",
+      "src_app_global_not_found_client_copy",
+      "src_app_global_not_found_client_getclientlocale",
+      "src_app_global_not_found_client_getserverlocale",
+      "src_app_global_not_found_client_globalnotfoundclient",
+      "src_app_global_not_found_client_locale",
+      "src_app_global_not_found_client_notfoundcontent",
+      "src_app_global_not_found_client_subscribetolocale",
+      "src_app_global_not_found_globalnotfound",
+      "src_app_global_not_found_metadata",
+      "src_components_layout_header",
+      "src_components_layout_header_header",
+      "src_components_layout_header_headerlink",
+      "src_components_layout_header_headerlinkprops",
+      "src_components_layout_header_headerprops",
+      "src_components_providers_themeprovider",
+      "src_components_providers_themeprovider_getstoredtheme",
+      "src_components_providers_themeprovider_getsystemtheme",
+      "src_components_providers_themeprovider_theme",
+      "src_components_providers_themeprovider_themecontext",
+      "src_components_providers_themeprovider_themecontexttype",
+      "src_components_providers_themeprovider_themeprovider",
+      "src_components_providers_themeprovider_themestore",
+      "src_components_ui_brandicons",
+      "src_components_ui_brandicons_androidrobotlogo",
+      "src_components_ui_brandicons_applebrandlogo",
+      "src_components_ui_brandicons_brandiconprops"
     ],
     "7": [
       "src_components_ui_cookieconsent",
@@ -350,6 +358,33 @@
       "three"
     ],
     "9": [
+      "src_components_canvasui_asciify",
+      "src_components_canvasui_asciify_asciify",
+      "src_components_canvasui_asciify_asciifycharset",
+      "src_components_canvasui_asciify_asciifyelements",
+      "src_components_canvasui_asciify_asciifyinstance",
+      "src_components_canvasui_asciify_asciifyoptions",
+      "src_components_canvasui_asciify_asciifyprops",
+      "src_components_canvasui_asciify_charsets",
+      "src_components_canvasui_asciify_createasciify",
+      "src_components_canvasui_asciify_defaults",
+      "src_components_canvasui_asciify_elementimagecontext",
+      "src_components_canvasui_asciify_emptysubscribe",
+      "src_components_canvasui_asciify_fallbackpaintstate",
+      "src_components_canvasui_asciify_fallbackrect",
+      "src_components_canvasui_asciify_initializeasciify",
+      "src_components_canvasui_asciify_intersectfallbackrects",
+      "src_components_canvasui_asciify_isfallbackmediaoriginclean",
+      "src_components_canvasui_asciify_paintablecanvas",
+      "src_components_canvasui_asciify_paintfallbackborders",
+      "src_components_canvasui_asciify_paintfallbackmedia",
+      "src_components_canvasui_asciify_paintfallbacksnapshot",
+      "src_components_canvasui_asciify_paintfallbacktext",
+      "src_components_canvasui_asciify_resolveobjectposition",
+      "src_components_canvasui_asciify_resolvepositionvalue",
+      "src_components_canvasui_asciify_supportshtmlincanvas"
+    ],
+    "10": [
       "src_components_ui_hero",
       "src_components_ui_hero_clamp",
       "src_components_ui_hero_createcanvaspixelrenderer",
@@ -375,7 +410,32 @@
       "src_components_ui_hero_sin_lookup",
       "src_components_ui_hero_smoothstep"
     ],
-    "10": [
+    "11": [
+      "components",
+      "components_aliases",
+      "components_aliases_components",
+      "components_aliases_hooks",
+      "components_aliases_lib",
+      "components_aliases_ui",
+      "components_aliases_utils",
+      "components_iconlibrary",
+      "components_menuaccent",
+      "components_menucolor",
+      "components_registries",
+      "components_registries_canvas_ui",
+      "components_rsc",
+      "components_rtl",
+      "components_schema",
+      "components_style",
+      "components_tailwind",
+      "components_tailwind_basecolor",
+      "components_tailwind_config",
+      "components_tailwind_css",
+      "components_tailwind_cssvariables",
+      "components_tailwind_prefix",
+      "components_tsx"
+    ],
+    "12": [
       "package",
       "package_name",
       "package_private",
@@ -400,7 +460,7 @@
       "package_scripts_start",
       "package_version"
     ],
-    "11": [
+    "13": [
       "src_components_ui_floatingschedule",
       "src_components_ui_floatingschedule_createschedule",
       "src_components_ui_floatingschedule_createseededrandom",
@@ -418,24 +478,38 @@
       "src_components_ui_floatingschedule_timeslots",
       "src_components_ui_floatingschedule_weekkeys"
     ],
-    "12": [
-      "src_app_locale_layout",
-      "src_app_locale_layout_generatemetadata",
-      "src_app_locale_layout_generatestaticparams",
-      "src_app_locale_layout_localelayout",
-      "src_app_locale_layout_locales",
-      "src_components_legal_legaldocumentclient_warmalllegalloadingdocuments",
-      "src_components_legal_legalloadingpreloader",
-      "src_components_legal_legalloadingpreloader_legalloadingpreloader",
-      "src_components_legal_legalloadingpreloadlinks",
-      "src_components_legal_legalloadingpreloadlinks_buildversionedasseturl",
-      "src_components_legal_legalloadingpreloadlinks_getlegalloadingpreloadurls",
-      "src_components_legal_legalloadingpreloadlinks_legalloadingpreloadlinks",
-      "src_components_legal_legalloadingpreloadlinks_legalmanifest",
-      "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifest",
-      "src_components_legal_legalloadingpreloadlinks_legalpreloadmanifestdocument"
+    "14": [
+      "src_components_canvasui_liquid",
+      "src_components_canvasui_liquid_createliquid",
+      "src_components_canvasui_liquid_defaults",
+      "src_components_canvasui_liquid_doubletarget",
+      "src_components_canvasui_liquid_elementimagecontext",
+      "src_components_canvasui_liquid_emptysubscribe",
+      "src_components_canvasui_liquid_liquid",
+      "src_components_canvasui_liquid_liquidelements",
+      "src_components_canvasui_liquid_liquidinstance",
+      "src_components_canvasui_liquid_liquidoptions",
+      "src_components_canvasui_liquid_liquidprops",
+      "src_components_canvasui_liquid_paintablecanvas",
+      "src_components_canvasui_liquid_srgbtolinear",
+      "src_components_canvasui_liquid_supportshtmlincanvas",
+      "src_components_canvasui_liquid_target"
     ],
-    "13": [
+    "15": [
+      "src_components_canvasui_flamewrap",
+      "src_components_canvasui_flamewrap_createflamewrap",
+      "src_components_canvasui_flamewrap_defaults",
+      "src_components_canvasui_flamewrap_elementimagecontext",
+      "src_components_canvasui_flamewrap_emptysubscribe",
+      "src_components_canvasui_flamewrap_flamewrap",
+      "src_components_canvasui_flamewrap_flamewrapelements",
+      "src_components_canvasui_flamewrap_flamewrapinstance",
+      "src_components_canvasui_flamewrap_flamewrapoptions",
+      "src_components_canvasui_flamewrap_flamewrapprops",
+      "src_components_canvasui_flamewrap_paintablecanvas",
+      "src_components_canvasui_flamewrap_supportshtmlincanvas"
+    ],
+    "16": [
       "scripts_serve_static_export",
       "scripts_serve_static_export_isfile",
       "scripts_serve_static_export_isinsideroot",
@@ -447,7 +521,7 @@
       "scripts_serve_static_export_sendfile",
       "scripts_serve_static_export_server"
     ],
-    "14": [
+    "17": [
       "src_app_locale_page",
       "src_app_locale_page_home",
       "src_components_ui_homepagepixelclusters",
@@ -457,7 +531,16 @@
       "src_components_ui_homepagepixelclusters_pixel_patterns",
       "src_components_ui_homepagepixelclusters_pixelspec"
     ],
-    "15": [
+    "18": [
+      "src_app_locale_layout",
+      "src_app_locale_layout_generatemetadata",
+      "src_app_locale_layout_generatestaticparams",
+      "src_app_locale_layout_localelayout",
+      "src_app_locale_layout_locales",
+      "src_components_layout_footer",
+      "src_components_layout_footer_footer"
+    ],
+    "19": [
       "src_app_locale_template",
       "src_app_locale_template_template",
       "src_app_locale_template_templateprops",
@@ -465,7 +548,7 @@
       "src_components_motion_pagetransition_pagetransition",
       "src_components_motion_pagetransition_pagetransitionprops"
     ],
-    "16": [
+    "20": [
       "src_app_opengraph_image",
       "src_app_opengraph_image_opengraphimage",
       "src_app_opengraph_image_size",
@@ -473,111 +556,111 @@
       "src_app_twitter_image_size",
       "src_app_twitter_image_twitterimage"
     ],
-    "17": [
+    "21": [
       "scripts_update_legal_manifest",
       "scripts_update_legal_manifest_documents",
       "scripts_update_legal_manifest_extractmetadata",
       "scripts_update_legal_manifest_legaldirectory",
       "scripts_update_legal_manifest_manifest"
     ],
-    "18": [
+    "22": [
       "next_config",
       "next_config_nextconfig",
       "next_config_withnextintl"
     ],
-    "19": [
+    "23": [
       "src_app_apple_icon",
       "src_app_apple_icon_appleicon",
       "src_app_apple_icon_size"
     ],
-    "20": [
+    "24": [
       "src_app_icon",
       "src_app_icon_icon",
       "src_app_icon_size"
     ],
-    "21": [
+    "25": [
       "src_components_ui_features",
       "src_components_ui_features_features",
       "src_components_ui_features_interactivegridpattern"
     ],
-    "22": [
+    "26": [
       "eslint_config",
       "eslint_config_eslintconfig"
     ],
-    "23": [
+    "27": [
       "postcss_config",
       "postcss_config_config"
     ],
-    "24": [
+    "28": [
       "src_app_locale_delete_page",
       "src_app_locale_delete_page_deleteaccountpage"
     ],
-    "25": [
+    "29": [
       "src_app_locale_privacy_page",
       "src_app_locale_privacy_page_privacypage"
     ],
-    "26": [
+    "30": [
       "src_app_locale_terms_page",
       "src_app_locale_terms_page_termspage"
     ],
-    "27": [
+    "31": [
       "src_app_manifest",
       "src_app_manifest_manifest"
     ],
-    "28": [
+    "32": [
       "src_app_robots",
       "src_app_robots_robots"
     ],
-    "29": [
+    "33": [
       "src_components_i18n_localepreference",
       "src_components_i18n_localepreference_localepreference"
     ],
-    "30": [
+    "34": [
       "src_components_ui_appshowcase",
       "src_components_ui_appshowcase_appshowcase"
     ],
-    "31": [
+    "35": [
       "src_components_ui_platforms",
       "src_components_ui_platforms_platforms"
     ],
-    "32": [
+    "36": [
       "src_i18n_request",
       "src_i18n_request_locales"
     ],
-    "33": [
+    "37": [
       "scripts_deploy_firebase"
     ],
-    "34": [
+    "38": [
       "scripts_graphify"
     ]
   },
   "cohesion": {
     "0": 0.06079664570230608,
-    "1": 0.08081632653061224,
-    "2": 0.06976744186046512,
-    "3": 0.05263157894736842,
+    "1": 0.07692307692307693,
+    "2": 0.046464646464646465,
+    "3": 0.06976744186046512,
     "4": 0.06060606060606061,
-    "5": 0.09195402298850575,
-    "6": 0.06896551724137931,
+    "5": 0.06896551724137931,
+    "6": 0.09788359788359788,
     "7": 0.12169312169312169,
     "8": 0.08,
-    "9": 0.13043478260869565,
-    "10": 0.08695652173913043,
-    "11": 0.20833333333333334,
-    "12": 0.18095238095238095,
-    "13": 0.26666666666666666,
-    "14": 0.2857142857142857,
-    "15": 0.4,
-    "16": 0.4,
-    "17": 0.4,
-    "18": 0.6666666666666666,
-    "19": 0.6666666666666666,
-    "20": 0.6666666666666666,
-    "21": 0.6666666666666666,
-    "22": 1.0,
-    "23": 1.0,
-    "24": 1.0,
-    "25": 1.0,
+    "9": 0.12,
+    "10": 0.13043478260869565,
+    "11": 0.08695652173913043,
+    "12": 0.08695652173913043,
+    "13": 0.20833333333333334,
+    "14": 0.17142857142857143,
+    "15": 0.22727272727272727,
+    "16": 0.26666666666666666,
+    "17": 0.2857142857142857,
+    "18": 0.3333333333333333,
+    "19": 0.4,
+    "20": 0.4,
+    "21": 0.4,
+    "22": 0.6666666666666666,
+    "23": 0.6666666666666666,
+    "24": 0.6666666666666666,
+    "25": 0.6666666666666666,
     "26": 1.0,
     "27": 1.0,
     "28": 1.0,
@@ -586,7 +669,11 @@
     "31": 1.0,
     "32": 1.0,
     "33": 1.0,
-    "34": 1.0
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0
   },
   "gods": [
     {
