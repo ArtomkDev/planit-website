@@ -716,18 +716,18 @@
       "degree": 7
     },
     {
-      "id": "public_content_legal_manifest_documents_privacy",
-      "label": "privacy",
+      "id": "src_components_legal_legaldocumentclient_readcachedlegalloadingdocument",
+      "label": "readCachedLegalLoadingDocument()",
       "degree": 7
     },
     {
-      "id": "public_content_legal_manifest_documents_cookies",
-      "label": "cookies",
+      "id": "src_components_legal_legaldocumentclient_sanitizeattributes",
+      "label": "sanitizeAttributes()",
       "degree": 7
     },
     {
-      "id": "public_content_legal_manifest_documents_terms",
-      "label": "terms",
+      "id": "src_components_legal_legaldocumentclient_fetchlegalloadingdocument",
+      "label": "fetchLegalLoadingDocument()",
       "degree": 7
     }
   ],

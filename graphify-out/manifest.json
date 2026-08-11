@@ -25,9 +25,9 @@
     "semantic_hash": "239f3ebf717465dc636818a1a619398d"
   },
   "public/content/legal/manifest.json": {
-    "mtime": 1785618292.2135115,
-    "ast_hash": "b4c7486ad187c8e831dd967bab3e14c5",
-    "semantic_hash": "b4c7486ad187c8e831dd967bab3e14c5"
+    "mtime": 1786468726.373267,
+    "ast_hash": "9f91fd55f177e7d5790de8f471b57c5c",
+    "semantic_hash": "9f91fd55f177e7d5790de8f471b57c5c"
   },
   "scripts/deploy-firebase.ps1": {
     "mtime": 1784910722.0906787,
@@ -240,9 +240,9 @@
     "semantic_hash": "e51284e0bec40ff67ec99d1e7d733edf"
   },
   "src/components/ui/InfiniteRibbon.tsx": {
-    "mtime": 1786464153.0225234,
-    "ast_hash": "f676a94c6c962786b53903082226892d",
-    "semantic_hash": "f676a94c6c962786b53903082226892d"
+    "mtime": 1786469555.1277103,
+    "ast_hash": "1bfcb3d3045437fafae5b02c28d5505f",
+    "semantic_hash": "1bfcb3d3045437fafae5b02c28d5505f"
   },
   "src/components/ui/InteractiveGridPattern.tsx": {
     "mtime": 1782849733.3250844,
@@ -275,14 +275,14 @@
     "semantic_hash": "784d764d8fb79374ff53f1ef1d6dbb9c"
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1786463343.0371246,
-    "ast_hash": "382de89a5b9ae6435ec48903a2a916bb",
-    "semantic_hash": "382de89a5b9ae6435ec48903a2a916bb"
+    "mtime": 1786469558.1470995,
+    "ast_hash": "36144dcff26a609d39726757362b28a8",
+    "semantic_hash": "36144dcff26a609d39726757362b28a8"
   },
   "src/i18n/locales/uk.json": {
-    "mtime": 1786466316.232076,
-    "ast_hash": "00928f51b20ca21239c96b302cac370f",
-    "semantic_hash": "00928f51b20ca21239c96b302cac370f"
+    "mtime": 1786469556.600973,
+    "ast_hash": "6aaa4ad72a27b18445ee8102553b294a",
+    "semantic_hash": "6aaa4ad72a27b18445ee8102553b294a"
   },
   "src/i18n/request.ts": {
     "mtime": 1782165487.3047166,

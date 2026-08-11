@@ -7,8 +7,8 @@ import {
   BellRinging,
   CalendarCheck,
   ListChecks,
+  Paperclip,
   ShareNetwork,
-  Star,
 } from "@phosphor-icons/react";
 import { cn } from "@/lib/utils/classNames";
 
@@ -28,29 +28,29 @@ export function InfiniteRibbon({ className, speed = 35 }: InfiniteRibbonProps) {
 
   const items: InfiniteRibbonItem[] = [
     {
-      id: "customization",
-      label: t("items.customization.title"),
+      id: "schedule",
+      label: t("ribbon.schedule"),
       icon: <CalendarCheck weight="duotone" className="w-8 h-8 text-amber-500" />,
     },
     {
       id: "tasks",
-      label: t("items.tasks.title"),
+      label: t("ribbon.tasks"),
       icon: <ListChecks weight="duotone" className="w-8 h-8 text-emerald-500" />,
     },
     {
+      id: "materials",
+      label: t("ribbon.materials"),
+      icon: <Paperclip weight="duotone" className="w-8 h-8 text-pink-500" />,
+    },
+    {
       id: "reminders",
-      label: t("items.reminders.title"),
+      label: t("ribbon.reminders"),
       icon: <BellRinging weight="duotone" className="w-8 h-8 text-cyan-500" />,
     },
     {
       id: "sharing",
-      label: t("items.sharing.title"),
+      label: t("ribbon.sharing"),
       icon: <ShareNetwork weight="duotone" className="w-8 h-8 text-indigo-500" />,
-    },
-    {
-      id: "premium",
-      label: "PlanIt",
-      icon: <Star weight="duotone" className="w-8 h-8 text-pink-500" />,
     },
   ];
 

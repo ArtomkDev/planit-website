@@ -89,6 +89,13 @@
   "AppShowcase": {
     "badge": "Made for real study days",
     "title": "Small things that save time between classes",
+    "ribbon": {
+      "schedule": "Build a schedule that works for you",
+      "tasks": "Keep tasks with each class",
+      "materials": "Keep study materials nearby",
+      "reminders": "Get reminders at the right time",
+      "sharing": "Share your schedule without extras"
+    },
     "items": {
       "customization": {
         "title": "A schedule you can read at a glance",

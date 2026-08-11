@@ -1,27 +1,27 @@
 {
-  "version": "e0aa42585c63bba9",
+  "version": "d461198c34a93bb8",
   "documents": {
     "privacy": {
       "path": "/content/legal/privacy.mdx",
       "loadingPath": "/content/legal/privacy.loading.mdx",
-      "sha256": "64818a224e54804872825c5bd7151a20f298b6b2e79a7ec4210963b59c8a527c",
-      "loadingSha256": "0bf61d0c9c82fa87854caf16c79401154c11b5ace795281d62c3cdd9114400af",
+      "sha256": "f2e50ffe5b81b1b25207c51329081cbc63b6ae4b3bb03314426c05d619596de9",
+      "loadingSha256": "8c570f08f33e747d4614a538267462371723ffff2adc3b71a834d6381eeacb7c",
       "title": "Privacy Policy",
       "version": "2.2"
     },
     "cookies": {
       "path": "/content/legal/cookies.mdx",
       "loadingPath": "/content/legal/cookies.loading.mdx",
-      "sha256": "86f64c070c42269ffb1bc0ce9998eab2ea812f685a7b1928a2a1675799de0abb",
-      "loadingSha256": "bb4856217d3c524e4e08503efef971454c44f58cca2cf8246850312c15bbc659",
+      "sha256": "7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d",
+      "loadingSha256": "ece5a2478c985b310ac725170928a7542509b8b25f0fdc2cf8ea965dc4e5390e",
       "title": "Cookie & Similar Technologies Policy",
       "version": "1.0"
     },
     "terms": {
       "path": "/content/legal/terms.mdx",
       "loadingPath": "/content/legal/terms.loading.mdx",
-      "sha256": "5e174164ea803779d89743ee4881459dca05c19eb94b9fee5a82bf7300da37ee",
-      "loadingSha256": "4a479b19d1be4828e985db376fe895775acbc86677bb87792f3b9a2e022506df",
+      "sha256": "13cbe7220e1351ef1b587b8964727185d47ead0bd0898d928e472f059616ecb0",
+      "loadingSha256": "0d9acd6de745965fee186c80796d5b3fa0bfcac183863c913f170a3452a1b265",
       "title": "Terms & Conditions",
       "version": "2.3"
     },
