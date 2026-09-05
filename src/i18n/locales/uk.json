@@ -237,6 +237,92 @@
       "Р. Марченко"
     ]
   },
+  "AuthAction": {
+    "metadata": {
+      "title": "Дія з акаунтом",
+      "description": "Безпечно підтвердьте email або змініть пароль акаунта PlanIt."
+    },
+    "eyebrow": "Безпека акаунта PlanIt",
+    "loading": {
+      "generic": "Відкриваємо безпечне посилання…",
+      "resetPassword": "Перевіряємо посилання на пароль…",
+      "verifyEmail": "Підтверджуємо вашу email-адресу…",
+      "recoverEmail": "Відновлюємо вашу email-адресу…",
+      "description": "Це займе лише мить. Не закривайте сторінку."
+    },
+    "invalid": {
+      "eyebrow": "Посилання неповне",
+      "title": "Не вдалося відкрити дію",
+      "description": "У посиланні бракує даних для безпечної обробки. Відкрийте найновіший лист від PlanIt або надішліть запит ще раз."
+    },
+    "error": {
+      "eyebrow": "Посилання не спрацювало",
+      "title": "Не вдалося завершити дію"
+    },
+    "errors": {
+      "expired": "Термін дії цього посилання минув. Надішліть новий запит у PlanIt і скористайтеся найновішим листом.",
+      "invalid": "Це посилання недійсне або вже було використане. Надішліть новий запит у PlanIt.",
+      "weakPassword": "Firebase відхилив цей пароль як недостатньо надійний. Спробуйте інший пароль.",
+      "passwordRequirements": "Firebase відхилив пароль: він не відповідає політиці безпеки проєкту.",
+      "passwordTooShort": "Пароль закороткий: потрібно щонайменше 10 символів.",
+      "passwordTooLong": "Пароль задовгий: дозволено не більше 128 символів.",
+      "passwordMissingUppercase": "Додайте до пароля хоча б одну велику літеру.",
+      "passwordMissingLowercase": "Додайте до пароля хоча б одну малу літеру.",
+      "passwordMissingNumber": "Додайте до пароля хоча б одну цифру.",
+      "network": "Не вдалося зв’язатися із сервісом PlanIt. Перевірте інтернет-з’єднання та спробуйте ще раз.",
+      "tooManyRequests": "Забагато спроб за короткий час. Зачекайте кілька хвилин і повторіть.",
+      "userDisabled": "Цей акаунт вимкнено. Зверніться до підтримки PlanIt.",
+      "operationNotAllowed": "Вхід за паролем вимкнено для цього проєкту. Зверніться до підтримки PlanIt.",
+      "service": "Сервіс тимчасово недоступний. Спробуйте ще раз трохи пізніше.",
+      "unknownFirebase": "Firebase повернув помилку {code}. Повідомте цей код підтримці PlanIt."
+    },
+    "reset": {
+      "addTitle": "Створити пароль",
+      "resetTitle": "Новий пароль",
+      "addDescription": "Встановіть пароль для входу в PlanIt через email.",
+      "resetDescription": "Введіть новий пароль для свого акаунта.",
+      "accountLabel": "Акаунт:",
+      "passwordLabel": "Новий пароль",
+      "confirmLabel": "Повторіть пароль",
+      "showPassword": "Показати пароль",
+      "hidePassword": "Приховати пароль",
+      "strengthLabel": "Надійність пароля",
+      "strengthHint": "Спецсимвол — за бажанням",
+      "criteria": {
+        "length": "10–128 символів",
+        "uppercase": "Велика літера A–Z",
+        "lowercase": "Мала літера a–z",
+        "number": "Цифра 0–9"
+      },
+      "passwordsMatch": "Паролі збігаються",
+      "passwordsMismatch": "Паролі не збігаються",
+      "confirmHint": "Повторіть новий пароль",
+      "submitAdd": "Додати пароль",
+      "submitReset": "Змінити пароль",
+      "submitting": "Зберігаємо…",
+      "successAddTitle": "Пароль додано",
+      "successResetTitle": "Пароль змінено",
+      "successAddDescription": "Тепер ви можете входити в PlanIt за допомогою email і нового пароля.",
+      "successResetDescription": "Новий пароль уже діє. Відкрийте PlanIt і увійдіть до акаунта."
+    },
+    "verifyEmail": {
+      "successTitle": "Email підтверджено",
+      "successDescription": "Email-адресу підтверджено. Тепер можна повернутися до PlanIt."
+    },
+    "recoverEmail": {
+      "successTitle": "Email відновлено",
+      "successDescription": "Попередню email-адресу акаунта відновлено. Радимо перевірити налаштування безпеки в PlanIt.",
+      "successDescriptionWithEmail": "Email-адресу {email} відновлено. Радимо перевірити налаштування безпеки в PlanIt.",
+      "changedFrom": "Скасовано зміну з адреси:"
+    },
+    "success": {
+      "eyebrow": "Усе готово"
+    },
+    "common": {
+      "openPlanIt": "Відкрити PlanIt",
+      "tryAgain": "Спробувати ще раз"
+    }
+  },
   "SEO": {
     "home": {
       "title": "PlanIt | Розклад занять",

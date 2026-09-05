@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type ComponentPropsWithoutRef } from 'react';
+import { useState, type ComponentPropsWithoutRef, type MouseEvent } from 'react';
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useTranslations, useLocale } from 'next-intl';
@@ -29,6 +29,34 @@ function HeaderLink({ documentNavigation, href, ...props }: HeaderLinkProps) {
   return <Link href={href} {...props} />;
 }
 
+function buildAuthActionLocaleUrl(
+  pathname: string,
+  currentSearch: string,
+  targetLocale: string,
+) {
+  const searchParams = new URLSearchParams(currentSearch);
+
+  if (!searchParams.size) {
+    return pathname;
+  }
+
+  searchParams.set('lang', targetLocale);
+
+  const continueUrl = searchParams.get('continueUrl');
+
+  if (continueUrl) {
+    try {
+      const parsedContinueUrl = new URL(continueUrl);
+      parsedContinueUrl.searchParams.set('lang', targetLocale);
+      searchParams.set('continueUrl', parsedContinueUrl.toString());
+    } catch {
+      // Preserve malformed values unchanged; AuthActionClient validates them.
+    }
+  }
+
+  return `${pathname}?${searchParams.toString()}`;
+}
+
 export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
   const t = useTranslations('Navigation');
   const locale = useLocale();
@@ -41,6 +69,7 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
   const targetLocale = locale === 'en' ? 'uk' : 'en';
   const localeAgnosticPath = pathname.replace(/^(?:\/(?:en|uk))+(?=\/|$)/, '');
   const togglePath = `/${targetLocale}${localeAgnosticPath === '/' ? '' : localeAgnosticPath}`;
+  const isAuthActionPath = localeAgnosticPath === '/auth/action';
   const menuSections = [
     {
       label: t('productSection'),
@@ -78,6 +107,15 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
 
   function openMenuSection(section: string) {
     setMenuState({ pathname, section });
+  }
+
+  function preserveAuthActionOnLocaleChange(event: MouseEvent<HTMLAnchorElement>) {
+    if (!isAuthActionPath) return;
+
+    event.preventDefault();
+    window.location.assign(
+      buildAuthActionLocaleUrl(togglePath, window.location.search, targetLocale),
+    );
   }
 
   return (
@@ -172,6 +210,7 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
               <HeaderLink
                 documentNavigation={documentNavigation}
                 href={togglePath}
+                onClick={preserveAuthActionOnLocaleChange}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-site-border-strong/70 bg-site-surface-muted/75 text-xs font-black tracking-widest text-site-text backdrop-blur-md transition-colors hover:bg-site-surface"
               >
                 {t('language')}

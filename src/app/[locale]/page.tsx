@@ -9,12 +9,14 @@ export default function Home() {
   return (
     <div className="flex w-full flex-col overflow-x-clip">
       <Hero />
-      <div className="relative isolate flex w-full flex-col">
-        <HomepagePixelClusters />
+      <div className="flex w-full flex-col">
         <InfiniteRibbon />
-        <AppShowcase />
-        <Platforms />
-        <CallToAction />
+        <div className="relative isolate flex w-full flex-col">
+          <HomepagePixelClusters />
+          <AppShowcase />
+          <Platforms />
+          <CallToAction />
+        </div>
       </div>
     </div>
   );

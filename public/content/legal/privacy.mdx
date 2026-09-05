@@ -4,9 +4,9 @@ export const legalMetadata = {
   "navigationTitle": "Privacy Policy",
   "summary": "Privacy at a glance",
   "effectiveDateLabel": "Effective and last updated:",
-  "effectiveDate": "2026-07-24",
-  "effectiveDateDisplay": "July 24, 2026",
-  "version": "2.2"
+  "effectiveDate": "2026-08-30",
+  "effectiveDateDisplay": "August 30, 2026",
+  "version": "2.3"
 };
 
 <div className="summary">
@@ -80,7 +80,8 @@ export const legalMetadata = {
 
     <dt>Schedules, tasks, and settings</dt>
     <dd>Schedule names and structure; subjects; dates and times; rooms and buildings; teacher names, email
-      addresses, and phone numbers; links; notes; tasks and due dates; reminders; themes, language, navigation,
+      addresses, phone numbers, public usernames, profile links, and contact labels; material links and their
+      user-selected type, icon, and color; notes; tasks and due dates; reminders; themes, language, navigation,
       and other preferences; synchronization versions, timestamps, and deletion markers.</dd>
 
     <dt>Files and attachments</dt>
@@ -184,8 +185,8 @@ export const legalMetadata = {
 <section id="guest">
   <h2>5. Guest Mode and local storage</h2>
   <p>In Guest Mode, PlanIt stores schedule content in device or browser storage and does not upload that guest
-    schedule to PlanIt's Firebase account collections. Local data may include compressed or encoded values, but
-    encoding and compression are <strong>not encryption</strong>.</p>
+    schedule to PlanIt's Firebase account collections. Schedule and preference records are stored as structured
+    JSON data. This readable storage format is <strong>not encryption</strong>.</p>
   <p>Local storage may include guest or account schedule caches, Firebase authentication persistence,
     preferences, scheduled-notification records, widget snapshots, and cached attachments in app files,
     AsyncStorage, browser local storage, or IndexedDB. Other apps, browser profiles, operating-system backups,
@@ -395,7 +396,7 @@ export const legalMetadata = {
     transit, provider encryption at rest, verified-account access rules for private Firestore and Storage
     paths, authentication, file-type and size limits, and redaction of selected diagnostic fields.</p>
   <p>No method is perfectly secure. PlanIt content is not end-to-end encrypted: PlanIt's cloud providers process
-    it to provide the Service. Encoded or compressed schedule values are not encryption. Tokenized attachment
+    it to provide the Service. Schedule records are stored as structured fields and are not encryption. Tokenized attachment
     URLs and share codes can grant access to anyone who obtains them. Protect your device and account, use a
     unique password, keep software updated, review active devices and shares, and avoid storing highly sensitive
     information in PlanIt.</p>

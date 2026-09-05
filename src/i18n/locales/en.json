@@ -237,6 +237,92 @@
       "R. Marchenko"
     ]
   },
+  "AuthAction": {
+    "metadata": {
+      "title": "Account action",
+      "description": "Securely verify your email or update your PlanIt account password."
+    },
+    "eyebrow": "PlanIt account security",
+    "loading": {
+      "generic": "Opening your secure link…",
+      "resetPassword": "Checking your password link…",
+      "verifyEmail": "Verifying your email address…",
+      "recoverEmail": "Restoring your email address…",
+      "description": "This should only take a moment. Keep this page open."
+    },
+    "invalid": {
+      "eyebrow": "Incomplete link",
+      "title": "We can’t open this action",
+      "description": "This link is missing information required to process it safely. Open the newest email from PlanIt or request a new link."
+    },
+    "error": {
+      "eyebrow": "The link didn’t work",
+      "title": "We couldn’t complete this action"
+    },
+    "errors": {
+      "expired": "This link has expired. Request a new one in PlanIt and use the most recent email.",
+      "invalid": "This link is invalid or has already been used. Request a new one in PlanIt.",
+      "weakPassword": "Firebase rejected this password as too weak. Try a different password.",
+      "passwordRequirements": "Firebase rejected the password because it does not meet the project's security policy.",
+      "passwordTooShort": "The password is too short: use at least 10 characters.",
+      "passwordTooLong": "The password is too long: use no more than 128 characters.",
+      "passwordMissingUppercase": "Add at least one uppercase letter to the password.",
+      "passwordMissingLowercase": "Add at least one lowercase letter to the password.",
+      "passwordMissingNumber": "Add at least one number to the password.",
+      "network": "We couldn’t reach the PlanIt service. Check your internet connection and try again.",
+      "tooManyRequests": "There have been too many attempts in a short time. Wait a few minutes and try again.",
+      "userDisabled": "This account has been disabled. Contact PlanIt support.",
+      "operationNotAllowed": "Password sign-in is disabled for this project. Contact PlanIt support.",
+      "service": "The service is temporarily unavailable. Please try again in a little while.",
+      "unknownFirebase": "Firebase returned error {code}. Share this code with PlanIt support."
+    },
+    "reset": {
+      "addTitle": "Create password",
+      "resetTitle": "New password",
+      "addDescription": "Set a password to sign in to PlanIt with your email.",
+      "resetDescription": "Enter a new password for your account.",
+      "accountLabel": "Account:",
+      "passwordLabel": "New password",
+      "confirmLabel": "Confirm password",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "strengthLabel": "Password strength",
+      "strengthHint": "Special character optional",
+      "criteria": {
+        "length": "10-128 characters",
+        "uppercase": "Uppercase letter A-Z",
+        "lowercase": "Lowercase letter a-z",
+        "number": "Number 0-9"
+      },
+      "passwordsMatch": "Passwords match",
+      "passwordsMismatch": "Passwords do not match",
+      "confirmHint": "Repeat your new password",
+      "submitAdd": "Create password",
+      "submitReset": "Reset password",
+      "submitting": "Saving…",
+      "successAddTitle": "Password created",
+      "successResetTitle": "Password changed",
+      "successAddDescription": "You can now sign in to PlanIt with your email and new password.",
+      "successResetDescription": "Your new password is active. Open PlanIt and sign in to your account."
+    },
+    "verifyEmail": {
+      "successTitle": "Email verified",
+      "successDescription": "Your email address is verified. You can now return to PlanIt."
+    },
+    "recoverEmail": {
+      "successTitle": "Email restored",
+      "successDescription": "Your previous account email has been restored. We recommend reviewing your security settings in PlanIt.",
+      "successDescriptionWithEmail": "The email address {email} has been restored. We recommend reviewing your security settings in PlanIt.",
+      "changedFrom": "Reverted the change from:"
+    },
+    "success": {
+      "eyebrow": "All done"
+    },
+    "common": {
+      "openPlanIt": "Open PlanIt",
+      "tryAgain": "Try again"
+    }
+  },
   "SEO": {
     "home": {
       "title": "PlanIt | Class Schedule",
