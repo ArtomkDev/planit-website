@@ -1,45 +1,290 @@
 {
-  "version": "d461198c34a93bb8",
+  "version": "a0e03d6383d2fd26",
   "documents": {
     "privacy": {
       "path": "/content/legal/privacy.mdx",
       "loadingPath": "/content/legal/privacy.loading.mdx",
-      "sha256": "f2e50ffe5b81b1b25207c51329081cbc63b6ae4b3bb03314426c05d619596de9",
-      "loadingSha256": "8c570f08f33e747d4614a538267462371723ffff2adc3b71a834d6381eeacb7c",
+      "sha256": "e45df1739bc1c09aa3727d9abd0713ad1d0449a3922fa3a587f7161df92fc522",
+      "loadingSha256": "e8c51ac6706f78706e90349ce4169a66035b17fb22b7ba4cefd1f72fa55fd048",
       "title": "Privacy Policy",
-      "version": "2.2"
+      "version": "2.3",
+      "metadata": {
+        "slug": "privacy",
+        "title": "Privacy Policy",
+        "navigationTitle": "Privacy Policy",
+        "summary": "Privacy at a glance",
+        "effectiveDateLabel": "Effective and last updated:",
+        "effectiveDate": "2026-08-30",
+        "effectiveDateDisplay": "August 30, 2026",
+        "version": "2.3"
+      }
     },
     "cookies": {
       "path": "/content/legal/cookies.mdx",
       "loadingPath": "/content/legal/cookies.loading.mdx",
-      "sha256": "7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d",
-      "loadingSha256": "ece5a2478c985b310ac725170928a7542509b8b25f0fdc2cf8ea965dc4e5390e",
+      "sha256": "f0a92532a465ab9b82c678c1c089836da8d56bde6b897bf139427ecd825676b6",
+      "loadingSha256": "b9d926252bbddb16ffa4f4579e80800ab64e6d8fe233759ec5386e7bf8f20b31",
       "title": "Cookie & Similar Technologies Policy",
-      "version": "1.0"
+      "version": "1.0",
+      "metadata": {
+        "slug": "cookies",
+        "title": "Cookie & Similar Technologies Policy",
+        "navigationTitle": "Cookie Policy",
+        "summary": "Your choices at a glance",
+        "effectiveDateLabel": "Effective and last updated:",
+        "effectiveDate": "2026-07-24",
+        "effectiveDateDisplay": "July 24, 2026",
+        "version": "1.0"
+      }
     },
     "terms": {
       "path": "/content/legal/terms.mdx",
       "loadingPath": "/content/legal/terms.loading.mdx",
-      "sha256": "13cbe7220e1351ef1b587b8964727185d47ead0bd0898d928e472f059616ecb0",
-      "loadingSha256": "0d9acd6de745965fee186c80796d5b3fa0bfcac183863c913f170a3452a1b265",
+      "sha256": "b4123d11eb629a561800c1fa55c095d8193c908e8b4fc1d72026fd5584f98bf0",
+      "loadingSha256": "469151a062117065b9cc745351243f1108d3952e190af5eff588189dc9871d3c",
       "title": "Terms & Conditions",
-      "version": "2.3"
+      "version": "2.4",
+      "metadata": {
+        "slug": "terms",
+        "title": "Terms & Conditions",
+        "navigationTitle": "Terms & Conditions",
+        "summary": "Important summary",
+        "effectiveDateLabel": "Effective and last updated:",
+        "effectiveDate": "2026-08-30",
+        "effectiveDateDisplay": "August 30, 2026",
+        "version": "2.4"
+      }
     },
     "licenses": {
       "path": "/content/legal/licenses.mdx",
       "loadingPath": "/content/legal/licenses.loading.mdx",
-      "sha256": "a34a58ab2c0761e9e86cb712a17b8fa7aaf909beb65cc93c7b2606003dff57bf",
-      "loadingSha256": "6a98da0825114b77cfefd94f5f4785eae17b51a193d0d9c6131fe18920125c2d",
+      "sha256": "1f65c79d776ef7380d55bc67acdb4f0270783328d8c1023ce8b35bab7315073f",
+      "loadingSha256": "e350af2fec949175d20b0a32c857eab98fe0b97b351e6ecc38b43940d03ad733",
       "title": "Third-Party Software Notices",
-      "version": "1.1"
+      "version": "1.2",
+      "metadata": {
+        "slug": "licenses",
+        "title": "Third-Party Software Notices",
+        "navigationTitle": "Third-Party Notices",
+        "summary": "Third-party software notices at a glance",
+        "effectiveDateLabel": "Effective and last updated:",
+        "effectiveDate": "2026-08-30",
+        "effectiveDateDisplay": "August 30, 2026",
+        "version": "1.2"
+      }
     },
     "delete": {
       "path": "/content/legal/delete.mdx",
       "loadingPath": "/content/legal/delete.loading.mdx",
-      "sha256": "cee8b495c5dde97435d08565b0ba7f5860a3f9d5858306687de8d4824d6c8a9c",
-      "loadingSha256": "60ed6f986419441f57fb12a3ec073d2e8e1a1d7a89df0ad9e97cb11edc7b3a65",
+      "sha256": "ff4f4903739fc340eaad17607c7af24eda6bfe77d78ad52f773526ea9b2c2a9e",
+      "loadingSha256": "a7c8426fd3375838734a11d35c5279502f990d95130b7c336428e5ea84e88300",
       "title": "Account & Data Deletion",
-      "version": "2.2"
+      "version": "2.2",
+      "metadata": {
+        "slug": "delete",
+        "title": "Account & Data Deletion",
+        "navigationTitle": "Account Deletion",
+        "summary": "Choose the path that matches your situation",
+        "effectiveDateLabel": "Effective and last updated:",
+        "effectiveDate": "2026-07-24",
+        "effectiveDateDisplay": "July 24, 2026",
+        "version": "2.2"
+      }
+    }
+  },
+  "locales": {
+    "en": {
+      "documents": {
+        "privacy": {
+          "path": "/content/legal/privacy.mdx",
+          "loadingPath": "/content/legal/privacy.loading.mdx",
+          "sha256": "e45df1739bc1c09aa3727d9abd0713ad1d0449a3922fa3a587f7161df92fc522",
+          "loadingSha256": "e8c51ac6706f78706e90349ce4169a66035b17fb22b7ba4cefd1f72fa55fd048",
+          "title": "Privacy Policy",
+          "version": "2.3",
+          "metadata": {
+            "slug": "privacy",
+            "title": "Privacy Policy",
+            "navigationTitle": "Privacy Policy",
+            "summary": "Privacy at a glance",
+            "effectiveDateLabel": "Effective and last updated:",
+            "effectiveDate": "2026-08-30",
+            "effectiveDateDisplay": "August 30, 2026",
+            "version": "2.3"
+          }
+        },
+        "cookies": {
+          "path": "/content/legal/cookies.mdx",
+          "loadingPath": "/content/legal/cookies.loading.mdx",
+          "sha256": "f0a92532a465ab9b82c678c1c089836da8d56bde6b897bf139427ecd825676b6",
+          "loadingSha256": "b9d926252bbddb16ffa4f4579e80800ab64e6d8fe233759ec5386e7bf8f20b31",
+          "title": "Cookie & Similar Technologies Policy",
+          "version": "1.0",
+          "metadata": {
+            "slug": "cookies",
+            "title": "Cookie & Similar Technologies Policy",
+            "navigationTitle": "Cookie Policy",
+            "summary": "Your choices at a glance",
+            "effectiveDateLabel": "Effective and last updated:",
+            "effectiveDate": "2026-07-24",
+            "effectiveDateDisplay": "July 24, 2026",
+            "version": "1.0"
+          }
+        },
+        "terms": {
+          "path": "/content/legal/terms.mdx",
+          "loadingPath": "/content/legal/terms.loading.mdx",
+          "sha256": "b4123d11eb629a561800c1fa55c095d8193c908e8b4fc1d72026fd5584f98bf0",
+          "loadingSha256": "469151a062117065b9cc745351243f1108d3952e190af5eff588189dc9871d3c",
+          "title": "Terms & Conditions",
+          "version": "2.4",
+          "metadata": {
+            "slug": "terms",
+            "title": "Terms & Conditions",
+            "navigationTitle": "Terms & Conditions",
+            "summary": "Important summary",
+            "effectiveDateLabel": "Effective and last updated:",
+            "effectiveDate": "2026-08-30",
+            "effectiveDateDisplay": "August 30, 2026",
+            "version": "2.4"
+          }
+        },
+        "licenses": {
+          "path": "/content/legal/licenses.mdx",
+          "loadingPath": "/content/legal/licenses.loading.mdx",
+          "sha256": "1f65c79d776ef7380d55bc67acdb4f0270783328d8c1023ce8b35bab7315073f",
+          "loadingSha256": "e350af2fec949175d20b0a32c857eab98fe0b97b351e6ecc38b43940d03ad733",
+          "title": "Third-Party Software Notices",
+          "version": "1.2",
+          "metadata": {
+            "slug": "licenses",
+            "title": "Third-Party Software Notices",
+            "navigationTitle": "Third-Party Notices",
+            "summary": "Third-party software notices at a glance",
+            "effectiveDateLabel": "Effective and last updated:",
+            "effectiveDate": "2026-08-30",
+            "effectiveDateDisplay": "August 30, 2026",
+            "version": "1.2"
+          }
+        },
+        "delete": {
+          "path": "/content/legal/delete.mdx",
+          "loadingPath": "/content/legal/delete.loading.mdx",
+          "sha256": "ff4f4903739fc340eaad17607c7af24eda6bfe77d78ad52f773526ea9b2c2a9e",
+          "loadingSha256": "a7c8426fd3375838734a11d35c5279502f990d95130b7c336428e5ea84e88300",
+          "title": "Account & Data Deletion",
+          "version": "2.2",
+          "metadata": {
+            "slug": "delete",
+            "title": "Account & Data Deletion",
+            "navigationTitle": "Account Deletion",
+            "summary": "Choose the path that matches your situation",
+            "effectiveDateLabel": "Effective and last updated:",
+            "effectiveDate": "2026-07-24",
+            "effectiveDateDisplay": "July 24, 2026",
+            "version": "2.2"
+          }
+        }
+      }
+    },
+    "uk": {
+      "documents": {
+        "privacy": {
+          "path": "/content/legal/uk/privacy.mdx",
+          "loadingPath": "/content/legal/uk/privacy.loading.mdx",
+          "sha256": "85641172e492410eee3b5ee7d6c4641040fce6667f822192d9078b748a290d3c",
+          "loadingSha256": "00d807957c92791be3c717a01a17a63586c286b6683267654d1df6225c9a1f90",
+          "title": "Політика конфіденційності",
+          "version": "2.3",
+          "metadata": {
+            "slug": "privacy",
+            "title": "Політика конфіденційності",
+            "navigationTitle": "Політика конфіденційності",
+            "summary": "Конфіденційність коротко",
+            "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
+            "effectiveDate": "2026-08-30",
+            "effectiveDateDisplay": "30 серпня 2026 року",
+            "version": "2.3",
+            "translationSourceHash": "cfb9574a941dbc6581d6dc280477fa13b3afa9309b044e7cf60eba36f274b4bd"
+          }
+        },
+        "cookies": {
+          "path": "/content/legal/uk/cookies.mdx",
+          "loadingPath": "/content/legal/uk/cookies.loading.mdx",
+          "sha256": "d809f38a5237aae8aa1420a4639e03975e3e24f4e11066db99332b93bf894c03",
+          "loadingSha256": "9e8e60cf19f097818c2b25d2424601022d49b780d465119776fb9c9d45ae7205",
+          "title": "Політика щодо cookies та подібних технологій",
+          "version": "1.0",
+          "metadata": {
+            "slug": "cookies",
+            "title": "Політика щодо cookies та подібних технологій",
+            "navigationTitle": "Політика cookies",
+            "summary": "Ваш вибір коротко",
+            "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
+            "effectiveDate": "2026-07-24",
+            "effectiveDateDisplay": "24 липня 2026 року",
+            "version": "1.0",
+            "translationSourceHash": "7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d"
+          }
+        },
+        "terms": {
+          "path": "/content/legal/uk/terms.mdx",
+          "loadingPath": "/content/legal/uk/terms.loading.mdx",
+          "sha256": "14f008145ea1adf848cfcf4a077689ad0d1db511001ab9eab63670634fbef049",
+          "loadingSha256": "6e60fa47a5e0e6feda2f495121d30c57afed9d03573e6819de756e12440e2859",
+          "title": "Умови користування",
+          "version": "2.4",
+          "metadata": {
+            "slug": "terms",
+            "title": "Умови користування",
+            "navigationTitle": "Умови користування",
+            "summary": "Важливе коротко",
+            "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
+            "effectiveDate": "2026-08-30",
+            "effectiveDateDisplay": "30 серпня 2026 року",
+            "version": "2.4",
+            "translationSourceHash": "43950f489c5f2e114178e5ff61dc4990e6468ff6f9f5784a56dc148a9b7018aa"
+          }
+        },
+        "licenses": {
+          "path": "/content/legal/uk/licenses.mdx",
+          "loadingPath": "/content/legal/uk/licenses.loading.mdx",
+          "sha256": "14ec3fec4121057feb59bf75d23496699129e778a69fb376ab7a44102c149f7d",
+          "loadingSha256": "96b4bba376d765cde88d413e3421d695c81dad9090d8cde531a223adbf74c3f3",
+          "title": "Повідомлення про стороннє програмне забезпечення",
+          "version": "1.2",
+          "metadata": {
+            "slug": "licenses",
+            "title": "Повідомлення про стороннє програмне забезпечення",
+            "navigationTitle": "Стороннє програмне забезпечення",
+            "summary": "Повідомлення про стороннє програмне забезпечення коротко",
+            "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
+            "effectiveDate": "2026-08-30",
+            "effectiveDateDisplay": "30 серпня 2026 року",
+            "version": "1.2",
+            "translationSourceHash": "f6d4384ac0095e67ed698f646304fe68fba04fe448fb03e2b255227c41812c33"
+          }
+        },
+        "delete": {
+          "path": "/content/legal/uk/delete.mdx",
+          "loadingPath": "/content/legal/uk/delete.loading.mdx",
+          "sha256": "90f5f5b4a46349bc6378a8b2ec8d23ac6a4aa1c5d2570ba69d1ac2d479d049f8",
+          "loadingSha256": "acabe4ed46313a6e3e585781612541877261a712f867b8848bbb73ee27f3ce29",
+          "title": "Видалення облікового запису й даних",
+          "version": "2.2",
+          "metadata": {
+            "slug": "delete",
+            "title": "Видалення облікового запису й даних",
+            "navigationTitle": "Видалення облікового запису",
+            "summary": "Виберіть спосіб, що відповідає вашій ситуації",
+            "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
+            "effectiveDate": "2026-07-24",
+            "effectiveDateDisplay": "24 липня 2026 року",
+            "version": "2.2",
+            "translationSourceHash": "cee8b495c5dde97435d08565b0ba7f5860a3f9d5858306687de8d4824d6c8a9c"
+          }
+        }
+      }
     }
   }
 }

@@ -1,287 +1,91 @@
 "use client";
 
 import { Cookie } from "@phosphor-icons/react";
-import { AnimatePresence, motion, type Variants } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { CookieConsentChoice } from "@/lib/firebase";
+import { parseCookiePreference } from "@/lib/cookie-preferences";
+import { isAnalyticsPage } from "@/lib/analytics-consent";
+import { usePathname } from "next/navigation";
 
-const COOKIE_CONSENT_STORAGE_KEY = "planit-cookie-consent";
-
-type StoredCookieConsent = {
-  choice?: CookieConsentChoice;
-  status?: CookieConsentChoice;
-  updatedAt?: string;
-  version?: number;
-};
-
-function isCookieConsentChoice(value: unknown): value is CookieConsentChoice {
-  return value === "accepted" || value === "rejected";
-}
-
-function readStoredConsent(): CookieConsentChoice | null {
+const storageKey = "planit-cookie-consent";
+const preferencesEvent = "planit:cookie-preferences";
+function readConsent(): CookieConsentChoice | null {
   try {
-    const storedValue = window.localStorage.getItem(COOKIE_CONSENT_STORAGE_KEY);
-
-    if (!storedValue) {
-      return null;
-    }
-
-    if (isCookieConsentChoice(storedValue)) {
-      return storedValue;
-    }
-
-    const parsed = JSON.parse(storedValue) as StoredCookieConsent;
-
-    if (isCookieConsentChoice(parsed.choice)) {
-      return parsed.choice;
-    }
-
-    if (isCookieConsentChoice(parsed.status)) {
-      return parsed.status;
-    }
-  } catch {
-    return null;
-  }
-
+    return parseCookiePreference(window.localStorage.getItem(storageKey));
+  } catch { /* Treat unreadable storage as no consent. */ }
   return null;
 }
-
-function writeStoredConsent(choice: CookieConsentChoice): void {
-  try {
-    window.localStorage.setItem(
-      COOKIE_CONSENT_STORAGE_KEY,
-      JSON.stringify({
-        choice,
-        updatedAt: new Date().toISOString(),
-        version: 1,
-      }),
-    );
-  } catch {
-    return;
-  }
-}
-
 const subscribe = () => () => {};
-const getClientSnapshot = () => true;
-const getServerSnapshot = () => false;
-
-async function syncFirebaseAnalyticsConsent(choice: CookieConsentChoice): Promise<void> {
-  const { updateFirebaseAnalyticsConsent } = await import("@/lib/firebase");
-
-  await updateFirebaseAnalyticsConsent(choice);
-}
-
-const shapeOneOuterVariants: Variants = {
-  rest: {
-    scale: 1,
-    rotate: 0,
-    x: 0,
-    y: 0,
-    opacity: 0.15,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  hover: {
-    scale: 1.4,
-    rotate: 45,
-    x: 20,
-    y: -20,
-    opacity: 0.4,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  buttonHover: {
-    scale: 1.8,
-    rotate: 90,
-    x: 40,
-    y: -40,
-    opacity: 0.7,
-    transition: { type: "spring", stiffness: 50, damping: 12 },
-  },
-};
-
-const shapeTwoOuterVariants: Variants = {
-  rest: {
-    scale: 1,
-    rotate: 0,
-    x: 0,
-    y: 0,
-    opacity: 0.15,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  hover: {
-    scale: 1.4,
-    rotate: -45,
-    x: -20,
-    y: 20,
-    opacity: 0.4,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  buttonHover: {
-    scale: 1.8,
-    rotate: -90,
-    x: -40,
-    y: 40,
-    opacity: 0.7,
-    transition: { type: "spring", stiffness: 50, damping: 12 },
-  },
-};
-
 export const CookieConsent = () => {
   const t = useTranslations("CookieConsent");
   const locale = useLocale();
-  const mounted = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot);
-  const [sessionConsent, setSessionConsent] = useState<CookieConsentChoice | null>(null);
-  const syncedConsentRef = useRef<CookieConsentChoice | null>(null);
-  const storedConsent = mounted ? readStoredConsent() : null;
-  const effectiveConsent = sessionConsent ?? storedConsent;
-  const isVisible = mounted && !effectiveConsent;
-
-  const [isCardHovered, setIsCardHovered] = useState<boolean>(false);
-  const [isButtonHovered, setIsButtonHovered] = useState<boolean>(false);
-
-  const animationState = isButtonHovered ? "buttonHover" : isCardHovered ? "hover" : "rest";
+  const analyticsAllowed = isAnalyticsPage(usePathname());
+  const reduceMotion = useReducedMotion();
+  const mounted = useSyncExternalStore(subscribe, () => true, () => false);
+  const [choice, setChoice] = useState<CookieConsentChoice | null>(null);
+  const [preferencesOpen, setPreferencesOpen] = useState(false);
+  const synced = useRef<CookieConsentChoice | null>(null);
+  const acceptButton = useRef<HTMLButtonElement>(null);
+  const returnFocus = useRef<HTMLElement | null>(null);
+  const effective = choice ?? (mounted ? readConsent() : null);
+  const visible = mounted && (preferencesOpen || (!effective && analyticsAllowed));
 
   useEffect(() => {
-    if (effectiveConsent && syncedConsentRef.current !== effectiveConsent) {
-      syncedConsentRef.current = effectiveConsent;
-      void syncFirebaseAnalyticsConsent(effectiveConsent);
+    function reopen() {
+      returnFocus.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      setPreferencesOpen(true);
     }
-  }, [effectiveConsent]);
-
-  function handleChoice(choice: CookieConsentChoice): void {
-    writeStoredConsent(choice);
-    setSessionConsent(choice);
-
-    if (syncedConsentRef.current === choice) {
-      return;
+    function storageChanged(event: StorageEvent) {
+      if (event.key === storageKey || event.key === null) setChoice(readConsent());
     }
-
-    syncedConsentRef.current = choice;
-    void syncFirebaseAnalyticsConsent(choice);
+    window.addEventListener(preferencesEvent, reopen);
+    window.addEventListener("storage", storageChanged);
+    return () => {
+      window.removeEventListener(preferencesEvent, reopen);
+      window.removeEventListener("storage", storageChanged);
+    };
+  }, []);
+  useEffect(() => {
+    if (preferencesOpen) acceptButton.current?.focus();
+  }, [preferencesOpen]);
+  useEffect(() => {
+    if (!effective && !synced.current) return;
+    const next = analyticsAllowed ? effective ?? "rejected" : "rejected";
+    if (synced.current === next) return;
+    synced.current = next;
+    void import("@/lib/firebase").then(({ updateFirebaseAnalyticsConsent }) => updateFirebaseAnalyticsConsent(next));
+  }, [effective, analyticsAllowed]);
+  function choose(next: CookieConsentChoice) {
+    try {
+      window.localStorage.setItem(storageKey, JSON.stringify({ choice: next, version: 1, updatedAt: new Date().toISOString() }));
+    } catch { /* Keep the choice for this session. */ }
+    setChoice(next);
+    setPreferencesOpen(false);
+    returnFocus.current?.focus();
+    returnFocus.current = null;
   }
 
-  return (
-    <AnimatePresence>
-      {isVisible ? (
-        <motion.aside
-          aria-labelledby="cookie-consent-title"
-          aria-describedby="cookie-consent-description"
-          aria-live="polite"
-          className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] px-4 pb-4 sm:px-6 sm:pb-6"
-          initial={{ opacity: 0, y: 32 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 24, scale: 0.95 }}
-          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <div
-            className="pointer-events-auto relative mx-auto flex max-w-5xl flex-col gap-5 overflow-hidden rounded-[2rem] border border-site-border bg-site-surface/86 p-6 shadow-[0_28px_90px_-48px_var(--site-surface-shadow)] backdrop-blur-xl transition-colors duration-500 sm:flex-row sm:items-center sm:justify-between sm:p-8"
-            onMouseEnter={() => setIsCardHovered(true)}
-            onMouseLeave={() => setIsCardHovered(false)}
-          >
-            <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand/10 via-transparent to-transparent" />
-
-            <motion.div
-              variants={shapeOneOuterVariants}
-              initial="rest"
-              animate={animationState}
-              className="pointer-events-none absolute -left-12 -top-12 z-0 h-40 w-40 mix-blend-multiply blur-[30px] dark:mix-blend-screen"
-            >
-              <motion.div
-                animate={{
-                  scale: [0.9, 1.1, 0.9],
-                  borderRadius: [
-                    "40% 60% 70% 30% / 40% 50% 60% 50%",
-                    "50% 50% 60% 40% / 50% 60% 50% 40%",
-                    "40% 60% 70% 30% / 40% 50% 60% 50%",
-                  ],
-                }}
-                transition={{
-                  duration: 8,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="h-full w-full bg-brand-teal"
-              />
-            </motion.div>
-
-            <motion.div
-              variants={shapeTwoOuterVariants}
-              initial="rest"
-              animate={animationState}
-              className="pointer-events-none absolute -bottom-12 -right-12 z-0 h-48 w-48 mix-blend-multiply blur-[30px] dark:mix-blend-screen"
-            >
-              <motion.div
-                animate={{
-                  scale: [0.9, 1.05, 0.9],
-                  borderRadius: [
-                    "50% 50% 30% 70% / 50% 50% 70% 30%",
-                    "40% 60% 40% 60% / 60% 40% 60% 40%",
-                    "50% 50% 30% 70% / 50% 50% 70% 30%",
-                  ],
-                }}
-                transition={{
-                  duration: 10,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="h-full w-full bg-brand-pink"
-              />
-            </motion.div>
-
-            <div className="relative z-10 flex min-w-0 gap-5">
-              <motion.span
-                animate={isCardHovered ? { rotate: [0, -10, 10, 0], scale: 1.1 } : { rotate: 0, scale: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-site-text text-site-bg shadow-lg"
-              >
-                <Cookie weight="duotone" className="h-6 w-6" />
-              </motion.span>
-              <div className="min-w-0">
-                <h2 id="cookie-consent-title" className="text-lg font-black tracking-tight text-site-text">
-                  {t("title")}
-                </h2>
-                <p id="cookie-consent-description" className="mt-1.5 max-w-2xl text-sm font-medium leading-relaxed text-site-muted">
-                  {t("description")}
-                </p>
-              </div>
-            </div>
-
-            <div className="relative z-10 flex shrink-0 flex-col gap-3 sm:flex-row sm:items-center">
-              <motion.button
-                type="button"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onMouseEnter={() => setIsButtonHovered(true)}
-                onMouseLeave={() => setIsButtonHovered(false)}
-                onClick={() => handleChoice("accepted")}
-                className="group inline-flex h-12 items-center justify-center rounded-full bg-site-text px-6 text-sm font-black text-site-bg shadow-[0_0_20px_-5px_var(--site-surface-shadow)] transition-all duration-300 hover:bg-brand hover:text-white hover:shadow-[0_0_30px_-5px_color-mix(in_srgb,var(--brand)_42%,transparent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-site-surface"
-              >
-                {t("accept")}
-              </motion.button>
-              <motion.button
-                type="button"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onMouseEnter={() => setIsButtonHovered(true)}
-                onMouseLeave={() => setIsButtonHovered(false)}
-                onClick={() => handleChoice("rejected")}
-                className="inline-flex h-12 items-center justify-center rounded-full border border-site-border-strong/70 bg-site-surface/70 px-6 text-sm font-black text-site-text transition-all duration-300 hover:bg-site-surface-muted hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-site-surface"
-              >
-                {t("reject")}
-              </motion.button>
-              <Link
-                href={`/${locale}/wiki/cookies`}
-                onMouseEnter={() => setIsButtonHovered(true)}
-                onMouseLeave={() => setIsButtonHovered(false)}
-                className="inline-flex h-12 items-center justify-center rounded-full px-4 text-sm font-black text-site-muted transition-colors duration-300 hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-site-surface"
-              >
-                {t("learnMore")}
-              </Link>
-            </div>
-          </div>
-        </motion.aside>
-      ) : null}
-    </AnimatePresence>
-  );
+  return <AnimatePresence>{visible && <motion.aside
+    aria-labelledby="cookie-consent-title" aria-describedby="cookie-consent-description"
+    className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] px-4 pb-4 sm:px-6 sm:pb-6"
+    initial={reduceMotion ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.2 }}>
+    <div className="pointer-events-auto mx-auto max-h-[calc(100dvh-5rem)] max-w-5xl overflow-y-auto rounded-2xl border border-site-border bg-site-surface p-5 shadow-[0_28px_90px_-48px_var(--site-surface-shadow)] sm:p-6">
+      <div className="flex min-w-0 items-start gap-4">
+        <Cookie aria-hidden="true" size={28} className="mt-1 shrink-0 text-brand" />
+        <div className="min-w-0">
+          <h2 id="cookie-consent-title" className="text-lg font-bold text-site-text">{t("title")}</h2>
+          <p id="cookie-consent-description" className="mt-2 text-sm leading-relaxed text-site-muted">{t("description")}</p>
+        </div>
+      </div>
+      <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+        <button ref={acceptButton} type="button" onClick={() => choose("accepted")} className="min-h-11 rounded-full border border-site-border-strong bg-site-surface-muted px-5 py-2 text-sm font-bold text-site-text hover:bg-site-bg-muted">{t("accept")}</button>
+        <button type="button" onClick={() => choose("rejected")} className="min-h-11 rounded-full border border-site-border-strong bg-site-surface-muted px-5 py-2 text-sm font-bold text-site-text hover:bg-site-bg-muted">{t("reject")}</button>
+        <Link href={`/${locale}/wiki/cookies`} className="inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2 text-sm font-semibold text-site-muted hover:text-brand">{t("learnMore")}</Link>
+      </div>
+    </div>
+  </motion.aside>}</AnimatePresence>;
 };

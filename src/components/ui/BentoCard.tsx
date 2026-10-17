@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform, useReducedMotion } from "framer-motion";
 import { MouseEvent as ReactMouseEvent, useEffect, useRef, ReactNode } from "react";
 import { fadeInUp } from "@/lib/framer-variants";
 import { cn } from "@/lib/utils/classNames";
@@ -25,6 +25,7 @@ export const BentoCard = ({
   pattern,
 }: BentoCardProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -40,7 +41,7 @@ export const BentoCard = ({
   const rotateY = useTransform(smoothTiltX, [-0.5, 0.5], ["-8deg", "8deg"]);
 
   const handleMouseMove = (e: ReactMouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
+    if (!ref.current || reduceMotion) return;
     const rect = ref.current.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
@@ -59,7 +60,7 @@ export const BentoCard = ({
   };
 
   const handleMouseEnter = (e: ReactMouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
+    if (!ref.current || reduceMotion) return;
     const rect = ref.current.getBoundingClientRect();
     mouseX.set(e.clientX - rect.left);
     mouseY.set(e.clientY - rect.top);
@@ -74,8 +75,8 @@ export const BentoCard = ({
       onMouseLeave={handleMouseLeave}
       onMouseEnter={handleMouseEnter}
       variants={fadeInUp}
-      style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-      whileHover={{ scale: 1.02 }}
+      style={{ rotateX: reduceMotion ? 0 : rotateX, rotateY: reduceMotion ? 0 : rotateY, transformStyle: "preserve-3d" }}
+      whileHover={reduceMotion ? undefined : { scale: 1.02 }}
       className={cn(
         "relative rounded-[2.5rem] flex flex-col group group/card perspective-1000 transform-gpu shadow-[0_18px_48px_-38px_var(--site-surface-shadow)] hover:shadow-[0_30px_60px_-24px_var(--site-surface-shadow)] transition-shadow duration-500",
         className

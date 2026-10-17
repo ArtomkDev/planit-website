@@ -1,14 +1,19 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import {
   getLegalDocumentAssetPath,
   getLegalDocumentLoadingPath,
+  getLegalDocumentLocale,
+  getLegalManifestDocument,
   isLegalDocumentKind,
   legalDocumentOrder,
   type LegalDocumentData,
   type LegalDocumentKind,
   type LegalDocumentMetadata,
+  type LegalManifest,
+  type LegalManifestDocument,
 } from "@/content/legal-documents";
 import { LegalCalendarIcon, LegalDocumentIcon } from "./LegalIcons";
 import styles from "./LegalDocument.module.css";
@@ -18,19 +23,6 @@ interface LegalDocumentClientProps {
   kind: LegalDocumentKind;
   fallbackDocument: LegalDocumentData;
   initialLoadingHtml?: string;
-}
-
-interface LegalManifestDocument {
-  path?: string;
-  loadingPath?: string;
-  sha256?: string;
-  loadingSha256?: string;
-  version?: string;
-}
-
-interface LegalManifest {
-  version?: string;
-  documents?: Partial<Record<LegalDocumentKind, LegalManifestDocument>>;
 }
 
 interface ParsedLegalDocument {
@@ -53,7 +45,7 @@ interface CachedLegalLoadingDocument {
 }
 
 const legalManifestPath = "/content/legal/manifest.json";
-const legalLoadingCachePrefix = "planit:legal-loading:v2:";
+const legalLoadingCachePrefix = "planit:legal-loading:v3:";
 const legacyLegalLoadingCachePrefix = "planit:legal-loading:v1:";
 const legalLoadingMemoryCache = new Map<string, CachedLegalLoadingDocument>();
 const legalLoadingWarmRequests = new Set<string>();
@@ -121,8 +113,8 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-function getLegalLoadingCacheKey(kind: LegalDocumentKind) {
-  return `${legalLoadingCachePrefix}${kind}`;
+function getLegalLoadingCacheKey(kind: LegalDocumentKind, locale: string) {
+  return `${legalLoadingCachePrefix}${getLegalDocumentLocale(locale)}:${kind}`;
 }
 
 function getLegacyLegalLoadingCacheKeys(
@@ -174,7 +166,7 @@ function readCachedLegalLoadingDocument(
   kind: LegalDocumentKind,
   locale: string,
 ) {
-  const cacheKey = getLegalLoadingCacheKey(kind);
+  const cacheKey = getLegalLoadingCacheKey(kind, locale);
   const memoryCached = legalLoadingMemoryCache.get(cacheKey);
 
   if (memoryCached) {
@@ -237,7 +229,7 @@ function writeCachedLegalLoadingDocument(
   locale: string,
   cachedDocument: CachedLegalLoadingDocument,
 ) {
-  const cacheKey = getLegalLoadingCacheKey(kind);
+  const cacheKey = getLegalLoadingCacheKey(kind, locale);
   legalLoadingMemoryCache.set(cacheKey, cachedDocument);
 
   if (typeof window === "undefined") {
@@ -605,28 +597,17 @@ function sanitizeLegalHtml(htmlLikeBody: string, locale: string) {
   return template.innerHTML;
 }
 
-function normalizeManifest(value: unknown): LegalManifest | null {
-  if (!isRecord(value)) {
-    return null;
-  }
-
-  const manifest: LegalManifest = {};
-
-  if (typeof value.version === "string") {
-    manifest.version = value.version;
-  }
-
-  if (isRecord(value.documents)) {
-    manifest.documents = {};
-
+function normalizeManifestDocuments(value: unknown) {
+  const documents: Partial<Record<LegalDocumentKind, LegalManifestDocument>> = {};
+  if (isRecord(value)) {
     for (const documentKind of legalDocumentOrder) {
-      const documentManifest = value.documents[documentKind];
+      const documentManifest = value[documentKind];
 
       if (!isRecord(documentManifest)) {
         continue;
       }
 
-      manifest.documents[documentKind] = {
+      documents[documentKind] = {
         path:
           typeof documentManifest.path === "string"
             ? documentManifest.path
@@ -650,13 +631,31 @@ function normalizeManifest(value: unknown): LegalManifest | null {
       };
     }
   }
+  return documents;
+}
 
+function normalizeManifest(value: unknown): LegalManifest | null {
+  if (!isRecord(value)) return null;
+  const locales: NonNullable<LegalManifest["locales"]> = {};
+  const manifest: LegalManifest = {
+    version: typeof value.version === "string" ? value.version : undefined,
+    documents: normalizeManifestDocuments(value.documents),
+    locales,
+  };
+  if (isRecord(value.locales)) {
+    for (const locale of ["en", "uk"] as const) {
+      const localized = value.locales[locale];
+      if (isRecord(localized)) {
+        locales[locale] = { documents: normalizeManifestDocuments(localized.documents) };
+      }
+    }
+  }
   return manifest;
 }
 
-export async function fetchLegalManifest() {
+export async function fetchLegalManifest(forceRefresh = false) {
   try {
-    const response = await fetch(legalManifestPath);
+    const response = await fetch(legalManifestPath, { cache: forceRefresh ? "no-store" : "default" });
 
     if (!response.ok) {
       return null;
@@ -679,15 +678,17 @@ function buildVersionedAssetUrl(path: string, version?: string) {
 }
 
 function getLegalAssetRequestCache(version?: string): RequestCache {
-  return version ? "force-cache" : "no-store";
+  // Respect immutable success headers without pinning a cached HTTP failure.
+  return version ? "default" : "no-store";
 }
 
 function getLegalDocumentAssetDescriptor(
   kind: LegalDocumentKind,
   manifest: LegalManifest | null,
+  locale: string,
 ): LegalAssetDescriptor {
-  const manifestDocument = manifest?.documents?.[kind];
-  const path = manifestDocument?.path ?? getLegalDocumentAssetPath(kind);
+  const manifestDocument = getLegalManifestDocument(kind, locale, manifest);
+  const path = manifestDocument?.path ?? getLegalDocumentAssetPath(kind, locale);
   const version =
     manifestDocument?.sha256 ?? manifestDocument?.version ?? manifest?.version;
 
@@ -702,10 +703,11 @@ function getLegalDocumentAssetDescriptor(
 function getLegalLoadingAssetDescriptor(
   kind: LegalDocumentKind,
   manifest: LegalManifest | null,
+  locale: string,
 ): LegalAssetDescriptor {
-  const manifestDocument = manifest?.documents?.[kind];
+  const manifestDocument = getLegalManifestDocument(kind, locale, manifest);
   const path =
-    manifestDocument?.loadingPath ?? getLegalDocumentLoadingPath(kind);
+    manifestDocument?.loadingPath ?? getLegalDocumentLoadingPath(kind, locale);
   const version =
     manifestDocument?.loadingSha256 ??
     manifestDocument?.sha256 ??
@@ -760,8 +762,9 @@ async function verifyLegalAssetHash(
 async function fetchLegalLoadingDocument(
   kind: LegalDocumentKind,
   manifest: LegalManifest | null,
+  locale: string,
 ) {
-  const descriptor = getLegalLoadingAssetDescriptor(kind, manifest);
+  const descriptor = getLegalLoadingAssetDescriptor(kind, manifest, locale);
   const response = await fetch(descriptor.url, {
     cache: getLegalAssetRequestCache(descriptor.version),
   });
@@ -780,7 +783,7 @@ async function fetchLegalLoadingDocument(
   return {
     path: descriptor.path,
     version: getLoadingStorageVersion(descriptor),
-    html: parseLegalLoadingBody(source),
+    html: parseLegalLoadingBody(source, locale),
     cachedAt: Date.now(),
   };
 }
@@ -789,10 +792,11 @@ async function fetchLegalDocument(
   kind: LegalDocumentKind,
   manifest: LegalManifest | null,
   locale: string,
+  forceRefresh = false,
 ) {
-  const descriptor = getLegalDocumentAssetDescriptor(kind, manifest);
+  const descriptor = getLegalDocumentAssetDescriptor(kind, manifest, locale);
   const response = await fetch(descriptor.url, {
-    cache: getLegalAssetRequestCache(descriptor.version),
+    cache: forceRefresh ? "no-store" : getLegalAssetRequestCache(descriptor.version),
   });
 
   if (!response.ok) {
@@ -810,14 +814,14 @@ async function ensureFreshLegalLoadingDocument(
   manifest: LegalManifest | null,
   locale: string,
 ) {
-  const descriptor = getLegalLoadingAssetDescriptor(kind, manifest);
+  const descriptor = getLegalLoadingAssetDescriptor(kind, manifest, locale);
   const cachedDocument = readCachedLegalLoadingDocument(kind, locale);
 
   if (isFreshCachedLoadingDocument(cachedDocument, descriptor)) {
     return cachedDocument;
   }
 
-  const fetchedDocument = await fetchLegalLoadingDocument(kind, manifest);
+  const fetchedDocument = await fetchLegalLoadingDocument(kind, manifest, locale);
 
   if (!fetchedDocument) {
     return cachedDocument;
@@ -838,14 +842,14 @@ export function warmLegalLoadingDocuments(
       continue;
     }
 
-    const descriptor = getLegalLoadingAssetDescriptor(documentKind, manifest);
+    const descriptor = getLegalLoadingAssetDescriptor(documentKind, manifest, locale);
     const cachedDocument = readCachedLegalLoadingDocument(documentKind, locale);
 
     if (isFreshCachedLoadingDocument(cachedDocument, descriptor)) {
       continue;
     }
 
-    const warmKey = `${getLegalLoadingCacheKey(documentKind)}:${getLoadingStorageVersion(
+    const warmKey = `${getLegalLoadingCacheKey(documentKind, locale)}:${getLoadingStorageVersion(
       descriptor,
     )}`;
 
@@ -881,8 +885,8 @@ function parseLegalBodyOnly(source: string, locale: string) {
   return sanitizeLegalHtml(htmlLikeBody, locale);
 }
 
-function parseLegalLoadingBody(source: string) {
-  const html = parseLegalBodyOnly(source, "en");
+function parseLegalLoadingBody(source: string, locale: string) {
+  const html = parseLegalBodyOnly(source, locale);
   const template = document.createElement("template");
   template.innerHTML = html;
 
@@ -907,11 +911,11 @@ function upsertMeta(name: string, content: string) {
   meta.content = content;
 }
 
-function LegalDocumentLoadingShell() {
+function LegalDocumentLoadingShell({ label }: { label: string }) {
   return (
     <article
       aria-busy="true"
-      aria-label="Loading legal document"
+      aria-label={label}
       className={`${styles.prose} ${styles.loadingProse}`}
     >
       <div aria-hidden className="summary">
@@ -971,6 +975,9 @@ export function LegalDocumentClient({
   fallbackDocument,
   initialLoadingHtml = "",
 }: LegalDocumentClientProps) {
+  const t = useTranslations("LegalDocument");
+  const documentLocale = getLegalDocumentLocale(locale);
+  const [retryNonce, setRetryNonce] = useState(0);
   const [documentMetadata, setDocumentMetadata] =
     useState<LegalDocumentMetadata>(fallbackDocument);
   const [html, setHtml] = useState("");
@@ -979,6 +986,7 @@ export function LegalDocumentClient({
 
   useEffect(() => {
     let ignore = false;
+    let finished = false;
     const cachedLoadingDocument = readCachedLegalLoadingDocument(kind, locale);
     const visibleLoadingHtml =
       initialLoadingHtml || cachedLoadingDocument?.html || "";
@@ -990,7 +998,7 @@ export function LegalDocumentClient({
       setDocumentMetadata(fallbackDocument);
 
       try {
-        const manifest = await fetchLegalManifest();
+        const manifest = await fetchLegalManifest(retryNonce > 0);
 
         if (ignore) {
           return;
@@ -998,7 +1006,7 @@ export function LegalDocumentClient({
 
         void ensureFreshLegalLoadingDocument(kind, manifest, locale)
           .then((nextLoadingDocument) => {
-            if (!ignore && nextLoadingDocument?.html && !visibleLoadingHtml) {
+            if (!ignore && !finished && nextLoadingDocument?.html && !visibleLoadingHtml) {
               setLoadingHtml(nextLoadingDocument.html);
             }
           })
@@ -1006,12 +1014,13 @@ export function LegalDocumentClient({
 
         warmLegalLoadingDocuments(manifest, locale, kind);
 
-        const parsedDocument = await fetchLegalDocument(kind, manifest, locale);
+        const parsedDocument = await fetchLegalDocument(kind, manifest, locale, retryNonce > 0);
 
         if (ignore) {
           return;
         }
 
+        finished = true;
         setDocumentMetadata(parsedDocument.metadata);
         setHtml(parsedDocument.html);
         setLoadingHtml("");
@@ -1020,6 +1029,7 @@ export function LegalDocumentClient({
           return;
         }
 
+        finished = true;
         setError(
           loadError instanceof Error
             ? loadError.message
@@ -1034,7 +1044,7 @@ export function LegalDocumentClient({
     return () => {
       ignore = true;
     };
-  }, [fallbackDocument, initialLoadingHtml, kind, locale]);
+  }, [fallbackDocument, initialLoadingHtml, kind, locale, retryNonce]);
 
   useEffect(() => {
     document.title = `${documentMetadata.title} | PlanIt`;
@@ -1051,18 +1061,18 @@ export function LegalDocumentClient({
             weight="duotone"
           />
         </div>
-        <h1 className="text-balance text-4xl font-black tracking-tight text-site-text sm:text-5xl lg:text-6xl">
+        <h1 lang={documentLocale} className="text-balance text-4xl font-black tracking-tight text-site-text sm:text-5xl lg:text-6xl">
           {documentMetadata.title}
         </h1>
         <div className="mt-6 flex flex-wrap items-center gap-2.5">
           <span className="inline-flex items-center gap-2 rounded-full border border-site-border bg-site-surface-muted px-3 py-2 text-xs font-bold text-site-muted">
             <LegalCalendarIcon className="h-4 w-4 text-zinc-400 dark:text-zinc-500" />
             <span>
-              <strong>{documentMetadata.effectiveDateLabel}</strong>{" "}
-              <time dateTime={documentMetadata.effectiveDate}>
+              <strong lang={documentLocale}>{documentMetadata.effectiveDateLabel}</strong>{" "}
+              <time lang={documentLocale} dateTime={documentMetadata.effectiveDate}>
                 {documentMetadata.effectiveDateDisplay}
               </time>{" "}
-              &middot; Version {documentMetadata.version}
+              &middot; {t("version")} {documentMetadata.version}
             </span>
           </span>
         </div>
@@ -1070,13 +1080,15 @@ export function LegalDocumentClient({
 
       {html ? (
         <article
+          lang={documentLocale}
           className={styles.prose}
           dangerouslySetInnerHTML={{ __html: html }}
         />
       ) : loadingHtml ? (
         <article
           aria-busy="true"
-          aria-label="Loading legal document"
+          aria-label={t("loading")}
+          aria-hidden="true"
           className={`${styles.prose} ${styles.loadingProse}`}
           dangerouslySetInnerHTML={{ __html: loadingHtml }}
         />
@@ -1088,11 +1100,12 @@ export function LegalDocumentClient({
             }`}
             role={error ? "alert" : "status"}
           >
-            This legal document could not be loaded. Please refresh the page.
+            {t("loadError")}
+            <button type="button" onClick={() => setRetryNonce(value => value + 1)} className="mt-4 block min-h-11 rounded-lg border border-current px-4 py-2">{t("retry")}</button>
           </div>
         </article>
       ) : (
-        <LegalDocumentLoadingShell />
+        <LegalDocumentLoadingShell label={t("loading")} />
       )}
     </>
   );

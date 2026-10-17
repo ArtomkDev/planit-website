@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { AuthActionRedirect } from "@/components/auth/AuthActionRedirect";
 import styles from "@/components/auth/AuthAction.module.css";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Opening PlanIt",
   description: "Continue a PlanIt account action in your preferred language.",
   robots: { index: false, follow: false },
+  openGraph: { images: [`${SITE_URL}/opengraph-image`] },
+  twitter: { images: [`${SITE_URL}/twitter-image`] },
 };
 
 function RedirectFallback() {

@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 import { legalDocumentOrder } from "@/content/legal-documents";
 
 export const dynamic = "force-static";
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://planit-app.com";
+const baseUrl = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

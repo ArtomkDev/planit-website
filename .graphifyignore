@@ -13,6 +13,7 @@ out/
 build/
 dist/
 coverage/
+audit-evidence/
 .firebase/
 .vercel/
 *.tsbuildinfo

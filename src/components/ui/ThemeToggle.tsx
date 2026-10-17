@@ -20,7 +20,7 @@ export const ThemeToggle = () => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-site-border-strong/70 bg-site-surface-muted/75 text-site-text backdrop-blur-md outline-none transition-colors hover:bg-site-surface focus-visible:ring-2 focus-visible:ring-brand will-change-transform"
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-site-border-strong/70 bg-site-surface-muted/75 text-site-text backdrop-blur-md outline-none transition-colors hover:bg-site-surface focus-visible:ring-2 focus-visible:ring-brand will-change-transform"
       aria-label={t("theme")}
     >
       <motion.div

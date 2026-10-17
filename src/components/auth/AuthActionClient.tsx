@@ -42,7 +42,11 @@ const FIXED_SAFE_ORIGINS = new Set([
   "https://planit-demo.web.app",
 ]);
 
-type SupportedMode = "resetPassword" | "verifyEmail" | "recoverEmail";
+type SupportedMode =
+  | "resetPassword"
+  | "verifyEmail"
+  | "verifyAndChangeEmail"
+  | "recoverEmail";
 type ErrorMessageKey =
   | "expired"
   | "invalid"
@@ -75,7 +79,11 @@ type ErrorInfo<T extends string = ErrorMessageKey> = {
 type InitialActionResult =
   | { kind: "resetPassword"; email: string }
   | { kind: "verifyEmail" }
-  | { kind: "recoverEmail"; email?: string; previousEmail?: string };
+  | {
+      kind: "recoverEmail" | "verifyAndChangeEmail";
+      email?: string;
+      previousEmail?: string;
+    };
 
 type Phase =
   | { kind: "loading" }
@@ -105,6 +113,7 @@ function isSupportedMode(value: string | null): value is SupportedMode {
   return (
     value === "resetPassword" ||
     value === "verifyEmail" ||
+    value === "verifyAndChangeEmail" ||
     value === "recoverEmail"
   );
 }
@@ -268,13 +277,24 @@ async function runInitialAction(
     return { kind: mode, email };
   }
 
+  const actionInfo = await checkActionCode(auth, oobCode);
+  const expectedOperation =
+    mode === "verifyEmail"
+      ? "VERIFY_EMAIL"
+      : mode === "verifyAndChangeEmail"
+        ? "VERIFY_AND_CHANGE_EMAIL"
+        : "RECOVER_EMAIL";
+  if (actionInfo.operation !== expectedOperation) {
+    throw new FirebaseError(
+      "auth/invalid-action-code",
+      "The account action does not match the link.",
+    );
+  }
+  await applyActionCode(auth, oobCode);
+
   if (mode === "verifyEmail") {
-    await applyActionCode(auth, oobCode);
     return { kind: mode };
   }
-
-  const actionInfo = await checkActionCode(auth, oobCode);
-  await applyActionCode(auth, oobCode);
 
   return {
     kind: mode,
@@ -350,7 +370,7 @@ export function AuthActionClient() {
         setPhase({
           kind: "success",
           action: result.kind,
-          email: result.kind === "recoverEmail" ? result.email : undefined,
+          email: result.kind !== "verifyEmail" ? result.email : undefined,
           previousEmail:
             result.kind === "recoverEmail" ? result.previousEmail : undefined,
         });
@@ -446,9 +466,11 @@ export function AuthActionClient() {
         ? "loading.resetPassword"
         : mode === "verifyEmail"
           ? "loading.verifyEmail"
-          : mode === "recoverEmail"
-            ? "loading.recoverEmail"
-            : "loading.generic";
+          : mode === "verifyAndChangeEmail"
+            ? "loading.verifyAndChangeEmail"
+            : mode === "recoverEmail"
+              ? "loading.recoverEmail"
+              : "loading.generic";
 
     return (
       <motion.div
@@ -652,10 +674,17 @@ export function AuthActionClient() {
         )
       : action === "recoverEmail" && email
         ? t("recoverEmail.successDescriptionWithEmail", { email })
-        : t(`${action}.successDescription`);
+        : action === "verifyAndChangeEmail" && email
+          ? t("verifyAndChangeEmail.successDescriptionWithEmail", { email })
+          : t(`${action}.successDescription`);
 
     return (
-      <motion.div key="success" {...animationProps} className={styles.state}>
+      <motion.div
+        key="success"
+        {...animationProps}
+        className={styles.state}
+        role="status"
+      >
         <div className={styles.iconBadge} data-tone="success">
           <CheckCircle weight="duotone" />
         </div>

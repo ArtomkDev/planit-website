@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import { LegalDocument } from "@/components/legal/LegalDocument";
-import { legalDocuments } from "@/content/legal-documents";
+import { getLegalDocumentData } from "@/content/legal-documents";
 
 export async function generateMetadata({
   params,
@@ -8,8 +9,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const document = legalDocuments.terms;
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
+  const document = getLegalDocumentData("terms", locale);
+  const baseUrl = SITE_URL;
   const url = `${baseUrl}/${locale}/wiki`;
 
   return {
@@ -29,6 +30,7 @@ export async function generateMetadata({
       siteName: "PlanIt",
       locale,
       type: "website",
+      images: [`${SITE_URL}/opengraph-image`],
     },
   };
 }

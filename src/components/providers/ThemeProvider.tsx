@@ -1,90 +1,60 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode, useSyncExternalStore } from "react";
+import { createContext, useContext, useEffect, type ReactNode, useSyncExternalStore } from "react";
+import { MotionConfig } from "framer-motion";
 
 type Theme = "dark" | "light";
-
-interface ThemeContextType {
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
-}
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext<{ theme: Theme; setTheme: (theme: Theme) => void } | undefined>(undefined);
+let sessionTheme: Theme | null = null;
+const themeEvent = "planit:theme-change";
 
 function getSystemTheme(): Theme {
-  if (typeof window === "undefined") return "dark";
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
-
-function getStoredTheme(): Theme {
-  if (typeof window === "undefined") return "dark";
-  const stored = localStorage.getItem("theme") as Theme | null;
-  return stored || getSystemTheme();
+function getTheme(): Theme {
+  if (sessionTheme) return sessionTheme;
+  try {
+    const stored = window.localStorage.getItem("theme");
+    if (stored === "light" || stored === "dark") return stored;
+  } catch {
+    // The preference remains usable for this session when storage is blocked.
+  }
+  return getSystemTheme();
 }
-
-const themeStore = {
-  getSnapshot: () => getStoredTheme(),
-  subscribe: () => () => {},
-};
+function subscribe(callback: () => void) {
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+  function storage(event: StorageEvent) {
+    if (event.key === "theme" || event.key === null) {
+      sessionTheme = null;
+      callback();
+    }
+  }
+  window.addEventListener("storage", storage);
+  window.addEventListener(themeEvent, callback);
+  media.addEventListener("change", callback);
+  return () => {
+    window.removeEventListener("storage", storage);
+    window.removeEventListener(themeEvent, callback);
+    media.removeEventListener("change", callback);
+  };
+}
+function setTheme(theme: Theme) {
+  sessionTheme = theme;
+  try { window.localStorage.setItem("theme", theme); } catch { /* Session fallback. */ }
+  window.dispatchEvent(new Event(themeEvent));
+}
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const theme = useSyncExternalStore(themeStore.subscribe, themeStore.getSnapshot, getSystemTheme) as Theme;
-  const [, forceUpdate] = useState({});
-
+  const theme = useSyncExternalStore(subscribe, getTheme, () => "light" as Theme);
   useEffect(() => {
-    const root = document.documentElement;
-    const initialTheme = theme;
-    if (initialTheme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.attributeName === "class") {
-          const currentTheme = getStoredTheme();
-          if (currentTheme === "dark" && !root.classList.contains("dark")) {
-            root.classList.add("dark");
-          } else if (currentTheme === "light" && root.classList.contains("dark")) {
-            root.classList.remove("dark");
-          }
-        }
-      });
-    });
-
-    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
-
-    const handler = () => forceUpdate({});
-    window.addEventListener("storage", handler);
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", handler);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("storage", handler);
-      window.matchMedia("(prefers-color-scheme: dark)").removeEventListener("change", handler);
-    };
+    document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme]);
-
-  const setTheme = (newTheme: Theme) => {
-    localStorage.setItem("theme", newTheme);
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    forceUpdate({});
-  };
-
-  return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={{ theme, setTheme }}>
+    <MotionConfig reducedMotion="user">{children}</MotionConfig>
+  </ThemeContext.Provider>;
 }
-
-export const useTheme = (): ThemeContextType => {
+export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) throw new Error("useTheme must be used within ThemeProvider");
   return context;
-};
+}

@@ -1,3 +1,7 @@
+import legalManifestJson from "../../public/content/legal/manifest.json";
+
+export type LegalDocumentLocale = "en" | "uk";
+
 export type LegalDocumentKind =
   | "privacy"
   | "cookies"
@@ -18,6 +22,34 @@ export interface LegalDocumentMetadata {
 
 export interface LegalDocumentData extends LegalDocumentMetadata {
   assetPath: string;
+  locale: LegalDocumentLocale;
+}
+
+export interface LegalManifestDocument {
+  path?: string;
+  loadingPath?: string;
+  sha256?: string;
+  loadingSha256?: string;
+  version?: string;
+  metadata?: LegalDocumentMetadata;
+}
+
+export interface LegalManifest {
+  version?: string;
+  documents?: Partial<Record<LegalDocumentKind, LegalManifestDocument>>;
+  locales?: Partial<Record<LegalDocumentLocale, {
+    documents?: Partial<Record<LegalDocumentKind, LegalManifestDocument>>;
+  }>>;
+}
+
+export function getLegalDocumentLocale(locale: string): LegalDocumentLocale {
+  return locale === "uk" ? "uk" : "en";
+}
+
+export function getLegalManifestDocument(kind: LegalDocumentKind, locale: string, manifest: LegalManifest | null) {
+  const language = getLegalDocumentLocale(locale);
+  return manifest?.locales?.[language]?.documents?.[kind] ??
+    (language === "en" ? manifest?.documents?.[kind] : undefined);
 }
 
 export const legalDocumentOrder = [
@@ -28,12 +60,14 @@ export const legalDocumentOrder = [
   "delete",
 ] as const satisfies ReadonlyArray<LegalDocumentKind>;
 
-export function getLegalDocumentAssetPath(document: LegalDocumentKind) {
-  return `/content/legal/${document}.mdx`;
+export function getLegalDocumentAssetPath(document: LegalDocumentKind, locale = "en") {
+  const folder = getLegalDocumentLocale(locale) === "uk" ? "uk/" : "";
+  return `/content/legal/${folder}${document}.mdx`;
 }
 
-export function getLegalDocumentLoadingPath(document: LegalDocumentKind) {
-  return `/content/legal/${document}.loading.mdx`;
+export function getLegalDocumentLoadingPath(document: LegalDocumentKind, locale = "en") {
+  const folder = getLegalDocumentLocale(locale) === "uk" ? "uk/" : "";
+  return `/content/legal/${folder}${document}.loading.mdx`;
 }
 
 export function isLegalDocumentKind(value: string): value is LegalDocumentKind {
@@ -93,25 +127,12 @@ export const legalDocumentFallbackMetadata = {
   },
 } satisfies Record<LegalDocumentKind, LegalDocumentMetadata>;
 
-export const legalDocuments = {
-  privacy: {
-    ...legalDocumentFallbackMetadata.privacy,
-    assetPath: getLegalDocumentAssetPath("privacy"),
-  },
-  cookies: {
-    ...legalDocumentFallbackMetadata.cookies,
-    assetPath: getLegalDocumentAssetPath("cookies"),
-  },
-  terms: {
-    ...legalDocumentFallbackMetadata.terms,
-    assetPath: getLegalDocumentAssetPath("terms"),
-  },
-  licenses: {
-    ...legalDocumentFallbackMetadata.licenses,
-    assetPath: getLegalDocumentAssetPath("licenses"),
-  },
-  delete: {
-    ...legalDocumentFallbackMetadata.delete,
-    assetPath: getLegalDocumentAssetPath("delete"),
-  },
-} satisfies Record<LegalDocumentKind, LegalDocumentData>;
+export function getLegalDocumentData(kind: LegalDocumentKind, locale: string): LegalDocumentData {
+  const entry = getLegalManifestDocument(kind, locale, legalManifestJson as LegalManifest);
+  return {
+    ...legalDocumentFallbackMetadata[kind],
+    ...entry?.metadata,
+    assetPath: entry?.path ?? getLegalDocumentAssetPath(kind, locale),
+    locale: getLegalDocumentLocale(locale),
+  };
+}

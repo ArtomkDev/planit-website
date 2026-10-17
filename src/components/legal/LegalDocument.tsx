@@ -5,14 +5,17 @@ import { readFile } from "node:fs/promises";
 import { isAbsolute, relative, resolve } from "node:path";
 import {
   getLegalDocumentLoadingPath,
+  getLegalDocumentData,
+  getLegalManifestDocument,
   legalDocumentOrder,
-  legalDocuments,
+  type LegalManifest,
   type LegalDocumentKind,
 } from "@/content/legal-documents";
 import legalManifestJson from "../../../public/content/legal/manifest.json";
 import { LegalDocumentIcon, LegalSupportArrow } from "./LegalIcons";
 import { LegalDocumentClient } from "./LegalDocumentClient";
 import styles from "./LegalDocument.module.css";
+import { SUPPORT_URL } from "@/lib/site";
 
 export type { LegalDocumentKind } from "@/content/legal-documents";
 
@@ -21,16 +24,7 @@ interface LegalDocumentProps {
   kind: LegalDocumentKind;
 }
 
-type LegalSeedManifestDocument = {
-  loadingPath?: string;
-  loadingSha256?: string;
-};
-
-type LegalSeedManifest = {
-  documents?: Partial<Record<string, LegalSeedManifestDocument>>;
-};
-
-const legalManifest = legalManifestJson as LegalSeedManifest;
+const legalManifest = legalManifestJson as LegalManifest;
 const publicDirectory = resolve(process.cwd(), "public");
 
 function resolvePublicAssetPath(assetPath: string) {
@@ -48,11 +42,11 @@ function resolvePublicAssetPath(assetPath: string) {
   return resolvedPath;
 }
 
-async function getInitialLoadingHtml(kind: LegalDocumentKind) {
+async function getInitialLoadingHtml(kind: LegalDocumentKind, locale: string) {
   try {
-    const documentManifest = legalManifest.documents?.[kind];
+    const documentManifest = getLegalManifestDocument(kind, locale, legalManifest);
     const loadingPath =
-      documentManifest?.loadingPath ?? getLegalDocumentLoadingPath(kind);
+      documentManifest?.loadingPath ?? getLegalDocumentLoadingPath(kind, locale);
     const filePath = resolvePublicAssetPath(loadingPath);
 
     if (!filePath) {
@@ -87,15 +81,15 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
     locale,
     namespace: "LegalDocument",
   });
-  const document = legalDocuments[kind];
-  const initialLoadingHtml = await getInitialLoadingHtml(kind);
+  const document = getLegalDocumentData(kind, locale);
+  const initialLoadingHtml = await getInitialLoadingHtml(kind, locale);
 
   return (
     <div
       className={`${styles.wikiPage} relative isolate min-h-screen overflow-hidden bg-site-bg`}
     >
       <a className={styles.skipLink} href="#legal-main-content">
-        Skip to content
+        {tDoc("skipContent")}
       </a>
 
       <div
@@ -114,9 +108,8 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
                 PlanIt Wiki
               </h2>
             </div>
-            <nav aria-label="Legal documents" className="grid gap-1">
+            <nav aria-label={tDoc("navigation")} className="grid gap-1">
               {legalDocumentOrder.map((documentKind) => {
-                const data = legalDocuments[documentKind];
                 const isActive = kind === documentKind;
 
                 return (
@@ -151,16 +144,16 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
                     </span>
                     <span className="min-w-0">
                       <span className="block text-sm font-black">
-                        {data.navigationTitle}
+                        {tDoc(`titles.${documentKind}`)}
                       </span>
                       <span
                         className={`mt-1 line-clamp-2 block text-xs font-semibold leading-5 ${
                           isActive
                             ? "text-zinc-300 dark:text-zinc-600"
-                            : "text-zinc-500 dark:text-zinc-500"
+                            : "text-site-muted"
                         }`}
                       >
-                        {data.summary}
+                        {tDoc(`summaries.${documentKind}`)}
                       </span>
                     </span>
                   </Link>
@@ -172,6 +165,7 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
 
         <div
           id="legal-main-content"
+          tabIndex={-1}
           className={`${styles.wikiContent} min-w-0 scroll-mt-28`}
         >
           <LegalDocumentClient
@@ -187,13 +181,13 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
             <div className="pointer-events-none absolute -bottom-20 -right-16 z-0 h-56 w-56 rounded-[56%_44%_36%_64%/50%_46%_54%_50%] bg-brand-pink opacity-20 blur-[48px] mix-blend-multiply dark:mix-blend-screen" />
             <div className="relative z-10 mx-auto flex max-w-2xl flex-col items-center">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400">
-                PlanIt support
+                {tDoc("supportLabel")}
               </p>
               <p className="mt-3 text-2xl font-black tracking-tight text-site-text sm:text-3xl">
                 {tDoc("support")}
               </p>
               <a
-                href="mailto:planit.app.support@gmail.com"
+                href={SUPPORT_URL}
                 className="group mt-7 inline-flex items-center justify-center gap-3 rounded-full bg-site-text px-7 py-4 text-sm font-black text-site-bg shadow-[0_18px_48px_-26px_var(--site-surface-shadow)] transition-transform hover:-translate-y-0.5"
               >
                 {tDoc("supportAction")}

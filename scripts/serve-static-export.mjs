@@ -1,5 +1,5 @@
 import { createReadStream } from "node:fs";
-import { access, stat } from "node:fs/promises";
+import { access, readFile, stat } from "node:fs/promises";
 import { createServer } from "node:http";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -10,6 +10,7 @@ const rootDir = path.resolve(
   "out",
 );
 const port = Number(process.argv[2] || process.env.PORT || 4173);
+const hosting = JSON.parse(await readFile(new URL("../firebase.json", import.meta.url), "utf8")).hosting;
 
 const mimeTypes = new Map([
   [".css", "text/css; charset=utf-8"],
@@ -28,6 +29,7 @@ const mimeTypes = new Map([
   [".woff", "font/woff"],
   [".woff2", "font/woff2"],
   [".xml", "application/xml; charset=utf-8"],
+  [".webmanifest", "application/manifest+json; charset=utf-8"],
 ]);
 
 async function isFile(filePath) {
@@ -86,10 +88,13 @@ async function resolveFile(urlPath) {
 
 function sendFile(response, filePath, statusCode, method) {
   const extension = path.extname(filePath);
-  const contentType = mimeTypes.get(extension) || "application/octet-stream";
+  const imageRoutes = new Set(["icon", "apple-icon", "opengraph-image", "twitter-image"]);
+  const contentType = imageRoutes.has(path.basename(filePath))
+    ? "image/png"
+    : mimeTypes.get(extension) || "application/octet-stream";
   const normalizedPath = filePath.split(path.sep).join("/");
   let cacheControl =
-    statusCode === 404 || extension === ".html"
+    statusCode === 404 ? "no-store" : extension === ".html"
       ? "no-cache"
       : "public, max-age=300";
 
@@ -133,7 +138,13 @@ const server = createServer(async (request, response) => {
     return;
   }
 
-  const { pathname } = new URL(request.url, "http://localhost");
+  const { pathname, search } = new URL(request.url, "http://localhost");
+  const redirect = hosting.redirects.find(rule => rule.source === pathname.replace(/\/$/, ""));
+  if (redirect) {
+    response.writeHead(redirect.type, { Location: redirect.destination + search });
+    response.end();
+    return;
+  }
   const resolved = await resolveFile(pathname);
 
   if (!resolved) {

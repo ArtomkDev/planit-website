@@ -9,8 +9,7 @@ import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 import { AndroidRobotLogo, AppleBrandLogo } from "@/components/ui/BrandIcons";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
-const PLAY_MARKET_URL = "https://play.google.com/store/apps/details?id=com.artomk.planit";
+import { APP_URL, PLAY_MARKET_URL } from "@/lib/site";
 
 export function Platforms() {
   const t = useTranslations("Platforms");
@@ -51,9 +50,9 @@ export function Platforms() {
       colorSecondary: "rgba(244, 91, 138, 0.07)",
       buttonBgColor: "bg-brand-pink",
       buttonHoverColor: "hover:ring-4 hover:ring-brand-pink/40 ring-offset-2 ring-offset-site-surface hover:shadow-[0_10px_40px_-10px_rgba(244,91,138,0.85)]",
-      buttonTextColor: "text-white",
+      buttonTextColor: "text-zinc-950",
       iconColor: "text-brand-pink",
-      statusColor: "text-brand-pink",
+      statusColor: "text-brand-pink-strong",
       statusSurface: "border-brand-pink/40 bg-brand-pink/10",
     },
     {
@@ -65,7 +64,7 @@ export function Platforms() {
       href: null,
       openInNewTab: false,
       icon: <AppleBrandLogo className="w-8 h-8" />,
-      buttonIcon: <Hourglass className="w-6 h-6 animate-pulse" weight="bold" />,
+      buttonIcon: <Hourglass className="w-6 h-6" weight="bold" />,
       spotlightColor: "rgba(161, 161, 170, 0.15)",
       colorPrimary: "rgba(161, 161, 170, 0.12)",
       colorSecondary: "rgba(212, 212, 216, 0.12)",
@@ -83,7 +82,7 @@ export function Platforms() {
       <LessonCardAccent seed={37} className="-right-64 top-[42%]" />
       <LessonCardAccent seed={38} depth="background" className="right-[18%] top-10" />
       <ScrollReveal className="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
-        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand">
+        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand-strong">
           {t("badge")}
         </span>
         <h2 className="text-4xl font-black tracking-tight text-site-text md:text-5xl lg:text-6xl">
@@ -105,7 +104,7 @@ export function Platforms() {
             colorSecondary={item.colorSecondary}
             spotlightColor={item.spotlightColor}
           >
-            <div className="flex items-start justify-between mb-8 pointer-events-none">
+            <div className="flex flex-wrap items-start justify-between gap-3 mb-8 pointer-events-none">
               <ProximityBlock
                 color={item.spotlightColor.replace("0.15", "0.8")}
                 className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${item.iconColor} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] group-hover/card:-translate-y-1 group-hover/card:scale-110`}
@@ -139,7 +138,7 @@ export function Platforms() {
                   disabled
                   className="relative flex w-full cursor-not-allowed items-center justify-center rounded-2xl border border-zinc-300/40 bg-zinc-200/40 px-8 py-5 font-bold text-zinc-400 shadow-none dark:border-zinc-700/40 dark:bg-zinc-800/40 dark:text-zinc-500"
                 >
-                  <span className="relative z-10 flex items-center justify-center gap-3">
+                  <span className="relative z-10 flex items-center justify-center gap-3 text-center">
                     {item.buttonIcon}
                     {item.buttonText}
                   </span>
@@ -151,10 +150,10 @@ export function Platforms() {
                   rel={item.openInNewTab ? "noopener noreferrer" : undefined}
                   whileHover={{ y: -4, scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className={`group/btn relative flex w-full items-center justify-center rounded-2xl px-8 py-5 font-bold shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonTextColor} ${item.buttonHoverColor}`}
+                  className={`group/btn relative flex w-full items-center justify-center rounded-2xl px-4 py-4 font-bold shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonTextColor} ${item.buttonHoverColor}`}
                 >
                   <span className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100" />
-                  <span className="relative z-10 flex items-center justify-center gap-3">
+                  <span className="relative z-10 flex items-center justify-center gap-3 text-center">
                     {item.buttonIcon}
                     {item.buttonText}
                   </span>

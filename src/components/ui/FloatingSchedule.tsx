@@ -298,11 +298,11 @@ export function FloatingSchedule() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
         duration: reduceMotion ? 0 : 0.65,
-        delay: 0.25,
+        delay: reduceMotion ? 0 : 0.25,
         ease: [0.22, 1, 0.36, 1],
       }}
       className="relative mx-auto w-full max-w-[460px]"
@@ -318,18 +318,18 @@ export function FloatingSchedule() {
             </div>
 
             <div className="flex min-w-0 flex-1 items-center justify-end gap-1.5">
-              <span className="min-w-0 truncate text-right text-[17px] font-extrabold leading-[22px] tracking-[-0.25px] text-zinc-900 dark:text-white">
+              <span className="min-w-0 text-balance text-right text-[15px] font-extrabold leading-5 tracking-[-0.25px] text-zinc-900 dark:text-white sm:text-[17px] sm:leading-[22px]">
                 {monthLabel}
               </span>
               <span
                 aria-hidden="true"
-                className="flex h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600"
+                className="hidden h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600 sm:flex"
               >
                 <CalendarBlank size={17} weight="bold" />
               </span>
               <span
                 aria-hidden="true"
-                className="relative flex h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600"
+                className="relative hidden h-[30px] w-[30px] shrink-0 items-center justify-center text-zinc-400 dark:text-zinc-600 sm:flex"
               >
                 <Bell size={17} weight="fill" />
                 <span className="absolute right-[5px] top-[5px] h-2 w-2 rounded-full border border-white bg-zinc-400 dark:border-zinc-950 dark:bg-zinc-600" />
@@ -340,7 +340,7 @@ export function FloatingSchedule() {
                 disabled={isAutomaticDate}
                 aria-label={tHero("resetDay")}
                 title={tHero("resetDay")}
-                className={`flex h-[30px] w-[30px] shrink-0 items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] ${
+                className={`flex h-11 w-11 shrink-0 items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] ${
                   isAutomaticDate
                     ? "cursor-default text-zinc-300 dark:text-zinc-700"
                     : "text-[#3B82F6] hover:text-[#2563EB]"
@@ -371,9 +371,9 @@ export function FloatingSchedule() {
                     }
                     aria-current={isToday ? "date" : undefined}
                     aria-pressed={isSelected}
-                    className={`relative flex h-10 min-w-0 flex-col items-center justify-center rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] ${
+                    className={`relative flex h-11 min-w-0 flex-col items-center justify-center rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B82F6] ${
                       isSelected
-                        ? "bg-[#3B82F6] text-white"
+                        ? "bg-[#2563EB] text-white"
                         : isToday
                           ? "bg-[#3B82F6]/10 text-[#2563EB] dark:text-[#60A5FA]"
                           : "text-zinc-500 hover:bg-zinc-200/60 dark:text-zinc-400 dark:hover:bg-zinc-800"

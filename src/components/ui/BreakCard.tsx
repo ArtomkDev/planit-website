@@ -1,7 +1,7 @@
 // components/ui/BreakCard.tsx
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Timer, Coffee } from "@phosphor-icons/react";
 import { cn } from "@/lib/utils/classNames";
 
@@ -32,6 +32,7 @@ export function BreakCard({
   minutesLabel = "min",
   showIcon = true,
 }: BreakCardProps) {
+  const reduceMotion = useReducedMotion();
   const backgroundStyle =
     gradientColors && gradientColors.length >= 2
       ? {
@@ -45,11 +46,11 @@ export function BreakCard({
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          initial={{ height: 0, opacity: 0, marginBottom: 0 }}
+          initial={reduceMotion ? false : { height: 0, opacity: 0, marginBottom: 0 }}
           animate={{ height: 48, opacity: 1, marginBottom: 8 }}
           exit={{ height: 0, opacity: 0, marginBottom: 0 }}
-          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          whileHover={{ scale: 1.015, y: -2 }}
+          transition={{ duration: reduceMotion ? 0 : 0.45, ease: [0.22, 1, 0.36, 1] }}
+          whileHover={reduceMotion ? undefined : { scale: 1.015, y: -2 }}
           className={cn("overflow-hidden flex justify-center w-full", className)}
         >
           <div className="mx-6 h-12 rounded-[18px] w-full max-w-[calc(100%-48px)] bg-white dark:bg-zinc-900 shadow-[0_2px_5px_rgba(0,0,0,.05)] overflow-hidden relative flex items-center justify-center">
@@ -64,14 +65,14 @@ export function BreakCard({
             <div className="relative z-10 flex flex-row items-center justify-center px-4">
               {showIcon && <motion.div
                 key={isBreakNow ? "timer" : "coffee"}
-                initial={{ scale: 0 }}
+                initial={reduceMotion ? false : { scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{
                   type: "spring",
                   stiffness: 100,
                   damping: 12,
                 }}
-                whileHover={{ rotate: isBreakNow ? 12 : -8, scale: 1.12 }}
+                whileHover={reduceMotion ? undefined : { rotate: isBreakNow ? 12 : -8, scale: 1.12 }}
                 className="mr-2"
               >
                 {isBreakNow ? (

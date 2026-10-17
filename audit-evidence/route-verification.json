@@ -1,0 +1,152 @@
+[
+  {
+    "requested": "/",
+    "url": "http://127.0.0.1:4175/",
+    "title": "PlanIt",
+    "heading": [
+      "PlanIt"
+    ]
+  },
+  {
+    "requested": "/uk/wiki",
+    "url": "http://127.0.0.1:4175/uk/wiki",
+    "title": "Terms & Conditions | PlanIt",
+    "heading": [
+      "Terms & Conditions"
+    ]
+  },
+  {
+    "requested": "/en/wiki",
+    "url": "http://127.0.0.1:4175/en/wiki",
+    "title": "Terms & Conditions | PlanIt",
+    "heading": [
+      "Terms & Conditions"
+    ]
+  },
+  {
+    "requested": "/auth/action?lang=uk",
+    "url": "http://127.0.0.1:4175/uk/auth/action?lang=uk",
+    "title": "Дія з акаунтом | PlanIt",
+    "heading": []
+  },
+  {
+    "requested": "/uk/auth/action",
+    "url": "http://127.0.0.1:4175/uk/auth/action",
+    "title": "Дія з акаунтом | PlanIt",
+    "heading": [
+      "Не вдалося відкрити дію"
+    ]
+  },
+  {
+    "requested": "/en/auth/action",
+    "url": "http://127.0.0.1:4175/en/auth/action",
+    "title": "Account action | PlanIt",
+    "heading": [
+      "We can’t open this action"
+    ]
+  },
+  {
+    "requested": "/uk/not-a-page",
+    "url": "http://127.0.0.1:4175/uk/not-a-page",
+    "title": "404 | PlanIt",
+    "heading": [
+      "Сторінку не знайдено."
+    ]
+  },
+  {
+    "requested": "/en/not-a-page",
+    "url": "http://127.0.0.1:4175/en/not-a-page",
+    "title": "404 | PlanIt",
+    "heading": [
+      "Page not found."
+    ]
+  },
+  {
+    "requested": "/de",
+    "url": "http://127.0.0.1:4175/de",
+    "title": "404 | PlanIt",
+    "heading": [
+      "Page not found."
+    ]
+  },
+  {
+    "requested": "/uk/privacy",
+    "url": "http://127.0.0.1:4175/uk/wiki/privacy",
+    "title": "Privacy Policy | PlanIt",
+    "heading": [
+      "Privacy Policy"
+    ]
+  },
+  {
+    "requested": "/uk/terms",
+    "url": "http://127.0.0.1:4175/uk/wiki/terms",
+    "title": "Terms & Conditions | PlanIt",
+    "heading": [
+      "Terms & Conditions"
+    ]
+  },
+  {
+    "requested": "/uk/delete",
+    "url": "http://127.0.0.1:4175/uk/wiki/delete",
+    "title": "Account & Data Deletion | PlanIt",
+    "heading": [
+      "Account & Data Deletion"
+    ]
+  },
+  {
+    "requested": "/uk/cookies",
+    "url": "http://127.0.0.1:4175/uk/wiki/cookies",
+    "title": "Cookie & Similar Technologies Policy | PlanIt",
+    "heading": [
+      "Cookie & Similar Technologies Policy"
+    ]
+  },
+  {
+    "requested": "/uk/licenses",
+    "url": "http://127.0.0.1:4175/uk/wiki/licenses",
+    "title": "Open-Source Software Licenses | PlanIt",
+    "heading": [
+      "Open-Source Software Licenses"
+    ]
+  },
+  {
+    "requested": "/en/privacy",
+    "url": "http://127.0.0.1:4175/en/wiki/privacy",
+    "title": "Privacy Policy | PlanIt",
+    "heading": [
+      "Privacy Policy"
+    ]
+  },
+  {
+    "requested": "/en/terms",
+    "url": "http://127.0.0.1:4175/en/wiki/terms",
+    "title": "Terms & Conditions | PlanIt",
+    "heading": [
+      "Terms & Conditions"
+    ]
+  },
+  {
+    "requested": "/en/delete",
+    "url": "http://127.0.0.1:4175/en/wiki/delete",
+    "title": "Account & Data Deletion | PlanIt",
+    "heading": [
+      "Account & Data Deletion"
+    ]
+  },
+  {
+    "requested": "/en/cookies",
+    "url": "http://127.0.0.1:4175/en/wiki/cookies",
+    "title": "Cookie & Similar Technologies Policy | PlanIt",
+    "heading": [
+      "Cookie & Similar Technologies Policy"
+    ]
+  },
+  {
+    "requested": "/en/licenses",
+    "url": "http://127.0.0.1:4175/en/wiki/licenses",
+    "title": "Open-Source Software Licenses | PlanIt",
+    "heading": [
+      "Open-Source Software Licenses"
+    ]
+  }
+]

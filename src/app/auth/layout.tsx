@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const themeInitializationScript = `
   (function () {
@@ -18,9 +19,7 @@ const themeInitializationScript = `
 `;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || "https://planit-hub.firebaseapp.com",
-  ),
+  metadataBase: new URL(SITE_URL),
   title: "PlanIt",
   robots: { index: false, follow: false },
 };

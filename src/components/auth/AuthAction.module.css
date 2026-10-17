@@ -53,18 +53,18 @@
 .iconBadge[data-tone="success"] {
   border-color: color-mix(in srgb, #10b981 34%, var(--site-border));
   background: color-mix(in srgb, #10b981 9%, var(--site-surface));
-  color: #059669;
+  color: var(--site-success);
 }
 
 .iconBadge[data-tone="error"] {
   border-color: color-mix(in srgb, #ef4444 34%, var(--site-border));
   background: color-mix(in srgb, #ef4444 8%, var(--site-surface));
-  color: #dc2626;
+  color: var(--site-error);
 }
 
 .eyebrow {
   margin-top: 1.1rem;
-  color: var(--brand);
+  color: var(--brand-strong);
   font-size: 0.7rem;
   font-weight: 850;
   letter-spacing: 0.12em;
@@ -88,6 +88,7 @@
   font-weight: 540;
   line-height: 1.65;
   text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .accountLine {
@@ -179,8 +180,8 @@
 
 .visibilityToggle {
   display: grid;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
   flex: 0 0 auto;
   place-items: center;
   border-radius: 0.45rem;
@@ -260,7 +261,7 @@
 }
 
 .criteriaList li[data-passes="true"] {
-  color: #059669;
+  color: var(--site-success);
 }
 
 .criteriaList svg {
@@ -281,7 +282,7 @@
 }
 
 .matchMessage[data-matches="true"] {
-  color: #059669;
+  color: var(--site-success);
 }
 
 .matchMessage svg {
@@ -296,7 +297,7 @@
   border-left: 3px solid #ef4444;
   padding: 0.65rem 0.75rem;
   background: color-mix(in srgb, #ef4444 7%, transparent);
-  color: color-mix(in srgb, #ef4444 82%, var(--site-text));
+  color: var(--site-error);
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.45;
@@ -343,14 +344,14 @@
 }
 
 .primaryAction {
-  border: 1px solid var(--brand);
-  background: var(--brand);
-  color: #fff;
+  border: 1px solid var(--brand-strong);
+  background: var(--brand-strong);
+  color: var(--site-bg);
 }
 
 .primaryAction:hover:not(:disabled) {
-  border-color: color-mix(in srgb, var(--brand) 86%, black);
-  background: color-mix(in srgb, var(--brand) 86%, black);
+  border-color: color-mix(in srgb, var(--brand-strong) 86%, black);
+  background: color-mix(in srgb, var(--brand-strong) 86%, black);
 }
 
 .primaryAction:disabled {
@@ -371,6 +372,8 @@
 
 .primaryAction:focus-visible,
 .secondaryAction:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 22%, transparent);
 }
 

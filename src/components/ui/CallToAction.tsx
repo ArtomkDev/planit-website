@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
+import { APP_URL } from "@/lib/site";
 
 const shapeOneOuterVariants: Variants = {
   rest: {
@@ -65,10 +65,11 @@ const shapeTwoOuterVariants: Variants = {
 
 export const CallToAction = () => {
   const t = useTranslations("CTA");
+  const reduceMotion = useReducedMotion();
   const [isCardHovered, setIsCardHovered] = useState<boolean>(false);
   const [isButtonHovered, setIsButtonHovered] = useState<boolean>(false);
 
-  const animationState = isButtonHovered ? "buttonHover" : isCardHovered ? "hover" : "rest";
+  const animationState = reduceMotion ? "rest" : isButtonHovered ? "buttonHover" : isCardHovered ? "hover" : "rest";
 
   return (
     <section className="relative w-full max-w-5xl mx-auto px-6 py-24 md:py-32 z-20">
@@ -78,7 +79,7 @@ export const CallToAction = () => {
         <div
           onMouseEnter={() => setIsCardHovered(true)}
           onMouseLeave={() => setIsCardHovered(false)}
-          className="relative overflow-hidden rounded-[3rem] border border-site-border bg-site-surface p-12 text-center shadow-[0_34px_90px_-62px_var(--site-surface-shadow)] transition-colors duration-500 md:p-20"
+          className="relative overflow-hidden rounded-[3rem] border border-site-border bg-site-surface p-6 sm:p-12 text-center shadow-[0_34px_90px_-62px_var(--site-surface-shadow)] transition-colors duration-500 md:p-20"
         >
           <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand/10 via-transparent to-transparent" />
           
@@ -131,7 +132,7 @@ export const CallToAction = () => {
           </motion.div>
 
           <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-            <h2 className="mb-6 text-4xl font-black tracking-tight text-site-text md:text-6xl">
+            <h2 className="mb-6 text-3xl font-black sm:text-4xl tracking-tight text-site-text md:text-6xl">
               {t("title")}
             </h2>
             <p className="mb-10 text-xl text-site-muted">
@@ -144,7 +145,7 @@ export const CallToAction = () => {
               whileTap={{ scale: 0.95 }}
               onMouseEnter={() => setIsButtonHovered(true)}
               onMouseLeave={() => setIsButtonHovered(false)}
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-site-text px-10 py-5 text-lg font-bold text-site-bg shadow-[0_18px_50px_-28px_var(--site-surface-shadow)] transition-shadow duration-300 hover:shadow-[0_22px_60px_-30px_var(--site-surface-shadow)]"
+              className="group inline-flex items-center justify-center gap-3 rounded-full bg-site-text px-5 py-4 text-base sm:px-10 sm:text-lg font-bold text-site-bg shadow-[0_18px_50px_-28px_var(--site-surface-shadow)] transition-shadow duration-300 hover:shadow-[0_22px_60px_-30px_var(--site-surface-shadow)]"
             >
               {t("button")}
               <ArrowRight 

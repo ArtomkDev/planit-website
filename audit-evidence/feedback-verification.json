@@ -1,0 +1,632 @@
+[
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 20,
+          "right": 325
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 20,
+          "right": 325
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 360
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 20,
+          "right": 355
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 20,
+          "right": 355
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 390
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 32,
+          "right": 350.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 402.5,
+          "right": 721
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 768
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 32,
+          "right": 478
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 530,
+          "right": 976
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 1023
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 80.5,
+          "right": 440.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 568.5,
+          "right": 928.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 1024
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 288.5,
+          "right": 648.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 776.5,
+          "right": 1136.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 1440
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 528.5,
+          "right": 888.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 1016.5,
+          "right": 1376.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "dark",
+    "webStatusColor": [
+      "rgb(244, 91, 138)"
+    ],
+    "width": 1920
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 20,
+          "right": 325
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 20,
+          "right": 325
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 360
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 20,
+          "right": 355
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 20,
+          "right": 355
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 390
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 32,
+          "right": 350.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 402.5,
+          "right": 721
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 768
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 32,
+          "right": 478
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 530,
+          "right": 976
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 1023
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 80.5,
+          "right": 440.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 568.5,
+          "right": 928.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 1024
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 288.5,
+          "right": 648.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 776.5,
+          "right": 1136.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 1440
+  },
+  {
+    "documentOverflow": false,
+    "googlePlay": [
+      {
+        "childCount": 1,
+        "href": "https://play.google.com/store/apps/details?id=com.artomk.planit"
+      }
+    ],
+    "previews": [
+      {
+        "bounds": {
+          "left": 528.5,
+          "right": 888.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      },
+      {
+        "bounds": {
+          "left": 1016.5,
+          "right": 1376.5
+        },
+        "caption": "Картка предмета",
+        "colors": [
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)",
+          "rgb(255, 255, 255)"
+        ]
+      }
+    ],
+    "removedCaption": false,
+    "theme": "light",
+    "webStatusColor": [
+      "rgb(185, 47, 96)"
+    ],
+    "width": 1920
+  }
+]

@@ -1,0 +1,227 @@
+{
+  "routes": [
+    {
+      "bodyLang": "uk",
+      "bodyLength": 26770,
+      "firstSection": "1. Сфера застосування та контролер",
+      "headingLang": "uk",
+      "internalLinks": [],
+      "obsoleteNotice": false,
+      "path": "/uk/wiki/privacy",
+      "title": "Політика конфіденційності"
+    },
+    {
+      "bodyLang": "uk",
+      "bodyLength": 14048,
+      "firstSection": "1. Сфера застосування та контролер",
+      "headingLang": "uk",
+      "internalLinks": [],
+      "obsoleteNotice": false,
+      "path": "/uk/wiki/cookies",
+      "title": "Політика щодо cookies та подібних технологій"
+    },
+    {
+      "bodyLang": "uk",
+      "bodyLength": 20427,
+      "firstSection": "1. Угода та сфера застосування",
+      "headingLang": "uk",
+      "internalLinks": [],
+      "obsoleteNotice": false,
+      "path": "/uk/wiki/terms",
+      "title": "Умови користування"
+    },
+    {
+      "bodyLang": "uk",
+      "bodyLength": 12828,
+      "firstSection": "1. Обсяг і зазначення авторства",
+      "headingLang": "uk",
+      "internalLinks": [],
+      "obsoleteNotice": false,
+      "path": "/uk/wiki/licenses",
+      "title": "Повідомлення про стороннє програмне забезпечення"
+    },
+    {
+      "bodyLang": "uk",
+      "bodyLength": 10388,
+      "firstSection": "1. Видалення акаунта в застосунку",
+      "headingLang": "uk",
+      "internalLinks": [],
+      "obsoleteNotice": false,
+      "path": "/uk/wiki/delete",
+      "title": "Видалення акаунта й даних"
+    },
+    {
+      "bodyLang": "en",
+      "bodyLength": 26201,
+      "firstSection": "On this page",
+      "headingLang": "en",
+      "internalLinks": [
+        "/en/wiki/delete",
+        "/en/wiki/cookies",
+        "/en/wiki/delete"
+      ],
+      "obsoleteNotice": false,
+      "path": "/en/wiki/privacy",
+      "title": "Privacy Policy"
+    },
+    {
+      "bodyLang": "en",
+      "bodyLength": 13961,
+      "firstSection": "On this page",
+      "headingLang": "en",
+      "internalLinks": [
+        "/en/wiki/privacy",
+        "/en/wiki/delete",
+        "/en/wiki/privacy",
+        "/en/wiki/privacy#rights"
+      ],
+      "obsoleteNotice": false,
+      "path": "/en/wiki/cookies",
+      "title": "Cookie & Similar Technologies Policy"
+    },
+    {
+      "bodyLang": "en",
+      "bodyLength": 19597,
+      "firstSection": "On this page",
+      "headingLang": "en",
+      "internalLinks": [
+        "/en/wiki/privacy",
+        "/en/wiki/cookies",
+        "/en/wiki/delete",
+        "/en/wiki/privacy",
+        "/en/wiki/cookies",
+        "/en/wiki/privacy",
+        "/en/wiki/delete"
+      ],
+      "obsoleteNotice": false,
+      "path": "/en/wiki/terms",
+      "title": "Terms & Conditions"
+    },
+    {
+      "bodyLang": "en",
+      "bodyLength": 10708,
+      "firstSection": "On this page",
+      "headingLang": "en",
+      "internalLinks": [
+        "/en/wiki/terms"
+      ],
+      "obsoleteNotice": false,
+      "path": "/en/wiki/licenses",
+      "title": "Third-Party Software Notices"
+    },
+    {
+      "bodyLang": "en",
+      "bodyLength": 9414,
+      "firstSection": "1. Delete an account in the app",
+      "headingLang": "en",
+      "internalLinks": [
+        "/en/wiki/cookies",
+        "/en/wiki/privacy",
+        "/en/wiki/privacy"
+      ],
+      "obsoleteNotice": false,
+      "path": "/en/wiki/delete",
+      "title": "Account & Data Deletion"
+    }
+  ],
+  "responsive": [
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 360
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 390
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 768
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 1023
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 1024
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 1440
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "light",
+      "titleLang": "uk",
+      "width": 1920
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 360
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 390
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 768
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 1023
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 1024
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 1440
+    },
+    {
+      "articleOverflow": false,
+      "overflow": false,
+      "theme": "dark",
+      "titleLang": "uk",
+      "width": 1920
+    }
+  ]
+}

@@ -149,17 +149,92 @@
       "src_content_legal_documents_legaldocumentmetadata"
     ],
     "3": [
-      "src_app_global_not_found",
-      "src_app_global_not_found_client",
-      "src_app_global_not_found_client_copy",
-      "src_app_global_not_found_client_getclientlocale",
-      "src_app_global_not_found_client_getserverlocale",
-      "src_app_global_not_found_client_globalnotfoundclient",
-      "src_app_global_not_found_client_locale",
-      "src_app_global_not_found_client_notfoundcontent",
-      "src_app_global_not_found_client_subscribetolocale",
-      "src_app_global_not_found_globalnotfound",
-      "src_app_global_not_found_metadata",
+      "package",
+      "package_dependencies",
+      "package_dependencies_clsx",
+      "package_dependencies_firebase",
+      "package_dependencies_framer_motion",
+      "package_dependencies_next",
+      "package_dependencies_next_intl",
+      "package_dependencies_phosphor_icons_react",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_icons",
+      "package_dependencies_react_three_fiber",
+      "package_dependencies_tailwind_merge",
+      "package_dependencies_three",
+      "package_name",
+      "package_private",
+      "package_version",
+      "ref_clsx",
+      "ref_eslint",
+      "ref_eslint_config_next",
+      "ref_firebase",
+      "ref_firebase_tools",
+      "ref_next",
+      "ref_react_dom",
+      "ref_react_icons",
+      "ref_react_three_fiber",
+      "ref_tailwind_merge",
+      "ref_tailwindcss",
+      "ref_tailwindcss_postcss",
+      "ref_three",
+      "ref_types_caseless",
+      "ref_types_jsonwebtoken",
+      "ref_types_ms",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_types_request",
+      "ref_types_three",
+      "ref_types_tough_cookie",
+      "ref_types_ws",
+      "ref_typescript"
+    ],
+    "4": [
+      "ref_next_intl",
+      "ref_phosphor_icons_react",
+      "ref_react",
+      "src_components_features_appearancedemo",
+      "src_components_features_appearancedemo_appearancedemo",
+      "src_components_features_appearancedemo_appearancedemo_update",
+      "src_components_features_appearancedemo_getcardforeground",
+      "src_components_features_appearancedemo_initialappearance",
+      "src_components_features_appearancedemo_subjecticons",
+      "src_components_features_demoprimitives",
+      "src_components_features_demoprimitives_choicelist",
+      "src_components_features_demoprimitives_demoframe",
+      "src_components_features_demoprimitives_demorenderprops",
+      "src_components_features_demoprimitives_demotabs",
+      "src_components_features_demoprimitives_lessonpreview",
+      "src_components_features_demoprimitives_settingrow",
+      "src_components_features_demoprimitives_settingsgroup",
+      "src_components_features_demoprimitives_subjectcolors",
+      "src_components_features_featureshowcase",
+      "src_components_features_featureshowcase_features",
+      "src_components_features_featureshowcase_schedulefeature",
+      "src_components_features_featureshowcase_tasksfeature",
+      "src_components_features_lessoneditordemo",
+      "src_components_features_lessoneditordemo_expandedfield",
+      "src_components_features_lessoneditordemo_lessondraft",
+      "src_components_features_lessoneditordemo_lessoneditordemo",
+      "src_components_features_lessoneditordemo_lessoneditordemo_reset",
+      "src_components_features_lessoneditordemo_lessoneditordemo_toggle",
+      "src_components_features_lessoneditordemo_lessoneditordemo_update",
+      "src_components_features_schedulesettingsdemo",
+      "src_components_features_schedulesettingsdemo_initialsettings",
+      "src_components_features_schedulesettingsdemo_schedulesettingsdemo",
+      "src_components_features_schedulesettingsdemo_schedulesettingsdemo_formattime",
+      "src_components_features_schedulesettingsdemo_schedulesettingsdemo_update",
+      "src_components_features_tasksdemo",
+      "src_components_features_tasksdemo_demotask",
+      "src_components_features_tasksdemo_initialtasks",
+      "src_components_features_tasksdemo_taskappearance",
+      "src_components_features_tasksdemo_tasksdemo",
+      "src_components_features_tasksdemo_tasksdemo_reset",
+      "src_components_features_tasksdemo_tasksdemo_savetask"
+    ],
+    "5": [
       "src_app_locale_layout",
       "src_app_locale_layout_generatemetadata",
       "src_app_locale_layout_generatestaticparams",
@@ -170,9 +245,16 @@
       "src_components_layout_header",
       "src_components_layout_header_buildauthactionlocaleurl",
       "src_components_layout_header_header",
+      "src_components_layout_header_header_closemenu",
+      "src_components_layout_header_header_openmenusection",
+      "src_components_layout_header_header_preserveauthactiononlocalechange",
       "src_components_layout_header_headerlink",
       "src_components_layout_header_headerlinkprops",
       "src_components_layout_header_headerprops",
+      "src_components_ui_brandicons",
+      "src_components_ui_brandicons_androidrobotlogo",
+      "src_components_ui_brandicons_applebrandlogo",
+      "src_components_ui_brandicons_brandiconprops",
       "src_components_ui_cookieconsent",
       "src_components_ui_cookieconsent_cookieconsent",
       "src_components_ui_cookieconsent_getclientsnapshot",
@@ -184,82 +266,49 @@
       "src_components_ui_cookieconsent_storedcookieconsent",
       "src_components_ui_cookieconsent_subscribe",
       "src_components_ui_cookieconsent_syncfirebaseanalyticsconsent",
-      "src_components_ui_cookieconsent_writestoredconsent"
-    ],
-    "4": [
-      "src_components_providers_themeprovider",
-      "src_components_providers_themeprovider_getstoredtheme",
-      "src_components_providers_themeprovider_getsystemtheme",
-      "src_components_providers_themeprovider_theme",
-      "src_components_providers_themeprovider_themecontext",
-      "src_components_providers_themeprovider_themecontexttype",
-      "src_components_providers_themeprovider_themeprovider",
-      "src_components_providers_themeprovider_themestore",
-      "src_components_providers_themeprovider_usetheme",
-      "src_components_ui_breakcard",
-      "src_components_ui_breakcard_breakcard",
-      "src_components_ui_breakcard_breakcardprops",
-      "src_components_ui_interactivegridpattern",
-      "src_components_ui_interactivegridpattern_gridsurface",
-      "src_components_ui_interactivegridpattern_gridsurfaceprops",
-      "src_components_ui_interactivegridpattern_interactivegridpattern",
-      "src_components_ui_interactivegridpattern_interactivegridpatternprops",
-      "src_components_ui_lessoncard",
-      "src_components_ui_lessoncard_elasticlayeroptions",
-      "src_components_ui_lessoncard_lessoncard",
-      "src_components_ui_lessoncard_lessoncardprops",
-      "src_components_ui_lessoncard_lessondata",
-      "src_components_ui_lessoncard_positivemodulo",
-      "src_components_ui_lessoncard_resolvelessonappearance",
-      "src_components_ui_lessoncard_subjecttheme",
-      "src_components_ui_lessoncard_subjectthemes",
-      "src_components_ui_lessoncard_useelasticfollower",
-      "src_components_ui_lessoncardaccent",
-      "src_components_ui_lessoncardaccent_accentdepth",
-      "src_components_ui_lessoncardaccent_createseededrandom",
-      "src_components_ui_lessoncardaccent_lessoncardaccent",
-      "src_components_ui_lessoncardaccent_lessoncardaccentprops",
-      "src_components_ui_lessoncardaccent_pick",
-      "src_components_ui_lessoncardaccent_timepresets",
-      "src_lib_utils_classnames",
-      "src_lib_utils_classnames_cn"
-    ],
-    "5": [
-      "eslint",
-      "eslint_config_next",
-      "firebase_tools",
-      "package_devdependencies",
-      "package_devdependencies_eslint",
-      "package_devdependencies_eslint_config_next",
-      "package_devdependencies_firebase_tools",
-      "package_devdependencies_tailwindcss",
-      "package_devdependencies_tailwindcss_postcss",
-      "package_devdependencies_types_caseless",
-      "package_devdependencies_types_jsonwebtoken",
-      "package_devdependencies_types_ms",
-      "package_devdependencies_types_node",
-      "package_devdependencies_types_react",
-      "package_devdependencies_types_react_dom",
-      "package_devdependencies_types_request",
-      "package_devdependencies_types_three",
-      "package_devdependencies_types_tough_cookie",
-      "package_devdependencies_types_ws",
-      "package_devdependencies_typescript",
-      "tailwindcss",
-      "tailwindcss_postcss",
-      "types_caseless",
-      "types_jsonwebtoken",
-      "types_ms",
-      "types_node",
-      "types_react",
-      "types_react_dom",
-      "types_request",
-      "types_three",
-      "types_tough_cookie",
-      "types_ws",
-      "typescript"
+      "src_components_ui_cookieconsent_writestoredconsent",
+      "src_components_ui_themetoggle",
+      "src_components_ui_themetoggle_getclientsnapshot",
+      "src_components_ui_themetoggle_getserversnapshot",
+      "src_components_ui_themetoggle_subscribe",
+      "src_components_ui_themetoggle_themetoggle"
     ],
     "6": [
+      "src_app_locale_page",
+      "src_app_locale_page_home",
+      "src_components_features_featureshowcase_featureshowcase",
+      "src_components_ui_appshowcase",
+      "src_components_ui_appshowcase_appshowcase",
+      "src_components_ui_bentocard",
+      "src_components_ui_bentocard_bentocard",
+      "src_components_ui_bentocard_bentocardprops",
+      "src_components_ui_bentocard_proximityblock",
+      "src_components_ui_bentocard_proximityblockprops",
+      "src_components_ui_calltoaction",
+      "src_components_ui_calltoaction_calltoaction",
+      "src_components_ui_calltoaction_shapeoneoutervariants",
+      "src_components_ui_calltoaction_shapetwooutervariants",
+      "src_components_ui_homepagepixelclusters",
+      "src_components_ui_homepagepixelclusters_clusters",
+      "src_components_ui_homepagepixelclusters_clusterspec",
+      "src_components_ui_homepagepixelclusters_createrandomizedpatternlayout",
+      "src_components_ui_homepagepixelclusters_default_pattern_layout",
+      "src_components_ui_homepagepixelclusters_getpixelsequencephase",
+      "src_components_ui_homepagepixelclusters_homepagepixelclusters",
+      "src_components_ui_homepagepixelclusters_ispatternlayout",
+      "src_components_ui_homepagepixelclusters_pixel_patterns",
+      "src_components_ui_homepagepixelclusters_pixelpattern",
+      "src_components_ui_homepagepixelclusters_pixelspec",
+      "src_components_ui_homepagepixelclusters_randomunit",
+      "src_components_ui_homepagepixelclusters_shufflepatterns",
+      "src_components_ui_infiniteribbon",
+      "src_components_ui_infiniteribbon_infiniteribbon",
+      "src_components_ui_infiniteribbon_infiniteribbonitem",
+      "src_components_ui_infiniteribbon_infiniteribbonprops",
+      "src_components_ui_platforms",
+      "src_components_ui_platforms_platforms"
+    ],
+    "7": [
       "ref_dom",
       "ref_dom_iterable",
       "ref_esnext",
@@ -290,7 +339,66 @@
       "tsconfig_exclude",
       "tsconfig_include"
     ],
-    "7": [
+    "8": [
+      "src_components_providers_themeprovider_usetheme",
+      "src_components_ui_breakcard",
+      "src_components_ui_breakcard_breakcard",
+      "src_components_ui_breakcard_breakcardprops",
+      "src_components_ui_interactivegridpattern",
+      "src_components_ui_interactivegridpattern_gridsurface",
+      "src_components_ui_interactivegridpattern_gridsurfaceprops",
+      "src_components_ui_interactivegridpattern_interactivegridpattern",
+      "src_components_ui_interactivegridpattern_interactivegridpatternprops",
+      "src_components_ui_lessoncard",
+      "src_components_ui_lessoncard_elasticlayeroptions",
+      "src_components_ui_lessoncard_lessoncard",
+      "src_components_ui_lessoncard_lessoncardprops",
+      "src_components_ui_lessoncard_lessondata",
+      "src_components_ui_lessoncard_positivemodulo",
+      "src_components_ui_lessoncard_resolvelessonappearance",
+      "src_components_ui_lessoncard_subjecttheme",
+      "src_components_ui_lessoncard_subjectthemes",
+      "src_components_ui_lessoncard_useelasticfollower",
+      "src_components_ui_lessoncardaccent",
+      "src_components_ui_lessoncardaccent_accentdepth",
+      "src_components_ui_lessoncardaccent_createseededrandom",
+      "src_components_ui_lessoncardaccent_lessoncardaccent",
+      "src_components_ui_lessoncardaccent_lessoncardaccentprops",
+      "src_components_ui_lessoncardaccent_pick",
+      "src_components_ui_lessoncardaccent_timepresets",
+      "src_lib_utils_classnames",
+      "src_lib_utils_classnames_cn"
+    ],
+    "9": [
+      "ref_framer_motion",
+      "src_components_ui_hero",
+      "src_components_ui_hero_hero",
+      "src_components_ui_pixeldisplay",
+      "src_components_ui_pixeldisplay_clamp",
+      "src_components_ui_pixeldisplay_createcanvaspixelrenderer",
+      "src_components_ui_pixeldisplay_createenergylookup",
+      "src_components_ui_pixeldisplay_createfigureseed",
+      "src_components_ui_pixeldisplay_createshader",
+      "src_components_ui_pixeldisplay_createwebglpixelrenderer",
+      "src_components_ui_pixeldisplay_display_colors",
+      "src_components_ui_pixeldisplay_edgecellnoise",
+      "src_components_ui_pixeldisplay_energy_lookup",
+      "src_components_ui_pixeldisplay_falloff_lookup",
+      "src_components_ui_pixeldisplay_fastcos",
+      "src_components_ui_pixeldisplay_fastfalloff",
+      "src_components_ui_pixeldisplay_fastsin",
+      "src_components_ui_pixeldisplay_field_lookup",
+      "src_components_ui_pixeldisplay_figurebody",
+      "src_components_ui_pixeldisplay_figureseed",
+      "src_components_ui_pixeldisplay_matrixgrid",
+      "src_components_ui_pixeldisplay_pixeldisplay",
+      "src_components_ui_pixeldisplay_pixeldisplayprops",
+      "src_components_ui_pixeldisplay_pixelrenderer",
+      "src_components_ui_pixeldisplay_seededunit",
+      "src_components_ui_pixeldisplay_sin_lookup",
+      "src_components_ui_pixeldisplay_smoothstep"
+    ],
+    "10": [
       "src_app_locale_auth_action_page",
       "src_app_locale_auth_action_page_authactionpage",
       "src_app_locale_auth_action_page_authactionpageprops",
@@ -318,34 +426,7 @@
       "src_components_auth_authactionclient_runinitialaction",
       "src_components_auth_authactionclient_supportedmode"
     ],
-    "8": [
-      "clsx",
-      "firebase",
-      "framer_motion",
-      "next",
-      "next_intl",
-      "package_dependencies",
-      "package_dependencies_clsx",
-      "package_dependencies_firebase",
-      "package_dependencies_framer_motion",
-      "package_dependencies_next",
-      "package_dependencies_next_intl",
-      "package_dependencies_phosphor_icons_react",
-      "package_dependencies_react",
-      "package_dependencies_react_dom",
-      "package_dependencies_react_icons",
-      "package_dependencies_react_three_fiber",
-      "package_dependencies_tailwind_merge",
-      "package_dependencies_three",
-      "phosphor_icons_react",
-      "react",
-      "react_dom",
-      "react_icons",
-      "react_three_fiber",
-      "tailwind_merge",
-      "three"
-    ],
-    "9": [
+    "11": [
       "src_components_canvasui_asciify",
       "src_components_canvasui_asciify_asciify",
       "src_components_canvasui_asciify_asciifycharset",
@@ -372,33 +453,7 @@
       "src_components_canvasui_asciify_resolvepositionvalue",
       "src_components_canvasui_asciify_supportshtmlincanvas"
     ],
-    "10": [
-      "src_components_ui_hero",
-      "src_components_ui_hero_clamp",
-      "src_components_ui_hero_createcanvaspixelrenderer",
-      "src_components_ui_hero_createenergylookup",
-      "src_components_ui_hero_createfigureseed",
-      "src_components_ui_hero_createshader",
-      "src_components_ui_hero_createwebglpixelrenderer",
-      "src_components_ui_hero_display_colors",
-      "src_components_ui_hero_edgecellnoise",
-      "src_components_ui_hero_energy_lookup",
-      "src_components_ui_hero_falloff_lookup",
-      "src_components_ui_hero_fastcos",
-      "src_components_ui_hero_fastfalloff",
-      "src_components_ui_hero_fastsin",
-      "src_components_ui_hero_field_lookup",
-      "src_components_ui_hero_figurebody",
-      "src_components_ui_hero_figureseed",
-      "src_components_ui_hero_hero",
-      "src_components_ui_hero_matrixgrid",
-      "src_components_ui_hero_pixeldisplay",
-      "src_components_ui_hero_pixelrenderer",
-      "src_components_ui_hero_seededunit",
-      "src_components_ui_hero_sin_lookup",
-      "src_components_ui_hero_smoothstep"
-    ],
-    "11": [
+    "12": [
       "components",
       "components_aliases",
       "components_aliases_components",
@@ -423,10 +478,7 @@
       "components_tailwind_prefix",
       "components_tsx"
     ],
-    "12": [
-      "package",
-      "package_name",
-      "package_private",
+    "13": [
       "package_scripts",
       "package_scripts_build",
       "package_scripts_build_firebase",
@@ -445,10 +497,49 @@
       "package_scripts_legal_manifest",
       "package_scripts_lint",
       "package_scripts_preview_export",
-      "package_scripts_start",
-      "package_version"
+      "package_scripts_start"
     ],
-    "13": [
+    "14": [
+      "src_app_global_not_found",
+      "src_app_global_not_found_client",
+      "src_app_global_not_found_client_copy",
+      "src_app_global_not_found_client_getclientlocale",
+      "src_app_global_not_found_client_getserverlocale",
+      "src_app_global_not_found_client_globalnotfoundclient",
+      "src_app_global_not_found_client_locale",
+      "src_app_global_not_found_client_notfoundcontent",
+      "src_app_global_not_found_client_subscribetolocale",
+      "src_app_global_not_found_globalnotfound",
+      "src_app_global_not_found_metadata",
+      "src_components_providers_themeprovider",
+      "src_components_providers_themeprovider_getstoredtheme",
+      "src_components_providers_themeprovider_getsystemtheme",
+      "src_components_providers_themeprovider_theme",
+      "src_components_providers_themeprovider_themecontext",
+      "src_components_providers_themeprovider_themecontexttype",
+      "src_components_providers_themeprovider_themeprovider",
+      "src_components_providers_themeprovider_themestore"
+    ],
+    "15": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_firebase_tools",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_caseless",
+      "package_devdependencies_types_jsonwebtoken",
+      "package_devdependencies_types_ms",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_types_request",
+      "package_devdependencies_types_three",
+      "package_devdependencies_types_tough_cookie",
+      "package_devdependencies_types_ws",
+      "package_devdependencies_typescript"
+    ],
+    "16": [
       "src_components_ui_floatingschedule",
       "src_components_ui_floatingschedule_createschedule",
       "src_components_ui_floatingschedule_createseededrandom",
@@ -466,7 +557,7 @@
       "src_components_ui_floatingschedule_timeslots",
       "src_components_ui_floatingschedule_weekkeys"
     ],
-    "14": [
+    "17": [
       "src_lib_firebase",
       "src_lib_firebase_applyanalyticsconsent",
       "src_lib_firebase_auth",
@@ -484,24 +575,7 @@
       "src_lib_firebase_waitforfirebaseanalyticsbootstrap",
       "src_lib_firebase_window"
     ],
-    "15": [
-      "src_app_locale_page",
-      "src_app_locale_page_home",
-      "src_components_ui_homepagepixelclusters",
-      "src_components_ui_homepagepixelclusters_clusters",
-      "src_components_ui_homepagepixelclusters_clusterspec",
-      "src_components_ui_homepagepixelclusters_createrandomizedpatternlayout",
-      "src_components_ui_homepagepixelclusters_default_pattern_layout",
-      "src_components_ui_homepagepixelclusters_getpixelsequencephase",
-      "src_components_ui_homepagepixelclusters_homepagepixelclusters",
-      "src_components_ui_homepagepixelclusters_ispatternlayout",
-      "src_components_ui_homepagepixelclusters_pixel_patterns",
-      "src_components_ui_homepagepixelclusters_pixelpattern",
-      "src_components_ui_homepagepixelclusters_pixelspec",
-      "src_components_ui_homepagepixelclusters_randomunit",
-      "src_components_ui_homepagepixelclusters_shufflepatterns"
-    ],
-    "16": [
+    "18": [
       "src_components_canvasui_liquid",
       "src_components_canvasui_liquid_createliquid",
       "src_components_canvasui_liquid_defaults",
@@ -518,7 +592,7 @@
       "src_components_canvasui_liquid_supportshtmlincanvas",
       "src_components_canvasui_liquid_target"
     ],
-    "17": [
+    "19": [
       "src_components_canvasui_flamewrap",
       "src_components_canvasui_flamewrap_createflamewrap",
       "src_components_canvasui_flamewrap_defaults",
@@ -532,7 +606,7 @@
       "src_components_canvasui_flamewrap_paintablecanvas",
       "src_components_canvasui_flamewrap_supportshtmlincanvas"
     ],
-    "18": [
+    "20": [
       "scripts_serve_static_export",
       "scripts_serve_static_export_isfile",
       "scripts_serve_static_export_isinsideroot",
@@ -544,16 +618,7 @@
       "scripts_serve_static_export_sendfile",
       "scripts_serve_static_export_server"
     ],
-    "19": [
-      "src_components_ui_appshowcase",
-      "src_components_ui_appshowcase_appshowcase",
-      "src_components_ui_bentocard",
-      "src_components_ui_bentocard_bentocard",
-      "src_components_ui_bentocard_bentocardprops",
-      "src_components_ui_bentocard_proximityblock",
-      "src_components_ui_bentocard_proximityblockprops"
-    ],
-    "20": [
+    "21": [
       "src_app_locale_template",
       "src_app_locale_template_template",
       "src_app_locale_template_templateprops",
@@ -561,7 +626,7 @@
       "src_components_motion_pagetransition_pagetransition",
       "src_components_motion_pagetransition_pagetransitionprops"
     ],
-    "21": [
+    "22": [
       "src_app_opengraph_image",
       "src_app_opengraph_image_opengraphimage",
       "src_app_opengraph_image_size",
@@ -569,7 +634,7 @@
       "src_app_twitter_image_size",
       "src_app_twitter_image_twitterimage"
     ],
-    "22": [
+    "23": [
       "src_components_motion_scrollreveal",
       "src_components_motion_scrollreveal_scrollreveal",
       "src_components_motion_scrollreveal_scrollrevealprops",
@@ -577,19 +642,12 @@
       "src_lib_framer_variants_fadeinup",
       "src_lib_framer_variants_staggercontainer"
     ],
-    "23": [
+    "24": [
       "scripts_update_legal_manifest",
       "scripts_update_legal_manifest_documents",
       "scripts_update_legal_manifest_extractmetadata",
       "scripts_update_legal_manifest_legaldirectory",
       "scripts_update_legal_manifest_manifest"
-    ],
-    "24": [
-      "src_components_ui_themetoggle",
-      "src_components_ui_themetoggle_getclientsnapshot",
-      "src_components_ui_themetoggle_getserversnapshot",
-      "src_components_ui_themetoggle_subscribe",
-      "src_components_ui_themetoggle_themetoggle"
     ],
     "25": [
       "src_app_auth_action_page",
@@ -598,91 +656,69 @@
       "src_app_auth_action_page_redirectfallback"
     ],
     "26": [
-      "src_components_ui_brandicons",
-      "src_components_ui_brandicons_androidrobotlogo",
-      "src_components_ui_brandicons_applebrandlogo",
-      "src_components_ui_brandicons_brandiconprops"
-    ],
-    "27": [
-      "src_components_ui_calltoaction",
-      "src_components_ui_calltoaction_calltoaction",
-      "src_components_ui_calltoaction_shapeoneoutervariants",
-      "src_components_ui_calltoaction_shapetwooutervariants"
-    ],
-    "28": [
-      "src_components_ui_infiniteribbon",
-      "src_components_ui_infiniteribbon_infiniteribbon",
-      "src_components_ui_infiniteribbon_infiniteribbonitem",
-      "src_components_ui_infiniteribbon_infiniteribbonprops"
-    ],
-    "29": [
       "next_config",
       "next_config_nextconfig",
       "next_config_withnextintl"
     ],
-    "30": [
+    "27": [
       "src_app_apple_icon",
       "src_app_apple_icon_appleicon",
       "src_app_apple_icon_size"
     ],
-    "31": [
+    "28": [
       "src_app_auth_layout",
       "src_app_auth_layout_authlayout",
       "src_app_auth_layout_metadata"
     ],
-    "32": [
+    "29": [
       "src_app_icon",
       "src_app_icon_icon",
       "src_app_icon_size"
     ],
-    "33": [
+    "30": [
       "eslint_config",
       "eslint_config_eslintconfig"
     ],
-    "34": [
+    "31": [
       "postcss_config",
       "postcss_config_config"
     ],
-    "35": [
+    "32": [
       "src_app_locale_delete_page",
       "src_app_locale_delete_page_deleteaccountpage"
     ],
-    "36": [
+    "33": [
       "src_app_locale_privacy_page",
       "src_app_locale_privacy_page_privacypage"
     ],
-    "37": [
+    "34": [
       "src_app_locale_terms_page",
       "src_app_locale_terms_page_termspage"
     ],
-    "38": [
+    "35": [
       "src_app_manifest",
       "src_app_manifest_manifest"
     ],
-    "39": [
+    "36": [
       "src_app_robots",
       "src_app_robots_robots"
     ],
-    "40": [
+    "37": [
       "src_components_auth_authactionredirect",
       "src_components_auth_authactionredirect_authactionredirect"
     ],
-    "41": [
+    "38": [
       "src_components_i18n_localepreference",
       "src_components_i18n_localepreference_localepreference"
     ],
-    "42": [
-      "src_components_ui_platforms",
-      "src_components_ui_platforms_platforms"
-    ],
-    "43": [
+    "39": [
       "src_i18n_request",
       "src_i18n_request_locales"
     ],
-    "44": [
+    "40": [
       "scripts_deploy_firebase"
     ],
-    "45": [
+    "41": [
       "scripts_graphify"
     ]
   },
@@ -690,36 +726,36 @@
     "0": 0.07692307692307693,
     "1": 0.046464646464646465,
     "2": 0.06976744186046512,
-    "3": 0.07777777777777778,
-    "4": 0.08888888888888889,
-    "5": 0.06060606060606061,
-    "6": 0.06896551724137931,
-    "7": 0.11384615384615385,
-    "8": 0.08,
-    "9": 0.12,
-    "10": 0.13043478260869565,
-    "11": 0.08695652173913043,
+    "3": 0.04878048780487805,
+    "4": 0.1024390243902439,
+    "5": 0.07957957957957958,
+    "6": 0.08333333333333333,
+    "7": 0.06896551724137931,
+    "8": 0.1164021164021164,
+    "9": 0.1168091168091168,
+    "10": 0.11384615384615385,
+    "11": 0.12,
     "12": 0.08695652173913043,
-    "13": 0.20833333333333334,
-    "14": 0.20833333333333334,
-    "15": 0.19047619047619047,
-    "16": 0.17142857142857143,
-    "17": 0.22727272727272727,
-    "18": 0.26666666666666666,
-    "19": 0.38095238095238093,
-    "20": 0.4,
+    "13": 0.10526315789473684,
+    "14": 0.15204678362573099,
+    "15": 0.11764705882352941,
+    "16": 0.20833333333333334,
+    "17": 0.20833333333333334,
+    "18": 0.17142857142857143,
+    "19": 0.22727272727272727,
+    "20": 0.26666666666666666,
     "21": 0.4,
     "22": 0.4,
     "23": 0.4,
-    "24": 0.7,
+    "24": 0.4,
     "25": 0.5,
-    "26": 0.5,
-    "27": 0.5,
-    "28": 0.5,
+    "26": 0.6666666666666666,
+    "27": 0.6666666666666666,
+    "28": 0.6666666666666666,
     "29": 0.6666666666666666,
-    "30": 0.6666666666666666,
-    "31": 0.6666666666666666,
-    "32": 0.6666666666666666,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
     "33": 1.0,
     "34": 1.0,
     "35": 1.0,
@@ -728,11 +764,7 @@
     "38": 1.0,
     "39": 1.0,
     "40": 1.0,
-    "41": 1.0,
-    "42": 1.0,
-    "43": 1.0,
-    "44": 1.0,
-    "45": 1.0
+    "41": 1.0
   },
   "gods": [
     {
@@ -746,19 +778,29 @@
       "degree": 16
     },
     {
+      "id": "src_components_ui_pixeldisplay_pixeldisplay",
+      "label": "PixelDisplay()",
+      "degree": 13
+    },
+    {
       "id": "src_components_legal_legaldocumentroute_getlegaldocumentmetadata",
       "label": "getLegalDocumentMetadata()",
       "degree": 11
     },
     {
-      "id": "src_components_ui_hero_pixeldisplay",
-      "label": "PixelDisplay()",
+      "id": "ref_next_intl",
+      "label": "next-intl",
       "degree": 10
     },
     {
-      "id": "src_lib_utils_classnames_cn",
-      "label": "cn()",
-      "degree": 9
+      "id": "ref_phosphor_icons_react",
+      "label": "@phosphor-icons/react",
+      "degree": 10
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 10
     },
     {
       "id": "src_components_auth_authactionclient_authactionclient",
@@ -766,27 +808,39 @@
       "degree": 9
     },
     {
+      "id": "src_lib_utils_classnames_cn",
+      "label": "cn()",
+      "degree": 9
+    },
+    {
       "id": "src_components_legal_legaldocumentclient_warmlegalloadingdocuments",
       "label": "warmLegalLoadingDocuments()",
       "degree": 8
-    },
-    {
-      "id": "tsconfig_include",
-      "label": "include",
-      "degree": 7
-    },
-    {
-      "id": "src_components_legal_legaldocumentclient_readcachedlegalloadingdocument",
-      "label": "readCachedLegalLoadingDocument()",
-      "degree": 7
-    },
-    {
-      "id": "src_components_legal_legaldocumentclient_sanitizeattributes",
-      "label": "sanitizeAttributes()",
-      "degree": 7
     }
   ],
   "surprises": [
+    {
+      "source": "PixelDisplay()",
+      "target": "useTheme()",
+      "source_files": [
+        "src/components/ui/PixelDisplay.tsx",
+        "src/components/providers/ThemeProvider.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "LegalLoadingPreloader()",
+      "target": "warmAllLegalLoadingDocuments()",
+      "source_files": [
+        "src/components/legal/LegalLoadingPreloader.tsx",
+        "src/components/legal/LegalDocumentClient.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `LegalLoadingPreloader()` unexpectedly reaches hub `warmAllLegalLoadingDocuments()`"
+    },
     {
       "source": "generateMetadata()",
       "target": "getLegalDocumentMetadata()",
@@ -814,28 +868,6 @@
       "target": "getLegalDocumentMetadata()",
       "source_files": [
         "src/app/[locale]/wiki/licenses/page.tsx",
-        "src/components/legal/LegalDocumentRoute.tsx"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "peripheral node `generateMetadata()` unexpectedly reaches hub `getLegalDocumentMetadata()`"
-    },
-    {
-      "source": "generateMetadata()",
-      "target": "getLegalDocumentMetadata()",
-      "source_files": [
-        "src/app/[locale]/wiki/privacy/page.tsx",
-        "src/components/legal/LegalDocumentRoute.tsx"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "peripheral node `generateMetadata()` unexpectedly reaches hub `getLegalDocumentMetadata()`"
-    },
-    {
-      "source": "generateMetadata()",
-      "target": "getLegalDocumentMetadata()",
-      "source_files": [
-        "src/app/[locale]/wiki/terms/page.tsx",
         "src/components/legal/LegalDocumentRoute.tsx"
       ],
       "confidence": "EXTRACTED",

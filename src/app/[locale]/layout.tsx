@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -40,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "SEO.home" });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://planit-app.com";
+  const baseUrl = SITE_URL;
   const url = `${baseUrl}/${locale}`;
 
   return {
@@ -48,8 +49,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: { template: "%s | PlanIt", default: t("title") },
     description: t("description"),
     alternates: { canonical: url, languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk` } },
-    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale, type: "website" },
-    twitter: { card: "summary_large_image", title: t("title"), description: t("description") },
+    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale, type: "website", images: [`${SITE_URL}/opengraph-image`] },
+    twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`${SITE_URL}/twitter-image`] },
   };
 }
 
@@ -64,13 +65,13 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
       </head>
       <body suppressHydrationWarning className="flex min-h-screen flex-col bg-site-bg font-sans text-site-text antialiased selection:bg-brand/25 selection:text-site-text">
-        <LegalLoadingPreloadLinks />
+        <LegalLoadingPreloadLinks locale={locale} />
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
             <LocalePreference />
             <LegalLoadingPreloader />
             <Header />
-            <main className="flex-grow flex flex-col w-full relative z-10">
+            <main id="main-content" tabIndex={-1} className="flex-grow flex flex-col w-full relative z-10">
               {children}
             </main>
             <Footer />

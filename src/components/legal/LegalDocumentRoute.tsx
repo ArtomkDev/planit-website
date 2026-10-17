@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import {
-  legalDocuments,
+  getLegalDocumentData,
   type LegalDocumentKind,
 } from "@/content/legal-documents";
 import { LegalDocument } from "./LegalDocument";
@@ -12,9 +13,9 @@ export async function getLegalDocumentMetadata(
   kind: LegalDocumentKind,
 ): Promise<Metadata> {
   const { locale } = await params;
-  const document = legalDocuments[kind];
+  const document = getLegalDocumentData(kind, locale);
   const baseUrl =
-    process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
+    SITE_URL;
   const url = `${baseUrl}/${locale}/wiki/${kind}`;
 
   return {
@@ -34,6 +35,7 @@ export async function getLegalDocumentMetadata(
       siteName: "PlanIt",
       locale,
       type: "website",
+      images: [`${SITE_URL}/opengraph-image`],
     },
   };
 }

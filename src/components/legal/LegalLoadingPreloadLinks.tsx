@@ -1,19 +1,7 @@
-import { legalDocumentOrder } from "@/content/legal-documents";
+import { getLegalManifestDocument, legalDocumentOrder, type LegalManifest } from "@/content/legal-documents";
 import legalManifestJson from "../../../public/content/legal/manifest.json";
 
-type LegalPreloadManifestDocument = {
-  loadingPath?: string;
-  loadingSha256?: string;
-  sha256?: string;
-  version?: string;
-};
-
-type LegalPreloadManifest = {
-  version?: string;
-  documents?: Partial<Record<string, LegalPreloadManifestDocument>>;
-};
-
-const legalManifest = legalManifestJson as LegalPreloadManifest;
+const legalManifest = legalManifestJson as LegalManifest;
 
 function buildVersionedAssetUrl(path: string, version?: string) {
   if (!version) {
@@ -25,9 +13,9 @@ function buildVersionedAssetUrl(path: string, version?: string) {
   return `${path}${separator}v=${encodeURIComponent(version)}`;
 }
 
-function getLegalLoadingPreloadUrls() {
+function getLegalLoadingPreloadUrls(locale: string) {
   return legalDocumentOrder.flatMap((documentKind) => {
-    const documentManifest = legalManifest.documents?.[documentKind];
+    const documentManifest = getLegalManifestDocument(documentKind, locale, legalManifest);
     const loadingPath = documentManifest?.loadingPath;
 
     if (!loadingPath) {
@@ -44,10 +32,10 @@ function getLegalLoadingPreloadUrls() {
   });
 }
 
-export function LegalLoadingPreloadLinks() {
+export function LegalLoadingPreloadLinks({ locale }: { locale: string }) {
   return (
     <>
-      {getLegalLoadingPreloadUrls().map((href) => (
+      {getLegalLoadingPreloadUrls(locale).map((href) => (
         <link
           as="fetch"
           crossOrigin="anonymous"

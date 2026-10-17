@@ -1,6 +1,7 @@
 {
   "Navigation": {
     "home": "Home",
+    "features": "Features",
     "platforms": "Platforms",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -24,7 +25,12 @@
     "playStore": "Google Play",
     "playStoreDescription": "Install the Android app from Google Play.",
     "language": "UK",
-    "theme": "Toggle theme"
+    "theme": "Toggle theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "globalNavigation": "Main navigation",
+    "switchLanguage": "Перемкнути на українську",
+    "skipContent": "Skip to content"
   },
   "Hero": {
     "badge": "Your study day, all in one place",
@@ -86,6 +92,171 @@
       }
     }
   },
+  "Features": {
+    "badge": "PlanIt features",
+    "title": "Your schedule. Your rules.",
+    "description": "Take a look inside PlanIt. Adjust settings, style subjects, and add tasks right here.",
+    "demoCaption": "Interactive demo · changes stay in this example",
+    "openApp": "Continue in PlanIt",
+    "lesson": {
+      "label": "Classes",
+      "title": "Every class detail in its place.",
+      "description": "Subject, time, room, and teacher. Set shared subject details or make a change for a single class.",
+      "points": {
+        "first": "Use a schedule slot or set a custom class time",
+        "second": "Class type, room, and teacher alongside the subject",
+        "third": "Repeat every week or in selected cycle weeks"
+      },
+      "hint": "Try changing the class type or time."
+    },
+    "appearance": {
+      "label": "Appearance",
+      "title": "Recognize a subject at a glance.",
+      "description": "A solid color or your own gradient, a familiar icon, and a distinctive card. Give each subject its own look in PlanIt.",
+      "points": {
+        "first": "Colors from the app’s palette",
+        "second": "Two-color gradients with an adjustable angle",
+        "third": "Subject icons become a pattern on the card"
+      },
+      "hint": "Pick a color or an icon to change the card."
+    },
+    "tasks": {
+      "label": "Tasks",
+      "title": "Homework stays with its class.",
+      "description": "Write down what needs doing and link it to a class. The subject and time help you find the right task quickly.",
+      "points": {
+        "first": "Tasks linked to specific classes",
+        "second": "Filter tasks by schedule",
+        "third": "Completed cards collapse to free up space"
+      },
+      "hint": "Complete a task or add one of your own."
+    },
+    "schedule": {
+      "label": "Settings",
+      "title": "A schedule that follows your rhythm.",
+      "description": "Set the start of your day, class duration, and breaks. Then choose the week cycle and reminder times for your schedule.",
+      "points": {
+        "first": "Upcoming class times update automatically",
+        "second": "Multiple weeks in one schedule cycle",
+        "third": "Reminders and automatic task linking"
+      },
+      "hint": "Change class duration and watch the times update."
+    },
+    "ui": {
+      "reset": "Reset demo",
+      "save": "Save",
+      "saved": "Saved",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "editLesson": "Edit class",
+      "math": "Higher mathematics",
+      "informatics": "Computer science",
+      "chemistry": "Chemistry",
+      "physics": "Physics",
+      "lecture": "Lecture",
+      "practice": "Practical",
+      "lab": "Laboratory",
+      "teacherName": "O. Koval",
+      "secondTeacher": "I. Bondar",
+      "thirdTeacher": "M. Levchenko",
+      "subject": "Subject",
+      "subjectName": "Subject name",
+      "time": "Time",
+      "slotTime": "Class slot",
+      "customTime": "Custom",
+      "start": "Start",
+      "end": "End",
+      "lessonNumber": "Class {number}",
+      "invalidTime": "The class must end after it starts.",
+      "classType": "Class type",
+      "allLessons": "All classes",
+      "thisLesson": "This class",
+      "scope": "Classes affected by this change",
+      "globalScopeHint": "Shared value for classes of this subject.",
+      "localScopeHint": "A value for this class only.",
+      "location": "Location",
+      "room": "Room",
+      "people": "Teachers",
+      "teacher": "Teacher",
+      "repeat": "Recurrence",
+      "when": "When it takes place",
+      "everyWeek": "Every week",
+      "chooseWeeks": "Selected weeks",
+      "selectedWeeks": "Weeks: {weeks}",
+      "cycleWeeks": "Cycle weeks",
+      "week": "Week {number}",
+      "reminders": "Reminders",
+      "reminderMode": "Reminder time",
+      "defaultReminder": "Schedule default · 30 min before",
+      "default": "Schedule default",
+      "off": "Off",
+      "beforeMinutes": "{minutes} min before class",
+      "minutes": "{count} min",
+      "reminderDemoHint": "In PlanIt, the reminder arrives before class starts.",
+      "cardColor": "Card color",
+      "cardPreview": "Subject card",
+      "appearanceHint": "Choose a color or gradient for this subject’s cards.",
+      "color": "Color",
+      "gradient": "Gradient",
+      "gradientSettings": "Gradient settings",
+      "firstColor": "Color 1",
+      "secondColor": "Color 2",
+      "angle": "Angle",
+      "subjectIcon": "Subject icon",
+      "chooseIcon": "Choose an icon",
+      "colors": {
+        "blue": "Blue",
+        "indigo": "Indigo",
+        "violet": "Violet",
+        "pink": "Pink",
+        "teal": "Teal",
+        "green": "Green",
+        "orange": "Orange",
+        "red": "Red"
+      },
+      "icons": {
+        "calculator": "Calculator",
+        "code": "Code",
+        "flask": "Flask",
+        "atom": "Atom",
+        "book": "Book",
+        "palette": "Palette"
+      },
+      "tasks": "Tasks",
+      "taskEditor": "Edit task",
+      "newTask": "New task",
+      "addTask": "Add task",
+      "pendingTasks": "Remaining: {count}",
+      "mySchedule": "My schedule",
+      "examSchedule": "Exam preparation",
+      "scheduleFilter": "Schedule filter",
+      "linkedLesson": "Linked class",
+      "taskText": "Task text",
+      "taskPlaceholder": "What needs to be done?",
+      "taskLessonHint": "The subject and time stay with the task.",
+      "tuesday": "Tue",
+      "mathTask": "Solve integral problems 1–8",
+      "codeTask": "Finish laboratory assignment 3",
+      "physicsTask": "Review Newton’s laws",
+      "examTask": "Work through the exam questions",
+      "completeTask": "Change task status",
+      "taskCompleted": "Task completed",
+      "taskRestored": "Task marked as incomplete",
+      "scheduleSettings": "Schedule settings",
+      "general": "General",
+      "lessonTimes": "Class times",
+      "timing": "Classes and breaks",
+      "dayStart": "Day starts at",
+      "allDurations": "All class durations, min",
+      "allBreaks": "All break durations, min",
+      "timingHint": "Change the duration and the following classes shift automatically.",
+      "breakMinutes": "Break · {count} min",
+      "invalidTiming": "Check the time and durations: all three classes must fit within one day.",
+      "weekCount": "Number of weeks",
+      "autoLink": "Link to the next class",
+      "autoLinkHint": "New subject tasks link to the next class automatically."
+    }
+  },
   "AppShowcase": {
     "badge": "Made for real study days",
     "title": "Small things that save time between classes",
@@ -133,7 +304,7 @@
     "items": {
       "ios": {
         "title": "iOS",
-        "description": "The project includes iOS configuration, but a public iOS build and an iOS widget have not been released.",
+        "description": "The iPhone and iPad version is still in development. You can use PlanIt in your browser in the meantime.",
         "button": "In development",
         "status": "In development"
       },
@@ -161,7 +332,8 @@
     "legal": "Legal",
     "rights": "All rights reserved.",
     "status": "Available on Google Play",
-    "androidAttribution": "Android robot reproduced or modified from work by Google and used under the Creative Commons 3.0 Attribution License."
+    "androidAttribution": "Android robot reproduced or modified from work by Google and used under the Creative Commons 3.0 Attribution License.",
+    "cookieSettings": "Cookie preferences"
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -202,7 +374,28 @@
     "mobileContents": "Table of contents",
     "contents": "Contents",
     "support": "Questions about this document?",
-    "supportAction": "Contact support"
+    "supportAction": "Contact support",
+    "navigation": "PlanIt documents",
+    "loading": "Loading document",
+    "loadError": "The document could not be loaded. Please try again.",
+    "retry": "Try again",
+    "version": "Version",
+    "supportLabel": "PlanIt support",
+    "summaries": {
+      "privacy": "Data and privacy",
+      "cookies": "Browser storage and your choices",
+      "terms": "Rules for using the service",
+      "licenses": "Open-source license notices",
+      "delete": "Account and data deletion"
+    },
+    "skipContent": "Skip to content",
+    "titles": {
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Rules",
+      "terms": "Terms of Service",
+      "licenses": "Third-Party Licenses",
+      "delete": "Account Deletion"
+    }
   },
   "DecorativeCards": {
     "subjects": [
@@ -219,9 +412,32 @@
       "Biology",
       "Algorithms and data structures"
     ],
-    "types": ["Lecture", "Practice", "Laboratory", "Seminar", "Workshop", "Consultation"],
-    "rooms": ["204", "Lab 3", "Studio 2", "Room 118", "Media library", "Hall 4", "Room 312", "Online"],
-    "buildings": ["Main building", "Building B", "Science center", "Creative hub", "Library", "North campus"],
+    "types": [
+      "Lecture",
+      "Practice",
+      "Laboratory",
+      "Seminar",
+      "Workshop",
+      "Consultation"
+    ],
+    "rooms": [
+      "204",
+      "Lab 3",
+      "Studio 2",
+      "Room 118",
+      "Media library",
+      "Hall 4",
+      "Room 312",
+      "Online"
+    ],
+    "buildings": [
+      "Main building",
+      "Building B",
+      "Science center",
+      "Creative hub",
+      "Library",
+      "North campus"
+    ],
     "teachers": [
       "O. Koval",
       "I. Bondar",
@@ -247,6 +463,7 @@
       "generic": "Opening your secure link…",
       "resetPassword": "Checking your password link…",
       "verifyEmail": "Verifying your email address…",
+      "verifyAndChangeEmail": "Verifying your new email address…",
       "recoverEmail": "Restoring your email address…",
       "description": "This should only take a moment. Keep this page open."
     },
@@ -308,6 +525,11 @@
     "verifyEmail": {
       "successTitle": "Email verified",
       "successDescription": "Your email address is verified. You can now return to PlanIt."
+    },
+    "verifyAndChangeEmail": {
+      "successTitle": "Email changed",
+      "successDescription": "Your new email address is verified. Open PlanIt and sign in with the new address.",
+      "successDescriptionWithEmail": "The address {email} is verified and set for your account. Open PlanIt and sign in with the new address."
     },
     "recoverEmail": {
       "successTitle": "Email restored",

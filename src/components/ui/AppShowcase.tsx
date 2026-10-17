@@ -90,7 +90,7 @@ export function AppShowcase() {
       <LessonCardAccent seed={23} className="-left-64 top-[34%]" />
       <LessonCardAccent seed={24} depth="background" className="left-[16%] bottom-6" />
       <ScrollReveal className="relative z-20 flex flex-col items-start mb-16">
-        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand">
+        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand-strong">
           {t("badge")}
         </span>
         <h2 className="max-w-2xl text-4xl font-black tracking-tight text-site-text md:text-5xl">

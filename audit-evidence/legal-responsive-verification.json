@@ -1,0 +1,98 @@
+[
+  {
+    "article": {
+      "bottom": 27750.48107910156,
+      "height": 26859.40625,
+      "left": 16,
+      "right": 329,
+      "top": 891.0748291015625,
+      "width": 313,
+      "x": 16,
+      "y": 891.0748291015625
+    },
+    "content": 345,
+    "overflow": 345,
+    "sidebarPosition": "static",
+    "width": 360
+  },
+  {
+    "article": {
+      "bottom": 25029.13732910156,
+      "height": 24138.0625,
+      "left": 16,
+      "right": 359,
+      "top": 891.0748291015625,
+      "width": 343,
+      "x": 16,
+      "y": 891.0748291015625
+    },
+    "content": 375,
+    "overflow": 375,
+    "sidebarPosition": "static",
+    "width": 390
+  },
+  {
+    "article": {
+      "bottom": 16526.261352539062,
+      "height": 15649.9365234375,
+      "left": 24,
+      "right": 729,
+      "top": 876.3248291015625,
+      "width": 705,
+      "x": 24,
+      "y": 876.3248291015625
+    },
+    "content": 753,
+    "overflow": 753,
+    "sidebarPosition": "static",
+    "width": 768
+  },
+  {
+    "article": {
+      "bottom": 17927.481079101562,
+      "height": 17485.65625,
+      "left": 344,
+      "right": 985,
+      "top": 441.8248291015625,
+      "width": 641,
+      "x": 344,
+      "y": 441.8248291015625
+    },
+    "content": 1009,
+    "overflow": 1009,
+    "sidebarPosition": "sticky",
+    "width": 1024
+  },
+  {
+    "article": {
+      "bottom": 13664.324829101562,
+      "height": 13222.5,
+      "left": 360.5,
+      "right": 1384.5,
+      "top": 441.8248291015625,
+      "width": 1024,
+      "x": 360.5,
+      "y": 441.8248291015625
+    },
+    "content": 1425,
+    "overflow": 1425,
+    "sidebarPosition": "sticky",
+    "width": 1440
+  },
+  {
+    "article": {
+      "bottom": 13664.324829101562,
+      "height": 13222.5,
+      "left": 440.5,
+      "right": 1464.5,
+      "top": 441.8248291015625,
+      "width": 1024,
+      "x": 440.5,
+      "y": 441.8248291015625
+    },
+    "content": 1905,
+    "overflow": 1905,
+    "sidebarPosition": "sticky",
+    "width": 1920
+  }
+]

@@ -31,6 +31,7 @@ import {
 } from "@phosphor-icons/react";
 import { PointerEvent } from "react";
 import { cn } from "@/lib/utils/classNames";
+import { getReadableCardStyle } from "@/lib/card-contrast";
 
 export interface LessonData {
   id: string;
@@ -39,6 +40,8 @@ export interface LessonData {
   appearanceSeed?: number;
   subjectColor?: string;
   gradientColors?: string[];
+  gradientAngle?: number;
+  textColor?: string;
   icon?: Icon;
   timeStart: string;
   timeEnd: string;
@@ -185,10 +188,16 @@ export function LessonCard({
   };
 
   const gradientColors = lesson.gradientColors ?? appearance.gradientColors;
+  const readable = getReadableCardStyle(gradientColors.length >= 2 ? gradientColors : [lesson.subjectColor || appearance.gradientColors[0]]);
+  const contentColor = lesson.textColor ?? readable.textColor;
+  const scrimOpacity = lesson.textColor ? 0 : readable.scrimOpacity;
+  const darkContent = contentColor === "#111827";
+  const mutedContentColor = darkContent ? "#111827" : "#ffffff";
+  const lightChipBackground = darkContent ? "rgba(255,255,255,.3)" : undefined;
   const backgroundStyle =
     gradientColors.length >= 2
       ? {
-          backgroundImage: `linear-gradient(125deg, ${gradientColors[0]}, ${gradientColors[1]})`,
+          backgroundImage: `linear-gradient(${lesson.gradientAngle ?? 125}deg, ${gradientColors[0]}, ${gradientColors[1]})`,
         }
       : {
           backgroundColor: lesson.subjectColor || "var(--color-indigo-500)",
@@ -202,6 +211,7 @@ export function LessonCard({
       onPointerLeave={handlePointerLeave}
       onPointerCancel={handlePointerLeave}
       onClick={onClick}
+      onKeyDown={onClick ? event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); onClick(); } } : undefined}
       role={onClick ? "button" : undefined}
       tabIndex={onClick ? 0 : undefined}
       aria-label={onClick ? lesson.subjectName : undefined}
@@ -249,6 +259,8 @@ export function LessonCard({
         }}
       />
 
+      {scrimOpacity > 0 && <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[15] rounded-[18px] bg-black" style={{ opacity: scrimOpacity }} />}
+
       {Icon && (
         <motion.div
           aria-hidden="true"
@@ -272,7 +284,7 @@ export function LessonCard({
               return (
                 <span key={index} className="flex h-[38px] w-[38px] items-center justify-center">
                   {(row + column) % 2 === 0 && (
-                    <Icon size={18} color="white" weight="regular" className="-rotate-12" />
+                    <Icon size={18} color={contentColor} weight="regular" className="-rotate-12" />
                   )}
                 </span>
               );
@@ -331,7 +343,7 @@ export function LessonCard({
               "flex flex-row items-center px-1.5 py-0.5 rounded-md",
               lesson.isActive ? "bg-zinc-950 dark:bg-white" : "bg-black/35"
             )}
-            style={{ transform: enable3D ? timeLayer.transform : undefined }}
+            style={{ transform: enable3D ? timeLayer.transform : undefined, backgroundColor: lesson.isActive ? undefined : lightChipBackground }}
           >
             {showIcons && <div className="w-3 h-3 flex items-center justify-center mr-1">
               {lesson.isActive ? (
@@ -341,7 +353,7 @@ export function LessonCard({
                   style={{ color: lesson.activeTextColor || "var(--background)" }}
                 />
               ) : (
-                <Clock size={11} color="white" weight="regular" />
+                <Clock size={11} color={contentColor} weight="regular" />
               )}
             </div>}
             <span
@@ -349,7 +361,7 @@ export function LessonCard({
                 "text-[11px] font-bold tabular-nums",
                 lesson.isActive ? "" : "text-white"
               )}
-              style={lesson.isActive ? { color: lesson.activeTextColor || "var(--background)" } : undefined}
+              style={{ color: lesson.isActive ? lesson.activeTextColor || "var(--background)" : contentColor }}
             >
               {lesson.isActive
                 ? `${lesson.activeLabel || "Left"} ${lesson.timeLeft}`
@@ -360,9 +372,9 @@ export function LessonCard({
           {lesson.displayType && (
             <motion.div
               className="bg-white/15 px-1.5 py-[2px] rounded-md border border-white/30"
-              style={{ transform: enable3D ? typeLayer.transform : undefined }}
+              style={{ transform: enable3D ? typeLayer.transform : undefined, backgroundColor: lightChipBackground }}
             >
-              <span className="text-white text-[8px] font-extrabold uppercase tracking-widest">
+              <span className="text-white text-[8px] font-extrabold uppercase tracking-widest" style={{ color: contentColor }}>
                 {lesson.displayType}
               </span>
             </motion.div>
@@ -373,7 +385,7 @@ export function LessonCard({
           className="my-0.5"
           style={{ transform: enable3D ? titleLayer.transform : undefined }}
         >
-          <span className="text-[17px] font-extrabold text-white drop-shadow-sm line-clamp-1">
+          <span className="text-[17px] font-extrabold text-white drop-shadow-sm line-clamp-1" style={{ color: contentColor, filter: darkContent ? "none" : undefined }}>
             {lesson.subjectName}
           </span>
         </motion.div>
@@ -381,12 +393,12 @@ export function LessonCard({
         <div className="flex flex-row items-center mt-0.5 gap-2.5">
           <motion.div
             className="flex flex-row items-center bg-black/15 px-[5px] py-0.5 rounded-[5px] max-w-[55%] mr-0"
-            style={{ transform: enable3D ? teacherLayer.transform : undefined }}
+            style={{ transform: enable3D ? teacherLayer.transform : undefined, backgroundColor: lightChipBackground }}
           >
               {showIcons && <div className="w-3 h-3 flex items-center justify-center mr-1">
-                <User size={11} color="rgba(255,255,255,0.85)" weight="fill" />
+                <User size={11} color={mutedContentColor} weight="fill" />
               </div>}
-              <span className="text-white/90 text-[10px] font-semibold line-clamp-1">
+              <span className="text-white/90 text-[10px] font-semibold line-clamp-1" style={{ color: mutedContentColor }}>
                 {lesson.teacherName || "—"}
               </span>
           </motion.div>
@@ -394,12 +406,12 @@ export function LessonCard({
           {(lesson.displayRoom || lesson.displayBuilding) && (
             <motion.div
               className="flex flex-row items-center bg-black/15 px-1.5 py-0.5 rounded-md max-w-[55%]"
-              style={{ transform: enable3D ? roomLayer.transform : undefined }}
+              style={{ transform: enable3D ? roomLayer.transform : undefined, backgroundColor: lightChipBackground }}
             >
               {showIcons && <div className="w-3 h-3 flex items-center justify-center mr-1">
-                <MapPin size={11} color="rgba(255,255,255,0.85)" weight="fill" />
+                <MapPin size={11} color={mutedContentColor} weight="fill" />
               </div>}
-              <span className="text-white/90 text-[10px] font-semibold line-clamp-1">
+              <span className="text-white/90 text-[10px] font-semibold line-clamp-1" style={{ color: mutedContentColor }}>
                 {lesson.displayBuilding ? `${lesson.displayBuilding} ` : ""}
                 {lesson.displayRoom}
               </span>

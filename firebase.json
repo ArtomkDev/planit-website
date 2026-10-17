@@ -11,6 +11,10 @@
     "trailingSlash": false,
     "headers": [
       {
+        "source": "/@(icon|apple-icon|opengraph-image|twitter-image)",
+        "headers": [{ "key": "Content-Type", "value": "image/png" }]
+      },
+      {
         "source": "/_next/static/**",
         "headers": [
           {
@@ -38,7 +42,7 @@
         ]
       },
       {
-        "source": "/content/legal/*.mdx",
+        "source": "/content/legal/**/*.mdx",
         "headers": [
           {
             "key": "Cache-Control",

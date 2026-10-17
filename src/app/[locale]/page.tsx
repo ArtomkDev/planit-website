@@ -4,6 +4,7 @@ import { AppShowcase } from "@/components/ui/AppShowcase";
 import { Platforms } from "@/components/ui/Platforms";
 import { CallToAction } from "@/components/ui/CallToAction";
 import { HomepagePixelClusters } from "@/components/ui/HomepagePixelClusters";
+import { FeatureShowcase } from "@/components/features/FeatureShowcase";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <InfiniteRibbon />
         <div className="relative isolate flex w-full flex-col">
           <HomepagePixelClusters />
+          <FeatureShowcase />
           <AppShowcase />
           <Platforms />
           <CallToAction />

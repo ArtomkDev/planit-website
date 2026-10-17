@@ -1,10 +1,12 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { analyticsOnlyConsent, createConsentGate, deniedConsent } from "./analytics-consent";
 import {
   getAnalytics,
   isSupported,
   setConsent,
+  setAnalyticsCollectionEnabled,
   type Analytics,
   type ConsentSettings,
 } from "firebase/analytics";
@@ -26,19 +28,9 @@ export const COOKIE_CONSENT_STORAGE_KEY = "planit-cookie-consent";
 
 export type CookieConsentChoice = "accepted" | "rejected";
 
-export const DEFAULT_DENIED_ANALYTICS_CONSENT = {
-  analytics_storage: "denied",
-  ad_storage: "denied",
-  ad_user_data: "denied",
-  ad_personalization: "denied",
-} satisfies ConsentSettings;
+export const DEFAULT_DENIED_ANALYTICS_CONSENT = deniedConsent satisfies ConsentSettings;
 
-const GRANTED_ANALYTICS_CONSENT = {
-  analytics_storage: "granted",
-  ad_storage: "granted",
-  ad_user_data: "granted",
-  ad_personalization: "granted",
-} satisfies ConsentSettings;
+const GRANTED_ANALYTICS_CONSENT = analyticsOnlyConsent satisfies ConsentSettings;
 
 type GtagDataLayerCommand = IArguments | unknown[];
 
@@ -51,6 +43,7 @@ declare global {
 let analyticsInstance: Analytics | null = null;
 let analyticsInitialization: Promise<Analytics | null> | null = null;
 let queuedGrantAfterBootstrap = false;
+const consentGate = createConsentGate();
 
 function applyAnalyticsConsent(consentSettings: ConsentSettings): void {
   if (typeof window === "undefined") {
@@ -108,13 +101,15 @@ function queueGrantConsentAfterBootstrap(): void {
   queuedGrantAfterBootstrap = true;
 
   void waitForFirebaseAnalyticsBootstrap()
-    .then(() => applyAnalyticsConsent(GRANTED_ANALYTICS_CONSENT))
+    .then(() => { if (consentGate.canGrant()) applyAnalyticsConsent(GRANTED_ANALYTICS_CONSENT); })
     .finally(() => {
       queuedGrantAfterBootstrap = false;
     });
 }
 
 export function denyFirebaseAnalyticsConsent(): void {
+  consentGate.update("rejected");
+  if (analyticsInstance) setAnalyticsCollectionEnabled(analyticsInstance, false);
   applyAnalyticsConsent(DEFAULT_DENIED_ANALYTICS_CONSENT);
 }
 
@@ -128,22 +123,26 @@ export async function getFirebaseAnalytics(): Promise<Analytics | null> {
   if (!analyticsInitialization) {
     analyticsInitialization = isSupported()
       .then((supported) => {
-        if (!supported) {
+        if (!supported || !consentGate.canGrant()) {
           return null;
         }
 
         applyAnalyticsConsent(DEFAULT_DENIED_ANALYTICS_CONSENT);
         analyticsInstance = getAnalytics(app);
+        setAnalyticsCollectionEnabled(analyticsInstance, consentGate.canGrant());
 
         return analyticsInstance;
       })
       .catch(() => null);
   }
 
-  return analyticsInitialization;
+  const analytics = await analyticsInitialization;
+  if (!analytics) analyticsInitialization = null;
+  return analytics;
 }
 
 export async function updateFirebaseAnalyticsConsent(choice: CookieConsentChoice): Promise<Analytics | null> {
+  consentGate.update(choice);
   if (choice === "rejected") {
     denyFirebaseAnalyticsConsent();
     return null;
@@ -152,7 +151,8 @@ export async function updateFirebaseAnalyticsConsent(choice: CookieConsentChoice
   const analytics = await getFirebaseAnalytics();
 
   if (analytics) {
-    queueGrantConsentAfterBootstrap();
+    setAnalyticsCollectionEnabled(analytics, consentGate.canGrant());
+    if (consentGate.canGrant()) queueGrantConsentAfterBootstrap();
   }
 
   return analytics;
