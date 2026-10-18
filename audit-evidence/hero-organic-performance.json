@@ -1,0 +1,11 @@
+{
+  "ultrawide": {
+    "width": 3440,
+    "documentWidth": 3440,
+    "frames": 51,
+    "medianMs": 11.900000005960464,
+    "p95Ms": 14.799999997019768
+  },
+  "errors": [],
+  "consoleErrors": []
+}

@@ -30,8 +30,8 @@
     "semantic_hash": "239f3ebf717465dc636818a1a619398d"
   },
   "public/content/legal/manifest.json": {
-    "mtime": 1792279841.656216,
-    "seen": 1792279947.0851943,
+    "mtime": 1792281242.4383037,
+    "seen": 1792281431.824629,
     "ast_hash": "6ea9fa0e79f0f77ee002774a04052c4e",
     "semantic_hash": ""
   },
@@ -474,9 +474,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/PixelDisplay.tsx": {
-    "mtime": 1791882145.1442769,
-    "seen": 1791882177.0723445,
-    "ast_hash": "80cb66f87a533d0f1c0b4e81cd4e15e6",
+    "mtime": 1792281206.4666202,
+    "seen": 1792281431.824711,
+    "ast_hash": "f93e15ac69e01a211426aa40113c04dc",
     "semantic_hash": ""
   },
   "src/app/(entry)/layout.tsx": {
@@ -558,9 +558,9 @@
     "semantic_hash": ""
   },
   "AUDIT.md": {
-    "mtime": 1792279939.379254,
-    "seen": 1792279947.0854023,
-    "ast_hash": "1cfd8bd78dd20eaec3458ba8f918994d",
+    "mtime": 1792281424.597592,
+    "seen": 1792281431.8247385,
+    "ast_hash": "f3fdbf83e6372256910a858a9f1bc32e",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -570,9 +570,9 @@
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1792279783.6684246,
-    "seen": 1792279947.0854056,
-    "ast_hash": "b6758ffa59c06407642a98977068c24c",
+    "mtime": 1792281424.5970824,
+    "seen": 1792281431.8247406,
+    "ast_hash": "18bac25acc9a6ee6b32f1c4dc5590297",
     "semantic_hash": ""
   },
   "GRAPHIFY.md": {
@@ -891,6 +891,18 @@
     "mtime": 1792279824.5732818,
     "seen": 1792279947.0853934,
     "ast_hash": "9f4a15f8ff0f194e207162cb887f97a3",
+    "semantic_hash": ""
+  },
+  "src/lib/hero-choreography.ts": {
+    "mtime": 1792281136.7867153,
+    "seen": 1792281431.8247247,
+    "ast_hash": "56ec8d61120a10c794b4643ba63ef711",
+    "semantic_hash": ""
+  },
+  "tests/hero-choreography.test.mjs": {
+    "mtime": 1792281268.5881736,
+    "seen": 1792281431.824733,
+    "ast_hash": "4c1e869d5125803fda8e4128db2736af",
     "semantic_hash": ""
   }
 }

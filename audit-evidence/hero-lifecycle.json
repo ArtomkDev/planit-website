@@ -1,0 +1,42 @@
+{
+  "movingStart": {
+    "frames": 450,
+    "hash": 27038651
+  },
+  "movingEnd": {
+    "frames": 471,
+    "hash": 27930618
+  },
+  "reducedStart": {
+    "frames": 473,
+    "hash": 20446743
+  },
+  "reducedEnd": {
+    "frames": 473,
+    "hash": 20446743
+  },
+  "resumed": {
+    "frames": 488,
+    "hash": 5237972
+  },
+  "offscreenStart": {
+    "frames": 488,
+    "hash": 5237972
+  },
+  "offscreenEnd": {
+    "frames": 488,
+    "hash": 5237972
+  },
+  "hiddenStart": {
+    "frames": 497,
+    "hash": 9183931
+  },
+  "hiddenEnd": {
+    "frames": 497,
+    "hash": 9183931
+  },
+  "visible": {
+    "frames": 507,
+    "hash": 15944747
+  }
+}

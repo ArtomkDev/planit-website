@@ -1,8 +1,8 @@
 "use client";
 
-import { useReducedMotion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import { useTheme } from "@/components/providers/ThemeProvider";
+import { createHeroChoreography } from "@/lib/hero-choreography";
 
 const DISPLAY_COLORS = {
   light: [244, 91, 138],
@@ -11,7 +11,8 @@ const DISPLAY_COLORS = {
 
 const TAU = Math.PI * 2;
 const MAX_FIGURES = 7;
-const MAX_LOBES = 24;
+const MAX_LOBES = 48;
+const MAX_SHOCKWAVES = 4;
 const SIN_LOOKUP_SIZE = 4096;
 const FALLOFF_LOOKUP_SIZE = 2048;
 const FALLOFF_LIMIT = 9;
@@ -23,6 +24,15 @@ const ALPHA_BUCKET_COUNT = 64;
 const FEATURE_REVEAL_DELAY = 0.4;
 const FEATURE_REVEAL_DURATION = 0.9;
 const FEATURE_CELL_FADE = 0.16;
+
+const REDUCED_MOTION_QUERY = "(prefers-reduced-motion: reduce)";
+function subscribeToMotionPreference(update: () => void) {
+  const media = window.matchMedia(REDUCED_MOTION_QUERY);
+  media.addEventListener("change", update);
+  return () => media.removeEventListener("change", update);
+}
+const getMotionPreference = () => window.matchMedia(REDUCED_MOTION_QUERY).matches;
+const getServerMotionPreference = () => true;
 
 type FigureSeed = {
   phaseX: number;
@@ -488,7 +498,11 @@ export function PixelDisplay({
 }: PixelDisplayProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const redrawRef = useRef<(() => void) | null>(null);
-  const reduceMotion = useReducedMotion() ?? false;
+  const reduceMotion = useSyncExternalStore(
+    subscribeToMotionPreference,
+    getMotionPreference,
+    getServerMotionPreference,
+  );
   const { theme } = useTheme();
   const themeRef = useRef(theme);
 
@@ -519,12 +533,30 @@ export function PixelDisplay({
     let hasStarted = variant === "hero" || reduceMotion;
     let visibleElapsed = 0;
     let isContextLost = false;
-    const animationStartedAt = performance.now();
-    let lastDrawAt = animationStartedAt;
+    let lastDrawAt = performance.now();
     const animationSeed = Math.random() * 1000;
     const figureSeeds = Array.from({ length: MAX_FIGURES }, (_, index) =>
       createFigureSeed(index, animationSeed),
     );
+    const choreography = createHeroChoreography(animationSeed, MAX_FIGURES);
+    const pairContact = new Uint8Array(MAX_FIGURES * MAX_FIGURES);
+    const lastSplit = new Float32Array(MAX_FIGURES);
+    const waveX = new Float32Array(MAX_SHOCKWAVES);
+    const waveY = new Float32Array(MAX_SHOCKWAVES);
+    const waveBorn = new Float32Array(MAX_SHOCKWAVES).fill(-100);
+    const wavePower = new Float32Array(MAX_SHOCKWAVES);
+    const waveRadius = new Float32Array(MAX_SHOCKWAVES);
+    const waveEnvelope = new Float32Array(MAX_SHOCKWAVES);
+    const activeWaveIndices = new Uint8Array(MAX_SHOCKWAVES);
+    let nextWave = 0;
+    const emitWave = (x: number, y: number, power: number) => {
+      if (variant !== "hero" || reduceMotion) return;
+      waveX[nextWave] = x;
+      waveY[nextWave] = y;
+      waveBorn[nextWave] = visibleElapsed;
+      wavePower[nextWave] = power;
+      nextWave = (nextWave + 1) % MAX_SHOCKWAVES;
+    };
     const figureTargetX = new Float32Array(MAX_FIGURES);
     const figureTargetY = new Float32Array(MAX_FIGURES);
     const interactionEnergy = new Float32Array(MAX_FIGURES);
@@ -535,6 +567,9 @@ export function PixelDisplay({
     const lobeX = new Float32Array(MAX_LOBES);
     const lobeY = new Float32Array(MAX_LOBES);
     const lobeInverseRadiusSquared = new Float32Array(MAX_LOBES);
+    const lobeInverseRadius = new Float32Array(MAX_LOBES);
+    const lobeOrganic = new Float32Array(MAX_LOBES);
+    const lobePhase = new Float32Array(MAX_LOBES);
     const lobeInverseStretch = new Float32Array(MAX_LOBES);
     const lobeSqrtStretch = new Float32Array(MAX_LOBES);
     const lobeCosine = new Float32Array(MAX_LOBES);
@@ -557,6 +592,7 @@ export function PixelDisplay({
       velocityX: 0,
       velocityY: 0,
       energy: 0,
+      pressed: false,
     };
 
     const appendLobe = (
@@ -566,16 +602,22 @@ export function PixelDisplay({
       stretch: number,
       rotation: number,
       strength: number,
+      organic = 0,
+      phase = 0,
     ) => {
       const needsRevealContour =
         variant === "feature" &&
         !reduceMotion &&
         visibleElapsed < FEATURE_REVEAL_DELAY + FEATURE_REVEAL_DURATION;
-      if (lobeCount >= MAX_LOBES || (strength <= 0.001 && !needsRevealContour)) return;
+      const lobeLimit = variant === "hero" ? MAX_LOBES : 24;
+      if (lobeCount >= lobeLimit || (strength <= 0.001 && !needsRevealContour)) return;
 
       lobeX[lobeCount] = x;
       lobeY[lobeCount] = y;
       lobeInverseRadiusSquared[lobeCount] = 1 / (radius * radius);
+      lobeInverseRadius[lobeCount] = 1 / radius;
+      lobeOrganic[lobeCount] = organic;
+      lobePhase[lobeCount] = phase;
       lobeInverseStretch[lobeCount] = 1 / stretch;
       lobeSqrtStretch[lobeCount] = Math.sqrt(stretch);
       lobeCosine[lobeCount] = Math.cos(rotation);
@@ -757,7 +799,7 @@ export function PixelDisplay({
       );
       lastDrawAt = timestamp;
       const canAdvance = isIntersecting && !document.hidden;
-      if (variant === "feature" && canAdvance) visibleElapsed += frameDelta;
+      if (canAdvance && !reduceMotion) visibleElapsed += frameDelta;
       if (
         variant === "feature" &&
         !reduceMotion &&
@@ -773,7 +815,7 @@ export function PixelDisplay({
         ? 18
         : variant === "feature"
           ? Math.max(0, visibleElapsed - FEATURE_REVEAL_DELAY)
-          : (timestamp - animationStartedAt) / 1000;
+          : visibleElapsed;
       const activeTheme = themeRef.current;
       const targetColor = DISPLAY_COLORS[activeTheme];
       const colorBlend = reduceMotion
@@ -820,9 +862,16 @@ export function PixelDisplay({
         Math.hypot(pointer.velocityX * aspect, pointer.velocityY),
       );
       const figureCount = compact ? 5 : MAX_FIGURES;
+      const formationScale = variant === "hero" && compact ? Math.min(1, aspect / 0.72) : 1;
+      if (variant === "hero") choreography.sample(time, aspect, figureCount);
 
       for (let index = 0; index < figureCount; index += 1) {
         const figure = figureSeeds[index];
+        if (variant === "hero") {
+          figureTargetX[index] = choreography.poses[index].x;
+          figureTargetY[index] = choreography.poses[index].y;
+          continue;
+        }
         const laneCenter = (index + 0.5) / figureCount;
         figureTargetX[index] = clamp(
           laneCenter +
@@ -878,14 +927,15 @@ export function PixelDisplay({
                 pointerDistance,
               ));
 
+          const steering = variant === "hero" ? 3.6 : 2.8;
           body.velocityX +=
-            (figureTargetX[index] - body.x) * 2.8 * frameDelta;
+            (figureTargetX[index] - body.x) * steering * frameDelta;
           body.velocityY +=
-            (figureTargetY[index] - body.y) * 2.8 * frameDelta;
+            (figureTargetY[index] - body.y) * steering * frameDelta;
 
           if (pointerInfluence > 0) {
             const pointerPush =
-              pointerInfluence * (1.05 + pointerSpeed * 0.55);
+              pointerInfluence * (pointer.pressed ? -1.3 : 1.05 + pointerSpeed * 0.55);
             body.velocityX +=
               ((pointerOffsetX / pointerDistance) * pointerPush * frameDelta) /
               aspect;
@@ -918,11 +968,15 @@ export function PixelDisplay({
             const interactionRange =
               (figureSeeds[firstIndex].radius +
                 figureSeeds[secondIndex].radius) *
-              (compact ? 1.15 : 1.28);
+              (compact ? 1.15 : 1.28) *
+              (variant === "hero" ? formationScale * 0.73 : 1);
             const proximity =
               1 - smoothstep(interactionRange * 0.38, interactionRange, distance);
 
-            if (proximity <= 0) continue;
+            if (proximity <= 0) {
+              pairContact[firstIndex * MAX_FIGURES + secondIndex] = 0;
+              continue;
+            }
 
             const directionX = offsetX / distance;
             const directionY = offsetY / distance;
@@ -931,9 +985,24 @@ export function PixelDisplay({
                 aspect *
                 directionX +
               (secondBody.velocityY - firstBody.velocityY) * directionY;
-            const separationImpulse = proximity * 0.28 * frameDelta;
+            // Shared targets are allowed to fuse; neighbouring streams still collide.
+            const targetDistance = Math.hypot(
+              (figureTargetX[secondIndex] - figureTargetX[firstIndex]) * aspect,
+              figureTargetY[secondIndex] - figureTargetY[firstIndex],
+            );
+            const fusion = variant === "hero" ? 1 - smoothstep(0.04, 0.2, targetDistance) : 0;
+            const contactIndex = firstIndex * MAX_FIGURES + secondIndex;
+            if (variant === "hero") {
+              const touching = distance < 0.15 * formationScale;
+              if (touching && pairContact[contactIndex] === 0 && time > 2) {
+                emitWave((firstBody.x + secondBody.x) / 2, (firstBody.y + secondBody.y) / 2, 0.12 + fusion * 0.12);
+              }
+              if (touching) pairContact[contactIndex] = 1;
+              else if (distance > 0.23 * formationScale) pairContact[contactIndex] = 0;
+            }
+            const separationImpulse = proximity * (0.28 - fusion * 0.36) * frameDelta;
             const collisionImpulse =
-              Math.max(0, -relativeVelocity) * proximity * 0.36;
+              Math.max(0, -relativeVelocity) * proximity * 0.36 * (1 - fusion);
             const impulse = separationImpulse + collisionImpulse;
 
             firstBody.velocityX -= (directionX * impulse) / aspect;
@@ -1006,9 +1075,68 @@ export function PixelDisplay({
         const body = figureBodies[index];
         const presence = reduceMotion
           ? 1
-          : smoothstep(0, 1, (time - index * 0.32) / 2.7);
+          : variant === "hero"
+            ? smoothstep(0, 1, (time - index * 0.09) / 1.6)
+            : smoothstep(0, 1, (time - index * 0.32) / 2.7);
         const splitWave =
           0.5 + 0.5 * Math.sin(time * figure.splitSpeed + figure.phaseSplit);
+        const pose = variant === "hero" ? choreography.poses[index] : null;
+        if (pose) {
+          if (pose.split > 0.72 && lastSplit[index] <= 0.72 && time > 2) {
+            emitWave(body.x, body.y, 0.15);
+          }
+          lastSplit[index] = pose.split;
+          const speed = Math.hypot(body.velocityX * aspect, body.velocityY);
+          const radius = figure.radius * 0.73 * pose.size * formationScale;
+          const fork = radius * (0.45 + pose.split * 2.1);
+          const angle = pose.spin + pose.skew * 0.9;
+          const forkX = Math.cos(angle) * fork / aspect;
+          const forkY = Math.sin(angle) * fork;
+          const organic = 0.18 + pose.morph * 0.22;
+          const phase = figure.phaseY + pose.morph * 3.1 + time * figure.splitSpeed * 0.7;
+
+          appendLobe(
+            body.x - forkX * 0.22, body.y - forkY * 0.22,
+            radius * (1 - pose.split * 0.18),
+            pose.stretch * (1 + Math.min(0.35, speed * 0.6)),
+            angle, (0.87 + body.energy * 0.12) * presence, organic, phase,
+          );
+          appendLobe(
+            body.x + forkX * (0.72 + pose.skew * 0.13),
+            body.y + forkY * (0.72 - pose.skew * 0.13),
+            radius * (0.38 + pose.morph * 0.28 + pose.split * 0.12),
+            1.35 - pose.skew * 0.4, pose.budAngle * 0.67,
+            (0.43 + pose.split * 0.35) * presence, organic * 0.85, phase + 2.3,
+          );
+          const neck = 1 - smoothstep(0.4, 0.87, pose.split);
+          appendLobe(
+            body.x + forkX * 0.32, body.y + forkY * 0.32,
+            radius * (0.36 + neck * 0.09), 1.85, angle,
+            neck * 0.4 * presence, organic * 0.7, phase + 1.1,
+          );
+          const budDistance = radius * (0.48 + pose.satellites * 1.25);
+          appendLobe(
+            body.x + Math.cos(pose.budAngle) * budDistance / aspect,
+            body.y + Math.sin(pose.budAngle) * budDistance,
+            radius * (0.35 + (1 - pose.morph) * 0.18),
+            1.1 + pose.skew * 0.35, pose.budAngle,
+            (0.24 + pose.satellites * 0.42) * presence, organic, phase - 1.7,
+          );
+          if (!reduceMotion) {
+            const tailAngle = Math.atan2(body.velocityY, body.velocityX * aspect);
+            const tailEnergy = clamp(speed * 3.5, 0, 0.6);
+            for (let echo = 1; echo <= 2; echo += 1) {
+              appendLobe(
+                body.x - body.velocityX * echo * 0.3,
+                body.y - body.velocityY * echo * 0.3,
+                radius * (0.78 - echo * 0.14),
+                1.4 + speed, tailAngle,
+                tailEnergy * (1 - echo * 0.26) * presence, organic * 0.5, phase,
+              );
+            }
+          }
+          continue;
+        }
         const splitAmount = smoothstep(0.2, 0.82, splitWave);
         const separation = figure.splitDistance * splitAmount;
         const orbitAngle =
@@ -1028,13 +1156,14 @@ export function PixelDisplay({
         const inertiaStretch = 1 + clamp(bodySpeed * 0.58, 0, 0.46);
         const breathing =
           0.94 + Math.sin(time * 0.22 + figure.phaseY) * 0.06;
+        const baseRadius = figure.radius;
         const parentRadius =
-          figure.radius *
+          baseRadius *
           breathing *
           (1 - splitAmount * 0.045) *
           (1 + body.energy * 0.12);
         const childRadius =
-          figure.radius *
+          baseRadius *
           (0.71 + Math.sin(time * 0.19 + figure.phaseX) * 0.065) *
           (1 + body.energy * 0.08);
 
@@ -1062,7 +1191,7 @@ export function PixelDisplay({
           appendLobe(
             body.x + splitX * 0.24,
             body.y + splitY * 0.24,
-            figure.radius * 0.56,
+            baseRadius * 0.56,
             1.62,
             orbitAngle,
             bridgeStrength * (1 + body.energy * 0.3),
@@ -1080,19 +1209,19 @@ export function PixelDisplay({
               );
           const budAmount = smoothstep(0.34, 0.88, budWave);
           const budAngle = orbitAngle + 2.2 + Math.sin(time * 0.11) * 0.28;
-          const budDistance = figure.splitDistance * 0.78 * budAmount;
+          const budDistance = figure.splitDistance * 0.78 * budAmount * formationScale;
 
           appendLobe(
             body.x + (Math.cos(budAngle) * budDistance) / aspect,
             body.y + Math.sin(budAngle) * budDistance,
-            figure.radius * 0.6,
+            baseRadius * 0.6,
             1.12,
             budAngle,
             (0.34 + budAmount * 0.34 + body.energy * 0.09) * presence,
           );
         }
 
-        if (body.energy > 0.002) {
+        if (variant === "feature" && body.energy > 0.002) {
           activeBodyIndices[activeBodyCount] = index;
           activeBodyCount += 1;
         }
@@ -1107,7 +1236,7 @@ export function PixelDisplay({
         appendLobe(
           pointer.x - pointer.velocityX * 0.018,
           pointer.y - pointer.velocityY * 0.018,
-          (compact ? 0.17 : 0.2) +
+          (compact ? 0.17 * formationScale : 0.2) +
             pointerSpeed * 0.018 +
             pointer.energy * 0.035,
           1.05 + pointerSpeed * 0.22 + pointer.energy * 0.24,
@@ -1122,9 +1251,10 @@ export function PixelDisplay({
       for (let index = 0; index < lobeCount; index += 1) {
         const radius = 1 / Math.sqrt(lobeInverseRadiusSquared[index]);
         const stretch = 1 / lobeInverseStretch[index];
-        const horizontalRadius = radius * lobeCutoffScale * stretch;
+        const organicExtent = 1 + lobeOrganic[index] * 1.7;
+        const horizontalRadius = radius * lobeCutoffScale * stretch * organicExtent;
         const verticalRadius =
-          (radius * lobeCutoffScale) / lobeSqrtStretch[index];
+          (radius * lobeCutoffScale * organicExtent) / lobeSqrtStretch[index];
         const cosine = lobeCosine[index];
         const sine = lobeSine[index];
         const extentX =
@@ -1133,12 +1263,12 @@ export function PixelDisplay({
               verticalRadius * verticalRadius * sine * sine,
           ) /
             aspect +
-          0.013 / aspect;
+          (variant === "hero" ? 0.055 : 0.013) / aspect;
         const extentY =
           Math.sqrt(
             horizontalRadius * horizontalRadius * sine * sine +
               verticalRadius * verticalRadius * cosine * cosine,
-          ) + 0.013;
+          ) + (variant === "hero" ? 0.055 : 0.013);
 
         lobeMinimumX[index] = lobeX[index] - extentX;
         lobeMaximumX[index] = lobeX[index] + extentX;
@@ -1152,12 +1282,16 @@ export function PixelDisplay({
       }
 
       for (let row = 0; row < rows; row += 1) {
-        rowWarpX[row] =
-          (fastSin(rowY[row] * 6.2 + time * 0.12) * 0.012) / aspect;
+        rowWarpX[row] = variant === "hero"
+          ? (fastSin(rowY[row] * 13.2 + time * 0.19) * 0.027
+            + fastSin(rowY[row] * 23.7 - time * 0.13 + animationSeed) * 0.014) * formationScale / aspect
+          : (fastSin(rowY[row] * 6.2 + time * 0.12) * 0.012) / aspect;
       }
       for (let column = 0; column < columns; column += 1) {
-        columnWarpY[column] =
-          fastSin(columnX[column] * aspect * 3.7 - time * 0.095) * 0.012;
+        columnWarpY[column] = variant === "hero"
+          ? (fastSin(columnX[column] * aspect * 11.3 - time * 0.17) * 0.025
+            + fastSin(columnX[column] * aspect * 21.1 + time * 0.11 + animationSeed) * 0.013) * formationScale
+          : fastSin(columnX[column] * aspect * 3.7 - time * 0.095) * 0.012;
       }
 
       if (
@@ -1212,6 +1346,16 @@ export function PixelDisplay({
       const green = Math.round(currentColor[1]);
       const blue = Math.round(currentColor[2]);
       const pointerIsActive = pointer.activity > 0.002;
+      let activeWaveCount = 0;
+      if (variant === "hero" && !reduceMotion) {
+        for (let index = 0; index < MAX_SHOCKWAVES; index += 1) {
+          const age = visibleElapsed - waveBorn[index];
+          if (age < 0 || age > 4.8) continue;
+          waveRadius[index] = age * 0.27;
+          waveEnvelope[index] = wavePower[index] * smoothstep(0, 0.18, age) * (1 - smoothstep(1.2, 4.8, age));
+          activeWaveIndices[activeWaveCount++] = index;
+        }
+      }
       const globalBreathing = 0.975 + fastSin(time * 0.37) * 0.025;
       const offAlpha = activeTheme === "dark" ? 0.018 : 0.009;
       const maximumAlpha = activeTheme === "dark" ? 0.64 : 0.34;
@@ -1267,10 +1411,19 @@ export function PixelDisplay({
               -offsetX * lobeSine[index] + offsetY * lobeCosine[index];
             const stretchedX = rotatedX * lobeInverseStretch[index];
             const stretchedY = rotatedY * lobeSqrtStretch[index];
-            const exponent =
+            let exponent =
               (stretchedX * stretchedX + stretchedY * stretchedY) *
               lobeInverseRadiusSquared[index] *
               1.62;
+
+            if (lobeOrganic[index] > 0 && exponent < FALLOFF_LIMIT * 2.6) {
+              const phase = lobePhase[index];
+              const warp = 1 + lobeOrganic[index] * (
+                fastSin(stretchedY * lobeInverseRadius[index] * 2.9 + phase)
+                + fastSin(stretchedX * lobeInverseRadius[index] * 3.7 - phase * 0.73) * 0.65
+              );
+              exponent *= warp;
+            }
 
             if (exponent < FALLOFF_LIMIT) {
               field += lobeStrength[index] * fastFalloff(exponent);
@@ -1306,6 +1459,15 @@ export function PixelDisplay({
           }
 
           let coupledRipple = 0;
+
+          for (let wave = 0; wave < activeWaveCount; wave += 1) {
+            const index = activeWaveIndices[wave];
+            const dx = (warpedX - waveX[index]) * aspect;
+            const dy = warpedY - waveY[index];
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            const front = distance - waveRadius[index];
+            coupledRipple += fastFalloff(front * front * 1450) * waveEnvelope[index];
+          }
 
           for (let activeIndex = 0; activeIndex < activeBodyCount; activeIndex += 1) {
             const figureIndex = activeBodyIndices[activeIndex];
@@ -1351,7 +1513,10 @@ export function PixelDisplay({
                 time * 0.23,
             ) *
               0.06;
-          const organicSignal = FIELD_LOOKUP[fieldLookupIndex] * pattern;
+          const contour = variant === "hero"
+            ? (0.5 + fastCos(field * 13.7 + warpedX * 7.3 - warpedY * 9.1 - time * 0.37) * 0.5) * smoothstep(0.08, 0.35, field) * (1 - smoothstep(0.55, 1.1, field)) * 0.06
+            : 0;
+          const organicSignal = FIELD_LOOKUP[fieldLookupIndex] * pattern + contour;
           const targetEnergy = clamp(
             ambientTexture +
               organicSignal * variation[cellIndex] +
@@ -1403,7 +1568,7 @@ export function PixelDisplay({
     redrawRef.current = () => draw(performance.now());
 
     const updatePointer = (event: PointerEvent) => {
-      if (event.pointerType === "touch") {
+      if (event.pointerType === "touch" || reduceMotion) {
         pointer.targetActivity = 0;
         return;
       }
@@ -1432,7 +1597,23 @@ export function PixelDisplay({
 
     const deactivatePointer = () => {
       pointer.targetActivity = 0;
+      pointer.pressed = false;
       if (reduceMotion) draw(performance.now());
+    };
+
+    const releasePointer = () => {
+      if (!pointer.pressed) return;
+      pointer.pressed = false;
+      emitWave(pointer.x, pointer.y, 0.48);
+    };
+
+    const pressPointer = (event: PointerEvent) => {
+      if (variant !== "hero" || reduceMotion || event.button !== 0 || event.pointerType === "touch") return;
+      if (event.target instanceof Element && event.target.closest("a, button, input, select, textarea, [role='button']")) return;
+      updatePointer(event);
+      if (pointer.targetActivity === 0) return;
+      pointer.pressed = true;
+      emitWave(pointer.targetX, pointer.targetY, 0.28);
     };
 
     const handlePointerOut = (event: PointerEvent) => {
@@ -1494,7 +1675,7 @@ export function PixelDisplay({
         !document.hidden;
 
       if (shouldAnimate && frameId === 0) {
-        if (variant === "feature") lastDrawAt = performance.now();
+        lastDrawAt = performance.now();
         lastFrame = performance.now();
         frameId = window.requestAnimationFrame(animate);
       } else if (!shouldAnimate && frameId !== 0) {
@@ -1505,6 +1686,7 @@ export function PixelDisplay({
 
     const handleVisibilityChange = () => {
       if (!document.hidden && !isContextLost && isIntersecting) {
+        lastDrawAt = performance.now();
         draw(performance.now());
       }
       syncAnimation();
@@ -1541,6 +1723,7 @@ export function PixelDisplay({
         isIntersecting = entry.isIntersecting &&
           (variant === "hero" || entry.intersectionRatio > 0);
         if (isIntersecting) {
+          lastDrawAt = performance.now();
           if (!hasStarted) {
             hasStarted = true;
             lastDrawAt = performance.now();
@@ -1550,13 +1733,18 @@ export function PixelDisplay({
         syncAnimation();
       },
       {
-        rootMargin: variant === "feature" ? "0px" : "160px 0px",
+        rootMargin: "0px",
         threshold: variant === "feature" ? 0.001 : 0,
       },
     );
     intersectionObserver.observe(canvas);
 
     window.addEventListener("pointermove", updatePointer, { passive: true });
+    if (variant === "hero" && !reduceMotion) {
+      window.addEventListener("pointerdown", pressPointer, { passive: true });
+      window.addEventListener("pointerup", releasePointer, { passive: true });
+      window.addEventListener("pointercancel", deactivatePointer);
+    }
     window.addEventListener("pointerout", handlePointerOut);
     window.addEventListener("blur", deactivatePointer);
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -1570,6 +1758,9 @@ export function PixelDisplay({
       resizeObserver.disconnect();
       intersectionObserver.disconnect();
       window.removeEventListener("pointermove", updatePointer);
+      window.removeEventListener("pointerdown", pressPointer);
+      window.removeEventListener("pointerup", releasePointer);
+      window.removeEventListener("pointercancel", deactivatePointer);
       window.removeEventListener("pointerout", handlePointerOut);
       window.removeEventListener("blur", deactivatePointer);
       window.removeEventListener("scroll", handleScroll);
@@ -1588,6 +1779,7 @@ export function PixelDisplay({
     >
       <canvas
         ref={canvasRef}
+        data-pixel-display={variant}
         className="h-full w-full [image-rendering:pixelated]"
       />
     </div>
