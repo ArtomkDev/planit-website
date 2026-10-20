@@ -1,0 +1,72 @@
+[
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 360
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 390
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 768
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 1023
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 1024
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 1440
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 1920
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 0,
+    "wholeSymbols": true,
+    "width": 2239
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 6,
+    "wholeSymbols": true,
+    "width": 2240
+  },
+  {
+    "clipped": false,
+    "collisions": [],
+    "visible": 6,
+    "wholeSymbols": true,
+    "width": 2560
+  }
+]

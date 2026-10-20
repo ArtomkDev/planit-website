@@ -1,0 +1,54 @@
+{
+  "clockFrames": [
+    {
+      "delay": "-14.7s",
+      "duration": "14.4s",
+      "i": 4,
+      "opacity": 1
+    }
+  ],
+  "symbols": [
+    {
+      "active": "true",
+      "baseMin": 0.34,
+      "period": "10.8s",
+      "symbol": "code",
+      "y": 968.21875
+    },
+    {
+      "active": "false",
+      "baseMin": 0.364581,
+      "period": "8s",
+      "symbol": "sparkle",
+      "y": 1978.671875
+    },
+    {
+      "active": "false",
+      "baseMin": 0.34,
+      "period": "12s",
+      "symbol": "calendar",
+      "y": 2989.125
+    },
+    {
+      "active": "false",
+      "baseMin": 0.34,
+      "period": "14.4s",
+      "symbol": "clock",
+      "y": 3999.578125
+    },
+    {
+      "active": "false",
+      "baseMin": 0.34,
+      "period": "11.5s",
+      "symbol": "bookmark",
+      "y": 5010.046875
+    },
+    {
+      "active": "false",
+      "baseMin": 0.34,
+      "period": "9s",
+      "symbol": "arrow",
+      "y": 6020.5
+    }
+  ]
+}

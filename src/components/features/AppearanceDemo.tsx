@@ -34,9 +34,9 @@ const subjectIcons = [
 const initialAppearance = {
   mode: "gradient" as "color" | "gradient",
   color: "#3B82F6",
-  first: "#4facfe",
-  second: "#00f2fe",
-  angle: 90,
+  first: "#990000",
+  second: "#ff0099",
+  angle: 45,
   icon: "calculator",
 };
 

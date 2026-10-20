@@ -1,0 +1,89 @@
+{
+  "navigationArrival": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "platforms",
+        "asciiFigure": "platforms",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "canvas": "visible",
+      "focus": "Оберіть, де зручніше.",
+      "relay": "hidden",
+      "scroll": 5696,
+      "url": "http://localhost:4173/uk#platforms"
+    }
+  ],
+  "wheelDown": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-lesson",
+        "asciiFigure": "feature-lesson",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 745
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-lesson",
+        "asciiFigure": "feature-lesson",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 1101
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-appearance",
+        "asciiFigure": "feature-appearance",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 1457
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-appearance",
+        "asciiFigure": "feature-appearance",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 1813
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 2169
+    }
+  ],
+  "wheelUp": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 2524
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "interactions": [
+    {
+      "action": "mouse copy",
+      "before": "QFHJ9Y",
+      "clipboard": "",
+      "code": "QFHJ9Y",
+      "description": "_R_27kd3klnuaivb_",
+      "status": "Скопійовано"
+    },
+    {
+      "action": "mid-animation copy",
+      "clipboard": "JN5F6L",
+      "display": "JN5F6L",
+      "match": true
+    },
+    {
+      "action": "five rapid regenerations followed by copy",
+      "before": "JN5F6L",
+      "display": "9NJQLZ"
+    },
+    {
+      "action": "keyboard Enter / Space / Tab / Enter",
+      "enterCode": "KPVLYY",
+      "spaceCode": "RN3UHS",
+      "changed": true,
+      "tabFocus": {
+        "name": "Скопіювати код",
+        "outline": "solid",
+        "outlineWidth": "2px"
+      }
+    },
+    {
+      "action": "final build copy during animation",
+      "clipboard": "2UN9GQ",
+      "display": "2UN9GQ",
+      "match": true
+    },
+    {
+      "action": "focus pauses automatic changes for 12.5 seconds",
+      "before": "2UN9GQ",
+      "after": "2UN9GQ",
+      "unchanged": true,
+      "focused": "Скопіювати код"
+    }
+  ],
+  "responsive": [
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 199,
+      "controlsWidth": 199,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 360,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 229,
+      "controlsWidth": 229,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 390,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 227,
+      "controlsWidth": 227,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 768,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 354,
+      "controlsWidth": 354,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 1023,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 355,
+      "controlsWidth": 355,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 1024,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 1440,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "",
+      "width": 1920,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 199,
+      "controlsWidth": 199,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 360,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 229,
+      "controlsWidth": 229,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 390,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 227,
+      "controlsWidth": 227,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 768,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 354,
+      "controlsWidth": 354,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1023,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 355,
+      "controlsWidth": 355,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1024,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1440,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Згенерувати новий приклад коду",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Скопіювати код",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "uk",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1920,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 199,
+      "controlsWidth": 199,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 360,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 229,
+      "controlsWidth": 229,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 390,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 227,
+      "controlsWidth": 227,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 768,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 354,
+      "controlsWidth": 354,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 1023,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 355,
+      "controlsWidth": 355,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 1024,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 1440,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(255, 255, 255)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.614118 0.409412 0.0682353)",
+      "language": "en",
+      "overflow": false,
+      "theme": "",
+      "width": 1920,
+      "expectedTheme": "light"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 199,
+      "controlsWidth": 199,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 360,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 229,
+      "controlsWidth": 229,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 390,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 227,
+      "controlsWidth": 227,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 768,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 354,
+      "controlsWidth": 354,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1023,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 355,
+      "controlsWidth": 355,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1024,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1440,
+      "expectedTheme": "dark"
+    },
+    {
+      "buttonBg": "rgb(24, 24, 27)",
+      "buttons": [
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Generate a new example code",
+          "width": "143.688px"
+        },
+        {
+          "height": "44px",
+          "hiddenAncestor": false,
+          "name": "Copy code",
+          "width": "44px"
+        }
+      ],
+      "controlsScroll": 281,
+      "controlsWidth": 281,
+      "iconColor": "color(srgb 0.968627 0.763922 0.418039)",
+      "language": "en",
+      "overflow": false,
+      "theme": "dark",
+      "width": 1920,
+      "expectedTheme": "dark"
+    }
+  ],
+  "console": [],
+  "iconContrast": [
+    {
+      "theme": "light",
+      "ratio": 4.740184911218458
+    },
+    {
+      "theme": "dark",
+      "ratio": 10.928369792634541
+    }
+  ],
+  "notes": [
+    "First immediate clipboard adapter read returned an empty string; subsequent clipboard reads matched the completed displayed code, including on the final build.",
+    "Reduced-motion static regeneration verified by deterministic controller tests and CSS/source review; OS setting was not changed.",
+    "Actual clipboard denial, native touch, screen reader and 200% browser zoom were not exercised."
+  ]
+}

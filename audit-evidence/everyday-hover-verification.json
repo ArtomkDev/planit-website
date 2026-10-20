@@ -1,0 +1,408 @@
+{
+  "hoverBaseline": {
+    "cards": [
+      {
+        "iconScale": "none",
+        "iconTranslate": "none",
+        "rect": {
+          "height": 366,
+          "width": 394.65625,
+          "x": 96.5,
+          "y": 615.96875
+        },
+        "rimOpacity": "0",
+        "title": "Поділіться кодом чи посиланням",
+        "transform": "none"
+      },
+      {
+        "iconScale": "none",
+        "iconTranslate": "none",
+        "rect": {
+          "height": 366,
+          "width": 394.671875,
+          "x": 515.15625,
+          "y": 615.96875
+        },
+        "rimOpacity": "0",
+        "title": "Файл для друку й редагування",
+        "transform": "none"
+      },
+      {
+        "iconScale": "none",
+        "iconTranslate": "none",
+        "rect": {
+          "height": 366,
+          "width": 394.65625,
+          "x": 933.828125,
+          "y": 615.96875
+        },
+        "rimOpacity": "0",
+        "title": "Нагадування у свій час",
+        "transform": "none"
+      },
+      {
+        "iconScale": "none",
+        "iconTranslate": "none",
+        "rect": {
+          "height": 342,
+          "width": 394.65625,
+          "x": 96.5,
+          "y": 1005.96875
+        },
+        "rimOpacity": "0",
+        "title": "Матеріали поруч із парою",
+        "transform": "none"
+      },
+      {
+        "iconScale": "none",
+        "iconTranslate": "none",
+        "rect": {
+          "height": 342,
+          "width": 394.671875,
+          "x": 515.15625,
+          "y": 1005.96875
+        },
+        "rimOpacity": "0",
+        "title": "Розклад на екрані Android",
+        "transform": "none"
+      },
+      {
+        "iconScale": "none",
+        "iconTranslate": "none",
+        "rect": {
+          "height": 342,
+          "width": 394.65625,
+          "x": 933.828125,
+          "y": 1005.96875
+        },
+        "rimOpacity": "0",
+        "title": "Зміни під вашим контролем",
+        "transform": "none"
+      }
+    ],
+    "lists": 0,
+    "width": 1440
+  },
+  "hover": {
+    "iconScale": 1.1,
+    "iconTranslate": "0px -4px",
+    "rimOpacity": 1,
+    "gradientTracksPointer": true
+  },
+  "measurements": [
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [
+        ""
+      ],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "uk",
+      "overflow": [
+        ""
+      ],
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "brand": "#3ef7d2",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 1,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 2,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": 6,
+      "columns": 3,
+      "documentOverflow": false,
+      "lists": 0,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1920
+    }
+  ],
+  "notes": "The empty overflow entry at 1920px in the Ukrainian pass is the intentionally clipped decorative accent layer, outside the feature cards.",
+  "logs": []
+}

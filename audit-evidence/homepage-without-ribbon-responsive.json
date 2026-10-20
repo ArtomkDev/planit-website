@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-20",
+  "checks": [
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "uk",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 360
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 390
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 768
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 1023
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 1024
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "gap": 0,
+      "height": 900,
+      "locale": "en",
+      "overflow": false,
+      "sectionIds": [
+        "top",
+        "features",
+        "everyday",
+        "platforms",
+        "get-started"
+      ],
+      "theme": "",
+      "width": 1920
+    }
+  ],
+  "notes": [
+    "Viewport overrides measure layout; they are not a full manual accessibility review.",
+    "Feature link reached #features and focused features-title."
+  ]
+}

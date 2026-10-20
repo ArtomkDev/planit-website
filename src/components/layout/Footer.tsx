@@ -4,13 +4,13 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { AndroidRobotLogo } from "@/components/ui/BrandIcons";
+import { Wordmark } from "@/components/ui/Wordmark";
 import { useState, useRef } from "react";
 
 import { PLAY_MARKET_URL } from "@/lib/site";
 
 export const Footer = () => {
   const tNav = useTranslations("Navigation");
-  const tHero = useTranslations("Hero");
   const tFooter = useTranslations("Footer");
   const locale = useLocale();
   const reduceMotion = useReducedMotion();
@@ -85,11 +85,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 gap-12 rounded-3xl bg-site-surface/90 p-5 sm:p-8 shadow-[0_24px_70px_-48px_var(--site-surface-shadow)] ring-1 ring-site-border/70 backdrop-blur-md md:grid-cols-12 lg:gap-8">
           
           <div className="flex flex-col gap-6 md:col-span-6 lg:col-span-5">
-            <Link href={`/${locale}`} className="w-fit text-4xl font-black tracking-tight text-site-text transition-colors hover:text-brand">
-              PlanIt.
+            <Link href={`/${locale}`} className="w-fit text-4xl font-black tracking-tight text-site-text transition-opacity hover:opacity-75">
+              <Wordmark />
             </Link>
             <p className="max-w-sm text-sm font-medium leading-relaxed text-site-muted md:text-base">
-              {tHero("description")}
+              {tFooter("description")}
             </p>
             <div className="mt-2 flex items-center gap-3">
               <motion.a

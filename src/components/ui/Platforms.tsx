@@ -8,6 +8,7 @@ import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 import { AndroidRobotLogo, AppleBrandLogo } from "@/components/ui/BrandIcons";
+import { AccentRule } from "@/components/ui/AccentRule";
 
 import { APP_URL, PLAY_MARKET_URL } from "@/lib/site";
 
@@ -79,10 +80,11 @@ export function Platforms() {
 
   return (
     <section id="platforms" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
-      <LessonCardAccent seed={37} className="-right-64 top-[42%]" />
+      <LessonCardAccent seed={37} gutterSide="right" className="-right-64 top-[42%]" />
       <LessonCardAccent seed={38} depth="background" className="right-[18%] top-10" />
-      <ScrollReveal className="relative z-20 flex flex-col items-center text-center max-w-3xl mx-auto mb-20">
-        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand-strong">
+      <ScrollReveal className="relative z-20 mb-12 flex max-w-3xl flex-col items-start text-left">
+        <span className="mb-4 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-strong">
+          <AccentRule />
           {t("badge")}
         </span>
         <h2 className="text-4xl font-black tracking-tight text-site-text md:text-5xl lg:text-6xl">

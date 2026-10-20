@@ -1,101 +1,125 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { CSSProperties } from "react";
 import { useTranslations } from "next-intl";
 import {
-  AppWindow,
-  BellRinging,
-  CheckSquare,
-  CloudArrowUp,
-  Palette,
-  Paperclip,
-  ShareNetwork,
+  AppWindow, ArrowLeft, ArrowRight, ArrowsLeftRight, BellRinging,
+  Check, CloudArrowUp, DeviceMobile, FileArrowDown, FilePdf,
+  Image as ImageIcon, Paperclip, ShareNetwork,
 } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
+import { AccentRule } from "@/components/ui/AccentRule";
+import { AnimatedScheduleCode } from "@/components/ui/AnimatedScheduleCode";
+import { FeaturePreviewMotion } from "@/components/ui/FeaturePreviewMotion";
+import previewStyles from "./feature-preview.module.css";
+
+const cards = [
+  { id: "sharing", Icon: ShareNetwork, tone: "text-amber-500", color: "245, 158, 11" },
+  { id: "exports", Icon: FileArrowDown, tone: "text-indigo-500", color: "99, 102, 241" },
+  { id: "reminders", Icon: BellRinging, tone: "text-cyan-500", color: "6, 182, 212" },
+  { id: "materials", Icon: Paperclip, tone: "text-emerald-500", color: "16, 185, 129" },
+  { id: "widgets", Icon: AppWindow, tone: "text-rose-500", color: "244, 63, 94" },
+  { id: "sync", Icon: CloudArrowUp, tone: "text-violet-500", color: "139, 92, 246" },
+] as const;
+
+type FeatureId = (typeof cards)[number]["id"];
+
+const previewIntroDelay: Record<FeatureId, number> = {
+  sharing: 0, exports: 400, reminders: 650, materials: 0, widgets: 180, sync: 360,
+};
+
+function FeaturePreview({ id, accentColor }: { id: FeatureId; accentColor: string }) {
+  const t = useTranslations("AppShowcase.preview");
+
+  return (
+    <FeaturePreviewMotion accentColor={accentColor} animate={id !== "sharing"} interactive={id === "sharing"} delay={previewIntroDelay[id]}>
+      {id === "sharing" && (
+        <>
+          <div className="flex items-center justify-between gap-2 text-xs text-site-muted">
+            <span>{t("sharing.label")}</span><span>{t("example")}</span>
+          </div>
+          <AnimatedScheduleCode />
+          <p className="text-xs text-site-muted">{t("sharing.duration")}</p>
+        </>
+      )}
+      {id === "exports" && (
+        <>
+          <p className="text-xs text-site-muted">{t("exports.label")}</p>
+          <div className="flex flex-wrap gap-2">
+            {["PDF", "DOCX", "XLSX", "CSV", "TXT"].map((format, index) => (
+              <span key={format} style={{ "--item-delay": `${index * 85}ms` } as CSSProperties} className={`${previewStyles.format} rounded-md border border-site-border bg-site-surface px-2 py-1.5 font-mono text-xs font-bold`}>{format}</span>
+            ))}
+          </div>
+          <p className="text-xs text-site-muted">{t("exports.caption")}</p>
+        </>
+      )}
+      {id === "reminders" && (
+        <div className="flex items-center gap-3">
+          <BellRinging size={24} className={`${previewStyles.bell} ${previewStyles.accent} shrink-0`} />
+          <div className="min-w-0 flex-1">
+            <p className="text-xs text-site-muted">{t("reminders.label")}</p>
+            <div className="mt-2 flex items-center gap-3 font-mono text-lg font-bold">
+              <span>08:30</span><ArrowRight size={16} className="shrink-0 text-site-muted" /><span>09:00</span>
+            </div>
+            <p className="mt-1 text-xs text-site-muted">{t("reminders.caption")}</p>
+          </div>
+        </div>
+      )}
+      {id === "materials" && (
+        <>
+          <div className={`${previewStyles.material} flex items-center gap-3`}>
+            <FilePdf size={25} className={`${previewStyles.accent} shrink-0`} />
+            <span className="min-w-0 text-sm font-semibold">{t("materials.file")}</span>
+          </div>
+          <div className={`${previewStyles.material} flex items-center gap-3 border-t border-site-border pt-3`}>
+            <ImageIcon size={25} className="shrink-0 text-site-muted" />
+            <span className="min-w-0 text-sm font-semibold">{t("materials.photo")}</span>
+          </div>
+        </>
+      )}
+      {id === "widgets" && (
+        <>
+          <div className="flex items-center justify-between gap-3 text-xs text-site-muted">
+            <ArrowLeft size={14} /><span>{t("widgets.today")}</span><ArrowRight size={14} />
+          </div>
+          <div className={`${previewStyles.widgetLesson} ${previewStyles.accentBorder} border-l-2 pl-3`}>
+            <p className="text-sm font-bold">{t("widgets.subject")}</p>
+            <p className="mt-1 font-mono text-xs text-site-muted">09:00 — 10:30</p>
+          </div>
+        </>
+      )}
+      {id === "sync" && (
+        <>
+          <div className="flex items-center justify-between gap-2 text-xs text-site-muted">
+            <span className="flex items-center gap-1.5"><DeviceMobile size={18} />{t("sync.local")}</span>
+            <ArrowsLeftRight size={18} className={`${previewStyles.syncArrow} ${previewStyles.accent} shrink-0`} />
+            <span className="flex items-center gap-1.5"><CloudArrowUp size={18} className={`${previewStyles.syncCloud} ${previewStyles.accent}`} />{t("sync.cloud")}</span>
+          </div>
+          <p className="flex items-center justify-center gap-2 border-t border-site-border pt-3 text-sm font-bold">
+            <Check size={17} className={`${previewStyles.accent} shrink-0`} />{t("sync.both")}
+          </p>
+        </>
+      )}
+    </FeaturePreviewMotion>
+  );
+}
 
 export function AppShowcase() {
   const t = useTranslations("AppShowcase");
 
-  const items = [
-    {
-      title: t("items.customization.title"),
-      description: t("items.customization.description"),
-      icon: <Palette className="w-8 h-8 text-pink-500" weight="duotone" />,
-      colorPrimary: "rgba(236, 72, 153, 0.12)",
-      colorSecondary: "rgba(244, 63, 94, 0.12)",
-      spotlightColor: "rgba(236, 72, 153, 0.15)",
-      className: "md:col-span-2",
-    },
-    {
-      title: t("items.tasks.title"),
-      description: t("items.tasks.description"),
-      icon: <CheckSquare className="w-8 h-8 text-indigo-500" weight="duotone" />,
-      colorPrimary: "rgba(99, 102, 241, 0.12)",
-      colorSecondary: "rgba(139, 92, 246, 0.12)",
-      spotlightColor: "rgba(99, 102, 241, 0.15)",
-      className: "md:col-span-1",
-    },
-    {
-      title: t("items.reminders.title"),
-      description: t("items.reminders.description"),
-      icon: <BellRinging className="w-8 h-8 text-cyan-500" weight="duotone" />,
-      colorPrimary: "rgba(6, 182, 212, 0.12)",
-      colorSecondary: "rgba(59, 130, 246, 0.12)",
-      spotlightColor: "rgba(6, 182, 212, 0.15)",
-      className: "md:col-span-1",
-    },
-    {
-      title: t("items.materials.title"),
-      description: t("items.materials.description"),
-      icon: <Paperclip className="w-8 h-8 text-emerald-500" weight="duotone" />,
-      colorPrimary: "rgba(16, 185, 129, 0.12)",
-      colorSecondary: "rgba(20, 184, 166, 0.12)",
-      spotlightColor: "rgba(16, 185, 129, 0.15)",
-      className: "md:col-span-2",
-    },
-    {
-      title: t("items.sharing.title"),
-      description: t("items.sharing.description"),
-      icon: <ShareNetwork className="w-8 h-8 text-amber-500" weight="duotone" />,
-      colorPrimary: "rgba(245, 158, 11, 0.12)",
-      colorSecondary: "rgba(249, 115, 22, 0.12)",
-      spotlightColor: "rgba(245, 158, 11, 0.15)",
-      className: "md:col-span-1",
-    },
-    {
-      title: t("items.widgets.title"),
-      description: t("items.widgets.description"),
-      icon: <AppWindow className="w-8 h-8 text-rose-500" weight="duotone" />,
-      colorPrimary: "rgba(244, 63, 94, 0.12)",
-      colorSecondary: "rgba(236, 72, 153, 0.12)",
-      spotlightColor: "rgba(244, 63, 94, 0.15)",
-      className: "md:col-span-1",
-    },
-    {
-      title: t("items.sync.title"),
-      description: t("items.sync.description"),
-      icon: <CloudArrowUp className="w-8 h-8 text-violet-500" weight="duotone" />,
-      colorPrimary: "rgba(139, 92, 246, 0.12)",
-      colorSecondary: "rgba(99, 102, 241, 0.12)",
-      spotlightColor: "rgba(139, 92, 246, 0.15)",
-      className: "md:col-span-1",
-    },
-  ];
-
   return (
-    <section className="relative w-full max-w-7xl mx-auto px-6 py-24 z-20">
+    <section id="everyday" aria-labelledby="everyday-title" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24">
       <LessonCardAccent seed={23} className="-left-64 top-[34%]" />
-      <LessonCardAccent seed={24} depth="background" className="left-[16%] bottom-6" />
-      <ScrollReveal className="relative z-20 flex flex-col items-start mb-16">
-        <span className="mb-4 block text-sm font-bold uppercase tracking-widest text-brand-strong">
-          {t("badge")}
+      <LessonCardAccent seed={24} depth="background" className="bottom-6 left-[16%]" />
+      <ScrollReveal className="relative z-20 mb-12 flex flex-col items-start text-left">
+        <span className="mb-4 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-strong">
+          <AccentRule />{t("badge")}
         </span>
-        <h2 className="max-w-2xl text-4xl font-black tracking-tight text-site-text md:text-5xl">
-          {t("title")}
-        </h2>
+        <h2 id="everyday-title" className="max-w-2xl text-4xl font-black tracking-tight text-site-text md:text-5xl">{t("title")}</h2>
       </ScrollReveal>
 
       <motion.div
@@ -103,42 +127,30 @@ export function AppShowcase() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(300px,auto)] perspective-1000"
+        className="relative z-20 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
       >
-        {items.map((item) => (
+        {cards.map(({ id, Icon, tone, color }) => (
           <BentoCard
-            key={item.title}
-            className={item.className}
-            colorPrimary={item.colorPrimary}
-            colorSecondary={item.colorSecondary}
-            spotlightColor={item.spotlightColor}
-            contentClassName="pointer-events-none"
+            key={id}
+            className="min-w-0"
+            contentClassName="pointer-events-none min-w-0"
+            colorPrimary={`rgba(${color}, 0.12)`}
+            colorSecondary={`rgba(${color}, 0.05)`}
+            spotlightColor={`rgba(${color}, 0.15)`}
           >
-            <div
-              style={{ transform: "translateZ(40px)", transformStyle: "preserve-3d" }}
-              className="mb-8"
-            >
+            <div className="mb-4 flex items-center gap-4" style={{ transform: "translateZ(20px)", transformStyle: "preserve-3d" }}>
               <ProximityBlock
-                color={item.spotlightColor.replace("0.15", "0.8")}
-                className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 text-site-text shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] group-hover/card:-translate-y-2 group-hover/card:scale-110 transform-gpu"
+                color={`rgba(${color}, 0.8)`}
+                className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${tone} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] motion-safe:group-hover/card:-translate-y-1 motion-safe:group-hover/card:scale-110`}
               >
-                {item.icon}
+                <Icon size={26} weight="duotone" aria-hidden="true" />
               </ProximityBlock>
+              <h3 className="text-xl font-bold leading-tight tracking-tight text-site-text">{t(`items.${id}.title`)}</h3>
             </div>
-
-            <h3
-              style={{ transform: "translateZ(20px)" }}
-              className="mb-3 text-2xl font-bold tracking-tight text-site-text transition-colors duration-500"
-            >
-              {item.title}
-            </h3>
-
-            <p
-              style={{ transform: "translateZ(10px)" }}
-              className="max-w-md font-medium leading-relaxed text-site-muted transition-colors duration-500"
-            >
-              {item.description}
-            </p>
+            <p className="text-sm leading-6 text-site-muted">{t(`items.${id}.description`)}</p>
+            <div className="mt-auto pt-5">
+              <FeaturePreview id={id} accentColor={`rgb(${color})`} />
+            </div>
           </BentoCard>
         ))}
       </motion.div>

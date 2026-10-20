@@ -1,0 +1,166 @@
+{
+  "stoppedReverse": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-schedule",
+        "asciiMotion": "animated",
+        "asciiPhase": "relay",
+        "asciiProgress": "0.163"
+      },
+      "relay": "visible",
+      "scroll": 2939
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "relay": "hidden",
+      "scroll": 2939
+    }
+  ],
+  "stoppedForward": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-appearance",
+        "asciiMotion": "animated",
+        "asciiPhase": "relay",
+        "asciiProgress": "0.000"
+      },
+      "scroll": 2297
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 2297
+    }
+  ],
+  "reversal": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-appearance",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "relay",
+        "asciiProgress": "0.000"
+      },
+      "scroll": 2107
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-appearance",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "relay",
+        "asciiProgress": "0.465"
+      },
+      "scroll": 2297
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "feature-tasks",
+        "asciiFigure": "feature-tasks",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1"
+      },
+      "scroll": 2297
+    }
+  ],
+  "compact": {
+    "art": {
+      "asciiArt": "planit",
+      "asciiDestination": "feature-appearance",
+      "asciiFigure": "feature-appearance",
+      "asciiMotion": "static",
+      "asciiPhase": "still",
+      "asciiProgress": "1"
+    },
+    "height": 844,
+    "layers": [
+      {
+        "height": 0,
+        "id": "feature-lesson",
+        "position": "absolute",
+        "visible": "hidden",
+        "width": 0
+      },
+      {
+        "height": 0,
+        "id": "feature-appearance",
+        "position": "absolute",
+        "visible": "hidden",
+        "width": 0
+      },
+      {
+        "height": 298,
+        "id": "feature-tasks",
+        "position": "absolute",
+        "visible": "visible",
+        "width": 298
+      },
+      {
+        "height": 0,
+        "id": "feature-schedule",
+        "position": "absolute",
+        "visible": "hidden",
+        "width": 0
+      },
+      {
+        "height": 0,
+        "id": "everyday",
+        "position": "absolute",
+        "visible": "hidden",
+        "width": 0
+      },
+      {
+        "height": 0,
+        "id": "platforms",
+        "position": "absolute",
+        "visible": "hidden",
+        "width": 0
+      },
+      {
+        "height": 0,
+        "id": null,
+        "position": "absolute",
+        "visible": "hidden",
+        "width": 0
+      }
+    ],
+    "overflow": false,
+    "scroll": 3051,
+    "width": 390
+  },
+  "desktop": {
+    "art": {
+      "asciiArt": "planit",
+      "asciiDestination": "feature-tasks",
+      "asciiFigure": "feature-tasks",
+      "asciiMotion": "animated",
+      "asciiPhase": "wave",
+      "asciiProgress": "1"
+    },
+    "height": 1215,
+    "overflow": false,
+    "theme": "dark",
+    "width": 3440
+  }
+}

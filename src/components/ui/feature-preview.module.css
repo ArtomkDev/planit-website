@@ -1,0 +1,104 @@
+@property --preview-motion-strength {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.preview {
+  --preview-delay: 0ms;
+  --preview-motion-strength: 0;
+  transition: --preview-motion-strength 480ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.preview[data-motion="intro"] {
+  --preview-delay: var(--intro-delay);
+}
+
+.cycle {
+  display: contents;
+}
+
+.accent {
+  color: var(--preview-accent);
+}
+
+.accentBorder {
+  border-color: var(--preview-accent);
+}
+
+.preview[data-active="true"] {
+  --preview-motion-strength: 1;
+  transition-duration: 180ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .preview[data-motion] .format {
+    animation: format-hint 650ms ease-in-out both;
+    animation-delay: calc(var(--preview-delay) + var(--item-delay, 0ms));
+  }
+
+  .preview[data-motion] .bell {
+    transform-origin: 50% 15%;
+    animation: bell-hint 680ms ease-in-out var(--preview-delay) both;
+  }
+
+  .preview[data-motion] .material {
+    animation: material-hint 600ms cubic-bezier(0.22, 1, 0.36, 1) var(--preview-delay) both;
+  }
+
+  .preview[data-motion] .material:nth-child(2) {
+    animation-delay: calc(var(--preview-delay) + 100ms);
+  }
+
+  .preview[data-motion] .widgetLesson {
+    animation: lesson-hint 750ms cubic-bezier(0.22, 1, 0.36, 1) var(--preview-delay) both;
+  }
+
+  .preview[data-motion] .syncArrow {
+    animation: sync-hint 950ms ease-in-out var(--preview-delay) both;
+  }
+
+  .preview[data-motion] .syncCloud {
+    animation: cloud-hint 700ms ease-out calc(var(--preview-delay) + 300ms) both;
+  }
+}
+
+@keyframes format-hint {
+  0%, 100% { transform: translateY(0); box-shadow: 0 0 0 0 transparent; }
+  45% {
+    transform: translateY(calc(-2px * var(--preview-motion-strength)));
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--preview-accent) calc(100% * var(--preview-motion-strength)), transparent);
+  }
+}
+
+@keyframes bell-hint {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(calc(-9deg * var(--preview-motion-strength))); }
+  50% { transform: rotate(calc(7deg * var(--preview-motion-strength))); }
+  75% { transform: rotate(calc(-3deg * var(--preview-motion-strength))); }
+}
+
+@keyframes material-hint {
+  0% { opacity: calc(1 - 0.3 * var(--preview-motion-strength)); transform: translateY(calc(3px * var(--preview-motion-strength))); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lesson-hint {
+  0% { opacity: calc(1 - 0.25 * var(--preview-motion-strength)); transform: translateX(calc(4px * var(--preview-motion-strength))); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes sync-hint {
+  0%, 100% { transform: translateX(0); }
+  30% { transform: translateX(calc(3px * var(--preview-motion-strength))); }
+  65% { transform: translateX(calc(-3px * var(--preview-motion-strength))); }
+}
+
+@keyframes cloud-hint {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  45% { opacity: calc(1 - 0.35 * var(--preview-motion-strength)); transform: translateY(calc(-1px * var(--preview-motion-strength))); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preview { transition: none; }
+}

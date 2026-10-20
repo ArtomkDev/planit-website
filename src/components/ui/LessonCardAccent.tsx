@@ -18,6 +18,7 @@ interface LessonCardAccentProps {
   seed?: number;
   depth?: AccentDepth;
   className?: string;
+  gutterSide?: "left" | "right";
 }
 
 const timePresets = [
@@ -47,6 +48,7 @@ export function LessonCardAccent({
   seed = 1,
   depth = "foreground",
   className,
+  gutterSide,
 }: LessonCardAccentProps) {
   const t = useTranslations("DecorativeCards");
   const rootRef = useRef<HTMLDivElement>(null);
@@ -156,6 +158,7 @@ export function LessonCardAccent({
         y: reduceMotion ? 0 : parallaxY,
       }}
       aria-hidden="true"
+      data-gutter-side={gutterSide}
       data-scroll-speed={preset.scrollSpeed.toFixed(2)}
       data-scroll-mode={preset.scrollSpeed < 1 ? "slower" : "faster"}
       className={cn(

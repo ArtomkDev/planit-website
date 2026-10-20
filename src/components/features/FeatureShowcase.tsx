@@ -10,8 +10,10 @@ import {
 } from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { useRef, type ReactNode } from "react";
 import { PixelDisplay } from "@/components/ui/PixelDisplay";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
+import { AccentRule } from "@/components/ui/AccentRule";
 import { LessonEditorDemo } from "./LessonEditorDemo";
 import { AppearanceDemo } from "./AppearanceDemo";
 import { TasksDemo } from "./TasksDemo";
@@ -27,14 +29,60 @@ function ScheduleFeature({ render }: DemoRenderProps) {
   return render({ editor: <ScheduleSettingsDemo /> });
 }
 
+function FeatureStage({ editor, index }: { editor: ReactNode; index: number }) {
+  const anchorRef = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
+  return (
+    <motion.div
+      initial={reduceMotion ? false : "hidden"}
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.18 }}
+      className={styles.stage}
+    >
+      <div className={styles.pixelBackdrop} aria-hidden="true">
+        <PixelDisplay
+          variant="feature"
+          tornEdge={index % 2 === 0 ? "left" : "right"}
+          anchorRef={anchorRef}
+        />
+      </div>
+      <motion.div
+        ref={anchorRef}
+        className={styles.demoReveal}
+        variants={{
+          hidden: {
+            opacity: 0,
+            y: 70,
+            scale: 0.94,
+            rotate: index % 2 === 0 ? 2 : -2,
+            filter: "blur(8px)",
+          },
+          visible: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            rotate: 0,
+            filter: "blur(0px)",
+            transition: reduceMotion
+              ? { duration: 0 }
+              : { type: "spring", duration: 1, bounce: 0.14 },
+          },
+        }}
+      >
+        {editor}
+      </motion.div>
+    </motion.div>
+  );
+}
+
 const features = [
   {
     id: "lesson",
     Icon: BookOpen,
     Demo: LessonEditorDemo,
     accents: [
-      { seed: 101, depth: "foreground", placement: "lessonOrbit" },
-      { seed: 102, depth: "background", placement: "lessonEcho" },
+      { seed: 101, depth: "foreground", placement: "lessonOrbit", side: "right" },
+      { seed: 102, depth: "background", placement: "lessonEcho", side: "left" },
     ],
   },
   {
@@ -42,7 +90,7 @@ const features = [
     Icon: Palette,
     Demo: AppearanceDemo,
     accents: [
-      { seed: 103, depth: "foreground", placement: "appearanceOrbit" },
+      { seed: 103, depth: "foreground", placement: "appearanceOrbit", side: "left" },
     ],
   },
   {
@@ -50,9 +98,9 @@ const features = [
     Icon: CheckSquare,
     Demo: TasksFeature,
     accents: [
-      { seed: 105, depth: "background", placement: "tasksEcho" },
-      { seed: 106, depth: "foreground", placement: "tasksOrbit" },
-      { seed: 107, depth: "background", placement: "tasksSatellite" },
+      { seed: 105, depth: "background", placement: "tasksEcho", side: "left" },
+      { seed: 106, depth: "foreground", placement: "tasksOrbit", side: "right" },
+      { seed: 107, depth: "background", placement: "tasksSatellite", side: "right" },
     ],
   },
   {
@@ -60,8 +108,8 @@ const features = [
     Icon: SlidersHorizontal,
     Demo: ScheduleFeature,
     accents: [
-      { seed: 108, depth: "foreground", placement: "scheduleOrbit" },
-      { seed: 109, depth: "background", placement: "scheduleEcho" },
+      { seed: 108, depth: "foreground", placement: "scheduleOrbit", side: "right" },
+      { seed: 109, depth: "background", placement: "scheduleEcho", side: "left" },
     ],
   },
 ] as const;
@@ -101,6 +149,7 @@ export function FeatureShowcase() {
     >
       <motion.div {...entrance} variants={sequence} className={styles.intro}>
         <motion.span variants={reveal} className={styles.eyebrow}>
+          <AccentRule />
           {t("badge")}
         </motion.span>
         <motion.h2 variants={reveal} id="features-title">
@@ -118,11 +167,12 @@ export function FeatureShowcase() {
           className={styles.feature}
         >
           <div className={styles.lessonAccents} aria-hidden="true">
-            {accents.map(({ seed, depth, placement }) => (
+            {accents.map(({ seed, depth, placement, side }) => (
               <LessonCardAccent
                 key={seed}
                 seed={seed}
                 depth={depth}
+                gutterSide={side}
                 className={`${styles.accentCard} ${styles[placement]}`}
               />
             ))}
@@ -134,6 +184,7 @@ export function FeatureShowcase() {
                   {...entrance}
                   variants={sequence}
                   className={styles.copy}
+                  data-ascii-copy="true"
                 >
                   <motion.span variants={reveal} className={styles.featureNumber}>
                     <span>0{index + 1}</span>
@@ -144,14 +195,6 @@ export function FeatureShowcase() {
                     {t(`${id}.title`)}
                   </motion.h3>
                   <motion.p variants={reveal}>{t(`${id}.description`)}</motion.p>
-                  <motion.ul variants={sequence}>
-                    {["first", "second", "third"].map((item) => (
-                      <motion.li variants={reveal} key={item}>
-                        <span aria-hidden="true" />
-                        {t(`${id}.points.${item}`)}
-                      </motion.li>
-                    ))}
-                  </motion.ul>
                   <motion.div variants={reveal} className={styles.tryHint}>
                     <CursorClick size={20} />
                     {t(`${id}.hint`)}
@@ -168,50 +211,9 @@ export function FeatureShowcase() {
                         aria-label={t("ui.cardPreview")}
                       >
                         <div className={styles.livePreviewCard}>{preview}</div>
-                        <div className={styles.livePreviewCaption}>
-                          <span>{t("ui.cardPreview")}</span>
-                        </div>
                       </motion.div>
                     )}
-                    <motion.div
-                      {...entrance}
-                      variants={sequence}
-                      className={styles.stage}
-                    >
-                      <div className={styles.pixelBackdrop} aria-hidden="true">
-                        <PixelDisplay
-                          variant="feature"
-                          tornEdge={index % 2 === 0 ? "left" : "right"}
-                        />
-                      </div>
-                      <motion.div
-                        className={styles.demoReveal}
-                        variants={{
-                          hidden: {
-                            opacity: 0,
-                            y: 70,
-                            scale: 0.94,
-                            rotate: index % 2 === 0 ? 2 : -2,
-                            filter: "blur(8px)",
-                          },
-                          visible: {
-                            opacity: 1,
-                            y: 0,
-                            scale: 1,
-                            rotate: 0,
-                            filter: "blur(0px)",
-                            transition: reduceMotion
-                              ? { duration: 0 }
-                              : { type: "spring", duration: 1, bounce: 0.14 },
-                          },
-                        }}
-                      >
-                        {editor}
-                      </motion.div>
-                      <motion.span variants={reveal} className={styles.demoCaption}>
-                        {t("demoCaption")}
-                      </motion.span>
-                    </motion.div>
+                    <FeatureStage editor={editor} index={index} />
                   </div>
                 </div>
               </>

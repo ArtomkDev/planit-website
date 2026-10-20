@@ -1,0 +1,307 @@
+{
+  "responsive": [
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1920
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "locale": "uk",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "",
+      "width": 1920
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "locale": "en",
+      "restrictedAccessible": [],
+      "restrictedMetadata": [],
+      "restrictedVisible": [],
+      "textOverflow": [],
+      "theme": "dark",
+      "width": 1920
+    }
+  ],
+  "copyAudit": {
+    "ukValues": 436,
+    "enValues": 436,
+    "remainingRestrictedTerms": []
+  },
+  "console": [],
+  "actualCopy": {
+    "cardTitles": [
+      "Поділіться кодом чи посиланням",
+      "Файл для друку й редагування",
+      "Нагадування у свій час",
+      "Матеріали поруч із заняттям",
+      "Розклад на екрані Android",
+      "Зміни під вашим контролем"
+    ],
+    "description": "PlanIt поєднує багатотижневий розклад, пов’язані із заняттями завдання, нагадування, навчальні матеріали, обмін, синхронізацію та віджет.",
+    "featureTitle": "Кожне заняття на своєму місці.",
+    "sectionTitle": "Усе потрібне між заняттями.",
+    "tasksTitle": "Завдання поруч із заняттям."
+  },
+  "limits": [
+    "Source/rendered-text and responsive verification for copy changes; full route interactions, real 200% zoom, OS reduced motion, screen reader and native touch were not rerun."
+  ]
+}

@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { FloatingSchedule } from "@/components/ui/FloatingSchedule";
 import { AndroidRobotLogo } from "@/components/ui/BrandIcons";
 import { PixelDisplay } from "@/components/ui/PixelDisplay";
+import { AccentRule } from "@/components/ui/AccentRule";
 
 import { APP_URL, PLAY_MARKET_URL } from "@/lib/site";
 
@@ -14,7 +15,7 @@ export function Hero() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative -mt-16 flex min-h-[calc(100vh+4rem)] items-center overflow-hidden bg-site-bg pt-16 transition-colors duration-500">
+    <section id="top" className="relative -mt-16 flex min-h-svh items-center overflow-hidden bg-site-bg pt-16 transition-colors duration-500 lg:min-h-[min(52rem,100svh)]">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,var(--brand-soft),transparent_34%),linear-gradient(var(--site-grid)_1px,transparent_1px),linear-gradient(90deg,var(--site-grid)_1px,transparent_1px)] bg-[size:auto,44px_44px,44px_44px] opacity-65 dark:opacity-30" />
       <PixelDisplay />
 
@@ -30,7 +31,7 @@ export function Hero() {
         }}
         className="relative z-20 mx-auto grid w-full max-w-7xl grid-cols-[minmax(0,1fr)] items-center gap-14 px-6 pb-16 pt-24 lg:grid-cols-[minmax(0,1.06fr)_minmax(0,.94fr)] lg:gap-20 lg:pb-20 lg:pt-28"
       >
-        <div className="mx-auto w-full min-w-0 max-w-[610px] text-center lg:mx-0 lg:text-left">
+        <div className="w-full min-w-0 max-w-[610px] text-left">
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
@@ -39,7 +40,7 @@ export function Hero() {
             className="mb-6"
           >
             <span className="inline-flex max-w-full items-center gap-3 text-xs font-black uppercase tracking-[0.18em] text-site-muted">
-              <span className="h-2 w-2 shrink-0 rounded-[2px] bg-brand" />
+              <AccentRule />
               {t("badge")}
             </span>
           </motion.div>
@@ -49,7 +50,7 @@ export function Hero() {
               hidden: { opacity: 0, scale: 0.94 },
               visible: { opacity: 1, scale: 1 },
             }}
-            className="text-[clamp(2.5rem,6vw,3rem)] font-black leading-[0.94] tracking-[-0.055em] text-site-text sm:text-6xl md:text-7xl"
+            className="text-[clamp(2.5rem,6vw,3rem)] font-black leading-[0.98] tracking-[-0.055em] text-site-text sm:text-6xl md:text-7xl"
           >
             <span className="block">{t("title1")}</span>
             <span className="block text-brand">
@@ -62,7 +63,7 @@ export function Hero() {
               hidden: { opacity: 0, y: 18 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="mx-auto mt-7 max-w-xl text-base font-medium leading-7 text-site-muted sm:text-lg lg:mx-0"
+            className="mt-6 max-w-md text-pretty text-base font-medium leading-7 text-site-muted sm:text-lg"
           >
             {t("description")}
           </motion.p>
@@ -72,7 +73,7 @@ export function Hero() {
               hidden: { opacity: 0, y: 18 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start"
+            className="mt-9 flex flex-col items-start justify-start gap-3 sm:flex-row"
           >
             <motion.a
               href={APP_URL}

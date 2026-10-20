@@ -13,17 +13,17 @@
     "source": "Google Play",
     "cookies": "Cookie Rules",
     "support": "Contact Support",
-    "openAppDescription": "Launch the current browser version of PlanIt.",
+    "openAppDescription": "Your schedule in the browser.",
     "sourceDescription": "Install the Android app from Google Play.",
-    "termsDescription": "Rules for using PlanIt and its services.",
-    "privacyDescription": "How PlanIt stores and synchronizes user data.",
-    "cookiesDescription": "How PlanIt treats browser storage and cookie-related updates.",
-    "deleteDescription": "Request account and related data deletion.",
-    "licensesDescription": "License notices for PlanIt's direct production dependencies.",
-    "supportDescription": "Send a direct support request by email.",
+    "termsDescription": "Rules for using PlanIt.",
+    "privacyDescription": "Data storage and protection.",
+    "cookiesDescription": "Browser storage and your choices.",
+    "deleteDescription": "How to delete your account and data.",
+    "licensesDescription": "Open-source licenses.",
+    "supportDescription": "Help by email.",
     "openApp": "Open Web App",
     "playStore": "Google Play",
-    "playStoreDescription": "Install the Android app from Google Play.",
+    "playStoreDescription": "The Android app.",
     "language": "UK",
     "theme": "Toggle theme",
     "openMenu": "Open menu",
@@ -32,18 +32,26 @@
     "switchLanguage": "Перемкнути на українську",
     "skipContent": "Skip to content"
   },
+  "SectionNavigation": {
+    "label": "Homepage sections",
+    "home": "PlanIt",
+    "features": "Features",
+    "everyday": "Everyday",
+    "platforms": "Platforms",
+    "start": "Get started"
+  },
   "Hero": {
-    "badge": "Your study day, all in one place",
-    "title1": "Classes, tasks, and materials",
-    "title2": "always at hand",
-    "description": "PlanIt keeps your multi-week schedule, tasks, and study materials together, reminds you before class, and makes a finished schedule easy to share.",
+    "badge": "Your study planner",
+    "title1": "Less chaos.",
+    "title2": "More plans.",
+    "description": "Classes, tasks, and materials in one place. Plan your week at your own pace.",
     "ctaPrimary": "Open Web App",
-    "ctaSecondary": "Get it on Google Play",
+    "ctaSecondary": "Google Play",
     "preview": {
       "eyebrow": "Today",
       "title": "Daily Schedule",
       "status": "Saved locally",
-      "metricLabel": "Lesson duration",
+      "metricLabel": "Class duration",
       "metricValue": "90 min",
       "metricCaption": "breaks are configured separately",
       "lessonLabel": "class",
@@ -95,51 +103,30 @@
   "Features": {
     "badge": "PlanIt features",
     "title": "Your schedule. Your rules.",
-    "description": "Take a look inside PlanIt. Adjust settings, style subjects, and add tasks right here.",
-    "demoCaption": "Interactive demo · changes stay in this example",
+    "description": "Try changing a schedule, styling a subject, or adding a task right here.",
     "openApp": "Continue in PlanIt",
     "lesson": {
       "label": "Classes",
-      "title": "Every class detail in its place.",
-      "description": "Subject, time, room, and teacher. Set shared subject details or make a change for a single class.",
-      "points": {
-        "first": "Use a schedule slot or set a custom class time",
-        "second": "Class type, room, and teacher alongside the subject",
-        "third": "Repeat every week or in selected cycle weeks"
-      },
+      "title": "Every class in its place.",
+      "description": "Time, teacher, room, and repeat settings — for a whole subject or a single class.",
       "hint": "Try changing the class type or time."
     },
     "appearance": {
       "label": "Appearance",
-      "title": "Recognize a subject at a glance.",
-      "description": "A solid color or your own gradient, a familiar icon, and a distinctive card. Give each subject its own look in PlanIt.",
-      "points": {
-        "first": "Colors from the app’s palette",
-        "second": "Two-color gradients with an adjustable angle",
-        "third": "Subject icons become a pattern on the card"
-      },
+      "title": "Recognize subjects at a glance.",
+      "description": "Choose a color, gradient, and icon. See your card update instantly.",
       "hint": "Pick a color or an icon to change the card."
     },
     "tasks": {
       "label": "Tasks",
-      "title": "Homework stays with its class.",
-      "description": "Write down what needs doing and link it to a class. The subject and time help you find the right task quickly.",
-      "points": {
-        "first": "Tasks linked to specific classes",
-        "second": "Filter tasks by schedule",
-        "third": "Completed cards collapse to free up space"
-      },
+      "title": "Tasks beside their classes.",
+      "description": "Link tasks to classes, filter by schedule, and collapse completed work.",
       "hint": "Complete a task or add one of your own."
     },
     "schedule": {
       "label": "Settings",
-      "title": "A schedule that follows your rhythm.",
-      "description": "Set the start of your day, class duration, and breaks. Then choose the week cycle and reminder times for your schedule.",
-      "points": {
-        "first": "Upcoming class times update automatically",
-        "second": "Multiple weeks in one schedule cycle",
-        "third": "Reminders and automatic task linking"
-      },
+      "title": "A schedule at your pace.",
+      "description": "Set classes, breaks, week cycles, and reminders. Class times update automatically.",
       "hint": "Change class duration and watch the times update."
     },
     "ui": {
@@ -175,7 +162,7 @@
       "globalScopeHint": "Shared value for classes of this subject.",
       "localScopeHint": "A value for this class only.",
       "location": "Location",
-      "room": "Room",
+      "room": "Location",
       "people": "Teachers",
       "teacher": "Teacher",
       "repeat": "Recurrence",
@@ -258,73 +245,95 @@
     }
   },
   "AppShowcase": {
-    "badge": "Made for real study days",
-    "title": "Small things that save time between classes",
-    "ribbon": {
-      "schedule": "Build a schedule that works for you",
-      "tasks": "Keep tasks with each class",
-      "materials": "Keep study materials nearby",
-      "reminders": "Get reminders at the right time",
-      "sharing": "Share your schedule without extras"
-    },
+    "badge": "A little more ease",
+    "title": "What you need between classes.",
     "items": {
-      "customization": {
-        "title": "A schedule you can read at a glance",
-        "description": "Give subjects their own colors, gradients, and icons, then add the lesson type, location, teachers, links, and an individual time when the day runs differently."
+      "sharing": {
+        "title": "Share with a code or link",
+        "description": "Sign in to share a code or link. Your recipient can save a copy of the schedule in their PlanIt."
       },
-      "tasks": {
-        "title": "Homework stays with its lesson",
-        "description": "Create a task from the class you are viewing or connect it later to a specific occurrence. The task keeps its subject, date, links, and attachments together."
+      "exports": {
+        "title": "A file to print or edit",
+        "description": "PDF for printing, Word for editing, or Excel, CSV, and text for other tasks."
       },
       "reminders": {
-        "title": "Reminders that fit the subject",
-        "description": "Use one lead time for most lessons and a different one for the subjects that need extra preparation."
+        "title": "Reminders at the right time",
+        "description": "One reminder time for your schedule, or a different lead time for a specific subject."
       },
       "materials": {
-        "title": "Photos, files, and links nearby",
-        "description": "After signing in, attach a board photo, handout, PDF, or study link to the lesson or task. Files you use again stay in a reusable library."
-      },
-      "sync": {
-        "title": "Your changes are not silently overwritten",
-        "description": "If the same schedule changed on the device and in the cloud, PlanIt shows the conflict and lets you keep the local version, the cloud copy, or both."
-      },
-      "sharing": {
-        "title": "Share only what is useful",
-        "description": "Choose whether teachers, colors, links, lesson notes, and your name travel with the schedule. Codes can last 1, 3, 7, or 30 days."
+        "title": "Materials beside their class",
+        "description": "Keep photos, PDFs, files, and links with the class or task they belong to."
       },
       "widgets": {
-        "title": "Your next class without opening PlanIt",
-        "description": "The home-screen widget shows lessons and breaks, highlights what is happening now, and moves to the previous or next day with a tap."
+        "title": "Your schedule on Android",
+        "description": "See classes and breaks on your home screen without opening PlanIt."
+      },
+      "sync": {
+        "title": "Your changes, your choice",
+        "description": "Sign in to sync schedules across devices. If changes conflict, choose which version to keep."
+      }
+    },
+    "preview": {
+      "example": "Example",
+      "sharing": {
+        "label": "Schedule code",
+        "duration": "1 · 3 · 7 · 30 days",
+        "regenerate": "Generate a new example code",
+        "copy": "Copy code",
+        "copied": "Copied",
+        "copyError": "Could not copy the code",
+        "currentCode": "Current code: {code}"
+      },
+      "exports": {
+        "label": "Export formats",
+        "caption": "Document, spreadsheet, or text"
+      },
+      "reminders": {
+        "label": "Reminder → class starts",
+        "caption": "30 minutes before class"
+      },
+      "materials": {
+        "file": "Class notes.pdf",
+        "photo": "Board photo"
+      },
+      "widgets": {
+        "today": "Today",
+        "subject": "Higher mathematics"
+      },
+      "sync": {
+        "local": "Device",
+        "cloud": "Cloud",
+        "both": "Keep both copies"
       }
     }
   },
   "Platforms": {
     "badge": "Platforms",
-    "title": "A clear status for every version",
+    "title": "Choose what works for you.",
     "items": {
       "ios": {
         "title": "iOS",
-        "description": "The iPhone and iPad version is still in development. You can use PlanIt in your browser in the meantime.",
+        "description": "Still in development. Use the web app on iPhone and iPad.",
         "button": "In development",
         "status": "In development"
       },
       "android": {
         "title": "Android",
-        "description": "The main PlanIt app: start as a guest, synchronize after signing in, and keep the day's schedule on your home screen.",
-        "button": "Get it on Google Play",
+        "description": "Start without an account. Sign in to sync, and add a schedule widget to your home screen.",
+        "button": "Google Play",
         "status": "Supported"
       },
       "web": {
         "title": "Web App",
-        "description": "The current PlanIt web build runs in a browser and uses the same schedule and synchronization model.",
+        "description": "The same schedule and sync. Just open it in your browser.",
         "button": "Open Web App",
         "status": "Online"
       }
     }
   },
   "CTA": {
-    "title": "Give your study week one clear place",
-    "description": "Open PlanIt in the browser and start without an account. Add the schedule first; tasks, reminders, and materials can follow at your pace.",
+    "title": "Start with your schedule.",
+    "description": "Open PlanIt in your browser. No account needed.",
     "button": "Open Web App"
   },
   "Footer": {
@@ -333,7 +342,8 @@
     "rights": "All rights reserved.",
     "status": "Available on Google Play",
     "androidAttribution": "Android robot reproduced or modified from work by Google and used under the Creative Commons 3.0 Attribution License.",
-    "cookieSettings": "Cookie preferences"
+    "cookieSettings": "Cookie preferences",
+    "description": "Classes, tasks, and materials. Always at hand."
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -548,7 +558,7 @@
   "SEO": {
     "home": {
       "title": "PlanIt | Class Schedule",
-      "description": "PlanIt keeps multi-week class schedules, linked tasks, lesson reminders, study materials, sharing, synchronization, and a home-screen widget in one place."
+      "description": "PlanIt keeps multi-week class schedules, linked tasks, class reminders, study materials, sharing, synchronization, and a home-screen widget in one place."
     },
     "privacy": {
       "title": "Privacy Policy",

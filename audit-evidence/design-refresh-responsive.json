@@ -1,0 +1,226 @@
+[
+  {
+    "clientWidth": 345,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 345,
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "clientWidth": 375,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 375,
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "clientWidth": 753,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 753,
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "clientWidth": 1008,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 1008,
+    "theme": "dark",
+    "width": 1023
+  },
+  {
+    "clientWidth": 1009,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 1009,
+    "theme": "dark",
+    "width": 1024
+  },
+  {
+    "clientWidth": 1425,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 1425,
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "clientWidth": 1905,
+    "dot": "rgb(100, 229, 160)",
+    "footerDot": "rgb(100, 229, 160)",
+    "scrollWidth": 1905,
+    "theme": "dark",
+    "width": 1920
+  },
+  {
+    "clientWidth": 345,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 345,
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "clientWidth": 375,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 375,
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "clientWidth": 753,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 753,
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "clientWidth": 1008,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 1008,
+    "theme": "light",
+    "width": 1023
+  },
+  {
+    "clientWidth": 1009,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 1009,
+    "theme": "light",
+    "width": 1024
+  },
+  {
+    "clientWidth": 1425,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 1425,
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "clientWidth": 1905,
+    "dot": "rgb(220, 68, 70)",
+    "footerDot": "rgb(220, 68, 70)",
+    "scrollWidth": 1905,
+    "theme": "light",
+    "width": 1920
+  },
+  {
+    "clientWidth": 345,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 345,
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "clientWidth": 375,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 375,
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "clientWidth": 753,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 753,
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "clientWidth": 1008,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 1008,
+    "theme": "light",
+    "width": 1023
+  },
+  {
+    "clientWidth": 1009,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 1009,
+    "theme": "light",
+    "width": 1024
+  },
+  {
+    "clientWidth": 1425,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 1425,
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "clientWidth": 1905,
+    "dot": "rgb(220, 68, 70)",
+    "locale": "en",
+    "scrollWidth": 1905,
+    "theme": "light",
+    "width": 1920
+  },
+  {
+    "clientWidth": 345,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 345,
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "clientWidth": 375,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 375,
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "clientWidth": 753,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 753,
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "clientWidth": 1008,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 1008,
+    "theme": "dark",
+    "width": 1023
+  },
+  {
+    "clientWidth": 1009,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 1009,
+    "theme": "dark",
+    "width": 1024
+  },
+  {
+    "clientWidth": 1425,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 1425,
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "clientWidth": 1905,
+    "dot": "rgb(100, 229, 160)",
+    "locale": "en",
+    "scrollWidth": 1905,
+    "theme": "dark",
+    "width": 1920
+  }
+]

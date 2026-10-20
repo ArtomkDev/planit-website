@@ -1,0 +1,79 @@
+{
+  "featuresObservation": {
+    "height": 1215,
+    "label": "Можливості",
+    "letters": [
+      {
+        "letter": "М",
+        "transform": "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(-3.59942e-31deg) scale(1)",
+        "x": 3245.046875,
+        "y": 147.5
+      },
+      {
+        "letter": "О",
+        "transform": "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(4.94921e-31deg) scale(1)",
+        "x": 3262.421875,
+        "y": 147.5
+      },
+      {
+        "letter": "Ж",
+        "transform": "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(-6.29899e-31deg) scale(1)",
+        "x": 3276.03125,
+        "y": 147.5
+      },
+      {
+        "letter": "Л",
+        "transform": "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(7.64877e-31deg) scale(1)",
+        "x": 3293.671875,
+        "y": 147.5
+      },
+      {
+        "letter": "И",
+        "transform": "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(-3.59942e-31deg) scale(1)",
+        "x": 3307.375,
+        "y": 147.5
+      },
+      {
+        "letter": "В",
+        "transform": "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(4.94921e-31deg) scale(1)",
+        "x": 3321.78125,
+        "y": 147.5
+      },
+      {
+        "letter": "О",
+        "transform": "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(-6.29899e-31deg) scale(1)",
+        "x": 3334.125,
+        "y": 147.5
+      },
+      {
+        "letter": "С",
+        "transform": "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(7.64877e-31deg) scale(1)",
+        "x": 3347.734375,
+        "y": 147.5
+      },
+      {
+        "letter": "Т",
+        "transform": "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(-3.59942e-31deg) scale(1)",
+        "x": 3359.046875,
+        "y": 147.5
+      },
+      {
+        "letter": "І",
+        "transform": "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(4.94921e-31deg) scale(1)",
+        "x": 3370.46875,
+        "y": 147.5
+      }
+    ],
+    "scroll": 5757,
+    "width": 3440
+  },
+  "screenshotWord": "Платформи",
+  "checks": {
+    "tests": 45,
+    "build": true,
+    "eslint": true,
+    "independentPhases": true,
+    "wordStreamSpacing": "at least 44px in sampled 640–2160px heights",
+    "reducedMotion": "source and geometry tests; OS preference not toggled"
+  }
+}

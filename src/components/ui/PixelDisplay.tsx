@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useSyncExternalStore } from "react";
+import { useEffect, useRef, useSyncExternalStore, type RefObject } from "react";
 import { useTheme } from "@/components/providers/ThemeProvider";
 import { createHeroChoreography } from "@/lib/hero-choreography";
+import { fitFeaturePixelGrid } from "@/lib/feature-pixel-grid";
 
 const DISPLAY_COLORS = {
   light: [244, 91, 138],
@@ -359,11 +360,8 @@ function createCanvasPixelRenderer(
       context.imageSmoothingEnabled = false;
     },
     render: (grid, red, green, blue) => {
-      const physicalCellSize = Math.round(grid.cellSize * pixelRatio);
-      const physicalGap = Math.round(grid.gap * pixelRatio);
-      const leadingGap = Math.floor(physicalGap / 2) / pixelRatio;
-      const pixelSize =
-        Math.max(1, physicalCellSize - physicalGap) / pixelRatio;
+      const leadingGap = Math.floor(grid.gap * pixelRatio / 2) / pixelRatio;
+      const pixelSize = Math.max(1 / pixelRatio, grid.cellSize - grid.gap);
 
       context.globalAlpha = 1;
       context.clearRect(0, 0, width, height);
@@ -490,11 +488,13 @@ function fastFalloff(exponent: number) {
 type PixelDisplayProps = {
   variant?: "hero" | "feature";
   tornEdge?: "left" | "right";
+  anchorRef?: RefObject<HTMLDivElement | null>;
 };
 
 export function PixelDisplay({
   variant = "hero",
   tornEdge = "left",
+  anchorRef,
 }: PixelDisplayProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const redrawRef = useRef<(() => void) | null>(null);
@@ -525,6 +525,8 @@ export function PixelDisplay({
     let width = 0;
     let height = 0;
     let pixelRatio = 1;
+    let panelLeft = 0;
+    let panelWidth = 0;
     let lastFrame = 0;
     let grid: MatrixGrid | null = null;
     let canvasBounds = canvas.getBoundingClientRect();
@@ -630,22 +632,25 @@ export function PixelDisplay({
       const compact = width < 768;
       const targetCellSize = compact ? 11 : 13;
       const targetGap = compact ? 1.25 : 1.5;
-      const cellSize = Math.round(targetCellSize * pixelRatio) / pixelRatio;
+      const fitted = variant === "feature" && panelWidth > 0
+        ? fitFeaturePixelGrid(width, height, panelLeft, panelWidth, targetCellSize)
+        : null;
+      const cellSize = fitted?.cellSize ?? Math.round(targetCellSize * pixelRatio) / pixelRatio;
       const gap = Math.max(1, Math.round(targetGap * pixelRatio)) / pixelRatio;
-      const columns = Math.max(
+      const columns = fitted?.columns ?? Math.max(
         1,
         variant === "feature"
           ? Math.floor(width / cellSize)
           : Math.ceil(width / cellSize),
       );
-      const rows =
+      const rows = fitted?.rows ?? (
         variant === "feature"
           ? Math.max(1, Math.floor(height / cellSize))
-          : Math.max(4, Math.ceil(height / cellSize));
-      const horizontalOffset =
+          : Math.max(4, Math.ceil(height / cellSize)));
+      const horizontalOffset = fitted?.horizontalOffset ??
         Math.round(((width - columns * cellSize) / 2) * pixelRatio) /
         pixelRatio;
-      const verticalOffset =
+      const verticalOffset = fitted?.verticalOffset ??
         Math.round(
           (height - rows * cellSize) * (variant === "feature" ? 0.5 : 1) * pixelRatio,
         ) / pixelRatio;
@@ -1627,14 +1632,24 @@ export function PixelDisplay({
 
     const resize = () => {
       canvasBounds = canvas.getBoundingClientRect();
-      const nextWidth = Math.max(1, canvas.clientWidth);
-      const nextHeight = Math.max(1, canvas.clientHeight);
+      const nextWidth = Math.max(1, variant === "feature" ? canvasBounds.width : canvas.clientWidth);
+      const nextHeight = Math.max(1, variant === "feature" ? canvasBounds.height : canvas.clientHeight);
       const nextPixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+      const anchor = anchorRef?.current;
+      // Measure layout width before the entrance transform; its parent stage
+      // stays still while the demo rises/scales into place.
+      const nextPanelWidth = anchor ? parseFloat(getComputedStyle(anchor).width) : 0;
+      const stageBounds = anchor?.parentElement?.getBoundingClientRect();
+      const nextPanelLeft = stageBounds
+        ? stageBounds.left + (stageBounds.width - nextPanelWidth) / 2 - canvasBounds.left
+        : 0;
 
       if (
         nextWidth === width &&
         nextHeight === height &&
-        nextPixelRatio === pixelRatio
+        nextPixelRatio === pixelRatio &&
+        nextPanelLeft === panelLeft &&
+        nextPanelWidth === panelWidth
       ) {
         return;
       }
@@ -1642,6 +1657,8 @@ export function PixelDisplay({
       width = nextWidth;
       height = nextHeight;
       pixelRatio = nextPixelRatio;
+      panelLeft = nextPanelLeft;
+      panelWidth = nextPanelWidth;
       canvas.width = Math.round(width * pixelRatio);
       canvas.height = Math.round(height * pixelRatio);
       rebuildGrid();
@@ -1717,6 +1734,7 @@ export function PixelDisplay({
     resize();
     const resizeObserver = new ResizeObserver(resize);
     resizeObserver.observe(canvas);
+    if (anchorRef?.current) resizeObserver.observe(anchorRef.current);
 
     const intersectionObserver = new IntersectionObserver(
       ([entry]) => {
@@ -1770,7 +1788,7 @@ export function PixelDisplay({
       renderer.dispose();
       redrawRef.current = null;
     };
-  }, [reduceMotion, variant, tornEdge]);
+  }, [reduceMotion, variant, tornEdge, anchorRef]);
 
   return (
     <div

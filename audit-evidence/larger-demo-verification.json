@@ -1,0 +1,1857 @@
+{
+  "responsive": [
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 360
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 390
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 768
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 1023
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 1024
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "",
+      "width": 1920
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "uk",
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 360
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 390
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 768
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 1023
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 1024
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 1440
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "en",
+      "theme": "",
+      "width": 1920
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 293,
+          "bodyWidth": 293,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "305px",
+          "topInset": "24px",
+          "width": "305px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-lesson",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-appearance",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-tasks",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "480px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "24px",
+          "height": "628px",
+          "id": "feature-schedule",
+          "stageHeight": "628px",
+          "stageWidth": "335px",
+          "topInset": "24px",
+          "width": "335px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 323,
+          "bodyWidth": 323,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "334.5px",
+          "topInset": "32px",
+          "width": "334.5px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "462px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 429,
+          "bodyWidth": 429,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "440.5px",
+          "topInset": "32px",
+          "width": "440.5px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "captionCount": 0,
+      "documentOverflow": false,
+      "frames": [
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-lesson",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-appearance",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-tasks",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        },
+        {
+          "bodyFocusable": true,
+          "bodyHeight": "520px",
+          "bodyScrollWidth": 448,
+          "bodyWidth": 448,
+          "bottomInset": "32px",
+          "height": "668px",
+          "id": "feature-schedule",
+          "stageHeight": "668px",
+          "stageWidth": "576px",
+          "topInset": "32px",
+          "width": "460px"
+        }
+      ],
+      "locale": "en",
+      "theme": "dark",
+      "width": 1920
+    }
+  ],
+  "interactions": [
+    {
+      "action": "schedule duration / save / cancel / reset",
+      "timesRecalculated": true,
+      "saveStatus": "Збережено",
+      "restoredDuration": "75",
+      "resetDuration": "90"
+    },
+    {
+      "action": "keyboard scroll",
+      "focused": true,
+      "id": "feature-lesson",
+      "scrollRange": 416,
+      "scrollTop": 416
+    },
+    {
+      "action": "keyboard scroll",
+      "focused": true,
+      "id": "feature-appearance",
+      "scrollRange": 21,
+      "scrollTop": 9
+    },
+    {
+      "action": "keyboard scroll",
+      "focused": true,
+      "id": "feature-tasks",
+      "scrollRange": 47,
+      "scrollTop": 4
+    },
+    {
+      "action": "keyboard scroll",
+      "focused": true,
+      "id": "feature-schedule",
+      "scrollRange": 609,
+      "scrollTop": 0
+    },
+    {
+      "action": "open and cancel task editor",
+      "frameHeight": "668px",
+      "textareaVisible": true,
+      "title": "Нове завдання"
+    },
+    {
+      "action": "settled schedule keyboard scroll",
+      "focused": true,
+      "scrollRange": 609,
+      "scrollTop": 609
+    }
+  ],
+  "shortViewports": [
+    {
+      "frames": [
+        {
+          "bodyHeight": "373.516px",
+          "height": "521.516px",
+          "id": "feature-lesson"
+        },
+        {
+          "bodyHeight": "373.516px",
+          "height": "521.516px",
+          "id": "feature-appearance"
+        },
+        {
+          "bodyHeight": "373.516px",
+          "height": "521.516px",
+          "id": "feature-tasks"
+        },
+        {
+          "bodyHeight": "373.516px",
+          "height": "521.516px",
+          "id": "feature-schedule"
+        }
+      ],
+      "height": 667,
+      "overflow": false,
+      "width": 360
+    },
+    {
+      "frames": [
+        {
+          "bodyHeight": "472.625px",
+          "height": "620.625px",
+          "id": "feature-lesson"
+        },
+        {
+          "bodyHeight": "472.625px",
+          "height": "620.625px",
+          "id": "feature-appearance"
+        },
+        {
+          "bodyHeight": "472.625px",
+          "height": "620.625px",
+          "id": "feature-tasks"
+        },
+        {
+          "bodyHeight": "472.625px",
+          "height": "620.625px",
+          "id": "feature-schedule"
+        }
+      ],
+      "height": 844,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "frames": [
+        {
+          "bodyHeight": "520px",
+          "height": "668px",
+          "id": "feature-lesson"
+        },
+        {
+          "bodyHeight": "520px",
+          "height": "668px",
+          "id": "feature-appearance"
+        },
+        {
+          "bodyHeight": "520px",
+          "height": "668px",
+          "id": "feature-tasks"
+        },
+        {
+          "bodyHeight": "520px",
+          "height": "668px",
+          "id": "feature-schedule"
+        }
+      ],
+      "height": 480,
+      "overflow": false,
+      "width": 768
+    }
+  ],
+  "actualGeometry": {
+    "bottomProtrusion": 32,
+    "frameHeight": 668,
+    "frameWidth": 460,
+    "topProtrusion": 32
+  },
+  "console": [],
+  "notes": [
+    "Caption markup, styles and both localized strings removed.",
+    "Four editors are 460 × 668px on desktop with 520px scrollable bodies; mobile body uses clamp(300px,56svh,480px).",
+    "First immediate keyboard scroll readings can precede smooth-scroll completion; settled schedule reading confirms actual scroll.",
+    "OS reduced motion, actual 200% zoom, screen reader and native touch were not rerun for this layout-only change."
+  ]
+}

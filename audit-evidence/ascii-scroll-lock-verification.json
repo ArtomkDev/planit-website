@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-20",
+  "maxDrift": 0,
+  "resting": [
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3622,
+      "visible": "visible"
+    },
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3652,
+      "visible": "visible"
+    },
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3630,
+      "visible": "visible"
+    },
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3673,
+      "visible": "visible"
+    },
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3639,
+      "visible": "visible"
+    },
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3653,
+      "visible": "visible"
+    },
+    {
+      "bitmapWidth": 1080,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "wave",
+      "position": "absolute",
+      "relativeX": 504.5,
+      "relativeY": -240.59375,
+      "scroll": 3622,
+      "visible": "visible"
+    }
+  ],
+  "relay": [
+    {
+      "activePixels": 2600832,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "relay",
+      "scroll": 3884
+    },
+    {
+      "activePixels": 2600832,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "relay",
+      "scroll": 3908
+    },
+    {
+      "activePixels": 2600832,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "relay",
+      "scroll": 3890
+    },
+    {
+      "activePixels": 2600832,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "relay",
+      "scroll": 3902
+    },
+    {
+      "activePixels": 2600832,
+      "cssTop": "2638px",
+      "documentTop": 3471,
+      "phase": "relay",
+      "scroll": 3884
+    }
+  ],
+  "responsive": [
+    {
+      "bitmapPixels": 177608,
+      "motion": "static",
+      "overflow": false,
+      "positions": [
+        "absolute"
+      ],
+      "sceneWidth": 298,
+      "width": 390
+    },
+    {
+      "bitmapPixels": 838140,
+      "motion": "animated",
+      "overflow": false,
+      "positions": [
+        "absolute"
+      ],
+      "sceneWidth": 915,
+      "width": 768
+    },
+    {
+      "bitmapPixels": 1167480,
+      "motion": "animated",
+      "overflow": false,
+      "positions": [
+        "absolute"
+      ],
+      "sceneWidth": 1080,
+      "width": 1920
+    }
+  ],
+  "notes": [
+    "Document/section offsets measured during native scrolling in both directions.",
+    "60/120/144Hz paint scheduling covered by unit simulation, not monitor FPS measurement."
+  ]
+}

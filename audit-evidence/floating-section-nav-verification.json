@@ -1,0 +1,2223 @@
+{
+  "anchors": [
+    {
+      "count": 1,
+      "current": "Можливості",
+      "focused": "H2",
+      "hash": "#features"
+    },
+    {
+      "count": 1,
+      "current": "Щодня",
+      "focused": "H2",
+      "hash": "#everyday"
+    },
+    {
+      "count": 1,
+      "current": "Платформи",
+      "focused": "H2",
+      "hash": "#platforms"
+    },
+    {
+      "count": 1,
+      "current": "Почати",
+      "focused": "H2",
+      "hash": "#get-started"
+    },
+    {
+      "count": 1,
+      "current": "PlanIt",
+      "focused": "H1",
+      "hash": "#top"
+    }
+  ],
+  "keyboard": {
+    "focusVisible": true,
+    "label": "Можливості",
+    "outline": "2px",
+    "rotatedLetters": 0
+  },
+  "activation": {
+    "focused": "H2",
+    "hash": "#features"
+  },
+  "documentReturn": {
+    "document": {
+      "nav": 0,
+      "path": "/uk/wiki/privacy"
+    },
+    "returned": {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#top",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(139.837px, 6.91394px, 0px) translate(-50%, -50%) rotate(-12.372deg) scale(1.08)",
+            "translate3d(151.903px, 4.23049px, 0px) translate(-50%, -50%) rotate(-12.7089deg) scale(1.08)",
+            "translate3d(164.497px, 1.34659px, 0px) translate(-50%, -50%) rotate(-13.0917deg) scale(1.08)",
+            "translate3d(179.089px, -2.11135px, 0px) translate(-50%, -50%) rotate(-13.5816deg) scale(1.08)",
+            "translate3d(189.724px, -4.71892px, 0px) translate(-50%, -50%) rotate(-13.9755deg) scale(1.08)",
+            "translate3d(198.592px, -6.95481px, 0px) translate(-50%, -50%) rotate(-14.3315deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 809.36px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 886px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 930px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 974px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1018px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 114,
+      "width": 1920
+    }
+  },
+  "initial": {
+    "bounds": {
+      "height": 1215,
+      "width": 224,
+      "x": 3177,
+      "y": 0
+    },
+    "current": [
+      "PlanIt"
+    ],
+    "display": "block",
+    "hash": "#top",
+    "height": 1215,
+    "links": [
+      {
+        "href": "#top",
+        "label": "PlanIt",
+        "letters": [
+          "translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+          "translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+          "translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+          "translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+          "translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+          "translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)"
+        ],
+        "position": "translate3d(0px, 977px, 0px)"
+      },
+      {
+        "href": "#features",
+        "label": "Можливості",
+        "letters": [
+          "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1021px, 0px)"
+      },
+      {
+        "href": "#everyday",
+        "label": "Щодня",
+        "letters": [
+          "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1065px, 0px)"
+      },
+      {
+        "href": "#platforms",
+        "label": "Платформи",
+        "letters": [
+          "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1109px, 0px)"
+      },
+      {
+        "href": "#get-started",
+        "label": "Почати",
+        "letters": [
+          "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1153px, 0px)"
+      }
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "ready": "true",
+    "scroll": 0,
+    "width": 3440
+  },
+  "flight": {
+    "bounds": {
+      "height": 1215,
+      "width": 224,
+      "x": 3192,
+      "y": 0
+    },
+    "current": [
+      "Можливості"
+    ],
+    "display": "block",
+    "hash": "#features",
+    "height": 1215,
+    "links": [
+      {
+        "href": "#top",
+        "label": "PlanIt",
+        "letters": [
+          "translate3d(143.727px, 5.74853px, 0px) translate(-50%, -50%) rotate(-11.1183deg) scale(1)",
+          "translate3d(154.928px, 3.51739px, 0px) translate(-50%, -50%) rotate(-11.4149deg) scale(1)",
+          "translate3d(166.629px, 1.11961px, 0px) translate(-50%, -50%) rotate(-11.7514deg) scale(1)",
+          "translate3d(180.199px, -1.75546px, 0px) translate(-50%, -50%) rotate(-12.1817deg) scale(1)",
+          "translate3d(190.099px, -3.9235px, 0px) translate(-50%, -50%) rotate(-12.5272deg) scale(1)",
+          "translate3d(198.361px, -5.7825px, 0px) translate(-50%, -50%) rotate(-12.8392deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 124.774px, 0px)"
+      },
+      {
+        "href": "#features",
+        "label": "Можливості",
+        "letters": [
+          "translate3d(186.449px, 97.0822px, 0px) translate(-50%, -50%) rotate(-75.1768deg) scale(1.08)",
+          "translate3d(192.799px, 70.8291px, 0px) translate(-50%, -50%) rotate(-77.6416deg) scale(1.08)",
+          "translate3d(197.992px, 44.3509px, 0px) translate(-50%, -50%) rotate(-80.1755deg) scale(1.08)",
+          "translate3d(201.979px, 17.7933px, 0px) translate(-50%, -50%) rotate(-82.7565deg) scale(1.08)",
+          "translate3d(204.514px, -6.02378px, 0px) translate(-50%, -50%) rotate(-85.0969deg) scale(1.08)",
+          "translate3d(206.013px, -28.6891px, 0px) translate(-50%, -50%) rotate(-87.3395deg) scale(1.08)",
+          "translate3d(206.615px, -50.6792px, 0px) translate(-50%, -50%) rotate(-89.5232deg) scale(1.08)",
+          "translate3d(206.404px, -71.7955px, 0px) translate(-50%, -50%) rotate(-91.6216deg) scale(1.08)",
+          "translate3d(205.537px, -91.0584px, 0px) translate(-50%, -50%) rotate(-93.5321deg) scale(1.08)",
+          "translate3d(204.398px, -106.27px, 0px) translate(-50%, -50%) rotate(-95.0355deg) scale(1.08)"
+        ],
+        "position": "translate3d(0px, 452.444px, 0px)"
+      },
+      {
+        "href": "#everyday",
+        "label": "Щодня",
+        "letters": [
+          "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1065px, 0px)"
+      },
+      {
+        "href": "#platforms",
+        "label": "Платформи",
+        "letters": [
+          "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1109px, 0px)"
+      },
+      {
+        "href": "#get-started",
+        "label": "Почати",
+        "letters": [
+          "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+          "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+        ],
+        "position": "translate3d(0px, 1153px, 0px)"
+      }
+    ],
+    "overflow": false,
+    "overlaps": [],
+    "ready": "true",
+    "scroll": 899,
+    "width": 3440
+  },
+  "gutters": [
+    {
+      "fadeWidth": "344px",
+      "overlap": 0,
+      "visible": 0,
+      "width": 1920
+    },
+    {
+      "fadeWidth": "344px",
+      "overlap": 0,
+      "visible": 0,
+      "width": 2240
+    },
+    {
+      "fadeWidth": "344px",
+      "overlap": 0,
+      "visible": 0,
+      "width": 2559
+    },
+    {
+      "fadeWidth": "344px",
+      "overlap": 0,
+      "visible": 5,
+      "width": 2560
+    },
+    {
+      "fadeWidth": "344px",
+      "overlap": 0,
+      "visible": 5,
+      "width": 3440
+    }
+  ],
+  "cases": [
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "none",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(203.821px, 29.9784px, 0px) translate(-50%, -50%) rotate(-61.3932deg) scale(1.08)",
+            "translate3d(208.936px, 18.3431px, 0px) translate(-50%, -50%) rotate(-71.5444deg) scale(1.08)",
+            "translate3d(211.687px, 5.83875px, 0px) translate(-50%, -50%) rotate(-83.9328deg) scale(1.08)",
+            "translate3d(211.236px, -9.15469px, 0px) translate(-50%, -50%) rotate(-99.449deg) scale(1.08)",
+            "translate3d(208.192px, -20.4609px, 0px) translate(-50%, -50%) rotate(-110.409deg) scale(1.08)",
+            "translate3d(203.73px, -30.1556px, 0px) translate(-50%, -50%) rotate(-118.741deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 536.498px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(109.982px, 30.3809px, 0px) translate(-50%, -50%) rotate(-28.9113deg) scale(1)",
+            "translate3d(124.622px, 22.1653px, 0px) translate(-50%, -50%) rotate(-29.6979deg) scale(1)",
+            "translate3d(138.911px, 13.8792px, 0px) translate(-50%, -50%) rotate(-30.5315deg) scale(1)",
+            "translate3d(152.761px, 5.56824px, 0px) translate(-50%, -50%) rotate(-31.4112deg) scale(1)",
+            "translate3d(164.773px, -1.88508px, 0px) translate(-50%, -50%) rotate(-32.2395deg) scale(1)",
+            "translate3d(175.843px, -8.97796px, 0px) translate(-50%, -50%) rotate(-33.0647deg) scale(1)",
+            "translate3d(186.249px, -15.8596px, 0px) translate(-50%, -50%) rotate(-33.9018deg) scale(1)",
+            "translate3d(195.929px, -22.4677px, 0px) translate(-50%, -50%) rotate(-34.7415deg) scale(1)",
+            "translate3d(204.495px, -28.4958px, 0px) translate(-50%, -50%) rotate(-35.5397deg) scale(1)",
+            "translate3d(211.08px, -33.2562px, 0px) translate(-50%, -50%) rotate(-36.1928deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 918.278px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "false",
+      "scroll": 508,
+      "width": 390
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "none",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(203.821px, 29.9784px, 0px) translate(-50%, -50%) rotate(-61.3932deg) scale(1.08)",
+            "translate3d(208.936px, 18.3431px, 0px) translate(-50%, -50%) rotate(-71.5444deg) scale(1.08)",
+            "translate3d(211.687px, 5.83875px, 0px) translate(-50%, -50%) rotate(-83.9328deg) scale(1.08)",
+            "translate3d(211.236px, -9.15469px, 0px) translate(-50%, -50%) rotate(-99.449deg) scale(1.08)",
+            "translate3d(208.192px, -20.4609px, 0px) translate(-50%, -50%) rotate(-110.409deg) scale(1.08)",
+            "translate3d(203.73px, -30.1556px, 0px) translate(-50%, -50%) rotate(-118.741deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 536.498px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(109.982px, 30.3809px, 0px) translate(-50%, -50%) rotate(-28.9113deg) scale(1)",
+            "translate3d(124.622px, 22.1653px, 0px) translate(-50%, -50%) rotate(-29.6979deg) scale(1)",
+            "translate3d(138.911px, 13.8792px, 0px) translate(-50%, -50%) rotate(-30.5315deg) scale(1)",
+            "translate3d(152.761px, 5.56824px, 0px) translate(-50%, -50%) rotate(-31.4112deg) scale(1)",
+            "translate3d(164.773px, -1.88508px, 0px) translate(-50%, -50%) rotate(-32.2395deg) scale(1)",
+            "translate3d(175.843px, -8.97796px, 0px) translate(-50%, -50%) rotate(-33.0647deg) scale(1)",
+            "translate3d(186.249px, -15.8596px, 0px) translate(-50%, -50%) rotate(-33.9018deg) scale(1)",
+            "translate3d(195.929px, -22.4677px, 0px) translate(-50%, -50%) rotate(-34.7415deg) scale(1)",
+            "translate3d(204.495px, -28.4958px, 0px) translate(-50%, -50%) rotate(-35.5397deg) scale(1)",
+            "translate3d(211.08px, -33.2562px, 0px) translate(-50%, -50%) rotate(-36.1928deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 918.278px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "false",
+      "scroll": 508,
+      "width": 768
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "none",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(203.821px, 29.9784px, 0px) translate(-50%, -50%) rotate(-61.3932deg) scale(1.08)",
+            "translate3d(208.936px, 18.3431px, 0px) translate(-50%, -50%) rotate(-71.5444deg) scale(1.08)",
+            "translate3d(211.687px, 5.83875px, 0px) translate(-50%, -50%) rotate(-83.9328deg) scale(1.08)",
+            "translate3d(211.236px, -9.15469px, 0px) translate(-50%, -50%) rotate(-99.449deg) scale(1.08)",
+            "translate3d(208.192px, -20.4609px, 0px) translate(-50%, -50%) rotate(-110.409deg) scale(1.08)",
+            "translate3d(203.73px, -30.1556px, 0px) translate(-50%, -50%) rotate(-118.741deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 536.498px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(109.982px, 30.3809px, 0px) translate(-50%, -50%) rotate(-28.9113deg) scale(1)",
+            "translate3d(124.622px, 22.1653px, 0px) translate(-50%, -50%) rotate(-29.6979deg) scale(1)",
+            "translate3d(138.911px, 13.8792px, 0px) translate(-50%, -50%) rotate(-30.5315deg) scale(1)",
+            "translate3d(152.761px, 5.56824px, 0px) translate(-50%, -50%) rotate(-31.4112deg) scale(1)",
+            "translate3d(164.773px, -1.88508px, 0px) translate(-50%, -50%) rotate(-32.2395deg) scale(1)",
+            "translate3d(175.843px, -8.97796px, 0px) translate(-50%, -50%) rotate(-33.0647deg) scale(1)",
+            "translate3d(186.249px, -15.8596px, 0px) translate(-50%, -50%) rotate(-33.9018deg) scale(1)",
+            "translate3d(195.929px, -22.4677px, 0px) translate(-50%, -50%) rotate(-34.7415deg) scale(1)",
+            "translate3d(204.495px, -28.4958px, 0px) translate(-50%, -50%) rotate(-35.5397deg) scale(1)",
+            "translate3d(211.08px, -33.2562px, 0px) translate(-50%, -50%) rotate(-36.1928deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 918.278px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "false",
+      "scroll": 508,
+      "width": 1440
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "none",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(203.821px, 29.9784px, 0px) translate(-50%, -50%) rotate(-61.3932deg) scale(1.08)",
+            "translate3d(208.936px, 18.3431px, 0px) translate(-50%, -50%) rotate(-71.5444deg) scale(1.08)",
+            "translate3d(211.687px, 5.83875px, 0px) translate(-50%, -50%) rotate(-83.9328deg) scale(1.08)",
+            "translate3d(211.236px, -9.15469px, 0px) translate(-50%, -50%) rotate(-99.449deg) scale(1.08)",
+            "translate3d(208.192px, -20.4609px, 0px) translate(-50%, -50%) rotate(-110.409deg) scale(1.08)",
+            "translate3d(203.73px, -30.1556px, 0px) translate(-50%, -50%) rotate(-118.741deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 536.498px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(109.982px, 30.3809px, 0px) translate(-50%, -50%) rotate(-28.9113deg) scale(1)",
+            "translate3d(124.622px, 22.1653px, 0px) translate(-50%, -50%) rotate(-29.6979deg) scale(1)",
+            "translate3d(138.911px, 13.8792px, 0px) translate(-50%, -50%) rotate(-30.5315deg) scale(1)",
+            "translate3d(152.761px, 5.56824px, 0px) translate(-50%, -50%) rotate(-31.4112deg) scale(1)",
+            "translate3d(164.773px, -1.88508px, 0px) translate(-50%, -50%) rotate(-32.2395deg) scale(1)",
+            "translate3d(175.843px, -8.97796px, 0px) translate(-50%, -50%) rotate(-33.0647deg) scale(1)",
+            "translate3d(186.249px, -15.8596px, 0px) translate(-50%, -50%) rotate(-33.9018deg) scale(1)",
+            "translate3d(195.929px, -22.4677px, 0px) translate(-50%, -50%) rotate(-34.7415deg) scale(1)",
+            "translate3d(204.495px, -28.4958px, 0px) translate(-50%, -50%) rotate(-35.5397deg) scale(1)",
+            "translate3d(211.08px, -33.2562px, 0px) translate(-50%, -50%) rotate(-36.1928deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 918.278px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "false",
+      "scroll": 508,
+      "width": 1919
+    },
+    {
+      "bounds": {
+        "height": 900,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(179.163px, 26.9638px, 0px) translate(-50%, -50%) rotate(-47.4601deg) scale(1.08)",
+            "translate3d(187.889px, 16.4985px, 0px) translate(-50%, -50%) rotate(-53.128deg) scale(1.08)",
+            "translate3d(195.313px, 5.2516px, 0px) translate(-50%, -50%) rotate(-60.3173deg) scale(1.08)",
+            "translate3d(201.544px, -8.23409px, 0px) translate(-50%, -50%) rotate(-70.5021deg) scale(1.08)",
+            "translate3d(204.316px, -18.4034px, 0px) translate(-50%, -50%) rotate(-79.1722deg) scale(1.08)",
+            "translate3d(205.375px, -27.1232px, 0px) translate(-50%, -50%) rotate(-87.043deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 234.277px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(105.899px, 27.6141px, 0px) translate(-50%, -50%) rotate(-26.2529deg) scale(1)",
+            "translate3d(120.828px, 20.1466px, 0px) translate(-50%, -50%) rotate(-26.9036deg) scale(1)",
+            "translate3d(135.455px, 12.6152px, 0px) translate(-50%, -50%) rotate(-27.5908deg) scale(1)",
+            "translate3d(149.694px, 5.06113px, 0px) translate(-50%, -50%) rotate(-28.3132deg) scale(1)",
+            "translate3d(162.094px, -1.7134px, 0px) translate(-50%, -50%) rotate(-28.9912deg) scale(1)",
+            "translate3d(173.571px, -8.16033px, 0px) translate(-50%, -50%) rotate(-29.6645deg) scale(1)",
+            "translate3d(184.404px, -14.4152px, 0px) translate(-50%, -50%) rotate(-30.3454deg) scale(1)",
+            "translate3d(194.527px, -20.4215px, 0px) translate(-50%, -50%) rotate(-31.0263deg) scale(1)",
+            "translate3d(203.522px, -25.9007px, 0px) translate(-50%, -50%) rotate(-31.6719deg) scale(1)",
+            "translate3d(210.464px, -30.2275px, 0px) translate(-50%, -50%) rotate(-32.1989deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 646.657px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 750px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 794px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 838px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 508,
+      "width": 1920
+    },
+    {
+      "bounds": {
+        "height": 900,
+        "width": 224,
+        "x": 1977,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(179.163px, 26.9638px, 0px) translate(-50%, -50%) rotate(-47.4601deg) scale(1.08)",
+            "translate3d(187.889px, 16.4985px, 0px) translate(-50%, -50%) rotate(-53.128deg) scale(1.08)",
+            "translate3d(195.313px, 5.2516px, 0px) translate(-50%, -50%) rotate(-60.3173deg) scale(1.08)",
+            "translate3d(201.544px, -8.23409px, 0px) translate(-50%, -50%) rotate(-70.5021deg) scale(1.08)",
+            "translate3d(204.316px, -18.4034px, 0px) translate(-50%, -50%) rotate(-79.1722deg) scale(1.08)",
+            "translate3d(205.375px, -27.1232px, 0px) translate(-50%, -50%) rotate(-87.043deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 234.277px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(105.899px, 27.6141px, 0px) translate(-50%, -50%) rotate(-26.2529deg) scale(1)",
+            "translate3d(120.828px, 20.1466px, 0px) translate(-50%, -50%) rotate(-26.9036deg) scale(1)",
+            "translate3d(135.455px, 12.6152px, 0px) translate(-50%, -50%) rotate(-27.5908deg) scale(1)",
+            "translate3d(149.694px, 5.06113px, 0px) translate(-50%, -50%) rotate(-28.3132deg) scale(1)",
+            "translate3d(162.094px, -1.7134px, 0px) translate(-50%, -50%) rotate(-28.9912deg) scale(1)",
+            "translate3d(173.571px, -8.16033px, 0px) translate(-50%, -50%) rotate(-29.6645deg) scale(1)",
+            "translate3d(184.404px, -14.4152px, 0px) translate(-50%, -50%) rotate(-30.3454deg) scale(1)",
+            "translate3d(194.527px, -20.4215px, 0px) translate(-50%, -50%) rotate(-31.0263deg) scale(1)",
+            "translate3d(203.522px, -25.9007px, 0px) translate(-50%, -50%) rotate(-31.6719deg) scale(1)",
+            "translate3d(210.464px, -30.2275px, 0px) translate(-50%, -50%) rotate(-32.1989deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 646.657px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 750px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 794px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 838px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 508,
+      "width": 2240
+    },
+    {
+      "bounds": {
+        "height": 900,
+        "width": 224,
+        "x": 2297,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(179.163px, 26.9638px, 0px) translate(-50%, -50%) rotate(-47.4601deg) scale(1.08)",
+            "translate3d(187.889px, 16.4985px, 0px) translate(-50%, -50%) rotate(-53.128deg) scale(1.08)",
+            "translate3d(195.313px, 5.2516px, 0px) translate(-50%, -50%) rotate(-60.3173deg) scale(1.08)",
+            "translate3d(201.544px, -8.23409px, 0px) translate(-50%, -50%) rotate(-70.5021deg) scale(1.08)",
+            "translate3d(204.316px, -18.4034px, 0px) translate(-50%, -50%) rotate(-79.1722deg) scale(1.08)",
+            "translate3d(205.375px, -27.1232px, 0px) translate(-50%, -50%) rotate(-87.043deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 234.277px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(105.899px, 27.6141px, 0px) translate(-50%, -50%) rotate(-26.2529deg) scale(1)",
+            "translate3d(120.828px, 20.1466px, 0px) translate(-50%, -50%) rotate(-26.9036deg) scale(1)",
+            "translate3d(135.455px, 12.6152px, 0px) translate(-50%, -50%) rotate(-27.5908deg) scale(1)",
+            "translate3d(149.694px, 5.06113px, 0px) translate(-50%, -50%) rotate(-28.3132deg) scale(1)",
+            "translate3d(162.094px, -1.7134px, 0px) translate(-50%, -50%) rotate(-28.9912deg) scale(1)",
+            "translate3d(173.571px, -8.16033px, 0px) translate(-50%, -50%) rotate(-29.6645deg) scale(1)",
+            "translate3d(184.404px, -14.4152px, 0px) translate(-50%, -50%) rotate(-30.3454deg) scale(1)",
+            "translate3d(194.527px, -20.4215px, 0px) translate(-50%, -50%) rotate(-31.0263deg) scale(1)",
+            "translate3d(203.522px, -25.9007px, 0px) translate(-50%, -50%) rotate(-31.6719deg) scale(1)",
+            "translate3d(210.464px, -30.2275px, 0px) translate(-50%, -50%) rotate(-32.1989deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 646.657px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 750px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 794px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 838px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 508,
+      "width": 2560
+    },
+    {
+      "bounds": {
+        "height": 900,
+        "width": 224,
+        "x": 3177,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#features",
+      "height": 900,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(179.163px, 26.9638px, 0px) translate(-50%, -50%) rotate(-47.4601deg) scale(1.08)",
+            "translate3d(187.889px, 16.4985px, 0px) translate(-50%, -50%) rotate(-53.128deg) scale(1.08)",
+            "translate3d(195.313px, 5.2516px, 0px) translate(-50%, -50%) rotate(-60.3173deg) scale(1.08)",
+            "translate3d(201.544px, -8.23409px, 0px) translate(-50%, -50%) rotate(-70.5021deg) scale(1.08)",
+            "translate3d(204.316px, -18.4034px, 0px) translate(-50%, -50%) rotate(-79.1722deg) scale(1.08)",
+            "translate3d(205.375px, -27.1232px, 0px) translate(-50%, -50%) rotate(-87.043deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 234.277px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(105.899px, 27.6141px, 0px) translate(-50%, -50%) rotate(-26.2529deg) scale(1)",
+            "translate3d(120.828px, 20.1466px, 0px) translate(-50%, -50%) rotate(-26.9036deg) scale(1)",
+            "translate3d(135.455px, 12.6152px, 0px) translate(-50%, -50%) rotate(-27.5908deg) scale(1)",
+            "translate3d(149.694px, 5.06113px, 0px) translate(-50%, -50%) rotate(-28.3132deg) scale(1)",
+            "translate3d(162.094px, -1.7134px, 0px) translate(-50%, -50%) rotate(-28.9912deg) scale(1)",
+            "translate3d(173.571px, -8.16033px, 0px) translate(-50%, -50%) rotate(-29.6645deg) scale(1)",
+            "translate3d(184.404px, -14.4152px, 0px) translate(-50%, -50%) rotate(-30.3454deg) scale(1)",
+            "translate3d(194.527px, -20.4215px, 0px) translate(-50%, -50%) rotate(-31.0263deg) scale(1)",
+            "translate3d(203.522px, -25.9007px, 0px) translate(-50%, -50%) rotate(-31.6719deg) scale(1)",
+            "translate3d(210.464px, -30.2275px, 0px) translate(-50%, -50%) rotate(-32.1989deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 646.657px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 750px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 794px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 838px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 508,
+      "width": 3440
+    },
+    {
+      "bounds": {
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "none",
+      "hash": "#features",
+      "height": 639,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(179.163px, 26.9638px, 0px) translate(-50%, -50%) rotate(-47.4601deg) scale(1.08)",
+            "translate3d(187.889px, 16.4985px, 0px) translate(-50%, -50%) rotate(-53.128deg) scale(1.08)",
+            "translate3d(195.313px, 5.2516px, 0px) translate(-50%, -50%) rotate(-60.3173deg) scale(1.08)",
+            "translate3d(201.544px, -8.23409px, 0px) translate(-50%, -50%) rotate(-70.5021deg) scale(1.08)",
+            "translate3d(204.316px, -18.4034px, 0px) translate(-50%, -50%) rotate(-79.1722deg) scale(1.08)",
+            "translate3d(205.375px, -27.1232px, 0px) translate(-50%, -50%) rotate(-87.043deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 234.277px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(105.899px, 27.6141px, 0px) translate(-50%, -50%) rotate(-26.2529deg) scale(1)",
+            "translate3d(120.828px, 20.1466px, 0px) translate(-50%, -50%) rotate(-26.9036deg) scale(1)",
+            "translate3d(135.455px, 12.6152px, 0px) translate(-50%, -50%) rotate(-27.5908deg) scale(1)",
+            "translate3d(149.694px, 5.06113px, 0px) translate(-50%, -50%) rotate(-28.3132deg) scale(1)",
+            "translate3d(162.094px, -1.7134px, 0px) translate(-50%, -50%) rotate(-28.9912deg) scale(1)",
+            "translate3d(173.571px, -8.16033px, 0px) translate(-50%, -50%) rotate(-29.6645deg) scale(1)",
+            "translate3d(184.404px, -14.4152px, 0px) translate(-50%, -50%) rotate(-30.3454deg) scale(1)",
+            "translate3d(194.527px, -20.4215px, 0px) translate(-50%, -50%) rotate(-31.0263deg) scale(1)",
+            "translate3d(203.522px, -25.9007px, 0px) translate(-50%, -50%) rotate(-31.6719deg) scale(1)",
+            "translate3d(210.464px, -30.2275px, 0px) translate(-50%, -50%) rotate(-32.1989deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 646.657px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 750px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 794px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 838px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "false",
+      "scroll": 508,
+      "width": 3440
+    },
+    {
+      "bounds": {
+        "height": 1215,
+        "width": 224,
+        "x": 3177,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#top",
+      "height": 1215,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 977px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1021px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 0,
+      "width": 3440,
+      "case": "initial-final"
+    },
+    {
+      "bounds": {
+        "height": 1215,
+        "width": 224,
+        "x": 3177,
+        "y": 0
+      },
+      "current": [
+        "Почати"
+      ],
+      "display": "block",
+      "hash": "#get-started",
+      "height": 1215,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(138.609px, 5.33969e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.383px, 3.26723e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(160.961px, 1.03998e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(174.844px, -1.63061e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(185.312px, -3.64445e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(194.289px, -5.37125e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 90px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 1.10205e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(92.2266px, 8.04034e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(107.852px, 5.03461e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(123.523px, 2.01985e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(137.578px, -6.83805e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(150.953px, -3.25671e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(163.93px, -5.75298e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.391px, -8.15005e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(187.758px, -1.03367e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(196.734px, -1.20635e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 134px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 5.2405e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(152.32px, 2.06043e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(166.281px, -6.25193e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(180.562px, -3.37244e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(193.844px, -5.92731e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 178px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 1.07771e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(94.8047px, 8.08994e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(108.336px, 5.48697e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(120.727px, 3.10342e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(134.648px, 4.25312e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.664px, -2.4632e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(162.344px, -4.90235e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.906px, -7.7037e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(192.797px, -1.07605e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 222px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(124.152px, 4.13944px, 0px) translate(-50%, -50%) rotate(-6.4203deg) scale(1.08)",
+            "translate3d(139.476px, 2.4038px, 0px) translate(-50%, -50%) rotate(-6.50456deg) scale(1.08)",
+            "translate3d(154.26px, 0.707114px, 0px) translate(-50%, -50%) rotate(-6.58907deg) scale(1.08)",
+            "translate3d(168.72px, -0.973986px, 0px) translate(-50%, -50%) rotate(-6.67499deg) scale(1.08)",
+            "translate3d(181.839px, -2.51873px, 0px) translate(-50%, -50%) rotate(-6.75594deg) scale(1.08)",
+            "translate3d(195.343px, -4.12873px, 0px) translate(-50%, -50%) rotate(-6.84241deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 285.898px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 6657,
+      "width": 3440,
+      "case": "last-anchor"
+    },
+    {
+      "bounds": {
+        "height": 1215,
+        "width": 224,
+        "x": 3177,
+        "y": 0
+      },
+      "current": [
+        "Features"
+      ],
+      "display": "block",
+      "hash": "#features",
+      "height": 1215,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(143.639px, 5.65339px, 0px) translate(-50%, -50%) rotate(-10.9444deg) scale(1)",
+            "translate3d(154.837px, 3.45918px, 0px) translate(-50%, -50%) rotate(-11.232deg) scale(1)",
+            "translate3d(166.539px, 1.10108px, 0px) translate(-50%, -50%) rotate(-11.5582deg) scale(1)",
+            "translate3d(180.118px, -1.72641px, 0px) translate(-50%, -50%) rotate(-11.9748deg) scale(1)",
+            "translate3d(190.03px, -3.85856px, 0px) translate(-50%, -50%) rotate(-12.309deg) scale(1)",
+            "translate3d(198.305px, -5.6868px, 0px) translate(-50%, -50%) rotate(-12.6106deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 124.229px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Features",
+          "letters": [
+            "translate3d(190.733px, 68.0961px, 0px) translate(-50%, -50%) rotate(-70.6702deg) scale(1.08)",
+            "translate3d(196.086px, 51.3564px, 0px) translate(-50%, -50%) rotate(-73.8965deg) scale(1.08)",
+            "translate3d(201.065px, 31.6019px, 0px) translate(-50%, -50%) rotate(-77.8418deg) scale(1.08)",
+            "translate3d(204.768px, 10.6309px, 0px) translate(-50%, -50%) rotate(-82.161deg) scale(1.08)",
+            "translate3d(206.831px, -10.1946px, 0px) translate(-50%, -50%) rotate(-86.5408deg) scale(1.08)",
+            "translate3d(207.274px, -31.6812px, 0px) translate(-50%, -50%) rotate(-91.1018deg) scale(1.08)",
+            "translate3d(206.259px, -50.4573px, 0px) translate(-50%, -50%) rotate(-95.0781deg) scale(1.08)",
+            "translate3d(204.184px, -67.6466px, 0px) translate(-50%, -50%) rotate(-98.6767deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 451.188px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Everyday",
+          "letters": [
+            "translate3d(110.102px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(121.367px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(132.633px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(143.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(155.656px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(168.234px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(181.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(194.172px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Platforms",
+          "letters": [
+            "translate3d(96.2344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(107.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(118.586px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(130.977px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(141.586px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(153.289px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.195px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.984px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(194.836px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Get started",
+          "letters": [
+            "translate3d(84.625px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(96.1016px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(106.805px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(115.148px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(122.945px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(133.82px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(146.211px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(158.992px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(170.805px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(181.508px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.25px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 900,
+      "width": 3440,
+      "case": "english-light"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "Платформи"
+      ],
+      "display": "block",
+      "hash": "#platforms",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(138.609px, 5.33969e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.383px, 3.26723e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(160.961px, 1.03998e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(174.844px, -1.63061e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(185.312px, -3.64445e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(194.289px, -5.37125e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 90px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 1.10205e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(92.2266px, 8.04034e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(107.852px, 5.03461e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(123.523px, 2.01985e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(137.578px, -6.83805e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(150.953px, -3.25671e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(163.93px, -5.75298e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.391px, -8.15005e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(187.758px, -1.03367e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(196.734px, -1.20635e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 134px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 5.2405e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(152.32px, 2.06043e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(166.281px, -6.25193e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(180.562px, -3.37244e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(193.844px, -5.92731e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 178px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(126.167px, 58.1763px, 0px) translate(-50%, -50%) rotate(-48.4253deg) scale(1.08)",
+            "translate3d(138.733px, 43.6707px, 0px) translate(-50%, -50%) rotate(-49.7845deg) scale(1.08)",
+            "translate3d(150.331px, 29.6195px, 0px) translate(-50%, -50%) rotate(-51.1553deg) scale(1.08)",
+            "translate3d(160.456px, 16.7528px, 0px) translate(-50%, -50%) rotate(-52.4587deg) scale(1.08)",
+            "translate3d(171.266px, 2.2959px, 0px) translate(-50%, -50%) rotate(-53.9795deg) scale(1.08)",
+            "translate3d(182.256px, -13.2967px, 0px) translate(-50%, -50%) rotate(-55.6883deg) scale(1.08)",
+            "translate3d(190.993px, -26.4637px, 0px) translate(-50%, -50%) rotate(-57.1877deg) scale(1.08)",
+            "translate3d(200.416px, -41.5858px, 0px) translate(-50%, -50%) rotate(-58.9743deg) scale(1.08)",
+            "translate3d(209.951px, -58.087px, 0px) translate(-50%, -50%) rotate(-61.0033deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 350.878px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1018px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 5860,
+      "width": 1920,
+      "case": "platforms-1920"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "Щодня"
+      ],
+      "display": "block",
+      "hash": "#everyday",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(138.609px, 5.33969e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.383px, 3.26723e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(160.961px, 1.03998e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(174.844px, -1.63061e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(185.312px, -3.64445e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(194.289px, -5.37125e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 90px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 1.10205e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(92.2266px, 8.04034e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(107.852px, 5.03461e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(123.523px, 2.01985e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(137.578px, -6.83805e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(150.953px, -3.25671e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(163.93px, -5.75298e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.391px, -8.15005e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(187.758px, -1.03367e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(196.734px, -1.20635e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 134px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(165.731px, 30.2258px, 0px) translate(-50%, -50%) rotate(-48.9371deg) scale(1.08)",
+            "translate3d(180.397px, 11.884px, 0px) translate(-50%, -50%) rotate(-53.9455deg) scale(1.08)",
+            "translate3d(190.737px, -3.60595px, 0px) translate(-50%, -50%) rotate(-58.7404deg) scale(1.08)",
+            "translate3d(199.376px, -19.4513px, 0px) translate(-50%, -50%) rotate(-64.2047deg) scale(1.08)",
+            "translate3d(205.65px, -34.1872px, 0px) translate(-50%, -50%) rotate(-69.7836deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 316.652px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 974px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1018px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 4744,
+      "width": 1920,
+      "case": "everyday-anchor"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "Почати"
+      ],
+      "display": "block",
+      "hash": "#everyday",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(138.609px, 5.33969e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.383px, 3.26723e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(160.961px, 1.03998e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(174.844px, -1.63061e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(185.312px, -3.64445e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(194.289px, -5.37125e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 90px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 1.10205e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(92.2266px, 8.04034e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(107.852px, 5.03461e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(123.523px, 2.01985e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(137.578px, -6.83805e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(150.953px, -3.25671e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(163.93px, -5.75298e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.391px, -8.15005e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(187.758px, -1.03367e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(196.734px, -1.20635e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 134px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 5.2405e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(152.32px, 2.06043e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(166.281px, -6.25193e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(180.562px, -3.37244e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(193.844px, -5.92731e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 178px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 1.07771e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(94.8047px, 8.08994e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(108.336px, 5.48697e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(120.727px, 3.10342e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(134.648px, 4.25312e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.664px, -2.4632e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(162.344px, -4.90235e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.906px, -7.7037e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(192.797px, -1.07605e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 222px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(120.595px, 6.89816e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(135.63px, 4.0058e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(150.328px, 1.17837e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(164.892px, -1.6231e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(178.273px, -4.19733e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(192.221px, -6.88031e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 266px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 6883,
+      "width": 1920,
+      "case": "page-bottom"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "Платформи"
+      ],
+      "display": "block",
+      "hash": "#everyday",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(138.609px, 5.33969e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(149.383px, 3.26723e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(160.961px, 1.03998e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(174.844px, -1.63061e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(185.312px, -3.64445e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(194.289px, -5.37125e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 90px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 1.10205e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(92.2266px, 8.04034e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(107.852px, 5.03461e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(123.523px, 2.01985e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(137.578px, -6.83805e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(150.953px, -3.25671e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(163.93px, -5.75298e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(176.391px, -8.15005e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(187.758px, -1.03367e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(196.734px, -1.20635e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 134px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 5.2405e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(152.32px, 2.06043e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(166.281px, -6.25193e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(180.562px, -3.37244e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)",
+            "translate3d(193.844px, -5.92731e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 178px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(71.3028px, 1.16392e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(86.3891px, 8.73713e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(101.003px, 5.92593e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(114.385px, 3.3517e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(129.42px, 4.59336e-16px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(145.637px, -2.66026e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(159.331px, -5.29454e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(175.059px, -8.32e-15px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)",
+            "translate3d(192.221px, -1.16214e-14px, 0px) translate(-50%, -50%) rotate(-1.10218e-14deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 222px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(200.079px, 53.8347px, 0px) translate(-50%, -50%) rotate(-71.8161deg) scale(1)",
+            "translate3d(206.119px, 31.2621px, 0px) translate(-50%, -50%) rotate(-78.3218deg) scale(1)",
+            "translate3d(209.367px, 9.19623px, 0px) translate(-50%, -50%) rotate(-84.991deg) scale(1)",
+            "translate3d(209.994px, -12.667px, 0px) translate(-50%, -50%) rotate(-91.7358deg) scale(1)",
+            "translate3d(208.296px, -32.7568px, 0px) translate(-50%, -50%) rotate(-97.896deg) scale(1)",
+            "translate3d(204.209px, -53.6954px, 0px) translate(-50%, -50%) rotate(-104.125deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 709.316px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 6375,
+      "width": 1920,
+      "case": "light-page-bottom"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#top",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(139.837px, 6.91394px, 0px) translate(-50%, -50%) rotate(-12.372deg) scale(1.08)",
+            "translate3d(151.903px, 4.23049px, 0px) translate(-50%, -50%) rotate(-12.7089deg) scale(1.08)",
+            "translate3d(164.497px, 1.34659px, 0px) translate(-50%, -50%) rotate(-13.0917deg) scale(1.08)",
+            "translate3d(179.089px, -2.11135px, 0px) translate(-50%, -50%) rotate(-13.5816deg) scale(1.08)",
+            "translate3d(189.724px, -4.71892px, 0px) translate(-50%, -50%) rotate(-13.9755deg) scale(1.08)",
+            "translate3d(198.592px, -6.95481px, 0px) translate(-50%, -50%) rotate(-14.3315deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 809.36px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 886px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 930px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 974px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1018px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 114,
+      "width": 1920,
+      "case": "back-from-document-final"
+    },
+    {
+      "bounds": {
+        "height": 1215,
+        "width": 224,
+        "x": 3177,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#top",
+      "height": 1215,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 977px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1021px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1065px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1109px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1153px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 0,
+      "width": 3440,
+      "case": "wide-final"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "PlanIt"
+      ],
+      "display": "block",
+      "hash": "#top",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)",
+            "translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 842px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 886px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 930px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 974px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1018px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 0,
+      "width": 1920,
+      "case": "flight-final"
+    },
+    {
+      "bounds": {
+        "height": 1080,
+        "width": 224,
+        "x": 1657,
+        "y": 0
+      },
+      "current": [
+        "Можливості"
+      ],
+      "display": "block",
+      "hash": "#features",
+      "height": 1080,
+      "links": [
+        {
+          "href": "#top",
+          "label": "PlanIt",
+          "letters": [
+            "translate3d(138.638px, 0.0333879px, 0px) translate(-50%, -50%) rotate(-0.0688859deg) scale(1)",
+            "translate3d(149.415px, 0.0204293px, 0px) translate(-50%, -50%) rotate(-0.068898deg) scale(1)",
+            "translate3d(160.996px, 0.00650279px, 0px) translate(-50%, -50%) rotate(-0.0689109deg) scale(1)",
+            "translate3d(174.878px, -0.0101958px, 0px) translate(-50%, -50%) rotate(-0.0689265deg) scale(1)",
+            "translate3d(185.344px, -0.022788px, 0px) translate(-50%, -50%) rotate(-0.0689382deg) scale(1)",
+            "translate3d(194.318px, -0.0335852px, 0px) translate(-50%, -50%) rotate(-0.0689483deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 90.1832px, 0px)"
+        },
+        {
+          "href": "#features",
+          "label": "Можливості",
+          "letters": [
+            "translate3d(138.661px, 70.855px, 0px) translate(-50%, -50%) rotate(-56.7103deg) scale(1.08)",
+            "translate3d(150.838px, 51.6943px, 0px) translate(-50%, -50%) rotate(-58.4339deg) scale(1.08)",
+            "translate3d(162.299px, 32.3693px, 0px) translate(-50%, -50%) rotate(-60.2392deg) scale(1.08)",
+            "translate3d(172.968px, 12.9864px, 0px) translate(-50%, -50%) rotate(-62.1177deg) scale(1.08)",
+            "translate3d(181.832px, -4.39643px, 0px) translate(-50%, -50%) rotate(-63.8598deg) scale(1.08)",
+            "translate3d(189.649px, -20.9386px, 0px) translate(-50%, -50%) rotate(-65.5674deg) scale(1.08)",
+            "translate3d(196.656px, -36.988px, 0px) translate(-50%, -50%) rotate(-67.2696deg) scale(1.08)",
+            "translate3d(202.851px, -52.3997px, 0px) translate(-50%, -50%) rotate(-68.945deg) scale(1.08)",
+            "translate3d(208.045px, -66.4586px, 0px) translate(-50%, -50%) rotate(-70.507deg) scale(1.08)",
+            "translate3d(211.84px, -77.5608px, 0px) translate(-50%, -50%) rotate(-71.7624deg) scale(1.08)"
+          ],
+          "position": "translate3d(0px, 291.486px, 0px)"
+        },
+        {
+          "href": "#everyday",
+          "label": "Щодня",
+          "letters": [
+            "translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 930px, 0px)"
+        },
+        {
+          "href": "#platforms",
+          "label": "Платформи",
+          "letters": [
+            "translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 974px, 0px)"
+        },
+        {
+          "href": "#get-started",
+          "label": "Почати",
+          "letters": [
+            "translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)",
+            "translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1)"
+          ],
+          "position": "translate3d(0px, 1018px, 0px)"
+        }
+      ],
+      "overflow": false,
+      "overlaps": [],
+      "ready": "true",
+      "scroll": 899,
+      "width": 1920,
+      "case": "final-with-ribbon-gutter"
+    }
+  ],
+  "checks": {
+    "tests": 43,
+    "build": true,
+    "eslint": true,
+    "reducedMotion": "source and geometry tests; OS preference not toggled"
+  }
+}

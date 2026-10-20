@@ -49,7 +49,7 @@ type LessonDraft = {
 export function LessonEditorDemo({ render }: DemoRenderProps) {
   const t = useTranslations("Features.ui");
   const [initial] = useState<LessonDraft>(() => ({
-    subject: t("math"),
+    subject: t("chemistry"),
     type: t("lecture"),
     teacher: t("teacherName"),
     room: "204",

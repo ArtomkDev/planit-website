@@ -1,159 +1,36 @@
 "use client";
 
-import { useState } from "react";
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "@phosphor-icons/react";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
-
+import { AccentRule } from "@/components/ui/AccentRule";
 import { APP_URL } from "@/lib/site";
-
-const shapeOneOuterVariants: Variants = {
-  rest: {
-    scale: 1,
-    rotate: 0,
-    x: 0,
-    y: 0,
-    opacity: 0.3,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  hover: {
-    scale: 1.2,
-    rotate: 45,
-    x: 40,
-    y: -40,
-    opacity: 0.7,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  buttonHover: {
-    scale: 1.8,
-    rotate: 90,
-    x: 70,
-    y: -70,
-    opacity: 0.9,
-    transition: { type: "spring", stiffness: 50, damping: 12 },
-  },
-};
-
-const shapeTwoOuterVariants: Variants = {
-  rest: {
-    scale: 1,
-    rotate: 0,
-    x: 0,
-    y: 0,
-    opacity: 0.3,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  hover: {
-    scale: 1.25,
-    rotate: -45,
-    x: -40,
-    y: 40,
-    opacity: 0.7,
-    transition: { type: "spring", stiffness: 50, damping: 15 },
-  },
-  buttonHover: {
-    scale: 1.9,
-    rotate: -90,
-    x: -70,
-    y: 70,
-    opacity: 0.9,
-    transition: { type: "spring", stiffness: 50, damping: 12 },
-  },
-};
 
 export const CallToAction = () => {
   const t = useTranslations("CTA");
   const reduceMotion = useReducedMotion();
-  const [isCardHovered, setIsCardHovered] = useState<boolean>(false);
-  const [isButtonHovered, setIsButtonHovered] = useState<boolean>(false);
-
-  const animationState = reduceMotion ? "rest" : isButtonHovered ? "buttonHover" : isCardHovered ? "hover" : "rest";
 
   return (
-    <section className="relative w-full max-w-5xl mx-auto px-6 py-24 md:py-32 z-20">
-      <LessonCardAccent seed={59} className="-right-72 -top-2" />
-      <LessonCardAccent seed={60} depth="background" className="right-[5%] bottom-4" />
-      <ScrollReveal className="relative z-20">
-        <div
-          onMouseEnter={() => setIsCardHovered(true)}
-          onMouseLeave={() => setIsCardHovered(false)}
-          className="relative overflow-hidden rounded-[3rem] border border-site-border bg-site-surface p-6 sm:p-12 text-center shadow-[0_34px_90px_-62px_var(--site-surface-shadow)] transition-colors duration-500 md:p-20"
-        >
-          <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-brand/10 via-transparent to-transparent" />
-          
-          <motion.div
-            variants={shapeOneOuterVariants}
-            initial="rest"
-            animate={animationState}
-            className="absolute -top-16 -left-16 w-72 h-72 blur-[40px] pointer-events-none mix-blend-multiply dark:mix-blend-screen z-0"
+    <section id="get-started" aria-labelledby="get-started-title" className="relative z-20 mx-auto w-full max-w-5xl px-6 py-20 md:py-24">
+      <ScrollReveal>
+        <div className="rounded-3xl border border-site-border bg-site-surface px-6 py-12 text-left sm:px-12 md:py-16">
+          <AccentRule className="mb-6" />
+          <h2 id="get-started-title" className="max-w-2xl text-balance text-3xl font-black tracking-tight text-site-text sm:text-4xl md:text-5xl">
+            {t("title")}
+          </h2>
+          <p className="mt-4 max-w-md text-pretty text-base leading-7 text-site-muted sm:text-lg">
+            {t("description")}
+          </p>
+          <motion.a
+            href={APP_URL}
+            whileHover={reduceMotion ? undefined : { y: -2 }}
+            whileTap={reduceMotion ? undefined : { scale: 0.98 }}
+            className="mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-[14px] bg-site-text px-6 py-3.5 font-bold text-site-bg transition-opacity hover:opacity-85"
           >
-            <motion.div
-              animate={{
-                scale: [0.9, 0.95, 0.9],
-                borderRadius: [
-                  "40% 60% 70% 30% / 40% 50% 60% 50%",
-                  "50% 50% 60% 40% / 50% 60% 50% 40%",
-                  "40% 60% 70% 30% / 40% 50% 60% 50%",
-                ],
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="h-full w-full bg-brand-teal"
-            />
-          </motion.div>
-          
-          <motion.div
-            variants={shapeTwoOuterVariants}
-            initial="rest"
-            animate={animationState}
-            className="absolute -bottom-16 -right-16 w-80 h-80 blur-[40px] pointer-events-none mix-blend-multiply dark:mix-blend-screen z-0"
-          >
-            <motion.div
-              animate={{
-                scale: [0.9, 0.95, 0.9],
-                borderRadius: [
-                  "50% 50% 30% 70% / 50% 50% 70% 30%",
-                  "40% 60% 40% 60% / 60% 40% 60% 40%",
-                  "50% 50% 30% 70% / 50% 50% 70% 30%",
-                ],
-              }}
-              transition={{
-                duration: 10,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="h-full w-full bg-brand-pink"
-            />
-          </motion.div>
-
-          <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-            <h2 className="mb-6 text-3xl font-black sm:text-4xl tracking-tight text-site-text md:text-6xl">
-              {t("title")}
-            </h2>
-            <p className="mb-10 text-xl text-site-muted">
-              {t("description")}
-            </p>
-            
-            <motion.a
-              href={APP_URL}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onMouseEnter={() => setIsButtonHovered(true)}
-              onMouseLeave={() => setIsButtonHovered(false)}
-              className="group inline-flex items-center justify-center gap-3 rounded-full bg-site-text px-5 py-4 text-base sm:px-10 sm:text-lg font-bold text-site-bg shadow-[0_18px_50px_-28px_var(--site-surface-shadow)] transition-shadow duration-300 hover:shadow-[0_22px_60px_-30px_var(--site-surface-shadow)]"
-            >
-              {t("button")}
-              <ArrowRight 
-                weight="bold" 
-                className="h-5 w-5 text-brand transition-colors duration-300 group-hover:text-brand-strong"
-              />
-            </motion.a>
-          </div>
+            {t("button")}
+            <ArrowRight aria-hidden="true" weight="bold" className="h-5 w-5" />
+          </motion.a>
         </div>
       </ScrollReveal>
     </section>

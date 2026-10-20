@@ -1,0 +1,21 @@
+{
+  "active": "true",
+  "clip": {
+    "height": 147,
+    "width": 147,
+    "x": 70,
+    "y": 612.5
+  },
+  "headMinOpacity": 0.6,
+  "headTransforms": [
+    "matrix(1, 0, 0, 1, 0, 0)"
+  ],
+  "overflow": false,
+  "pixels": 32,
+  "shaftMinOpacity": 0.48,
+  "shaftRows": [
+    "33px",
+    "44px",
+    "55px"
+  ]
+}

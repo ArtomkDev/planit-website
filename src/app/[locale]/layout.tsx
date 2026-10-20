@@ -13,6 +13,7 @@ import { CookieConsent } from "@/components/ui/CookieConsent";
 import { LocalePreference } from "@/components/i18n/LocalePreference";
 import { LegalLoadingPreloader } from "@/components/legal/LegalLoadingPreloader";
 import { LegalLoadingPreloadLinks } from "@/components/legal/LegalLoadingPreloadLinks";
+import { FloatingSectionNavigation } from "@/components/ui/FloatingSectionNavigation";
 import "../globals.css";
 
 const locales = ["uk", "en"] as const;
@@ -75,6 +76,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
               {children}
             </main>
             <Footer />
+            <FloatingSectionNavigation />
             <CookieConsent />
           </ThemeProvider>
         </NextIntlClientProvider>

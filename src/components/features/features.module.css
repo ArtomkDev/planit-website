@@ -10,9 +10,12 @@
 .intro {
   max-width: 780px;
   margin-bottom: 48px;
+  text-align: left;
 }
 .eyebrow {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   color: var(--brand-strong);
   font-size: 13px;
   font-weight: 800;
@@ -147,17 +150,6 @@
 .livePreview .lessonPreview {
   margin: 0;
 }
-.livePreviewCaption {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6px 14px;
-  margin-top: 24px;
-  color: var(--site-muted);
-  font-size: 11px;
-  line-height: 1.6;
-}
 .feature:nth-of-type(even) .livePreview {
   justify-self: start;
   margin-inline: 24px 0;
@@ -194,32 +186,11 @@
   font-size: 16px;
   line-height: 1.8;
 }
-.copy ul {
-  display: grid;
-  gap: 16px;
-  margin: 28px 0 32px;
-  list-style: none;
-}
-.copy li {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.6;
-}
-.copy li > span {
-  flex-shrink: 0;
-  width: 5px;
-  height: 5px;
-  border-radius: 1px;
-  background: var(--brand);
-  transform: translateY(-2px);
-}
 .tryHint {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 24px;
   color: var(--brand-strong);
   font-size: 13px;
   font-weight: 700;
@@ -229,6 +200,7 @@
   flex-shrink: 0;
 }
 .stage {
+  --backdrop-block-inset: 32px;
   --backdrop-inner-offset: -72px;
   --backdrop-outer-offset: -24px;
   position: relative;
@@ -237,13 +209,13 @@
   align-items: center;
   width: 100%;
   min-width: 0;
-  padding: 20px 0 0;
   isolation: isolate;
 }
 .pixelBackdrop {
   pointer-events: none;
   position: absolute;
-  inset: 70px var(--backdrop-outer-offset) 45px var(--backdrop-inner-offset);
+  inset-block: var(--backdrop-block-inset);
+  inset-inline: var(--backdrop-inner-offset) var(--backdrop-outer-offset);
   z-index: -1;
 }
 .feature:nth-of-type(even) .pixelBackdrop {
@@ -253,16 +225,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 460px;
   min-width: 0;
   transform-origin: 50% 80%;
-}
-.demoCaption {
-  position: relative;
-  margin-top: 18px;
-  color: var(--site-soft);
-  font-size: 11px;
-  text-align: center;
-  line-height: 1.6;
 }
 .openApp {
   display: flex;
@@ -289,7 +254,7 @@
   --demo-accent: #2563eb;
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
   min-width: 0;
   border: 1px solid var(--demo-border);
   border-radius: 28px;
@@ -342,7 +307,7 @@
   background: var(--demo-inset);
 }
 .screenBody {
-  height: 480px;
+  height: 520px;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 16px;
@@ -675,18 +640,13 @@ button.settingRow:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-.taskHeader h5 {
-  font-size: 27px;
-  font-weight: 800;
-  letter-spacing: -0.035em;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 .taskHeader p {
   color: var(--demo-muted);
   font-size: 12px;
-  margin-top: 3px;
+  margin: 0;
 }
 .filterButton {
   display: flex;
@@ -701,24 +661,34 @@ button.settingRow:hover {
   font-size: 11px;
   font-weight: 600;
 }
+.filterButton span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.filterButton svg {
+  flex-shrink: 0;
+}
 .taskList {
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 .taskCard {
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  border-radius: 18px;
-  padding: 16px 14px;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  align-items: start;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 12px;
   color: #fff;
   transition: background 0.25s;
 }
 .taskPattern {
   position: absolute;
-  inset: -8px;
+  inset: 0;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(8, 44px);
   grid-auto-rows: 40px;
@@ -747,24 +717,30 @@ button.settingRow:hover {
 .taskCopy {
   position: relative;
   min-width: 0;
-  flex: 1;
+  overflow-wrap: anywhere;
 }
 .taskCopy h6 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
+  line-height: 1.4;
 }
 .taskCopy p {
-  margin-top: 7px;
-  font-size: 14px;
-  line-height: 1.5;
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: pre-wrap;
 }
 .taskMeta {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: 10px;
+  margin-top: 8px;
   color: #ffffff;
-  font-size: 10px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.taskMeta svg {
+  flex-shrink: 0;
 }
 .taskCompleted {
   background: var(--demo-surface) !important;
@@ -774,22 +750,33 @@ button.settingRow:hover {
 .taskCompleted h6 {
   text-decoration: line-through;
 }
+.taskCompleted {
+  align-items: center;
+}
 .taskEdit {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
   color: inherit;
-  margin-top: 10px;
+  width: 44px;
   min-height: 44px;
-  font-size: 12px;
+  border-radius: 10px;
+}
+.taskEdit:hover {
+  background: #0000001a;
 }
 .taskEditor {
   display: grid;
-  gap: 14px;
+  gap: 12px;
+  min-width: 0;
+}
+.taskEditor .settingsGroup {
+  margin-top: 0;
 }
 .taskEditor textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 128px;
   line-height: 1.6;
 }
 .taskEditor label.expanded {
@@ -801,7 +788,10 @@ button.settingRow:hover {
   text-align: left;
 }
 .taskEditor .field {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  min-width: 0;
 }
 .switch {
   position: relative;
@@ -908,7 +898,7 @@ button.settingRow:hover {
 }
 @media (max-width: 767px) {
   .section {
-    padding: 76px 20px 40px;
+    padding: 76px 24px 40px;
   }
   .intro {
     margin-bottom: 36px;
@@ -949,9 +939,6 @@ button.settingRow:hover {
   .feature:nth-of-type(even) .livePreviewCard {
     rotate: 0deg;
   }
-  .livePreviewCaption {
-    margin-top: 10px;
-  }
 
   .feature:nth-of-type(even) .copy {
     order: 0;
@@ -971,16 +958,8 @@ button.settingRow:hover {
   .copy > p {
     font-size: 15px;
   }
-  .pixelBackdrop {
-    inset-block: 65px 45px;
-  }
-  .stage {
-    --backdrop-inner-offset: -8px;
-    --backdrop-outer-offset: -8px;
-    padding-top: 8px;
-  }
   .screenBody {
-    height: clamp(280px, 50svh, 420px);
+    height: clamp(300px, 56svh, 480px);
   }
   .screenHeader {
     padding-inline: 16px;

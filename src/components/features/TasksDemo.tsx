@@ -2,7 +2,6 @@
 
 import {
   Atom,
-  BookOpen,
   Calculator,
   CalendarDots,
   CaretDown,
@@ -149,6 +148,7 @@ export function TasksDemo() {
                 time: "09:00 – 10:30",
               });
               setFilterOpen(false);
+              setStatus("");
             }}
           >
             <Plus size={19} />
@@ -161,7 +161,6 @@ export function TasksDemo() {
         <div className={styles.taskEditor}>
           <SettingsGroup title={t("linkedLesson")}>
             <label className={styles.field}>
-              <BookOpen size={20} />
               {t("subject")}
               <select
                 className={styles.input}
@@ -212,7 +211,6 @@ export function TasksDemo() {
         <>
           <div className={styles.taskHeader}>
             <div>
-              <h5>{t("tasks")}</h5>
               <p>{t("pendingTasks", { count: pending })}</p>
             </div>
             <button
@@ -222,7 +220,7 @@ export function TasksDemo() {
               onClick={() => setFilterOpen(!filterOpen)}
             >
               <CalendarDots size={18} />
-              {t(schedule === "main" ? "mySchedule" : "examSchedule")}
+              <span>{t(schedule === "main" ? "mySchedule" : "examSchedule")}</span>
               <CaretDown size={13} />
             </button>
           </div>
@@ -288,15 +286,19 @@ export function TasksDemo() {
                         </span>
                       </>
                     )}
-                    <button
-                      type="button"
-                      className={styles.taskEdit}
-                      onClick={() => setEditing({ ...task })}
-                    >
-                      <PencilSimple size={12} />
-                      {t("edit")}
-                    </button>
                   </div>
+                  <button
+                    type="button"
+                    className={styles.taskEdit}
+                    aria-label={`${t("edit")}: ${t(task.subject)} — ${task.text}`}
+                    title={t("edit")}
+                    onClick={() => {
+                      setEditing({ ...task });
+                      setStatus("");
+                    }}
+                  >
+                    <PencilSimple size={18} />
+                  </button>
                 </div>
               );
             })}

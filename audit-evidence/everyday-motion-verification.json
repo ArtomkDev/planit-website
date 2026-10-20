@@ -1,0 +1,378 @@
+{
+  "hover": [
+    {
+      "animations": [
+        {
+          "delay": "0s",
+          "duration": "0.65s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__format-hint"
+        },
+        {
+          "delay": "0.085s",
+          "duration": "0.65s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__format-hint"
+        },
+        {
+          "delay": "0.17s",
+          "duration": "0.65s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__format-hint"
+        },
+        {
+          "delay": "0.255s",
+          "duration": "0.65s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__format-hint"
+        },
+        {
+          "delay": "0.34s",
+          "duration": "0.65s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__format-hint"
+        }
+      ],
+      "hovered": true,
+      "title": "Файл для друку й редагування"
+    },
+    {
+      "animations": [
+        {
+          "delay": "0s",
+          "duration": "0.68s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__bell-hint"
+        }
+      ],
+      "hovered": true,
+      "title": "Нагадування у свій час"
+    },
+    {
+      "animations": [
+        {
+          "delay": "0s",
+          "duration": "0.6s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__material-hint"
+        },
+        {
+          "delay": "0.1s",
+          "duration": "0.6s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__material-hint"
+        }
+      ],
+      "hovered": true,
+      "title": "Матеріали поруч із парою"
+    },
+    {
+      "animations": [
+        {
+          "delay": "0.18s",
+          "duration": "0.75s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__lesson-hint"
+        }
+      ],
+      "hovered": true,
+      "title": "Розклад на екрані Android"
+    },
+    {
+      "animations": [
+        {
+          "delay": "0.36s",
+          "duration": "0.95s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__sync-hint"
+        },
+        {
+          "delay": "0.66s",
+          "duration": "0.7s",
+          "iterations": "1",
+          "name": "feature-preview-module__LeQy-W__cloud-hint"
+        }
+      ],
+      "hovered": true,
+      "title": "Зміни під вашим контролем"
+    }
+  ],
+  "visible": {
+    "before": {
+      "code": "959BXQ",
+      "otherActive": 0,
+      "width": 101.6875,
+      "y": 291.96875
+    },
+    "after": {
+      "code": "2WR6GQ",
+      "width": 101.6875,
+      "y": 391.96875
+    }
+  },
+  "offscreen": {
+    "before": {
+      "code": "2WR6GQ",
+      "y": -271.03125
+    },
+    "after": {
+      "code": "2WR6GQ",
+      "y": -271.03125
+    }
+  },
+  "layouts": [
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "uk",
+      "overflow": [],
+      "theme": "light",
+      "width": 1920
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "codeWidth": 101.6875,
+      "controls": 0,
+      "documentOverflow": false,
+      "locale": "en",
+      "overflow": [],
+      "theme": "light",
+      "width": 1920
+    }
+  ],
+  "logs": []
+}

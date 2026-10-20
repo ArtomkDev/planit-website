@@ -1,0 +1,85 @@
+{
+  "note": "Arrival samples are separate repeated menu journeys; each starts near the final destination instead of queueing skipped sections.",
+  "arrivals": [
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "platforms",
+        "asciiFigure": "platforms",
+        "asciiMotion": "animated",
+        "asciiPhase": "forming",
+        "asciiProgress": "1",
+        "asciiReveal": "0.060"
+      },
+      "canvas": "visible",
+      "focus": "Оберіть, де зручніше.",
+      "scroll": 5696
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "platforms",
+        "asciiFigure": "platforms",
+        "asciiMotion": "animated",
+        "asciiPhase": "forming",
+        "asciiProgress": "1",
+        "asciiReveal": "0.321"
+      },
+      "focus": "Оберіть, де зручніше.",
+      "scroll": 5696
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "platforms",
+        "asciiFigure": "platforms",
+        "asciiMotion": "animated",
+        "asciiPhase": "forming",
+        "asciiProgress": "1",
+        "asciiReveal": "0.388"
+      },
+      "scroll": 5696
+    },
+    {
+      "art": {
+        "asciiArt": "planit",
+        "asciiDestination": "platforms",
+        "asciiFigure": "platforms",
+        "asciiMotion": "animated",
+        "asciiPhase": "wave",
+        "asciiProgress": "1",
+        "asciiReveal": "1.000"
+      },
+      "canvas": "visible",
+      "scroll": 5696
+    }
+  ],
+  "finalBuildArrival": {
+    "art": {
+      "asciiArt": "planit",
+      "asciiDestination": "platforms",
+      "asciiFigure": "platforms",
+      "asciiMotion": "animated",
+      "asciiPhase": "forming",
+      "asciiProgress": "1",
+      "asciiReveal": "0.060"
+    },
+    "canvas": "visible",
+    "scroll": 5696
+  },
+  "compact": {
+    "art": {
+      "asciiArt": "planit",
+      "asciiDestination": "everyday",
+      "asciiFigure": "everyday",
+      "asciiMotion": "static",
+      "asciiPhase": "still",
+      "asciiProgress": "1",
+      "asciiReveal": "1.000"
+    },
+    "height": 844,
+    "overflow": false,
+    "relayWidth": 0,
+    "width": 390
+  }
+}

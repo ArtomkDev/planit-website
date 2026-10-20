@@ -1,0 +1,57 @@
+.navigation {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  right: 24px;
+  bottom: 0;
+  display: none;
+  width: 224px;
+  visibility: hidden;
+  pointer-events: none;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  line-height: 1;
+  contain: layout style;
+}
+.navigation[data-ready="true"] { visibility: visible; }
+.word { display: contents; }
+.link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 44px;
+  height: 44px;
+  color: var(--site-text);
+  pointer-events: auto;
+  text-decoration: none;
+}
+.link:hover + .flight .letter, .link:focus-visible + .flight .letter { color: var(--brand-strong); }
+.link:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+.measure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  white-space: pre;
+  visibility: hidden;
+}
+.flight { position: absolute; top: 0; left: 0; pointer-events: none; }
+.letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  white-space: pre;
+  color: var(--site-text);
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, opacity;
+  text-shadow: 0 1px 2px var(--site-bg), 0 1px 10px var(--site-bg);
+}
+@media (min-width: 1920px) and (min-height: 640px) {
+  .navigation { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .letter { will-change: auto; }
+}

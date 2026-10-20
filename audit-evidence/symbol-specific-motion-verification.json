@@ -1,0 +1,250 @@
+{
+  "motionRuntime": [
+    {
+      "active": "true",
+      "baseMinOpacity": 0.26,
+      "clip": null,
+      "clockFrame": [],
+      "names": [
+        "homepage-code-trace, homepage-code-brackets",
+        "homepage-code-cursor"
+      ],
+      "overflow": false,
+      "states": [
+        "running"
+      ],
+      "symbol": "code"
+    },
+    {
+      "active": "true",
+      "baseMinOpacity": 0.315233,
+      "clip": null,
+      "clockFrame": [],
+      "names": [
+        "homepage-sparkle-wave"
+      ],
+      "overflow": false,
+      "states": [
+        "running"
+      ],
+      "symbol": "sparkle"
+    },
+    {
+      "active": "true",
+      "baseMinOpacity": 0.26,
+      "clip": null,
+      "clockFrame": [],
+      "names": [
+        "homepage-calendar-header",
+        "homepage-calendar-day"
+      ],
+      "overflow": false,
+      "states": [
+        "running"
+      ],
+      "symbol": "calendar"
+    },
+    {
+      "active": "true",
+      "baseMinOpacity": 0.26,
+      "clip": null,
+      "clockFrame": [
+        {
+          "i": 4,
+          "opacity": 1
+        }
+      ],
+      "names": [
+        "homepage-clock-rim",
+        "homepage-clock-tick"
+      ],
+      "overflow": false,
+      "states": [
+        "running"
+      ],
+      "symbol": "clock"
+    },
+    {
+      "active": "true",
+      "baseMinOpacity": 0.26,
+      "clip": "inset(0px 0px 100%)",
+      "clockFrame": [],
+      "names": [
+        "homepage-bookmark-saved",
+        "homepage-bookmark-fill"
+      ],
+      "overflow": false,
+      "states": [
+        "running"
+      ],
+      "symbol": "bookmark"
+    },
+    {
+      "active": "true",
+      "baseMinOpacity": 0.26,
+      "clip": null,
+      "clockFrame": [],
+      "names": [
+        "homepage-arrow-flow, homepage-arrow-point",
+        "homepage-arrow-flow"
+      ],
+      "overflow": false,
+      "states": [
+        "running"
+      ],
+      "symbol": "arrow"
+    },
+    {
+      "clockProgress": {
+        "before": [
+          {
+            "i": 4,
+            "opacity": 1
+          }
+        ],
+        "after": [
+          {
+            "i": 3,
+            "opacity": 1
+          }
+        ]
+      }
+    },
+    {
+      "stableClock": {
+        "before": {
+          "active": "true",
+          "baseMinOpacity": 0.26,
+          "clip": null,
+          "clockFrame": [
+            {
+              "i": 10,
+              "opacity": 1
+            }
+          ],
+          "names": [
+            "homepage-clock-rim",
+            "homepage-clock-tick"
+          ],
+          "overflow": false,
+          "states": [
+            "running"
+          ],
+          "symbol": "clock"
+        },
+        "after": {
+          "active": "false",
+          "baseMinOpacity": 0.26,
+          "clip": null,
+          "clockFrame": [
+            {
+              "i": 7,
+              "opacity": 1
+            }
+          ],
+          "names": [
+            "homepage-clock-rim",
+            "homepage-clock-tick"
+          ],
+          "overflow": false,
+          "states": [
+            "paused"
+          ],
+          "symbol": "clock"
+        }
+      }
+    }
+  ],
+  "symbolResponsive": [
+    {
+      "states": [
+        {
+          "active": "false",
+          "symbol": "code"
+        },
+        {
+          "active": "false",
+          "symbol": "sparkle"
+        },
+        {
+          "active": "false",
+          "symbol": "calendar"
+        },
+        {
+          "active": "false",
+          "symbol": "clock"
+        },
+        {
+          "active": "false",
+          "symbol": "bookmark"
+        },
+        {
+          "active": "false",
+          "symbol": "arrow"
+        }
+      ],
+      "visible": 0,
+      "width": 390
+    },
+    {
+      "states": [
+        {
+          "active": "false",
+          "symbol": "code"
+        },
+        {
+          "active": "false",
+          "symbol": "sparkle"
+        },
+        {
+          "active": "false",
+          "symbol": "calendar"
+        },
+        {
+          "active": "false",
+          "symbol": "clock"
+        },
+        {
+          "active": "false",
+          "symbol": "bookmark"
+        },
+        {
+          "active": "false",
+          "symbol": "arrow"
+        }
+      ],
+      "visible": 0,
+      "width": 1920
+    },
+    {
+      "states": [
+        {
+          "active": "false",
+          "symbol": "code"
+        },
+        {
+          "active": "false",
+          "symbol": "sparkle"
+        },
+        {
+          "active": "false",
+          "symbol": "calendar"
+        },
+        {
+          "active": "false",
+          "symbol": "clock"
+        },
+        {
+          "active": "false",
+          "symbol": "bookmark"
+        },
+        {
+          "active": "true",
+          "symbol": "arrow"
+        }
+      ],
+      "visible": 6,
+      "width": 2560
+    }
+  ]
+}

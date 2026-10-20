@@ -1,0 +1,2174 @@
+{
+  "date": "2026-10-19",
+  "viewport": {
+    "width": 3440,
+    "height": 1215
+  },
+  "bendFrames": [
+    {
+      "observedAt": 1792418904941,
+      "featuresTop": 987,
+      "focused": "Перейти до вмістуPlanIt.ПродуктВідкрити вебверсіюВаш розклад у браузер",
+      "hash": "",
+      "height": 1215,
+      "items": [
+        {
+          "active": "location",
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3310.6981201171875,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3322.33349609375,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3334.8377685546875,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3349.8311767578125,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3361.137451171875,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3370.8321533203125,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": null,
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(76.7388px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3253.73876953125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(92.2309px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3269.23095703125,
+              "y": 156
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(107.856px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3284.85595703125,
+              "y": 156
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(123.528px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3300.52783203125,
+              "y": 156
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(137.583px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3314.58251953125,
+              "y": 156
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(150.958px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3327.95751953125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(163.934px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3340.93408203125,
+              "y": 156
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(176.395px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.39501953125,
+              "y": 156
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(187.762px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3364.76220703125,
+              "y": 156
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(196.739px, -0.954022px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3373.73876953125,
+              "y": 156
+            }
+          ],
+          "y": 156.9540252685547
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7890625,
+              "y": 1087
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3329.3203125,
+              "y": 1087
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3343.28125,
+              "y": 1087
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3357.5625,
+              "y": 1087
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3370.84375,
+              "y": 1087
+            }
+          ],
+          "y": 1087
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3257.8359375,
+              "y": 1131
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3271.8046875,
+              "y": 1131
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3285.3359375,
+              "y": 1131
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3297.7265625,
+              "y": 1131
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3311.6484375,
+              "y": 1131
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6640625,
+              "y": 1131
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3339.34375,
+              "y": 1131
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.90625,
+              "y": 1131
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1131
+            }
+          ],
+          "y": 1131
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3303.4765625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3317.3984375,
+              "y": 1175
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3331.0078125,
+              "y": 1175
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3344.4921875,
+              "y": 1175
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3356.8828125,
+              "y": 1175
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1175
+            }
+          ],
+          "y": 1175
+        }
+      ],
+      "scroll": 601,
+      "width": 3440
+    },
+    {
+      "observedAt": 1792418929502,
+      "featuresTop": 987,
+      "focused": "Перейти до вмістуPlanIt.ПродуктВідкрити вебверсіюВаш розклад у браузер",
+      "hash": "",
+      "height": 1215,
+      "items": [
+        {
+          "active": null,
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(138.609px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3315.609375,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(149.383px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.3828125,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(160.961px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3337.9609375,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(174.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3351.84375,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(185.312px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3362.3125,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(194.289px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3371.2890625,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": "location",
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(66.8731px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3243.8731689453125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(83.6047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3260.604736328125,
+              "y": 156
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(100.48px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3277.479736328125,
+              "y": 156
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(117.405px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3294.4052734375,
+              "y": 156
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(132.584px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3309.5843505859375,
+              "y": 156
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(147.029px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3324.0294189453125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(161.044px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3338.0440673828125,
+              "y": 156
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(174.502px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3351.5018310546875,
+              "y": 156
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(186.778px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3363.7784423828125,
+              "y": 156
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(196.473px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3373.47314453125,
+              "y": 156
+            }
+          ],
+          "y": 156
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7890625,
+              "y": 1087
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3329.3203125,
+              "y": 1087
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3343.28125,
+              "y": 1087
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3357.5625,
+              "y": 1087
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3370.84375,
+              "y": 1087
+            }
+          ],
+          "y": 1087
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3257.8359375,
+              "y": 1131
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3271.8046875,
+              "y": 1131
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3285.3359375,
+              "y": 1131
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3297.7265625,
+              "y": 1131
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3311.6484375,
+              "y": 1131
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6640625,
+              "y": 1131
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3339.34375,
+              "y": 1131
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.90625,
+              "y": 1131
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1131
+            }
+          ],
+          "y": 1131
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3303.4765625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3317.3984375,
+              "y": 1175
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3331.0078125,
+              "y": 1175
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3344.4921875,
+              "y": 1175
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3356.8828125,
+              "y": 1175
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1175
+            }
+          ],
+          "y": 1175
+        }
+      ],
+      "scroll": 779,
+      "width": 3440
+    },
+    {
+      "observedAt": 1792418969619,
+      "featuresTop": 987,
+      "focused": "Розклад для навчанняМенше хаосу.Більше планів.Заняття, завдання й мате",
+      "hash": "",
+      "height": 1215,
+      "items": [
+        {
+          "active": "location",
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3310.6981201171875,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3322.33349609375,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3334.8377685546875,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3349.8311767578125,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3361.137451171875,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3370.8321533203125,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": null,
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(117.82px, 95.6931px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3294.8203125,
+              "y": 1043
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(133.312px, 95.6931px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3310.3125,
+              "y": 1043
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(148.937px, 95.6931px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3325.9375,
+              "y": 1043
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(164.75px, 95.2832px, 0px) translate(-50%, -50%) rotate(-5.95874deg) scale(1);",
+              "x": 3341.750244140625,
+              "y": 1042.5900268554688
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(183.743px, 89.7803px, 0px) translate(-50%, -50%) rotate(-25.9129deg) scale(1);",
+              "x": 3360.7430419921875,
+              "y": 1037.087158203125
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(208.153px, 70.2341px, 0px) translate(-50%, -50%) rotate(-50.7407deg) scale(1);",
+              "x": 3385.1529541015625,
+              "y": 1017.5409545898438
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(220.509px, 47.591px, 0px) translate(-50%, -50%) rotate(-73.3529deg) scale(1);",
+              "x": 3397.5093994140625,
+              "y": 994.8978271484376
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(222.801px, 33.3414px, 0px) translate(-50%, -50%) rotate(-87.4858deg) scale(1);",
+              "x": 3399.8009033203125,
+              "y": 980.6482543945312
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(222.907px, 21.9584px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3399.90673828125,
+              "y": 969.2653198242188
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(222.907px, 12.9818px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3399.90673828125,
+              "y": 960.2887573242188
+            }
+          ],
+          "y": 947.306884765625
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7890625,
+              "y": 1087
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3329.3203125,
+              "y": 1087
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3343.28125,
+              "y": 1087
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3357.5625,
+              "y": 1087
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3370.84375,
+              "y": 1087
+            }
+          ],
+          "y": 1087
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3257.8359375,
+              "y": 1131
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3271.8046875,
+              "y": 1131
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3285.3359375,
+              "y": 1131
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3297.7265625,
+              "y": 1131
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3311.6484375,
+              "y": 1131
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6640625,
+              "y": 1131
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3339.34375,
+              "y": 1131
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.90625,
+              "y": 1131
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1131
+            }
+          ],
+          "y": 1131
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3303.4765625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3317.3984375,
+              "y": 1175
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3331.0078125,
+              "y": 1175
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3344.4921875,
+              "y": 1175
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3356.8828125,
+              "y": 1175
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1175
+            }
+          ],
+          "y": 1175
+        }
+      ],
+      "scroll": 279,
+      "width": 3440
+    },
+    {
+      "observedAt": 1792419014418,
+      "featuresTop": 987,
+      "focused": "Розклад для навчанняМенше хаосу.Більше планів.Заняття, завдання й мате",
+      "hash": "",
+      "height": 1215,
+      "items": [
+        {
+          "active": "location",
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(133.698px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3325.6981201171875,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(145.333px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3337.33349609375,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(157.838px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3349.8377685546875,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(172.831px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3364.8311767578125,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(184.137px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3376.137451171875,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(193.832px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3385.8321533203125,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": null,
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(128.033px, -9.49479px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3320.03271484375,
+              "y": 253.52532958984375
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(143.525px, -9.49479px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3335.52490234375,
+              "y": 253.52532958984375
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(159.156px, -9.55373px, 0px) translate(-50%, -50%) rotate(-1.73048deg) scale(1);",
+              "x": 3351.156005859375,
+              "y": 253.4663772583008
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(177.688px, -12.8945px, 0px) translate(-50%, -50%) rotate(-19.7464deg) scale(1);",
+              "x": 3369.6883544921875,
+              "y": 250.1255645751953
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(203.707px, -29.8134px, 0px) translate(-50%, -50%) rotate(-45.0491deg) scale(1);",
+              "x": 3395.70703125,
+              "y": 233.2066879272461
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(220.154px, -54.7408px, 0px) translate(-50%, -50%) rotate(-69.2338deg) scale(1);",
+              "x": 3412.1544189453125,
+              "y": 208.27935791015625
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(223.704px, -70.8944px, 0px) translate(-50%, -50%) rotate(-85.9017deg) scale(1);",
+              "x": 3415.703857421875,
+              "y": 192.1257553100586
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(223.928px, -83.4107px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3415.928466796875,
+              "y": 179.609375
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(223.928px, -94.7779px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3415.928466796875,
+              "y": 168.2421875
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(223.928px, -103.754px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3415.928466796875,
+              "y": 159.265625
+            }
+          ],
+          "y": 263.0201110839844
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3327.7890625,
+              "y": 1087
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3344.3203125,
+              "y": 1087
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3358.28125,
+              "y": 1087
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3372.5625,
+              "y": 1087
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3385.84375,
+              "y": 1087
+            }
+          ],
+          "y": 1087
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3272.8359375,
+              "y": 1131
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3286.8046875,
+              "y": 1131
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3300.3359375,
+              "y": 1131
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7265625,
+              "y": 1131
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6484375,
+              "y": 1131
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3341.6640625,
+              "y": 1131
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3354.34375,
+              "y": 1131
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3368.90625,
+              "y": 1131
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3384.796875,
+              "y": 1131
+            }
+          ],
+          "y": 1131
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3318.4765625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3332.3984375,
+              "y": 1175
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3346.0078125,
+              "y": 1175
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3359.4921875,
+              "y": 1175
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3371.8828125,
+              "y": 1175
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3384.796875,
+              "y": 1175
+            }
+          ],
+          "y": 1175
+        }
+      ],
+      "scroll": 510,
+      "width": 3440
+    }
+  ],
+  "landings": [
+    {
+      "observedAt": 1792419147664,
+      "featuresTop": 987,
+      "focused": "Ваш розклад. Ваші правила.",
+      "hash": "#features",
+      "height": 1215,
+      "items": [
+        {
+          "active": null,
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(138.609px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3315.609375,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(149.383px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.3828125,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(160.961px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3337.9609375,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(174.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3351.84375,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(185.312px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3362.3125,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(194.289px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3371.2890625,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": "location",
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(66.8731px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3243.8731689453125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(83.6047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3260.604736328125,
+              "y": 156
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(100.48px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3277.479736328125,
+              "y": 156
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(117.405px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3294.4052734375,
+              "y": 156
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(132.584px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3309.5843505859375,
+              "y": 156
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(147.029px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3324.0294189453125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(161.044px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3338.0440673828125,
+              "y": 156
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(174.502px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3351.5018310546875,
+              "y": 156
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(186.778px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3363.7784423828125,
+              "y": 156
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(196.473px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3373.47314453125,
+              "y": 156
+            }
+          ],
+          "y": 156
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7890625,
+              "y": 1087
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3329.3203125,
+              "y": 1087
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3343.28125,
+              "y": 1087
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3357.5625,
+              "y": 1087
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3370.84375,
+              "y": 1087
+            }
+          ],
+          "y": 1087
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3257.8359375,
+              "y": 1131
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3271.8046875,
+              "y": 1131
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3285.3359375,
+              "y": 1131
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3297.7265625,
+              "y": 1131
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3311.6484375,
+              "y": 1131
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6640625,
+              "y": 1131
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3339.34375,
+              "y": 1131
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.90625,
+              "y": 1131
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1131
+            }
+          ],
+          "y": 1131
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3303.4765625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3317.3984375,
+              "y": 1175
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3331.0078125,
+              "y": 1175
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3344.4921875,
+              "y": 1175
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3356.8828125,
+              "y": 1175
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1175
+            }
+          ],
+          "y": 1175
+        }
+      ],
+      "scroll": 899,
+      "width": 3440
+    },
+    {
+      "observedAt": 1792419148426,
+      "featuresTop": 987,
+      "focused": "Усе потрібне між заняттями.",
+      "hash": "#everyday",
+      "height": 1215,
+      "items": [
+        {
+          "active": null,
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(138.609px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3315.609375,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(149.383px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.3828125,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(160.961px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3337.9609375,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(174.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3351.84375,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(185.312px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3362.3125,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(194.289px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3371.2890625,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": null,
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3253.734375,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3269.2265625,
+              "y": 156
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3284.8515625,
+              "y": 156
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3300.5234375,
+              "y": 156
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3314.578125,
+              "y": 156
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3327.953125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3340.9296875,
+              "y": 156
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.390625,
+              "y": 156
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3364.7578125,
+              "y": 156
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3373.734375,
+              "y": 156
+            }
+          ],
+          "y": 156
+        },
+        {
+          "active": "location",
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(130.652px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3307.6522216796875,
+              "y": 200
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(148.506px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3325.5059814453125,
+              "y": 200
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(163.584px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3340.583740234375,
+              "y": 200
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(179.007px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3356.0074462890625,
+              "y": 200
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.351px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3370.351318359375,
+              "y": 200
+            }
+          ],
+          "y": 200
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3257.8359375,
+              "y": 1131
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3271.8046875,
+              "y": 1131
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3285.3359375,
+              "y": 1131
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3297.7265625,
+              "y": 1131
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3311.6484375,
+              "y": 1131
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6640625,
+              "y": 1131
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3339.34375,
+              "y": 1131
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.90625,
+              "y": 1131
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1131
+            }
+          ],
+          "y": 1131
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(126.477px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3303.4765625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(140.398px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3317.3984375,
+              "y": 1175
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(154.008px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3331.0078125,
+              "y": 1175
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(167.492px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3344.4921875,
+              "y": 1175
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(179.883px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3356.8828125,
+              "y": 1175
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 1175
+            }
+          ],
+          "y": 1175
+        }
+      ],
+      "scroll": 4744,
+      "width": 3440
+    },
+    {
+      "observedAt": 1792419149325,
+      "featuresTop": 987,
+      "focused": "Оберіть, де зручніше.",
+      "hash": "#platforms",
+      "height": 1215,
+      "items": [
+        {
+          "active": null,
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(138.609px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3315.609375,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(149.383px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.3828125,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(160.961px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3337.9609375,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(174.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3351.84375,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(185.312px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3362.3125,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(194.289px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3371.2890625,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": null,
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3253.734375,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3269.2265625,
+              "y": 156
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3284.8515625,
+              "y": 156
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3300.5234375,
+              "y": 156
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3314.578125,
+              "y": 156
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3327.953125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3340.9296875,
+              "y": 156
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.390625,
+              "y": 156
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3364.7578125,
+              "y": 156
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3373.734375,
+              "y": 156
+            }
+          ],
+          "y": 156
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7890625,
+              "y": 200
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3329.3203125,
+              "y": 200
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3343.28125,
+              "y": 200
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3357.5625,
+              "y": 200
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3370.84375,
+              "y": 200
+            }
+          ],
+          "y": 200
+        },
+        {
+          "active": "location",
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(71.3028px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3248.302734375,
+              "y": 244
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(86.3891px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3263.3890380859375,
+              "y": 244
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(101.003px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3278.0028076171875,
+              "y": 244
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(114.385px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3291.3846435546875,
+              "y": 244
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(129.42px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3306.4202880859375,
+              "y": 244
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(145.637px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3322.63720703125,
+              "y": 244
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(159.331px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3336.331298828125,
+              "y": 244
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(175.059px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3352.0587158203125,
+              "y": 244
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.221px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3369.2205810546875,
+              "y": 244
+            }
+          ],
+          "y": 244
+        },
+        {
+          "active": null,
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(176.313px, 123.813px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.312744140625,
+              "y": 1175
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(190.692px, 123.062px, 0px) translate(-50%, -50%) rotate(-11.4644deg) scale(1);",
+              "x": 3367.6920166015625,
+              "y": 1174.2495727539062
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(213.655px, 108.686px, 0px) translate(-50%, -50%) rotate(-49.8529deg) scale(1);",
+              "x": 3390.6551513671875,
+              "y": 1159.8738403320312
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(222.959px, 87.9229px, 0px) translate(-50%, -50%) rotate(-84.2014deg) scale(1);",
+              "x": 3399.9593505859375,
+              "y": 1139.1103515625
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(223.203px, 75.4456px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3400.20263671875,
+              "y": 1126.633056640625
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(223.203px, 62.5316px, 0px) translate(-50%, -50%) rotate(-90deg) scale(1);",
+              "x": 3400.20263671875,
+              "y": 1113.718994140625
+            }
+          ],
+          "y": 1051.1873779296875
+        }
+      ],
+      "scroll": 5850,
+      "width": 3440
+    },
+    {
+      "observedAt": 1792419150097,
+      "featuresTop": 987,
+      "focused": "Почніть зі свого розкладу.",
+      "hash": "#get-started",
+      "height": 1215,
+      "items": [
+        {
+          "active": null,
+          "label": "PlanIt",
+          "letters": [
+            {
+              "letter": "P",
+              "style": "transform: translate3d(138.609px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3315.609375,
+              "y": 112
+            },
+            {
+              "letter": "L",
+              "style": "transform: translate3d(149.383px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.3828125,
+              "y": 112
+            },
+            {
+              "letter": "A",
+              "style": "transform: translate3d(160.961px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3337.9609375,
+              "y": 112
+            },
+            {
+              "letter": "N",
+              "style": "transform: translate3d(174.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3351.84375,
+              "y": 112
+            },
+            {
+              "letter": "I",
+              "style": "transform: translate3d(185.312px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3362.3125,
+              "y": 112
+            },
+            {
+              "letter": "T",
+              "style": "transform: translate3d(194.289px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3371.2890625,
+              "y": 112
+            }
+          ],
+          "y": 112
+        },
+        {
+          "active": null,
+          "label": "Можливості",
+          "letters": [
+            {
+              "letter": "М",
+              "style": "transform: translate3d(76.7344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3253.734375,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(92.2266px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3269.2265625,
+              "y": 156
+            },
+            {
+              "letter": "Ж",
+              "style": "transform: translate3d(107.852px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3284.8515625,
+              "y": 156
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(123.523px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3300.5234375,
+              "y": 156
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(137.578px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3314.578125,
+              "y": 156
+            },
+            {
+              "letter": "В",
+              "style": "transform: translate3d(150.953px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3327.953125,
+              "y": 156
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(163.93px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3340.9296875,
+              "y": 156
+            },
+            {
+              "letter": "С",
+              "style": "transform: translate3d(176.391px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.390625,
+              "y": 156
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(187.758px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3364.7578125,
+              "y": 156
+            },
+            {
+              "letter": "І",
+              "style": "transform: translate3d(196.734px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3373.734375,
+              "y": 156
+            }
+          ],
+          "y": 156
+        },
+        {
+          "active": null,
+          "label": "Щодня",
+          "letters": [
+            {
+              "letter": "Щ",
+              "style": "transform: translate3d(135.789px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3312.7890625,
+              "y": 200
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(152.32px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3329.3203125,
+              "y": 200
+            },
+            {
+              "letter": "Д",
+              "style": "transform: translate3d(166.281px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3343.28125,
+              "y": 200
+            },
+            {
+              "letter": "Н",
+              "style": "transform: translate3d(180.562px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3357.5625,
+              "y": 200
+            },
+            {
+              "letter": "Я",
+              "style": "transform: translate3d(193.844px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3370.84375,
+              "y": 200
+            }
+          ],
+          "y": 200
+        },
+        {
+          "active": null,
+          "label": "Платформи",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(80.8359px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3257.8359375,
+              "y": 244
+            },
+            {
+              "letter": "Л",
+              "style": "transform: translate3d(94.8047px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3271.8046875,
+              "y": 244
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(108.336px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3285.3359375,
+              "y": 244
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(120.727px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3297.7265625,
+              "y": 244
+            },
+            {
+              "letter": "Ф",
+              "style": "transform: translate3d(134.648px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3311.6484375,
+              "y": 244
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(149.664px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3326.6640625,
+              "y": 244
+            },
+            {
+              "letter": "Р",
+              "style": "transform: translate3d(162.344px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3339.34375,
+              "y": 244
+            },
+            {
+              "letter": "М",
+              "style": "transform: translate3d(176.906px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3353.90625,
+              "y": 244
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.797px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1);",
+              "x": 3369.796875,
+              "y": 244
+            }
+          ],
+          "y": 244
+        },
+        {
+          "active": "location",
+          "label": "Почати",
+          "letters": [
+            {
+              "letter": "П",
+              "style": "transform: translate3d(120.595px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3297.5947265625,
+              "y": 288
+            },
+            {
+              "letter": "О",
+              "style": "transform: translate3d(135.63px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3312.63037109375,
+              "y": 288
+            },
+            {
+              "letter": "Ч",
+              "style": "transform: translate3d(150.328px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3327.3284912109375,
+              "y": 288
+            },
+            {
+              "letter": "А",
+              "style": "transform: translate3d(164.892px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3341.8916015625,
+              "y": 288
+            },
+            {
+              "letter": "Т",
+              "style": "transform: translate3d(178.273px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3355.2734375,
+              "y": 288
+            },
+            {
+              "letter": "И",
+              "style": "transform: translate3d(192.221px, 0px, 0px) translate(-50%, -50%) rotate(0deg) scale(1.08);",
+              "x": 3369.2205810546875,
+              "y": 288
+            }
+          ],
+          "y": 288
+        }
+      ],
+      "scroll": 6657,
+      "width": 3440
+    }
+  ],
+  "console": [
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.886Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.886Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.925Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.926Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.926Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.926Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.940Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.941Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.956Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    },
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of undefined (reading 'M_ID')\n    at Y (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:761)\n    at E (chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js:1:1442)",
+      "timestamp": "2026-10-19T14:12:29.956Z",
+      "url": "chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"
+    }
+  ],
+  "notes": [
+    "Page scrolling uses 320–520 ms, independent of menu motion.",
+    "Each bend has staggered rotations and opens inter-letter gaps; the vertical run is straight.",
+    "Reduced motion and other viewport sizes were reviewed in source and math tests, not changed in OS settings."
+  ]
+}

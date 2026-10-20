@@ -1,0 +1,614 @@
+[
+  {
+    "cardWidths": [
+      297,
+      297,
+      297,
+      297,
+      297,
+      297
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "cardWidths": [
+      327,
+      327,
+      327,
+      327,
+      327,
+      327
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "cardWidths": [
+      341,
+      341,
+      341,
+      341,
+      341,
+      341
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "cardWidths": [
+      468,
+      468,
+      468,
+      468,
+      468,
+      468
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 1023
+  },
+  {
+    "cardWidths": [
+      469,
+      469,
+      469,
+      469,
+      469,
+      469
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 1024
+  },
+  {
+    "cardWidths": [
+      596,
+      596,
+      596,
+      596,
+      596,
+      596
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 1279
+  },
+  {
+    "cardWidths": [
+      390,
+      390,
+      390,
+      390,
+      390,
+      390
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 1280
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "dark",
+    "width": 1920
+  },
+  {
+    "cardWidths": [
+      297,
+      297,
+      297,
+      297,
+      297,
+      297
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "cardWidths": [
+      327,
+      327,
+      327,
+      327,
+      327,
+      327
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "cardWidths": [
+      341,
+      341,
+      341,
+      341,
+      341,
+      341
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "cardWidths": [
+      468,
+      468,
+      468,
+      468,
+      468,
+      468
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 1023
+  },
+  {
+    "cardWidths": [
+      469,
+      469,
+      469,
+      469,
+      469,
+      469
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 1024
+  },
+  {
+    "cardWidths": [
+      596,
+      596,
+      596,
+      596,
+      596,
+      596
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 1279
+  },
+  {
+    "cardWidths": [
+      390,
+      390,
+      390,
+      390,
+      390,
+      390
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 1280
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "uk",
+    "theme": "light",
+    "width": 1920
+  },
+  {
+    "cardWidths": [
+      297,
+      297,
+      297,
+      297,
+      297,
+      297
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 360
+  },
+  {
+    "cardWidths": [
+      327,
+      327,
+      327,
+      327,
+      327,
+      327
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "cardWidths": [
+      341,
+      341,
+      341,
+      341,
+      341,
+      341
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "cardWidths": [
+      468,
+      468,
+      468,
+      468,
+      468,
+      468
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 1023
+  },
+  {
+    "cardWidths": [
+      469,
+      469,
+      469,
+      469,
+      469,
+      469
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 1024
+  },
+  {
+    "cardWidths": [
+      596,
+      596,
+      596,
+      596,
+      596,
+      596
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 1279
+  },
+  {
+    "cardWidths": [
+      390,
+      390,
+      390,
+      390,
+      390,
+      390
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 1280
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "light",
+    "width": 1920
+  },
+  {
+    "cardWidths": [
+      297,
+      297,
+      297,
+      297,
+      297,
+      297
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 360
+  },
+  {
+    "cardWidths": [
+      327,
+      327,
+      327,
+      327,
+      327,
+      327
+    ],
+    "cards": 6,
+    "columns": 1,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "cardWidths": [
+      341,
+      341,
+      341,
+      341,
+      341,
+      341
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "cardWidths": [
+      468,
+      468,
+      468,
+      468,
+      468,
+      468
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 1023
+  },
+  {
+    "cardWidths": [
+      469,
+      469,
+      469,
+      469,
+      469,
+      469
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 1024
+  },
+  {
+    "cardWidths": [
+      596,
+      596,
+      596,
+      596,
+      596,
+      596
+    ],
+    "cards": 6,
+    "columns": 2,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 1279
+  },
+  {
+    "cardWidths": [
+      390,
+      390,
+      390,
+      390,
+      390,
+      390
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 1280
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 1440
+  },
+  {
+    "cardWidths": [
+      395,
+      395,
+      395,
+      395,
+      395,
+      395
+    ],
+    "cards": 6,
+    "columns": 3,
+    "contentOverflow": false,
+    "documentOverflow": false,
+    "locale": "en",
+    "theme": "dark",
+    "width": 1920
+  }
+]

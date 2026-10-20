@@ -1,0 +1,1165 @@
+{
+  "completed": {
+    "active": true,
+    "cycle": 2,
+    "hasMotion": false,
+    "mode": "hover",
+    "parts": [
+      {
+        "moving": false,
+        "name": "feature-preview-module__LeQy-W__format-hint",
+        "opacity": 1,
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "moving": false,
+        "name": "feature-preview-module__LeQy-W__format-hint",
+        "opacity": 1,
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "moving": false,
+        "name": "feature-preview-module__LeQy-W__format-hint",
+        "opacity": 1,
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "moving": false,
+        "name": "feature-preview-module__LeQy-W__format-hint",
+        "opacity": 1,
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "moving": false,
+        "name": "feature-preview-module__LeQy-W__format-hint",
+        "opacity": 1,
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "strength": 1
+  },
+  "documents": [
+    {
+      "gap": 0,
+      "before": {
+        "active": false,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.490785
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.827689) 0px 0px 0px 0.827689px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.65538)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.366816) 0px 0px 0px 0.366816px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.733632)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.0342167) 0px 0px 0px 0.0342167px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0684334)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.948013) 0px 0px 0px 0.948013px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.89603)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.982479) 0px 0px 0px 0.982479px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.96496)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.691854) 0px 0px 0px 0.691854px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.38371)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.219532) 0px 0px 0px 0.219532px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.439064)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.00219765) 0px 0px 0px 0.00219765px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.0043953)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "gap": 70,
+      "before": {
+        "active": false,
+        "cycle": 3,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.068599
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 4,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.957649) 0px 0px 0px 0.957649px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.9153)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.609374) 0px 0px 0px 0.609374px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.21875)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.155239) 0px 0px 0px 0.155239px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.310478)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 4,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.781186) 0px 0px 0px 0.781186px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.56237)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.985442) 0px 0px 0px 0.985442px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.97088)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.930207) 0px 0px 0px 0.930207px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.86041)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.541495) 0px 0px 0px 0.541495px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.08299)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.112278) 0px 0px 0px 0.112278px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.224557)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "gap": 220,
+      "before": {
+        "active": false,
+        "cycle": 4,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.00950787
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 5,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.938663) 0px 0px 0px 0.938663px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.87733)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.560814) 0px 0px 0px 0.560814px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.12163)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.123698) 0px 0px 0px 0.123698px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.247396)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 5,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.811717) 0px 0px 0px 0.811717px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.62343)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.992305) 0px 0px 0px 0.992305px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.98461)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.906441) 0px 0px 0px 0.906441px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.81288)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.492632) 0px 0px 0px 0.492632px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.985264)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.0860248) 0px 0px 0px 0.0860248px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.17205)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "gap": 650,
+      "before": {
+        "active": false,
+        "cycle": 5,
+        "hasMotion": false,
+        "mode": null,
+        "parts": [],
+        "strength": 0
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 6,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.973022) 0px 0px 0px 0.973022px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.94604)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.656588) 0px 0px 0px 0.656588px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.31318)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.190222) 0px 0px 0px 0.190222px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.380443)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.000256663) 0px 0px 0px 0.000256663px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.000513327)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 6,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.780806) 0px 0px 0px 0.780806px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.56161)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.985346) 0px 0px 0px 0.985346px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.97069)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.930471) 0px 0px 0px 0.930471px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.86094)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.542081) 0px 0px 0px 0.542081px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.08416)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.112616) 0px 0px 0px 0.112616px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.225232)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "gap": 0,
+      "before": {
+        "active": false,
+        "cycle": 6,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.234057
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 7,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.938663) 0px 0px 0px 0.938663px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.87733)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.560814) 0px 0px 0px 0.560814px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.12163)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.123698) 0px 0px 0px 0.123698px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.247396)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 7,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.840445) 0px 0px 0px 0.840445px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.68089)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.997009) 0px 0px 0px 0.997009px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.99402)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.878771) 0px 0px 0px 0.878771px",
+            "transform": "matrix(1, 0, 0, 1, 0, -1.75754)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.443276) 0px 0px 0px 0.443276px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.886551)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__format-hint",
+            "opacity": 1,
+            "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.0630836) 0px 0px 0px 0.0630836px",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.126167)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    }
+  ],
+  "otherCards": [
+    {
+      "title": "Нагадування у свій час",
+      "firstFinished": {
+        "active": true,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__bell-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "before": {
+        "active": false,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__bell-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.264086
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__bell-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(0.998508, -0.0546115, 0.0546115, 0.998508, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__bell-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(0.996078, 0.0884813, -0.0884813, 0.996078, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "title": "Матеріали поруч із парою",
+      "firstFinished": {
+        "active": true,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "before": {
+        "active": false,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.20692
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 0.970243,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.297574)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 0.907369,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.926306)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 0.995588,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0441161)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__material-hint",
+            "opacity": 0.982137,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.17863)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "title": "Розклад на екрані Android",
+      "firstFinished": {
+        "active": true,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__lesson-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "before": {
+        "active": false,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__lesson-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.433031
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__lesson-hint",
+            "opacity": 0.961147,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0.621654, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__lesson-hint",
+            "opacity": 0.99117,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0.141274, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    },
+    {
+      "title": "Зміни під вашим контролем",
+      "firstFinished": {
+        "active": true,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__sync-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__cloud-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "before": {
+        "active": false,
+        "cycle": 2,
+        "hasMotion": false,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__sync-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__cloud-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 0.207223
+      },
+      "immediate": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__sync-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 2.79956, 0)"
+          },
+          {
+            "moving": false,
+            "name": "feature-preview-module__LeQy-W__cloud-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          }
+        ],
+        "strength": 1
+      },
+      "later": {
+        "active": true,
+        "cycle": 3,
+        "hasMotion": true,
+        "mode": "hover",
+        "parts": [
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__sync-hint",
+            "opacity": 1,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 2.08815, 0)"
+          },
+          {
+            "moving": true,
+            "name": "feature-preview-module__LeQy-W__cloud-hint",
+            "opacity": 0.873381,
+            "shadow": "none",
+            "transform": "matrix(1, 0, 0, 1, 0, -0.361768)"
+          }
+        ],
+        "strength": 1
+      },
+      "restarted": true
+    }
+  ],
+  "fade": [
+    {
+      "active": false,
+      "cycle": 3,
+      "hasMotion": true,
+      "mode": "hover",
+      "parts": [
+        {
+          "moving": true,
+          "name": "feature-preview-module__LeQy-W__sync-hint",
+          "opacity": 1,
+          "shadow": "none",
+          "transform": "matrix(1, 0, 0, 1, -0.410038, 0)"
+        },
+        {
+          "moving": true,
+          "name": "feature-preview-module__LeQy-W__cloud-hint",
+          "opacity": 0.906133,
+          "shadow": "none",
+          "transform": "matrix(1, 0, 0, 1, 0, -0.26819)"
+        }
+      ],
+      "strength": 0.338165
+    },
+    {
+      "active": false,
+      "cycle": 3,
+      "hasMotion": true,
+      "mode": "hover",
+      "parts": [
+        {
+          "moving": true,
+          "name": "feature-preview-module__LeQy-W__sync-hint",
+          "opacity": 1,
+          "shadow": "none",
+          "transform": "matrix(1, 0, 0, 1, -0.123022, 0)"
+        },
+        {
+          "moving": true,
+          "name": "feature-preview-module__LeQy-W__cloud-hint",
+          "opacity": 0.986713,
+          "shadow": "none",
+          "transform": "matrix(1, 0, 0, 1, 0, -0.0379624)"
+        }
+      ],
+      "strength": 0.0411867
+    },
+    {
+      "active": false,
+      "cycle": 3,
+      "hasMotion": false,
+      "mode": null,
+      "parts": [],
+      "strength": 0
+    }
+  ],
+  "layouts": [
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1920
+    }
+  ],
+  "logs": []
+}

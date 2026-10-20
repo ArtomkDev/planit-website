@@ -1,0 +1,418 @@
+{
+  "fades": [
+    {
+      "title": "Файл для друку й редагування",
+      "before": {
+        "active": true,
+        "mode": "hover",
+        "strength": 1
+      },
+      "samples": [
+        {
+          "elapsed": 0,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint"
+          ],
+          "strength": 0.233713
+        },
+        {
+          "elapsed": 109,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint"
+          ],
+          "strength": 0.0533197
+        },
+        {
+          "elapsed": 233,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint"
+          ],
+          "strength": 0.00460902
+        },
+        {
+          "elapsed": 418,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint",
+            "feature-preview-module__LeQy-W__format-hint"
+          ],
+          "strength": 0
+        },
+        {
+          "elapsed": 712,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        }
+      ]
+    },
+    {
+      "title": "Нагадування у свій час",
+      "before": {
+        "active": true,
+        "mode": "hover",
+        "strength": 1
+      },
+      "samples": [
+        {
+          "elapsed": 0,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__bell-hint"
+          ],
+          "strength": 0.298989
+        },
+        {
+          "elapsed": 112,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__bell-hint"
+          ],
+          "strength": 0.0469037
+        },
+        {
+          "elapsed": 250,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__bell-hint"
+          ],
+          "strength": 0.00377013
+        },
+        {
+          "elapsed": 435,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        },
+        {
+          "elapsed": 728,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        }
+      ]
+    },
+    {
+      "title": "Матеріали поруч із парою",
+      "before": {
+        "active": true,
+        "mode": "intro",
+        "strength": 1
+      },
+      "samples": [
+        {
+          "elapsed": 0,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__material-hint",
+            "feature-preview-module__LeQy-W__material-hint"
+          ],
+          "strength": 0.382625
+        },
+        {
+          "elapsed": 112,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__material-hint",
+            "feature-preview-module__LeQy-W__material-hint"
+          ],
+          "strength": 0.0687021
+        },
+        {
+          "elapsed": 251,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__material-hint",
+            "feature-preview-module__LeQy-W__material-hint"
+          ],
+          "strength": 0.00802152
+        },
+        {
+          "elapsed": 435,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__material-hint",
+            "feature-preview-module__LeQy-W__material-hint"
+          ],
+          "strength": 0
+        },
+        {
+          "elapsed": 728,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        }
+      ]
+    },
+    {
+      "title": "Розклад на екрані Android",
+      "before": {
+        "active": true,
+        "mode": "intro",
+        "strength": 1
+      },
+      "samples": [
+        {
+          "elapsed": 0,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__lesson-hint"
+          ],
+          "strength": 0.233713
+        },
+        {
+          "elapsed": 111,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__lesson-hint"
+          ],
+          "strength": 0.0411218
+        },
+        {
+          "elapsed": 250,
+          "active": false,
+          "mode": "intro",
+          "names": [
+            "feature-preview-module__LeQy-W__lesson-hint"
+          ],
+          "strength": 0.00304431
+        },
+        {
+          "elapsed": 436,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        },
+        {
+          "elapsed": 730,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        }
+      ]
+    },
+    {
+      "title": "Зміни під вашим контролем",
+      "before": {
+        "active": true,
+        "mode": "hover",
+        "strength": 1
+      },
+      "samples": [
+        {
+          "elapsed": 0,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__sync-hint",
+            "feature-preview-module__LeQy-W__cloud-hint"
+          ],
+          "strength": 0.162101
+        },
+        {
+          "elapsed": 113,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__sync-hint",
+            "feature-preview-module__LeQy-W__cloud-hint"
+          ],
+          "strength": 0.0274351
+        },
+        {
+          "elapsed": 237,
+          "active": false,
+          "mode": "hover",
+          "names": [
+            "feature-preview-module__LeQy-W__sync-hint",
+            "feature-preview-module__LeQy-W__cloud-hint"
+          ],
+          "strength": 0.00148882
+        },
+        {
+          "elapsed": 437,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        },
+        {
+          "elapsed": 747,
+          "active": false,
+          "mode": null,
+          "names": [],
+          "strength": 0
+        }
+      ]
+    }
+  ],
+  "reentry": {
+    "before": {
+      "active": false,
+      "delay": "0s",
+      "mode": "hover",
+      "strength": 0
+    },
+    "after": {
+      "active": true,
+      "delay": "0s",
+      "mode": "hover",
+      "strength": 0.94668
+    }
+  },
+  "visual": {
+    "formats": [
+      {
+        "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.0104991) 0px 0px 0px 0.947827px",
+        "text": "PDF",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.0209982)"
+      },
+      {
+        "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.0108843) 0px 0px 0px 0.982608px",
+        "text": "DOCX",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.0217687)"
+      },
+      {
+        "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.00766956) 0px 0px 0px 0.692386px",
+        "text": "XLSX",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.0153391)"
+      },
+      {
+        "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.00243691) 0px 0px 0px 0.219998px",
+        "text": "CSV",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.00487383)"
+      },
+      {
+        "shadow": "oklab(0.920973 -0.118306 0.00255692 / 0.0000248413) 0px 0px 0px 0.00224261px",
+        "text": "TXT",
+        "transform": "matrix(1, 0, 0, 1, 0, -4.96827e-05)"
+      }
+    ],
+    "mode": "hover",
+    "strength": "0.011077"
+  },
+  "layouts": [
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "dark",
+      "width": 1920
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 360
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1023
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "documentOverflow": false,
+      "overflow": [],
+      "theme": "light",
+      "width": 1920
+    }
+  ],
+  "logs": []
+}

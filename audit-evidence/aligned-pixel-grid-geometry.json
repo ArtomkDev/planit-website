@@ -1,0 +1,261 @@
+[
+  {
+    "panels": [
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 329,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 305
+      },
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 329,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 305
+      },
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 329,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 305
+      },
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 329,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 305
+      }
+    ],
+    "width": 360
+  },
+  {
+    "panels": [
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 359,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 335
+      },
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 359,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 335
+      },
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 359,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 335
+      },
+      {
+        "canvasHeight": 564,
+        "canvasWidth": 359,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 335
+      }
+    ],
+    "width": 390
+  },
+  {
+    "panels": [
+      {
+        "canvasHeight": 603.9998779296875,
+        "canvasWidth": 358.5,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 334.5
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 358.5,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 334.5
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 358.5,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 334.5
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 358.5,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 12,
+        "panelWidth": 334.5
+      }
+    ],
+    "width": 768
+  },
+  {
+    "panels": [
+      {
+        "canvasHeight": 604.0001220703125,
+        "canvasWidth": 486,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 13,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 486,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 13,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 486,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 13,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 486,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 13,
+        "panelWidth": 460
+      }
+    ],
+    "width": 1023
+  },
+  {
+    "panels": [
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 536.5,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 72,
+        "panelWidth": 440.5
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 536.5,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 24,
+        "panelWidth": 440.5
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 536.5,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 72,
+        "panelWidth": 440.5
+      },
+      {
+        "canvasHeight": 604.000244140625,
+        "canvasWidth": 536.5,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 24,
+        "panelWidth": 440.5
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "panels": [
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 130,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 82,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 130,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 82,
+        "panelWidth": 460
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "panels": [
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-lesson",
+        "overflow": false,
+        "panelLeft": 130,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-appearance",
+        "overflow": false,
+        "panelLeft": 82,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-tasks",
+        "overflow": false,
+        "panelLeft": 130,
+        "panelWidth": 460
+      },
+      {
+        "canvasHeight": 604,
+        "canvasWidth": 672,
+        "id": "feature-schedule",
+        "overflow": false,
+        "panelLeft": 82,
+        "panelWidth": 460
+      }
+    ],
+    "width": 1920
+  }
+]

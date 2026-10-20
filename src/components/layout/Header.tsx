@@ -7,6 +7,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import { ArrowRight, CaretDown, Certificate, Cookie, FileText, Lifebuoy, List, RocketLaunch, ShieldCheck, Trash, X } from '@phosphor-icons/react';
 import { AndroidRobotLogo } from '@/components/ui/BrandIcons';
+import { Wordmark } from '@/components/ui/Wordmark';
 import { APP_URL, PLAY_MARKET_URL, SUPPORT_URL, buildLocaleUrl } from '@/lib/site';
 
 interface HeaderProps {
@@ -101,15 +102,15 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
       <a href="#main-content" className="skip-link">{t('skipContent')}</a>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
         <div className="flex items-center gap-8">
-          <HeaderLink documentNavigation={documentNavigation} href={`/${locale}`} className="text-2xl font-black tracking-tight text-site-text hover:text-brand">PlanIt.</HeaderLink>
-          <nav aria-label={t('globalNavigation')} className="hidden items-center gap-1 rounded-full border border-site-border bg-site-surface p-1 text-sm font-bold text-site-muted lg:flex">
+          <HeaderLink documentNavigation={documentNavigation} href={`/${locale}`} className="text-2xl font-black tracking-tight text-site-text transition-opacity hover:opacity-75"><Wordmark /></HeaderLink>
+          <nav aria-label={t('globalNavigation')} className="hidden items-center gap-1 text-sm font-bold text-site-muted lg:flex">
             {sections.map(group => {
               const open = section === group.id;
               const active = group.items.some(item => item.href === pathname);
               return <div key={group.id} className="relative">
                 <button type="button" aria-expanded={open} aria-controls={`header-${group.id}`} data-active={active || undefined}
                   onClick={event => { triggerRef.current = event.currentTarget; setMenu({ pathname, section: open ? '' : group.id, mobile: false }); }}
-                  className="flex min-h-11 items-center gap-1.5 rounded-full px-4 hover:bg-site-surface-muted aria-expanded:bg-site-surface-muted data-[active=true]:text-site-text">
+                  className="flex min-h-11 items-center gap-1.5 rounded-lg px-4 transition-colors hover:bg-site-surface-muted hover:text-site-text aria-expanded:bg-site-surface-muted aria-expanded:text-site-text data-[active=true]:text-brand-strong">
                   {group.label}<CaretDown aria-hidden="true" weight="bold" className={`h-3.5 w-3.5 ${open ? 'rotate-180' : ''}`} />
                 </button>
                 <div id={`header-${group.id}`} hidden={!open} className="absolute left-0 top-full w-[22rem] pt-3">

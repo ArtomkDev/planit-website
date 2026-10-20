@@ -1,0 +1,277 @@
+{
+  "themes": [
+    {
+      "brand": "#3ef7d2",
+      "cards": [
+        {
+          "accent": "rgb(245, 158, 11)",
+          "codeGlyphs": [
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(250, 250, 250)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(250, 250, 250)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(250, 250, 250)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(250, 250, 250)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(250, 250, 250)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(250, 250, 250)"
+            }
+          ],
+          "details": [
+            {
+              "border": "rgb(245, 158, 11)",
+              "color": "rgb(245, 158, 11)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Поділіться кодом чи посиланням"
+        },
+        {
+          "accent": "rgb(99, 102, 241)",
+          "codeGlyphs": [],
+          "details": [],
+          "title": "Файл для друку й редагування"
+        },
+        {
+          "accent": "rgb(6, 182, 212)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(6, 182, 212)",
+              "color": "rgb(6, 182, 212)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Нагадування у свій час"
+        },
+        {
+          "accent": "rgb(16, 185, 129)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(16, 185, 129)",
+              "color": "rgb(16, 185, 129)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Матеріали поруч із парою"
+        },
+        {
+          "accent": "rgb(244, 63, 94)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(244, 63, 94)",
+              "color": "rgb(250, 250, 250)",
+              "tag": "DIV"
+            }
+          ],
+          "title": "Розклад на екрані Android"
+        },
+        {
+          "accent": "rgb(139, 92, 246)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(139, 92, 246)",
+              "color": "rgb(139, 92, 246)",
+              "tag": "svg"
+            },
+            {
+              "border": "rgb(139, 92, 246)",
+              "color": "rgb(139, 92, 246)",
+              "tag": "svg"
+            },
+            {
+              "border": "rgb(139, 92, 246)",
+              "color": "rgb(139, 92, 246)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Зміни під вашим контролем"
+        }
+      ],
+      "theme": "dark"
+    },
+    {
+      "brand": "#f45b8a",
+      "cards": [
+        {
+          "accent": "rgb(245, 158, 11)",
+          "codeGlyphs": [
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(24, 24, 27)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(24, 24, 27)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(24, 24, 27)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(24, 24, 27)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(24, 24, 27)"
+            },
+            {
+              "animation": "schedule-code-module__ujMi8G__code-resolve",
+              "color": "rgb(24, 24, 27)"
+            }
+          ],
+          "details": [
+            {
+              "border": "rgb(245, 158, 11)",
+              "color": "rgb(245, 158, 11)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Поділіться кодом чи посиланням"
+        },
+        {
+          "accent": "rgb(99, 102, 241)",
+          "codeGlyphs": [],
+          "details": [],
+          "title": "Файл для друку й редагування"
+        },
+        {
+          "accent": "rgb(6, 182, 212)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(6, 182, 212)",
+              "color": "rgb(6, 182, 212)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Нагадування у свій час"
+        },
+        {
+          "accent": "rgb(16, 185, 129)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(16, 185, 129)",
+              "color": "rgb(16, 185, 129)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Матеріали поруч із парою"
+        },
+        {
+          "accent": "rgb(244, 63, 94)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(244, 63, 94)",
+              "color": "rgb(24, 24, 27)",
+              "tag": "DIV"
+            }
+          ],
+          "title": "Розклад на екрані Android"
+        },
+        {
+          "accent": "rgb(139, 92, 246)",
+          "codeGlyphs": [],
+          "details": [
+            {
+              "border": "rgb(139, 92, 246)",
+              "color": "rgb(139, 92, 246)",
+              "tag": "svg"
+            },
+            {
+              "border": "rgb(139, 92, 246)",
+              "color": "rgb(139, 92, 246)",
+              "tag": "svg"
+            },
+            {
+              "border": "rgb(139, 92, 246)",
+              "color": "rgb(139, 92, 246)",
+              "tag": "svg"
+            }
+          ],
+          "title": "Зміни під вашим контролем"
+        }
+      ],
+      "theme": "light"
+    }
+  ],
+  "exportAnimation": {
+    "accent": "rgb(99, 102, 241)",
+    "formats": [
+      {
+        "shadow": "oklab(0.585387 0.0253055 -0.202469 / 0.0986351) 0px 0px 0px 0.106612px",
+        "text": "PDF",
+        "transform": "matrix(1, 0, 0, 1, 0, -0.19727)"
+      },
+      {
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "text": "DOCX",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "text": "XLSX",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "text": "CSV",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "shadow": "oklab(0 0 0 / 0) 0px 0px 0px 0px",
+        "text": "TXT",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ]
+  },
+  "mobile": [
+    {
+      "accents": [
+        "rgb(245, 158, 11)",
+        "rgb(99, 102, 241)",
+        "rgb(6, 182, 212)",
+        "rgb(16, 185, 129)",
+        "rgb(244, 63, 94)",
+        "rgb(139, 92, 246)"
+      ],
+      "overflow": false,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "accents": [
+        "rgb(245, 158, 11)",
+        "rgb(99, 102, 241)",
+        "rgb(6, 182, 212)",
+        "rgb(16, 185, 129)",
+        "rgb(244, 63, 94)",
+        "rgb(139, 92, 246)"
+      ],
+      "overflow": false,
+      "theme": "light",
+      "width": 390
+    }
+  ],
+  "logs": []
+}
