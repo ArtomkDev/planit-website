@@ -114,7 +114,6 @@ export function AppShowcase() {
   return (
     <section id="everyday" aria-labelledby="everyday-title" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24">
       <LessonCardAccent seed={23} className="-left-64 top-[34%]" />
-      <LessonCardAccent seed={24} depth="background" className="bottom-6 left-[16%]" />
       <ScrollReveal className="relative z-20 mb-12 flex flex-col items-start text-left">
         <span className="mb-4 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-strong">
           <AccentRule />{t("badge")}

@@ -1,0 +1,118 @@
+[
+  {
+    "path": "/uk",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 337065,
+    "title": "PlanIt | Розклад занять",
+    "canonical": "https://planit-app.com/uk",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/en",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 326906,
+    "title": "PlanIt | Class Schedule",
+    "canonical": "https://planit-app.com/en",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/uk/wiki/privacy",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 124996,
+    "title": "Privacy Policy | PlanIt",
+    "canonical": "https://planit-demo.web.app/uk/wiki/privacy",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/uk/wiki/terms",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 114778,
+    "title": "Terms &amp; Conditions | PlanIt",
+    "canonical": "https://planit-demo.web.app/uk/wiki/terms",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/uk/wiki/cookies",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 118225,
+    "title": "Cookie &amp; Similar Technologies Policy | PlanIt",
+    "canonical": "https://planit-demo.web.app/uk/wiki/cookies",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/uk/wiki/delete",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 101189,
+    "title": "Account &amp; Data Deletion | PlanIt",
+    "canonical": "https://planit-demo.web.app/uk/wiki/delete",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/uk/wiki/licenses",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 138348,
+    "title": "Open-Source Software Licenses | PlanIt",
+    "canonical": "https://planit-demo.web.app/uk/wiki/licenses",
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "contentType": "text/plain; charset=utf-8",
+    "cacheControl": "public,max-age=300",
+    "bytes": 102,
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "contentType": "application/xml",
+    "cacheControl": "public,max-age=300",
+    "bytes": 2182,
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false
+  },
+  {
+    "path": "/opengraph-image",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "cacheControl": "max-age=3600",
+    "bytes": 53234,
+    "hasSocialImage": false,
+    "hasInteractiveDemo": false,
+    "isPng": true,
+    "note": "PNG signature verified separately; Content-Type is incorrectly text/html"
+  },
+  {
+    "path": "/audit-missing-20261020",
+    "status": 404,
+    "contentType": "text/html; charset=utf-8",
+    "cacheControl": "public,max-age=300",
+    "bytes": 26938,
+    "title": "404 | PlanIt",
+    "hasSocialImage": true,
+    "hasInteractiveDemo": false
+  }
+]

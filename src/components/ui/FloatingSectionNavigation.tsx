@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, type MouseEvent } from "react";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { getCurrentSection, getSectionNavLetter, getSectionNavPoses, getSectionNavUrl, sectionNavEase, sectionNavTargets, SECTION_NAV_CURRENT_GAP, SECTION_NAV_FONT, SECTION_NAV_QUEUE_SCALE } from "@/lib/section-navigation";
-import { getSectionNavScrollPlan, runSectionNavScroll, SECTION_NAV_TRAVEL_EVENT, type SectionNavTravelDetail } from "@/lib/section-navigation-scroll";
+import { getSectionNavScrollPlan, runSectionNavScroll } from "@/lib/section-navigation-scroll";
 import styles from "./floating-section-navigation.module.css";
 
 export function FloatingSectionNavigation() {
@@ -35,11 +35,7 @@ export function FloatingSectionNavigation() {
     const to = Math.max(0, Math.min(document.documentElement.scrollHeight - window.innerHeight, from + target.getBoundingClientRect().top - margin));
     const instant = Math.abs(to - from) < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const plan = getSectionNavScrollPlan(from, to);
-    const announce = (phase: SectionNavTravelDetail["phase"]) => window.dispatchEvent(new CustomEvent<SectionNavTravelDetail>(SECTION_NAV_TRAVEL_EVENT, {
-      detail: { id, phase, duration: instant ? 0 : plan.duration },
-    }));
-    const finish = () => { cancelTravelRef.current = null; announce("finish"); heading.focus({ preventScroll: true }); };
-    announce("start");
+    const finish = () => { cancelTravelRef.current = null; heading.focus({ preventScroll: true }); };
     if (instant) {
       window.scrollTo({ top: to, behavior: "instant" });
       finish();
@@ -51,7 +47,7 @@ export function FloatingSectionNavigation() {
       cancelFrame: (frame) => window.cancelAnimationFrame(frame),
       writePosition: (top) => window.scrollTo({ top, behavior: "instant" }),
     }, finish);
-    cancelTravelRef.current = () => { stop(); announce("cancel"); };
+    cancelTravelRef.current = stop;
   };
 
   useEffect(() => {

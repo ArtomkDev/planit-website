@@ -1,0 +1,73 @@
+{
+  "htmlBytes": 567707,
+  "htmlGzip": 57156,
+  "initialJsBytes": 1188460,
+  "initialJsGzip": 360423,
+  "css": [
+    {
+      "path": "/_next/static/chunks/3kp7ijzteo3wk.css",
+      "bytes": 20233,
+      "gzip": 3409
+    },
+    {
+      "path": "/_next/static/chunks/0j1o6g6fm2tsy.css",
+      "bytes": 74877,
+      "gzip": 13175
+    },
+    {
+      "path": "/_next/static/chunks/277bvr2fixuv6.css",
+      "bytes": 26931,
+      "gzip": 5086
+    }
+  ],
+  "largest": [
+    {
+      "path": "/_next/static/chunks/3fy9au8z4n750.js",
+      "bytes": 281777,
+      "gzip": 83117
+    },
+    {
+      "path": "/_next/static/chunks/2nykiepra7i1k.js",
+      "bytes": 227537,
+      "gzip": 71012
+    },
+    {
+      "path": "/_next/static/chunks/15qlryzbz13ew.js",
+      "bytes": 141050,
+      "gzip": 38582
+    },
+    {
+      "path": "/_next/static/chunks/3jylwahrdg0gl.js",
+      "bytes": 135399,
+      "gzip": 44588
+    },
+    {
+      "path": "/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "gzip": 39627
+    }
+  ],
+  "legalSkeletonBytes": [
+    {
+      "name": "cookies.loading.mdx",
+      "bytes": 14383
+    },
+    {
+      "name": "delete.loading.mdx",
+      "bytes": 7755
+    },
+    {
+      "name": "licenses.loading.mdx",
+      "bytes": 21312
+    },
+    {
+      "name": "privacy.loading.mdx",
+      "bytes": 17108
+    },
+    {
+      "name": "terms.loading.mdx",
+      "bytes": 13410
+    }
+  ],
+  "headingContrast": 2.926888051165993
+}

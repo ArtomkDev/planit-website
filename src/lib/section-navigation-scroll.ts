@@ -1,10 +1,3 @@
-export const SECTION_NAV_TRAVEL_EVENT = "planit:section-travel";
-export interface SectionNavTravelDetail {
-  id: string;
-  phase: "start" | "finish" | "cancel";
-  duration: number;
-}
-
 export interface SectionNavScrollPlan {
   from: number;
   to: number;

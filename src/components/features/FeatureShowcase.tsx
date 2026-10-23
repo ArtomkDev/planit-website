@@ -184,7 +184,6 @@ export function FeatureShowcase() {
                   {...entrance}
                   variants={sequence}
                   className={styles.copy}
-                  data-ascii-copy="true"
                 >
                   <motion.span variants={reveal} className={styles.featureNumber}>
                     <span>0{index + 1}</span>

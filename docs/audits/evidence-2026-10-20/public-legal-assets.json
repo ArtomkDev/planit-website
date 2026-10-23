@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/content/legal/manifest.json",
+    "status": 200,
+    "type": "application/json",
+    "bytes": 1890,
+    "start": "{\n  \"version\": \"d461198c34a93bb8\",\n  \"documents\": {\n    \"privacy\": {\n      \"path\": \"/content/legal/privacy.mdx\",\n      \"loadingPath\": \"/cont",
+    "sha256": "c91a2a60df7fdaba8cde757cad5eb795ba47d3313a8d167be30c955461342a35"
+  },
+  {
+    "path": "/content/legal/privacy.mdx",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 32232,
+    "start": "export const legalMetadata = {\n  \"slug\": \"privacy\",\n  \"title\": \"Privacy Policy\",\n  \"navigationTitle\": \"Privacy Policy\",\n  \"summary\": \"Privac",
+    "sha256": "5d80a4358e1dad224449ac8e97dd02b6afd3950b1ef96c68a573fa5f8824ae26"
+  },
+  {
+    "path": "/content/legal/uk/privacy.mdx",
+    "status": 404,
+    "type": "text/html; charset=utf-8",
+    "bytes": 26938,
+    "start": "<!DOCTYPE html><html lang=\"uk\" class=\"dark\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"",
+    "sha256": "1dcdaebd3bbb22dfc355e12242c53d57d0505ccc6c84e620945f1e789e329ecb"
+  }
+]

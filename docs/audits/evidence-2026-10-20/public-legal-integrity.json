@@ -1,0 +1,50 @@
+{
+  "manifestVersion": "d461198c34a93bb8",
+  "checks": [
+    {
+      "kind": "privacy",
+      "url": "https://planit-hub.web.app/content/legal/privacy.mdx?v=f2e50ffe5b81b1b25207c51329081cbc63b6ae4b3bb03314426c05d619596de9",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "expectedSha256": "f2e50ffe5b81b1b25207c51329081cbc63b6ae4b3bb03314426c05d619596de9",
+      "actualSha256": "5d80a4358e1dad224449ac8e97dd02b6afd3950b1ef96c68a573fa5f8824ae26",
+      "matches": false
+    },
+    {
+      "kind": "cookies",
+      "url": "https://planit-hub.web.app/content/legal/cookies.mdx?v=7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "expectedSha256": "7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d",
+      "actualSha256": "7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d",
+      "matches": true
+    },
+    {
+      "kind": "terms",
+      "url": "https://planit-hub.web.app/content/legal/terms.mdx?v=13cbe7220e1351ef1b587b8964727185d47ead0bd0898d928e472f059616ecb0",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "expectedSha256": "13cbe7220e1351ef1b587b8964727185d47ead0bd0898d928e472f059616ecb0",
+      "actualSha256": "13cbe7220e1351ef1b587b8964727185d47ead0bd0898d928e472f059616ecb0",
+      "matches": true
+    },
+    {
+      "kind": "licenses",
+      "url": "https://planit-hub.web.app/content/legal/licenses.mdx?v=a34a58ab2c0761e9e86cb712a17b8fa7aaf909beb65cc93c7b2606003dff57bf",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "expectedSha256": "a34a58ab2c0761e9e86cb712a17b8fa7aaf909beb65cc93c7b2606003dff57bf",
+      "actualSha256": "a34a58ab2c0761e9e86cb712a17b8fa7aaf909beb65cc93c7b2606003dff57bf",
+      "matches": true
+    },
+    {
+      "kind": "delete",
+      "url": "https://planit-hub.web.app/content/legal/delete.mdx?v=cee8b495c5dde97435d08565b0ba7f5860a3f9d5858306687de8d4824d6c8a9c",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "expectedSha256": "cee8b495c5dde97435d08565b0ba7f5860a3f9d5858306687de8d4824d6c8a9c",
+      "actualSha256": "cee8b495c5dde97435d08565b0ba7f5860a3f9d5858306687de8d4824d6c8a9c",
+      "matches": true
+    }
+  ]
+}

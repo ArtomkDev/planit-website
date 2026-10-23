@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://planit-hub.web.app/opengraph-image",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "bytes": 53234,
+    "signature": "89504e470d0a1a0a",
+    "isPng": true
+  },
+  {
+    "url": "http://localhost:4173/opengraph-image",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 53234,
+    "signature": "89504e470d0a1a0a",
+    "isPng": true
+  }
+]
