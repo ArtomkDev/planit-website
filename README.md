@@ -2,6 +2,16 @@
 
 Next.js website for PlanIt, including the hosted legal pages.
 
+## Update and publish
+
+```powershell
+npm.cmd run site:update
+```
+
+This is the complete release workflow: read-only legal sync, lint/tests, build, automatic sitemap and SEO checks, preserved Google verification, route continuity, website-only Firebase upload and live verification. Settings are in site.config.json. Use site:check to run it without uploading.
+
+Create a bilingual page draft with npm.cmd run page:new -- page-slug, fill src/content/pages.json and set published to true. Metadata, sitemap and footer links are generated automatically. See [the workflow guide](docs/WEBSITE_WORKFLOW.md) for exact steps, custom pages, redirects and preview releases.
+
 ## Local Development
 
 ```powershell
@@ -37,7 +47,7 @@ public/content/legal/*.mdx
 
 English documents remain at `/content/legal/*.mdx`; Ukrainian documents are served from `/content/legal/uk/*.mdx`. The reader, title, dates, loading placeholders, language attributes and cache follow the page locale. The manifest includes hashes and metadata for both languages. Prerendered SEO uses that metadata when the site is built; the full document body is fetched in the browser.
 
-To update legal text without rebuilding the Next site, update the hosted files under `/content/legal/` and refresh `manifest.json` for cache-busting when possible:
+After updating the website legal assets, regenerate the manifest and publish a complete verified build. The reader loads document bodies at runtime, but a partial upload can leave hashes, localized metadata, and content out of sync:
 
 ```powershell
 npm.cmd run legal:manifest
@@ -102,8 +112,33 @@ npm run lint
 npm run build:firebase
 ```
 
-If the site was already built and only the Firebase upload needs to be repeated:
+If the site was already built and only the Firebase upload needs to be repeated, the deployment command verifies that source and exported files still match that build:
 
 ```powershell
 npm run deploy:firebase:skip-build
 ```
+
+## Website identity and verified releases
+
+The default website origin is configured in site.config.json as https://planit-hub.web.app. NEXT_PUBLIC_BASE_URL can override it with a working HTTPS origin when a custom domain is connected; the build and CLI checks load the same environment. APP_URL remains a separate destination for the main application.
+
+The root and both localized homepages publish one WebSite identity for PlanIt. The root is indexable, retains its pre-paint locale redirect and provides linked fallback content. The build discovers all indexable pages and generates their sitemap, including the root as the homepage x-default. Account action URLs remain noindex. GOOGLE_SITE_VERIFICATION can optionally supply an HTML verification tag at build time; the public Google verification file must also be preserved when file verification is used.
+
+When multiple Firebase accounts are already signed in, select the project owner for this invocation without changing the CLI default:
+
+~~~powershell
+npm.cmd run deploy:firebase:skip-build -- -Account owner@example.com
+~~~
+
+Every successful build runs a legal-integrity and metadata check, writes a private build stamp under .next, and generates out/release.json. Deployment runs check:export and test:export before uploading, including when SkipBuild is used. A changed source tree or edited export requires a new build. Mutable document URLs and manifests revalidate rather than receiving an immutable year-long cache.
+
+Production deployment also verifies the published release for a single configured Hosting target. For a preview URL or a separate read-only check, run:
+
+~~~powershell
+npm.cmd run check:export
+npm.cmd run check:live -- https://planit-hub.web.app
+~~~
+
+check:live compares the published release with the current local export, then checks the root identity/indexability, robots sitemap reference, both languages, legal hashes, canonical URLs and PNG response types. It does not deploy. If the public website still serves an older release, the command fails explicitly.
+
+The website records only consented CTA, demo and FAQ events. It does not track schedule creation in the separate application or send demo input values. See AUDIT.md and docs/audits/SITE_FIXES_2026-10-24.md for verification, the published release and the pending Google processing/quota limitations.

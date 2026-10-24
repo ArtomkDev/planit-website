@@ -41,11 +41,11 @@
     "start": "Get started"
   },
   "Hero": {
-    "badge": "Your study planner",
-    "title1": "Less chaos.",
-    "title2": "More plans.",
-    "description": "Classes, tasks, and materials in one place. Plan your week at your own pace.",
-    "ctaPrimary": "Open Web App",
+    "badge": "PlanIt · for students and school learners",
+    "title1": "Less searching.",
+    "title2": "A clearer day.",
+    "description": "PlanIt is a study planner that keeps your class schedule, tasks and materials together. Open a class and find what you need without searching through chats.",
+    "ctaPrimary": "Try in your browser",
     "ctaSecondary": "Google Play",
     "preview": {
       "eyebrow": "Today",
@@ -98,13 +98,14 @@
           "teacher": "M. Levchenko"
         }
       }
-    }
+    },
+    "startHint": "Currently free, with advertising planned across all platforms. Choose “Continue as guest” in the web app to start without an account."
   },
   "Features": {
     "badge": "PlanIt features",
     "title": "Your schedule. Your rules.",
-    "description": "Try changing a schedule, styling a subject, or adding a task right here.",
-    "openApp": "Continue in PlanIt",
+    "description": "Create your schedule or import a copy with a code. Try the PlanIt features below.",
+    "openApp": "Open the full web app",
     "lesson": {
       "label": "Classes",
       "title": "Every class in its place.",
@@ -179,7 +180,7 @@
       "off": "Off",
       "beforeMinutes": "{minutes} min before class",
       "minutes": "{count} min",
-      "reminderDemoHint": "In PlanIt, the reminder arrives before class starts.",
+      "reminderDemoHint": "On Android, reminders arrive before a class starts.",
       "cardColor": "Card color",
       "cardPreview": "Subject card",
       "appearanceHint": "Choose a color or gradient for this subject’s cards.",
@@ -242,6 +243,21 @@
       "weekCount": "Number of weeks",
       "autoLink": "Link to the next class",
       "autoLinkHint": "New subject tasks link to the next class automatically."
+    },
+    "startLabel": "How to get started with PlanIt",
+    "start": {
+      "create": {
+        "title": "Add your schedule",
+        "description": "Create your own or import a copy with a code."
+      },
+      "organize": {
+        "title": "Keep things together",
+        "description": "Add classes, tasks and the materials you need."
+      },
+      "use": {
+        "title": "Use it every day",
+        "description": "See your day. Sign in to sync across devices."
+      }
     }
   },
   "AppShowcase": {
@@ -258,7 +274,7 @@
       },
       "reminders": {
         "title": "Reminders at the right time",
-        "description": "One reminder time for your schedule, or a different lead time for a specific subject."
+        "description": "On Android, set a schedule reminder or a different time for a subject. The web app does not send system reminders."
       },
       "materials": {
         "title": "Materials beside their class",
@@ -313,28 +329,28 @@
     "items": {
       "ios": {
         "title": "iOS",
-        "description": "Still in development. Use the web app on iPhone and iPad.",
+        "description": "We are preparing the iOS app. Use the web app on your iPhone or iPad in the meantime.",
         "button": "In development",
         "status": "In development"
       },
       "android": {
         "title": "Android",
-        "description": "Start without an account. Sign in to sync, and add a schedule widget to your home screen.",
+        "description": "Available on Google Play. Start without an account, add a widget and enable class reminders.",
         "button": "Google Play",
         "status": "Supported"
       },
       "web": {
         "title": "Web App",
-        "description": "The same schedule and sync. Just open it in your browser.",
+        "description": "Classes and tasks in your browser, with sync after signing in. System reminders and the home-screen widget are available on Android.",
         "button": "Open Web App",
         "status": "Online"
       }
     }
   },
   "CTA": {
-    "title": "Start with your schedule.",
-    "description": "Open PlanIt in your browser. No account needed.",
-    "button": "Open Web App"
+    "title": "Your next day, in PlanIt.",
+    "description": "Create a schedule or import a copy with a code. Currently free, with no account required to start.",
+    "button": "Try in your browser"
   },
   "Footer": {
     "product": "Product",
@@ -557,8 +573,9 @@
   },
   "SEO": {
     "home": {
-      "title": "PlanIt | Class Schedule",
-      "description": "PlanIt keeps multi-week class schedules, linked tasks, class reminders, study materials, sharing, synchronization, and a home-screen widget in one place."
+      "title": "PlanIt — class schedules and tasks for students",
+      "description": "Keep classes, tasks and materials together. Try PlanIt in your browser without an account or download the Android app.",
+      "imageAlt": "PlanIt: class schedules, tasks and materials for Android and the web"
     },
     "privacy": {
       "title": "Privacy Policy",
@@ -575,6 +592,55 @@
     "cookies": {
       "title": "Cookie Rules",
       "description": "How PlanIt uses necessary browser storage and keeps optional Firebase Analytics off until you choose to accept it."
+    }
+  },
+  "FAQ": {
+    "badge": "Before you get started",
+    "title": "What to know about PlanIt.",
+    "author": "PlanIt is made by Artomk, an independent developer from Ukraine.",
+    "support": "Still have questions? Get in touch",
+    "privacyLink": "Privacy policy",
+    "items": {
+      "price": {
+        "question": "Is PlanIt free? Are there ads or a subscription?",
+        "answer": "PlanIt is currently free. Advertising is planned across all platforms. We plan to introduce a subscription later; its price, features and terms will be shown before you subscribe."
+      },
+      "account": {
+        "question": "Do I need to create an account?",
+        "answer": "No. Choose “Continue as guest” on the sign-in screen. Guest data stays on that device. Signing in is required for sync across devices, cloud features and creating sharing codes."
+      },
+      "start": {
+        "question": "How do I start if my group already has a schedule?",
+        "answer": "If someone has created the schedule in PlanIt, ask for a code or link and import a copy in the app. Or create your own: set class times, breaks and the week cycle, then add subjects. You do not have to fill in every optional field at once."
+      },
+      "offline": {
+        "question": "Can I use PlanIt without an internet connection?",
+        "answer": "On Android, your schedule is stored on the device and is available locally. Loading the web app, signing in, syncing and downloading cloud files require an internet connection. Whether a file is available offline depends on whether a copy is already on your device."
+      },
+      "ios": {
+        "question": "Does PlanIt work on iPhone and iPad?",
+        "answer": "Yes, through the web app in your browser. The native app is currently published on Google Play for Android. We are preparing the iOS version, with no confirmed release date yet."
+      },
+      "reminders": {
+        "question": "Where do reminders and the widget work?",
+        "answer": "System class reminders and the home-screen widget are available in the Android app. Reminders require notification permission. The web app does not send system reminders or provide the Android widget."
+      },
+      "sharing": {
+        "question": "Will the author’s changes automatically update my imported schedule?",
+        "answer": "No. The recipient saves a separate copy. After signing in, the author can create a code or link valid for 1, 3, 7 or 30 days. A new copy can be shared after changes. Tasks and cloud attachments are not included in the shared code."
+      },
+      "files": {
+        "question": "Can I attach PDFs and photos, or import a schedule from a file?",
+        "answer": "You can attach photos, PDFs, other files and links to classes and tasks. Local files stay on the device; cloud storage requires signing in. Export to PDF, Word, Excel, CSV or text helps you print or edit a schedule. Attaching or exporting a file does not mean automatically recognizing or importing a schedule from a PDF or photo."
+      },
+      "demo": {
+        "question": "Will changes from the website demos transfer to the app?",
+        "answer": "The demos are interactive examples. “Save” keeps changes only within the current demo. They do not transfer to the app and reset when you reload the page. You create your own schedule in the full web app."
+      },
+      "privacy": {
+        "question": "Where is my data stored, and how can I delete it?",
+        "answer": "Guest schedules are stored locally and can be lost if storage is cleared or the app is removed. After signing in, data is synced through Firebase. Technical services, advertising and analytics have separate data-processing terms. The documents section includes the privacy policy and account-deletion instructions."
+      }
     }
   }
 }

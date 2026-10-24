@@ -85,13 +85,13 @@ export const BentoCard = ({
       <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden rounded-[2.5rem] border border-site-border/85 bg-site-surface/82 backdrop-blur-2xl transition-colors duration-500 group-hover/card:border-site-border-strong">
         <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 overflow-hidden z-0">
           <div
-            className="absolute -top-[100%] -left-[100%] w-[300%] h-[300%] blur-[140px] opacity-60 mix-blend-normal dark:mix-blend-lighten animate-spin [animation-duration:30s]"
+            className="absolute -top-[100%] -left-[100%] w-[300%] h-[300%] blur-[140px] opacity-60 mix-blend-normal dark:mix-blend-lighten motion-safe:animate-spin [animation-duration:30s]"
             style={{
               background: `conic-gradient(from 0deg at 50% 50%, ${colorPrimary} 0%, transparent 20%, ${colorSecondary} 50%, transparent 80%, ${colorPrimary} 100%)`,
             }}
           />
           <div
-            className="absolute -bottom-[50%] -right-[50%] w-[200%] h-[200%] blur-[120px] opacity-50 mix-blend-normal dark:mix-blend-lighten animate-spin [animation-duration:25s] [animation-direction:reverse]"
+            className="absolute -bottom-[50%] -right-[50%] w-[200%] h-[200%] blur-[120px] opacity-50 mix-blend-normal dark:mix-blend-lighten motion-safe:animate-spin [animation-duration:25s] [animation-direction:reverse]"
             style={{
               background: `radial-gradient(ellipse at center, ${colorSecondary} 0%, transparent 70%)`,
             }}

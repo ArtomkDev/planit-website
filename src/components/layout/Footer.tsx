@@ -9,7 +9,7 @@ import { useState, useRef } from "react";
 
 import { PLAY_MARKET_URL } from "@/lib/site";
 
-export const Footer = () => {
+export const Footer = ({ contentLinks = [] }: { contentLinks?: { href: string; title: string }[] }) => {
   const tNav = useTranslations("Navigation");
   const tFooter = useTranslations("Footer");
   const locale = useLocale();
@@ -118,6 +118,7 @@ export const Footer = () => {
               <Link href={`/${locale}#platforms`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
                 {tNav("platforms")}
               </Link>
+              {contentLinks.map(link => <Link key={link.href} href={link.href} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">{link.title}</Link>)}
             </nav>
           </div>
 

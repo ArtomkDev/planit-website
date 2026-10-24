@@ -14,6 +14,8 @@ import {
 import legalManifestJson from "../../../public/content/legal/manifest.json";
 import { LegalDocumentIcon, LegalSupportArrow } from "./LegalIcons";
 import { LegalDocumentClient } from "./LegalDocumentClient";
+import { LegalLoadingPreloader } from "./LegalLoadingPreloader";
+import { LegalLoadingPreloadLinks } from "./LegalLoadingPreloadLinks";
 import styles from "./LegalDocument.module.css";
 import { SUPPORT_URL } from "@/lib/site";
 
@@ -88,6 +90,8 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
     <div
       className={`${styles.wikiPage} relative isolate min-h-screen overflow-hidden bg-site-bg`}
     >
+      <LegalLoadingPreloadLinks locale={locale} />
+      <LegalLoadingPreloader />
       <a className={styles.skipLink} href="#legal-main-content">
         {tDoc("skipContent")}
       </a>

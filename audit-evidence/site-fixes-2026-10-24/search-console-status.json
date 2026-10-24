@@ -1,0 +1,26 @@
+{
+  "checkedOn": "2026-10-24",
+  "property": "https://planit-hub.web.app/",
+  "verified": true,
+  "method": "HTML file",
+  "sitemap": {
+    "url": "https://planit-hub.web.app/sitemap.xml",
+    "submitted": true,
+    "resubmittedAfterLiveTest": true,
+    "reportStatus": "Could not fetch",
+    "liveTest": {
+      "crawlAllowed": true,
+      "fetch": "Successful",
+      "indexingAllowed": true
+    }
+  },
+  "ukHome": {
+    "url": "https://planit-hub.web.app/uk",
+    "indexStatus": "URL unknown to Google",
+    "liveTest": "Google can access this URL",
+    "indexingRequest": "Not accepted: daily quota exceeded; try tomorrow",
+    "earlierError": "Could not connect to reCAPTCHA"
+  },
+  "manualActions": "No issues detected",
+  "securityIssues": "No issues detected"
+}

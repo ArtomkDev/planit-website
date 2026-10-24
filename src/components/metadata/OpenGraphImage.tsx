@@ -70,7 +70,7 @@ export default function OpenGraphImage() {
               Every class. One clear schedule.
             </div>
             <div style={{ display: "flex", marginTop: 24, fontSize: 29, color: "#52525b" }}>
-              Android · Web · Offline access · Synchronization
+              Android · Web · Classes · Tasks · Materials
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 22, fontWeight: 700, color: "#087563" }}>

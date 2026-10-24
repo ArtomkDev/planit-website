@@ -196,7 +196,6 @@ export function LessonPreview({ lesson }: { lesson: Partial<LessonData> }) {
           id: "feature-preview",
           subjectName: t("math"),
           subjectIndex: 0,
-          textColor: "#ffffff",
           timeStart: "09:00",
           timeEnd: "10:30",
           displayType: t("lecture"),

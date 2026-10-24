@@ -3,16 +3,50 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import ts from 'typescript';
+import { createRequire } from 'node:module';
+import { resolve } from 'node:path';
 
 async function loadModule(path) {
   const source = await readFile(path, 'utf8');
-  const { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext } });
-  return import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+  const { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, esModuleInterop:true } });
+  const compiledModule = {exports:{}};
+  new Function('exports','require','module','process',outputText)(compiledModule.exports,createRequire(resolve(path)),compiledModule,process);
+  return compiledModule.exports;
 }
-const { buildLocaleUrl } = await loadModule('src/lib/site.ts');
+const { buildLocaleUrl, resolveSiteUrl } = await loadModule('src/lib/site.ts');
+const { createMarketingEvent, dispatchMarketingEvent } = await loadModule('src/lib/marketing-events.ts');
 const { getReadableCardStyle, contrastRatio } = await loadModule('src/lib/card-contrast.ts');
 const { createConsentGate, analyticsOnlyConsent, deniedConsent, isAnalyticsPage } = await loadModule('src/lib/analytics-consent.ts');
 const { parseCookiePreference } = await loadModule('src/lib/cookie-preferences.ts');
+
+test('website identity uses a reachable hosting default and rejects ambiguous configured origins', () => {
+  assert.equal(resolveSiteUrl(), 'https://planit-hub.web.app');
+  assert.equal(resolveSiteUrl(' https://example.com/ '), 'https://example.com');
+  for (const invalid of ['http://example.com', 'https://example.com/app', 'https://example.com?locale=uk', 'https://example.com#top', 'https://user:secret@example.com']) assert.throws(() => resolveSiteUrl(invalid));
+});
+
+test('marketing events only accept known categories and never accept user content or URLs', () => {
+  assert.deepEqual(createMarketingEvent('cta_click', {platform:'web', placement:'top'}), {name:'cta_click', parameters:{platform:'web', placement:'top'}});
+  assert.ok(createMarketingEvent('demo_interaction', {feature:'tasks'}));
+  assert.ok(createMarketingEvent('faq_open', {question:'price'}));
+  for (const [name, parameters] of [['cta_click',{platform:'web',placement:'top',email:'private@example.test'}],['demo_interaction',{feature:'My private class'}],['faq_open',{question:'https://example.test/token'}],['constructor',{}],['unknown',{}]]) assert.equal(createMarketingEvent(name,parameters),null);
+});
+
+test('marketing dispatch checks consent before connecting and again after async initialization', async () => {
+  const event=createMarketingEvent('cta_click',{platform:'android',placement:'platforms'});
+  let allowed=false, connections=0, sent=0;
+  const connection={isAllowed:()=>allowed, connect:async()=>{connections++;return {};},send:()=>{sent++;}};
+  assert.equal(await dispatchMarketingEvent(event,connection),false);
+  assert.equal(connections,0);
+  allowed=true;
+  assert.equal(await dispatchMarketingEvent(event,{...connection,connect:async()=>{allowed=false;return {};}}),false);
+  assert.equal(sent,0);
+  allowed=true;
+  assert.equal(await dispatchMarketingEvent(event,connection),true);
+  assert.equal(sent,1);
+  assert.equal(await dispatchMarketingEvent({...event,parameters:{...event.parameters,content:'private'}},connection),false);
+  assert.equal(sent,1);
+});
 
 test('cookie preferences renew after twelve months and reject invalid stored values', () => {
   const now = Date.parse('2026-10-13T12:00:00Z');

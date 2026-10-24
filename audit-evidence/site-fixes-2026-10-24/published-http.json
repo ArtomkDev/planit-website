@@ -1,0 +1,61 @@
+{
+  "checkedOn": "2026-10-24",
+  "release": {
+    "buildId": "f74462cd3681542fa8e3e7cc368ab6898987b8f169a266b91d34734117409bed",
+    "legalVersion": "a0e03d6383d2fd26",
+    "siteOrigin": "https://planit-hub.web.app"
+  },
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "canonical": "https://planit-hub.web.app",
+      "robots": "index, follow",
+      "h1Count": 1,
+      "title": "PlanIt — навчальний планер і розклад занять"
+    },
+    {
+      "path": "/uk",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "canonical": "https://planit-hub.web.app/uk",
+      "h1Count": 1,
+      "title": "PlanIt — розклад і завдання для студентів та школярів"
+    },
+    {
+      "path": "/en",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "canonical": "https://planit-hub.web.app/en",
+      "h1Count": 1,
+      "title": "PlanIt — class schedules and tasks for students"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "h1Count": 0
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "type": "application/xml",
+      "h1Count": 0
+    },
+    {
+      "path": "/google1bc7d5ee2596486b.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "h1Count": 0
+    },
+    {
+      "path": "/missing-page-seo-audit",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "robots": "noindex",
+      "h1Count": 1,
+      "title": "404 | PlanIt"
+    }
+  ]
+}

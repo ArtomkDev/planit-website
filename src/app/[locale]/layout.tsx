@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/site";
+import { publishedPages } from "@/content/pages";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -11,8 +12,6 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import { LocalePreference } from "@/components/i18n/LocalePreference";
-import { LegalLoadingPreloader } from "@/components/legal/LegalLoadingPreloader";
-import { LegalLoadingPreloadLinks } from "@/components/legal/LegalLoadingPreloadLinks";
 import { FloatingSectionNavigation } from "@/components/ui/FloatingSectionNavigation";
 import "../globals.css";
 
@@ -49,8 +48,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(baseUrl),
     title: { template: "%s | PlanIt", default: t("title") },
     description: t("description"),
-    alternates: { canonical: url, languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk` } },
-    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale, type: "website", images: [`${SITE_URL}/opengraph-image`] },
+    applicationName: "PlanIt",
+    verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
+    alternates: { canonical: url, languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk`, "x-default": `${baseUrl}/` } },
+    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale: locale === "uk" ? "uk_UA" : "en_US", alternateLocale: locale === "uk" ? "en_US" : "uk_UA", type: "website", images: [{ url: `${SITE_URL}/opengraph-image`, width: 1200, height: 630, alt: t("imageAlt") }] },
     twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`${SITE_URL}/twitter-image`] },
   };
 }
@@ -66,16 +67,14 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <script dangerouslySetInnerHTML={{ __html: themeInitializationScript }} />
       </head>
       <body suppressHydrationWarning className="flex min-h-screen flex-col bg-site-bg font-sans text-site-text antialiased selection:bg-brand/25 selection:text-site-text">
-        <LegalLoadingPreloadLinks locale={locale} />
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
             <LocalePreference />
-            <LegalLoadingPreloader />
             <Header />
             <main id="main-content" tabIndex={-1} className="flex-grow flex flex-col w-full relative z-10">
               {children}
             </main>
-            <Footer />
+            <Footer contentLinks={publishedPages.map(page => ({ href: `/${locale}/${page.slug}`, title: page.locales[locale === "uk" ? "uk" : "en"].title }))} />
             <FloatingSectionNavigation />
             <CookieConsent />
           </ThemeProvider>

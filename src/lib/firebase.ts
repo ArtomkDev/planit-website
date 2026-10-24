@@ -1,12 +1,15 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
-import { analyticsOnlyConsent, createConsentGate, deniedConsent } from "./analytics-consent";
+import { analyticsOnlyConsent, createConsentGate, deniedConsent, isAnalyticsPage } from "./analytics-consent";
+import { parseCookiePreference } from "./cookie-preferences";
+import { dispatchMarketingEvent, type MarketingEvent } from "./marketing-events";
 import {
   getAnalytics,
   isSupported,
   setConsent,
   setAnalyticsCollectionEnabled,
+  logEvent,
   type Analytics,
   type ConsentSettings,
 } from "firebase/analytics";
@@ -159,3 +162,18 @@ export async function updateFirebaseAnalyticsConsent(choice: CookieConsentChoice
 }
 
 export { app, db, auth };
+
+export async function logMarketingEvent(event: MarketingEvent) {
+  return dispatchMarketingEvent(event, {
+    isAllowed: () => {
+      if (typeof window === "undefined" || !isAnalyticsPage(window.location.pathname) || !consentGate.canGrant()) return false;
+      try {
+        return parseCookiePreference(window.localStorage.getItem(COOKIE_CONSENT_STORAGE_KEY)) === "accepted";
+      } catch {
+        return false;
+      }
+    },
+    connect: getFirebaseAnalytics,
+    send: (analytics, safeEvent) => logEvent(analytics, safeEvent.name, safeEvent.parameters),
+  });
+}

@@ -1,0 +1,22 @@
+{
+  "checkedOn": "2026-10-24",
+  "production": {
+    "origin": "https://planit-hub.web.app",
+    "buildId": "19f67539d019939e1a6ec80fd1d63818d1afe8602f59a75305fcd2aaa6b5a85f",
+    "legalVersion": "a0e03d6383d2fd26",
+    "siteOrigin": "https://planit-hub.web.app",
+    "indexablePages": 15
+  },
+  "preview": {
+    "origin": "https://planit-hub--workflow-check-w0flvba4.web.app",
+    "buildId": "19f67539d019939e1a6ec80fd1d63818d1afe8602f59a75305fcd2aaa6b5a85f",
+    "verifiedAt": "2026-10-24T12:25:32.872Z",
+    "requestedExpiry": "1h"
+  },
+  "tests": {
+    "unit": 66,
+    "export": 10,
+    "responsive": 28
+  },
+  "ownershipProofPreserved": true
+}

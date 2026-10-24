@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "getting-started",
+    "published": true,
+    "updatedAt": "2026-10-24",
+    "locales": {
+      "uk": {
+        "title": "Як почати користуватися PlanIt",
+        "description": "Створіть перший навчальний розклад у PlanIt: почніть у браузері без акаунта, отримайте копію за кодом або додайте заняття самостійно.",
+        "heading": "Ваш перший розклад у PlanIt",
+        "intro": "Почніть із того, що вже маєте: коду розкладу від групи або власного списку занять. PlanIt доступний у браузері та для Android у Google Play.",
+        "sections": [
+          { "heading": "1. Відкрийте PlanIt", "paragraphs": ["У вебверсії оберіть «Продовжити як гість», щоб почати без акаунта. Гостьові дані залишаються на вашому пристрої. Для хмарної синхронізації між пристроями потрібно увійти."] },
+          { "heading": "2. Отримайте копію або створіть розклад", "paragraphs": ["Якщо у вашій групі вже користуються PlanIt, попросіть код або посилання на розклад. Ви отримаєте окрему копію: подальші зміни автора не оновлюють її автоматично.", "Якщо готової копії немає, створіть власний розклад, налаштуйте час занять і перерв та додайте предмети. Для різних тижнів можна налаштувати цикл."] },
+          { "heading": "3. Зберіть потрібне біля заняття", "paragraphs": ["Додайте викладача, місце або посилання на онлайн-зустріч. Прив’яжіть завдання та навчальні матеріали, щоб не шукати їх у різних чатах."] },
+          { "heading": "4. Оберіть зручну платформу", "paragraphs": ["Вебверсія підходить для роботи у браузері, зокрема на iPhone та iPad. Нативний застосунок зараз доступний для Android; системні нагадування й віджет працюють саме на Android. Версія для iOS у розробці.", "Зараз PlanIt безкоштовний. Реклама передбачена на всіх платформах, підписка планується пізніше. Ціни й дату її запуску ще не оголошено."] }
+        ]
+      },
+      "en": {
+        "title": "How to get started with PlanIt",
+        "description": "Create your first study schedule in PlanIt: start in your browser without an account, receive a copy by code or add classes yourself.",
+        "heading": "Your first schedule in PlanIt",
+        "intro": "Start with what you already have: a schedule code from your group or your own list of classes. PlanIt is available on the web and for Android on Google Play.",
+        "sections": [
+          { "heading": "1. Open PlanIt", "paragraphs": ["Choose “Continue as guest” in the web app to start without an account. Guest data stays on your device. Sign in to use cloud synchronization between devices."] },
+          { "heading": "2. Receive a copy or create a schedule", "paragraphs": ["If your group already uses PlanIt, ask for a schedule code or link. You receive a separate copy: later changes made by the author do not update your copy automatically.", "If there is no ready-made copy, create your own schedule, set class and break times and add subjects. You can configure a cycle for different weeks."] },
+          { "heading": "3. Keep what you need beside each class", "paragraphs": ["Add a teacher, location or online meeting link. Attach tasks and study materials so you can find them without searching through different chats."] },
+          { "heading": "4. Choose your platform", "paragraphs": ["Use the web app in your browser, including on iPhone and iPad. The native app is currently available for Android; system reminders and the home-screen widget work on Android. The iOS app is in development.", "PlanIt is currently free. Advertising is planned across all platforms, with a subscription planned for later. Pricing and a launch date have not been announced."] }
+        ]
+      }
+    }
+  }
+]

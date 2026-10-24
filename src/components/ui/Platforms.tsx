@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Browser, ArrowRight, Hourglass } from "@phosphor-icons/react";
 import { useTranslations } from "next-intl";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
@@ -14,6 +14,7 @@ import { APP_URL, PLAY_MARKET_URL } from "@/lib/site";
 
 export function Platforms() {
   const t = useTranslations("Platforms");
+  const reduceMotion = useReducedMotion();
 
   const platforms = [
     {
@@ -93,7 +94,7 @@ export function Platforms() {
 
       <motion.div
         variants={staggerContainer}
-        initial="hidden"
+        initial={reduceMotion ? false : "hidden"}
         whileInView="visible"
         viewport={{ once: true, margin: "50px" }}
         className="relative z-20 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 perspective-1000"
@@ -104,20 +105,21 @@ export function Platforms() {
             colorPrimary={item.colorPrimary}
             colorSecondary={item.colorSecondary}
             spotlightColor={item.spotlightColor}
+            contentClassName="p-6 md:p-6 xl:p-8"
           >
-            <div className="flex flex-wrap items-start justify-between gap-3 mb-8 pointer-events-none">
+            <div className="mb-6 flex min-h-16 items-start justify-between gap-2 pointer-events-none">
               <ProximityBlock
                 color={item.spotlightColor.replace("0.15", "0.8")}
-                className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${item.iconColor} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] group-hover/card:-translate-y-1 group-hover/card:scale-110`}
+                className={`inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${item.iconColor} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] motion-safe:group-hover/card:-translate-y-1 motion-safe:group-hover/card:scale-110`}
               >
                 {item.icon}
               </ProximityBlock>
 
               <ProximityBlock
                 color={item.spotlightColor.replace("0.15", "0.8")}
-                className={`rounded-lg border px-3.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${item.statusSurface}`}
+                className={`rounded-lg border px-2.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${item.statusSurface}`}
               >
-                <span className={`text-[10px] font-black uppercase tracking-[0.2em] ${item.statusColor}`}>
+                <span className={`block text-[10px] font-black uppercase tracking-[0.08em] ${item.statusColor}`}>
                   {item.statusText}
                 </span>
               </ProximityBlock>
@@ -149,9 +151,9 @@ export function Platforms() {
                   href={item.href ?? undefined}
                   target={item.openInNewTab ? "_blank" : undefined}
                   rel={item.openInNewTab ? "noopener noreferrer" : undefined}
-                  whileHover={{ y: -4, scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className={`group/btn relative flex w-full items-center justify-center rounded-2xl px-4 py-4 font-bold shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonTextColor} ${item.buttonHoverColor}`}
+                  whileHover={reduceMotion ? undefined : { y: -4, scale: 1.03 }}
+                  whileTap={reduceMotion ? undefined : { scale: 0.97 }}
+                  className={`group/btn relative flex min-h-14 w-full items-center justify-center rounded-2xl px-4 py-4 font-bold shadow-xl transition-all duration-300 ease-out ${item.buttonBgColor} ${item.buttonTextColor} ${item.buttonHoverColor}`}
                 >
                   <span className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 transition-opacity duration-300 group-hover/btn:opacity-100" />
                   <span className="relative z-10 flex items-center justify-center gap-3 text-center">

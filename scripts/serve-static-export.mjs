@@ -21,7 +21,7 @@ const mimeTypes = new Map([
   [".jpeg", "image/jpeg"],
   [".js", "text/javascript; charset=utf-8"],
   [".json", "application/json; charset=utf-8"],
-  [".mdx", "text/markdown; charset=utf-8"],
+  [".mdx", "text/plain; charset=utf-8"],
   [".png", "image/png"],
   [".svg", "image/svg+xml"],
   [".txt", "text/plain; charset=utf-8"],
@@ -102,13 +102,17 @@ function sendFile(response, filePath, statusCode, method) {
     normalizedPath.endsWith("/content/legal/manifest.json") &&
     statusCode !== 404
   ) {
-    cacheControl = "public, max-age=300, must-revalidate";
+    cacheControl = "no-cache";
   } else if (
     normalizedPath.includes("/content/legal/") &&
     extension === ".mdx" &&
     statusCode !== 404
   ) {
+    cacheControl = "no-cache";
+  } else if (normalizedPath.includes("/_next/static/") && statusCode !== 404) {
     cacheControl = "public, max-age=31536000, immutable";
+  } else if ([".json", ".xml", ".txt", ".webmanifest"].includes(extension) && statusCode !== 404) {
+    cacheControl = "no-cache";
   }
 
   response.writeHead(statusCode, {

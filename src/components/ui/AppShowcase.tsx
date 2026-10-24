@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import type { CSSProperties } from "react";
 import { useTranslations } from "next-intl";
 import {
@@ -110,6 +110,7 @@ function FeaturePreview({ id, accentColor }: { id: FeatureId; accentColor: strin
 
 export function AppShowcase() {
   const t = useTranslations("AppShowcase");
+  const reduceMotion = useReducedMotion();
 
   return (
     <section id="everyday" aria-labelledby="everyday-title" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24">
@@ -123,7 +124,7 @@ export function AppShowcase() {
 
       <motion.div
         variants={staggerContainer}
-        initial="hidden"
+        initial={reduceMotion ? false : "hidden"}
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         className="relative z-20 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"

@@ -19,6 +19,7 @@ import { AppearanceDemo } from "./AppearanceDemo";
 import { TasksDemo } from "./TasksDemo";
 import { ScheduleSettingsDemo } from "./ScheduleSettingsDemo";
 import { type DemoRenderProps } from "./DemoPrimitives";
+import { APP_URL } from "@/lib/site";
 import styles from "./features.module.css";
 
 function TasksFeature({ render }: DemoRenderProps) {
@@ -51,11 +52,11 @@ function FeatureStage({ editor, index }: { editor: ReactNode; index: number }) {
         className={styles.demoReveal}
         variants={{
           hidden: {
-            opacity: 0,
+            opacity: 1,
             y: 70,
             scale: 0.94,
             rotate: index % 2 === 0 ? 2 : -2,
-            filter: "blur(8px)",
+            filter: "none",
           },
           visible: {
             opacity: 1,
@@ -86,14 +87,6 @@ const features = [
     ],
   },
   {
-    id: "appearance",
-    Icon: Palette,
-    Demo: AppearanceDemo,
-    accents: [
-      { seed: 103, depth: "foreground", placement: "appearanceOrbit", side: "left" },
-    ],
-  },
-  {
     id: "tasks",
     Icon: CheckSquare,
     Demo: TasksFeature,
@@ -112,13 +105,21 @@ const features = [
       { seed: 109, depth: "background", placement: "scheduleEcho", side: "left" },
     ],
   },
+  {
+    id: "appearance",
+    Icon: Palette,
+    Demo: AppearanceDemo,
+    accents: [
+      { seed: 103, depth: "foreground", placement: "appearanceOrbit", side: "left" },
+    ],
+  },
 ] as const;
 
 export function FeatureShowcase() {
   const t = useTranslations("Features");
   const reduceMotion = useReducedMotion();
   const reveal: Variants = {
-    hidden: { opacity: 0, y: 28, filter: "blur(8px)" },
+    hidden: { opacity: 1, y: 20, filter: "none" },
     visible: {
       opacity: 1,
       y: 0,
@@ -156,6 +157,17 @@ export function FeatureShowcase() {
           {t("title")}
         </motion.h2>
         <motion.p variants={reveal}>{t("description")}</motion.p>
+        <ol className={styles.startSteps} aria-label={t("startLabel")}>
+          {(["create", "organize", "use"] as const).map((step, index) => (
+            <li key={step}>
+              <span aria-hidden="true">{index + 1}</span>
+              <div>
+                <p>{t(`start.${step}.title`)}</p>
+                <p>{t(`start.${step}.description`)}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </motion.div>
 
       {features.map(({ id, Icon, Demo, accents }, index) => (
@@ -223,7 +235,7 @@ export function FeatureShowcase() {
 
       <a
         className={styles.openApp}
-        href={process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app"}
+        href={APP_URL}
       >
         {t("openApp")}
         <ArrowUpRight size={20} />

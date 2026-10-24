@@ -23,12 +23,20 @@
     "graphify:update": "powershell -ExecutionPolicy Bypass -File ./scripts/graphify.ps1 update .",
     "graphify:query": "powershell -ExecutionPolicy Bypass -File ./scripts/graphify.ps1 query",
     "graphify:install-codex": "powershell -ExecutionPolicy Bypass -File ./scripts/graphify.ps1 install --project --platform codex",
-    "prebuild": "npm run legal:manifest",
+    "prebuild": "node scripts/validate-content.mjs && npm run legal:manifest",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "test:export": "node --test tests/export/*.test.mjs"
+    "test:export": "node --test tests/export/*.test.mjs",
+    "postbuild": "node scripts/prepare-export.mjs && node scripts/verify-export.mjs --record-build",
+    "check:export": "node scripts/verify-export.mjs",
+    "check:live": "node scripts/verify-live.mjs",
+    "site:update": "node scripts/site-update.mjs",
+    "site:check": "node scripts/site-update.mjs --check",
+    "page:new": "node scripts/new-page.mjs",
+    "check:seo": "node scripts/prepare-export.mjs --check"
   },
   "dependencies": {
+    "@next/env": "16.2.9",
     "@phosphor-icons/react": "^2.1.10",
     "@react-three/fiber": "^9.6.1",
     "clsx": "^2.1.1",

@@ -20,13 +20,13 @@ export function Hero() {
       <PixelDisplay />
 
       <motion.div
-        initial={reduceMotion ? false : "hidden"}
+        initial={false}
         animate="visible"
         variants={{
           hidden: { opacity: 0 },
           visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.1, delayChildren: 0.5 },
+            transition: { staggerChildren: 0.1 },
           },
         }}
         className="relative z-20 mx-auto grid w-full max-w-7xl grid-cols-[minmax(0,1fr)] items-center gap-14 px-6 pb-16 pt-24 lg:grid-cols-[minmax(0,1.06fr)_minmax(0,.94fr)] lg:gap-20 lg:pb-20 lg:pt-28"
@@ -53,7 +53,7 @@ export function Hero() {
             className="text-[clamp(2.5rem,6vw,3rem)] font-black leading-[0.98] tracking-[-0.055em] text-site-text sm:text-6xl md:text-7xl"
           >
             <span className="block">{t("title1")}</span>
-            <span className="block text-brand">
+            <span className="block text-brand-strong dark:text-brand">
               {t("title2")}
             </span>
           </motion.h1>
@@ -77,10 +77,10 @@ export function Hero() {
           >
             <motion.a
               href={APP_URL}
-              whileHover={{ y: -3, scale: 1.025 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={reduceMotion ? undefined : { y: -3, scale: 1.025 }}
+              whileTap={reduceMotion ? undefined : { scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 24 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] bg-site-text px-6 py-3.5 font-bold text-site-bg shadow-[0_12px_28px_-16px_var(--site-surface-shadow)] transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_34px_-18px_var(--site-surface-shadow)] sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] bg-site-text px-6 py-3.5 font-bold text-site-bg shadow-[0_12px_28px_-16px_var(--site-surface-shadow)] transition-all motion-safe:hover:-translate-y-0.5 hover:shadow-[0_16px_34px_-18px_var(--site-surface-shadow)] sm:w-auto"
             >
               {t("ctaPrimary")}
               <ArrowRight size={19} weight="bold" />
@@ -89,8 +89,8 @@ export function Hero() {
               href={PLAY_MARKET_URL}
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ y: -3, scale: 1.015 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={reduceMotion ? undefined : { y: -3, scale: 1.015 }}
+              whileTap={reduceMotion ? undefined : { scale: 0.98 }}
               transition={{ type: "spring", stiffness: 320, damping: 24 }}
               className="inline-flex w-full items-center justify-center gap-2 rounded-[14px] border border-site-border-strong bg-site-surface/78 px-6 py-3.5 font-bold text-site-text shadow-sm backdrop-blur-md transition-colors hover:border-brand/35 hover:bg-site-surface sm:w-auto"
             >
@@ -98,6 +98,7 @@ export function Hero() {
               {t("ctaSecondary")}
             </motion.a>
           </motion.div>
+          <p className="mt-4 max-w-md rounded-xl border border-site-border bg-site-bg/95 px-3 py-2 text-sm leading-6 text-site-muted">{t("startHint")}</p>
         </div>
 
         <div className="w-full">

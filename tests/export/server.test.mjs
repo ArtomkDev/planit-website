@@ -13,7 +13,7 @@ test('preview serves entry, metadata, document redirects, and real 404 status', 
       server.stdout.once('data',()=>{clearTimeout(timer);resolve();});
     });
     const get = path => fetch('http://127.0.0.1:4174'+path, {redirect:'manual'});
-    for (const path of ['/','/uk','/en','/icon','/apple-icon','/opengraph-image','/twitter-image','/robots.txt','/sitemap.xml','/manifest.webmanifest']) assert.equal((await get(path)).status,200,path);
+    for (const path of ['/','/uk','/en','/icon','/apple-icon','/opengraph-image','/twitter-image','/robots.txt','/sitemap.xml','/manifest.webmanifest','/release.json']) assert.equal((await get(path)).status,200,path);
     const {hosting}=JSON.parse(await readFile('firebase.json','utf8'));
     const manifest=JSON.parse(await readFile('out/content/legal/manifest.json','utf8'));
     for (const [locale,localized] of Object.entries(manifest.locales)) {
@@ -21,6 +21,7 @@ test('preview serves entry, metadata, document redirects, and real 404 status', 
         for (const path of [entry.path,entry.loadingPath]) {
           const asset=await get(`${path}?v=${entry.sha256}`);
           assert.equal(asset.status,200,`${locale}/${kind}: ${path}`);
+          assert.equal(asset.headers.get('cache-control'),'no-cache','mutable legal paths must revalidate');
           assert.equal(await asset.text(),await readFile('out'+path,'utf8'));
         }
       }

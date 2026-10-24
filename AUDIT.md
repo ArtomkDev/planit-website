@@ -2,6 +2,24 @@
 
 Дата: 13.10.2026. Об’єкт: цей репозиторій та його локальний production static export. Результат — реалізовані виправлення, регресійні перевірки й конкретний посібник [DESIGN.md](DESIGN.md). Сайт не оголошується бездоганним: нижче розділені браузерні перевірки, HTTP/автоматичні перевірки, source review та недоступні сценарії.
 
+## Оновлення однією командою та безпечне додавання сторінок — 24.10.2026
+
+За запитом користувача реалізовано npm run site:update: налаштування в site.config.json, збереження Google ownership proof за hash, read-only sync legal sources, lint/unit/build із TypeScript, автоматичні sitemap та SEO inventory з фактичного HTML, перевірка export, контроль видалених адрес, upload лише website Hosting target і HTTP-перевірка живого випуску. Старі PowerShell deploy-команди делегують той самий workflow. site:check виконує підготовку без upload; page:new створює безпечну двомовну чернетку. Докладна [інструкція](docs/WEBSITE_WORKFLOW.md).
+
+Перший приклад — getting-started. Контент редагується у src/content/pages.json; metadata, мовні версії, structured data, sitemap і footer links формуються автоматично. Загальний helper createPageMetadata використовується також юридичними сторінками й не дублює назву PlanIt у title. Дублікат /[locale]/wiki має 301 на /[locale]/wiki/terms; global header не змінювався.
+
+**Перевірено фактичним запуском:** site:check завершився без upload; стандартний site:update зібрав і опублікував production 19f67539d019939e1a6ec80fd1d63818d1afe8602f59a75305fcd2aaa6b5a85f. Сайт містить 15 URL, дозволених до індексації, 35 static entries; Google HTML proof збережений і перевірений через HTTP. Окремо пройшов preview із --skip-build та строком 1h; його URL отриманий із JSON Firebase й також пройшов повну live-перевірку. Опублікований основний застосунок не змінювався.
+
+**Автоматично:** lint без попереджень, 66/66 unit tests, TypeScript/build, 10/10 export tests, check:seo, check:export, production/preview check:live та git diff --check — PASS. Нові поведінкові перевірки ловлять неправильний успадкований canonical, відсутню мовну пару, дубль title, зламане внутрішнє посилання, зниклий/змінений Google proof, видалення старого URL без постійного redirect, цикли redirect і продовження workflow після помилки. CLI page:new перевірено в ізольованому тимчасовому каталозі: створення draft, повторний slug, конфлікт із custom route та path traversal; при помилці файл контенту не змінюється. PowerShell wrapper пройшов синтаксичну перевірку. Graphify оновлено AST-only: 1137 nodes, 1856 edges, 98 communities.
+
+**Браузер на опублікованому сайті:** 28 комбінацій uk/en × світла/темна × 360/390/768/1023/1024/1440/1920px; document overflow, обрізання H1/H2/footer links і зайвого H1 не виявлено. Перехід із нового посилання футера працює, зміна мови зберігає query/hash і змінює canonical. [Матриця](audit-evidence/site-workflow-2026-10-24/responsive.json), [desktop](audit-evidence/site-workflow-2026-10-24/guide-desktop.png), [mobile](audit-evidence/site-workflow-2026-10-24/guide-mobile.png), [випуски](audit-evidence/site-workflow-2026-10-24/releases.json).
+
+Межі: workflow зберігає наявне підтвердження Google та стабільний URL sitemap; він не надає нових прав Search Console, не обходить CAPTCHA/квоти й не гарантує індексації. Читання нового sitemap сервісом Google у цьому запиті повторно не запускалося. Реальні OS reduced motion, screen reader, touch і zoom 200% не перевірялися повторно; новий текстовий шаблон не додає власної анімації. Стан основного застосунку не редагувався.
+
+## Повний аудит, виправлення та пошук Google — 24.10.2026
+
+За запитом власника реалізовані виправлення сайту з повного аудиту: SEO origin, двомовна sitemap, WebSite/SoftwareApplication identity, indexable root, FAQ, перший екран, шлях початку, правдиві продуктові умови, контраст, consented conversion events і перевірена публікація. Основний застосунок не змінювався. Детальний статус A01–A17, тести, браузерні докази, межі та зовнішні перевірки — у [SITE_FIXES_2026-10-24.md](docs/audits/SITE_FIXES_2026-10-24.md). Початковий [аудит 20.10](docs/audits/SITE_AUDIT_2026-10-20.md) збережено як історичний доказ.
+
 ## Більші редактори та симетричне піксельне тло — 18.10.2026
 
 За прямим запитом користувача зі скриншотом прибрано нижній підпис про локальність демо з усіх чотирьох блоків, його CSS і обидва переклади. У DESIGN.md замінено попередню вимогу зберігати цей підпис та зафіксовано джерело винятку. Максимальна ширина редактора збільшена з 420 до 460px; область вмісту — з 480 до 520px. На телефоні body використовує clamp(300px,56svh,480px) та звичайне прокручування.

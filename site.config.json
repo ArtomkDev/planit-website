@@ -1,0 +1,16 @@
+{
+  "origin": "https://planit-hub.web.app",
+  "locales": ["uk", "en"],
+  "hosting": {
+    "project": "planit-hub",
+    "target": "legal",
+    "account": "artomk.dev@gmail.com"
+  },
+  "legalSource": "../PlanIt",
+  "verificationFiles": [
+    {
+      "path": "/google1bc7d5ee2596486b.html",
+      "sha256": "343a70e1fc023047f6fe3ac543210e0ffa7432d5f9290067af6264b7f1b39460"
+    }
+  ]
+}

@@ -1,29 +1,29 @@
-# Graph Report - planit-website  (2026-10-23)
+# Graph Report - planit-website  (2026-10-24)
 
 ## Corpus Check
-- 151 files · ~136,027 words
+- 171 files · ~146,693 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1028 nodes · 1639 edges · 89 communities (56 shown, 6 thin omitted)
-- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 43 edges (avg confidence: 0.85)
+- 1137 nodes · 1856 edges · 98 communities (61 shown, 8 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a2fcfc2d`
+- Built from commit: `a1dd5905`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - FloatingSchedule.tsx
 - metadata
-- site.ts
+- LegalDocument.tsx
 - package.json
-- next-intl
+- FeatureShowcase.tsx
 - Аудит PlanIt: продаж, SEO, дизайн, зручність і достовірність
 - Знахідки за пріоритетом
 - compilerOptions
-- LessonCardAccent.tsx
+- AppShowcase.tsx
 - PixelDisplay.tsx
 - AuthActionClient.tsx
 - Asciify.tsx
@@ -37,7 +37,7 @@
 - FlameWrap.tsx
 - serve-static-export.mjs
 - global-not-found-client.tsx
-- warmLegalLoadingDocuments
+- site.ts
 - OpenGraphImage.tsx
 - update-legal-manifest.mjs
 - Graphify Setup
@@ -60,28 +60,35 @@
 - LegalDocumentClient.tsx
 - Q: Який шрифт використано для PLANIT у самому низу сторінки, у футері?
 - AnimatedScheduleCode.tsx
-- FeatureShowcase.tsx
+- LessonEditorDemo
 - Дизайн та взаємодія PlanIt
 - section-navigation.ts
-- legal-documents.ts
+- site-seo.mjs
 - dependencies
-- AppShowcase.tsx
-- LegalDocument.tsx
+- warmLegalLoadingDocuments
+- LessonCard.tsx
 - section-navigation.test.mjs
 - ASCII-декорації Epic та адаптація для PlanIt
 - next
 - PlanIt Website
+- Виправлення аудиту та пошукова видимість PlanIt
 - [locale]/layout.tsx
-- Header
-- ThemeProvider.tsx
-- SITE_URL
+- 4. Чи продає сайт програму
 - app/auth/action/page.tsx
+- 7. SEO
+- 8. Дизайн, зручність і доступність
+- Header.tsx
+- LegalIcons.tsx
+- [slug]/page.tsx
+- Header
+- Оновлення сайту однією командою
 - (entry)/layout.tsx
+- (entry)/page.tsx
 
 ## God Nodes (most connected - your core abstractions)
-1. `Аудит PlanIt` - 43 edges
-2. `react` - 37 edges
-3. `scripts` - 25 edges
+1. `Аудит PlanIt` - 45 edges
+2. `react` - 38 edges
+3. `scripts` - 32 edges
 4. `next-intl` - 25 edges
 5. `@phosphor-icons/react` - 21 edges
 6. `initializeAsciify()` - 21 edges
@@ -91,45 +98,45 @@
 10. `Знахідки за пріоритетом` - 17 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `fixture()` --calls--> `sha256()`  [EXTRACTED]
+  tests/site-release.test.mjs → scripts/lib/site-seo.mjs
+- `collectSeo()` --calls--> `validateContentPages()`  [EXTRACTED]
+  scripts/lib/site-seo.mjs → src/lib/content-page-schema.mjs
 - `generateMetadata()` --calls--> `getLegalDocumentMetadata()`  [EXTRACTED]
   src/app/[locale]/wiki/cookies/page.tsx → src/components/legal/LegalDocumentRoute.tsx
 - `generateMetadata()` --calls--> `getLegalDocumentMetadata()`  [EXTRACTED]
   src/app/[locale]/wiki/delete/page.tsx → src/components/legal/LegalDocumentRoute.tsx
 - `generateMetadata()` --calls--> `getLegalDocumentMetadata()`  [EXTRACTED]
   src/app/[locale]/wiki/licenses/page.tsx → src/components/legal/LegalDocumentRoute.tsx
-- `generateMetadata()` --calls--> `getLegalDocumentData()`  [EXTRACTED]
-  src/app/[locale]/wiki/page.tsx → src/content/legal-documents.ts
-- `generateMetadata()` --calls--> `getLegalDocumentMetadata()`  [EXTRACTED]
-  src/app/[locale]/wiki/privacy/page.tsx → src/components/legal/LegalDocumentRoute.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (89 total, 6 thin omitted)
+## Communities (98 total, 8 thin omitted)
 
 ### Community 0 - "FloatingSchedule.tsx"
-Cohesion: 0.12
-Nodes (27): createSchedule(), createSeededRandom(), DaySchedule, DaySelection, findAutomaticSelection(), FloatingSchedule(), GeneratedLesson, getDateFromKey() (+19 more)
+Cohesion: 0.21
+Nodes (15): createSchedule(), createSeededRandom(), DaySchedule, DaySelection, findAutomaticSelection(), FloatingSchedule(), GeneratedLesson, getDateFromKey() (+7 more)
 
 ### Community 1 - "metadata"
-Cohesion: 0.06
-Nodes (56): loadingPath, loadingSha256, metadata, path, sha256, title, version, loadingPath (+48 more)
+Cohesion: 0.07
+Nodes (55): loadingPath, loadingSha256, metadata, path, sha256, title, version, loadingPath (+47 more)
 
-### Community 2 - "site.ts"
-Cohesion: 0.24
-Nodes (9): HeaderLinkProps, HeaderProps, AndroidRobotLogo(), AppleBrandLogo(), BrandIconProps, Wordmark(), APP_URL, PLAY_MARKET_URL (+1 more)
+### Community 2 - "LegalDocument.tsx"
+Cohesion: 0.16
+Nodes (22): version, getInitialLoadingHtml(), LegalDocument(), legalManifest, publicDirectory, resolvePublicAssetPath(), buildVersionedAssetUrl(), getLegalDocumentAssetDescriptor() (+14 more)
 
 ### Community 3 - "package.json"
 Cohesion: 0.09
-Nodes (21): name, private, version, eslint, eslint-config-next, firebase, firebase-tools, react-dom (+13 more)
+Nodes (22): name, private, version, eslint, eslint-config-next, firebase, firebase-tools, @next/env (+14 more)
 
-### Community 4 - "next-intl"
-Cohesion: 0.20
-Nodes (18): next-intl, @phosphor-icons/react, initialAppearance, subjectIcons, ChoiceList(), DemoFrame(), DemoRenderProps, DemoTabs() (+10 more)
+### Community 4 - "FeatureShowcase.tsx"
+Cohesion: 0.12
+Nodes (22): next-intl, @phosphor-icons/react, AppearanceDemo(), initialAppearance, subjectIcons, ChoiceList(), DemoFrame(), DemoRenderProps (+14 more)
 
 ### Community 5 - "Аудит PlanIt: продаж, SEO, дизайн, зручність і достовірність"
-Cohesion: 0.08
-Nodes (23): 10. Рекомендована послідовність сторінки, 11. План робіт і критерії приймання, 12. Докази та межі перевірки, 1. Що перевірено, 2. Загальна оцінка, 3. Пріоритетні знахідки, 4. Чи продає сайт програму, 5. Які запитання залишаються без зручної відповіді (+15 more)
+Cohesion: 0.17
+Nodes (12): 10. Рекомендована послідовність сторінки, 11. План робіт і критерії приймання, 12. Докази та межі перевірки, 1. Що перевірено, 2. Загальна оцінка, 3. Пріоритетні знахідки, 5. Які запитання залишаються без зручної відповіді, 6. Перевірка достовірності (+4 more)
 
 ### Community 6 - "Знахідки за пріоритетом"
 Cohesion: 0.12
@@ -139,17 +146,17 @@ Nodes (17): P1 — Mobile header втрачав частину destinations, P1 
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
-### Community 8 - "LessonCardAccent.tsx"
-Cohesion: 0.19
-Nodes (12): clsx, tailwind-merge, BreakCard(), BreakCardProps, LessonData, AccentDepth, createSeededRandom(), LessonCardAccent() (+4 more)
+### Community 8 - "AppShowcase.tsx"
+Cohesion: 0.13
+Nodes (23): clsx, framer-motion, tailwind-merge, ScrollReveal(), ScrollRevealProps, cards, FeatureId, previewIntroDelay (+15 more)
 
 ### Community 9 - "PixelDisplay.tsx"
 Cohesion: 0.09
 Nodes (33): clamp(), createCanvasPixelRenderer(), createFigureSeed(), createShader(), createWebglPixelRenderer(), DISPLAY_COLORS, edgeCellNoise(), ENERGY_LOOKUP (+25 more)
 
 ### Community 10 - "AuthActionClient.tsx"
-Cohesion: 0.09
-Nodes (23): AuthActionPageProps, AuthActionClient(), handlePasswordSubmit(), ErrorInfo, ErrorMessageKey, FIXED_SAFE_ORIGINS, FormErrorKey, getConfiguredAppUrl() (+15 more)
+Cohesion: 0.08
+Nodes (24): AuthActionPageProps, AuthActionClient(), handlePasswordSubmit(), ErrorInfo, ErrorMessageKey, FIXED_SAFE_ORIGINS, FormErrorKey, getConfiguredAppUrl() (+16 more)
 
 ### Community 11 - "Asciify.tsx"
 Cohesion: 0.07
@@ -160,8 +167,8 @@ Cohesion: 0.09
 Nodes (22): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+14 more)
 
 ### Community 13 - "scripts"
-Cohesion: 0.08
-Nodes (25): scripts, build, build:firebase, deploy:firebase, deploy:firebase:preview, deploy:firebase:skip-build, dev, firebase:login (+17 more)
+Cohesion: 0.06
+Nodes (32): scripts, build, build:firebase, check:export, check:live, check:seo, deploy:firebase, deploy:firebase:preview (+24 more)
 
 ### Community 14 - "LegalDocumentRoute.tsx"
 Cohesion: 0.19
@@ -173,11 +180,11 @@ Nodes (17): devDependencies, eslint, eslint-config-next, firebase-tools, tailwin
 
 ### Community 16 - "Аудит PlanIt"
 Cohesion: 0.05
-Nodes (42): ASCII-силуети за референсом Epic — 20.10.2026, ASCII у темпі гортання та правого меню — 20.10.2026, Аудит PlanIt, Більші редактори та симетричне піксельне тло — 18.10.2026, Видимий приліт після швидкого переходу — 20.10.2026, Внутрішні анімації в кольорах карток — 18.10.2026, Головна без рухомого рядка переваг — 20.10.2026, Завершені ASCII-перельоти та багатший набір знаків — 20.10.2026 (+34 more)
+Nodes (44): ASCII-силуети за референсом Epic — 20.10.2026, ASCII у темпі гортання та правого меню — 20.10.2026, Аудит PlanIt, Більші редактори та симетричне піксельне тло — 18.10.2026, Видалення відхилених абстрактних стрічок — 23.10.2026, Видимий приліт після швидкого переходу — 20.10.2026, Внутрішні анімації в кольорах карток — 18.10.2026, Головна без рухомого рядка переваг — 20.10.2026 (+36 more)
 
 ### Community 17 - "firebase.ts"
-Cohesion: 0.09
-Nodes (30): CookieConsent(), storageChanged(), readConsent(), subscribe(), analyticsOnlyConsent, ConsentChoice, createConsentGate(), deniedConsent (+22 more)
+Cohesion: 0.08
+Nodes (40): MarketingAnalytics(), hasConsent(), interact(), record(), toggle(), CookieConsent(), storageChanged(), readConsent() (+32 more)
 
 ### Community 18 - "createLiquid"
 Cohesion: 0.10
@@ -192,12 +199,12 @@ Cohesion: 0.31
 Nodes (9): isFile(), isInsideRoot(), mimeTypes, port, resolveFile(), rootDir, safeJoin(), sendFile() (+1 more)
 
 ### Community 21 - "global-not-found-client.tsx"
-Cohesion: 0.21
-Nodes (8): copy, getClientLocale(), getServerLocale(), GlobalNotFoundClient(), Locale, NotFoundContent(), subscribeToLocale(), metadata
+Cohesion: 0.09
+Nodes (24): @react-three/fiber, three, copy, getClientLocale(), getServerLocale(), GlobalNotFoundClient(), Locale, NotFoundContent() (+16 more)
 
-### Community 22 - "warmLegalLoadingDocuments"
-Cohesion: 0.16
-Nodes (22): buildVersionedAssetUrl(), ensureFreshLegalLoadingDocument(), fetchLegalDocument(), fetchLegalLoadingDocument(), getLegacyLegalLoadingCacheKeys(), getLegalAssetRequestCache(), getLegalDocumentAssetDescriptor(), getLegalLoadingAssetDescriptor() (+14 more)
+### Community 22 - "site.ts"
+Cohesion: 0.20
+Nodes (11): FeatureShowcase(), AccentRule(), AppShowcase(), CallToAction(), FAQ(), faqItems, Hero(), Platforms() (+3 more)
 
 ### Community 23 - "OpenGraphImage.tsx"
 Cohesion: 0.23
@@ -271,33 +278,29 @@ Nodes (4): Answer, Outcome, Q: Який шрифт використано для
 Cohesion: 0.27
 Nodes (9): AnimatedScheduleCode(), AnimationOptions, CodeGlyph, createScheduleCodeAnimation(), advance(), reveal(), INITIAL_SCHEDULE_CODE, RevealEvent (+1 more)
 
-### Community 62 - "FeatureShowcase.tsx"
-Cohesion: 0.11
-Nodes (6): AppearanceDemo(), features, FeatureShowcase(), LessonEditorDemo(), ScheduleSettingsDemo(), TasksDemo()
-
 ### Community 63 - "Дизайн та взаємодія PlanIt"
-Cohesion: 0.20
-Nodes (10): Responsive, клавіатура та рух, Дизайн та взаємодія PlanIt, Компоненти, стани та поверхні, Навігація, Оновлення айдентики 18.10.2026, Палітра та контраст, Приклади та перевірка зміни, Продукт та пріоритети (+2 more)
+Cohesion: 0.15
+Nodes (13): Responsive, клавіатура та рух, Виправлення повного аудиту — 23.10.2026, Дизайн та взаємодія PlanIt, Компоненти, стани та поверхні, Навігація, Оновлення айдентики 18.10.2026, Палітра та контраст, Пошук Google та коренева адреса — 24.10.2026 (+5 more)
 
 ### Community 64 - "section-navigation.ts"
 Cohesion: 0.15
 Nodes (25): FloatingSectionNavigation(), clamp(), getCurrentSection(), getSectionActivationStops(), getSectionNavLetter(), getSectionNavMotionWindows(), getSectionNavPoses(), getSectionNavUrl() (+17 more)
 
-### Community 65 - "legal-documents.ts"
-Cohesion: 0.15
-Nodes (15): dynamic, LegalDocumentClientProps, ParsedLegalDocument, buildVersionedAssetUrl(), getLegalLoadingPreloadUrls(), LegalLoadingPreloadLinks(), legalManifest, getLegalManifestDocument() (+7 more)
+### Community 65 - "site-seo.mjs"
+Cohesion: 0.08
+Nodes (38): assertRouteContinuity(), collectSeo(), decode(), escapeXml(), filesUnder(), inspectHtml(), loadBuildEnvironment(), normalizePath() (+30 more)
 
 ### Community 66 - "dependencies"
-Cohesion: 0.15
-Nodes (13): dependencies, clsx, firebase, framer-motion, next, next-intl, @phosphor-icons/react, react (+5 more)
+Cohesion: 0.14
+Nodes (14): dependencies, clsx, firebase, framer-motion, next, @next/env, next-intl, @phosphor-icons/react (+6 more)
 
-### Community 67 - "AppShowcase.tsx"
-Cohesion: 0.16
-Nodes (17): framer-motion, ScrollReveal(), ScrollRevealProps, AccentRule(), AppShowcase(), cards, FeatureId, previewIntroDelay (+9 more)
+### Community 67 - "warmLegalLoadingDocuments"
+Cohesion: 0.20
+Nodes (18): ensureFreshLegalLoadingDocument(), fetchLegalDocument(), fetchLegalLoadingDocument(), getLegacyLegalLoadingCacheKeys(), getLegalAssetRequestCache(), getLegalLoadingAssetDescriptor(), getLegalLoadingCacheKey(), getLoadingStorageVersion() (+10 more)
 
-### Community 68 - "LegalDocument.tsx"
-Cohesion: 0.18
-Nodes (14): generateMetadata(), getInitialLoadingHtml(), LegalDocument(), LegalDocumentProps, legalManifest, publicDirectory, resolvePublicAssetPath(), documentIcons (+6 more)
+### Community 68 - "LessonCard.tsx"
+Cohesion: 0.22
+Nodes (13): ElasticLayerOptions, LessonCard(), LessonCardProps, LessonData, positiveModulo(), resolveLessonAppearance(), SubjectTheme, subjectThemes (+5 more)
 
 ### Community 69 - "section-navigation.test.mjs"
 Cohesion: 0.07
@@ -308,48 +311,72 @@ Cohesion: 0.20
 Nodes (9): ASCII-декорації Epic та адаптація для PlanIt, Вартість і супровід, Власні форми PlanIt, Джерела й межі висновків, Композиція, теми та адаптивність, Підтверджена будова Epic, Сценарій руху в PlanIt, Чому попереднє рішення PlanIt перестало працювати (+1 more)
 
 ### Community 81 - "next"
+Cohesion: 0.12
+Nodes (7): nextConfig, withNextIntl, next, metadata, metadata, dynamic, dynamic
+
+### Community 83 - "PlanIt Website"
+Cohesion: 0.25
+Nodes (8): Firebase Hosting, Local Development, Local Production Preview, PlanIt Website, Runtime Legal Documents, Sync and publish both languages, Update and publish, Website identity and verified releases
+
+### Community 84 - "Виправлення аудиту та пошукова видимість PlanIt"
+Cohesion: 0.33
+Nodes (6): Plerdy, Google та подальша індексація, Виправлення аудиту та пошукова видимість PlanIt, Перевірки, Публікація та Search Console, Реалізовано, Статус початкових знахідок
+
+### Community 85 - "[locale]/layout.tsx"
 Cohesion: 0.20
-Nodes (5): nextConfig, withNextIntl, next, dynamic, dynamic
+Nodes (6): locales, LocalePreference(), ContentPageData, contentPages, ContentPageText, publishedPages
 
-### Community 82 - "PlanIt Website"
-Cohesion: 0.22
-Nodes (6): Firebase Hosting, Local Development, Local Production Preview, PlanIt Website, Runtime Legal Documents, Sync and publish both languages
+### Community 86 - "4. Чи продає сайт програму"
+Cohesion: 0.40
+Nodes (5): 4. Чи продає сайт програму, Виміряна відстань до важливих відповідей, Де слабшає переконання, Для кого він уже працює, Пропозиція змісту першого екрана
 
-### Community 83 - "[locale]/layout.tsx"
-Cohesion: 0.29
-Nodes (3): locales, LocalePreference(), Footer()
+### Community 89 - "7. SEO"
+Cohesion: 0.67
+Nodes (3): 7. SEO, Що вже зроблено добре в поточній збірці, Що виправити
 
-### Community 84 - "Header"
+### Community 90 - "8. Дизайн, зручність і доступність"
+Cohesion: 0.67
+Nodes (3): 8. Дизайн, зручність і доступність, Зберегти, Покращити
+
+### Community 91 - "Header.tsx"
+Cohesion: 0.24
+Nodes (7): Footer(), HeaderLinkProps, HeaderProps, AndroidRobotLogo(), AppleBrandLogo(), BrandIconProps, Wordmark()
+
+### Community 92 - "LegalIcons.tsx"
+Cohesion: 0.18
+Nodes (10): LegalDocumentProps, LegalDocumentClientProps, ParsedLegalDocument, documentIcons, LegalCalendarIcon(), LegalDocumentIcon(), LegalSupportArrow(), LegalDocumentData (+2 more)
+
+### Community 93 - "[slug]/page.tsx"
+Cohesion: 0.36
+Nodes (6): ContentPage(), dynamicParams, generateMetadata(), getPage(), createPageMetadata(), SITE_URL
+
+### Community 94 - "Header"
 Cohesion: 0.29
 Nodes (3): Header(), changeLocale(), buildLocaleUrl()
 
-### Community 85 - "ThemeProvider.tsx"
-Cohesion: 0.14
-Nodes (17): @react-three/fiber, three, getSystemTheme(), getTheme(), setTheme(), subscribe(), Theme, ThemeContext (+9 more)
-
-### Community 86 - "SITE_URL"
+### Community 95 - "Оновлення сайту однією командою"
 Cohesion: 0.29
-Nodes (3): metadata, metadata, SITE_URL
+Nodes (5): Звичайне оновлення, Нова сторінка, Оновлення сайту однією командою, Перейменування та видалення адрес, Підтвердження Google та налаштування
 
 ## Knowledge Gaps
-- **435 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+430 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 559 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **474 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+469 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 603 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `FloatingSchedule.tsx`, `site.ts`, `package.json`, `next-intl`, `LessonCardAccent.tsx`, `PixelDisplay.tsx`, `AuthActionClient.tsx`, `Asciify.tsx`, `firebase.ts`, `createLiquid`, `FlameWrap.tsx`, `global-not-found-client.tsx`, `LegalDocumentClient.tsx`, `AnimatedScheduleCode.tsx`, `FeatureShowcase.tsx`, `section-navigation.ts`, `AppShowcase.tsx`, `[locale]/layout.tsx`, `ThemeProvider.tsx`, `app/auth/action/page.tsx`?**
-  _High betweenness centrality (0.247) - this node is a cross-community bridge._
-- **Why does `next-intl` connect `next-intl` to `FloatingSchedule.tsx`, `section-navigation.ts`, `site.ts`, `package.json`, `AppShowcase.tsx`, `LessonCardAccent.tsx`, `AuthActionClient.tsx`, `firebase.ts`, `[locale]/layout.tsx`, `global-not-found-client.tsx`, `ThemeProvider.tsx`, `LegalDocumentClient.tsx`, `AnimatedScheduleCode.tsx`, `FeatureShowcase.tsx`?**
-  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **Why does `react` connect `react` to `FloatingSchedule.tsx`, `package.json`, `FeatureShowcase.tsx`, `AppShowcase.tsx`, `PixelDisplay.tsx`, `AuthActionClient.tsx`, `Asciify.tsx`, `firebase.ts`, `createLiquid`, `FlameWrap.tsx`, `global-not-found-client.tsx`, `site.ts`, `LegalDocumentClient.tsx`, `AnimatedScheduleCode.tsx`, `section-navigation.ts`, `LessonCard.tsx`, `[locale]/layout.tsx`, `app/auth/action/page.tsx`, `Header.tsx`?**
+  _High betweenness centrality (0.260) - this node is a cross-community bridge._
+- **Why does `documents` connect `metadata` to `LegalDocument.tsx`?**
+  _High betweenness centrality (0.072) - this node is a cross-community bridge._
+- **Why does `next-intl` connect `FeatureShowcase.tsx` to `FloatingSchedule.tsx`, `section-navigation.ts`, `package.json`, `AppShowcase.tsx`, `LegalDocumentClient.tsx`, `AuthActionClient.tsx`, `firebase.ts`, `[locale]/layout.tsx`, `global-not-found-client.tsx`, `site.ts`, `Header.tsx`, `AnimatedScheduleCode.tsx`?**
+  _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _435 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `FloatingSchedule.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.11724137931034483 - nodes in this community are weakly interconnected._
+  _474 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `metadata` be split into smaller, more focused modules?**
-  _Cohesion score 0.06390977443609022 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
-- **Should `Аудит PlanIt: продаж, SEO, дизайн, зручність і достовірність` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
+- **Should `FeatureShowcase.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.11587301587301588 - nodes in this community are weakly interconnected._
