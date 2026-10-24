@@ -85,6 +85,32 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
   });
   const document = getLegalDocumentData(kind, locale);
   const initialLoadingHtml = await getInitialLoadingHtml(kind, locale);
+  const documentLinks = legalDocumentOrder.map((documentKind) => {
+    const isActive = kind === documentKind;
+    return (
+      <Link
+        key={documentKind}
+        href={`/${locale}/wiki/${documentKind}`}
+        aria-current={isActive ? "page" : undefined}
+        className={`group relative flex min-h-11 w-full items-start gap-3 rounded-[6px] p-3 text-left transition-colors ${
+          isActive ? "bg-site-text text-site-bg" : "text-site-muted hover:bg-site-surface-muted hover:text-site-text"
+        }`}
+      >
+        {isActive && <span aria-hidden="true" className="absolute inset-y-3 left-0 w-0.5 rounded-full bg-brand" />}
+        <span aria-hidden="true" className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-[6px] ${
+          isActive ? "bg-site-bg/10" : "bg-site-surface-muted"
+        }`}>
+          <LegalDocumentIcon kind={documentKind} className="h-5 w-5" weight="bold" />
+        </span>
+        <span className="min-w-0">
+          <span className="block text-sm font-bold leading-6">{tDoc(`titles.${documentKind}`)}</span>
+          <span className={`mt-1 block text-sm leading-6 ${isActive ? "text-site-bg" : "text-site-muted"}`}>
+            {tDoc(`summaries.${documentKind}`)}
+          </span>
+        </span>
+      </Link>
+    );
+  });
 
   return (
     <div
@@ -104,66 +130,26 @@ export async function LegalDocument({ locale, kind }: LegalDocumentProps) {
       <div className={styles.wikiLayout}>
         <aside className={styles.wikiSidebar}>
           <div className="rounded-[8px] border border-site-border bg-site-surface/88 p-2 shadow-[0_18px_60px_-42px_var(--site-surface-shadow)] backdrop-blur-xl">
-            <div className="px-3 pb-3 pt-2">
-              <p className="text-[11px] font-black uppercase tracking-[0.18em] text-zinc-400 dark:text-zinc-500">
+            <div className="hidden px-3 pb-3 pt-2 lg:block">
+              <p className="text-xs font-bold uppercase tracking-[0.1em] text-site-muted">
                 {tDoc("eyebrow")}
               </p>
               <h2 className="mt-1 text-2xl font-black tracking-tight text-site-text">
                 PlanIt Wiki
               </h2>
             </div>
-            <nav aria-label={tDoc("navigation")} className="grid gap-1">
-              {legalDocumentOrder.map((documentKind) => {
-                const isActive = kind === documentKind;
-
-                return (
-                  <Link
-                    key={documentKind}
-                    href={`/${locale}/wiki/${documentKind}`}
-                    aria-current={isActive ? "page" : undefined}
-                    className={`group relative flex w-full items-start gap-3 rounded-[6px] p-3 text-left transition-colors ${
-                      isActive
-                        ? "bg-site-text text-site-bg shadow-[0_18px_44px_-34px_var(--site-surface-shadow)]"
-                        : "text-site-muted hover:bg-site-surface-muted hover:text-site-text"
-                    }`}
-                  >
-                    {isActive ? (
-                      <span
-                        aria-hidden
-                        className="absolute inset-y-3 left-0 w-0.5 rounded-full bg-brand"
-                      />
-                    ) : null}
-                    <span
-                      className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-[6px] ${
-                        isActive
-                          ? "bg-white/10 text-white dark:bg-zinc-950/10 dark:text-zinc-950"
-                          : "bg-zinc-100 text-zinc-500 group-hover:bg-white group-hover:text-zinc-950 dark:bg-zinc-900 dark:group-hover:bg-zinc-800 dark:group-hover:text-white"
-                      }`}
-                    >
-                      <LegalDocumentIcon
-                        kind={documentKind}
-                        className="h-5 w-5"
-                        weight="bold"
-                      />
-                    </span>
-                    <span className="min-w-0">
-                      <span className="block text-sm font-black">
-                        {tDoc(`titles.${documentKind}`)}
-                      </span>
-                      <span
-                        className={`mt-1 line-clamp-2 block text-xs font-semibold leading-5 ${
-                          isActive
-                            ? "text-zinc-300 dark:text-zinc-600"
-                            : "text-site-muted"
-                        }`}
-                      >
-                        {tDoc(`summaries.${documentKind}`)}
-                      </span>
-                    </span>
-                  </Link>
-                );
-              })}
+            <nav aria-label={tDoc("navigation")} className="hidden gap-1 lg:grid">
+              {documentLinks}
             </nav>
+            <details data-document-navigation className="group lg:hidden">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 rounded-[6px] px-3 py-2 text-base font-bold text-site-text marker:content-none [&::-webkit-details-marker]:hidden">
+                {tDoc("navigation")}
+                <span aria-hidden="true" className="text-2xl font-normal text-brand-strong group-open:rotate-45">+</span>
+              </summary>
+              <nav aria-label={tDoc("navigation")} className="grid max-h-[60svh] gap-1 overflow-y-auto pt-2">
+                {documentLinks}
+              </nav>
+            </details>
           </div>
         </aside>
 

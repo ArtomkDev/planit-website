@@ -109,38 +109,38 @@ export const Footer = ({ contentLinks = [] }: { contentLinks?: { href: string; t
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2 lg:col-start-8">
             <h2 className="text-sm font-bold tracking-tight text-site-text md:text-base">{tFooter("product")}</h2>
             <nav aria-label={tFooter("product")} className="flex flex-col gap-1 text-sm font-medium text-site-muted">
-              <Link href={`/${locale}`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("home")}
               </Link>
-              <Link href={`/${locale}#features`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}#features`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("features")}
               </Link>
-              <Link href={`/${locale}#platforms`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}#platforms`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("platforms")}
               </Link>
-              {contentLinks.map(link => <Link key={link.href} href={link.href} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">{link.title}</Link>)}
+              {contentLinks.map(link => <Link key={link.href} href={link.href} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">{link.title}</Link>)}
             </nav>
           </div>
 
           <div className="flex flex-col gap-6 md:col-span-3 lg:col-span-2">
             <h2 className="text-sm font-bold tracking-tight text-site-text md:text-base">{tFooter("legal")}</h2>
             <nav aria-label={tFooter("legal")} className="flex flex-col gap-1 text-sm font-medium text-site-muted">
-              <Link href={`/${locale}/wiki/privacy`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}/wiki/privacy`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("privacy")}
               </Link>
-              <Link href={`/${locale}/wiki/terms`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}/wiki/terms`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("terms")}
               </Link>
-              <Link href={`/${locale}/wiki/delete`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}/wiki/delete`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("delete")}
               </Link>
-              <Link href={`/${locale}/wiki/cookies`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}/wiki/cookies`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("cookies")}
               </Link>
-              <Link href={`/${locale}/wiki/licenses`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand">
+              <Link href={`/${locale}/wiki/licenses`} className="flex min-h-11 w-fit items-center transition-colors hover:text-brand-strong">
                 {tNav("licenses")}
               </Link>
-              <button type="button" onClick={() => window.dispatchEvent(new Event("planit:cookie-preferences"))} className="flex min-h-11 w-fit items-center text-left transition-colors hover:text-brand">
+              <button type="button" onClick={() => window.dispatchEvent(new Event("planit:cookie-preferences"))} className="flex min-h-11 w-fit items-center text-left transition-colors hover:text-brand-strong">
                 {tFooter("cookieSettings")}
               </button>
             </nav>
@@ -148,10 +148,10 @@ export const Footer = ({ contentLinks = [] }: { contentLinks?: { href: string; t
         </div>
 
         {/* Нижня панель */}
-        <div className="flex w-full flex-col items-center justify-between gap-6 pt-2 text-xs font-medium text-site-soft md:flex-row">
+        <div className="flex w-full flex-col items-center justify-between gap-6 pt-2 text-sm font-medium text-site-soft md:flex-row">
           <div className="max-w-xl text-center md:text-left">
             <p>© {currentYear} PlanIt. {tFooter("rights")}</p>
-            <p className="mt-2 text-[11px] leading-5 text-site-soft">
+            <p className="mt-2 text-sm leading-6 text-site-soft">
               {tFooter("androidAttribution")}
             </p>
           </div>
@@ -159,7 +159,7 @@ export const Footer = ({ contentLinks = [] }: { contentLinks?: { href: string; t
             href={PLAY_MARKET_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex min-h-11 items-center gap-2.5 rounded-full border border-site-border bg-site-surface-muted px-3 py-1.5 transition-colors hover:border-brand/45 hover:text-brand"
+            className="flex min-h-11 items-center gap-2.5 rounded-full border border-site-border bg-site-surface-muted px-3 py-1.5 transition-colors hover:border-brand/45 hover:text-brand-strong"
           >
             <span className="tracking-wide">{tFooter("status")}</span>
           </a>

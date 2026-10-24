@@ -32,8 +32,8 @@
   --site-surface: #ffffff;
   --site-surface-muted: #f5f5f8;
   --site-text: #18181b;
-  --site-muted: #5f6470;
-  --site-soft: #666c78;
+  --site-muted: #515866;
+  --site-soft: #5f6470;
   --site-border: #dfe1e8;
   --site-border-strong: #c9cdd7;
   --site-success: #047857;
@@ -44,7 +44,7 @@
   --brand-pink: #f45b8a;
   --brand-pink-strong: #b92f60;
   --brand-teal: #3ef7d2;
-  --brand-teal-strong: #0d8f79;
+  --brand-teal-strong: #08715f;
 
   --background: var(--site-bg);
   --foreground: var(--site-text);
@@ -61,8 +61,8 @@
   --site-surface: #18181b;
   --site-surface-muted: #27272a;
   --site-text: #fafafa;
-  --site-muted: #a1a1aa;
-  --site-soft: #a1a1aa;
+  --site-muted: #b4b4bf;
+  --site-soft: #adadb8;
   --site-border: #27272a;
   --site-border-strong: #3f3f46;
   --site-success: #34d399;
@@ -96,8 +96,23 @@ html { scroll-padding-top: 0; }
 main { min-width: 0; }
 [id] { scroll-margin-top: var(--anchor-offset); }
 :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--brand);
+  outline: 2px solid var(--brand-strong);
   outline-offset: 3px;
+}
+/* A solid reading surface keeps the moving hero field out of the text. */
+.hero-copy {
+  position: relative;
+  isolation: isolate;
+}
+.hero-copy::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -24px -16px;
+  border-radius: 24px;
+  background: var(--site-bg);
+  box-shadow: 0 0 32px 12px var(--site-bg);
+  pointer-events: none;
 }
 .header-icon {
   min-width: 44px;

@@ -21,7 +21,7 @@ export async function FAQ() {
               <span>{t(`items.${item}.question`)}</span>
               <span aria-hidden="true" className="shrink-0 text-2xl font-normal text-brand-strong group-open:rotate-45 motion-safe:transition-transform">+</span>
             </summary>
-            <p className="max-w-3xl pb-6 pr-6 text-sm leading-7 text-site-muted sm:text-base">{t(`items.${item}.answer`)}</p>
+            <p className="max-w-[70ch] pb-6 text-base leading-7 text-site-muted sm:pr-6">{t(`items.${item}.answer`)}</p>
           </details>
         ))}
       </div>

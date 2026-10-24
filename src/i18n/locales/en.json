@@ -8,6 +8,8 @@
     "delete": "Account Deletion",
     "licenses": "Third-Party Licenses",
     "productSection": "Product",
+    "gettingStarted": "Getting started",
+    "gettingStartedDescription": "Set up your schedule in a few steps.",
     "documentsSection": "Documents",
     "supportSection": "Support",
     "source": "Google Play",
@@ -42,8 +44,8 @@
   },
   "Hero": {
     "badge": "PlanIt · for students and school learners",
-    "title1": "Less searching.",
-    "title2": "A clearer day.",
+    "title1": "Less chaos.",
+    "title2": "More plans.",
     "description": "PlanIt is a study planner that keeps your class schedule, tasks and materials together. Open a class and find what you need without searching through chats.",
     "ctaPrimary": "Try in your browser",
     "ctaSecondary": "Google Play",
@@ -98,8 +100,7 @@
           "teacher": "M. Levchenko"
         }
       }
-    },
-    "startHint": "Currently free, with advertising planned across all platforms. Choose “Continue as guest” in the web app to start without an account."
+    }
   },
   "Features": {
     "badge": "PlanIt features",
@@ -132,6 +133,7 @@
     },
     "ui": {
       "reset": "Reset demo",
+      "resetShort": "Reset",
       "save": "Save",
       "saved": "Saved",
       "cancel": "Cancel",

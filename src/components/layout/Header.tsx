@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
-import { ArrowRight, CaretDown, Certificate, Cookie, FileText, Lifebuoy, List, RocketLaunch, ShieldCheck, Trash, X } from '@phosphor-icons/react';
+import { ArrowRight, BookOpen, CaretDown, Certificate, Cookie, FileText, Lifebuoy, List, RocketLaunch, ShieldCheck, Trash, X } from '@phosphor-icons/react';
 import { AndroidRobotLogo } from '@/components/ui/BrandIcons';
 import { Wordmark } from '@/components/ui/Wordmark';
 import { APP_URL, PLAY_MARKET_URL, SUPPORT_URL, buildLocaleUrl } from '@/lib/site';
@@ -35,6 +35,7 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
   const targetLocale = locale === 'en' ? 'uk' : 'en';
   const sections: { id: string; label: string; items: { href: string; label: string; description: string; icon: ReactNode; external?: boolean }[] }[] = [
     { id: 'product', label: t('productSection'), items: [
+      { href: `/${locale}/getting-started`, label: t('gettingStarted'), description: t('gettingStartedDescription'), icon: <BookOpen weight="bold" className="h-5 w-5" /> },
       { href: APP_URL, label: t('openApp'), description: t('openAppDescription'), icon: <RocketLaunch weight="bold" className="h-5 w-5" />, external: false },
       { href: PLAY_MARKET_URL, label: t('playStore'), description: t('playStoreDescription'), icon: <AndroidRobotLogo className="h-5 w-5" />, external: true },
     ] },
@@ -90,8 +91,8 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
         aria-current={pathname === item.href ? 'page' : undefined} onClick={closeMenu}
         className="flex min-h-11 gap-3 rounded-md p-3 text-left transition-colors hover:bg-site-surface-muted aria-[current=page]:bg-site-surface-muted">
         <span aria-hidden="true" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-site-text text-site-bg">{item.icon}</span>
-        <span className="min-w-0"><span className="block text-sm font-bold text-site-text">{item.label}</span>
-          <span className="mt-0.5 block text-xs leading-5 text-site-muted">{item.description}</span></span>
+        <span className="min-w-0"><span className="block text-base font-bold leading-6 text-site-text">{item.label}</span>
+          <span className="mt-1 block text-sm leading-6 text-site-muted">{item.description}</span></span>
       </HeaderLink>
     ));
   }

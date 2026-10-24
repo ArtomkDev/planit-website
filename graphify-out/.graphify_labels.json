@@ -3,7 +3,7 @@
   "1": "metadata",
   "2": "LegalDocument.tsx",
   "3": "package.json",
-  "4": "FeatureShowcase.tsx",
+  "4": "DemoPrimitives.tsx",
   "5": "Аудит PlanIt: продаж, SEO, дизайн, зручність і достовірність",
   "6": "Знахідки за пріоритетом",
   "7": "compilerOptions",
@@ -65,7 +65,7 @@
   "63": "Дизайн та взаємодія PlanIt",
   "64": "section-navigation.ts",
   "65": "site-seo.mjs",
-  "66": "dependencies",
+  "66": "FeatureShowcase.tsx",
   "67": "warmLegalLoadingDocuments",
   "68": "LessonCard.tsx",
   "69": "section-navigation.test.mjs",
@@ -88,7 +88,7 @@
   "86": "4. Чи продає сайт програму",
   "87": "app/auth/action/page.tsx",
   "88": "AUDIT.md",
-  "89": "7. SEO",
+  "89": "ScheduleSettingsDemo",
   "90": "8. Дизайн, зручність і доступність",
   "91": "Header.tsx",
   "92": "LegalIcons.tsx",
@@ -96,5 +96,7 @@
   "94": "Header",
   "95": "Оновлення сайту однією командою",
   "96": "(entry)/layout.tsx",
-  "97": "(entry)/page.tsx"
+  "97": "dependencies",
+  "98": "TasksDemo",
+  "99": "card-contrast.ts"
 }

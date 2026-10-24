@@ -49,19 +49,20 @@ export function DemoFrame({
         <h4 id={id}>{title}</h4>
         <button
           type="button"
-          className={styles.iconButton}
+          className={styles.resetButton}
           onClick={onReset}
           aria-label={t("reset")}
           title={t("reset")}
         >
-          <ArrowCounterClockwise size={19} />
+          <ArrowCounterClockwise size={19} aria-hidden="true" />
+          <span>{t("resetShort")}</span>
         </button>
       </div>
       <div className={styles.screenBody} role="region" aria-label={title} tabIndex={0}>{children}</div>
-      {action && <div className={styles.screenFooter}>{action}</div>}
-      <span role="status" className={styles.status}>
-        {status}
-      </span>
+      <div className={styles.screenFooter}>
+        <span role="status" className={status ? styles.feedback : styles.status}>{status}</span>
+        {action}
+      </div>
     </div>
   );
 }

@@ -38,6 +38,11 @@
   max-width: 64rem;
   margin: 0 auto;
 }
+.wikiContent h1 {
+  overflow-wrap: anywhere;
+  font-size: clamp(1.75rem, 5vw, 3.75rem);
+  line-height: 1.15;
+}
 
 .prose {
   display: grid;
@@ -167,6 +172,7 @@
 
 .prose p {
   margin: 0 0 1.25rem;
+  max-width: 75ch;
 }
 
 .prose p:last-child {
@@ -220,6 +226,7 @@
 
 .prose li {
   padding-left: 0.25rem;
+  max-width: 75ch;
 }
 
 .prose li::marker {
@@ -768,7 +775,7 @@
   }
 
   .prose {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.75;
   }
 

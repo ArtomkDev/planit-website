@@ -1065,8 +1065,8 @@ export function LegalDocumentClient({
           {documentMetadata.title}
         </h1>
         <div className="mt-6 flex flex-wrap items-center gap-2.5">
-          <span className="inline-flex items-center gap-2 rounded-full border border-site-border bg-site-surface-muted px-3 py-2 text-xs font-bold text-site-muted">
-            <LegalCalendarIcon className="h-4 w-4 text-zinc-400 dark:text-zinc-500" />
+          <span className="inline-flex items-start gap-2 rounded-xl border border-site-border bg-site-surface-muted px-3 py-2 text-sm leading-6 text-site-muted">
+            <LegalCalendarIcon className="mt-1 h-4 w-4 shrink-0 text-site-muted" />
             <span>
               <strong lang={documentLocale}>{documentMetadata.effectiveDateLabel}</strong>{" "}
               <time lang={documentLocale} dateTime={documentMetadata.effectiveDate}>

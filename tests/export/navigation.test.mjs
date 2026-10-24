@@ -36,11 +36,28 @@ test('global header only contains destinations, with equivalent mobile links', a
     assert.ok(header);
     assert.ok(!header.includes(`#features`),'features shortcut must stay out of the header');
     assert.match(header,/id="mobile-navigation"/);
+    assert.equal([...header.matchAll(new RegExp(`href="/${locale}/getting-started"`,'g'))].length,2,'getting started is reachable from desktop and mobile navigation');
     for (const kind of kinds) assert.equal([...header.matchAll(new RegExp(`href="/${locale}/wiki/${kind}"`,'g'))].length,2,kind+' desktop and mobile');
     for (const id of ['features','feature-lesson','feature-appearance','feature-tasks','feature-schedule','platforms']) assert.ok(html.includes(`id="${id}"`));
     assert.ok(!html.includes('href="#feature-'),'intro shortcuts must not return');
   }
 });
+test('document switcher starts collapsed and exposes every document without JavaScript', async () => {
+  for (const locale of locales) {
+    for (const kind of kinds) {
+      const html = await readRoute(`/${locale}/wiki/${kind}`);
+      const disclosure = html.match(/<details\b[^>]*data-document-navigation[^>]*>[\s\S]*?<\/details>/)?.[0];
+      assert.ok(disclosure, `${locale}/${kind}: document switcher is available in initial HTML`);
+      assert.doesNotMatch(disclosure.match(/^<details\b[^>]*>/)[0], /\sopen(?:\s|=|>)/);
+      assert.match(disclosure, /<summary\b[^>]*>[\s\S]*?\S[\s\S]*?<\/summary>/);
+      for (const destination of kinds) assert.ok(disclosure.includes(`href="/${locale}/wiki/${destination}"`));
+      const activeLinks = [...disclosure.matchAll(/<a\b[^>]*>/g)].map(match => match[0]).filter(link => link.includes('aria-current="page"'));
+      assert.equal(activeLinks.length, 1);
+      assert.ok(activeLinks[0].includes(`href="/${locale}/wiki/${kind}"`));
+    }
+  }
+});
+
 test('all document canonical URLs use the website origin',async()=>{
   for (const locale of locales) {
     const home=await readRoute('/'+locale);

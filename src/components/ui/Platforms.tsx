@@ -119,7 +119,7 @@ export function Platforms() {
                 color={item.spotlightColor.replace("0.15", "0.8")}
                 className={`rounded-lg border px-2.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${item.statusSurface}`}
               >
-                <span className={`block text-[10px] font-black uppercase tracking-[0.08em] ${item.statusColor}`}>
+                <span className={`block text-xs font-bold uppercase leading-5 tracking-[0.04em] ${item.statusColor}`}>
                   {item.statusText}
                 </span>
               </ProximityBlock>

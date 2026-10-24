@@ -141,13 +141,13 @@ export function AppShowcase() {
             <div className="mb-4 flex items-center gap-4" style={{ transform: "translateZ(20px)", transformStyle: "preserve-3d" }}>
               <ProximityBlock
                 color={`rgba(${color}, 0.8)`}
-                className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${tone} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] motion-safe:group-hover/card:-translate-y-1 motion-safe:group-hover/card:scale-110`}
+                className={`inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-site-border bg-site-surface/90 ${tone} shadow-[0_8px_18px_-10px_var(--site-surface-shadow)] backdrop-blur-xl transition-all duration-700 ease-[0.22,1,0.36,1] motion-safe:group-hover/card:-translate-y-1 motion-safe:group-hover/card:scale-110`}
               >
                 <Icon size={26} weight="duotone" aria-hidden="true" />
               </ProximityBlock>
-              <h3 className="text-xl font-bold leading-tight tracking-tight text-site-text">{t(`items.${id}.title`)}</h3>
+              <h3 className="min-w-0 text-xl font-bold leading-snug tracking-tight text-site-text">{t(`items.${id}.title`)}</h3>
             </div>
-            <p className="text-sm leading-6 text-site-muted">{t(`items.${id}.description`)}</p>
+            <p className="text-base leading-7 text-site-muted">{t(`items.${id}.description`)}</p>
             <div className="mt-auto pt-5">
               <FeaturePreview id={id} accentColor={`rgb(${color})`} />
             </div>
