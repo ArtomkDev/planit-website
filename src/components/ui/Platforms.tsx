@@ -9,6 +9,7 @@ import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
 import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 import { AndroidRobotLogo, AppleBrandLogo } from "@/components/ui/BrandIcons";
 import { AccentRule } from "@/components/ui/AccentRule";
+import accentStyles from "./LessonCardAccent.module.css";
 
 import { APP_URL, PLAY_MARKET_URL } from "@/lib/site";
 
@@ -81,7 +82,8 @@ export function Platforms() {
 
   return (
     <section id="platforms" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
-      <LessonCardAccent seed={37} gutterSide="right" className="-right-64 top-[42%]" />
+      <LessonCardAccent seed={23} direction="up" travel={24} className={`${accentStyles.betweenSections} ${accentStyles.betweenUp}`} />
+      <LessonCardAccent seed={37} direction="down" travel={24} className={`${accentStyles.betweenSections} ${accentStyles.betweenDown}`} />
       <ScrollReveal className="relative z-20 mb-12 flex max-w-3xl flex-col items-start text-left">
         <span className="mb-4 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-strong">
           <AccentRule />

@@ -82,8 +82,8 @@ const features = [
     Icon: BookOpen,
     Demo: LessonEditorDemo,
     accents: [
-      { seed: 101, depth: "foreground", placement: "lessonOrbit", side: "right" },
-      { seed: 102, depth: "background", placement: "lessonEcho", side: "left" },
+      { seed: 101, depth: "foreground", placement: "lessonOrbit", side: "left", direction: "up" },
+      { seed: 102, depth: "background", placement: "lessonEcho", side: "right", direction: "down" },
     ],
   },
   {
@@ -91,9 +91,9 @@ const features = [
     Icon: CheckSquare,
     Demo: TasksFeature,
     accents: [
-      { seed: 105, depth: "background", placement: "tasksEcho", side: "left" },
-      { seed: 106, depth: "foreground", placement: "tasksOrbit", side: "right" },
-      { seed: 107, depth: "background", placement: "tasksSatellite", side: "right" },
+      { seed: 105, depth: "background", placement: "tasksEcho", side: "left", direction: "down" },
+      { seed: 106, depth: "foreground", placement: "tasksOrbit", side: "right", direction: "up" },
+      { seed: 107, depth: "background", placement: "tasksSatellite", side: "right", direction: "down" },
     ],
   },
   {
@@ -101,8 +101,8 @@ const features = [
     Icon: SlidersHorizontal,
     Demo: ScheduleFeature,
     accents: [
-      { seed: 108, depth: "foreground", placement: "scheduleOrbit", side: "right" },
-      { seed: 109, depth: "background", placement: "scheduleEcho", side: "left" },
+      { seed: 108, depth: "foreground", placement: "scheduleOrbit", side: "left", direction: "down" },
+      { seed: 109, depth: "background", placement: "scheduleEcho", side: "right", direction: "up" },
     ],
   },
   {
@@ -110,7 +110,7 @@ const features = [
     Icon: Palette,
     Demo: AppearanceDemo,
     accents: [
-      { seed: 103, depth: "foreground", placement: "appearanceOrbit", side: "left" },
+      { seed: 103, depth: "foreground", placement: "appearanceOrbit", side: "left", direction: "up" },
     ],
   },
 ] as const;
@@ -179,11 +179,12 @@ export function FeatureShowcase() {
           className={styles.feature}
         >
           <div className={styles.lessonAccents} aria-hidden="true">
-            {accents.map(({ seed, depth, placement, side }) => (
+            {accents.map(({ seed, depth, placement, side, direction }) => (
               <LessonCardAccent
                 key={seed}
                 seed={seed}
                 depth={depth}
+                direction={direction}
                 gutterSide={side}
                 className={`${styles.accentCard} ${styles[placement]}`}
               />

@@ -38,7 +38,7 @@
     "label": "Homepage sections",
     "home": "PlanIt",
     "features": "Features",
-    "everyday": "Everyday",
+    "everyday": "Extras",
     "platforms": "Platforms",
     "start": "Get started"
   },
@@ -263,8 +263,8 @@
     }
   },
   "AppShowcase": {
-    "badge": "A little more ease",
-    "title": "What you need between classes.",
+    "badge": "Additional features",
+    "title": "More than a schedule.",
     "items": {
       "sharing": {
         "title": "Share with a code or link",

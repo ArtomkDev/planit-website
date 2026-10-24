@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import {
   motion,
+  useInView,
   useReducedMotion,
   useScroll,
   useSpring,
@@ -11,6 +12,7 @@ import {
 import { useTranslations } from "next-intl";
 import { LessonCard, LessonData } from "@/components/ui/LessonCard";
 import { cn } from "@/lib/utils/classNames";
+import styles from "./LessonCardAccent.module.css";
 
 type AccentDepth = "foreground" | "background";
 
@@ -19,6 +21,8 @@ interface LessonCardAccentProps {
   depth?: AccentDepth;
   className?: string;
   gutterSide?: "left" | "right";
+  direction?: "up" | "down";
+  travel?: number;
 }
 
 const timePresets = [
@@ -49,11 +53,16 @@ export function LessonCardAccent({
   depth = "foreground",
   className,
   gutterSide,
+  direction = "up",
+  travel = 48,
 }: LessonCardAccentProps) {
   const t = useTranslations("DecorativeCards");
   const rootRef = useRef<HTMLDivElement>(null);
   const reduceMotion = useReducedMotion();
+  const inView = useInView(rootRef, { margin: "100px" });
+  const [documentVisible, setDocumentVisible] = useState(true);
   const isBackground = depth === "background";
+  const motionSign = direction === "up" ? -1 : 1;
   const [randomSeed, setRandomSeed] = useState(seed);
   const localizedContent = useMemo(
     () => ({
@@ -76,16 +85,16 @@ export function LessonCardAccent({
     return () => window.cancelAnimationFrame(frame);
   }, [seed]);
 
+  useEffect(() => {
+    const syncVisibility = () => setDocumentVisible(!document.hidden);
+    syncVisibility();
+    document.addEventListener("visibilitychange", syncVisibility);
+    return () => document.removeEventListener("visibilitychange", syncVisibility);
+  }, []);
+
   const preset = useMemo(() => {
     const random = createSeededRandom(randomSeed);
     const subjectIndex = Math.floor(random() * localizedContent.subjects.length);
-    const isSlowerThanPage = random() > 0.5;
-    const scrollSpeed = isSlowerThanPage
-      ? 0.45 + random() * 0.35
-      : 1.2 + random() * 0.45;
-    const parallaxDelta = (1 - scrollSpeed) * 520;
-    const horizontalDirection = random() > 0.5 ? 1 : -1;
-    const parallaxXTravel = 8 + random() * 24;
 
     return {
       subjectIndex,
@@ -96,20 +105,8 @@ export function LessonCardAccent({
         random() > 0.45 ? pick(localizedContent.buildings, random) : undefined,
       teacherName: pick(localizedContent.teachers, random),
       time: pick(timePresets, random),
-      baseRotation: (random() * 10 - 5) * (isBackground ? 1.4 : 1),
-      floatDuration: 6.5 + random() * 6,
-      floatDirection: random() > 0.5 ? 1 : -1,
-      scrollSpeed,
-      parallaxY: [
-        -parallaxDelta * 0.5,
-        parallaxDelta * 0.5,
-      ] as [number, number],
-      parallaxX: [
-        -horizontalDirection * parallaxXTravel * 0.35,
-        horizontalDirection * parallaxXTravel * 0.65,
-      ] as [number, number],
     };
-  }, [isBackground, localizedContent, randomSeed]);
+  }, [localizedContent, randomSeed]);
 
   const { scrollYProgress } = useScroll({
     target: rootRef,
@@ -118,9 +115,9 @@ export function LessonCardAccent({
   const rawParallaxY = useTransform(
     scrollYProgress,
     [0, 1],
-    preset.parallaxY,
+    [-motionSign * travel, motionSign * travel],
   );
-  const rawParallaxX = useTransform(scrollYProgress, [0, 1], preset.parallaxX);
+  const rawParallaxX = useTransform(scrollYProgress, [0, 1], [-motionSign * 6, motionSign * 6]);
   const parallaxY = useSpring(rawParallaxY, {
     stiffness: 92,
     damping: 24,
@@ -149,54 +146,41 @@ export function LessonCardAccent({
   return (
     <motion.div
       ref={rootRef}
-      initial={{ opacity: 0, scale: 0.92 }}
+      initial={reduceMotion ? false : { opacity: 0, scale: 0.96 }}
       whileInView={{ opacity: isBackground ? 0.24 : 0.78, scale: 1 }}
       viewport={{ once: true, margin: "120px" }}
-      transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-      style={{
-        x: reduceMotion ? 0 : parallaxX,
-        y: reduceMotion ? 0 : parallaxY,
-      }}
+      transition={{ duration: reduceMotion ? 0 : 0.8, ease: [0.22, 1, 0.36, 1] }}
       aria-hidden="true"
+      data-lesson-accent={seed}
       data-gutter-side={gutterSide}
-      data-scroll-speed={preset.scrollSpeed.toFixed(2)}
-      data-scroll-mode={preset.scrollSpeed < 1 ? "slower" : "faster"}
+      data-drift-direction={direction}
       className={cn(
-        "absolute hidden w-64 transform-gpu",
+        styles.card,
+        "absolute w-64 transform-gpu",
         isBackground
-          ? "pointer-events-none z-0 scale-110 blur-[3px] saturate-75 xl:block"
-          : "pointer-events-auto z-10 drop-shadow-[0_24px_30px_rgba(15,23,42,.18)] 2xl:block",
+          ? "z-0 scale-110 blur-[3px] saturate-75"
+          : "z-10 drop-shadow-[0_24px_30px_rgba(15,23,42,.18)]",
         className,
       )}
     >
       <motion.div
-        style={{ transformStyle: isBackground ? "flat" : "preserve-3d" }}
-        animate={
-          reduceMotion || !isBackground
-            ? { rotate: preset.baseRotation }
-            : {
-                x: [0, 7 * preset.floatDirection, -4 * preset.floatDirection, 0],
-                y: [0, -12, 4, 0],
-                rotate: [
-                  preset.baseRotation,
-                  preset.baseRotation + 1.8,
-                  preset.baseRotation - 1.2,
-                  preset.baseRotation,
-                ],
-              }
-        }
-        transition={
-          reduceMotion || !isBackground
-            ? { duration: reduceMotion ? 0 : 0.8, ease: [0.22, 1, 0.36, 1] }
-            : { duration: preset.floatDuration, repeat: Infinity, ease: "easeInOut" }
-        }
+        style={{ x: reduceMotion ? 0 : parallaxX, y: reduceMotion ? 0 : parallaxY }}
       >
-        <LessonCard
-          lesson={lesson}
-          showIcons={!isBackground}
-          enable3D={!isBackground}
-          className="mb-0"
-        />
+        <div
+          className={styles.float}
+          style={{
+            "--accent-float": `${motionSign * (isBackground ? 10 : 8)}px`,
+            "--accent-rotation": `${motionSign * 4 * (isBackground ? 1.4 : 1)}deg`,
+            animationPlayState: inView && documentVisible && !reduceMotion ? "running" : "paused",
+          } as CSSProperties}
+        >
+          <LessonCard
+            lesson={lesson}
+            showIcons={!isBackground}
+            enable3D={!isBackground}
+            className="mb-0"
+          />
+        </div>
       </motion.div>
     </motion.div>
   );

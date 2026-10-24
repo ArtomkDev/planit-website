@@ -30,8 +30,8 @@
     "semantic_hash": "239f3ebf717465dc636818a1a619398d"
   },
   "public/content/legal/manifest.json": {
-    "mtime": 1792848863.1165261,
-    "seen": 1792848870.6386716,
+    "mtime": 1792856218.3914032,
+    "seen": 1792856230.2756038,
     "ast_hash": "6ea9fa0e79f0f77ee002774a04052c4e",
     "semantic_hash": ""
   },
@@ -228,9 +228,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/AppShowcase.tsx": {
-    "mtime": 1792846446.9497137,
-    "seen": 1792846924.9653325,
-    "ast_hash": "50b4c33233b4d9e1d3efbf4d6f616463",
+    "mtime": 1792851653.1643748,
+    "seen": 1792856036.199408,
+    "ast_hash": "b3e96b43131efed2939b93e5247f69a6",
     "semantic_hash": ""
   },
   "src/components/ui/BentoCard.tsx": {
@@ -282,15 +282,15 @@
     "semantic_hash": ""
   },
   "src/components/ui/LessonCardAccent.tsx": {
-    "mtime": 1792355859.410069,
-    "seen": 1792355909.6251843,
-    "ast_hash": "eb3a875480ad22f3c089a6604cd90bab",
+    "mtime": 1792851737.2022612,
+    "seen": 1792856036.1994257,
+    "ast_hash": "fb0853162a8ecf19e3057c8593b45acb",
     "semantic_hash": ""
   },
   "src/components/ui/Platforms.tsx": {
-    "mtime": 1792846484.9566765,
-    "seen": 1792846924.9653509,
-    "ast_hash": "917c1aef14bcc875631999d9d5c65040",
+    "mtime": 1792851653.1638627,
+    "seen": 1792856036.1994286,
+    "ast_hash": "6ff534847b91705909f05aa4084da085",
     "semantic_hash": ""
   },
   "src/components/ui/ThemeToggle.tsx": {
@@ -306,15 +306,15 @@
     "semantic_hash": ""
   },
   "src/i18n/locales/en.json": {
-    "mtime": 1792848862.076035,
-    "seen": 1792848870.6387763,
-    "ast_hash": "d1d0f9ee2bcb8c56646dd2e7d09780c3",
+    "mtime": 1792856215.0228212,
+    "seen": 1792856230.2760863,
+    "ast_hash": "d91a6d336edbf67f892b865f13874983",
     "semantic_hash": ""
   },
   "src/i18n/locales/uk.json": {
-    "mtime": 1792848862.0750642,
-    "seen": 1792848870.6387775,
-    "ast_hash": "83b29d2ae1b6aa7ca65aba8d18184803",
+    "mtime": 1792856215.0218215,
+    "seen": 1792856230.2760887,
+    "ast_hash": "fd1be72be4d418816fd1472a319b8db6",
     "semantic_hash": ""
   },
   "src/i18n/request.ts": {
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "src/components/features/FeatureShowcase.tsx": {
-    "mtime": 1792770390.281765,
-    "seen": 1792836410.4823687,
-    "ast_hash": "a9ec6f6714d1430558c4571927e649a2",
+    "mtime": 1792851653.1643748,
+    "seen": 1792856036.1993823,
+    "ast_hash": "1e25974ce22086905deb523f221ae961",
     "semantic_hash": ""
   },
   "src/components/features/LessonEditorDemo.tsx": {
@@ -540,9 +540,9 @@
     "semantic_hash": ""
   },
   "AUDIT.md": {
-    "mtime": 1792848749.1212828,
-    "seen": 1792848870.6388137,
-    "ast_hash": "0c649c7e4945b170de826f965225d03c",
+    "mtime": 1792856215.4588554,
+    "seen": 1792856230.2761629,
+    "ast_hash": "95144d42c0178650dedc6b7568971a1d",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
@@ -552,9 +552,9 @@
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1792848862.0770638,
-    "seen": 1792848870.6388154,
-    "ast_hash": "6efb8429be0f284f457ea4d2428673f4",
+    "mtime": 1792856215.0243368,
+    "seen": 1792856230.2761676,
+    "ast_hash": "770f563a2517340b281c5fee742e67c6",
     "semantic_hash": ""
   },
   "GRAPHIFY.md": {
@@ -618,8 +618,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/cookies.loading.mdx": {
-    "mtime": 1792844457.2636938,
-    "seen": 1792844685.5386083,
+    "mtime": 1792849379.3752923,
+    "seen": 1792856036.1995022,
     "ast_hash": "0f18568ed37f3061d2864d132237691f",
     "semantic_hash": ""
   },
@@ -630,8 +630,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/delete.loading.mdx": {
-    "mtime": 1792844457.264882,
-    "seen": 1792844685.5386124,
+    "mtime": 1792849379.3763454,
+    "seen": 1792856036.1995046,
     "ast_hash": "88e934b4a9fd921962272cd6f7bbf52c",
     "semantic_hash": ""
   },
@@ -642,8 +642,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/licenses.loading.mdx": {
-    "mtime": 1792844457.2662344,
-    "seen": 1792844685.5386167,
+    "mtime": 1792849379.3778753,
+    "seen": 1792856036.1995068,
     "ast_hash": "0bf91827bb28017118b072849f04ef1d",
     "semantic_hash": ""
   },
@@ -654,8 +654,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/privacy.loading.mdx": {
-    "mtime": 1792844457.2605147,
-    "seen": 1792844685.5386217,
+    "mtime": 1792849379.3710103,
+    "seen": 1792856036.1995096,
     "ast_hash": "e0804dc2f414db67c724684e6e144c5d",
     "semantic_hash": ""
   },
@@ -666,8 +666,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/terms.loading.mdx": {
-    "mtime": 1792844457.2620199,
-    "seen": 1792844685.5386262,
+    "mtime": 1792849379.3732684,
+    "seen": 1792856036.1995113,
     "ast_hash": "23ae7738523383769f9a6a9122e552b4",
     "semantic_hash": ""
   },
@@ -792,8 +792,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/uk/cookies.loading.mdx": {
-    "mtime": 1792844457.3144765,
-    "seen": 1792844685.5386305,
+    "mtime": 1792849379.4310641,
+    "seen": 1792856036.1995142,
     "ast_hash": "5d585f091eef419bf51c2a69f665c723",
     "semantic_hash": ""
   },
@@ -804,8 +804,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/uk/delete.loading.mdx": {
-    "mtime": 1792844457.3159926,
-    "seen": 1792844685.5386343,
+    "mtime": 1792849379.432077,
+    "seen": 1792856036.1995165,
     "ast_hash": "c04c949cafd6f24fa958312bfd89ed14",
     "semantic_hash": ""
   },
@@ -816,8 +816,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/uk/licenses.loading.mdx": {
-    "mtime": 1792844457.3174968,
-    "seen": 1792844685.538638,
+    "mtime": 1792849379.4335964,
+    "seen": 1792856036.199519,
     "ast_hash": "0f88a24723965fa4b499cc1e016fce51",
     "semantic_hash": ""
   },
@@ -828,8 +828,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/uk/privacy.loading.mdx": {
-    "mtime": 1792844457.3117387,
-    "seen": 1792844685.5386417,
+    "mtime": 1792849379.426605,
+    "seen": 1792856036.199521,
     "ast_hash": "a5e2a599a905a16c2eb2d96b694b97c9",
     "semantic_hash": ""
   },
@@ -840,8 +840,8 @@
     "semantic_hash": ""
   },
   "public/content/legal/uk/terms.loading.mdx": {
-    "mtime": 1792844457.3134754,
-    "seen": 1792844685.5386457,
+    "mtime": 1792849379.428862,
+    "seen": 1792856036.199523,
     "ast_hash": "f0a7a3814bca50349909d2e208cdaec3",
     "semantic_hash": ""
   },

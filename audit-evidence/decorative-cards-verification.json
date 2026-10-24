@@ -1,0 +1,130 @@
+{
+  "matrix": [
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": null,
+      "visibleGutter": 0,
+      "visiblePair": 0,
+      "width": 360
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": null,
+      "visibleGutter": 0,
+      "visiblePair": 0,
+      "width": 390
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": null,
+      "visibleGutter": 0,
+      "visiblePair": 0,
+      "width": 768
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": null,
+      "visibleGutter": 0,
+      "visiblePair": 0,
+      "width": 1023
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": 57,
+      "visibleGutter": 0,
+      "visiblePair": 2,
+      "width": 1024
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": 57,
+      "visibleGutter": 0,
+      "visiblePair": 2,
+      "width": 1440
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": 57,
+      "visibleGutter": 4,
+      "visiblePair": 2,
+      "width": 1920
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": 57,
+      "visibleGutter": 8,
+      "visiblePair": 2,
+      "width": 2560
+    },
+    {
+      "collisions": [],
+      "decorativeFocusable": 0,
+      "edgeClips": [],
+      "horizontalOverflow": 0,
+      "pairHeadingGap": 57,
+      "visibleGutter": 8,
+      "visiblePair": 2,
+      "width": 3440
+    }
+  ],
+  "motionBefore": {
+    "cards": [
+      {
+        "animation": "LessonCardAccent-module__p5vUQW__float",
+        "direction": "up",
+        "floatState": "running",
+        "id": "23",
+        "parallax": "translateX(3.86026px) translateY(15.441px)"
+      },
+      {
+        "animation": "LessonCardAccent-module__p5vUQW__float",
+        "direction": "down",
+        "floatState": "running",
+        "id": "37",
+        "parallax": "translateX(-4.06987px) translateY(-16.2795px)"
+      }
+    ],
+    "scroll": 4742
+  },
+  "motionAfter": {
+    "cards": [
+      {
+        "direction": "up",
+        "floatState": "running",
+        "id": "23",
+        "parallax": "translateX(1.42358px) translateY(5.69432px)"
+      },
+      {
+        "direction": "down",
+        "floatState": "running",
+        "id": "37",
+        "parallax": "translateX(-1.63319px) translateY(-6.53275px)"
+      }
+    ],
+    "scroll": 5021
+  }
+}

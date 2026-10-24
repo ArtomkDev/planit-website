@@ -91,7 +91,8 @@
   scroll-margin-top: 86px;
 }
 .lessonAccents {
-  --accent-width: clamp(224px, calc((100vw - 1280px) / 2 - 112px), 256px);
+  --accent-width: 256px;
+  --accent-gap: clamp(32px, calc((100vw - 1920px) * 0.08 + 32px), 96px);
   display: none;
   position: absolute;
   inset: 0;
@@ -107,41 +108,41 @@
   pointer-events: none;
 }
 .lessonOrbit {
-  top: 53%;
-  right: calc(0px - var(--accent-width) - 72px);
+  top: 26%;
+  left: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 .lessonEcho {
-  top: 78%;
+  top: 66%;
   width: calc(var(--accent-width) * 0.84);
-  left: calc(0px - var(--accent-width) - 72px);
+  right: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 .appearanceOrbit {
-  top: 36%;
+  top: 62%;
   width: max(224px, calc(var(--accent-width) * 0.94));
-  left: calc(0px - var(--accent-width) - 72px);
+  left: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 .tasksEcho {
-  top: 21%;
+  top: 24%;
   width: calc(var(--accent-width) * 0.88);
-  left: calc(0px - var(--accent-width) - 72px);
+  left: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 .tasksOrbit {
-  top: 28%;
-  right: calc(0px - var(--accent-width) - 72px);
+  top: 56%;
+  right: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 .tasksSatellite {
-  top: 81%;
+  top: 13%;
   width: calc(var(--accent-width) * 0.76);
-  right: calc(0px - var(--accent-width) - 94px);
+  right: calc(0px - var(--accent-width) - var(--accent-gap) - 40px);
 }
 .scheduleOrbit {
-  top: 68%;
+  top: 32%;
   width: max(224px, calc(var(--accent-width) * 0.92));
-  right: calc(0px - var(--accent-width) - 72px);
+  left: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 .scheduleEcho {
-  top: 16%;
-  left: calc(0px - var(--accent-width) - 72px);
+  top: 72%;
+  right: calc(0px - var(--accent-width) - var(--accent-gap));
 }
 /* Keep the entire parallax travel in the gutters, beyond the demo's pixel field. */
 @media (min-width: 1920px) {

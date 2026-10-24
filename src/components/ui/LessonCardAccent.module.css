@@ -1,0 +1,44 @@
+.card {
+  display: none;
+  pointer-events: none;
+}
+
+.float {
+  rotate: var(--accent-rotation);
+  animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, var(--accent-float), 0); }
+}
+
+/* Use the existing section padding; the cards never add an empty scroll stage. */
+@media (min-width: 1024px) {
+  .betweenSections {
+    display: block;
+  }
+
+  .betweenUp {
+    top: -32px;
+    left: 16%;
+  }
+
+  .betweenDown {
+    top: -8px;
+    right: 12%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .card {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float {
+    animation: none;
+    transform: none;
+  }
+}

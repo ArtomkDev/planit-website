@@ -11,7 +11,6 @@ import {
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { staggerContainer } from "@/lib/framer-variants";
 import { BentoCard, ProximityBlock } from "@/components/ui/BentoCard";
-import { LessonCardAccent } from "@/components/ui/LessonCardAccent";
 import { AccentRule } from "@/components/ui/AccentRule";
 import { AnimatedScheduleCode } from "@/components/ui/AnimatedScheduleCode";
 import { FeaturePreviewMotion } from "@/components/ui/FeaturePreviewMotion";
@@ -114,7 +113,6 @@ export function AppShowcase() {
 
   return (
     <section id="everyday" aria-labelledby="everyday-title" className="relative z-20 mx-auto w-full max-w-7xl px-6 py-24">
-      <LessonCardAccent seed={23} className="-left-64 top-[34%]" />
       <ScrollReveal className="relative z-20 mb-12 flex flex-col items-start text-left">
         <span className="mb-4 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-strong">
           <AccentRule />{t("badge")}
