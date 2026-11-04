@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-25T18:02:01.115Z",
+  "source": "https://rdap.verisign.com/com/v1/domain/planitflow.com",
+  "status": 200,
+  "domain": "PLANITFLOW.COM",
+  "events": [
+    {
+      "eventAction": "registration",
+      "eventDate": "2026-10-25T09:56:16Z"
+    },
+    {
+      "eventAction": "expiration",
+      "eventDate": "2027-10-25T09:56:16Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2026-10-25T09:56:29Z"
+    },
+    {
+      "eventAction": "last update of RDAP database",
+      "eventDate": "2026-10-25T18:01:43Z"
+    }
+  ],
+  "nameservers": [
+    "NS1.DYNA-NS.NET",
+    "NS2.DYNA-NS.NET"
+  ]
+}

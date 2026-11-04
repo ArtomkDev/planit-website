@@ -1,0 +1,19 @@
+{
+  "checkedOn": "2026-10-25",
+  "property": "https://planit-hub.web.app/",
+  "url": "https://planit-hub.web.app/uk",
+  "account": "artomk.dev@gmail.com",
+  "indexingRequestButtonClicks": 1,
+  "indexingRequestAccepted": false,
+  "googleMessage": "Ви перевищили денну квоту. Спробуйте завтра.",
+  "additionalMessage": "Не вдалося підключитися до сервісу reCAPTCHA.",
+  "sitemapResubmissions": 0,
+  "liveTestsTriggered": 0,
+  "publicHttp": {
+    "sitemap": 200,
+    "sitemapUrls": 15,
+    "robots": 200,
+    "ukHome": 200
+  },
+  "stoppedWithoutRetry": true
+}

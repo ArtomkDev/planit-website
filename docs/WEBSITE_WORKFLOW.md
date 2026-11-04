@@ -70,6 +70,16 @@ site.config.json містить публічні налаштування, а н
 
 При підключенні власного домену спершу забезпечте його HTTPS і прив’язку до цього Hosting site, потім змініть origin, перевірте відсутність старого override в .env* і запустіть site:update. Підтвердження нового ресурсу Google/DNS виконується один раз окремо: звичайний build не може створювати права на ще не підключений домен.
 
+За уточненим запитом користувача залишені два власні домени: https://planitflow.com для сайту та https://app.planitflow.com для застосунку. Цілі публікації називаються `website` (site `planit-hub`) і `app` (site `planit-demo`); старе ім'я цілі `legal` прибране. `www.planitflow.com` від’єднано від Hosting, його CNAME видалено. Тимчасовий preview `prelaunch-web` і застарілі preview-адреси в Authorized Domains прибрані.
+
+Реєстратор і DNS — Dynadot. Збережіть A кореня → 199.36.158.100, TXT кореня → hosting-site=planit-hub, CNAME app → planit-demo.web.app, а також окремий TXT google-site-verification для Search Console. TXT Firebase потрібен для подальшого поновлення HTTPS-сертифіката; звичайне оновлення сайту не вимагає змін DNS чи повторного підтвердження Google. Сертифікат поновлює Firebase автоматично.
+
+Firebase автоматично надає кожному Hosting-сайту адреси `web.app` і `firebaseapp.com`. Вони є службовими псевдонімами двох наявних сайтів; прибрати ці адреси або перейменувати основний site ID `planit-hub` Firebase не дозволяє. Користувач обрав зберегти Firebase із двома власними доменами. SEO metadata вказує на planitflow.com. Не додавайте безумовне перенаправлення всіх шляхів у спільний firebase.json: воно застосувалося б також до власного домену й створило цикл. `planit-hub.firebaseapp.com` також обслуговує чинний OAuth callback.
+
+У застосунку `../PlanIt` публічний сайт задається в `src/config/website.cjs`: його використовують екран «Про застосунок», поширення посилання та генератор юридичних документів. Після зміни домену запускайте там `npm.cmd run legal:sync` і `npm.cmd run legal:check`; згенерований `legalDocuments.generated.js` вручну не редагуйте. Серверна конфігурація листів має окрему межу публікації: `functions/src/accountEmailConfig.js` задає action-handler origin, а `functions/.env.<project>` може перевизначати continue URL. Зміни Functions і клієнтського застосунку потребують окремих релізів; `site:update` публікує тільки сайт.
+
+Firebase `authDomain`, `EXPO_PUBLIC_FIREBASE_AUTH_LINK_DOMAIN`, проєктні ідентифікатори, CNAME-призначення та приклади вхідних `/__/auth/` посилань не є публічним origin сайту. Їх не замінюйте механічно: вони забезпечують OAuth, нативні посилання та сумісність із уже надісланими листами. Архівні скриншоти й вимірювання зберігають фактичні адреси на дату перевірки; актуальні посилання в документації ведуть на planitflow.com.
+
 Залежності встановлюються окремим npm ci під час першого налаштування. Для Firebase потрібен один початковий вхід у налаштований акаунт: npm run firebase:login. Автоматичний реліз використовує наявний вхід і --non-interactive; без авторизації зупиниться.
 
 Додаткові режими:
@@ -80,6 +90,10 @@ npm.cmd run site:update -- --skip-build
 npm.cmd run check:live
 ```
 
-Preview також перевіряється після публікації. --skip-build призначений для повторного upload тієї самої збірки: source/export stamp має збігатися, синхронізація документів не виконується. Старі deploy:firebase та legal:publish залишаються сумісними обгортками цього самого workflow.
+Preview також перевіряється після публікації. Після upload workflow викликає verify-live з `--wait-for-release`: до двох хвилин чекає, поки Hosting почне віддавати новий `release.json`, і лише тоді звіряє сайт. Ручний `check:live` не чекає й одразу повідомляє про стару публікацію. --skip-build призначений для повторного upload тієї самої збірки: source/export stamp має збігатися, синхронізація документів не виконується. Старі deploy:firebase та legal:publish залишаються сумісними обгортками цього самого workflow.
 
 Sitemap генерується після production build. Для його локального перегляду використовуйте npm start; next dev не виконує postbuild і не має цього згенерованого файлу.
+
+## Перевірка пошукової доступності
+
+Після публікації можна виконати `npm.cmd run audit:search -- --output audit-evidence/search-audit-next.json`. Команда перевіряє DNS, HTTP, sitemap, усі його сторінки, robots у HTML/headers, canonical, мови, assets, старий privacy-вхід та службові hostname; результат зберігається як JSON. Вона не надсилає URL на індексацію. Фактичну індексацію й запити на сканування перевіряти у Search Console ресурсу https://planitflow.com/. Опис стану та докази — у [пошуковому аудиті 25.10.2026](audits/SEARCH_AUDIT_2026-10-25.md).

@@ -1,0 +1,1294 @@
+{
+  "checkedAt": "2026-10-25T18:03:02.315Z",
+  "origin": "https://planitflow.com",
+  "scope": "Public HTTP/DNS only; user-agent tests do not prove that real Googlebot has crawled. Read Search Console for index status, penalties and field performance.",
+  "dns": {
+    "a": [
+      "199.36.158.100"
+    ],
+    "aaaa": {
+      "error": "ENODATA"
+    },
+    "txt": [
+      [
+        "hosting-site=planit-hub"
+      ],
+      [
+        "google-site-verification=iXgmhK0mexgidOffocR6uAovvNA9vElvo04Vo52uKS4"
+      ]
+    ],
+    "wwwCname": [
+      "planit-hub.web.app"
+    ]
+  },
+  "release": {
+    "buildId": "310a8115dfb54c026c34ac0dd21c41aab233dc476004ed1a3dd6739a666c52ce",
+    "legalVersion": "a0e03d6383d2fd26",
+    "siteOrigin": "https://planitflow.com"
+  },
+  "robots": {
+    "url": "https://planitflow.com/robots.txt",
+    "status": 200,
+    "elapsedMs": 193,
+    "headers": {
+      "content-type": "text/plain; charset=utf-8",
+      "x-robots-tag": null,
+      "location": null,
+      "cache-control": "no-cache",
+      "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+      "content-encoding": "br"
+    },
+    "sha256": "7ea90d5f5c51e3b5e827abc48d64196b782892e8f614572d189d8b9f36200183",
+    "body": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\n\nSitemap: https://planitflow.com/sitemap.xml\n"
+  },
+  "sitemap": {
+    "url": "https://planitflow.com/sitemap.xml",
+    "status": 200,
+    "elapsedMs": 295,
+    "headers": {
+      "content-type": "application/xml",
+      "x-robots-tag": null,
+      "location": null,
+      "cache-control": "no-cache",
+      "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+      "content-encoding": "br"
+    },
+    "sha256": "37a125332aa3ddb2b0470e6b87cabc9e3e7c914e3967ec7fcb3f11b217f1ba3d",
+    "pageCount": 15
+  },
+  "pages": [
+    {
+      "url": "https://planitflow.com/en",
+      "status": 200,
+      "elapsedMs": 234,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "65ece797edb14157ecdb327d20ee2ca801dff4b90d9c29eeec909f6c0dd38d3d",
+      "path": "/en",
+      "locale": "en",
+      "title": "PlanIt — Student Timetable & Planner | PlanItflow",
+      "description": "PlanIt on planitflow.com: class schedules, tasks and study materials for students. Try it in your browser without an account or download the Android app.",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en"
+      ],
+      "alternates": {
+        "en": "https://planitflow.com/en",
+        "uk": "https://planitflow.com/uk",
+        "x-default": "https://planitflow.com"
+      },
+      "ogUrl": "https://planitflow.com/en",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 9265,
+      "visiblePlanItflow": true,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "@id": "https://planitflow.com/#application",
+          "name": "PlanIt",
+          "description": "PlanIt on planitflow.com: class schedules, tasks and study materials for students. Try it in your browser without an account or download the Android app.",
+          "url": "https://planitflow.com/en",
+          "image": "https://planitflow.com/opengraph-image",
+          "operatingSystem": "Android, Web",
+          "applicationCategory": "EducationalApplication",
+          "inLanguage": [
+            "uk",
+            "en"
+          ],
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "sameAs": "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "mainEntityOfPage": "https://planitflow.com/en",
+          "author": {
+            "@type": "Person",
+            "name": "Artomk"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://planitflow.com/#website",
+          "name": "PlanIt",
+          "alternateName": [
+            "PlanItflow",
+            "planitflow.com",
+            "PlanIt: Timetable & Planner"
+          ],
+          "url": "https://planitflow.com/",
+          "inLanguage": [
+            "uk",
+            "en"
+          ],
+          "publisher": {
+            "@type": "Person",
+            "name": "Artomk"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://planitflow.com/en/getting-started",
+      "status": 200,
+      "elapsedMs": 224,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "a45e83dbbf5fe8874444dd1ded81df054af0f58d96c3d163180f270f555f4e56",
+      "path": "/en/getting-started",
+      "locale": "en",
+      "title": "How to get started with PlanIt",
+      "description": "Create your first study schedule in PlanIt: start in your browser without an account, receive a copy by code or add classes yourself.",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en/getting-started"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/getting-started",
+        "en": "https://planitflow.com/en/getting-started"
+      },
+      "ogUrl": "https://planitflow.com/en/getting-started",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2661,
+      "visiblePlanItflow": true,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "How to get started with PlanIt",
+          "description": "Create your first study schedule in PlanIt: start in your browser without an account, receive a copy by code or add classes yourself.",
+          "url": "https://planitflow.com/en/getting-started",
+          "inLanguage": "en",
+          "dateModified": "2026-10-24",
+          "isPartOf": {
+            "@id": "https://planitflow.com/#website"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://planitflow.com/en/wiki/cookies",
+      "status": 200,
+      "elapsedMs": 95,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "6ce42b6cbcee75e06d19fd3f0b583de7bc1114d11c1970a11b6241875ee98e55",
+      "path": "/en/wiki/cookies",
+      "locale": "en",
+      "title": "Cookie & Similar Technologies Policy | PlanIt",
+      "description": "Your choices at a glance",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en/wiki/cookies"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/cookies",
+        "en": "https://planitflow.com/en/wiki/cookies"
+      },
+      "ogUrl": "https://planitflow.com/en/wiki/cookies",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 1986,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/en/wiki/delete",
+      "status": 200,
+      "elapsedMs": 184,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "6d30c70e0334558c981ed57989b04a2178b60aa91b919fa1dd5e5f290813a3e9",
+      "path": "/en/wiki/delete",
+      "locale": "en",
+      "title": "Account & Data Deletion | PlanIt",
+      "description": "Choose the path that matches your situation",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en/wiki/delete"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/delete",
+        "en": "https://planitflow.com/en/wiki/delete"
+      },
+      "ogUrl": "https://planitflow.com/en/wiki/delete",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 1973,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/en/wiki/licenses",
+      "status": 200,
+      "elapsedMs": 260,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "d37381b9d2d9527f7c39505ed82028eb1cad1e0efbcdac660cb197bef11ce203",
+      "path": "/en/wiki/licenses",
+      "locale": "en",
+      "title": "Third-Party Software Notices | PlanIt",
+      "description": "Third-party software notices at a glance",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en/wiki/licenses"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/licenses",
+        "en": "https://planitflow.com/en/wiki/licenses"
+      },
+      "ogUrl": "https://planitflow.com/en/wiki/licenses",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 1976,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/en/wiki/privacy",
+      "status": 200,
+      "elapsedMs": 242,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "9205f509c711b8809bd290ab0510c8b3f6bab4296581a915214b8f2b0bcb517b",
+      "path": "/en/wiki/privacy",
+      "locale": "en",
+      "title": "Privacy Policy | PlanIt",
+      "description": "Privacy at a glance",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en/wiki/privacy"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/privacy",
+        "en": "https://planitflow.com/en/wiki/privacy"
+      },
+      "ogUrl": "https://planitflow.com/en/wiki/privacy",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 1962,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/en/wiki/terms",
+      "status": 200,
+      "elapsedMs": 404,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "6f25f79367170fbc6132f76ad3d32cbe76971b6ad86ca3e38d42750b6523c304",
+      "path": "/en/wiki/terms",
+      "locale": "en",
+      "title": "Terms & Conditions | PlanIt",
+      "description": "Important summary",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/en/wiki/terms"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/terms",
+        "en": "https://planitflow.com/en/wiki/terms"
+      },
+      "ogUrl": "https://planitflow.com/en/wiki/terms",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 1970,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/",
+      "status": 200,
+      "elapsedMs": 185,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "9bd54a91db93c1d264f5aec18dba9fa0b7fa0c5ae25af62ada1b2f1711cad790",
+      "path": "/",
+      "locale": "uk",
+      "title": "PlanItflow — офіційний сайт PlanIt, навчального планера",
+      "description": "PlanItflow (planitflow.com) — офіційний сайт PlanIt. Розклад занять, завдання й матеріали для студентів та школярів у браузері та на Android.",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk",
+        "en": "https://planitflow.com/en",
+        "x-default": "https://planitflow.com"
+      },
+      "ogUrl": "https://planitflow.com",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 231,
+      "visiblePlanItflow": true,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://planitflow.com/#website",
+          "name": "PlanIt",
+          "alternateName": [
+            "PlanItflow",
+            "planitflow.com",
+            "PlanIt: Timetable & Planner"
+          ],
+          "url": "https://planitflow.com/",
+          "inLanguage": [
+            "uk",
+            "en"
+          ],
+          "publisher": {
+            "@type": "Person",
+            "name": "Artomk"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://planitflow.com/uk",
+      "status": 200,
+      "elapsedMs": 192,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "dde19cee08f5b487be48545ac8941ea652b8faee2d5cebdccc3fa14bde62a306",
+      "path": "/uk",
+      "locale": "uk",
+      "title": "PlanIt — розклад занять і завдання | PlanItflow",
+      "description": "PlanIt на planitflow.com: розклад занять, завдання й матеріали для студентів та школярів. Спробуйте у браузері без акаунта або завантажте для Android.",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk"
+      ],
+      "alternates": {
+        "en": "https://planitflow.com/en",
+        "uk": "https://planitflow.com/uk",
+        "x-default": "https://planitflow.com"
+      },
+      "ogUrl": "https://planitflow.com/uk",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 9350,
+      "visiblePlanItflow": true,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "@id": "https://planitflow.com/#application",
+          "name": "PlanIt",
+          "description": "PlanIt на planitflow.com: розклад занять, завдання й матеріали для студентів та школярів. Спробуйте у браузері без акаунта або завантажте для Android.",
+          "url": "https://planitflow.com/uk",
+          "image": "https://planitflow.com/opengraph-image",
+          "operatingSystem": "Android, Web",
+          "applicationCategory": "EducationalApplication",
+          "inLanguage": [
+            "uk",
+            "en"
+          ],
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "sameAs": "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "mainEntityOfPage": "https://planitflow.com/uk",
+          "author": {
+            "@type": "Person",
+            "name": "Artomk"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": 0,
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://planitflow.com/#website",
+          "name": "PlanIt",
+          "alternateName": [
+            "PlanItflow",
+            "planitflow.com",
+            "PlanIt: Timetable & Planner"
+          ],
+          "url": "https://planitflow.com/",
+          "inLanguage": [
+            "uk",
+            "en"
+          ],
+          "publisher": {
+            "@type": "Person",
+            "name": "Artomk"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://planitflow.com/uk/getting-started",
+      "status": 200,
+      "elapsedMs": 98,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "a74396f9984eebf456747773434669d9bf8bfda6cacd0e5248503fd9f711c97e",
+      "path": "/uk/getting-started",
+      "locale": "uk",
+      "title": "Як почати користуватися PlanIt",
+      "description": "Створіть перший навчальний розклад у PlanIt: почніть у браузері без акаунта, отримайте копію за кодом або додайте заняття самостійно.",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk/getting-started"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/getting-started",
+        "en": "https://planitflow.com/en/getting-started"
+      },
+      "ogUrl": "https://planitflow.com/uk/getting-started",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2676,
+      "visiblePlanItflow": true,
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Як почати користуватися PlanIt",
+          "description": "Створіть перший навчальний розклад у PlanIt: почніть у браузері без акаунта, отримайте копію за кодом або додайте заняття самостійно.",
+          "url": "https://planitflow.com/uk/getting-started",
+          "inLanguage": "uk",
+          "dateModified": "2026-10-24",
+          "isPartOf": {
+            "@id": "https://planitflow.com/#website"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://planitflow.com/uk/wiki/cookies",
+      "status": 200,
+      "elapsedMs": 274,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "6c563ad7c45103b748ab24fe8f3f8f6a176c45b45159f1401ceee810c83c0f5e",
+      "path": "/uk/wiki/cookies",
+      "locale": "uk",
+      "title": "Політика щодо cookies та подібних технологій | PlanIt",
+      "description": "Ваш вибір коротко",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk/wiki/cookies"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/cookies",
+        "en": "https://planitflow.com/en/wiki/cookies"
+      },
+      "ogUrl": "https://planitflow.com/uk/wiki/cookies",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2115,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/uk/wiki/delete",
+      "status": 200,
+      "elapsedMs": 103,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "d85ef2e8f6bf5e2f77e24fb3ea348617ad515dc6804d3ce19c22ddeba670d987",
+      "path": "/uk/wiki/delete",
+      "locale": "uk",
+      "title": "Видалення облікового запису й даних | PlanIt",
+      "description": "Виберіть спосіб, що відповідає вашій ситуації",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk/wiki/delete"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/delete",
+        "en": "https://planitflow.com/en/wiki/delete"
+      },
+      "ogUrl": "https://planitflow.com/uk/wiki/delete",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2106,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/uk/wiki/licenses",
+      "status": 200,
+      "elapsedMs": 206,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "0bfb6d02dab9c90e356cda47cb62634b88557470b0e212780347a8b4d3e881a1",
+      "path": "/uk/wiki/licenses",
+      "locale": "uk",
+      "title": "Повідомлення про стороннє програмне забезпечення | PlanIt",
+      "description": "Повідомлення про стороннє програмне забезпечення коротко",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk/wiki/licenses"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/licenses",
+        "en": "https://planitflow.com/en/wiki/licenses"
+      },
+      "ogUrl": "https://planitflow.com/uk/wiki/licenses",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2120,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/uk/wiki/privacy",
+      "status": 200,
+      "elapsedMs": 235,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "e3338ee32976706d98f2d8b0c5d650b4ca1e0a3116f622935868119dd9b3d5df",
+      "path": "/uk/wiki/privacy",
+      "locale": "uk",
+      "title": "Політика конфіденційності | PlanIt",
+      "description": "Конфіденційність коротко",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk/wiki/privacy"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/privacy",
+        "en": "https://planitflow.com/en/wiki/privacy"
+      },
+      "ogUrl": "https://planitflow.com/uk/wiki/privacy",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2097,
+      "visiblePlanItflow": true,
+      "schemas": []
+    },
+    {
+      "url": "https://planitflow.com/uk/wiki/terms",
+      "status": 200,
+      "elapsedMs": 220,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "b3571d12f95dd680068d458803f7c515b57b3a84179d82329a96380ffa918439",
+      "path": "/uk/wiki/terms",
+      "locale": "uk",
+      "title": "Умови користування | PlanIt",
+      "description": "Важливе коротко",
+      "noindex": false,
+      "canonicals": [
+        "https://planitflow.com/uk/wiki/terms"
+      ],
+      "alternates": {
+        "uk": "https://planitflow.com/uk/wiki/terms",
+        "en": "https://planitflow.com/en/wiki/terms"
+      },
+      "ogUrl": "https://planitflow.com/uk/wiki/terms",
+      "image": "https://planitflow.com/opengraph-image",
+      "h1Count": 1,
+      "visibleTextCharacters": 2090,
+      "visiblePlanItflow": true,
+      "schemas": []
+    }
+  ],
+  "bots": [
+    {
+      "agent": "Googlebot",
+      "url": "https://planitflow.com/",
+      "status": 200,
+      "elapsedMs": 99,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "9bd54a91db93c1d264f5aec18dba9fa0b7fa0c5ae25af62ada1b2f1711cad790",
+      "matchesStandardResponse": true
+    },
+    {
+      "agent": "Googlebot",
+      "url": "https://planitflow.com/uk",
+      "status": 200,
+      "elapsedMs": 196,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "dde19cee08f5b487be48545ac8941ea652b8faee2d5cebdccc3fa14bde62a306",
+      "matchesStandardResponse": true
+    },
+    {
+      "agent": "Googlebot",
+      "url": "https://planitflow.com/en",
+      "status": 200,
+      "elapsedMs": 227,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "65ece797edb14157ecdb327d20ee2ca801dff4b90d9c29eeec909f6c0dd38d3d",
+      "matchesStandardResponse": true
+    },
+    {
+      "agent": "Bingbot",
+      "url": "https://planitflow.com/",
+      "status": 200,
+      "elapsedMs": 86,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "9bd54a91db93c1d264f5aec18dba9fa0b7fa0c5ae25af62ada1b2f1711cad790",
+      "matchesStandardResponse": true
+    },
+    {
+      "agent": "Bingbot",
+      "url": "https://planitflow.com/uk",
+      "status": 200,
+      "elapsedMs": 199,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "dde19cee08f5b487be48545ac8941ea652b8faee2d5cebdccc3fa14bde62a306",
+      "matchesStandardResponse": true
+    },
+    {
+      "agent": "Bingbot",
+      "url": "https://planitflow.com/en",
+      "status": 200,
+      "elapsedMs": 99,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "65ece797edb14157ecdb327d20ee2ca801dff4b90d9c29eeec909f6c0dd38d3d",
+      "matchesStandardResponse": true
+    }
+  ],
+  "redirects": [
+    {
+      "url": "http://planitflow.com/uk?source=seo-audit",
+      "status": 301,
+      "elapsedMs": 71,
+      "headers": {
+        "content-type": null,
+        "x-robots-tag": null,
+        "location": "https://planitflow.com/uk?source=seo-audit",
+        "cache-control": null,
+        "last-modified": null,
+        "content-encoding": null
+      },
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "url": "https://www.planitflow.com/uk?source=seo-audit",
+      "status": 301,
+      "elapsedMs": 151,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "location": "https://planitflow.com/uk?source=seo-audit",
+        "cache-control": null,
+        "last-modified": null,
+        "content-encoding": null
+      },
+      "sha256": "6da8c6ea6ed089c0f55758b162b6f6fd3eb54e5eb2bdf74ec0536995fdc67f7b"
+    }
+  ],
+  "missingPage": {
+    "url": "https://planitflow.com/__planit_search_audit_missing",
+    "status": 404,
+    "elapsedMs": 133,
+    "headers": {
+      "content-type": "text/html; charset=utf-8",
+      "x-robots-tag": null,
+      "location": null,
+      "cache-control": "no-cache",
+      "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+      "content-encoding": "gzip"
+    },
+    "sha256": "1edcc4491b1fc2715ac0f5e7678d1343532ce33f73bfaffe7f2559e1922230b3"
+  },
+  "assets": [
+    {
+      "url": "https://planitflow.com/_next/static/chunks/1-zowhbz5t0yk.js",
+      "status": 200,
+      "elapsedMs": 102,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "c3d98de2294d3fb0f52fdba6b4796fcce81b0b47216831860679eb191ea32125"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/2nykiepra7i1k.js",
+      "status": 200,
+      "elapsedMs": 137,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "d3648d33d9b06994e5a2fb25db41dee5725f00e8b618c2edcf3dfd7344d66e02"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/15qlryzbz13ew.js",
+      "status": 200,
+      "elapsedMs": 101,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "93de2ee2b2ec33855b83c26efb8038a090273fb1f6d943eab11987f242427ca8"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/turbopack-0iixsnkmkkny0.js",
+      "status": 200,
+      "elapsedMs": 109,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "63890770208c44fe9d1a1925dae1250b7768d53c564ff3c8b965069ac13bfcda"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/05-c3ty_6dwfk.js",
+      "status": 200,
+      "elapsedMs": 93,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "aee2d073d2a1157cfe5c98907f90b3967de4c3625f9ffb154bd1979ae2b917b0"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/3ktcp9vvabri2.js",
+      "status": 200,
+      "elapsedMs": 117,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "0ddebb04846f8764ad6c4795a9447a3e97d5b61fee8e99b9288bcd75a5e8ccf1"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/0p1_3kxgn0329.js",
+      "status": 200,
+      "elapsedMs": 102,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "8c589f02db8e1dfe822c1cb151989c92003a6833130773d41c69206f5bc006f9"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/2fktokp03c4-3.js",
+      "status": 200,
+      "elapsedMs": 95,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "a65b76e9a35accbdfd209536f731f0edb3d4a88a628e8999825f9d05d814512c"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/079llesbihtuj.js",
+      "status": 200,
+      "elapsedMs": 100,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "bfde18bb0fa54bb6754bc0826e01f706ee38a8bd5aac7f0bf51654ae25dc5c1c"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/3jylwahrdg0gl.js",
+      "status": 200,
+      "elapsedMs": 140,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "1a7679cb8fbc6158403e5a0abe5cdb96cc64cf9c239b9a3f4b1c982b985d33b1"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/44f1z5fhlp6ry.js",
+      "status": 200,
+      "elapsedMs": 268,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "61884b944e9f332389f39e6238174475a66a0280eb00360985c928221c0cdf7b"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/11qlmjxt8pus4.js",
+      "status": 200,
+      "elapsedMs": 160,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "b4153ac38fff72e1d81135f74fd5bc43b0c365cd0cdfbff66c218f9d76772968"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/1wqma9nav0_sh.js",
+      "status": 200,
+      "elapsedMs": 154,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "b945a875e4f76b68fe72e10ddf62878f7945f4e926047ff1e92771c7fce6a911"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "status": 200,
+      "elapsedMs": 150,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/261y1hxfsqgcm.js",
+      "status": 200,
+      "elapsedMs": 110,
+      "headers": {
+        "content-type": "text/javascript; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "78481291d08db2ddc5058ea39c1063272547442c30783b054432be52ddf413ee"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/2fuexzgwd-w8q.css",
+      "status": 200,
+      "elapsedMs": 93,
+      "headers": {
+        "content-type": "text/css; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "b3c6c5abb5eb88642036c406070337bea8e83616cbeb12a0752406319d52022b"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/0yfiumu88hv6q.css",
+      "status": 200,
+      "elapsedMs": 89,
+      "headers": {
+        "content-type": "text/css; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "792383f6912587b90fe1ce107b0c8b937163c2ce64fe3735a68c26767fdbc787"
+    },
+    {
+      "url": "https://planitflow.com/_next/static/chunks/0npkz5janze1y.css",
+      "status": 200,
+      "elapsedMs": 122,
+      "headers": {
+        "content-type": "text/css; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=31536000,immutable",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "3dd26ffede91e43b1da8b7b8368a9ef9be578231d724eeac307940380bfe2b0b"
+    },
+    {
+      "url": "https://planitflow.com/robots.txt",
+      "status": 200,
+      "elapsedMs": 193,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "7ea90d5f5c51e3b5e827abc48d64196b782892e8f614572d189d8b9f36200183"
+    },
+    {
+      "url": "https://planitflow.com/opengraph-image",
+      "status": 200,
+      "elapsedMs": 106,
+      "headers": {
+        "content-type": "image/png",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=300,must-revalidate",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "b21b304fed546b80459c75165372d8abc5d6d68fda50208f94d4a57acae7806b"
+    },
+    {
+      "url": "https://planitflow.com/twitter-image",
+      "status": 200,
+      "elapsedMs": 255,
+      "headers": {
+        "content-type": "image/png",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "public,max-age=300,must-revalidate",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "b21b304fed546b80459c75165372d8abc5d6d68fda50208f94d4a57acae7806b"
+    }
+  ],
+  "proofs": [
+    {
+      "requestedUrl": "https://planitflow.com/google1bc7d5ee2596486b.html",
+      "redirect": {
+        "url": "https://planitflow.com/google1bc7d5ee2596486b.html",
+        "status": 301,
+        "elapsedMs": 83,
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "x-robots-tag": null,
+          "location": "/google1bc7d5ee2596486b",
+          "cache-control": null,
+          "last-modified": null,
+          "content-encoding": null
+        },
+        "sha256": "8effd07088a4eedace0884c9f0cf2ccdb8deb2a79be0eeb7ee9977e9d4e473a9"
+      },
+      "url": "https://planitflow.com/google1bc7d5ee2596486b",
+      "status": 200,
+      "elapsedMs": 276,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "max-age=3600",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "343a70e1fc023047f6fe3ac543210e0ffa7432d5f9290067af6264b7f1b39460"
+    }
+  ],
+  "legacyHosts": [
+    {
+      "url": "https://planit-hub.web.app/uk",
+      "status": 200,
+      "elapsedMs": 273,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "dde19cee08f5b487be48545ac8941ea652b8faee2d5cebdccc3fa14bde62a306",
+      "canonicals": [
+        "https://planitflow.com/uk"
+      ]
+    },
+    {
+      "url": "https://planit-hub.firebaseapp.com/uk",
+      "status": 200,
+      "elapsedMs": 162,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "dde19cee08f5b487be48545ac8941ea652b8faee2d5cebdccc3fa14bde62a306",
+      "canonicals": [
+        "https://planitflow.com/uk"
+      ]
+    }
+  ],
+  "playPrivacyEntry": [
+    {
+      "url": "https://planit-hub.web.app/privacy.html",
+      "status": 301,
+      "elapsedMs": 78,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "location": "/en/wiki/privacy",
+        "cache-control": "no-cache",
+        "last-modified": null,
+        "content-encoding": null
+      },
+      "sha256": "431ccc3d7c7e3c551190d65e06f1c4c10664eb2a20698adb95d9d98e4ea8b849"
+    },
+    {
+      "url": "https://planit-hub.web.app/en/wiki/privacy",
+      "status": 200,
+      "elapsedMs": 151,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "location": null,
+        "cache-control": "no-cache",
+        "last-modified": "Sun, 25 Oct 2026 18:02:24 GMT",
+        "content-encoding": "br"
+      },
+      "sha256": "9205f509c711b8809bd290ab0510c8b3f6bab4296581a915214b8f2b0bcb517b",
+      "seo": {
+        "path": "/en/wiki/privacy",
+        "locale": "en",
+        "title": "Privacy Policy | PlanIt",
+        "description": "Privacy at a glance",
+        "noindex": false,
+        "canonicals": [
+          "https://planitflow.com/en/wiki/privacy"
+        ],
+        "alternates": {
+          "uk": "https://planitflow.com/uk/wiki/privacy",
+          "en": "https://planitflow.com/en/wiki/privacy"
+        },
+        "ogUrl": "https://planitflow.com/en/wiki/privacy",
+        "image": "https://planitflow.com/opengraph-image",
+        "h1Count": 1,
+        "destinations": [
+          "#main-content",
+          "/en",
+          "/en/getting-started",
+          "https://planit-demo.web.app",
+          "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "/en/wiki/terms",
+          "/en/wiki/privacy",
+          "/en/wiki/cookies",
+          "/en/wiki/licenses",
+          "/en/wiki/delete",
+          "mailto:planit.app.support@gmail.com",
+          "https://planit-demo.web.app",
+          "/uk/wiki/privacy",
+          "/en/getting-started",
+          "https://planit-demo.web.app",
+          "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "/en/wiki/terms",
+          "/en/wiki/privacy",
+          "/en/wiki/cookies",
+          "/en/wiki/licenses",
+          "/en/wiki/delete",
+          "mailto:planit.app.support@gmail.com",
+          "#legal-main-content",
+          "/en/wiki/privacy",
+          "/en/wiki/cookies",
+          "/en/wiki/terms",
+          "/en/wiki/licenses",
+          "/en/wiki/delete",
+          "/en/wiki/privacy",
+          "/en/wiki/cookies",
+          "/en/wiki/terms",
+          "/en/wiki/licenses",
+          "/en/wiki/delete",
+          "mailto:planit.app.support@gmail.com",
+          "/en",
+          "https://play.google.com/store/apps/details?id=com.artomk.planit",
+          "/en",
+          "/en#features",
+          "/en#platforms",
+          "/en/getting-started",
+          "/en/wiki/privacy",
+          "/en/wiki/terms",
+          "/en/wiki/delete",
+          "/en/wiki/cookies",
+          "/en/wiki/licenses",
+          "https://play.google.com/store/apps/details?id=com.artomk.planit"
+        ]
+      },
+      "javascriptRedirect": false
+    }
+  ],
+  "rootLocaleRedirect": true,
+  "failures": [],
+  "observations": [
+    "planit-hub.web.app serves a duplicate with a canonical to https://planitflow.com; it does not redirect by hostname.",
+    "planit-hub.firebaseapp.com serves a duplicate with a canonical to https://planitflow.com; it does not redirect by hostname."
+  ]
+}

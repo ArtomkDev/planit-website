@@ -4,7 +4,10 @@ import { fileURLToPath } from 'node:url';
 import { readSiteConfig, sha256, inspectHtml } from './lib/site-seo.mjs';
 
 const config = await readSiteConfig(fileURLToPath(new URL('../',import.meta.url)));
-const origin = new URL(process.argv[2] || config.origin).origin;
+const args = process.argv.slice(2);
+const origin = new URL(args.find(arg => !arg.startsWith('--')) || config.origin).origin;
+// Right after a deploy, Hosting can serve the previous release for a short while.
+const releaseWaitMs = args.includes('--wait-for-release') ? 120_000 : 0;
 const expectedRelease = JSON.parse(await readFile(new URL('../out/release.json', import.meta.url), 'utf8'));
 const responseCache = new Map();
 
@@ -15,14 +18,28 @@ async function get(path) {
   return response.clone();
 }
 
+async function publishedRelease() {
+  const deadline = Date.now() + releaseWaitMs;
+  for (let waiting = false; ; waiting = true) {
+    const response = await fetch(origin + '/release.json', { cache: 'no-store', signal: AbortSignal.timeout(20_000) });
+    if (!response.ok) throw new Error(`/release.json: HTTP ${response.status}`);
+    const release = await response.json();
+    if (release.buildId === expectedRelease.buildId || Date.now() >= deadline) return release;
+    if (!waiting) console.log(`Waiting for ${origin} to serve release ${expectedRelease.buildId.slice(0, 12)}...`);
+    await new Promise(resolve => setTimeout(resolve, 5_000));
+  }
+}
+
 try {
-  const release = await (await get('/release.json')).json();
+  const release = await publishedRelease();
   if (release.buildId !== expectedRelease.buildId) throw new Error('Published release differs from the verified local build.');
   const expectedSeo = await readFile(new URL('../out/seo-manifest.json',import.meta.url),'utf8');
   if(sha256(await (await get('/seo-manifest.json')).text()) !== sha256(expectedSeo)) throw new Error('Published SEO inventory differs from this build.');
   const seo = JSON.parse(expectedSeo);
   for(const page of seo.pages) {
-    const rendered=inspectHtml(await (await get(page.path)).text(),page.path);
+    const response = await get(page.path);
+    if (/\b(noindex|none)\b/i.test(response.headers.get('x-robots-tag') || '')) throw new Error(`Published page blocks indexing in X-Robots-Tag: ${page.path}.`);
+    const rendered=inspectHtml(await response.text(),page.path);
     if(rendered.noindex || rendered.h1Count!==1 || rendered.title!==page.title || rendered.description!==page.description || rendered.canonicals.length!==1 || new URL(rendered.canonicals[0]).href!==new URL(page.canonical).href || JSON.stringify(rendered.alternates)!==JSON.stringify(page.alternates)) throw new Error(`Published page metadata differs from the build: ${page.path}.`);
   }
   for(const proof of config.verificationFiles) {
@@ -31,14 +48,18 @@ try {
   }
   for(const redirect of seo.redirects) {
     const response=await fetch(origin+redirect.source,{redirect:'manual',cache:'no-store',signal:AbortSignal.timeout(20_000)});
-    if(response.status!==redirect.type || new URL(response.headers.get('location')||'/',origin).pathname!==redirect.destination) throw new Error(`Published redirect is incorrect: ${redirect.source}.`);
+    if(response.status!==redirect.type || new URL(response.headers.get('location')||'/',origin).href!==new URL(redirect.destination,origin).href) throw new Error(`Published redirect is incorrect: ${redirect.source}.`);
+  }
+  for (const path of ['/app', '/app/']) {
+    const response = await fetch(origin + path + '?source=website&lang=uk', {redirect:'manual', signal:AbortSignal.timeout(20_000)});
+    if (response.status !== 301 || response.headers.get('location') !== 'https://app.planitflow.com/?source=website&lang=uk') throw new Error(`Application redirect loses its destination or query: ${path}.`);
   }
   const missing=await fetch(origin+`/__planit_missing_${release.buildId.slice(0,12)}`,{redirect:'manual',signal:AbortSignal.timeout(20_000)});
   if(missing.status!==404) throw new Error('The website must return HTTP 404 for missing pages.');
   const root = await (await get('/')).text();
   if (/name="robots" content="[^"]*noindex/.test(root)) throw new Error('The website root blocks indexing.');
   const identity = [...root.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(match => JSON.parse(match[1])).find(value => value['@type'] === 'WebSite');
-  if (identity?.name !== 'PlanIt' || identity.url !== `${expectedRelease.siteOrigin}/`) throw new Error('Missing or incorrect root website identity.');
+  if (identity?.name !== 'PlanIt' || identity.url !== `${expectedRelease.siteOrigin}/` || !identity.alternateName?.includes('PlanItflow')) throw new Error('Missing or incorrect root website identity or PlanItflow alternate name.');
   const robots = await (await get('/robots.txt')).text();
   if (!robots.includes(`Sitemap: ${expectedRelease.siteOrigin}/sitemap.xml`)) throw new Error('robots.txt points at a different sitemap.');
   const sitemap = await (await get('/sitemap.xml')).text();
@@ -49,10 +70,11 @@ try {
   if (manifest.version !== expectedRelease.legalVersion) throw new Error('Published legal manifest differs from this release.');
   for (const [locale, localized] of Object.entries(manifest.locales)) {
     const html = await (await get(`/${locale}`)).text();
+    if (!html.includes('href="https://app.planitflow.com"') || html.includes('href="https://planit-demo.web.app')) throw new Error(`Application buttons use the wrong destination: /${locale}.`);
     if (!html.includes(`rel="canonical" href="${expectedRelease.siteOrigin}/${locale}"`)) throw new Error(`Wrong canonical on /${locale}.`);
     if (/name="robots" content="[^"]*noindex/.test(html)) throw new Error(`Homepage blocks indexing: /${locale}.`);
     if (!html.includes('id="faq"') || !html.includes('id="feature-lesson"')) throw new Error(`Homepage content is stale: /${locale}.`);
-    if (!html.includes(`property="og:image" content="${expectedRelease.siteOrigin}/opengraph-image"`)) throw new Error(`Missing social image on /${locale}.`);
+    if (!html.includes(`property="og:image" content="${expectedRelease.siteOrigin}/${locale}/opengraph-image"`)) throw new Error(`Missing social image on /${locale}.`);
     for (const [kind, entry] of Object.entries(localized.documents)) {
       for (const [pathKey, hashKey] of [['path', 'sha256'], ['loadingPath', 'loadingSha256']]) {
         const bytes = Buffer.from(await (await get(`${entry[pathKey]}?v=${entry[hashKey]}`)).arrayBuffer());
@@ -63,7 +85,7 @@ try {
       if (!document.includes(`<h1 lang="${locale}"`)) throw new Error(`Wrong document language: ${locale}/${kind}.`);
     }
   }
-  for (const image of ['opengraph-image', 'twitter-image']) {
+  for (const image of ['opengraph-image', ...Object.keys(manifest.locales).map(locale => `${locale}/opengraph-image`)]) {
     const response = await get('/' + image);
     if (!response.headers.get('content-type')?.startsWith('image/png')) throw new Error(`${image}: incorrect Content-Type.`);
     const bytes = Buffer.from(await response.arrayBuffer());

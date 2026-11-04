@@ -108,6 +108,9 @@ test('HTML parsing ignores serialized scripts and handles attribute case and ent
   assert.equal(page.h1Count,1);
   assert.equal(page.title,'PlanIt & study');
   assert.equal(page.alternates.en,'https://example.test/en');
+  for (const agent of ['robots','googlebot','bingbot']) {
+    assert.equal(inspectHtml(pageHtml('/uk').replace('</head>',`<meta name="${agent}" content="none"/></head>`),'/uk').noindex,true);
+  }
 });
 
 test('page command creates a draft and refuses duplicate or conflicting routes without changing content',async t=>{

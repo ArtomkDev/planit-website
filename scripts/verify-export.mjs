@@ -80,7 +80,7 @@ export async function verifyExport({ root = projectRoot, recordBuild = false } =
     if (siteOrigin && siteOrigin !== url.origin) throw new Error('Homepage origins disagree.');
     siteOrigin = url.origin;
   }
-  for (const image of ['opengraph-image', 'twitter-image']) {
+  for (const image of ['opengraph-image', ...locales.map(locale => `${locale}/opengraph-image`)]) {
     const bytes = await readFile(path.join(directory, image));
     if (bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a') throw new Error(`${image} is not a PNG.`);
   }

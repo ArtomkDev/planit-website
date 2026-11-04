@@ -1,0 +1,241 @@
+- heading "Результати пошуку" [level=1]
+- 'heading "Відображення результатів для запиту: PlanEt flow Натомість шукати PlanItflow" [level=2]':
+  - text: "Відображення результатів для запиту:"
+  - button "PlanEt flow":
+    - generic: PlanEt flow
+  - text: Натомість шукати
+  - button "PlanItflow"
+- heading "Огляд від ШІ" [level=2]:
+  - strong: Огляд від ШІ
+- strong: PlanEt flow
+- text: (або
+- emphasis: Planet Flow
+- text: )
+- mark: може відноситися до кількох різних понять залежно від контексту
+- text: ":"
+- list:
+  - strong: FLOW (анімаційний фільм, 2024)
+  - text: — відомий анімаційний фільм режисера Гінтса Зілбалодіса (Gints Zilbalodis) про тварин на планеті після зникнення людей.
+  - strong: FLOW Planet
+  - text: — ініціатива (
+  - emphasis: Future of Living for One World
+  - text: ), яка фокусується на кліматі, спільнотах та сталому розвитку міст.
+  - strong: Planet Flow (EP)
+  - text: — музичний реліз (наприклад, міні-альбом виконавця Gyro або треки Єремії Чіу).
+  - strong: Planet Flow (Berlin)
+  - text: — арт-простір, бістро, бар та галерея в Берліні.
+  - link:
+    - /url: https://music.apple.com/us/album/planet-flow-ep/1886633635?l=ru
+  - button:
+    - generic: Apple Music
+    - generic: "+5"
+- generic: Який саме з цих варіантів вас цікавить? Напишіть деталі, і я надам більше інформації.
+- list:
+  - link "Альбом «Planet Flow - EP» — Gyro - Apple Music":
+    - /url: https://music.apple.com/us/album/planet-flow-ep/1886633635?l=ru
+  - generic: Apple Music
+  - button "Про цей результат":
+  - generic: Альбом «Planet Flow - EP» — Gyro - Apple Music
+  - generic: Planet Flow - EP ; 1. Whoo · 2:33 ; 2. ToHikoU · 1:58 ; 3. Honto (feat. Dr.ilda) · 2:36 ; 4. Ghost Rule · 2:32 ; 5. Closet · 2:40.
+  - link "Planet Flow (@planet_flow) · Berlin - Instagram":
+    - /url: https://www.instagram.com/planet_flow/
+  - generic: Instagram
+  - button "Про цей результат":
+  - generic: Planet Flow (@planet_flow) · Berlin - Instagram
+  - generic: 533 followers · 62 posts · Bistro, Bar, Galerie & Biergarten / artist residency / music production studios /
+- button:
+  - generic: Показати всі
+- text: Відповіді ШІ можуть містити помилки.
+- link:
+  - /url: https://support.google.com/websearch?p=ai_overviews
+  - text: Докладніше
+- status
+- button:
+- button:
+- button:
+- button:
+- button:
+- button "Кнопка \"Показати більше\" під оглядом від ШІ":
+  - generic: Показати більше
+- main:
+  - heading "Результаты поиска" [level=2]
+  - link "Альбом «Planet Flow - EP» — Gyro Apple Music https://music.apple.com › p...":
+    - /url: https://music.apple.com/us/album/planet-flow-ep/1886633635?l=ru
+    - heading "Альбом «Planet Flow - EP» — Gyro" [level=3]
+    - generic: Apple Music
+    - generic: https://music.apple.com › p...
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://music.apple.com/us/album/planet-flow-ep/1886633635?l=ru
+  - button "Про цей результат":
+  - emphasis: Planet Flow - EP
+  - text: ; 1. Whoo · 2:33 ; 2. ToHikoU · 1:58 ; 3. Honto (feat. Dr.ilda) · 2:36 ; 4. Ghost Rule · 2:32 ; 5. Closet · 2:40.
+  - 'link "Planet Flow (@planet_flow) · Berlin Instagram Підписників: понад 530"':
+    - /url: https://www.instagram.com/planet_flow/
+    - heading "Planet Flow (@planet_flow) · Berlin" [level=3]
+    - generic: Instagram
+    - generic: "Підписників: понад 530"
+  - button "Про цей результат":
+  - text: 533 followers · 62 posts ·
+  - emphasis: Bistro, Bar, Galerie & Biergarten
+  - text: / artist residency / music production studios /
+  - 'link "Media Fan - Planet Flow YouTube · MP3Nice Переглядів: понад 50 · 3 роки тому"':
+    - /url: https://www.youtube.com/watch?v=jOhDlct07q4
+    - heading "Media Fan - Planet Flow" [level=3]
+    - generic: YouTube · MP3Nice
+    - generic: "Переглядів: понад 50 · 3 роки тому"
+  - button "Про цей результат":
+  - 'button "\"Media Fan - Planet Flow\", автор – MP3Nice, опубліковано на платформі: \"YouTube\". Відтворити в Google. 6:08"':
+    - generic: 6:08
+  - generic: Mayan Calendar Time Machine — The AI Daykeeper https://gum.co/u/rmy3kahz . @TenderMayUSA . MP3Nice is a major music partnership company with ...
+  - link "Planet Flow - música y letra de Jeremiah Chiu Spotify https://open.spotify.com › intl-es › track":
+    - /url: https://open.spotify.com/intl-es/track/5ola1wtVBEwKChEdNLrBos
+    - heading "Planet Flow - música y letra de Jeremiah Chiu" [level=3]
+    - generic: Spotify
+    - generic: https://open.spotify.com › intl-es › track
+  - button "Про цей результат":
+  - text: Escucha
+  - emphasis: Planet Flow
+  - text: en Spotify. Jeremiah Chiu · Canción · 2015 ... Planet Flow. Jeremiah Chiu. 1:44 · Son of the Light. Jeremiah Chiu. 4:44 · Floater.
+  - heading "Зображення" [level=2]
+  - link "Solar System Symbols | Astronomy Symbols | Astronomy and ... Conceptdraw.com":
+    - /url: https://www.conceptdraw.com/examples/flow-diagram-on-planet-and-stars
+  - button "Solar System Symbols | Astronomy Symbols | Astronomy and ...":
+    - img "Solar System Symbols | Astronomy Symbols | Astronomy and ..."
+  - generic: Solar System Symbols | Astronomy Symbols | Astronomy and ...
+  - generic: Conceptdraw.com
+  - button "Про цей результат":
+  - link "Flow Music | Floating Planet - Bandcamp":
+    - /url: https://floatingplanet.bandcamp.com/album/flow
+  - button "Flow":
+    - img "Flow"
+  - generic: Flow
+  - generic: Music | Floating Planet - Bandcamp
+  - button "Про цей результат":
+  - link "Watch air pollution flow across the planet in real time ... Science":
+    - /url: https://www.science.org/content/article/watch-air-pollution-flow-across-planet-real-time
+  - button "Watch air pollution flow across the planet in real time ...":
+    - img "Watch air pollution flow across the planet in real time ..."
+  - generic: Watch air pollution flow across the planet in real time ...
+  - generic: Science
+  - button "Про цей результат":
+  - button "Показати інші зображення":
+    - separator
+    - generic: Показати інші зображення
+  - heading "Web results" [level=2]
+  - 'link "Flow Electric: Homepage | Electric Mobility | British Brand rideflow.co https://rideflow.co"':
+    - /url: https://rideflow.co/
+    - 'heading "Flow Electric: Homepage | Electric Mobility | British Brand" [level=3]'
+    - generic: rideflow.co
+    - generic: https://rideflow.co
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://rideflow.co/
+  - button "Про цей результат":
+  - emphasis: Flow Electric
+  - text: . A British brand committed to providing exceptional electric bikes and scooters; changing the way we move.
+  - link "SONY PlayStation Community - flOw [NPUG-80086] PSX Planet https://psxplanet.ru › forum":
+    - /url: https://psxplanet.ru/forum/showthread.php?p=235119
+    - heading "SONY PlayStation Community - flOw [NPUG-80086]" [level=3]
+    - generic: PSX Planet
+    - generic: https://psxplanet.ru › forum
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://psxplanet.ru/forum/showthread.php?p=235119
+  - button "Про цей результат":
+  - generic: 23 лип. 2018 р. —
+  - emphasis: PSP-версия flOw будет продаваться исключительно посредством PlayStation Store
+  - text: . Проект перенесет геймеров в эволюционирующую подводную среду.
+  - link "Flow planet walk splash 2003 MP3 скачать бесплатно ... Музофонд https://muzofond.fm › music":
+    - /url: https://muzofond.fm/music/flow%20planet%20walk%20splash%202003
+    - heading "Flow planet walk splash 2003 MP3 скачать бесплатно ..." [level=3]
+    - generic: Музофонд
+    - generic: https://muzofond.fm › music
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://muzofond.fm/music/flow%20planet%20walk%20splash%202003
+  - button "Про цей результат":
+  - text: Скачай
+  - emphasis: flow planet
+  - text: walk splash 2003. ...
+  - emphasis: Flow Flow Flow
+  - text: . 02:00. Gandalf
+  - emphasis: Flow
+  - text: Water
+  - emphasis: Flow
+  - text: . 06:06. Neo
+  - emphasis: Flow
+  - text: (
+  - emphasis: Flow
+  - text: 2008). 03:06.
+  - link "FLOW – Future of Living for One World flowplanet.world https://flowplanet.world":
+    - /url: https://flowplanet.world/
+    - heading "FLOW – Future of Living for One World" [level=3]
+    - generic: flowplanet.world
+    - generic: https://flowplanet.world
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://flowplanet.world/
+  - button "Про цей результат":
+  - emphasis: FLOW centers cities in rapidly urbanising regions
+  - text: as places to test better ways to live, work and grow. Its four-part lens is Climate, Community, Circularity ...
+  - heading "Люди також шукають" [level=2]
+  - link "Flow bike app":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Flow+bike+app&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAgxEAE
+    - generic: Flow bike app
+  - link "Flow Electric Scooter":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Flow+Electric+Scooter&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAhAEAE
+    - generic: Flow Electric Scooter
+  - link "Dani Flow":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Dani+Flow&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAg-EAE
+    - generic: Dani Flow
+  - link "Flow district 5 electric bike":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Flow+district+5+electric+bike&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAg_EAE
+    - generic: Flow district 5 electric bike
+  - link "E-Bike Flow App":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=E-Bike+Flow+App&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAg5EAE
+    - generic: E-Bike Flow App
+  - link "Flow camden":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Flow+camden&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAg4EAE
+    - generic: Flow camden
+  - link "Street9 BMX":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Street9+BMX&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAg3EAE
+    - generic: Street9 BMX
+  - link "Flow BMX":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&q=Flow+BMX&sa=X&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q1QJ6BAg2EAE
+    - generic: Flow BMX
+  - navigation:
+    - heading "Навігація сторінкою" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=10&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=20&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=30&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=40&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=50&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=60&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=70&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=80&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=90&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8tMDegQILBAU
+      - text: "10"
+    - heading "Уперед" [level=2]:
+      - link "Уперед":
+        - /url: /search?q=PlanEt+flow&sca_esv=a5e9361146d2feed&hl=uk&sxsrf=APpeQnv-I5hSTmEVJxY9G2Qr1K19dD4Q0A:1792951629766&ei=TUXeasmKLpepwPAPoNWc8AY&start=10&sa=N&sstk=AS6-VmJq2adVMOTQvXX84lo6fAXTK1XI6h6D2qvGTMxCCkb95pBgW7JD0yJq3KoB5r2vYKwK3b-6qcjA-6we36KdTAOYGIfkvNVtwg&ved=2ahUKEwiJ5fan4dWXAxWXFBAIHaAqB24Q8NMDegQILBAW
+        - generic: Уперед
+  - navigation

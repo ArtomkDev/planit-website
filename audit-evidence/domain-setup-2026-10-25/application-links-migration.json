@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25T13:49:10.782Z",
+  "deployed": [
+    {
+      "name": "sendAddPasswordEmail",
+      "state": "ACTIVE",
+      "updated": "2026-10-25T13:46:04.521633095Z",
+      "continueUrl": "https://planitflow.com/"
+    },
+    {
+      "name": "sendPasswordResetEmail",
+      "state": "ACTIVE",
+      "updated": "2026-10-25T13:46:04.267577397Z",
+      "continueUrl": "https://planitflow.com/"
+    },
+    {
+      "name": "sendAccountVerificationEmail",
+      "state": "ACTIVE",
+      "updated": "2026-10-25T13:46:02.231140220Z",
+      "continueUrl": "https://planitflow.com/"
+    },
+    {
+      "name": "sendEmailChangeEmail",
+      "state": "ACTIVE",
+      "updated": "2026-10-25T13:46:04.588613207Z",
+      "continueUrl": "https://planitflow.com/"
+    }
+  ],
+  "customDomainAuthorized": true,
+  "systemEmailCallback": "https://planit-hub.firebaseapp.com/__/auth/action",
+  "systemEmailUpdateError": "EMAIL_TEMPLATE_UPDATE_NOT_ALLOWED",
+  "tests": {
+    "app": 134,
+    "functions": 28,
+    "websiteNavigation": 11,
+    "legalCheck": "passed",
+    "legalUrlsVerified": 10
+  },
+  "deploymentNote": "All four functions deployed successfully. CLI exited afterward because no Artifact Registry cleanup policy was configured; deployment was not repeated."
+}

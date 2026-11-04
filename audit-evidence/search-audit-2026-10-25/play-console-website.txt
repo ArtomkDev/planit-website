@@ -1,0 +1,97 @@
+- progressbar
+- generic: Завантаження Google Play Console
+- banner:
+  - link "Логотип Google Play Console":
+    - /url: /console/u/1/developers/8952348440856108334/home
+    - button "Логотип Google Play Console"
+  - button "Сповіщення Відкрити центр сповіщень":
+    - img: notifications
+    - generic: Сповіщення
+  - button "Перейти в інший обліковий запис розробника":
+    - img: more_vert
+  - 'button "Обліковий запис Google: Артем Коваль (artomk.dev@gmail.com)"':
+- navigation:
+  - list:
+    - listitem "Головна":
+      - button "Головна":
+        - img: home
+    - listitem "Керування обліковим записом":
+      - button "Керування обліковим записом":
+        - img: badge
+    - 'listitem "PlanIt: Timetable & Planner"':
+      - 'button "PlanIt: Timetable & Planner"':
+        - img: play_prism
+    - listitem "Інформаційна панель":
+      - button "Інформаційна панель":
+        - img: dashboard
+    - listitem "Статистика":
+      - button "Статистика":
+        - img: bar_chart
+    - listitem "Огляд публікації":
+      - button "Огляд публікації":
+        - img: overview
+    - listitem "Захищено за допомогою Google Play":
+      - button "Захищено за допомогою Google Play":
+        - img: shield
+    - listitem "Тестування й випуск":
+      - button "Тестування й випуск":
+        - img: rocket_launch
+    - listitem "Моніторинг і оптимізація":
+      - button "Моніторинг і оптимізація":
+        - img: vital_signs
+    - listitem "Збільшення кількості користувачів":
+      - button "Збільшення кількості користувачів":
+        - img: finance_mode
+    - listitem "Монетизація в Google Play":
+      - button "Монетизація в Google Play":
+        - img: sell
+- heading "Налаштування магазину" [level=1]
+- generic: Укажіть, як користувачі можуть знайти ваш додаток у Google Play і як вони можуть зв'язатися з вами.
+- heading "Категорія додатка" [level=2]
+- button "Редагувати":
+  - generic: Редагувати
+- generic: Виберіть тип і категорію додатка, а також теги, що найкраще описують його контент або призначення. Це допомагає користувачам знаходити додатки в Google Play.
+- group "Додаток чи гра":
+  - generic: Додаток чи гра
+  - generic: Додаток
+- group "Категорія":
+  - generic: Категорія
+  - generic: Освіта
+- group "Теги":
+  - generic: Теги
+  - generic: Записники, Календар, Освіта, Продуктивність, Самовдосконалення
+  - button "Керувати тегами":
+    - generic: Керувати тегами
+- heading "Контактна інформація сторінки додатка" [level=2]
+- button "Редагувати":
+  - generic: Редагувати
+- generic: Цю інформацію бачитимуть користувачі в Google Play
+- group "Електронна адреса":
+  - generic: Електронна адреса
+  - generic: planit.app.support@gmail.com
+- group "Номер телефону":
+  - generic: Номер телефону
+  - generic: "+380662356902"
+- group "Веб-сайт":
+  - generic: Веб-сайт
+  - generic: https://planitflow.com
+- heading "Зовнішній маркетинг" [level=2]
+- generic: Вимкніть зовнішній маркетинг, якщо не хочете рекламувати свій додаток за межами Google Play
+- group "Зовнішній маркетинг":
+  - generic: Зовнішній маркетинг
+  - checkbox "Рекламувати мій додаток за межами Google Play Зміни застосовуються впродовж 60 днів" [checked]
+  - text: Рекламувати мій додаток за межами Google Play
+  - paragraph: Зміни застосовуються впродовж 60 днів
+- link "Оновлення продукту":
+  - /url: https://play.google.com/console/about/whats-new/
+- link "Панель моніторингу":
+  - /url: https://status.play.google.com/
+- link "Довідка":
+  - /url: /console/u/1/developers/8952348440856108334/help-and-support?app=4976446111127587552
+- generic: © 2026 Google
+- link "Конфіденційність":
+  - /url: https://www.google.com/policies/privacy/
+- link "Договір розробника про розповсюдження":
+  - /url: https://play.google.com/about/developer-distribution-agreement.html
+- link "Умови використання":
+  - /url: https://play.google.com/about/console/terms-of-service/

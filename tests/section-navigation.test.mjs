@@ -18,12 +18,12 @@ const poseAt = motion => glyphs.map(glyph => getSectionNavLetter(glyph, motion, 
 const close = (a, b, message = '') => assert.ok(Math.abs(a - b) < 1e-7, message + ': ' + a + ' / ' + b);
 
 test('repeated navigation replaces the fragment without losing locale or query', () => {
-  let url = 'https://planit.app/en?source=demo&preview=1#top';
+  let url = 'https://planitflow.com/en?source=demo&preview=1#top';
   for (const id of ['features', 'everyday', 'platforms', 'get-started', 'top']) {
     url = getSectionNavUrl(url, id);
-    assert.equal(url, 'https://planit.app/en?source=demo&preview=1#' + id);
+    assert.equal(url, 'https://planitflow.com/en?source=demo&preview=1#' + id);
   }
-  assert.equal(getSectionNavUrl('https://planit.app/uk#top#features', 'everyday'), 'https://planit.app/uk#everyday');
+  assert.equal(getSectionNavUrl('https://planitflow.com/uk#top#features', 'everyday'), 'https://planitflow.com/uk#everyday');
 });
 
 test('waiting and completed words use exact horizontal slots and different type sizes', () => {

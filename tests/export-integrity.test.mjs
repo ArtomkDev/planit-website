@@ -13,7 +13,7 @@ async function fixture(t) {
     assert.ok(path.basename(root).startsWith('planit-export-'));
     await rm(root, { recursive: true, force: true });
   });
-  for (const folder of ['src','scripts','public/content/legal/uk','out/content/legal/uk']) await mkdir(path.join(root,folder),{recursive:true});
+  for (const folder of ['src','scripts','public/content/legal/uk','out/content/legal/uk','out/uk','out/en']) await mkdir(path.join(root,folder),{recursive:true});
   const manifest={version:'fixture',locales:{}};
   for (const locale of ['uk','en']) {
     const documents={};
@@ -31,7 +31,7 @@ async function fixture(t) {
     await writeFile(path.join(root,`out/${locale}.html`),`<link rel="canonical" href="https://example.test/${locale}">`);
   }
   for (const folder of ['public','out']) await writeFile(path.join(root,folder,'content/legal/manifest.json'),JSON.stringify(manifest));
-  for (const image of ['opengraph-image','twitter-image']) await writeFile(path.join(root,'out',image),Buffer.from('89504e470d0a1a0a','hex'));
+  for (const image of ['opengraph-image','uk/opengraph-image','en/opengraph-image']) await writeFile(path.join(root,'out',image),Buffer.from('89504e470d0a1a0a','hex'));
   await writeFile(path.join(root,'src/page.tsx'),'original source');
   return root;
 }

@@ -1,0 +1,48 @@
+{
+  "checkedDate": "2026-10-25",
+  "currency": "USD",
+  "purchaseMade": false,
+  "porkbun": {
+    "source": "https://porkbun.com/checkout/search",
+    "feesIncluded": true,
+    "quotes": [
+      {
+        "domain": "planit.study",
+        "available": true,
+        "premium": false,
+        "registration": 1.54,
+        "renewal": 31.41
+      },
+      {
+        "domain": "planit.page",
+        "available": true,
+        "premium": true,
+        "registration": 32.18,
+        "renewal": 32.18
+      },
+      {
+        "domain": "planit.school",
+        "available": true,
+        "premium": false,
+        "registration": 5.66,
+        "renewal": 34.5
+      },
+      {
+        "domain": "planit.life",
+        "available": false
+      }
+    ]
+  },
+  "spaceship": {
+    "source": "https://www.spaceship.com/domain-search/",
+    "domain": "planit.study",
+    "available": true,
+    "premium": false,
+    "registrationBase": 1.04,
+    "renewalBase": 31.08,
+    "icannFeePerYear": 0.2,
+    "registrationWithIcann": 1.24,
+    "renewalWithIcann": 31.28
+  },
+  "note": "Public search quotes, not a reservation. Taxes or bank conversion may apply; renewal rates can change."
+}

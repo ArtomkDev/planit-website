@@ -88,7 +88,7 @@ async function resolveFile(urlPath) {
 
 function sendFile(response, filePath, statusCode, method) {
   const extension = path.extname(filePath);
-  const imageRoutes = new Set(["icon", "apple-icon", "opengraph-image", "twitter-image"]);
+  const imageRoutes = new Set(["icon", "apple-icon", "opengraph-image"]);
   const contentType = imageRoutes.has(path.basename(filePath))
     ? "image/png"
     : mimeTypes.get(extension) || "application/octet-stream";

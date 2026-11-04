@@ -9,7 +9,7 @@ export function createPageMetadata({ locale, path = "", title, description }: { 
     title: { absolute: fullTitle },
     description,
     alternates: { canonical: url, languages: { uk: `${SITE_URL}/uk${path}`, en: `${SITE_URL}/en${path}`, ...(!path ? { "x-default": `${SITE_URL}/` } : {}) } },
-    openGraph: { title: fullTitle, description, url, siteName: "PlanIt", locale: locale === "uk" ? "uk_UA" : "en_US", alternateLocale: locale === "uk" ? "en_US" : "uk_UA", type: "website", images: [{ url: `${SITE_URL}/opengraph-image`, width: 1200, height: 630, alt: title }] },
-    twitter: { card: "summary_large_image", title: fullTitle, description, images: [`${SITE_URL}/twitter-image`] },
+    openGraph: { title: fullTitle, description, url, siteName: "PlanIt", locale: locale === "uk" ? "uk_UA" : "en_US", alternateLocale: locale === "uk" ? "en_US" : "uk_UA", type: "website", images: [{ url: `${SITE_URL}/${locale}/opengraph-image`, width: 1200, height: 630, alt: title }] },
+    twitter: { card: "summary_large_image", title: fullTitle, description, images: [`${SITE_URL}/${locale}/opengraph-image`] },
   };
 }

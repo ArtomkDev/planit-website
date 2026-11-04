@@ -35,7 +35,7 @@ Open `http://localhost:4173/uk`. `npm start` and `npm run preview:export` use th
 
 ## Firebase Hosting
 
-Firebase deploys the static Next.js export from `out` to the existing `planit-hub` Hosting site through the `legal` target.
+Firebase deploys the static Next.js export from `out` to the existing `planit-hub` Hosting site through the `website` target. The application is deployed separately through `hosting:app` from the PlanIt repository.
 
 ## Runtime Legal Documents
 
@@ -73,7 +73,7 @@ Run from any PowerShell directory to synchronize, build, and publish this websit
 npm.cmd --prefix "D:\GitHub\ArtomkDev\planit-website" run legal:publish -- -LegalSourceRoot "D:\GitHub\ArtomkDev\PlanIt"
 ```
 
-This deploys the existing `legal` Hosting target (`planit-hub`); it includes the built website so the updated reader is published with the documents. Use this website command for localized publication: the current app-side `legal:publish` copies only English assets.
+This deploys the `website` Hosting target (`planit-hub`); it includes the built website and both document languages. The app-side `legal:publish` delegates to this same website workflow.
 
 To prepare and verify the same output without uploading:
 
@@ -120,7 +120,7 @@ npm run deploy:firebase:skip-build
 
 ## Website identity and verified releases
 
-The default website origin is configured in site.config.json as https://planit-hub.web.app. NEXT_PUBLIC_BASE_URL can override it with a working HTTPS origin when a custom domain is connected; the build and CLI checks load the same environment. APP_URL remains a separate destination for the main application.
+The production website origin is configured in site.config.json as https://planitflow.com. NEXT_PUBLIC_BASE_URL can override it with a working HTTPS origin; the build and CLI checks load the same environment. APP_URL points to https://app.planitflow.com. These are the only two connected custom domains; www and temporary previews were removed. Firebase retains its automatically provisioned service domains. Domain and DNS maintenance are documented in docs/WEBSITE_WORKFLOW.md.
 
 The root and both localized homepages publish one WebSite identity for PlanIt. The root is indexable, retains its pre-paint locale redirect and provides linked fallback content. The build discovers all indexable pages and generates their sitemap, including the root as the homepage x-default. Account action URLs remain noindex. GOOGLE_SITE_VERIFICATION can optionally supply an HTML verification tag at build time; the public Google verification file must also be preserved when file verification is used.
 
@@ -136,9 +136,9 @@ Production deployment also verifies the published release for a single configure
 
 ~~~powershell
 npm.cmd run check:export
-npm.cmd run check:live -- https://planit-hub.web.app
+npm.cmd run check:live -- https://planitflow.com
 ~~~
 
-check:live compares the published release with the current local export, then checks the root identity/indexability, robots sitemap reference, both languages, legal hashes, canonical URLs and PNG response types. It does not deploy. If the public website still serves an older release, the command fails explicitly.
+check:live compares the published release with the current local export, then checks the root identity/indexability, robots sitemap reference, both languages, legal hashes, canonical URLs and PNG response types. It does not deploy. If the public website still serves an older release, the command fails explicitly. The deploy workflow passes --wait-for-release, which allows Hosting up to two minutes to start serving the new release before that failure.
 
 The website records only consented CTA, demo and FAQ events. It does not track schedule creation in the separate application or send demo input values. See AUDIT.md and docs/audits/SITE_FIXES_2026-10-24.md for verification, the published release and the pending Google processing/quota limitations.

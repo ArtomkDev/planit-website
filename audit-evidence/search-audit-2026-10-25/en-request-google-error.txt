@@ -1,0 +1,153 @@
+- banner:
+  - button:
+  - link:
+    - /url: ./search-console?resource_id=https%3A%2F%2Fplanitflow.com%2F
+  - search:
+    - textbox [disabled]: Перевіряйте будь-яку URL-адресу на ресурсі https://planitflow.com/
+    - combobox
+    - button:
+  - button:
+    - generic: help_outline
+  - tooltip: Довідка
+  - button:
+    - generic: manage_accounts
+  - tooltip: Налаштування користувача
+  - button:
+    - generic: notifications
+  - tooltip: Повідомлення
+  - button:
+  - button:
+- dialog:
+  - navigation:
+    - button:
+      - combobox: https://planitflow.com/
+      - generic: 
+    - link:
+      - /url: ./search-console?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: home
+      - generic: Огляд
+    - link:
+      - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: lightbulb_2
+      - generic: Статистика
+    - link:
+      - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: trending_up
+      - generic: Ефективність
+    - button:
+      - generic: search
+      - generic: Перевірка URL-адреси
+    - generic: Індексування
+    - button [expanded]:
+      - generic: keyboard_arrow_up
+    - link:
+      - /url: ./search-console/index?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: file_copy
+      - generic: Сторінки
+    - link:
+      - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: account_tree
+      - generic: Файли Sitemap
+    - link:
+      - /url: ./search-console/removals?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: visibility_off
+      - generic: Видалення
+    - generic: Якість
+    - button [expanded]:
+      - generic: keyboard_arrow_up
+    - link:
+      - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: speed
+      - generic: Основні веб-показники
+    - generic: Безпека й заходи, ужиті вручну
+    - button:
+      - generic: keyboard_arrow_down
+    - link:
+      - /url: ./search-console/links?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: link_2
+      - generic: Посилання
+    - link:
+      - /url: ./search-console/achievements?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: trophy
+      - generic: Досягнення
+    - link:
+      - /url: ./search-console/settings?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: settings
+      - generic: Налаштування
+    - button:
+      - generic: feedback
+      - generic: Надіслати відгук
+    - button:
+      - generic: info
+      - generic: Про Search Console
+    - link:
+      - /url: https://myaccount.google.com/privacypolicy?hl=uk
+      - text: Конфіденційність
+    - link:
+      - /url: https://myaccount.google.com/termsofservice?hl=uk
+      - text: Умови
+- generic: https://planitflow.com/en
+- navigation:
+  - heading [level=1]: Перевірка URL-адреси
+- button:
+  - generic: Перевірити опубліковану URL-адресу
+- main:
+  - generic: info
+  - generic: URL-адреси немає в Google
+  - text: Цю сторінку не проіндексовано, тому вона не може з’являтися в результатах пошуку Google. Нижче описано, чому сторінку не проіндексовано.
+  - link:
+    - /url: https://support.google.com/webmasters/answer/9012289#url_not_on_google
+    - text: Докладніше
+  - button [disabled]:
+    - generic: Переглянути проскановану сторінку
+  - generic: Сторінка змінилася?
+  - button:
+    - generic: Надіслати запит на індексування
+  - button [expanded]:
+    - generic: info
+    - generic: Індексування сторінок
+    - generic: "Сторінку не проіндексовано: Невідома Google URL-адреса"
+    - generic: 
+  - generic: Виявлення
+  - generic: Файли Sitemap
+  - generic: Не знайдено відповідних карт сайту
+  - generic: Сторінки, що посилаються
+  - generic: Нічого не виявлено
+  - generic: Ми можемо дізнатися про URL-адресу з інших джерел, які зараз не відображаються
+  - generic: Сканування
+  - generic: Останнє сканування
+  - generic: недоступн.
+  - generic: Проскановано як
+  - generic: недоступн.
+  - generic: Сканування дозволено?
+  - generic: недоступн.
+  - generic: Завантаження сторінки
+  - generic: недоступн.
+  - generic: Індексування дозволено?
+  - generic: info
+  - generic: недоступн.
+  - generic: Індексування
+  - generic: Канонічна URL-адреса, яку заявив користувач
+  - generic: недоступн.
+  - generic: Канонічна URL-адреса, вибрана Google
+  - button:
+    - generic: 
+  - generic: недоступн.
+  - link:
+    - /url: https://support.google.com/webmasters/answer/9012289#url_unknown
+    - generic: Докладніше
+  - generic: Покращення й оптимізація
+  - generic: Лише індексовані URL-адреси можуть мати покращення
+- generic: 
+- generic: Перевірка URL-адреси
+- generic: Дізнавайтеся, як індекс Google бачить вашу сторінку. Вирішуйте проблеми, якщо сторінка не відображається або неправильно відображається в результатах Пошуку Google.
+- generic: Докладніше
+- generic: OK
+- alertdialog "Сталася помилка":
+  - heading "Сталася помилка" [level=2]:
+    - generic: error_outline
+    - generic: Сталася помилка
+  - generic: Не вдалося надіслати запит на індексування. Спробуйте пізніше.
+  - button "Закрити" [active]:
+    - generic: Закрити
+- generic: Не вдалося підключитися до сервісу reCAPTCHA. Перевірте інтернет-з’єднання й оновіть сторінку.

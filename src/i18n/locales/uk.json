@@ -25,7 +25,7 @@
     "supportDescription": "Допомога електронною поштою.",
     "openApp": "Відкрити вебверсію",
     "playStore": "Google Play",
-    "playStoreDescription": "Застосунок для Android.",
+    "playStoreDescription": "Застосунок для Android™.",
     "language": "EN",
     "theme": "Перемкнути тему",
     "openMenu": "Відкрити меню",
@@ -336,7 +336,7 @@
         "status": "У розробці"
       },
       "android": {
-        "title": "Android",
+        "title": "Android™",
         "description": "Доступний у Google Play. Почніть без акаунта, додайте віджет і ввімкніть нагадування про заняття.",
         "button": "Google Play",
         "status": "Підтримується"
@@ -357,11 +357,11 @@
   "Footer": {
     "product": "Продукт",
     "legal": "Документи",
-    "rights": "Усі права захищено.",
     "status": "Доступно в Google Play",
-    "androidAttribution": "Android robot відтворено або змінено з роботи Google та використано за ліцензією Creative Commons 3.0 Attribution.",
+    "androidTrademarks": "Android і Google Play є торговельними марками Google LLC.",
+    "androidAttribution": "<source>Зображення робота Android</source> відтворено або змінено на основі роботи, створеної та оприлюдненої Google, і використано відповідно до умов ліцензії <license>Creative Commons Attribution 3.0</license>.",
     "cookieSettings": "Налаштування cookie",
-    "description": "Заняття, завдання й матеріали. Усе під рукою."
+    "description": "PlanItflow — офіційний сайт PlanIt. Розклад занять, завдання й матеріали. Усе під рукою."
   },
   "Privacy": {
     "title": "Політика конфіденційності",
@@ -575,8 +575,8 @@
   },
   "SEO": {
     "home": {
-      "title": "PlanIt — розклад і завдання для студентів та школярів",
-      "description": "Заняття, завдання й матеріали в одному місці. Спробуйте PlanIt у браузері без акаунта або завантажте застосунок для Android.",
+      "title": "PlanIt — розклад занять і завдання | PlanItflow",
+      "description": "PlanIt на planitflow.com: розклад занять, завдання й матеріали для студентів та школярів. Спробуйте у браузері без акаунта або завантажте для Android.",
       "imageAlt": "PlanIt: навчальний розклад, завдання й матеріали для Android та вебверсії"
     },
     "privacy": {
@@ -599,7 +599,6 @@
   "FAQ": {
     "badge": "Відповіді перед початком",
     "title": "Що варто знати про PlanIt.",
-    "author": "PlanIt створює Artomk — незалежний розробник з України.",
     "support": "Залишилися запитання? Напишіть нам",
     "privacyLink": "Політика конфіденційності",
     "items": {

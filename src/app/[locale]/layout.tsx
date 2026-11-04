@@ -51,8 +51,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     applicationName: "PlanIt",
     verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
     alternates: { canonical: url, languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk`, "x-default": `${baseUrl}/` } },
-    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale: locale === "uk" ? "uk_UA" : "en_US", alternateLocale: locale === "uk" ? "en_US" : "uk_UA", type: "website", images: [{ url: `${SITE_URL}/opengraph-image`, width: 1200, height: 630, alt: t("imageAlt") }] },
-    twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`${SITE_URL}/twitter-image`] },
+    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale: locale === "uk" ? "uk_UA" : "en_US", alternateLocale: locale === "uk" ? "en_US" : "uk_UA", type: "website", images: [{ url: `${SITE_URL}/${locale}/opengraph-image`, width: 1200, height: 630, alt: t("imageAlt") }] },
+    twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`${SITE_URL}/${locale}/opengraph-image`] },
   };
 }
 

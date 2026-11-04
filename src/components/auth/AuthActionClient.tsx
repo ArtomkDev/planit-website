@@ -33,11 +33,11 @@ import {
   WarningCircle,
 } from "@phosphor-icons/react";
 import { auth } from "@/lib/firebase";
+import { APP_URL, SITE_URL } from "@/lib/site";
 import styles from "./AuthAction.module.css";
 
-const DEFAULT_APP_URL = "https://planit-demo.web.app";
-const CONFIGURED_APP_URL = process.env.NEXT_PUBLIC_APP_URL || DEFAULT_APP_URL;
 const FIXED_SAFE_ORIGINS = new Set([
+  new URL(APP_URL).origin,
   "https://planit-hub.firebaseapp.com",
   "https://planit-demo.web.app",
 ]);
@@ -151,17 +151,6 @@ function getFirebaseErrorInfo(error: unknown): ErrorInfo {
   }
 }
 
-function getConfiguredAppUrl(): string {
-  try {
-    const url = new URL(CONFIGURED_APP_URL);
-    return url.protocol === "https:" || url.protocol === "http:"
-      ? url.toString()
-      : DEFAULT_APP_URL;
-  } catch {
-    return DEFAULT_APP_URL;
-  }
-}
-
 function isDevelopmentLocalhost(url: URL): boolean {
   if (process.env.NODE_ENV !== "development") {
     return false;
@@ -175,7 +164,7 @@ function isDevelopmentLocalhost(url: URL): boolean {
 }
 
 function resolveSafeContinueUrl(value: string | null): string {
-  const fallback = getConfiguredAppUrl();
+  const fallback = APP_URL;
 
   if (!value) {
     return fallback;
@@ -183,6 +172,11 @@ function resolveSafeContinueUrl(value: string | null): string {
 
   try {
     const url = new URL(value);
+    if (url.username || url.password) return fallback;
+    // Published email Functions still issue the website root as their continuation.
+    if (url.origin === SITE_URL && url.pathname === "/") {
+      return new URL(url.search + url.hash, APP_URL + "/").toString();
+    }
     const currentOrigin =
       typeof window === "undefined" ? null : window.location.origin;
     const isHttp = url.protocol === "https:" || url.protocol === "http:";

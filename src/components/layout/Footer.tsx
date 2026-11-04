@@ -150,9 +150,21 @@ export const Footer = ({ contentLinks = [] }: { contentLinks?: { href: string; t
         {/* Нижня панель */}
         <div className="flex w-full flex-col items-center justify-between gap-6 pt-2 text-sm font-medium text-site-soft md:flex-row">
           <div className="max-w-xl text-center md:text-left">
-            <p>© {currentYear} PlanIt. {tFooter("rights")}</p>
+            <p>© {currentYear} Artomk · PlanIt</p>
             <p className="mt-2 text-sm leading-6 text-site-soft">
-              {tFooter("androidAttribution")}
+              {tFooter("androidTrademarks")}{" "}
+              {tFooter.rich("androidAttribution", {
+                source: (chunks) => (
+                  <a href="https://developer.android.com/distribute/marketing-tools/brand-guidelines" className="underline underline-offset-4 hover:text-site-text">
+                    {chunks}
+                  </a>
+                ),
+                license: (chunks) => (
+                  <a href="https://creativecommons.org/licenses/by/3.0/" className="underline underline-offset-4 hover:text-site-text">
+                    {chunks}
+                  </a>
+                ),
+              })}
             </p>
           </div>
           <a

@@ -24,7 +24,7 @@ export function inspectHtml(raw, route) {
     locale: tags(html, 'html')[0]?.lang,
     title: decode(html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] || ''),
     description: meta.find(item => item.name === 'description')?.content || '',
-    noindex: meta.some(item => ['robots','googlebot'].includes(item.name?.toLowerCase()) && /\bnoindex\b/i.test(item.content)),
+    noindex: meta.some(item => ['robots','googlebot','bingbot'].includes(item.name?.toLowerCase()) && /\b(noindex|none)\b/i.test(item.content)),
     canonicals: links.filter(item => item.rel === 'canonical').map(item => item.href),
     alternates: Object.fromEntries(links.filter(item => item.rel === 'alternate' && item.hreflang).map(item => [item.hreflang, item.href])),
     ogUrl: meta.find(item => item.property === 'og:url')?.content,

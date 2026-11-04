@@ -19,6 +19,7 @@ const loadActions = ({ operation = 'VERIFY_AND_CHANGE_EMAIL', applyError } = {})
     require: (name) => {
       if (name === 'firebase/app') return { FirebaseError };
       if (name === '@/lib/firebase') return { auth: {} };
+      if (name === '@/lib/site') return { APP_URL: 'https://app.planitflow.com', SITE_URL: 'https://planitflow.com' };
       if (name === 'firebase/auth') return {
         checkActionCode: async (_auth, code) => {
           calls.push(['check', code]);
@@ -36,7 +37,7 @@ const loadActions = ({ operation = 'VERIFY_AND_CHANGE_EMAIL', applyError } = {})
       return {};
     },
   });
-  vm.runInContext(compiled + '\nexports.actions = { isSupportedMode, runInitialAction };', context);
+  vm.runInContext(compiled + '\nexports.actions = { isSupportedMode, runInitialAction, resolveSafeContinueUrl };', context);
   return { ...context.exports.actions, calls };
 };
 
@@ -46,6 +47,16 @@ test('account handler accepts all supported email actions and rejects unknown mo
     assert.equal(isSupportedMode(mode), true);
   }
   for (const mode of [null, '', 'unknown']) assert.equal(isSupportedMode(mode), false);
+});
+
+test('email actions continue to the app and reject external or credential-bearing URLs', () => {
+  const { resolveSafeContinueUrl } = loadActions();
+  assert.equal(resolveSafeContinueUrl(null), 'https://app.planitflow.com');
+  assert.equal(resolveSafeContinueUrl('https://planitflow.com/?accountAction=verifyEmail&lang=uk#done'), 'https://app.planitflow.com/?accountAction=verifyEmail&lang=uk#done');
+  assert.equal(resolveSafeContinueUrl('https://app.planitflow.com/auth?lang=en'), 'https://app.planitflow.com/auth?lang=en');
+  for (const value of ['https://evil.example/', 'javascript:alert(1)', 'https://user:secret@app.planitflow.com/', 'https://app.planitflow.com.evil.example/']) {
+    assert.equal(resolveSafeContinueUrl(value), 'https://app.planitflow.com');
+  }
 });
 
 test('email confirmation, change, and recovery check the signed operation before applying', async () => {

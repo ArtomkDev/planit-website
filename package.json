@@ -30,6 +30,7 @@
     "postbuild": "node scripts/prepare-export.mjs && node scripts/verify-export.mjs --record-build",
     "check:export": "node scripts/verify-export.mjs",
     "check:live": "node scripts/verify-live.mjs",
+    "audit:search": "node scripts/audit-search.mjs",
     "site:update": "node scripts/site-update.mjs",
     "site:check": "node scripts/site-update.mjs --check",
     "page:new": "node scripts/new-page.mjs",

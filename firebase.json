@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "target": "legal",
+    "target": "website",
     "public": "out",
     "ignore": [
       "firebase.json",
@@ -38,7 +38,20 @@
         ]
       },
       {
-        "source": "/@(icon|apple-icon|opengraph-image|twitter-image)",
+        "source": "/@(icon|apple-icon|opengraph-image)",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "image/png"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=300,must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/@(uk|en)/opengraph-image",
         "headers": [
           {
             "key": "Content-Type",
@@ -69,6 +82,15 @@
         ]
       },
       {
+        "source": "/@(favicon.ico|icon.png|apple-icon.png)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=300,must-revalidate"
+          }
+        ]
+      },
+      {
         "source": "**/*.@(html|json|txt|xml|webmanifest)",
         "headers": [
           {
@@ -92,6 +114,26 @@
       }
     ],
     "redirects": [
+      {
+        "source": "/app",
+        "destination": "https://app.planitflow.com/",
+        "type": 301
+      },
+      {
+        "source": "/app/",
+        "destination": "https://app.planitflow.com/",
+        "type": 301
+      },
+      {
+        "source": "/privacy.html",
+        "destination": "/en/wiki/privacy",
+        "type": 301
+      },
+      {
+        "source": "/privacy",
+        "destination": "/en/wiki/privacy",
+        "type": 301
+      },
       {
         "source": "/en/wiki",
         "destination": "/en/wiki/terms",

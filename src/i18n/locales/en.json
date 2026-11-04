@@ -25,7 +25,7 @@
     "supportDescription": "Help by email.",
     "openApp": "Open Web App",
     "playStore": "Google Play",
-    "playStoreDescription": "The Android app.",
+    "playStoreDescription": "The Android™ app.",
     "language": "UK",
     "theme": "Toggle theme",
     "openMenu": "Open menu",
@@ -336,7 +336,7 @@
         "status": "In development"
       },
       "android": {
-        "title": "Android",
+        "title": "Android™",
         "description": "Available on Google Play. Start without an account, add a widget and enable class reminders.",
         "button": "Google Play",
         "status": "Supported"
@@ -357,11 +357,11 @@
   "Footer": {
     "product": "Product",
     "legal": "Legal",
-    "rights": "All rights reserved.",
     "status": "Available on Google Play",
-    "androidAttribution": "Android robot reproduced or modified from work by Google and used under the Creative Commons 3.0 Attribution License.",
+    "androidTrademarks": "Android and Google Play are trademarks of Google LLC.",
+    "androidAttribution": "The <source>Android robot</source> is reproduced or modified from work created and shared by Google and used according to terms described in the <license>Creative Commons 3.0 Attribution License</license>.",
     "cookieSettings": "Cookie preferences",
-    "description": "Classes, tasks, and materials. Always at hand."
+    "description": "PlanItflow is the official PlanIt website. Class schedules, tasks and materials. Always at hand."
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -575,8 +575,8 @@
   },
   "SEO": {
     "home": {
-      "title": "PlanIt — class schedules and tasks for students",
-      "description": "Keep classes, tasks and materials together. Try PlanIt in your browser without an account or download the Android app.",
+      "title": "PlanIt — Student Timetable & Planner | PlanItflow",
+      "description": "PlanIt on planitflow.com: class schedules, tasks and study materials for students. Try it in your browser without an account or download the Android app.",
       "imageAlt": "PlanIt: class schedules, tasks and materials for Android and the web"
     },
     "privacy": {
@@ -599,7 +599,6 @@
   "FAQ": {
     "badge": "Before you get started",
     "title": "What to know about PlanIt.",
-    "author": "PlanIt is made by Artomk, an independent developer from Ukraine.",
     "support": "Still have questions? Get in touch",
     "privacyLink": "Privacy policy",
     "items": {

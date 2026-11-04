@@ -2,6 +2,20 @@
 
 Дата: 13.10.2026. Об’єкт: цей репозиторій та його локальний production static export. Результат — реалізовані виправлення, регресійні перевірки й конкретний посібник [DESIGN.md](DESIGN.md). Сайт не оголошується бездоганним: нижче розділені браузерні перевірки, HTTP/автоматичні перевірки, source review та недоступні сценарії.
 
+## Прев'ю посилань — 01.11.2026
+
+За прямим запитом користувача прев'ю посилань (Open Graph / Twitter) більше не генерується кодом через `ImageResponse`: маршрути віддають готові PNG 1200×630 з `src/components/metadata/`, експортовані з SVG-майстрів для Figma. Ідея зображення збережена; додано справжній wordmark і макет розкладу. `/uk` і `/en` мають власні `/<locale>/opengraph-image` та `/<locale>/twitter-image`; кореневі адреси (корінь сайту, 404, auth action) за уточненням від 02.11.2026 віддають англійську версію. Перевірено: TypeScript, ESLint змінених файлів, production build з verify-export, 67/67 unit tests, 12/12 export tests, байтова відповідність усіх шести експортованих зображень і `image/png` у static preview. Не перевірено: заголовок Firebase для нових локалізованих адрес до deploy (його перевіряє `check:live`) та фактичний вигляд у Discord, Telegram чи X.
+
+Уточнення 02.11.2026: публікація з цими адресами пройшла `check:live` (release 65038a284286). Картки на зображенні отримали іконки, як у LessonCard сайту; дата замінена на вигаданий, але календарно правильний тиждень 4–10 жовтня 2027 (див. DESIGN.md); додано темні SVG-майстри. Сайт і далі віддає світлі PNG. Опубліковано як release ab8efaa2566a.
+
+Уточнення 02.11.2026 (наступний запит): прибрано `/twitter-image` (корінь і локалі) — `twitter:image` вказує на `opengraph-image`; сайт віддає темну тему зображення; шрифти замінено на Inter Tight / Inter; на макеті час занять 08:30–09:50, 10:00–11:20, 11:40–13:00 і показана лише перша перерва (10 хв).
+
+## Пошукова видимість planitflow.com — 25.10.2026
+
+Виконано окремий [повний пошуковий аудит](docs/audits/SEARCH_AUDIT_2026-10-25.md) живого домену, Search Console та видачі Google. Корінь уже проіндексований; /uk очікував сканування, /en не мав даних в індексі. Google автоматично замінював PlanItflow на PlanEt flow; після вибору оригінального запиту наш сайт показано першим у перевіреній сесії. За PlanIt розклад першим показано наш Google Play. Домен зареєстрований 25.10.2026, підтверджено Verisign RDAP.
+
+Опубліковано зв’язок PlanIt/PlanItflow у title, description, видимому footer та WebSite alternateName; HTTP 301 для старого privacy-входу; захист live-перевірки від X-Robots-Tag noindex/none; повторюваний audit:search. Release 310a8115dfb5 перевірений на https://planitflow.com. Lint без попереджень, 66 unit tests, build із TypeScript, 11 export tests, 15 живих сторінок, 21 asset і 24 responsive-стани зміненого тексту — PASS. Graphify оновлений AST-only. Google підтвердив живу доступність /uk і прийняв запит у пріоритетну чергу; це не підтвердження завершеної індексації або гарантованих позицій.
+
 ## Читабельність і зручність — 24.10.2026
 
 Подальше уточнення: повернуто попередні Hero-слогани «Менше хаосу. Більше планів.» / «Less chaos. More plans.» з історії репозиторію. Перевірені 15/15 ui-contract tests, production build із TypeScript та 11/11 export tests; локальне прев'ю оновлено й текст H1 підтверджено у браузері. Graphify оновлено AST-only. [Повернутий слоган](audit-evidence/hero-restored-slogan.png).
@@ -732,3 +746,59 @@ Production-браузер 3440×1271px: повторено маршрут вер
 За відгуком користувача назва секції точніше описує її зміст: «Додаткові можливості» / «Більше, ніж розклад.», у боковій навігації — «Зручності». Англійська версія узгоджена: Additional features / More than a schedule. / Extras. Попереднє «Щодня» було надто загальним і не пояснювало поширення, експорт, нагадування, матеріали, віджет та синхронізацію. Зміни лише у двох локалях; anchor everyday, ключі, анімація, картки й компонування збережені. DESIGN.md оновлено.
 
 Перевірка перейменування: 66/66 unit tests (включно з парністю перекладів і геометрією довгих назв меню), production build із TypeScript та SEO/export validation — PASS. Окремо звірені фактичні h2 everyday-title та aria-label посилання #everyday у готовому HTML обох мов. git diff --check — PASS. Це текстова зміна; нової ручної візуальної перевірки браузера не виконувалося.
+
+## Інтеграція production-застосунку — 25.10.2026
+
+Сайт окремо опубліковано через чинний `site:update` лише на `hosting:legal`
+у `planit-hub`. Build `e2ac3427da3b`, Hosting version `8335110404c9c5df`.
+`APP_URL` тепер `https://app.planitflow.com`; `/app` і `/app/` мають 301 зі
+збереженням query. Email action handler використовує спільну адресу застосунку,
+перевіряє continuation origin і переводить чинний continueUrl кореня сайту
+в застосунок зі збереженням query/hash. Оформлення не змінено.
+
+Пройдено lint, 67 unit tests, TypeScript/production build, 12 export tests,
+SEO та цілісність експорту, а також live verification усіх 15 індексованих
+сторінок, юридичних assets, Google ownership proof і redirects. Browser-перевірка
+підтвердила п'ять app-посилань англійської головної та збереження fragment при
+переході через `/app`. www, canonical/hreflang, sitemap і robots збережені.
+Graphify AST оновлено. Зміна застосунку не змінила website release, а публікація
+сайту не змінила app release. Правила/Functions/Storage не публікувалися.
+
+Повна перевірка акаунтів застосунку ще не завершена: browser tool зупинився
+через неможливість надійно визначити URL Windows-браузера. HTTPS застосунку
+дійсний; останній Firebase certificate state — `CERT_PROPAGATING`, Connected
+ще не підтверджений. Детальний checkpoint, релізи, обмеження й rollback:
+`../PlanIt/docs/WEB_DEPLOYMENT.md`. Жодної ручної перевірки отриманого листа
+або зміни пароля не позначено виконаною.
+
+## Прибирання Hosting за уточненням користувача — 25.10.2026
+
+Користувач обрав залишити Firebase з двома власними доменами. Прив’язку
+`www.planitflow.com` і його CNAME видалено; `prelaunch-web` та дві старі preview
+адреси в Authorized Domains прибрані. Залишилися два Hosting-сайти з каналами
+`live`: `app → planit-demo` і `website → planit-hub`. Ім’я цілі `legal` прибрано
+з чинної конфігурації та app-side обгортки юридичної публікації. Обов’язкові
+службові адреси Firebase збережені за погодженим рішенням.
+
+Новий build `4f154d032980`, Hosting version `ccfe2b3016cec2bb` опубліковано
+через `hosting:website`. Пройдено lint/build, 67 unit і 12 export tests та live
+verification 15 сторінок. Живий застосунок залишився на попередній версії й
+повторно пройшов перевірку файлів, маршрутів, кешування й noindex. Консоль
+Firebase показала Connected для обох власних доменів. Graphify оновлено в
+обох репозиторіях; дані, Firebase project, Auth client і backend збережені.
+
+## Плавність FAQ та центр значка — 04.11.2026
+
+За прямим запитом користувача FAQ має плавне відкривання й закривання за 360ms: CSS grid-перехід на `::details-content` і discrete content-visibility утримують вміст під час згортання. Нативні details/summary, групування name, Enter/Space, focus-visible та події toggle збережені без клієнтського JavaScript. Для браузерів без цього псевдоелемента лишається native disclosure без анімації; reduced motion вимикає переходи. Текстовий «+» замінено симетричним SVG зі сталим центром обертання. Підпис про незалежного розробника прибрано з FAQ та обох локалей; підтримка й політика залишаються. DESIGN.md узгоджено з новою поведінкою.
+
+Перевірки: lint — PASS; 67/67 unit tests, включно з парністю перекладів — PASS; production build із TypeScript і 36 статичними сторінками — PASS; SEO/export integrity та 12/12 export tests із перевіркою native FAQ обома мовами — PASS; git diff --check — PASS. Graphify AST оновлено: 1165 nodes / 1893 edges / 94 communities; перша спроба мала тимчасову помилку доступу до graph.json, повторна завершилася успішно.
+
+Межі перевірки: Chrome debugger не підключився, вбудований браузер повернув timeout webview, native window не надав accessibility state. Візуальний темп відкривання/закривання, responsive-ширини, обидві теми, zoom 200%, клавіатурна взаємодія й OS reduced motion у браузері не перевірені; відповідні правила звірені лише по коду. Публікація на production не виконувалася.
+
+## Авторські права й атрибуція Android у футері — 04.11.2026
+
+За запитом користувача про правдивий мінімальний підпис футера вказано `© {поточний рік} Artomk · PlanIt`. Ім’я Artomk звірено з розділом Agreement and scope чинного `public/content/legal/terms.mdx`; загальний текст «Усі права захищено» та його ключ прибрані в обох локалях. Додано належність марок Android і Google Play компанії Google LLC, повну англійську атрибуцію робота з офіційних правил та український переклад. Назва робота веде на джерело Google, назва ліцензії — на CC BY 3.0. Посилання є звичайними підкресленими anchors зі спільним focus-visible; ліцензія стосується зображення робота. Android™ використовується в описі header-посилання та заголовку платформи. Біографічний підпис FAQ залишається прибраним.
+
+Джерела, перевірені 04.11.2026: [Google Android Brand Guidelines](https://developer.android.com/distribute/marketing-tools/brand-guidelines), [Google Partner Marketing Hub](https://partnermarketinghub.withgoogle.com/brands/android/legal-and-trademarks/), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), [WIPO — Copyright protection](https://www.wipo.int/en/web/copyright/protection). Це перевірка й виправлення атрибуції, а не повний юридичний аудит, гарантія відсутності претензій або підтвердження погодження бренду Google. Офіційні правила окремо описують погодження маркетингового використання марок; жодного запиту на погодження не надсилали. Авторитетні юридичні документи застосунку не редагувалися.
+
+Перевірки: lint, 67/67 unit tests, production build із TypeScript і 36 статичними сторінками, SEO/export integrity та 12/12 export tests — PASS. Окремо перевірено готовий HTML усіх 16 сторінок із футером: ім’я автора, належність марок Google, справжні посилання на джерело й ліцензію, відсутність сирих rich-text тегів та старого загального copyright-тексту. Обидві головні містять Android™. git diff --check — PASS. Graphify AST оновлено після повторного запуску: 1167 nodes / 1895 edges / 94 communities. Нової браузерної перевірки responsive/zoom/focus/тем не виконували; підкреслення, переносимість тексту й focus-visible перевірено по коду. Публікація на production не виконувалася.

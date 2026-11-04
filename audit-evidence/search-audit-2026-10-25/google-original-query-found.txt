@@ -1,0 +1,114 @@
+- heading "Результати пошуку" [level=1]
+- main:
+  - 'heading "Можливо, ви мали на увазі: PlanEt flow" [level=2]':
+    - text: "Можливо, ви мали на увазі:"
+    - link "PlanEt flow":
+      - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntpGXoNSizR90P4p2XPq0SkA8CTaQ:1792951638597&q=PlanEt+flow&spell=1&sa=X&ved=2ahUKEwju5pGs4dWXAxVvKBAIHUf-LlkQBSgAegQIERAB
+      - generic: PlanEt flow
+  - heading "Web results" [level=2]
+  - link "PlanIt — class schedules and tasks for students planitflow.com https://planitflow.com":
+    - /url: https://planitflow.com/
+    - heading "PlanIt — class schedules and tasks for students" [level=3]
+    - generic: planitflow.com
+    - generic: https://planitflow.com
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://planitflow.com/
+  - button "Про цей результат":
+  - emphasis: PlanIt is a study planner that keeps your class schedule, tasks and materials together
+  - text: . Open a class and find what you need without searching through chats. Try ...
+  - heading "Огляд від ШІ" [level=2]:
+    - strong: Огляд від ШІ
+  - text: За назвою
+  - strong: PlanItflow
+  - text: (або схожими варіантами) найчастіше шукають
+  - mark: цифрові інструменти для планування та управління процесами
+  - text: ". Оскільки запит дуже короткий, це може стосуватися одного з таких сервісів:"
+  - list:
+    - strong:
+      - link "PlanIt":
+        - /url: https://planitflow.com/
+    - text: — спеціалізований навчальний планер для студентів. Він об'єднує розклад занять, завдання та навчальні матеріали в одному місці, щоб користувачам не доводилося шукати потрібну інформацію у розрізнених навчальних чатах.
+    - link "planitflow.com":
+      - /url: https://planitflow.com/
+    - button "planitflow.com – пов’язані результати":
+      - generic: planitflow.com
+    - strong:
+      - link "Planflow.io":
+        - /url: https://planflow.io/
+    - text: — професійна платформа для управління будівельними проєктами, яка інтегрується з Primavera P6, Procore та іншими системами для відстеження прогресу робіт у реальному часі.
+    - link:
+      - /url: https://planflow.io/
+    - button:
+      - generic: Planflow
+    - strong:
+      - link:
+        - /url: https://planiflow.com/
+        - text: Planiflow
+    - text: — сервіс для маркетингових команд та агенцій, призначений для моніторингу завантаженості команди, управління завданнями та зустрічами.
+    - button:
+    - strong:
+      - link:
+        - /url: https://planflow.tools/
+        - text: PlanFlow
+    - text: — інструмент для розробників з «термінальним» інтерфейсом (Terminal-First Workflow) для продуктивної роботи з кодовою базою та завданнями.
+    - button:
+  - generic: "Якщо ви шукаєте конкретну функцію або допомогу з автоматизацією процесів, уточніть:"
+  - list:
+    - text: Який саме
+    - strong: тип планувальника
+    - text: вас цікавить (для навчання, маркетингу, будівництва чи розробки)?
+    - text: Яку
+    - strong: задачу
+    - text: ви хочете вирішити (налаштувати розклад, збалансувати навантаження команди чи автоматизувати роботу)?
+  - list:
+    - link "PlanIt — class schedules and tasks for students":
+      - /url: https://planitflow.com/
+    - generic: planitflow.com
+    - button "Про цей результат":
+    - generic: PlanIt — class schedules and tasks for students
+    - generic: PlanIt is a study planner that keeps your class schedule, tasks and materials together. Open a class and find what you need withou...
+    - link "Planflow - Construction Schedule Execution for the field":
+      - /url: https://planflow.io/
+    - generic: Planflow
+    - button "Про цей результат":
+    - generic: Planflow - Construction Schedule Execution for the field
+    - generic: "Core Function: P6 construction schedule execution and real-time progress collection via iOS and Android (new signups closed). Feat..."
+    - link "Planiflow | Your team’s workload, meetings included":
+      - /url: https://planiflow.com/
+    - generic: Planiflow
+    - button "Про цей результат":
+    - generic: Planiflow | Your team’s workload, meetings included
+    - generic: "Product: Planiflow open beta workspace for marketing teams and agencies (hosted in Europe). Problem: Fragmented task tools and cal..."
+    - link "PlanFlow":
+      - /url: https://planflow.tools/
+    - generic: planflow.tools
+    - button "Про цей результат":
+    - generic: PlanFlow
+    - generic: PlanFlow combines the power of AI with developer-friendly workflows to help you stay organized and productive. Terminal-First Work...
+  - button:
+  - text: Відповіді ШІ можуть містити помилки.
+  - link:
+    - /url: https://support.google.com/websearch?p=ai_overviews
+    - text: Докладніше
+  - status
+  - button:
+  - button:
+  - button:
+  - button:
+  - button:
+  - button "Кнопка \"Показати більше\" під оглядом від ШІ":
+    - generic: Показати більше
+  - heading "Web results" [level=2]
+  - link "Bristol Phenix Newspaper Archives, Dec 2, 1848, p. 3 NewspaperArchive https://newspaperarchive.com › ...":
+    - /url: https://newspaperarchive.com/bristol-phenix-dec-02-1848-p-3/
+    - heading "Bristol Phenix Newspaper Archives, Dec 2, 1848, p. 3" [level=3]
+    - generic: NewspaperArchive
+    - generic: https://newspaperarchive.com › ...
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://newspaperarchive.com/bristol-phenix-dec-02-1848-p-3/
+  - button "Про цей результат":
+  - generic: Read Bristol Phenix Newspaper Archives, Dec 2, 1848, p. 3 with family history and genealogy records from Bristol, Rhode Island 1840-1869.
+  - navigation
+  - navigation

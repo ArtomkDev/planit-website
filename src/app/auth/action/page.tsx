@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Continue a PlanIt account action in your preferred language.",
   robots: { index: false, follow: false },
   openGraph: { images: [`${SITE_URL}/opengraph-image`] },
-  twitter: { images: [`${SITE_URL}/twitter-image`] },
+  twitter: { images: [`${SITE_URL}/opengraph-image`] },
 };
 
 function RedirectFallback() {

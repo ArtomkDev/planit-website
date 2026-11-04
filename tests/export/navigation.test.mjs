@@ -7,6 +7,16 @@ const kinds=['privacy','cookies','terms','licenses','delete'];
 const locales=['uk','en'];
 const readRoute=async route=>(await readFile(`out${route}.html`,'utf8')).replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'');
 
+test('web app buttons use the separate production application origin', async () => {
+  for (const locale of locales) {
+    for (const route of ['/'+locale, `/${locale}/getting-started`, ...kinds.map(kind => `/${locale}/wiki/${kind}`)]) {
+      const html = await readRoute(route);
+      assert.doesNotMatch(html, /href="https:\/\/planit-demo\.web\.app/);
+      assert.match(html, /href="https:\/\/app\.planitflow\.com"/);
+    }
+  }
+});
+
 test('root export redirects before displaying content and provides a no-JavaScript fallback', async () => {
   const html = await readFile('out/index.html', 'utf8');
   const head = html.match(/<head>[\s\S]*?<\/head>/)?.[0];
@@ -110,6 +120,16 @@ test('social previews never reference localhost and exist on landing pages', asy
     assert.equal(images.length,2,path);
     for (const [,url] of images) assert.ok(!new URL(url).hostname.includes('localhost'),path+' '+url);
   }
+  for (const locale of locales) {
+    const html = await readFile(`out/${locale}.html`,'utf8');
+    const images = [...html.matchAll(/<meta (?:property="og:image"|name="twitter:image") content="([^"]+)"/g)].map(([,url]) => url);
+    assert.ok(images.every(url => url.endsWith(`/${locale}/opengraph-image`)),`${locale} social image`);
+  }
+  for (const [prefix,locale] of [['','en'],['uk/','uk'],['en/','en']]) {
+    const expected = await readFile(`src/components/metadata/social-preview-${locale}-dark.png`);
+    assert.ok((await readFile(`out/${prefix}opengraph-image`)).equals(expected),`${prefix}opengraph-image is ${locale}`);
+  }
+  await assert.rejects(readFile('out/twitter-image'));
 });
 
 test('both locales expose native FAQ answers and truthful application metadata in initial HTML', async () => {
@@ -163,8 +183,11 @@ test('brand identity, locale discovery and crawler signals agree on one indexabl
     const websites=identities.filter(value=>value['@type']==='WebSite');
     assert.equal(websites.length,1,route+' one website identity');
     assert.equal(websites[0].name,'PlanIt');
+    assert.ok(websites[0].alternateName.includes('PlanItflow'),route+' connects the domain name to PlanIt');
     assert.equal(websites[0].url,`${origin}/`);
     assert.deepEqual(websites[0].inLanguage,['uk','en']);
+    const visible=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<head\b[^>]*>[\s\S]*?<\/head>/gi,'');
+    assert.match(visible,/PlanItflow/,'the alternative name must also be visible to users');
     assert.doesNotMatch(html, /name="robots" content="[^"]*noindex/);
     const languages=Object.fromEntries([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/gi)].map(([,language,url])=>[language,new URL(url).href]));
     assert.equal(languages['x-default'],`${origin}/`);

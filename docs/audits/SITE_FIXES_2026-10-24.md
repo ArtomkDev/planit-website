@@ -1,10 +1,12 @@
 # Виправлення аудиту та пошукова видимість PlanIt
 
+Актуально після перенесення 25.10.2026: сайт — [planitflow.com](https://planitflow.com/uk). Старі домени в описах помилок і доказах нижче наведені як історичні результати аудиту; вони не є адресами для нових посилань.
+
 Дата: 24.10.2026. Межі: тільки planit-website. Основний застосунок не змінювався. Початкові знахідки й докази залишаються в [аудиті 20.10](SITE_AUDIT_2026-10-20.md).
 
 ## Реалізовано
 
-- Один HTTPS origin planit-hub.web.app для canonical, hreflang, robots, sitemap, social images та structured data. Власного домену, за уточненням власника, поки немає. Невалідні налаштування origin зупиняють збірку.
+- Після перенесення 25.10.2026 один HTTPS origin https://planitflow.com використовується для canonical, hreflang, robots, sitemap, social images та structured data. Невалідні налаштування origin зупиняють збірку.
 - Корінь більше не має noindex. Є WebSite JSON-LD з назвою PlanIt та короткий fallback із мовними посиланнями. Redirect у head зберігає попередній вибір мови, query й hash до першого малювання. Локалізовані головні мають ту саму identity, власні canonical і взаємні hreflang; корінь є x-default.
 - Sitemap містить 13 URL. Юридичні lastmod походять із реальної дати документа; дата збірки не видається за зміну змісту. Сторінки дій акаунта залишаються noindex.
 - Назва PlanIt й призначення навчального планера є у видимому першому екрані, titles/descriptions і structured data. SoftwareApplication пов’язаний із чинною Google Play сторінкою; рейтингів, відгуків або неіснуючого iOS-релізу не додано.

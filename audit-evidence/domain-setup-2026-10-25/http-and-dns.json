@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-25T10:20:09.186Z",
+  "release": {
+    "origin": "https://planitflow.com",
+    "buildId": "df1df6ba7353ae35830dbb6adcb63d1cbf060cfe300494a643e2d8affa911592",
+    "verifiedAt": "2026-10-25T10:19:21.416Z"
+  },
+  "checks": [
+    {
+      "url": "http://planitflow.com/uk",
+      "status": 301,
+      "location": "https://planitflow.com/uk"
+    },
+    {
+      "url": "https://www.planitflow.com/en/getting-started?source=domain-check",
+      "status": 301,
+      "location": "https://planitflow.com/en/getting-started?source=domain-check"
+    },
+    {
+      "url": "http://www.planitflow.com/uk",
+      "status": 301,
+      "location": "https://www.planitflow.com/uk"
+    },
+    {
+      "url": "https://planit-hub.web.app/uk",
+      "status": 200,
+      "location": null,
+      "canonical": "https://planitflow.com/uk"
+    }
+  ],
+  "dnsTxt": [
+    {
+      "name": "planitflow.com.",
+      "type": 16,
+      "TTL": 300,
+      "data": "hosting-site=planit-hub"
+    },
+    {
+      "name": "planitflow.com.",
+      "type": 16,
+      "TTL": 300,
+      "data": "google-site-verification=iXgmhK0mexgidOffocR6uAovvNA9vElvo04Vo52uKS4"
+    }
+  ],
+  "searchConsole": {
+    "account": "artomk.dev@gmail.com",
+    "urlPrefixProperty": "https://planitflow.com/",
+    "ownership": "automatically verified: HTML file and domain name provider",
+    "domainProperty": "one DNS verification initially saw stale TXT; not rechecked",
+    "sitemap": {
+      "url": "https://planitflow.com/sitemap.xml",
+      "submissions": 1,
+      "status": "processed",
+      "discoveredPages": 15
+    },
+    "indexingRequests": 0,
+    "liveUrlTests": 0
+  },
+  "validation": {
+    "workflow": "npm.cmd run site:update",
+    "unitTestsPassed": 66,
+    "exportTestsPassed": 11,
+    "indexablePages": 15,
+    "liveVerification": "passed",
+    "hostingTarget": "legal",
+    "hostingSite": "planit-hub"
+  }
+}

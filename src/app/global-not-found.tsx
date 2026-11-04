@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "404 | PlanIt",
   description: "This page could not be found in PlanIt.",
   openGraph: { images: [`${SITE_URL}/opengraph-image`] },
-  twitter: { images: [`${SITE_URL}/twitter-image`] },
+  twitter: { images: [`${SITE_URL}/opengraph-image`] },
 };
 
 export default function GlobalNotFound() {

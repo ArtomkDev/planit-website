@@ -1,0 +1,42 @@
+{
+  "checkedOn": "2026-10-25",
+  "property": "https://planitflow.com/",
+  "root": {
+    "indexed": true,
+    "lastCrawlDisplayKyiv": "25.10.2026 12:57:26",
+    "declaredCanonicalDisplay": "https://planitflow.com/en",
+    "googleCanonicalDisplay": "Inspected URL"
+  },
+  "uk": {
+    "indexed": false,
+    "status": "Discovered - currently not indexed",
+    "liveTestPassed": true,
+    "indexRequestAccepted": true
+  },
+  "en": {
+    "indexed": false,
+    "status": "URL is unknown to Google",
+    "indexRequestAccepted": false,
+    "firstAttemptInterrupted": true,
+    "secondAttemptError": "Unable to submit indexing request; unable to connect to reCAPTCHA service",
+    "retriesStopped": true
+  },
+  "sitemap": {
+    "status": "Success",
+    "pagesDiscovered": 15,
+    "resubmissions": 0
+  },
+  "manualActions": "No issues detected",
+  "securityIssues": "No issues detected",
+  "search": {
+    "planIt": "Other companies and products dominate the viewed first page",
+    "planItSchedule": "Own Google Play listing appears as first web result; custom domain not on the viewed first page",
+    "planItflow": "Google automatically changes the query to PlanEt flow; choosing the original query shows planitflow.com as the first visible web result",
+    "personalizedSession": true
+  },
+  "playConsole": {
+    "readOnly": true,
+    "configuredWebsite": "https://planitflow.com",
+    "publicWebsiteObserved": "https://planit-hub.web.app/"
+  }
+}

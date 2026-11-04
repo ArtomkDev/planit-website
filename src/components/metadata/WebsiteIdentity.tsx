@@ -7,7 +7,7 @@ export function WebsiteIdentity() {
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     name: "PlanIt",
-    alternateName: "PlanIt: Timetable & Planner",
+    alternateName: ["PlanItflow", "planitflow.com", "PlanIt: Timetable & Planner"],
     url: `${SITE_URL}/`,
     inLanguage: ["uk", "en"],
     publisher: { "@type": "Person", name: "Artomk" },

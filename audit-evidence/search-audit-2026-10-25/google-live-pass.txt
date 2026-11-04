@@ -1,0 +1,131 @@
+- banner:
+  - button "Головне меню":
+  - link "Google Search Console":
+    - /url: ./search-console?resource_id=https%3A%2F%2Fplanitflow.com%2F
+  - search:
+    - textbox [disabled]: Перевіряйте будь-яку URL-адресу на ресурсі https://planitflow.com/
+    - combobox "Перевірити будь-яку URL-адресу на ресурсі https://planitflow.com/"
+    - button "Пошук":
+  - button "Довідка":
+    - generic: help_outline
+  - tooltip: Довідка
+  - button "Налаштування користувача":
+    - generic: manage_accounts
+  - tooltip: Налаштування користувача
+  - button "Повідомлення":
+    - generic: notifications
+  - tooltip: Повідомлення
+  - button "Додатки Google":
+  - 'button "Обліковий запис Google: Артем Коваль (artomk.dev@gmail.com)"':
+- dialog "navigational drawer":
+  - navigation "Основний":
+    - button "Ресурс пошуку":
+      - img "значок вебсторінки"
+      - combobox "https://planitflow.com/"
+      - generic: 
+    - link "Огляд":
+      - /url: ./search-console?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: home
+      - generic: Огляд
+    - link "Статистика":
+      - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: lightbulb_2
+      - generic: Статистика
+    - link "Ефективність":
+      - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: trending_up
+      - generic: Ефективність
+    - button "Перевірка URL-адреси":
+      - generic: search
+      - generic: Перевірка URL-адреси
+    - generic: Індексування
+    - button "Розділ звіту \"Індексування\"" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Сторінки":
+      - /url: ./search-console/index?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: file_copy
+      - generic: Сторінки
+    - link "Файли Sitemap":
+      - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: account_tree
+      - generic: Файли Sitemap
+    - link "Видалення":
+      - /url: ./search-console/removals?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: visibility_off
+      - generic: Видалення
+    - generic: Якість
+    - button "Розділ звіту \"Якість\"" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Основні веб-показники":
+      - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: speed
+      - generic: Основні веб-показники
+    - generic: Безпека й заходи, ужиті вручну
+    - button "Розділ звіту \"Безпека й заходи, ужиті вручну\"" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Заходи, вжиті вручну":
+      - /url: ./search-console/manual-actions?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: flag
+      - generic: Заходи, вжиті вручну
+    - link "Проблеми з безпекою":
+      - /url: ./search-console/security-issues?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: security
+      - generic: Проблеми з безпекою
+    - link "Звіт про посилання":
+      - /url: ./search-console/links?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: link_2
+      - generic: Посилання
+    - link "Досягнення":
+      - /url: ./search-console/achievements?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: trophy
+      - generic: Досягнення
+    - link "Налаштування":
+      - /url: ./search-console/settings?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: settings
+      - generic: Налаштування
+    - button "Надіслати відгук":
+      - generic: feedback
+      - generic: Надіслати відгук
+    - button "Про Search Console":
+      - generic: info
+      - generic: Про Search Console
+    - link "Конфіденційність":
+      - /url: https://myaccount.google.com/privacypolicy?hl=uk
+    - link "Умови":
+      - /url: https://myaccount.google.com/termsofservice?hl=uk
+- generic: https://planitflow.com/uk
+- navigation "Ланцюжки навігації":
+  - heading "Перевірка URL-адреси" [level=1]
+- link "Індекс Google":
+  - /url: ./search-console/inspect?resource_id=https%3A%2F%2Fplanitflow.com%2F&id=PnWSmFMWoegw5-trFl3MJQ&alt_id=1J8N27Vi0CRw79DgrwAVRA
+  - generic: Індекс Google
+- button "Перевірка опублікованої сторінки" [disabled]:
+  - generic: Перевірка опублікованої сторінки
+- main:
+  - generic: "Перевірено: 25 жовт. 2026 р., 20:04"
+  - button "Перевірити URL-адресу ще раз":
+    - generic: 
+  - generic: check_circle
+  - generic: Google має доступ до цієї URL-адреси
+  - text: Якщо сторінку проіндексовано та вибрано як канонічну, вона може з’являтися в результатах Пошуку Google з усіма доречними покращеннями.
+  - link "Докладніше":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_can_be_on_google
+  - button "Переглянути протестовану сторінку":
+    - generic: Переглянути протестовану сторінку
+  - generic: Сторінка змінилася?
+  - button "Надіслати запит на індексуванняНадіслати запит ще раз":
+    - generic: Надіслати запит на індексування
+  - button "Доступність сторінки Сторінку можна проіндексувати":
+    - generic: check_circle
+    - generic: Доступність сторінки
+    - generic: Сторінку можна проіндексувати
+    - generic: 
+  - generic: Покращення й оптимізація
+  - generic: Немає покращень URL-адреси
+- generic: 
+- generic: Перевірка URL-адреси
+- generic: Дізнавайтеся, як індекс Google бачить вашу сторінку. Вирішуйте проблеми, якщо сторінка не відображається або неправильно відображається в результатах Пошуку Google.
+- generic: Докладніше
+- generic "Докладніше"
+- generic: OK
+- generic "OK"

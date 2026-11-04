@@ -16,17 +16,20 @@ export async function FAQ() {
       <h2 id="faq-title" className="max-w-2xl text-balance text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">{t("title")}</h2>
       <div className="mt-8 divide-y divide-site-border border-y border-site-border">
         {faqItems.map((item) => (
-          <details key={item} name="planit-faq" data-faq={item} className="group">
+          <details key={item} name="planit-faq" data-faq={item} className="faq-item group">
             <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-6 py-5 text-base font-bold text-site-text marker:content-none [&::-webkit-details-marker]:hidden">
               <span>{t(`items.${item}.question`)}</span>
-              <span aria-hidden="true" className="shrink-0 text-2xl font-normal text-brand-strong group-open:rotate-45 motion-safe:transition-transform">+</span>
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="faq-icon size-6 shrink-0 text-brand-strong">
+                <path d="M12 6v12M6 12h12" />
+              </svg>
             </summary>
-            <p className="max-w-[70ch] pb-6 text-base leading-7 text-site-muted sm:pr-6">{t(`items.${item}.answer`)}</p>
+            <div className="faq-answer">
+              <p className="max-w-[70ch] pb-6 text-base leading-7 text-site-muted sm:pr-6">{t(`items.${item}.answer`)}</p>
+            </div>
           </details>
         ))}
       </div>
-      <p className="mt-6 text-sm leading-7 text-site-muted">{t("author")}</p>
-      <div className="mt-2 flex flex-wrap gap-x-6">
+      <div className="mt-6 flex flex-wrap gap-x-6">
         <a href={SUPPORT_URL} className="inline-flex min-h-11 items-center font-semibold text-brand-strong underline decoration-site-border-strong underline-offset-4 hover:decoration-current">{t("support")}</a>
         <a href={`/${locale}/wiki/privacy`} className="inline-flex min-h-11 items-center text-sm font-semibold text-site-muted underline decoration-site-border-strong underline-offset-4 hover:text-site-text">{t("privacyLink")}</a>
       </div>

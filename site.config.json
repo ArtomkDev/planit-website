@@ -1,9 +1,9 @@
 {
-  "origin": "https://planit-hub.web.app",
+  "origin": "https://planitflow.com",
   "locales": ["uk", "en"],
   "hosting": {
     "project": "planit-hub",
-    "target": "legal",
+    "target": "website",
     "account": "artomk.dev@gmail.com"
   },
   "legalSource": "../PlanIt",

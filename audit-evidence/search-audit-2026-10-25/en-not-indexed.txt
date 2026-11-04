@@ -1,0 +1,154 @@
+- banner:
+  - button "Головне меню":
+  - link "Google Search Console":
+    - /url: ./search-console?resource_id=https%3A%2F%2Fplanitflow.com%2F
+  - search:
+    - textbox [disabled]: Перевіряйте будь-яку URL-адресу на ресурсі https://planitflow.com/
+    - combobox "Перевірити будь-яку URL-адресу на ресурсі https://planitflow.com/"
+    - button "Пошук":
+  - button "Довідка":
+    - generic: help_outline
+  - tooltip: Довідка
+  - button "Налаштування користувача":
+    - generic: manage_accounts
+  - tooltip: Налаштування користувача
+  - button "Повідомлення":
+    - generic: notifications
+  - tooltip: Повідомлення
+  - button "Додатки Google":
+  - 'button "Обліковий запис Google: Артем Коваль (artomk.dev@gmail.com)"':
+- dialog "navigational drawer":
+  - navigation "Основний":
+    - button "Ресурс пошуку":
+      - img "значок вебсторінки"
+      - combobox "https://planitflow.com/"
+      - generic: 
+    - link "Огляд":
+      - /url: ./search-console?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: home
+      - generic: Огляд
+    - link "Статистика":
+      - /url: ./search-console/performance/insights?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: lightbulb_2
+      - generic: Статистика
+    - link "Ефективність":
+      - /url: ./search-console/performance/search-analytics?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: trending_up
+      - generic: Ефективність
+    - button "Перевірка URL-адреси":
+      - generic: search
+      - generic: Перевірка URL-адреси
+    - generic: Індексування
+    - button "Розділ звіту \"Індексування\"" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Сторінки":
+      - /url: ./search-console/index?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: file_copy
+      - generic: Сторінки
+    - link "Файли Sitemap":
+      - /url: ./search-console/sitemaps?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: account_tree
+      - generic: Файли Sitemap
+    - link "Видалення":
+      - /url: ./search-console/removals?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: visibility_off
+      - generic: Видалення
+    - generic: Якість
+    - button "Розділ звіту \"Якість\"" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Основні веб-показники":
+      - /url: ./search-console/core-web-vitals?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: speed
+      - generic: Основні веб-показники
+    - generic: Безпека й заходи, ужиті вручну
+    - button "Розділ звіту \"Безпека й заходи, ужиті вручну\"" [expanded]:
+      - generic: keyboard_arrow_up
+    - link "Заходи, вжиті вручну":
+      - /url: ./search-console/manual-actions?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: flag
+      - generic: Заходи, вжиті вручну
+    - link "Проблеми з безпекою":
+      - /url: ./search-console/security-issues?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: security
+      - generic: Проблеми з безпекою
+    - link "Звіт про посилання":
+      - /url: ./search-console/links?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: link_2
+      - generic: Посилання
+    - link "Досягнення":
+      - /url: ./search-console/achievements?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: trophy
+      - generic: Досягнення
+    - link "Налаштування":
+      - /url: ./search-console/settings?resource_id=https%3A%2F%2Fplanitflow.com%2F
+      - generic: settings
+      - generic: Налаштування
+    - button "Надіслати відгук":
+      - generic: feedback
+      - generic: Надіслати відгук
+    - button "Про Search Console":
+      - generic: info
+      - generic: Про Search Console
+    - link "Конфіденційність":
+      - /url: https://myaccount.google.com/privacypolicy?hl=uk
+    - link "Умови":
+      - /url: https://myaccount.google.com/termsofservice?hl=uk
+- generic: https://planitflow.com/en
+- navigation "Ланцюжки навігації":
+  - heading "Перевірка URL-адреси" [level=1]
+- button "Перевірити опубліковану URL-адресу":
+  - generic: Перевірити опубліковану URL-адресу
+- main:
+  - generic: info
+  - generic: URL-адреси немає в Google
+  - text: Цю сторінку не проіндексовано, тому вона не може з’являтися в результатах пошуку Google. Нижче описано, чому сторінку не проіндексовано.
+  - link "Докладніше":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_not_on_google
+  - button "Переглянути проскановану сторінку" [disabled]:
+    - generic: Переглянути проскановану сторінку
+  - generic: Сторінка змінилася?
+  - button "Надіслати запит на індексуванняНадіслати запит ще раз":
+    - generic: Надіслати запит на індексування
+  - 'button "Індексування сторінок Сторінку не проіндексовано: Невідома Google URL-адреса" [expanded]':
+    - generic: info
+    - generic: Індексування сторінок
+    - generic: "Сторінку не проіндексовано: Невідома Google URL-адреса"
+    - generic: 
+  - generic: Виявлення
+  - generic: Файли Sitemap
+  - generic: Не знайдено відповідних карт сайту
+  - generic: Сторінки, що посилаються
+  - generic: Нічого не виявлено
+  - generic: Ми можемо дізнатися про URL-адресу з інших джерел, які зараз не відображаються
+  - generic: Сканування
+  - generic: Останнє сканування
+  - generic: недоступн.
+  - generic: Проскановано як
+  - generic: недоступн.
+  - generic: Сканування дозволено?
+  - generic: недоступн.
+  - generic: Завантаження сторінки
+  - generic: недоступн.
+  - generic: Індексування дозволено?
+  - generic: info
+  - generic: недоступн.
+  - generic: Індексування
+  - generic: Канонічна URL-адреса, яку заявив користувач
+  - generic: недоступн.
+  - generic: Канонічна URL-адреса, вибрана Google
+  - button "null":
+    - generic: 
+  - generic: недоступн.
+  - link "Переглянути докладніші документи":
+    - /url: https://support.google.com/webmasters/answer/9012289#url_unknown
+    - generic: Докладніше
+  - generic: Покращення й оптимізація
+  - generic: Лише індексовані URL-адреси можуть мати покращення
+- generic: 
+- generic: Перевірка URL-адреси
+- generic: Дізнавайтеся, як індекс Google бачить вашу сторінку. Вирішуйте проблеми, якщо сторінка не відображається або неправильно відображається в результатах Пошуку Google.
+- generic: Докладніше
+- generic "Докладніше"
+- generic: OK
+- generic "OK"
+- generic: Перевірка URL-адреси

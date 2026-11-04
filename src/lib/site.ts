@@ -10,7 +10,7 @@ export function resolveSiteUrl(value?: string) {
 }
 
 export const SITE_URL = resolveSiteUrl(process.env.NEXT_PUBLIC_BASE_URL);
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://planit-demo.web.app";
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://app.planitflow.com";
 export const PLAY_MARKET_URL = "https://play.google.com/store/apps/details?id=com.artomk.planit";
 export const SUPPORT_URL = "mailto:planit.app.support@gmail.com";
 

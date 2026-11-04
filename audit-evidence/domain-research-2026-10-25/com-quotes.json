@@ -1,0 +1,80 @@
+{
+  "checkedDate": "2026-10-25",
+  "currency": "USD",
+  "registrar": "Porkbun",
+  "source": "https://porkbun.com/checkout/search",
+  "feesIncluded": true,
+  "purchaseMade": false,
+  "candidatesChecked": [
+    "planit.com",
+    "planitapp.com",
+    "getplanit.com",
+    "useplanit.com",
+    "tryplanit.com",
+    "joinplanit.com",
+    "myplanit.com",
+    "planitnow.com",
+    "planitgo.com",
+    "planitday.com",
+    "planitdaily.com",
+    "planitstudy.com",
+    "planitclass.com",
+    "planitcampus.com",
+    "planitschool.com",
+    "planithub.com",
+    "planitspace.com",
+    "planitfocus.com",
+    "planitflow.com",
+    "planitlearn.com",
+    "planitnotes.com",
+    "planittime.com",
+    "planituni.com",
+    "planitdesk.com",
+    "planitwise.com"
+  ],
+  "availableStandardRegistration": [
+    {
+      "domain": "planitday.com",
+      "registration": 11.08,
+      "renewal": 11.08,
+      "premium": false
+    },
+    {
+      "domain": "planitflow.com",
+      "registration": 11.08,
+      "renewal": 11.08,
+      "premium": false
+    },
+    {
+      "domain": "planitdesk.com",
+      "registration": 11.08,
+      "renewal": 11.08,
+      "premium": false
+    },
+    {
+      "domain": "planitcampus.com",
+      "registration": 11.08,
+      "renewal": 11.08,
+      "premium": false
+    },
+    {
+      "domain": "planitschool.com",
+      "registration": 11.08,
+      "renewal": 11.08,
+      "premium": false
+    }
+  ],
+  "excluded": [
+    {
+      "domain": "planit.com",
+      "reason": "unavailable"
+    },
+    {
+      "domain": "getplanit.com",
+      "reason": "aftermarket",
+      "price": 2895,
+      "additionalTransferFee": true
+    }
+  ],
+  "note": "Current registration and renewal quotes are identical; future registry or registrar price changes are not excluded."
+}

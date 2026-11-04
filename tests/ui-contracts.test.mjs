@@ -19,8 +19,8 @@ const { getReadableCardStyle, contrastRatio } = await loadModule('src/lib/card-c
 const { createConsentGate, analyticsOnlyConsent, deniedConsent, isAnalyticsPage } = await loadModule('src/lib/analytics-consent.ts');
 const { parseCookiePreference } = await loadModule('src/lib/cookie-preferences.ts');
 
-test('website identity uses a reachable hosting default and rejects ambiguous configured origins', () => {
-  assert.equal(resolveSiteUrl(), 'https://planit-hub.web.app');
+test('website identity uses the production domain and rejects ambiguous configured origins', () => {
+  assert.equal(resolveSiteUrl(), 'https://planitflow.com');
   assert.equal(resolveSiteUrl(' https://example.com/ '), 'https://example.com');
   for (const invalid of ['http://example.com', 'https://example.com/app', 'https://example.com?locale=uk', 'https://example.com#top', 'https://user:secret@example.com']) assert.throws(() => resolveSiteUrl(invalid));
 });

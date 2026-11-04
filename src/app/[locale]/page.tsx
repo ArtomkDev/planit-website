@@ -20,7 +20,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     name: "PlanIt",
     description: t("description"),
     url: `${SITE_URL}/${locale}`,
-    image: `${SITE_URL}/opengraph-image`,
+    image: `${SITE_URL}/${locale}/opengraph-image`,
     operatingSystem: "Android, Web",
     applicationCategory: "EducationalApplication",
     inLanguage: ["uk", "en"],

@@ -1,0 +1,266 @@
+- heading "Результати пошуку" [level=1]
+- heading "Огляд від ШІ" [level=2]:
+  - strong: Огляд від ШІ
+- strong: Planit
+- text: — це
+- mark: назва кількох відомих міжнародних компаній, платформ та інститутів, залежно від сфери діяльності
+- text: ":"
+- list:
+  - strong: "Planit (Software Testing & Quality Engineering):"
+  - text: Глобальна консалтингова компанія з 25-річним досвідом, що спеціалізується на забезпеченні якості програмного забезпечення, штучному інтелекті та тестуванні (штаб-квартири та офісы в Австралії, Новій Зеландії, Великій Британії тощо). Детальніше на офіційному сайті
+  - link "Planit":
+    - /url: https://www.planit.com/
+  - text: .
+  - button "Пов’язані результати":
+  - strong: "Planit / Planit-inc (Будівництво та BIM/VDC):"
+  - text: Міжнародна компанія з управління та контролю будівництвом, заснована у 2012 році, що має українські та американські коріння (офіси в США, Європі, Україні). Її ключовий продукт — система
+  - emphasis: Plan&Control
+  - text: для синхронізації будівельної документації та проєктів (зокрема Apple campus, аеропорт SFO, хмарочоси в Нью-Йорку).
+  - link:
+    - /url: https://www.work.ua/jobs/by-company/661905/
+  - button:
+    - generic: Work.ua
+    - generic: "+3"
+  - strong: "PlanIt (Microsoft Teams / Marketplace):"
+  - text: Динамічний застосунок для річного та високотемпового планування в середовищі Microsoft 365, Teams, Outlook та Planner. Доступний у
+  - link:
+    - /url: https://marketplace.microsoft.com/da-dk/product/wa200004211
+    - text: Microsoft Marketplace
+  - text: .
+  - button:
+  - strong: "PLANiT Institute:"
+  - text: Некомерційний аналітичний інститут, що займається дослідженнями та моделюванням економіки переходу, енергетики та морських перевезень.
+  - link:
+    - /url: https://planit.institute/
+  - button:
+    - generic: PLANiT Institute
+- text: Яке саме значення слова
+- strong: Planit
+- text: вас цікавить? Напишіть детальніше, і я надам вам розгорнуту інформацію.
+- list:
+  - link "Робота в Planit. Відкриті вакансії - Work.ua":
+    - /url: https://www.work.ua/jobs/by-company/661905/
+  - generic: Work.ua
+  - button "Про цей результат":
+  - generic: Робота в Planit. Відкриті вакансії - Work.ua
+  - generic: Planit — міжнародна компанія з управління та контролю будівництвом. Наш основний продукт — Plan&Control, завдяки якому відбуваєтьс...
+  - 'link "PLANIT Ukraine: будуємо перемогу разом! - Kharkiv IT Cluster"':
+    - /url: https://it-kharkiv.com/news/ua/planit-ukraine-buduyemo-peremogu-razom
+  - generic: Kharkiv IT Cluster
+  - button "Про цей результат":
+  - generic: "PLANIT Ukraine: будуємо перемогу разом! - Kharkiv IT Cluster"
+  - generic: PLANIT Ukraine – інноваційна компанія, яка застосовує та розвиває технології BIM (Building Information Modeling) та VDC (Virtual D...
+  - link:
+    - /url: https://www.planit.com/
+  - generic: Planit
+  - button:
+  - generic: Software Testing & Quality Engineering Services - Planit
+  - generic: "Company: Planit (25 years on the market, established 1999). Global Presence: 14 offices across Australia, New Zealand, Philippines..."
+- button:
+  - generic: Показати всі
+- status
+- button:
+- button:
+- button:
+- button:
+- button:
+- button "Кнопка \"Показати більше\" під оглядом від ШІ":
+  - generic: Показати більше
+- main:
+  - button "Перегляньте фотографії":
+    - generic: Перегляньте фотографії
+  - link "Planit Poland, карта":
+    - /url: /maps/place/Planit+Poland/data=!4m2!3m1!1s0x0:0x923a4fd5dfd5120f?sa=X&ved=1t:2428&hl=uk&ictx=111
+    - img "Planit Poland, карта"
+  - link "Planit Poland, карта":
+    - /url: /maps/place/Planit+Poland/data=!4m2!3m1!1s0x0:0x923a4fd5dfd5120f?sa=X&ved=1t:2428&hl=uk&ictx=111
+    - img "Planit Poland, карта"
+  - link "Див. зовні":
+    - /url: /local/place/fid/0x470fe9d4e4dcb8eb:0x923a4fd5dfd5120f/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3D7iP4Evy5h9TD3R6Q6wLFLA%26cb_client%3Dsearch.gws-prod.grass%26yaw%3D13.019024%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&ik=CAISFjdpUDRFdnk1aDlURDNSNlE2d0xGTEE%3D&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQpx96BAhAEBI
+    - generic: Див. зовні
+  - heading "Planit Poland" [level=2]
+  - text: 4,9
+  - img "Оцінка 4,9 з 5"
+  - button "7 Google відгуків"
+  - text: Будівельна компанія у Вроцлаві, Польща
+  - link "Вебсайт":
+    - /url: https://planit-inc.com/
+    - generic: Вебсайт
+  - link "Маршрути":
+    - generic: Маршрути
+  - button "Написати відгук":
+    - generic: Написати відгук
+  - button "Зберегти об’єкт \"Planit Poland\" у колекції":
+    - generic: Зберегти
+  - button "Поділитися":
+    - generic: Поділитися
+  - text: "Розташування:"
+  - link "Nobilis Business House":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=Nobilis+Business+House&ludocid=2344236132948910362&lsig=AB86z5UFFhRTLEm2Hhp7NxLBv53s&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8G0oAHoECDoQAQ
+  - link "Адреса":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=planit+inc+%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0&ludocid=10536822058188608015&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ6BN6BAg5EAI
+  - text: ":"
+  - text: Curie-Skłodowskiej 12, 50-381 Wrocław, Польща
+  - link "Запропонувати зміну":
+    - /url: "#"
+  - text: ·
+  - link "Це ваша компанія?":
+    - /url: "#"
+  - generic: Додати відсутню інформацію
+  - link "Додати номер телефону компанії": Додати номер телефону компанії
+  - link "Додати години роботи": Додати години роботи
+  - heading "Відгуки" [level=3]
+  - button "Докладніше":
+  - button "Написати відгук":
+    - generic: Написати відгук
+  - button "Додати фотографії":
+    - generic: Додати фотографії
+  - text: 4,9
+  - img "Оцінка 4,9 з 5"
+  - button "7 Google відгуків"
+  - heading "Від компанії \"Planit Poland\"" [level=3]
+  - button "Поскаржитися на опис":
+  - generic: "\"Making great design ideas come to life.\""
+  - link "Про ці дані":
+    - /url: https://support.google.com/local-listings?p=how_google_sources
+  - heading "Результати веб-пошуку" [level=2]
+  - link "Робота в Planit. Відкриті вакансії Work.ua https://www.work.ua › jobs › by-company":
+    - /url: https://www.work.ua/jobs/by-company/661905/
+    - heading "Робота в Planit. Відкриті вакансії" [level=3]
+    - generic: Work.ua
+    - generic: https://www.work.ua › jobs › by-company
+  - button "Про цей результат":
+  - text: Planit —
+  - emphasis: міжнародна компанія з управління та контролю будівництвом
+  - text: . Наш основний продукт — Plan&Control, завдяки якому відбувається управління даними та ...
+  - 'link "Planit-inc. LinkedIn · Planit-inc. Підписників: понад 1,4 тис."':
+    - /url: https://ua.linkedin.com/company/planit-plan-and-control
+    - heading "Planit-inc." [level=3]
+    - generic: LinkedIn · Planit-inc.
+    - generic: "Підписників: понад 1,4 тис."
+  - button "Про цей результат":
+  - emphasis: Planit is a national management partner
+  - text: to the architecture, engineering, and construction industries, transforming how buildings are planned, coordinated, and ...
+  - 'link "Planit: Software Testing & Quality Engineering Services Planit https://www.planit.com"':
+    - /url: https://www.planit.com/
+    - 'heading "Planit: Software Testing & Quality Engineering Services" [level=3]'
+    - generic: Planit
+    - generic: https://www.planit.com
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://www.planit.com/
+  - button "Про цей результат":
+  - emphasis: Software testing and quality engineering consultancy
+  - text: ", part of NRI: test automation, performance, security and accessibility testing, and ISTQB training."
+  - link "PlanIt – Додатки в Google Play Google Play https://play.google.com › store › apps › details":
+    - /url: https://play.google.com/store/apps/details?id=co.loki.intik&hl=uk
+    - heading "PlanIt – Додатки в Google Play" [level=3]
+    - generic: Google Play
+    - generic: https://play.google.com › store › apps › details
+  - button "Про цей результат":
+  - emphasis: PlanIt
+  - text: "- це онлайн-платформа для управління даними, пов'язаними з його репетиторськими класами, найбільш ефективною та прозорою манерою."
+  - 'link "Planit Inc.: робота в компанії, про роботодавця happymonday.ua https://happymonday.ua › ⭐ Planit Inc."':
+    - /url: https://happymonday.ua/company/planit-inc
+    - 'heading "Planit Inc.: робота в компанії, про роботодавця" [level=3]'
+    - generic: happymonday.ua
+    - generic: https://happymonday.ua › ⭐ Planit Inc.
+  - button "Про цей результат":
+  - emphasis: Planit is an international digital engineering & construction management company
+  - text: . We specialize in construction management and control, using BIM/VDC ...
+  - link "About Planit - Bringing Online Tasks to the Real World plan-it.day https://www.plan-it.day › ab...":
+    - /url: https://www.plan-it.day/about
+    - heading "About Planit - Bringing Online Tasks to the Real World" [level=3]
+    - generic: plan-it.day
+    - generic: https://www.plan-it.day › ab...
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://www.plan-it.day/about
+  - button "Про цей результат":
+  - text: Learn how
+  - emphasis: Planit
+  - text: blends online task management with real-world productivity, helping you plan, print, and execute tasks.
+  - link "Planit — Less planning. More plans. planitio.app https://planitio.app":
+    - /url: https://planitio.app/
+    - heading "Planit — Less planning. More plans." [level=3]
+    - generic: planitio.app
+    - generic: https://planitio.app
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://planitio.app/
+  - button "Про цей результат":
+  - emphasis: Planit is the easiest way to actually get your group together
+  - text: . Everyone marks when they're free and Planit locks onto the time that works for the whole ...
+  - link "PlanIt Microsoft Marketplace https://marketplace.microsoft.com › ...":
+    - /url: https://marketplace.microsoft.com/sv-se/product/wa200004211
+    - heading "PlanIt" [level=3]
+    - generic: Microsoft Marketplace
+    - generic: https://marketplace.microsoft.com › ...
+  - generic: ·
+  - link "Перекласти цю сторінку":
+    - /url: https://marketplace.microsoft.com/sv-se/product/wa200004211
+  - button "Про цей результат":
+  - emphasis: PlanIt is the perfect solution for annual planning
+  - text: ", whether HR, Quality, Marketing, or Sales processes. It's also a versatile tool for basic Campaign and Event ..."
+  - link "Planit Arriba! creative agency https://arriba.com.ua › work › planit":
+    - /url: https://arriba.com.ua/work/planit/
+    - heading "Planit" [level=3]
+    - generic: Arriba! creative agency
+    - generic: https://arriba.com.ua › work › planit
+  - button "Про цей результат":
+  - emphasis: PLANIT перші у світі розробили унікальний продукт
+  - text: ", який надає змогу створювати єдину цифрову модель із розрізненої будівельної документації від різних ..."
+  - heading "Люди також шукають" [level=2]
+  - link "Planit inc":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=Planit+inc&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ1QJ6BAhUEAE
+    - generic: Planit inc
+  - link "Planit knows":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=Planit+knows&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ1QJ6BAhcEAE
+    - generic: Planit knows
+  - link "Planit agency":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=Planit+agency&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ1QJ6BAhbEAE
+    - generic: Planit agency
+  - link "Planit talent":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=Planit+talent&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ1QJ6BAhaEAE
+    - generic: Planit talent
+  - link "Planit canada":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=Planit+canada&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ1QJ6BAhWEAE
+    - generic: Planit canada
+  - link "VDC спеціаліст":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&q=VDC+%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D1%81%D1%82&sa=X&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ1QJ6BAhVEAE
+    - generic: VDC спеціаліст
+  - navigation:
+    - heading "Навігація сторінкою" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=10&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=20&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=30&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=40&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=50&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=60&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=70&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=80&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=90&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8tMDegQIUhAU
+      - text: "10"
+    - heading "Уперед" [level=2]:
+      - link "Уперед":
+        - /url: /search?q=planIt&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQntMNVsyZ4XqGRi44elO-INEwNAeig:1792951748261&ei=xEXeaoa5D8H9wPAPvMm4mAc&start=10&sa=N&sstk=AS6-VmIiqRADx978dBoKDBKaTQWtaPh9JqrNJbrm0fSEO3e7JqA3ykFZhiWJhcVjwkHPf1T_IxuLW4F1HmICD-RJCv83UvmVXsldOA&ved=2ahUKEwiGq7fg4dWXAxXBPhAIHbwkDnMQ8NMDegQIUhAW
+        - generic: Уперед
+  - navigation

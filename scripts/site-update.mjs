@@ -103,7 +103,7 @@ export async function updateSite(options) {
     const output=await runNode([firebaseCli,'hosting:channel:deploy',options.channel,'--expires',options.expires || '30d','--only',config.hosting.target,...auth,'--json'],true);
     publishedOrigin=previewUrl(JSON.parse(output),sites[0]);
   } else await runNode([firebaseCli,'deploy','--only',`hosting:${config.hosting.target}`,...auth]);
-  try { await runNode([path.join(root,'scripts/verify-live.mjs'),publishedOrigin]); }
+  try { await runNode([path.join(root,'scripts/verify-live.mjs'),publishedOrigin,'--wait-for-release']); }
   catch(error) { throw new Error(`Upload completed, but live verification failed. ${error.message} Do not report the release as verified.`); }
   const release=JSON.parse(await readFile(path.join(root,'out/release.json'),'utf8'));
   await mkdir(path.join(root,'.firebase'),{recursive:true});

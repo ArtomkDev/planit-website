@@ -13,7 +13,7 @@ test('preview serves entry, metadata, document redirects, and real 404 status', 
       server.stdout.once('data',()=>{clearTimeout(timer);resolve();});
     });
     const get = path => fetch('http://127.0.0.1:4174'+path, {redirect:'manual'});
-    for (const path of ['/','/uk','/en','/icon','/apple-icon','/opengraph-image','/twitter-image','/robots.txt','/sitemap.xml','/manifest.webmanifest','/release.json']) assert.equal((await get(path)).status,200,path);
+    for (const path of ['/','/uk','/en','/favicon.ico','/icon.png','/apple-icon.png','/opengraph-image','/uk/opengraph-image','/en/opengraph-image','/robots.txt','/sitemap.xml','/manifest.webmanifest','/release.json']) assert.equal((await get(path)).status,200,path);
     const {hosting}=JSON.parse(await readFile('firebase.json','utf8'));
     const manifest=JSON.parse(await readFile('out/content/legal/manifest.json','utf8'));
     for (const [locale,localized] of Object.entries(manifest.locales)) {
@@ -30,7 +30,8 @@ test('preview serves entry, metadata, document redirects, and real 404 status', 
       const response=await get(redirect.source+'?source=old-link');
       assert.equal(response.status,redirect.type);
       assert.equal(response.headers.get('location'),redirect.destination+'?source=old-link');
-      assert.equal((await get(redirect.destination)).status,200);
+      if (redirect.destination.startsWith('/')) assert.equal((await get(redirect.destination)).status,200);
+      else assert.equal(redirect.destination,'https://app.planitflow.com/');
     }
     for (const path of ['/uk/missing-page','/de','/..%2Fpackage.json']) assert.equal((await get(path)).status,404,path);
     const image=await get('/opengraph-image');

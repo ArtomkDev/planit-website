@@ -1,0 +1,201 @@
+- heading "Результати пошуку" [level=1]
+- main:
+  - heading "Результати веб-пошуку" [level=2]
+  - 'link "PlanIt: Розклад і Щоденник – Додатки в ... Google Play https://play.google.com › store › apps › details › id=com..."':
+    - /url: https://play.google.com/store/apps/details?id=com.artomk.planit&hl=uk
+    - 'heading "PlanIt: Розклад і Щоденник – Додатки в ..." [level=3]'
+    - generic: Google Play
+    - generic: https://play.google.com › store › apps › details › id=com...
+  - button "Про цей результат":
+  - emphasis: PlanIt працює як динамічний таймер вашого дня
+  - text: . Налаштуйте тривалість уроків та перерв, і додаток у реальному часі показуватиме зворотний відлік скільки хвилин ...
+  - heading "Огляд від ШІ" [level=2]:
+    - strong: Огляд від ШІ
+  - 'link "PlanIt: Розклад і Щоденник. Попередній перегляд посилання. Сайт: Google Play. Назва: PlanIt: Розклад і Щоденник – Додатки в Google Play. URL-адреса: https://play.google.com/store/apps/details?id=com.artomk.planit&hl=uk."':
+    - /url: https://play.google.com/store/apps/details?id=com.artomk.planit&hl=uk
+    - text: "PlanIt: Розклад і Щоденник"
+  - text: — це мобільний додаток (динамічний таймер), що працює як щоденний розклад і зворотний відлік для уроків чи подій.
+  - link "Google Play":
+    - /url: https://play.google.com/store/apps/details?id=com.artomk.planit&hl=uk
+  - button "Google Play – пов’язані результати":
+    - generic: Google Play
+  - heading "Основні можливості PlanIt:" [level=3]
+  - list:
+    - strong: "Динамічний таймер дня:"
+    - text: налаштування тривалості уроків та перерв із зворотним відліком у реальному часі.
+    - strong: "Побудова розкладу:"
+    - text: допомога в організації щоденних та тичних завдань.
+    - link "Google Play":
+      - /url: https://play.google.com/store/apps/details?id=com.artomk.planit&hl=uk
+    - button "Google Play – пов’язані результати":
+      - generic: Google Play
+  - emphasis:
+    - text: "(Примітка: якщо ви шукаєте програмне забезпечення для планування змін персоналу громадської безпеки, існує окремий сервіс"
+    - link:
+      - /url: https://play.google.com/store/apps/details?id=com.ragnasoft.planitschedule&hl=uk
+      - text: PlanIt Schedule
+    - text: ).
+  - link:
+    - /url: https://play.google.com/store/apps/details?id=com.ragnasoft.planitschedule&hl=uk
+  - button:
+    - generic: Google Play
+  - text: Ви шукаєте мобільний додаток
+  - strong: PlanIt
+  - text: для розкладу занять/уроків чи вам потрібен альтернативний онлайн-інструмент для створення розкладу?
+  - list:
+    - 'link "PlanIt: Розклад і Щоденник – Додатки в Google Play"':
+      - /url: https://play.google.com/store/apps/details?id=com.artomk.planit&hl=uk
+    - generic: Google Play
+    - button "Про цей результат":
+    - generic: "PlanIt: Розклад і Щоденник – Додатки в Google Play"
+    - generic: PlanIt працює як динамічний таймер вашого дня. Налаштуйте тривалість уроків та перерв, і додаток у реальному часі показуватиме зво...
+    - link "PlanIt Schedule – Додатки в Google Play":
+      - /url: https://play.google.com/store/apps/details?id=com.ragnasoft.planitschedule&hl=uk
+    - generic: Google Play
+    - button "Про цей результат":
+    - generic: PlanIt Schedule – Додатки в Google Play
+    - generic: PlanIt Schedule - це остаточне програмне забезпечення веб-планування для агенцій громадської безпеки. Мобільний додаток PlanIt Sch...
+  - text: Відповіді ШІ можуть містити помилки.
+  - link:
+    - /url: https://support.google.com/websearch?p=ai_overviews
+    - text: Докладніше
+  - status
+  - button:
+  - button:
+  - button:
+  - button:
+  - button:
+  - button "Кнопка \"Показати більше\" під оглядом від ШІ":
+    - generic: Показати більше
+  - heading "Результати веб-пошуку" [level=2]
+  - link "PlanIt Schedule – Додатки в Google Play Google Play https://play.google.com › store › apps › details › id=com...":
+    - /url: https://play.google.com/store/apps/details?id=com.ragnasoft.planitschedule&hl=uk
+    - heading "PlanIt Schedule – Додатки в Google Play" [level=3]
+    - generic: Google Play
+    - generic: https://play.google.com › store › apps › details › id=com...
+  - button "Про цей результат":
+  - emphasis: PlanIt Schedule
+  - text: "- це остаточне програмне забезпечення веб-планування для агенцій громадської безпеки. Мобільний додаток PlanIt Schedule забезпечує швидкий ..."
+  - img "Оцінка 3,5 з 5 (77) відгуки користувачів":
+    - text: 3,5
+    - text: (77)
+  - text: ·
+  - text: Безкоштовно · ‎Android · ‎Бізнес і продуктивність
+  - link "Безкоштовний онлайн-редактор розкладу Free Online Schedule Maker https://schedulebuilder.net › ...":
+    - /url: https://schedulebuilder.net/uk
+    - heading "Безкоштовний онлайн-редактор розкладу" [level=3]
+    - generic: Free Online Schedule Maker
+    - generic: https://schedulebuilder.net › ...
+  - button "Про цей результат":
+  - emphasis: Створіть безкоштовний тижневий розклад із приватним списком завдань
+  - text: . Додайте заняття й справи, змініть кольори, експортуйте PNG чи PDF. Без реєстрації.
+  - link "⏱️ Графік навчального процесу на 2026-2027 ... КПІ ім. Ігоря Сікорського https://kpi.ua › year":
+    - /url: https://kpi.ua/year
+    - heading "⏱️ Графік навчального процесу на 2026-2027 ..." [level=3]
+    - generic: КПІ ім. Ігоря Сікорського
+    - generic: https://kpi.ua › year
+  - button "Про цей результат":
+  - emphasis: ГРАФІК освітнього процесу студентів/аспірантів на 2026 - 2027 навчальний рік
+  - text: ". Форма здобуття вищої освіти: очна (денна, вечірня), дистанційна."
+  - link "Розклад занять для студентів | Студент Львівської ... Студент Львівської політехніки https://student.lpnu.ua › students_schedule":
+    - /url: https://student.lpnu.ua/students_schedule
+    - heading "Розклад занять для студентів | Студент Львівської ..." [level=3]
+    - generic: Студент Львівської політехніки
+    - generic: https://student.lpnu.ua › students_schedule
+  - button "Про цей результат":
+  - emphasis: Розклад занять для студентів
+  - text: . 2026/2027 навчальний рік. осінній семестр. Група. Семестр. 1 семестр, 2 семестр. Половина семестру.
+  - link "Графік навчального процесу Національний медичний університет імені О.О.Богомольця https://nmuofficial.com › grafik-navchalnogo-protsesu":
+    - /url: https://nmuofficial.com/ua/navchalno-metodychnyj-viddil/grafik-navchalnogo-protsesu/
+    - heading "Графік навчального процесу" [level=3]
+    - generic: Національний медичний університет імені О.О.Богомольця
+    - generic: https://nmuofficial.com › grafik-navchalnogo-protsesu
+  - button "Про цей результат":
+  - generic: Графік навчального процесу. Наказ № 567 від 01.07.2026 р. “Про затвердження графіку навчального процесу денної (очної) форми навчання на 2026-2027 н.
+  - link "Створюйте почасові плани - Planfix planfix.com https://planfix.com › Planfix › Integrations › PLANNER":
+    - /url: https://planfix.com/uk/features/hourly-schedule/
+    - heading "Створюйте почасові плани - Planfix" [level=3]
+    - generic: planfix.com
+    - generic: https://planfix.com › Planfix › Integrations › PLANNER
+  - button "Про цей результат":
+  - text: Погодинний
+  - emphasis: розклад
+  - text: "- це тип списку планувальника Planfix, який допомагає планувати та делегувати завдання протягом робочого дня. Почати зараз."
+  - img "Оцінка 4,8 з 5 (57) відгуки користувачів":
+    - text: 4,8
+    - text: (57)
+  - link "Використання подання планування в Microsoft Planner Microsoft Support https://support.microsoft.com › planner › training › use...":
+    - /url: https://support.microsoft.com/uk-ua/planner/training/use-schedule-view-in-microsoft-planner
+    - heading "Використання подання планування в Microsoft Planner" [level=3]
+    - generic: Microsoft Support
+    - generic: https://support.microsoft.com › planner › training › use...
+  - button "Про цей результат":
+  - generic: Навчальний курс. Використовуйте подання планування для впорядкування завдань Microsoft Planner календарі. Перегляньте це відео, щоб дізнатись, як це робити.
+  - link "OBRI vs PlanIt CRM — розклад і зарплата чи портал учня obricrm.com https://www.obricrm.com › Порівняння":
+    - /url: https://www.obricrm.com/uk/compare/obri-vs-planit
+    - heading "OBRI vs PlanIt CRM — розклад і зарплата чи портал учня" [level=3]
+    - generic: obricrm.com
+    - generic: https://www.obricrm.com › Порівняння
+  - button "Про цей результат":
+  - emphasis: PlanIt CRM автоматизує розклад, облік учнів і розрахунок зарплати
+  - text: . Порівняйте з порталом ДЗ, оплатами й free-планом OBRI.
+  - heading "Люди також шукають" [level=2]
+  - link "Розклад викладачів":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4+%D0%B2%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0%D1%87%D1%96%D0%B2&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg4EAE
+    - generic: Розклад викладачів
+  - link "Розклад НУЛП":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4+%D0%9D%D0%A3%D0%9B%D0%9F&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg9EAE
+    - generic: Розклад НУЛП
+  - link "Графік навчального процесу КПІ":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%93%D1%80%D0%B0%D1%84%D1%96%D0%BA+%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%83+%D0%9A%D0%9F%D0%86&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg-EAE
+    - generic: Графік навчального процесу КПІ
+  - link "Розклад для студентів":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4+%D0%B4%D0%BB%D1%8F+%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%96%D0%B2&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg8EAE
+    - generic: Розклад для студентів
+  - link "Розклад для студентів ну лп":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4+%D0%B4%D0%BB%D1%8F+%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D1%96%D0%B2+%D0%BD%D1%83+%D0%BB%D0%BF&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg7EAE
+    - generic: Розклад для студентів ну лп
+  - link "Графік навчального процесу КПІ 2026 2027":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%93%D1%80%D0%B0%D1%84%D1%96%D0%BA+%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%83+%D0%9A%D0%9F%D0%86+2026+2027&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg5EAE
+    - generic: Графік навчального процесу КПІ 2026 2027
+  - link "Графік КПІ":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%93%D1%80%D0%B0%D1%84%D1%96%D0%BA+%D0%9A%D0%9F%D0%86&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg6EAE
+    - generic: Графік КПІ
+  - link "Розклад політехніка":
+    - /url: /search?sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&q=%D0%A0%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4+%D0%BF%D0%BE%D0%BB%D1%96%D1%82%D0%B5%D1%85%D0%BD%D1%96%D0%BA%D0%B0&sa=X&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ1QJ6BAg3EAE
+    - generic: Розклад політехніка
+  - navigation:
+    - heading "Навігація сторінкою" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=10&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=20&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=30&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=40&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=50&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=60&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=70&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=80&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=90&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8tMDegQINRAU
+      - text: "10"
+    - heading "Уперед" [level=2]:
+      - link "Уперед":
+        - /url: /search?q=PlanIt+%D1%80%D0%BE%D0%B7%D0%BA%D0%BB%D0%B0%D0%B4&sca_esv=a5e9361146d2feed&hl=uk&biw=3440&bih=1215&sxsrf=APpeQnt1ufRwHcgLMJ9wXtPvvwUWP6QsRQ:1792951671949&ei=d0XeauaoOfDHwPAPrKGGuQo&start=10&sa=N&sstk=AS6-VmJa-eHkjMTJLt9BUuM_h7Sf3x5ZtdZGFKeoW9ZPt2VCXpm0u566_diVPi8AxK_gWKTlZK7slFzLdSbJp6rJZnrxvFcndS53Cg&ved=2ahUKEwimwIW84dWXAxXwIxAIHayQIacQ8NMDegQINRAW
+        - generic: Уперед
+  - navigation
