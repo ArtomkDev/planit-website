@@ -8,6 +8,19 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 Read `DESIGN.md` before changing UI, navigation, or interactions. Reuse its implemented components and tokens, run the relevant review checklist, and document deliberate exceptions in that guide. Do not restore the homepage “Можливості” shortcut in the global header.
 
+## Website copy and localization
+
+This is the website about the PlanIt app, not the app. It speaks to a visitor deciding whether to try PlanIt, so it may sell, but plainly and honestly.
+
+- Every string lives in both `src/i18n/locales/en.json` and `src/i18n/locales/uk.json`; change both in the same edit and write each language natively, not word for word. Keep `{placeholders}` and rich-text tags identical across languages.
+- Say what a visitor gets, in their words (classes, tasks, classmates, a phone). Put exact limits, settings and option lists (link durations, file sizes, menu names) in the FAQ or legal pages, not in headings, cards or decorative previews. A preview caption must tell the visitor something useful, not repeat a setting.
+- No generic slogans or AI phrasing: no "Your X. Your Y.", "More than a …", "at your pace", "your choice", "perfect", "smart", "seamless", no stacked exclamation marks. Headlines are concrete claims a student would recognize ("Set up your schedule in a few minutes.").
+- Prefer one or two short sentences. Cut sentences that reassure, explain internals, or restate the UI. Never expose vendor or system errors to visitors ("Firebase rejected…"); say what happened and the next step, and keep any error code only as something to send to support.
+- FAQ answers start with the direct answer ("Yes", "No", "Only on Android"), then the one or two facts that matter. Keep honest limits (no iOS app yet, no reminders in the web app, free for now) and the same commitments as the legal documents.
+- Use the same terms as the app: English "class", "schedule", "sign in", "web app"; Ukrainian «заняття», «розклад», «увійти», «вебверсія», «застосунок». Ukrainian style: «Виберіть», not «Оберіть»; no «Будь ласка»; «» quotes and ’ apostrophes; neutral wording where gender would be guessed.
+- Legal page titles, legal summaries and SEO metadata follow the legal documents and search intent; edit them only when the source documents change.
+- After copy changes run `npm.cmd test` and `npm.cmd run typecheck`, and look at the changed sections in both languages.
+
 ## Graphify
 
 New Codex tasks in this repository should treat `graphify-out/graph.json` as the first source of codebase context.

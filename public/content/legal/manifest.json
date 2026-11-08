@@ -1,40 +1,40 @@
 {
-  "version": "a0e03d6383d2fd26",
+  "version": "ce668a9990cc822b",
   "documents": {
     "privacy": {
       "path": "/content/legal/privacy.mdx",
       "loadingPath": "/content/legal/privacy.loading.mdx",
-      "sha256": "e45df1739bc1c09aa3727d9abd0713ad1d0449a3922fa3a587f7161df92fc522",
-      "loadingSha256": "e8c51ac6706f78706e90349ce4169a66035b17fb22b7ba4cefd1f72fa55fd048",
+      "sha256": "20a8f276ffdca7e7329270b6fd4ab7d9e16a1f6fa165399c9e9b516d54928d67",
+      "loadingSha256": "dc0dea7d44d14155da47d306821b72ffe29304b30bded81ff879ec7dd3b074a7",
       "title": "Privacy Policy",
-      "version": "2.3",
+      "version": "2.4",
       "metadata": {
         "slug": "privacy",
         "title": "Privacy Policy",
         "navigationTitle": "Privacy Policy",
         "summary": "Privacy at a glance",
         "effectiveDateLabel": "Effective and last updated:",
-        "effectiveDate": "2026-08-30",
-        "effectiveDateDisplay": "August 30, 2026",
-        "version": "2.3"
+        "effectiveDate": "2026-11-07",
+        "effectiveDateDisplay": "November 7, 2026",
+        "version": "2.4"
       }
     },
     "cookies": {
       "path": "/content/legal/cookies.mdx",
       "loadingPath": "/content/legal/cookies.loading.mdx",
-      "sha256": "f0a92532a465ab9b82c678c1c089836da8d56bde6b897bf139427ecd825676b6",
-      "loadingSha256": "b9d926252bbddb16ffa4f4579e80800ab64e6d8fe233759ec5386e7bf8f20b31",
+      "sha256": "8fd97bcd1b908f0310fc71fdca175e47637e7e4f24ce5493f225ef7ff868aa06",
+      "loadingSha256": "60162a8fb8968e20588d8b54273fe7c4a2c91306a5b3be01947828ee17cb5fd1",
       "title": "Cookie & Similar Technologies Policy",
-      "version": "1.0",
+      "version": "1.1",
       "metadata": {
         "slug": "cookies",
         "title": "Cookie & Similar Technologies Policy",
         "navigationTitle": "Cookie Policy",
         "summary": "Your choices at a glance",
         "effectiveDateLabel": "Effective and last updated:",
-        "effectiveDate": "2026-07-24",
-        "effectiveDateDisplay": "July 24, 2026",
-        "version": "1.0"
+        "effectiveDate": "2026-11-07",
+        "effectiveDateDisplay": "November 7, 2026",
+        "version": "1.1"
       }
     },
     "terms": {
@@ -98,37 +98,37 @@
         "privacy": {
           "path": "/content/legal/privacy.mdx",
           "loadingPath": "/content/legal/privacy.loading.mdx",
-          "sha256": "e45df1739bc1c09aa3727d9abd0713ad1d0449a3922fa3a587f7161df92fc522",
-          "loadingSha256": "e8c51ac6706f78706e90349ce4169a66035b17fb22b7ba4cefd1f72fa55fd048",
+          "sha256": "20a8f276ffdca7e7329270b6fd4ab7d9e16a1f6fa165399c9e9b516d54928d67",
+          "loadingSha256": "dc0dea7d44d14155da47d306821b72ffe29304b30bded81ff879ec7dd3b074a7",
           "title": "Privacy Policy",
-          "version": "2.3",
+          "version": "2.4",
           "metadata": {
             "slug": "privacy",
             "title": "Privacy Policy",
             "navigationTitle": "Privacy Policy",
             "summary": "Privacy at a glance",
             "effectiveDateLabel": "Effective and last updated:",
-            "effectiveDate": "2026-08-30",
-            "effectiveDateDisplay": "August 30, 2026",
-            "version": "2.3"
+            "effectiveDate": "2026-11-07",
+            "effectiveDateDisplay": "November 7, 2026",
+            "version": "2.4"
           }
         },
         "cookies": {
           "path": "/content/legal/cookies.mdx",
           "loadingPath": "/content/legal/cookies.loading.mdx",
-          "sha256": "f0a92532a465ab9b82c678c1c089836da8d56bde6b897bf139427ecd825676b6",
-          "loadingSha256": "b9d926252bbddb16ffa4f4579e80800ab64e6d8fe233759ec5386e7bf8f20b31",
+          "sha256": "8fd97bcd1b908f0310fc71fdca175e47637e7e4f24ce5493f225ef7ff868aa06",
+          "loadingSha256": "60162a8fb8968e20588d8b54273fe7c4a2c91306a5b3be01947828ee17cb5fd1",
           "title": "Cookie & Similar Technologies Policy",
-          "version": "1.0",
+          "version": "1.1",
           "metadata": {
             "slug": "cookies",
             "title": "Cookie & Similar Technologies Policy",
             "navigationTitle": "Cookie Policy",
             "summary": "Your choices at a glance",
             "effectiveDateLabel": "Effective and last updated:",
-            "effectiveDate": "2026-07-24",
-            "effectiveDateDisplay": "July 24, 2026",
-            "version": "1.0"
+            "effectiveDate": "2026-11-07",
+            "effectiveDateDisplay": "November 7, 2026",
+            "version": "1.1"
           }
         },
         "terms": {
@@ -192,39 +192,39 @@
         "privacy": {
           "path": "/content/legal/uk/privacy.mdx",
           "loadingPath": "/content/legal/uk/privacy.loading.mdx",
-          "sha256": "85641172e492410eee3b5ee7d6c4641040fce6667f822192d9078b748a290d3c",
-          "loadingSha256": "00d807957c92791be3c717a01a17a63586c286b6683267654d1df6225c9a1f90",
+          "sha256": "0e010962a2e70d7c304456ce916f44eb2c79812e9d1eac848e661a681de57ee3",
+          "loadingSha256": "190a9764ff22150a9eceb5dea2e9d749fc26bfb515c03c226c8b4d2d888b4609",
           "title": "Політика конфіденційності",
-          "version": "2.3",
+          "version": "2.4",
           "metadata": {
             "slug": "privacy",
             "title": "Політика конфіденційності",
             "navigationTitle": "Політика конфіденційності",
             "summary": "Конфіденційність коротко",
             "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
-            "effectiveDate": "2026-08-30",
-            "effectiveDateDisplay": "30 серпня 2026 року",
-            "version": "2.3",
-            "translationSourceHash": "cfb9574a941dbc6581d6dc280477fa13b3afa9309b044e7cf60eba36f274b4bd"
+            "effectiveDate": "2026-11-07",
+            "effectiveDateDisplay": "7 листопада 2026 року",
+            "version": "2.4",
+            "translationSourceHash": "58a320d2f5356dc21def41e8ee77109fc3a9a73f340f4b6f0af510f817798140"
           }
         },
         "cookies": {
           "path": "/content/legal/uk/cookies.mdx",
           "loadingPath": "/content/legal/uk/cookies.loading.mdx",
-          "sha256": "d809f38a5237aae8aa1420a4639e03975e3e24f4e11066db99332b93bf894c03",
-          "loadingSha256": "9e8e60cf19f097818c2b25d2424601022d49b780d465119776fb9c9d45ae7205",
+          "sha256": "0652056ed215e6faadb93cd1cc258b95233ccdaf899ae3c141f989062952198e",
+          "loadingSha256": "20f4fb1b39a721cbf2c9fcaad5ad93df7f0d2b454fd2fb07e32bd76f97531b2d",
           "title": "Політика щодо cookies та подібних технологій",
-          "version": "1.0",
+          "version": "1.1",
           "metadata": {
             "slug": "cookies",
             "title": "Політика щодо cookies та подібних технологій",
             "navigationTitle": "Політика cookies",
             "summary": "Ваш вибір коротко",
             "effectiveDateLabel": "Дата набрання чинності та останнього оновлення:",
-            "effectiveDate": "2026-07-24",
-            "effectiveDateDisplay": "24 липня 2026 року",
-            "version": "1.0",
-            "translationSourceHash": "7acc0783e6f42094f4d75b07c0443de15c8197fc96ac924407d88c4398b2083d"
+            "effectiveDate": "2026-11-07",
+            "effectiveDateDisplay": "7 листопада 2026 року",
+            "version": "1.1",
+            "translationSourceHash": "138ff198786d87beda8f49418b2127539893ca981eac7df6579d65165ecb5951"
           }
         },
         "terms": {

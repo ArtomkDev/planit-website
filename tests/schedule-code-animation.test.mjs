@@ -49,7 +49,7 @@ test('code resolves to six readable new characters on independent, bounded timin
   assert.equal(frames.length, 0, 'give the card entrance a short head start');
   advance(1800);
   const final = frames.at(-1).glyphs;
-  assert.match(final.map(glyph => glyph.value).join(''), /^[A-HJ-NP-Z2-9]{6}$/);
+  assert.match(final.map(glyph => glyph.value).join(''), /^[A-HJ-NP-Z2-9]{7}$/);
   final.forEach((glyph, index) => {
     assert.equal(glyph.phase, 'settled');
     assert.notEqual(glyph.value, INITIAL_SCHEDULE_CODE[index]);
@@ -126,7 +126,7 @@ test('manual regeneration during a reveal cancels the previous timeline without 
   advance(2000);
   const settled = frames.at(-1).glyphs;
   assert.ok(settled.every(glyph => glyph.phase === 'settled'));
-  assert.match(settled.map(glyph => glyph.value).join(''), /^[A-HJ-NP-Z2-9]{6}$/);
+  assert.match(settled.map(glyph => glyph.value).join(''), /^[A-HJ-NP-Z2-9]{7}$/);
   animation.stop();
   assert.equal(tasks.size, 0);
 });
@@ -159,7 +159,7 @@ test('copying during a reveal returns exactly the complete code that remains dis
   advance(430);
   const copied = animation.stop();
   animation.pause();
-  assert.match(copied, /^[A-HJ-NP-Z2-9]{6}$/);
+  assert.match(copied, /^[A-HJ-NP-Z2-9]{7}$/);
   assert.equal(frames.at(-1).glyphs.map(glyph => glyph.value).join(''), copied);
   assert.ok(frames.at(-1).glyphs.every(glyph => glyph.phase === 'idle'));
   advance(30000);

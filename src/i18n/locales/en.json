@@ -104,8 +104,8 @@
   },
   "Features": {
     "badge": "PlanIt features",
-    "title": "Your schedule. Your rules.",
-    "description": "Create your schedule or import a copy with a code. Try the PlanIt features below.",
+    "title": "Set it up your way.",
+    "description": "Create your schedule or get a copy with a code. The demos below work like the real app.",
     "openApp": "Open the full web app",
     "lesson": {
       "label": "Classes",
@@ -116,7 +116,7 @@
     "appearance": {
       "label": "Appearance",
       "title": "Recognize subjects at a glance.",
-      "description": "Choose a color, gradient, and icon. See your card update instantly.",
+      "description": "Colors, gradients and icons for each subject.",
       "hint": "Pick a color or an icon to change the card."
     },
     "tasks": {
@@ -127,9 +127,9 @@
     },
     "schedule": {
       "label": "Settings",
-      "title": "A schedule at your pace.",
+      "title": "Times that match your school.",
       "description": "Set classes, breaks, week cycles, and reminders. Class times update automatically.",
-      "hint": "Change class duration and watch the times update."
+      "hint": "Change the class duration and the times update."
     },
     "ui": {
       "reset": "Reset demo",
@@ -244,7 +244,7 @@
       "invalidTiming": "Check the time and durations: all three classes must fit within one day.",
       "weekCount": "Number of weeks",
       "autoLink": "Link to the next class",
-      "autoLinkHint": "New subject tasks link to the next class automatically."
+      "autoLinkHint": "New tasks link to the subject's next class automatically."
     },
     "startLabel": "How to get started with PlanIt",
     "start": {
@@ -258,44 +258,44 @@
       },
       "use": {
         "title": "Use it every day",
-        "description": "See your day. Sign in to sync across devices."
+        "description": "Check your day at a glance. Sign in to sync across devices."
       }
     }
   },
   "AppShowcase": {
     "badge": "Additional features",
-    "title": "More than a schedule.",
+    "title": "What else it can do.",
     "items": {
       "sharing": {
         "title": "Share with a code or link",
-        "description": "Sign in to share a code or link. Your recipient can save a copy of the schedule in their PlanIt."
+        "description": "Send a code or link, and classmates save their own copy in PlanIt."
       },
       "exports": {
         "title": "A file to print or edit",
-        "description": "PDF for printing, Word for editing, or Excel, CSV, and text for other tasks."
+        "description": "PDF to print, Word to edit, plus Excel, CSV and plain text."
       },
       "reminders": {
         "title": "Reminders at the right time",
-        "description": "On Android, set a schedule reminder or a different time for a subject. The web app does not send system reminders."
+        "description": "On Android, PlanIt reminds you before class, at the time you set for each subject. The web app has no reminders."
       },
       "materials": {
         "title": "Materials beside their class",
-        "description": "Keep photos, PDFs, files, and links with the class or task they belong to."
+        "description": "Keep photos, PDFs, files and links with their class or task."
       },
       "widgets": {
         "title": "Your schedule on Android",
         "description": "See classes and breaks on your home screen without opening PlanIt."
       },
       "sync": {
-        "title": "Your changes, your choice",
-        "description": "Sign in to sync schedules across devices. If changes conflict, choose which version to keep."
+        "title": "One schedule on every device",
+        "description": "Sign in and your schedules sync. If two devices disagree, you choose which version to keep."
       }
     },
     "preview": {
       "example": "Example",
       "sharing": {
         "label": "Schedule code",
-        "duration": "1 · 3 · 7 · 30 days",
+        "caption": "Opens in the app or a browser",
         "regenerate": "Generate a new example code",
         "copy": "Copy code",
         "copied": "Copied",
@@ -337,21 +337,21 @@
       },
       "android": {
         "title": "Android™",
-        "description": "Available on Google Play. Start without an account, add a widget and enable class reminders.",
+        "description": "On Google Play. Start without an account, add a home-screen widget and turn on class reminders.",
         "button": "Google Play",
         "status": "Supported"
       },
       "web": {
         "title": "Web App",
-        "description": "Classes and tasks in your browser, with sync after signing in. System reminders and the home-screen widget are available on Android.",
+        "description": "Your classes and tasks in any browser. Sign in to sync. Reminders and the widget are Android-only.",
         "button": "Open Web App",
         "status": "Online"
       }
     }
   },
   "CTA": {
-    "title": "Your next day, in PlanIt.",
-    "description": "Create a schedule or import a copy with a code. Currently free, with no account required to start.",
+    "title": "Set up your schedule in a few minutes.",
+    "description": "Create a schedule or get a copy with a code. Free for now, and no account needed to start.",
     "button": "Try in your browser"
   },
   "Footer": {
@@ -361,7 +361,7 @@
     "androidTrademarks": "Android and Google Play are trademarks of Google LLC.",
     "androidAttribution": "The <source>Android robot</source> is reproduced or modified from work created and shared by Google and used according to terms described in the <license>Creative Commons 3.0 Attribution License</license>.",
     "cookieSettings": "Cookie preferences",
-    "description": "PlanItflow is the official PlanIt website. Class schedules, tasks and materials. Always at hand."
+    "description": "PlanItflow is the official PlanIt website. Class schedule, tasks and materials in one app."
   },
   "Privacy": {
     "title": "Privacy Policy",
@@ -386,11 +386,20 @@
     "officialDocument": "Open the application's full terms of service"
   },
   "CookieConsent": {
-    "title": "We value your privacy",
-    "description": "We use optional cookies and Firebase Analytics only to understand site traffic and improve PlanIt. Analytics stays off unless you accept.",
-    "accept": "Accept All",
-    "reject": "Reject Non-Essential",
-    "learnMore": "Learn More"
+    "title": "Cookies and analytics",
+    "description": "Necessary browser storage keeps PlanIt working. Optional Firebase Analytics helps us improve PlanIt and turns on only with your consent.",
+    "necessaryTitle": "Necessary",
+    "necessaryDescription": "Security and preferences",
+    "necessaryBadge": "Always on",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "Usage measurement by Google Firebase",
+    "analyticsOptional": "Optional",
+    "analyticsOn": "On",
+    "analyticsOff": "Off",
+    "policy": "Cookie policy",
+    "reject": "Reject analytics",
+    "accept": "Accept analytics",
+    "close": "Keep current choice"
   },
   "LegalDocument": {
     "current": "Current document",
@@ -405,7 +414,7 @@
     "supportAction": "Contact support",
     "navigation": "PlanIt documents",
     "loading": "Loading document",
-    "loadError": "The document could not be loaded. Please try again.",
+    "loadError": "Could not load the document. Try again.",
     "retry": "Try again",
     "version": "Version",
     "supportLabel": "PlanIt support",
@@ -493,33 +502,33 @@
       "verifyEmail": "Verifying your email address…",
       "verifyAndChangeEmail": "Verifying your new email address…",
       "recoverEmail": "Restoring your email address…",
-      "description": "This should only take a moment. Keep this page open."
+      "description": "Keep this page open."
     },
     "invalid": {
       "eyebrow": "Incomplete link",
       "title": "We can’t open this action",
-      "description": "This link is missing information required to process it safely. Open the newest email from PlanIt or request a new link."
+      "description": "This link is incomplete. Open the latest email from PlanIt or request a new link."
     },
     "error": {
       "eyebrow": "The link didn’t work",
       "title": "We couldn’t complete this action"
     },
     "errors": {
-      "expired": "This link has expired. Request a new one in PlanIt and use the most recent email.",
-      "invalid": "This link is invalid or has already been used. Request a new one in PlanIt.",
-      "weakPassword": "Firebase rejected this password as too weak. Try a different password.",
-      "passwordRequirements": "Firebase rejected the password because it does not meet the project's security policy.",
+      "expired": "This link has expired. Request a new one in PlanIt.",
+      "invalid": "This link is invalid or was already used. Request a new one in PlanIt.",
+      "weakPassword": "This password is too weak. Try another one.",
+      "passwordRequirements": "This password doesn't meet the requirements. Try another one.",
       "passwordTooShort": "The password is too short: use at least 10 characters.",
       "passwordTooLong": "The password is too long: use no more than 128 characters.",
       "passwordMissingUppercase": "Add at least one uppercase letter to the password.",
       "passwordMissingLowercase": "Add at least one lowercase letter to the password.",
       "passwordMissingNumber": "Add at least one number to the password.",
       "network": "We couldn’t reach the PlanIt service. Check your internet connection and try again.",
-      "tooManyRequests": "There have been too many attempts in a short time. Wait a few minutes and try again.",
+      "tooManyRequests": "Too many attempts. Wait a few minutes and try again.",
       "userDisabled": "This account has been disabled. Contact PlanIt support.",
-      "operationNotAllowed": "Password sign-in is disabled for this project. Contact PlanIt support.",
-      "service": "The service is temporarily unavailable. Please try again in a little while.",
-      "unknownFirebase": "Firebase returned error {code}. Share this code with PlanIt support."
+      "operationNotAllowed": "Password sign-in is currently unavailable. Contact PlanIt support.",
+      "service": "The service is temporarily unavailable. Try again a bit later.",
+      "unknownFirebase": "Something went wrong (code {code}). Send this code to PlanIt support."
     },
     "reset": {
       "addTitle": "Create password",
@@ -543,16 +552,16 @@
       "passwordsMismatch": "Passwords do not match",
       "confirmHint": "Repeat your new password",
       "submitAdd": "Create password",
-      "submitReset": "Reset password",
+      "submitReset": "Change password",
       "submitting": "Saving…",
       "successAddTitle": "Password created",
       "successResetTitle": "Password changed",
-      "successAddDescription": "You can now sign in to PlanIt with your email and new password.",
-      "successResetDescription": "Your new password is active. Open PlanIt and sign in to your account."
+      "successAddDescription": "Sign in to PlanIt with your email and this password.",
+      "successResetDescription": "Open PlanIt and sign in with your new password."
     },
     "verifyEmail": {
       "successTitle": "Email verified",
-      "successDescription": "Your email address is verified. You can now return to PlanIt."
+      "successDescription": "You can go back to PlanIt."
     },
     "verifyAndChangeEmail": {
       "successTitle": "Email changed",
@@ -561,8 +570,8 @@
     },
     "recoverEmail": {
       "successTitle": "Email restored",
-      "successDescription": "Your previous account email has been restored. We recommend reviewing your security settings in PlanIt.",
-      "successDescriptionWithEmail": "The email address {email} has been restored. We recommend reviewing your security settings in PlanIt.",
+      "successDescription": "Your previous email is back. If you didn't change it, change your password in PlanIt.",
+      "successDescriptionWithEmail": "{email} is restored. If you didn't change it, change your password in PlanIt.",
       "changedFrom": "Reverted the change from:"
     },
     "success": {
@@ -580,20 +589,19 @@
       "imageAlt": "PlanIt: class schedules, tasks and materials for Android and the web"
     },
     "privacy": {
-      "title": "Privacy Policy",
-      "description": "How PlanIt stores local schedules, synchronizes data through Firebase, and handles authentication."
-    },
-    "terms": {
-      "title": "Terms of Service",
-      "description": "PlanIt usage terms, service availability, and user responsibilities."
-    },
-    "delete": {
-      "title": "Account Deletion",
-      "description": "How to request deletion of a PlanIt account and the data associated with it."
+      "description": "How PlanIt handles your data: guest schedules stay on your device, accounts sync through Firebase, ads, consent-based analytics and data deletion."
     },
     "cookies": {
-      "title": "Cookie Rules",
-      "description": "How PlanIt uses necessary browser storage and keeps optional Firebase Analytics off until you choose to accept it."
+      "description": "Which browser storage PlanIt needs to work and how consent works: optional Firebase Analytics in the web app stays off until you accept it."
+    },
+    "terms": {
+      "description": "PlanIt terms of use: ownership of your content, schedule share codes, service availability, backups and the responsibilities of every user."
+    },
+    "licenses": {
+      "description": "Third-party open-source software used in PlanIt: direct production dependencies, their exact versions, authors and license terms."
+    },
+    "delete": {
+      "description": "How to delete your PlanIt account and data: use the in-app flow, send a verified email request to support, or clear guest data on your devices."
     }
   },
   "FAQ": {
@@ -604,43 +612,43 @@
     "items": {
       "price": {
         "question": "Is PlanIt free? Are there ads or a subscription?",
-        "answer": "PlanIt is currently free. Advertising is planned across all platforms. We plan to introduce a subscription later; its price, features and terms will be shown before you subscribe."
+        "answer": "PlanIt is free for now. Ads are planned on all platforms, and a subscription may come later — you'll see its price, features and terms before you subscribe."
       },
       "account": {
         "question": "Do I need to create an account?",
-        "answer": "No. Choose “Continue as guest” on the sign-in screen. Guest data stays on that device. Signing in is required for sync across devices, cloud features and creating sharing codes."
+        "answer": "No. Choose “Continue as guest” on the sign-in screen; your data stays on that device. You need an account to sync between devices, store files in the cloud and share schedules with a code."
       },
       "start": {
         "question": "How do I start if my group already has a schedule?",
-        "answer": "If someone has created the schedule in PlanIt, ask for a code or link and import a copy in the app. Or create your own: set class times, breaks and the week cycle, then add subjects. You do not have to fill in every optional field at once."
+        "answer": "If someone already made it in PlanIt, ask them for a code or link and import a copy. Otherwise create your own: set class times, breaks and the week cycle, then add subjects. Optional fields can wait."
       },
       "offline": {
         "question": "Can I use PlanIt without an internet connection?",
-        "answer": "On Android, your schedule is stored on the device and is available locally. Loading the web app, signing in, syncing and downloading cloud files require an internet connection. Whether a file is available offline depends on whether a copy is already on your device."
+        "answer": "On Android, yes: your schedule is stored on the device. You need internet to open the web app, sign in, sync and download cloud files. A file opens offline only if a copy is already on the device."
       },
       "ios": {
         "question": "Does PlanIt work on iPhone and iPad?",
-        "answer": "Yes, through the web app in your browser. The native app is currently published on Google Play for Android. We are preparing the iOS version, with no confirmed release date yet."
+        "answer": "Yes, through the web app in your browser. The native app is on Google Play for Android. The iOS version is in progress, with no release date yet."
       },
       "reminders": {
         "question": "Where do reminders and the widget work?",
-        "answer": "System class reminders and the home-screen widget are available in the Android app. Reminders require notification permission. The web app does not send system reminders or provide the Android widget."
+        "answer": "Only in the Android app, and reminders need notification permission. The web app has no reminders and no widget."
       },
       "sharing": {
-        "question": "Will the author’s changes automatically update my imported schedule?",
-        "answer": "No. The recipient saves a separate copy. After signing in, the author can create a code or link valid for 1, 3, 7 or 30 days. A new copy can be shared after changes. Tasks and cloud attachments are not included in the shared code."
+        "question": "If the author changes the schedule, will my copy update?",
+        "answer": "No. You get your own copy. After changes, the author can share a new one. Tasks and cloud attachments are not shared."
       },
       "files": {
         "question": "Can I attach PDFs and photos, or import a schedule from a file?",
-        "answer": "You can attach photos, PDFs, other files and links to classes and tasks. Local files stay on the device; cloud storage requires signing in. Export to PDF, Word, Excel, CSV or text helps you print or edit a schedule. Attaching or exporting a file does not mean automatically recognizing or importing a schedule from a PDF or photo."
+        "answer": "Yes, you can attach photos, PDFs, other files and links to classes and tasks. Files stay on the device, or go to the cloud if you sign in. PlanIt doesn't read a schedule from a PDF or photo: enter it yourself or import a copy with a code. You can export a schedule to PDF, Word, Excel, CSV or text."
       },
       "demo": {
         "question": "Will changes from the website demos transfer to the app?",
-        "answer": "The demos are interactive examples. “Save” keeps changes only within the current demo. They do not transfer to the app and reset when you reload the page. You create your own schedule in the full web app."
+        "answer": "No. The demos are examples: “Save” works only inside the demo, and everything resets when you reload the page. Your own schedule lives in the web app."
       },
       "privacy": {
         "question": "Where is my data stored, and how can I delete it?",
-        "answer": "Guest schedules are stored locally and can be lost if storage is cleared or the app is removed. After signing in, data is synced through Firebase. Technical services, advertising and analytics have separate data-processing terms. The documents section includes the privacy policy and account-deletion instructions."
+        "answer": "Guest schedules are stored on the device and are lost if you clear its storage or remove the app. After you sign in, data syncs through Firebase. Technical services, ads and analytics have their own data terms. The privacy policy and account deletion steps are in Documents."
       }
     }
   }

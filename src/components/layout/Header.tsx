@@ -126,7 +126,7 @@ export const Header = ({ onLocaleChange, documentNavigation }: HeaderProps) => {
             {t('openApp')}<ArrowRight aria-hidden="true" weight="bold" className="h-4 w-4" />
           </HeaderLink>
           {onLocaleChange ? <button type="button" onClick={onLocaleChange} aria-label={t('switchLanguage')} className="inline-flex header-icon">{t('language')}</button>
-            : <HeaderLink documentNavigation={documentNavigation} href={buildLocaleUrl(pathname, '', '', targetLocale)} onClick={changeLocale} aria-label={t('switchLanguage')} className="inline-flex header-icon">{t('language')}</HeaderLink>}
+            : <HeaderLink documentNavigation={documentNavigation} href={buildLocaleUrl(pathname, '', '', targetLocale)} hrefLang={targetLocale} onClick={changeLocale} aria-label={t('switchLanguage')} className="inline-flex header-icon">{t('language')}</HeaderLink>}
           <ThemeToggle />
           <button ref={mobileTriggerRef} type="button" className="inline-flex header-icon lg:hidden" aria-label={t(mobileOpen ? 'closeMenu' : 'openMenu')} aria-expanded={mobileOpen} aria-controls="mobile-navigation"
             onClick={() => setMenu({ pathname, section: '', mobile: !mobileOpen })}>{mobileOpen ? <X aria-hidden="true" size={22} /> : <List aria-hidden="true" size={22} />}</button>

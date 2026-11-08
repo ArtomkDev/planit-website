@@ -57,3 +57,20 @@ test('entry falls back safely with unsupported preferences or blocked browser st
 test('entry preserves the exact query and fragment on the localized homepage', () => {
   assert.equal(redirect({ languages: ['en-US'], search: '?source=shared&value=%D0%BC&x=a+b', hash: '#feature-appearance' }), '/en?source=shared&value=%D0%BC&x=a+b#feature-appearance');
 });
+
+test('entry leaves named search crawlers on the x-default selector but redirects phones with bot-like model names', () => {
+  const run = userAgent => {
+    const destinations = [];
+    runInNewContext(localeRedirectScript, {
+      window: { localStorage: { getItem: () => null }, location: { search: '', hash: '', replace: url => destinations.push(url) } },
+      document: { cookie: '' },
+      navigator: { languages: ['en-US'], language: 'en-US', userAgent },
+    });
+    return destinations;
+  };
+  for (const crawler of ['Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)', 'Mozilla/5.0 (compatible; Google-InspectionTool/1.0)', 'Mozilla/5.0 (compatible; bingbot/2.0)', 'Mozilla/5.0 (compatible; YandexBot/3.0)', 'facebookexternalhit/1.1']) {
+    assert.deepEqual(run(crawler), [], crawler);
+  }
+  assert.deepEqual(run('Mozilla/5.0 (Linux; Android 9; CUBOT X19) AppleWebKit/537.36 Chrome/120.0 Mobile Safari/537.36'), ['/en']);
+  assert.deepEqual(run(undefined), ['/en']);
+});

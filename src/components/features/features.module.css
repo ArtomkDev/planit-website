@@ -772,16 +772,20 @@ button.settingRow:hover {
 }
 .taskPattern {
   position: absolute;
-  inset: 0;
-  overflow: hidden;
+  inset: -20px;
   display: grid;
-  grid-template-columns: repeat(8, 44px);
-  grid-auto-rows: 40px;
-  opacity: 0.13;
+  grid-template-columns: repeat(20, 38px);
+  grid-auto-rows: 38px;
+  opacity: 0.2;
   pointer-events: none;
 }
+.taskPattern span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .taskPattern svg {
-  transform: rotate(-15deg);
+  transform: rotate(-12deg);
 }
 .taskCheckbox {
   position: relative;

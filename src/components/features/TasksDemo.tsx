@@ -16,6 +16,14 @@ import { useState } from "react";
 import { ChoiceList, DemoFrame, SettingsGroup } from "./DemoPrimitives";
 import styles from "./features.module.css";
 
+// Same pattern as LessonCard: 38px cells in a checkerboard, sized to cover the widest
+// single-column demo (about 700px) and a task with several wrapped lines.
+const PATTERN_COLUMNS = 20;
+const PATTERN_ROWS = 6;
+const patternCells = Array.from({ length: PATTERN_COLUMNS * PATTERN_ROWS }, (_, index) =>
+  (Math.floor(index / PATTERN_COLUMNS) + (index % PATTERN_COLUMNS)) % 2 === 0,
+);
+
 type DemoTask = {
   id: number;
   subject: string;
@@ -249,8 +257,8 @@ export function TasksDemo() {
                   )}
                   {!task.completed && (
                     <div className={styles.taskPattern} aria-hidden="true">
-                      {Array.from({ length: 32 }, (_, index) => (
-                        <Icon key={index} size={22} />
+                      {patternCells.map((hasIcon, index) => (
+                        <span key={index}>{hasIcon && <Icon size={18} />}</span>
                       ))}
                     </div>
                   )}

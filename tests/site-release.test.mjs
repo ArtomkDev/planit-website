@@ -12,7 +12,7 @@ function pageHtml(route, overrides={}) {
   const locale=route.split('/')[1] || 'uk';
   const url='https://example.test'+route;
   const suffix=route==='/'?'':route.replace(/^\/(uk|en)/,'');
-  return `<html lang="${locale}"><head><title>${overrides.title || 'Page '+route}</title><meta name="description" content="Useful description for ${route}"/><link rel="canonical" href="${overrides.canonical || url}"/><meta property="og:url" content="${url}"/><meta property="og:image" content="https://example.test/opengraph-image"/>${['uk','en'].map(language=>`<link rel="alternate" hrefLang="${language}" href="https://example.test/${language}${suffix}"/>`).join('')}${['/','/uk','/en'].includes(route)?'<link rel="alternate" hrefLang="x-default" href="https://example.test/"/>':''}</head><body><main><h1>Useful page</h1><a href="/uk">Home</a></main></body></html>`;
+  return `<html lang="${locale}"><head><title>${overrides.title || 'Page '+route}</title><meta name="description" content="${overrides.description ?? `Useful description for ${route} that explains what this page offers to students and school learners.`}"/><link rel="canonical" href="${overrides.canonical || url}"/><meta property="og:url" content="${url}"/><meta property="og:image" content="https://example.test/opengraph-image"/>${['uk','en'].map(language=>`<link rel="alternate" hrefLang="${language}" href="https://example.test/${language}${suffix}"/>`).join('')}${overrides.xDefault === false ? '' : `<link rel="alternate" hrefLang="x-default" href="https://example.test/${suffix ? 'uk'+suffix : ''}"/>`}</head><body><main><h1>Useful page</h1><a href="/uk">Home</a></main></body></html>`;
 }
 
 async function fixture(t) {
@@ -52,6 +52,18 @@ test('inherited homepage canonical and missing translations stop the release',as
   await assert.rejects(collectSeo(root,config),/self-referencing canonical/);
   await writeFile(path.join(root,'out/uk/new-page.html'),pageHtml('/uk/new-page'));
   await assert.rejects(collectSeo(root,config),/missing page or reciprocal hreflang/);
+});
+
+test('weak snippets and missing x-default stop the release',async t=>{
+  const {root,config}=await fixture(t);
+  for(const locale of ['uk','en']) await writeFile(path.join(root,`out/${locale}/new-page.html`),pageHtml(`/${locale}/new-page`));
+  assert.equal(new URL((await collectSeo(root,config)).pages.find(page=>page.path==='/en/new-page').alternates['x-default']).href,'https://example.test/uk/new-page');
+  await writeFile(path.join(root,'out/en/new-page.html'),pageHtml('/en/new-page',{description:'Privacy at a glance'}));
+  await assert.rejects(collectSeo(root,config),/70–170 character search snippet/);
+  await writeFile(path.join(root,'out/en/new-page.html'),pageHtml('/en/new-page',{title:'A'.repeat(71)}));
+  await assert.rejects(collectSeo(root,config),/within 70/);
+  await writeFile(path.join(root,'out/en/new-page.html'),pageHtml('/en/new-page',{xDefault:false}));
+  await assert.rejects(collectSeo(root,config),/x-default must point at the default-locale page/);
 });
 
 test('duplicate titles and broken internal destinations stop the release',async t=>{

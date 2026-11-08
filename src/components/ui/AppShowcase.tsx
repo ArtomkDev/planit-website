@@ -42,7 +42,7 @@ function FeaturePreview({ id, accentColor }: { id: FeatureId; accentColor: strin
             <span>{t("sharing.label")}</span><span>{t("example")}</span>
           </div>
           <AnimatedScheduleCode />
-          <p className="text-xs text-site-muted">{t("sharing.duration")}</p>
+          <p className="text-xs text-site-muted">{t("sharing.caption")}</p>
         </>
       )}
       {id === "exports" && (

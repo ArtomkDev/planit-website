@@ -2,8 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { publishedPages } from "@/content/pages";
-import { createPageMetadata } from "@/lib/seo";
-import { APP_URL, SITE_URL } from "@/lib/site";
+import { breadcrumbJsonLd, createPageMetadata, webPageJsonLd } from "@/lib/seo";
+import { APP_URL } from "@/lib/site";
+import { JsonLd } from "@/components/metadata/JsonLd";
 import { AccentRule } from "@/components/ui/AccentRule";
 
 export const dynamicParams = false;
@@ -25,10 +26,13 @@ export default async function ContentPage({ params }: { params: Promise<{ locale
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const { page, text } = getPage(locale, slug);
-  const schema = { "@context": "https://schema.org", "@type": "WebPage", name: text.title, description: text.description, url: `${SITE_URL}/${locale}/${slug}`, inLanguage: locale, dateModified: page.updatedAt, isPartOf: { "@id": `${SITE_URL}/#website` } };
+  const path = `/${slug}`;
+  const schema = webPageJsonLd({ locale, path, name: text.title, description: text.description, dateModified: page.updatedAt });
+  const breadcrumbs = breadcrumbJsonLd(locale, [{ name: text.title, path }]);
   return (
     <article className="mx-auto w-full max-w-3xl px-6 py-14 md:py-20">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
+      <JsonLd data={schema} />
+      <JsonLd data={breadcrumbs} />
       <Link href={`/${locale}`} className="mb-8 inline-flex min-h-11 items-center gap-3 text-sm font-bold text-brand-strong"><AccentRule />PlanIt</Link>
       <h1 className="text-balance text-4xl font-black leading-tight tracking-tight md:text-5xl">{text.heading}</h1>
       <p className="mt-6 text-lg leading-8 text-site-muted">{text.intro}</p>

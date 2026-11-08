@@ -1,4 +1,4 @@
-export const INITIAL_SCHEDULE_CODE = "PL7M2K";
+export const INITIAL_SCHEDULE_CODE = "PL7M2KQ";
 const CHARACTERS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
 export type CodeGlyph = {

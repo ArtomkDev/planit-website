@@ -10,7 +10,6 @@ export default function EntryLayout({ children }: { children: React.ReactNode })
     <html lang="uk">
       <head>
         <script id="planit-locale-redirect" dangerouslySetInnerHTML={{ __html: localeRedirectScript }} />
-        <noscript><meta httpEquiv="refresh" content="0;url=/uk" /></noscript>
       </head>
       <body>{children}</body>
     </html>

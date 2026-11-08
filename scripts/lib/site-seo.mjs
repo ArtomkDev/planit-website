@@ -69,6 +69,8 @@ function validatePages(pages, config) {
     const expected = new URL(page.path, config.origin).href;
     if (page.canonicals.length !== 1 || new URL(page.canonicals[0]).href !== expected) throw new Error(`${page.path}: use a self-referencing canonical, expected ${expected}. Use createPageMetadata().`);
     if (!page.title.trim() || !page.description.trim() || page.h1Count !== 1) throw new Error(`${page.path}: an indexable page needs a title, description and exactly one H1.`);
+    if ([...page.title].length > 70) throw new Error(`${page.path}: title is ${[...page.title].length} characters; keep it within 70 so search results do not truncate it.`);
+    if ([...page.description].length < 70 || [...page.description].length > 170) throw new Error(`${page.path}: description is ${[...page.description].length} characters; write a 70–170 character search snippet.`);
     if (!page.image || new URL(page.image).origin !== config.origin || page.ogUrl && new URL(page.ogUrl).href !== expected) throw new Error(`${page.path}: social metadata must use the website origin and page URL.`);
     const titleKey = `${page.locale}:${page.title.toLowerCase()}`;
     if (titles.has(titleKey)) throw new Error(`${page.path}: duplicate title in the same language.`);
@@ -81,7 +83,9 @@ function validatePages(pages, config) {
       const alternate = byPath.get(alternatePath);
       if (!alternate || !page.alternates[language] || new URL(page.alternates[language]).href !== new URL(alternatePath, config.origin).href) throw new Error(`${page.path}: missing page or reciprocal hreflang for ${language}.`);
     }
-    if (['/','/uk','/en'].includes(page.path) && new URL(page.alternates['x-default'] || 'https://missing.invalid').href !== `${config.origin}/`) throw new Error(`${page.path}: homepage x-default must point at the root.`);
+    const home = ['/','/uk','/en'].includes(page.path);
+    const fallback = home ? '/' : page.path.replace(/^\/(uk|en)(?=\/|$)/, `/${config.locales[0]}`);
+    if (new URL(page.alternates['x-default'] || 'https://missing.invalid').href !== new URL(fallback, config.origin).href) throw new Error(`${page.path}: x-default must point at ${home ? 'the root language selector' : 'the default-locale page'} ${fallback}.`);
   }
   if (!byPath.has('/') || !byPath.has('/uk') || !byPath.has('/en')) throw new Error('Missing root or localized homepage.');
 }

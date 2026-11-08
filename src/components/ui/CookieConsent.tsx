@@ -1,6 +1,6 @@
 "use client";
 
-import { Cookie } from "@phosphor-icons/react";
+import { ArrowRight, Cookie, X } from "@phosphor-icons/react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
@@ -63,29 +63,49 @@ export const CookieConsent = () => {
       window.localStorage.setItem(storageKey, JSON.stringify({ choice: next, version: 1, updatedAt: new Date().toISOString() }));
     } catch { /* Keep the choice for this session. */ }
     setChoice(next);
+    close();
+  }
+  function close() {
     setPreferencesOpen(false);
     returnFocus.current?.focus();
     returnFocus.current = null;
   }
+  const analyticsBadge = !effective ? t("analyticsOptional") : t(effective === "accepted" ? "analyticsOn" : "analyticsOff");
 
   return <AnimatePresence>{visible && <motion.aside
     aria-labelledby="cookie-consent-title" aria-describedby="cookie-consent-description"
-    className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] px-4 pb-4 sm:px-6 sm:pb-6"
+    className="fixed inset-x-4 bottom-4 z-[60] max-h-[calc(100dvh-2rem)] overflow-y-auto rounded-3xl border border-site-border bg-site-surface p-5 shadow-[0_28px_70px_-36px_var(--site-surface-shadow)] sm:inset-x-auto sm:bottom-6 sm:left-6 sm:w-[420px]"
     initial={reduceMotion ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0 }} transition={{ duration: reduceMotion ? 0 : 0.2 }}>
-    <div className="pointer-events-auto mx-auto max-h-[calc(100dvh-5rem)] max-w-5xl overflow-y-auto rounded-2xl border border-site-border bg-site-surface p-5 shadow-[0_28px_90px_-48px_var(--site-surface-shadow)] sm:p-6">
-      <div className="flex min-w-0 items-start gap-4">
-        <Cookie aria-hidden="true" size={28} className="mt-1 shrink-0 text-brand" />
-        <div className="min-w-0">
-          <h2 id="cookie-consent-title" className="text-lg font-bold text-site-text">{t("title")}</h2>
-          <p id="cookie-consent-description" className="mt-2 text-sm leading-relaxed text-site-muted">{t("description")}</p>
-        </div>
-      </div>
-      <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-        <button ref={acceptButton} type="button" onClick={() => choose("accepted")} className="min-h-11 rounded-full border border-site-border-strong bg-site-surface-muted px-5 py-2 text-sm font-bold text-site-text hover:bg-site-bg-muted">{t("accept")}</button>
-        <button type="button" onClick={() => choose("rejected")} className="min-h-11 rounded-full border border-site-border-strong bg-site-surface-muted px-5 py-2 text-sm font-bold text-site-text hover:bg-site-bg-muted">{t("reject")}</button>
-        <Link href={`/${locale}/wiki/cookies`} className="inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2 text-sm font-semibold text-site-muted hover:text-brand">{t("learnMore")}</Link>
-      </div>
+    exit={{ opacity: 0, y: reduceMotion ? 0 : 24 }} transition={{ duration: reduceMotion ? 0 : 0.22 }}>
+    <div className="flex items-center gap-3">
+      <span aria-hidden="true" className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[14px] bg-brand-soft text-brand">
+        <Cookie size={24} weight="duotone" />
+      </span>
+      <h2 id="cookie-consent-title" className="min-w-0 flex-1 text-lg font-black leading-tight tracking-tight text-site-text">{t("title")}</h2>
+      {preferencesOpen && effective && <button type="button" onClick={close} aria-label={t("close")} className="-mr-1.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-site-muted hover:bg-site-surface-muted">
+        <X aria-hidden="true" size={18} weight="bold" />
+      </button>}
     </div>
+    <p id="cookie-consent-description" className="mt-3 text-sm leading-[22px] text-site-muted">{t("description")}</p>
+    <ul className="mt-4 rounded-2xl border border-site-border bg-site-surface-muted px-3.5">
+      {[
+        { title: t("necessaryTitle"), description: t("necessaryDescription"), badge: t("necessaryBadge"), active: true },
+        { title: t("analyticsTitle"), description: t("analyticsDescription"), badge: analyticsBadge, active: effective === "accepted" },
+      ].map((category) => <li key={category.title} className="flex items-center gap-3 border-b border-site-border-strong py-3 last:border-b-0">
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-bold text-site-text">{category.title}</p>
+          <p className="text-[13px] leading-[18px] text-site-muted">{category.description}</p>
+        </div>
+        <span className={`shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-bold leading-[18px] ${category.active ? "border-brand-soft bg-brand-soft text-brand-strong" : "border-site-border-strong text-site-muted"}`}>{category.badge}</span>
+      </li>)}
+    </ul>
+    <div className="mt-4 flex flex-wrap gap-2">
+      <button type="button" onClick={() => choose("rejected")} className="min-h-11 grow basis-[140px] rounded-[14px] border border-site-border-strong bg-site-surface-muted px-4 text-sm font-bold text-site-text hover:bg-site-bg">{t("reject")}</button>
+      <button ref={acceptButton} type="button" onClick={() => choose("accepted")} className="min-h-11 grow basis-[140px] rounded-[14px] border border-site-border-strong bg-site-surface-muted px-4 text-sm font-bold text-site-text hover:bg-site-bg">{t("accept")}</button>
+    </div>
+    <Link href={`/${locale}/wiki/cookies`} className="-mb-2 mt-2 inline-flex min-h-9 items-center gap-1.5 text-[13px] font-semibold text-site-muted hover:text-brand-strong">
+      {t("policy")}
+      <ArrowRight aria-hidden="true" size={14} weight="bold" />
+    </Link>
   </motion.aside>}</AnimatePresence>;
 };

@@ -17,12 +17,12 @@ test('web app buttons use the separate production application origin', async () 
   }
 });
 
-test('root export redirects before displaying content and provides a no-JavaScript fallback', async () => {
+test('root export redirects visitors before displaying content, keeps crawlers on the selector and provides a no-JavaScript fallback', async () => {
   const html = await readFile('out/index.html', 'utf8');
   const head = html.match(/<head>[\s\S]*?<\/head>/)?.[0];
   const script = head?.match(/<script\b[^>]*id="planit-locale-redirect"[^>]*>([\s\S]*?)<\/script>/)?.[1];
   assert.ok(script, 'locale redirect must be inline in the initial head');
-  assert.match(head, /<noscript><meta http-equiv="refresh" content="0;url=\/uk"\/><\/noscript>/);
+  assert.doesNotMatch(head, /http-equiv="refresh"/i, 'the x-default selector must not be an instant redirect for crawlers without JavaScript');
   assert.match(html, /<h1[^>]*>PlanIt/);
   assert.match(html, /href="\/uk"/);
   assert.match(html, /href="\/en"/);
@@ -35,6 +35,15 @@ test('root export redirects before displaying content and provides a no-JavaScri
       navigator: { languages },
     });
     assert.equal(destination, `/${expected}?source=entry#features`);
+  }
+  for (const userAgent of ['Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)', 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)']) {
+    let destination;
+    runInNewContext(script, {
+      window: { localStorage: { getItem: () => null }, location: { search: '', hash: '', replace: url => { destination = url; } } },
+      document: { cookie: '' },
+      navigator: { languages: ['en-US'], userAgent },
+    });
+    assert.equal(destination, undefined, 'crawlers stay on the x-default language selector');
   }
   for (const locale of locales) assert.ok(!(await readFile(`out/${locale}.html`, 'utf8')).includes('id="planit-locale-redirect"'), 'explicit locale URLs must stay on their selected locale');
 });

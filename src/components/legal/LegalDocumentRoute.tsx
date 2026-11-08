@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
-import { createPageMetadata } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
+import { breadcrumbJsonLd, createPageMetadata, webPageJsonLd } from "@/lib/seo";
 import {
   getLegalDocumentData,
   type LegalDocumentKind,
 } from "@/content/legal-documents";
+import { JsonLd } from "@/components/metadata/JsonLd";
 import { LegalDocument } from "./LegalDocument";
 
 type LocaleParams = Promise<{ locale: string }>;
+
+// Synced legal documents carry a short on-page summary heading, not a search snippet.
+// Search descriptions live with the website translations under SEO.<kind>.
+async function getLegalSeo(locale: string, kind: LegalDocumentKind) {
+  const document = getLegalDocumentData(kind, locale);
+  const t = await getTranslations({ locale, namespace: `SEO.${kind}` });
+  return { document, path: `/wiki/${kind}`, title: document.title, description: t("description") };
+}
 
 export async function getLegalDocumentMetadata(
   params: LocaleParams,
   kind: LegalDocumentKind,
 ): Promise<Metadata> {
   const { locale } = await params;
-  const document = getLegalDocumentData(kind, locale);
-  return createPageMetadata({ locale, path: `/wiki/${kind}`, title: document.title, description: document.summary });
+  const { path, title, description } = await getLegalSeo(locale, kind);
+  return createPageMetadata({ locale, path, title, description });
 }
 
 export async function LegalDocumentRoute({
@@ -25,6 +35,13 @@ export async function LegalDocumentRoute({
   kind: LegalDocumentKind;
 }) {
   const { locale } = await params;
+  const { document, path, title, description } = await getLegalSeo(locale, kind);
 
-  return <LegalDocument locale={locale} kind={kind} />;
+  return (
+    <>
+      <JsonLd data={webPageJsonLd({ locale, path, name: title, description, dateModified: document.effectiveDate })} />
+      <JsonLd data={breadcrumbJsonLd(locale, [{ name: title, path }])} />
+      <LegalDocument locale={locale} kind={kind} />
+    </>
+  );
 }

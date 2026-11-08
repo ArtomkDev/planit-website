@@ -1,4 +1,5 @@
 import { SITE_URL } from "@/lib/site";
+import { JsonLd } from "./JsonLd";
 
 // The same identity belongs to the root and both localized homepages.
 export function WebsiteIdentity() {
@@ -12,5 +13,5 @@ export function WebsiteIdentity() {
     inLanguage: ["uk", "en"],
     publisher: { "@type": "Person", name: "Artomk" },
   };
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(website).replace(/</g, "\\u003c") }} />;
+  return <JsonLd data={website} />;
 }

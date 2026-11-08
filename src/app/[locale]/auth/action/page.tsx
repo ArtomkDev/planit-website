@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AuthActionClient } from "@/components/auth/AuthActionClient";
 import styles from "@/components/auth/AuthAction.module.css";
+import { PRIVATE_ROBOTS } from "@/lib/seo";
 
 type AuthActionPageProps = {
   params: Promise<{ locale: string }>;
@@ -16,7 +17,11 @@ export async function generateMetadata({ params }: AuthActionPageProps): Promise
   return {
     title: t("metadata.title"),
     description: t("metadata.description"),
-    robots: { index: false, follow: false },
+    robots: PRIVATE_ROBOTS,
+    // A private action page must not inherit the homepage canonical or hreflang cluster.
+    alternates: {},
+    openGraph: null,
+    twitter: null,
   };
 }
 

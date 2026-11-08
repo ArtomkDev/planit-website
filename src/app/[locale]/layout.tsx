@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/site";
+import { createPageMetadata } from "@/lib/seo";
 import { publishedPages } from "@/content/pages";
 import { NextIntlClientProvider } from "next-intl";
 import {
@@ -41,18 +42,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "SEO.home" });
-  const baseUrl = SITE_URL;
-  const url = `${baseUrl}/${locale}`;
 
+  // The localized homepage uses these values; nested pages replace them with createPageMetadata().
   return {
-    metadataBase: new URL(baseUrl),
-    title: { template: "%s | PlanIt", default: t("title") },
-    description: t("description"),
+    ...createPageMetadata({ locale, title: t("title"), description: t("description"), imageAlt: t("imageAlt") }),
+    title: { absolute: t("title"), template: "%s | PlanIt" },
+    metadataBase: new URL(SITE_URL),
     applicationName: "PlanIt",
+    authors: [{ name: "Artomk" }],
+    creator: "Artomk",
+    publisher: "Artomk",
+    category: "education",
     verification: { google: process.env.GOOGLE_SITE_VERIFICATION || undefined },
-    alternates: { canonical: url, languages: { en: `${baseUrl}/en`, uk: `${baseUrl}/uk`, "x-default": `${baseUrl}/` } },
-    openGraph: { title: t("title"), description: t("description"), url, siteName: "PlanIt", locale: locale === "uk" ? "uk_UA" : "en_US", alternateLocale: locale === "uk" ? "en_US" : "uk_UA", type: "website", images: [{ url: `${SITE_URL}/${locale}/opengraph-image`, width: 1200, height: 630, alt: t("imageAlt") }] },
-    twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`${SITE_URL}/${locale}/opengraph-image`] },
   };
 }
 
